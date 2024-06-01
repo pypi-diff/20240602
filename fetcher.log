@@ -142,3 +142,69 @@
 [2024-06-02 00:05:22] INFO root fetch - processPackages [wetrade]: Remove: archive file [/home/abi/fetcher/tmp/wetrade-0.1.2.tar.gz]
 [2024-06-02 00:05:22] INFO root fetch - main [MainThread]: End processing [wetrade]: success
 [2024-06-02 00:05:22] INFO root fetch - main [MainThread]: Store serial: [23484045]
+[2024-06-02 00:07:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23484045]
+[2024-06-02 00:07:32] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-06-02 00:07:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nnetsauce
+[2024-06-02 00:07:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lbt-dragonfly
+[2024-06-02 00:07:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: groqchat
+[2024-06-02 00:07:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: zprp-ffmpeg
+[2024-06-02 00:07:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: lbt-honeybee
+[2024-06-02 00:07:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: py-alpaca-daily-losers
+[2024-06-02 00:07:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: freegenius
+[2024-06-02 00:07:32] INFO root fetch - processPackages [zprp-ffmpeg]: New version: [2.1.0] Old Version: [2.0.0]
+[2024-06-02 00:07:32] INFO root fetch - processPackages [nnetsauce]: New version: [0.9.6] Old Version: [0.9.5]
+[2024-06-02 00:07:32] INFO root fetch - processPackages [freegenius]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-06-02 00:07:32] INFO root fetch - processPackages [lbt-dragonfly]: New version: [0.9.99] Old Version: [0.9.98]
+[2024-06-02 00:07:32] INFO root fetch - processPackages [py-alpaca-daily-losers]: New version: [1.0.0] Old Version: [0.3.4]
+[2024-06-02 00:07:32] INFO root fetch - processPackages [lbt-honeybee]: New version: [0.8.99] Old Version: [0.8.98]
+[2024-06-02 00:07:32] INFO root fetch - processPackages [groqchat]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-06-02 00:07:32] INFO root fetch - processPackages [zprp-ffmpeg]: Downloading https://files.pythonhosted.org/packages/c1/5a/124ad625fb7ab5feec088bcd449dabb61c4c0ac3688dfc2d282bdcb57906/zprp_ffmpeg-2.0.0.tar.gz
+[2024-06-02 00:07:32] INFO root fetch - processPackages [nnetsauce]: Downloading https://files.pythonhosted.org/packages/e4/c1/c099d0aaf9dd67f11d6704ca840f18bc30e5bc6bc8610951c94cafda6620/nnetsauce-0.9.5-cp38-cp38-macosx_10_15_x86_64.whl
+[2024-06-02 00:07:32] INFO root fetch - processPackages [freegenius]: Downloading https://files.pythonhosted.org/packages/d5/ca/411a282eb501daf2e794cd1fb0f3e90fdbc6bf2302cf9c34892282b27dbc/freegenius-0.2.8.tar.gz
+[2024-06-02 00:07:32] INFO root fetch - processPackages [lbt-dragonfly]: Downloading https://files.pythonhosted.org/packages/be/ae/7267dfd241a0641f3fbadea4128db5ffa29609911cadb5fc4840656bb44a/lbt-dragonfly-0.9.98.tar.gz
+[2024-06-02 00:07:32] INFO root fetch - processPackages [lbt-honeybee]: Downloading https://files.pythonhosted.org/packages/b5/a0/c6742c4b1a93565a552f073a8cad3689b9e2edcf401d45bd9fddf0485a8d/lbt-honeybee-0.8.98.tar.gz
+[2024-06-02 00:07:33] INFO root fetch - processPackages [groqchat]: Downloading https://files.pythonhosted.org/packages/97/47/293c478a1dcbbb8f33104058eb83bb0dfde0d9d675ef31f272e3ce37ac27/groqchat-0.0.2.tar.gz
+[2024-06-02 00:07:33] INFO root fetch - processPackages [py-alpaca-daily-losers]: Downloading https://files.pythonhosted.org/packages/72/6d/334236ccabc8554d93494408677e00394677dec868f7a16550590d6af913/py_alpaca_daily_losers-0.3.4.tar.gz
+[2024-06-02 00:07:33] INFO root fetch - processPackages [lbt-dragonfly]: Downloading https://files.pythonhosted.org/packages/b4/08/0ca46e9f7eef7b2cce7f0c6110106c42aa35a79bd88110559177f64d733a/lbt-dragonfly-0.9.99.tar.gz
+[2024-06-02 00:07:33] INFO root fetch - processPackages [lbt-honeybee]: Downloading https://files.pythonhosted.org/packages/f1/61/4f36e668d3e1767b0f4d921481ad087bec472a2afc14ea20f916e083c690/lbt-honeybee-0.8.99.tar.gz
+[2024-06-02 00:07:33] INFO root fetch - processPackages [nnetsauce]: Downloading https://files.pythonhosted.org/packages/5d/3d/2c1ea2226e34b252e89b11951ff2d62c9dd12ea4a6a66be92a58b378f9de/nnetsauce-0.9.6-cp38-cp38-macosx_10_15_x86_64.whl
+[2024-06-02 00:07:33] INFO root fetch - processPackages [zprp-ffmpeg]: Downloading https://files.pythonhosted.org/packages/09/54/f133e8c64c8c9d983fd1f970be843b8600e315d9a78d2b9f3b4d433e690d/zprp_ffmpeg-2.1.0.tar.gz
+[2024-06-02 00:07:33] INFO root fetch - processPackages [lbt-dragonfly]: executing diffoscope
+[2024-06-02 00:07:33] INFO root fetch - processPackages [lbt-dragonfly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lbt-dragonfly-0.9.98.tar.gz tmp/lbt-dragonfly-0.9.99.tar.gz --markdown 20240602/l/lbt-dragonfly/0.9.98-0.9.99/README.md --exclude *.pyd
+[2024-06-02 00:07:33] INFO root fetch - processPackages [lbt-honeybee]: executing diffoscope
+[2024-06-02 00:07:33] INFO root fetch - processPackages [lbt-honeybee]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lbt-honeybee-0.8.98.tar.gz tmp/lbt-honeybee-0.8.99.tar.gz --markdown 20240602/l/lbt-honeybee/0.8.98-0.8.99/README.md --exclude *.pyd
+[2024-06-02 00:07:33] INFO root fetch - processPackages [groqchat]: Downloading https://files.pythonhosted.org/packages/3e/d7/092ebf566739ac812b0c261973d2dfa50a7b9f1d5481a7df9528a16ea1f0/groqchat-0.0.3.tar.gz
+[2024-06-02 00:07:33] INFO root fetch - processPackages [zprp-ffmpeg]: executing diffoscope
+[2024-06-02 00:07:33] INFO root fetch - processPackages [zprp-ffmpeg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zprp_ffmpeg-2.0.0.tar.gz tmp/zprp_ffmpeg-2.1.0.tar.gz --markdown 20240602/z/zprp-ffmpeg/2.0.0-2.1.0/README.md --exclude *.pyd
+[2024-06-02 00:07:33] INFO root fetch - processPackages [py-alpaca-daily-losers]: Downloading https://files.pythonhosted.org/packages/18/ff/8e04563a54325536544c2a48f5be00fb0fba54275e63cf31432a8316d28a/py_alpaca_daily_losers-1.0.0.tar.gz
+[2024-06-02 00:07:33] INFO root fetch - processPackages [nnetsauce]: executing diffoscope
+[2024-06-02 00:07:33] INFO root fetch - processPackages [nnetsauce]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nnetsauce-0.9.5-cp38-cp38-macosx_10_15_x86_64.whl.zip tmp/nnetsauce-0.9.6-cp38-cp38-macosx_10_15_x86_64.whl.zip --markdown 20240602/n/nnetsauce/0.9.5-0.9.6/README.md --exclude *.pyd
+[2024-06-02 00:07:33] INFO root fetch - processPackages [freegenius]: Downloading https://files.pythonhosted.org/packages/85/e0/79c8d3b405fbb09c8afb4fc4cba33e77303a57f60e90bbef2e19a2c5a73a/freegenius-0.2.9.tar.gz
+[2024-06-02 00:07:33] INFO root fetch - processPackages [groqchat]: executing diffoscope
+[2024-06-02 00:07:33] INFO root fetch - processPackages [groqchat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/groqchat-0.0.2.tar.gz tmp/groqchat-0.0.3.tar.gz --markdown 20240602/g/groqchat/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-06-02 00:07:33] INFO root fetch - processPackages [py-alpaca-daily-losers]: executing diffoscope
+[2024-06-02 00:07:33] INFO root fetch - processPackages [py-alpaca-daily-losers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_alpaca_daily_losers-0.3.4.tar.gz tmp/py_alpaca_daily_losers-1.0.0.tar.gz --markdown 20240602/p/py-alpaca-daily-losers/0.3.4-1.0.0/README.md --exclude *.pyd
+[2024-06-02 00:07:33] INFO root fetch - processPackages [freegenius]: executing diffoscope
+[2024-06-02 00:07:33] INFO root fetch - processPackages [freegenius]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/freegenius-0.2.8.tar.gz tmp/freegenius-0.2.9.tar.gz --markdown 20240602/f/freegenius/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-06-02 00:07:34] INFO root fetch - processPackages [lbt-honeybee]: Remove: archive file [/home/abi/fetcher/tmp/lbt-honeybee-0.8.98.tar.gz]
+[2024-06-02 00:07:34] INFO root fetch - processPackages [lbt-honeybee]: Remove: archive file [/home/abi/fetcher/tmp/lbt-honeybee-0.8.99.tar.gz]
+[2024-06-02 00:07:34] INFO root fetch - main [MainThread]: End processing [lbt-honeybee]: success
+[2024-06-02 00:07:34] INFO root fetch - processPackages [lbt-dragonfly]: Remove: archive file [/home/abi/fetcher/tmp/lbt-dragonfly-0.9.98.tar.gz]
+[2024-06-02 00:07:34] INFO root fetch - processPackages [lbt-dragonfly]: Remove: archive file [/home/abi/fetcher/tmp/lbt-dragonfly-0.9.99.tar.gz]
+[2024-06-02 00:07:34] INFO root fetch - main [MainThread]: End processing [lbt-dragonfly]: success
+[2024-06-02 00:07:34] INFO root fetch - processPackages [zprp-ffmpeg]: Remove: archive file [/home/abi/fetcher/tmp/zprp_ffmpeg-2.0.0.tar.gz]
+[2024-06-02 00:07:34] INFO root fetch - processPackages [zprp-ffmpeg]: Remove: archive file [/home/abi/fetcher/tmp/zprp_ffmpeg-2.1.0.tar.gz]
+[2024-06-02 00:07:34] INFO root fetch - main [MainThread]: End processing [zprp-ffmpeg]: success
+[2024-06-02 00:07:34] INFO root fetch - processPackages [py-alpaca-daily-losers]: Remove: archive file [/home/abi/fetcher/tmp/py_alpaca_daily_losers-0.3.4.tar.gz]
+[2024-06-02 00:07:34] INFO root fetch - processPackages [py-alpaca-daily-losers]: Remove: archive file [/home/abi/fetcher/tmp/py_alpaca_daily_losers-1.0.0.tar.gz]
+[2024-06-02 00:07:34] INFO root fetch - main [MainThread]: End processing [py-alpaca-daily-losers]: success
+[2024-06-02 00:07:34] INFO root fetch - processPackages [groqchat]: Remove: archive file [/home/abi/fetcher/tmp/groqchat-0.0.2.tar.gz]
+[2024-06-02 00:07:34] INFO root fetch - processPackages [groqchat]: Remove: archive file [/home/abi/fetcher/tmp/groqchat-0.0.3.tar.gz]
+[2024-06-02 00:07:34] INFO root fetch - main [MainThread]: End processing [groqchat]: success
+[2024-06-02 00:07:35] INFO root fetch - processPackages [freegenius]: Remove: archive file [/home/abi/fetcher/tmp/freegenius-0.2.8.tar.gz]
+[2024-06-02 00:07:35] INFO root fetch - processPackages [freegenius]: Remove: archive file [/home/abi/fetcher/tmp/freegenius-0.2.9.tar.gz]
+[2024-06-02 00:07:35] INFO root fetch - main [MainThread]: End processing [freegenius]: success
+[2024-06-02 00:07:41] INFO root fetch - processPackages [nnetsauce]: Remove: archive file [/home/abi/fetcher/tmp/nnetsauce-0.9.5-cp38-cp38-macosx_10_15_x86_64.whl.zip]
+[2024-06-02 00:07:41] INFO root fetch - processPackages [nnetsauce]: Remove: archive file [/home/abi/fetcher/tmp/nnetsauce-0.9.6-cp38-cp38-macosx_10_15_x86_64.whl.zip]
+[2024-06-02 00:07:41] INFO root fetch - main [MainThread]: End processing [nnetsauce]: success
+[2024-06-02 00:07:41] INFO root fetch - main [MainThread]: Store serial: [23484064]
