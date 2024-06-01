@@ -1267,3 +1267,33 @@
 [2024-06-02 01:26:09] INFO root fetch - processPackages [almax-common]: Remove: archive file [/home/abi/fetcher/tmp/almax_common-1.0.5.dev20240601230451.tar.gz]
 [2024-06-02 01:26:09] INFO root fetch - main [MainThread]: End processing [almax-common]: success
 [2024-06-02 01:26:09] INFO root fetch - main [MainThread]: Store serial: [23484686]
+[2024-06-02 01:28:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23484686]
+[2024-06-02 01:28:18] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-02 01:28:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: apyanki
+[2024-06-02 01:28:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: openai-batch-sdk
+[2024-06-02 01:28:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ladybug-display
+[2024-06-02 01:28:18] INFO root fetch - processPackages [openai-batch-sdk]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-06-02 01:28:18] INFO root fetch - processPackages [apyanki]: New version: [0.15.8] Old Version: [0.15.7]
+[2024-06-02 01:28:18] INFO root fetch - processPackages [ladybug-display]: New version: [0.9.1] Old Version: [0.9.0]
+[2024-06-02 01:28:18] INFO root fetch - processPackages [openai-batch-sdk]: Downloading https://files.pythonhosted.org/packages/4b/00/418a87f50b311d3c67ae7a694047beb044bd47d5a3d95f6b7f1cd62b053a/openai_batch_sdk-0.1.0.tar.gz
+[2024-06-02 01:28:18] INFO root fetch - processPackages [apyanki]: Downloading https://files.pythonhosted.org/packages/09/bd/87fbac897eb21392b46d26274e838cc0e8cfafdacfd811893b63c588fa9f/apyanki-0.15.7.tar.gz
+[2024-06-02 01:28:18] INFO root fetch - processPackages [ladybug-display]: Downloading https://files.pythonhosted.org/packages/1e/02/cec14e3a43e6e2fc76e6653561b4cf84608834a24c06c7fc25faaa97b4eb/ladybug-display-0.9.0.tar.gz
+[2024-06-02 01:28:18] INFO root fetch - processPackages [openai-batch-sdk]: Downloading https://files.pythonhosted.org/packages/06/3e/bd0bdc8a14db86c4368a4fdfd50821a85c4a80af06ead549342a979ae7fb/openai_batch_sdk-0.1.1.tar.gz
+[2024-06-02 01:28:18] INFO root fetch - processPackages [apyanki]: Downloading https://files.pythonhosted.org/packages/a1/d2/40f885ef6c90fcd89d0fd9e0e5d7b1dab52354768255cf349f93ab245d91/apyanki-0.15.8.tar.gz
+[2024-06-02 01:28:18] INFO root fetch - processPackages [apyanki]: executing diffoscope
+[2024-06-02 01:28:18] INFO root fetch - processPackages [apyanki]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/apyanki-0.15.7.tar.gz tmp/apyanki-0.15.8.tar.gz --markdown 20240602/a/apyanki/0.15.7-0.15.8/README.md --exclude *.pyd
+[2024-06-02 01:28:18] INFO root fetch - processPackages [openai-batch-sdk]: executing diffoscope
+[2024-06-02 01:28:18] INFO root fetch - processPackages [openai-batch-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openai_batch_sdk-0.1.0.tar.gz tmp/openai_batch_sdk-0.1.1.tar.gz --markdown 20240602/o/openai-batch-sdk/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-06-02 01:28:19] INFO root fetch - processPackages [ladybug-display]: Downloading https://files.pythonhosted.org/packages/2d/c2/b6721f755e6df185804937c1af17673d9ac4fc542f6bc7770d02987f1bd7/ladybug-display-0.9.1.tar.gz
+[2024-06-02 01:28:19] INFO root fetch - processPackages [ladybug-display]: executing diffoscope
+[2024-06-02 01:28:19] INFO root fetch - processPackages [ladybug-display]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ladybug-display-0.9.0.tar.gz tmp/ladybug-display-0.9.1.tar.gz --markdown 20240602/l/ladybug-display/0.9.0-0.9.1/README.md --exclude *.pyd
+[2024-06-02 01:28:19] INFO root fetch - processPackages [openai-batch-sdk]: Remove: archive file [/home/abi/fetcher/tmp/openai_batch_sdk-0.1.0.tar.gz]
+[2024-06-02 01:28:19] INFO root fetch - processPackages [openai-batch-sdk]: Remove: archive file [/home/abi/fetcher/tmp/openai_batch_sdk-0.1.1.tar.gz]
+[2024-06-02 01:28:19] INFO root fetch - main [MainThread]: End processing [openai-batch-sdk]: success
+[2024-06-02 01:28:19] INFO root fetch - processPackages [apyanki]: Remove: archive file [/home/abi/fetcher/tmp/apyanki-0.15.7.tar.gz]
+[2024-06-02 01:28:19] INFO root fetch - processPackages [apyanki]: Remove: archive file [/home/abi/fetcher/tmp/apyanki-0.15.8.tar.gz]
+[2024-06-02 01:28:19] INFO root fetch - main [MainThread]: End processing [apyanki]: success
+[2024-06-02 01:28:20] INFO root fetch - processPackages [ladybug-display]: Remove: archive file [/home/abi/fetcher/tmp/ladybug-display-0.9.0.tar.gz]
+[2024-06-02 01:28:20] INFO root fetch - processPackages [ladybug-display]: Remove: archive file [/home/abi/fetcher/tmp/ladybug-display-0.9.1.tar.gz]
+[2024-06-02 01:28:20] INFO root fetch - main [MainThread]: End processing [ladybug-display]: success
+[2024-06-02 01:28:20] INFO root fetch - main [MainThread]: Store serial: [23484695]
