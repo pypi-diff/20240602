@@ -1399,3 +1399,24 @@
 [2024-06-02 01:37:05] INFO root fetch - processPackages [songs-to-youtube]: Remove: archive file [/home/abi/fetcher/tmp/songs_to_youtube-0.12.9.tar.gz]
 [2024-06-02 01:37:05] INFO root fetch - main [MainThread]: End processing [songs-to-youtube]: success
 [2024-06-02 01:37:05] INFO root fetch - main [MainThread]: Store serial: [23484728]
+[2024-06-02 01:39:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23484728]
+[2024-06-02 01:39:14] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-02 01:39:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: openai-batch-sdk
+[2024-06-02 01:39:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: isolate-proto
+[2024-06-02 01:39:14] INFO root fetch - processPackages [openai-batch-sdk]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-06-02 01:39:14] INFO root fetch - processPackages [isolate-proto]: New version: [0.5.0] Old Version: [0.4.0]
+[2024-06-02 01:39:15] INFO root fetch - processPackages [openai-batch-sdk]: Downloading https://files.pythonhosted.org/packages/4b/00/418a87f50b311d3c67ae7a694047beb044bd47d5a3d95f6b7f1cd62b053a/openai_batch_sdk-0.1.0.tar.gz
+[2024-06-02 01:39:15] INFO root fetch - processPackages [isolate-proto]: Downloading https://files.pythonhosted.org/packages/cc/e8/9f2f461bb36c0e20f1e1297140c0e1c1118f46584b9de62490974fe5b192/isolate_proto-0.4.0.tar.gz
+[2024-06-02 01:39:15] INFO root fetch - processPackages [openai-batch-sdk]: Downloading https://files.pythonhosted.org/packages/06/3e/bd0bdc8a14db86c4368a4fdfd50821a85c4a80af06ead549342a979ae7fb/openai_batch_sdk-0.1.1.tar.gz
+[2024-06-02 01:39:15] INFO root fetch - processPackages [isolate-proto]: Downloading https://files.pythonhosted.org/packages/2f/f8/051b1233f9a384344cfa4abb6e70f89d7be88e7a378e404538a9125ef1d4/isolate_proto-0.5.0.tar.gz
+[2024-06-02 01:39:15] INFO root fetch - processPackages [openai-batch-sdk]: executing diffoscope
+[2024-06-02 01:39:15] INFO root fetch - processPackages [openai-batch-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openai_batch_sdk-0.1.0.tar.gz tmp/openai_batch_sdk-0.1.1.tar.gz --markdown 20240602/o/openai-batch-sdk/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-06-02 01:39:15] INFO root fetch - processPackages [isolate-proto]: executing diffoscope
+[2024-06-02 01:39:15] INFO root fetch - processPackages [isolate-proto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/isolate_proto-0.4.0.tar.gz tmp/isolate_proto-0.5.0.tar.gz --markdown 20240602/i/isolate-proto/0.4.0-0.5.0/README.md --exclude *.pyd
+[2024-06-02 01:39:16] INFO root fetch - processPackages [openai-batch-sdk]: Remove: archive file [/home/abi/fetcher/tmp/openai_batch_sdk-0.1.0.tar.gz]
+[2024-06-02 01:39:16] INFO root fetch - processPackages [openai-batch-sdk]: Remove: archive file [/home/abi/fetcher/tmp/openai_batch_sdk-0.1.1.tar.gz]
+[2024-06-02 01:39:16] INFO root fetch - main [MainThread]: End processing [openai-batch-sdk]: success
+[2024-06-02 01:39:16] INFO root fetch - processPackages [isolate-proto]: Remove: archive file [/home/abi/fetcher/tmp/isolate_proto-0.4.0.tar.gz]
+[2024-06-02 01:39:16] INFO root fetch - processPackages [isolate-proto]: Remove: archive file [/home/abi/fetcher/tmp/isolate_proto-0.5.0.tar.gz]
+[2024-06-02 01:39:16] INFO root fetch - main [MainThread]: End processing [isolate-proto]: success
+[2024-06-02 01:39:16] INFO root fetch - main [MainThread]: Store serial: [23484734]
