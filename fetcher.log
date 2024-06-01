@@ -1309,3 +1309,15 @@
 [2024-06-02 01:30:29] INFO root fetch - processPackages [youtube-up]: Remove: archive file [/home/abi/fetcher/tmp/youtube_up-0.4.1.tar.gz]
 [2024-06-02 01:30:29] INFO root fetch - main [MainThread]: End processing [youtube-up]: success
 [2024-06-02 01:30:29] INFO root fetch - main [MainThread]: Store serial: [23484697]
+[2024-06-02 01:32:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23484697]
+[2024-06-02 01:32:37] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-02 01:32:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sounderpy
+[2024-06-02 01:32:37] INFO root fetch - processPackages [sounderpy]: New version: [3.0.4.dev3] Old Version: [3.0.4.dev2]
+[2024-06-02 01:32:37] INFO root fetch - processPackages [sounderpy]: Downloading https://files.pythonhosted.org/packages/4b/8f/396eed504e2955a92d01dbb055206aecd4f969ce806c25b4601dcc70f53a/sounderpy-3.0.4.dev2.tar.gz
+[2024-06-02 01:32:38] INFO root fetch - processPackages [sounderpy]: Downloading https://files.pythonhosted.org/packages/51/6a/e3fedd804fc48c80969abc2c7e107e1c83473cf1860ec8d59167de99b0db/sounderpy-3.0.4.dev3.tar.gz
+[2024-06-02 01:32:38] INFO root fetch - processPackages [sounderpy]: executing diffoscope
+[2024-06-02 01:32:38] INFO root fetch - processPackages [sounderpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sounderpy-3.0.4.dev2.tar.gz tmp/sounderpy-3.0.4.dev3.tar.gz --markdown 20240602/s/sounderpy/3.0.4.dev2-3.0.4.dev3/README.md --exclude *.pyd
+[2024-06-02 01:32:39] INFO root fetch - processPackages [sounderpy]: Remove: archive file [/home/abi/fetcher/tmp/sounderpy-3.0.4.dev2.tar.gz]
+[2024-06-02 01:32:39] INFO root fetch - processPackages [sounderpy]: Remove: archive file [/home/abi/fetcher/tmp/sounderpy-3.0.4.dev3.tar.gz]
+[2024-06-02 01:32:39] INFO root fetch - main [MainThread]: End processing [sounderpy]: success
+[2024-06-02 01:32:39] INFO root fetch - main [MainThread]: Store serial: [23484703]
