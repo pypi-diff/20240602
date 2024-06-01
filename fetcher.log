@@ -252,3 +252,24 @@
 [2024-06-02 00:10:00] INFO root fetch - processPackages [pyscf]: Remove: archive file [/home/abi/fetcher/tmp/pyscf-2.6.0.tar.gz]
 [2024-06-02 00:10:00] INFO root fetch - main [MainThread]: End processing [pyscf]: success
 [2024-06-02 00:10:00] INFO root fetch - main [MainThread]: Store serial: [23484078]
+[2024-06-02 00:12:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23484078]
+[2024-06-02 00:12:10] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-02 00:12:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pywa
+[2024-06-02 00:12:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rxnSMILES4AtomEco
+[2024-06-02 00:12:10] INFO root fetch - processPackages [rxnSMILES4AtomEco]: New version: [1.0.5] Old Version: [1.0.4]
+[2024-06-02 00:12:10] INFO root fetch - processPackages [rxnSMILES4AtomEco]: Downloading https://files.pythonhosted.org/packages/02/f8/0abcdbac401baf2600086d95f406d5be02337a86131e4e925f2f81a6bac7/rxnSMILES4AtomEco-1.0.4.tar.gz
+[2024-06-02 00:12:10] INFO root fetch - processPackages [pywa]: New version: [1.9.0] Old Version: [1.8.0]
+[2024-06-02 00:12:10] INFO root fetch - processPackages [pywa]: Downloading https://files.pythonhosted.org/packages/21/d5/82b05ef1fc76827e074a55d0196b129fdfdd86b59778cfc8cef9dcfe5dc0/pywa-1.8.0.tar.gz
+[2024-06-02 00:12:10] INFO root fetch - processPackages [rxnSMILES4AtomEco]: Downloading https://files.pythonhosted.org/packages/d2/95/6860cd4ce9b43fad9628bb058f61da764eaf21ec22120c40f1642e2a5c4c/rxnSMILES4AtomEco-1.0.5.tar.gz
+[2024-06-02 00:12:10] INFO root fetch - processPackages [rxnSMILES4AtomEco]: executing diffoscope
+[2024-06-02 00:12:10] INFO root fetch - processPackages [rxnSMILES4AtomEco]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rxnSMILES4AtomEco-1.0.4.tar.gz tmp/rxnSMILES4AtomEco-1.0.5.tar.gz --markdown 20240602/r/rxnSMILES4AtomEco/1.0.4-1.0.5/README.md --exclude *.pyd
+[2024-06-02 00:12:11] INFO root fetch - processPackages [pywa]: Downloading https://files.pythonhosted.org/packages/e6/e6/4ed5a576d70ef5d33bde9873d10999ce1d852a7682fb8a3ea7b7911ebcb1/pywa-1.9.0.tar.gz
+[2024-06-02 00:12:11] INFO root fetch - processPackages [pywa]: executing diffoscope
+[2024-06-02 00:12:11] INFO root fetch - processPackages [pywa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pywa-1.8.0.tar.gz tmp/pywa-1.9.0.tar.gz --markdown 20240602/p/pywa/1.8.0-1.9.0/README.md --exclude *.pyd
+[2024-06-02 00:12:11] INFO root fetch - processPackages [rxnSMILES4AtomEco]: Remove: archive file [/home/abi/fetcher/tmp/rxnSMILES4AtomEco-1.0.4.tar.gz]
+[2024-06-02 00:12:11] INFO root fetch - processPackages [rxnSMILES4AtomEco]: Remove: archive file [/home/abi/fetcher/tmp/rxnSMILES4AtomEco-1.0.5.tar.gz]
+[2024-06-02 00:12:11] INFO root fetch - main [MainThread]: End processing [rxnSMILES4AtomEco]: success
+[2024-06-02 00:12:11] INFO root fetch - processPackages [pywa]: Remove: archive file [/home/abi/fetcher/tmp/pywa-1.8.0.tar.gz]
+[2024-06-02 00:12:11] INFO root fetch - processPackages [pywa]: Remove: archive file [/home/abi/fetcher/tmp/pywa-1.9.0.tar.gz]
+[2024-06-02 00:12:11] INFO root fetch - main [MainThread]: End processing [pywa]: success
+[2024-06-02 00:12:11] INFO root fetch - main [MainThread]: Store serial: [23484084]
