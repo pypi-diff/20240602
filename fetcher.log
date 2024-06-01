@@ -794,3 +794,39 @@
 [2024-06-02 00:49:18] INFO root fetch - processPackages [sage-conf]: Remove: archive file [/home/abi/fetcher/tmp/sage-conf-9.8rc0.tar.gz]
 [2024-06-02 00:49:18] INFO root fetch - main [MainThread]: End processing [sage-conf]: success
 [2024-06-02 00:49:18] INFO root fetch - main [MainThread]: Store serial: [23484326]
+[2024-06-02 00:51:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23484326]
+[2024-06-02 00:51:27] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-06-02 00:51:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rl-common
+[2024-06-02 00:51:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ergate
+[2024-06-02 00:51:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ourchester
+[2024-06-02 00:51:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: MobileInventoryCLI
+[2024-06-02 00:51:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: hspf-reader
+[2024-06-02 00:51:27] INFO root fetch - processPackages [MobileInventoryCLI]: New version: [0.4.99] Old Version: [0.4.98]
+[2024-06-02 00:51:27] WARNING root fetch - processPackages [ergate]: Skipping, unable to determine old version
+[2024-06-02 00:51:27] INFO root fetch - processPackages [ourchester]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-06-02 00:51:27] INFO root fetch - main [MainThread]: End processing [ergate] error
+[2024-06-02 00:51:27] INFO root fetch - processPackages [MobileInventoryCLI]: Downloading https://files.pythonhosted.org/packages/34/2d/1e50d7f512e3d39590afb4a6c37340af98e5c4eadc77d9de653aab0cb49f/MobileInventoryCLI-0.4.98.tar.gz
+[2024-06-02 00:51:27] WARNING root fetch - processPackages [rl-common]: Skipping, unable to determine old version
+[2024-06-02 00:51:27] INFO root fetch - main [MainThread]: End processing [rl-common] error
+[2024-06-02 00:51:27] INFO root fetch - processPackages [hspf-reader]: New version: [2.0.0] Old Version: [1.1.0]
+[2024-06-02 00:51:27] INFO root fetch - processPackages [ourchester]: Downloading https://files.pythonhosted.org/packages/97/30/7acc72ec04032534c5498b92547fbe88a0a95d0063925f6c299b05f400ec/ourchester-0.1.5.tar.gz
+[2024-06-02 00:51:27] INFO root fetch - processPackages [hspf-reader]: Downloading https://files.pythonhosted.org/packages/bc/73/74ec993d799dac531c1bc0128c65d9ca922c4b5c567a3b51d14cb49a0d72/hspf_reader-1.1.0.tar.gz
+[2024-06-02 00:51:27] INFO root fetch - processPackages [MobileInventoryCLI]: Downloading https://files.pythonhosted.org/packages/44/8c/14cdf7fc3f0b69cae35ba7ee2852fb70e3cab687142869ee3deb104ffc71/MobileInventoryCLI-0.4.99.tar.gz
+[2024-06-02 00:51:27] INFO root fetch - processPackages [MobileInventoryCLI]: executing diffoscope
+[2024-06-02 00:51:27] INFO root fetch - processPackages [MobileInventoryCLI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MobileInventoryCLI-0.4.98.tar.gz tmp/MobileInventoryCLI-0.4.99.tar.gz --markdown 20240602/M/MobileInventoryCLI/0.4.98-0.4.99/README.md --exclude *.pyd
+[2024-06-02 00:51:27] INFO root fetch - processPackages [ourchester]: Downloading https://files.pythonhosted.org/packages/bf/e6/cd0072554816a0a9cd2d10bc29c11ffb8bf1e4e79c49660f09bb15164a4c/ourchester-0.1.6.tar.gz
+[2024-06-02 00:51:27] INFO root fetch - processPackages [ourchester]: executing diffoscope
+[2024-06-02 00:51:27] INFO root fetch - processPackages [ourchester]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ourchester-0.1.5.tar.gz tmp/ourchester-0.1.6.tar.gz --markdown 20240602/o/ourchester/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-06-02 00:51:27] INFO root fetch - processPackages [hspf-reader]: Downloading https://files.pythonhosted.org/packages/80/89/db02bf2ff6cfe5fc79a9c85a9f5248fc4c9314ea3ebdba1d80f07734e0db/hspf_reader-2.0.0.tar.gz
+[2024-06-02 00:51:28] INFO root fetch - processPackages [hspf-reader]: executing diffoscope
+[2024-06-02 00:51:28] INFO root fetch - processPackages [hspf-reader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hspf_reader-1.1.0.tar.gz tmp/hspf_reader-2.0.0.tar.gz --markdown 20240602/h/hspf-reader/1.1.0-2.0.0/README.md --exclude *.pyd
+[2024-06-02 00:51:28] INFO root fetch - processPackages [ourchester]: Remove: archive file [/home/abi/fetcher/tmp/ourchester-0.1.5.tar.gz]
+[2024-06-02 00:51:28] INFO root fetch - processPackages [ourchester]: Remove: archive file [/home/abi/fetcher/tmp/ourchester-0.1.6.tar.gz]
+[2024-06-02 00:51:28] INFO root fetch - main [MainThread]: End processing [ourchester]: success
+[2024-06-02 00:51:28] INFO root fetch - processPackages [MobileInventoryCLI]: Remove: archive file [/home/abi/fetcher/tmp/MobileInventoryCLI-0.4.98.tar.gz]
+[2024-06-02 00:51:28] INFO root fetch - processPackages [MobileInventoryCLI]: Remove: archive file [/home/abi/fetcher/tmp/MobileInventoryCLI-0.4.99.tar.gz]
+[2024-06-02 00:51:28] INFO root fetch - main [MainThread]: End processing [MobileInventoryCLI]: success
+[2024-06-02 00:51:28] INFO root fetch - processPackages [hspf-reader]: Remove: archive file [/home/abi/fetcher/tmp/hspf_reader-1.1.0.tar.gz]
+[2024-06-02 00:51:28] INFO root fetch - processPackages [hspf-reader]: Remove: archive file [/home/abi/fetcher/tmp/hspf_reader-2.0.0.tar.gz]
+[2024-06-02 00:51:28] INFO root fetch - main [MainThread]: End processing [hspf-reader]: success
+[2024-06-02 00:51:28] INFO root fetch - main [MainThread]: Store serial: [23484343]
