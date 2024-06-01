@@ -1255,3 +1255,15 @@
 [2024-06-02 01:24:00] INFO root fetch - processPackages [mmdiary]: Remove: archive file [/home/abi/fetcher/tmp/mmdiary-0.4.0.tar.gz]
 [2024-06-02 01:24:00] INFO root fetch - main [MainThread]: End processing [mmdiary]: success
 [2024-06-02 01:24:00] INFO root fetch - main [MainThread]: Store serial: [23484683]
+[2024-06-02 01:26:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23484683]
+[2024-06-02 01:26:08] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-02 01:26:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: almax-common
+[2024-06-02 01:26:08] INFO root fetch - processPackages [almax-common]: New version: [1.0.5.dev20240601230451] Old Version: [1.0.5.dev20240601225905]
+[2024-06-02 01:26:08] INFO root fetch - processPackages [almax-common]: Downloading https://files.pythonhosted.org/packages/91/01/86f63de5138cffe633a1c6b4df4b7edcd30ea868bb9ced941052b5d8df22/almax_common-1.0.5.dev20240601225905.tar.gz
+[2024-06-02 01:26:09] INFO root fetch - processPackages [almax-common]: Downloading https://files.pythonhosted.org/packages/ff/f0/0dc91e6399431e47b1cf40b91af4b310f27107d964539395a94b0311deef/almax_common-1.0.5.dev20240601230451.tar.gz
+[2024-06-02 01:26:09] INFO root fetch - processPackages [almax-common]: executing diffoscope
+[2024-06-02 01:26:09] INFO root fetch - processPackages [almax-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/almax_common-1.0.5.dev20240601225905.tar.gz tmp/almax_common-1.0.5.dev20240601230451.tar.gz --markdown 20240602/a/almax-common/1.0.5.dev20240601225905-1.0.5.dev20240601230451/README.md --exclude *.pyd
+[2024-06-02 01:26:09] INFO root fetch - processPackages [almax-common]: Remove: archive file [/home/abi/fetcher/tmp/almax_common-1.0.5.dev20240601225905.tar.gz]
+[2024-06-02 01:26:09] INFO root fetch - processPackages [almax-common]: Remove: archive file [/home/abi/fetcher/tmp/almax_common-1.0.5.dev20240601230451.tar.gz]
+[2024-06-02 01:26:09] INFO root fetch - main [MainThread]: End processing [almax-common]: success
+[2024-06-02 01:26:09] INFO root fetch - main [MainThread]: Store serial: [23484686]
