@@ -410,3 +410,24 @@
 [2024-06-02 00:27:20] INFO root fetch - processPackages [gitlab-projects-issues]: Remove: archive file [/home/abi/fetcher/tmp/gitlab_projects_issues-1.0.2.tar.gz]
 [2024-06-02 00:27:20] INFO root fetch - main [MainThread]: End processing [gitlab-projects-issues]: success
 [2024-06-02 00:27:20] INFO root fetch - main [MainThread]: Store serial: [23484134]
+[2024-06-02 00:29:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23484134]
+[2024-06-02 00:29:30] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-02 00:29:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cdo-sdk-python
+[2024-06-02 00:29:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Starco
+[2024-06-02 00:29:30] INFO root fetch - processPackages [cdo-sdk-python]: New version: [1.0.99] Old Version: [1.0.98]
+[2024-06-02 00:29:30] INFO root fetch - processPackages [Starco]: New version: [3.3.2] Old Version: [3.3.1]
+[2024-06-02 00:29:30] INFO root fetch - processPackages [cdo-sdk-python]: Downloading https://files.pythonhosted.org/packages/aa/54/d9c631d5702693a0921bbc1c50cad785f8fa75671cabdd662546a416a6b9/cdo-sdk-python-1.0.98.tar.gz
+[2024-06-02 00:29:30] INFO root fetch - processPackages [Starco]: Downloading https://files.pythonhosted.org/packages/74/9f/f58c1893a11907e817ddb44ef5f13ae3ede691c937a9a74de2eae98cbb9f/Starco-3.3.1.tar.gz
+[2024-06-02 00:29:31] INFO root fetch - processPackages [cdo-sdk-python]: Downloading https://files.pythonhosted.org/packages/9b/76/7267c3f3ac308bacc9e809ed54663a42556e896ff4e2d73a469a15d3556a/cdo-sdk-python-1.0.99.tar.gz
+[2024-06-02 00:29:31] INFO root fetch - processPackages [cdo-sdk-python]: executing diffoscope
+[2024-06-02 00:29:31] INFO root fetch - processPackages [cdo-sdk-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdo-sdk-python-1.0.98.tar.gz tmp/cdo-sdk-python-1.0.99.tar.gz --markdown 20240602/c/cdo-sdk-python/1.0.98-1.0.99/README.md --exclude *.pyd
+[2024-06-02 00:29:31] INFO root fetch - processPackages [Starco]: Downloading https://files.pythonhosted.org/packages/04/fb/545c230d310f6dc6922ad765672456d84c1bb902b34cb1c44f5d3c617008/Starco-3.3.2.tar.gz
+[2024-06-02 00:29:31] INFO root fetch - processPackages [Starco]: executing diffoscope
+[2024-06-02 00:29:31] INFO root fetch - processPackages [Starco]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Starco-3.3.1.tar.gz tmp/Starco-3.3.2.tar.gz --markdown 20240602/S/Starco/3.3.1-3.3.2/README.md --exclude *.pyd
+[2024-06-02 00:29:32] INFO root fetch - processPackages [Starco]: Remove: archive file [/home/abi/fetcher/tmp/Starco-3.3.1.tar.gz]
+[2024-06-02 00:29:32] INFO root fetch - processPackages [Starco]: Remove: archive file [/home/abi/fetcher/tmp/Starco-3.3.2.tar.gz]
+[2024-06-02 00:29:32] INFO root fetch - main [MainThread]: End processing [Starco]: success
+[2024-06-02 00:29:32] INFO root fetch - processPackages [cdo-sdk-python]: Remove: archive file [/home/abi/fetcher/tmp/cdo-sdk-python-1.0.98.tar.gz]
+[2024-06-02 00:29:32] INFO root fetch - processPackages [cdo-sdk-python]: Remove: archive file [/home/abi/fetcher/tmp/cdo-sdk-python-1.0.99.tar.gz]
+[2024-06-02 00:29:32] INFO root fetch - main [MainThread]: End processing [cdo-sdk-python]: success
+[2024-06-02 00:29:32] INFO root fetch - main [MainThread]: Store serial: [23484139]
