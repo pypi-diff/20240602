@@ -918,3 +918,33 @@
 [2024-06-02 00:58:02] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.45.20240601.425.tar.gz]
 [2024-06-02 00:58:02] INFO root fetch - main [MainThread]: End processing [pkscreener]: success
 [2024-06-02 00:58:02] INFO root fetch - main [MainThread]: Store serial: [23484451]
+[2024-06-02 01:00:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23484451]
+[2024-06-02 01:00:10] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-02 01:00:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: SplatStats
+[2024-06-02 01:00:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aixhello
+[2024-06-02 01:00:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: almax-common
+[2024-06-02 01:00:10] INFO root fetch - processPackages [aixhello]: New version: [3.0] Old Version: [2.7]
+[2024-06-02 01:00:10] INFO root fetch - processPackages [SplatStats]: New version: [4.2.2] Old Version: [4.2.1]
+[2024-06-02 01:00:10] INFO root fetch - processPackages [almax-common]: New version: [1.0.5.dev20240601224724] Old Version: [1.0.5.dev20240601224039]
+[2024-06-02 01:00:10] INFO root fetch - processPackages [aixhello]: Downloading https://files.pythonhosted.org/packages/e0/73/9aa86345f495876d930ca0d44ba1b79f30450792944f37235a5de3f07423/aixhello-2.7.tar.gz
+[2024-06-02 01:00:11] INFO root fetch - processPackages [SplatStats]: Downloading https://files.pythonhosted.org/packages/bc/18/d8873100a70aebdf8a3cf8cee63174f2b0ada2006c79e27e9532e40c08a6/SplatStats-4.2.1.tar.gz
+[2024-06-02 01:00:11] INFO root fetch - processPackages [almax-common]: Downloading https://files.pythonhosted.org/packages/76/8b/dfe36a9c865d262af88f4b1ea8e589aaf26ea38ddc348601510690419c51/almax_common-1.0.5.dev20240601224039.tar.gz
+[2024-06-02 01:00:11] INFO root fetch - processPackages [aixhello]: Downloading https://files.pythonhosted.org/packages/56/25/02d8e65834bbfde2424f4914971a4d587aa56026b1403f22f40759197390/aixhello-3.0.tar.gz
+[2024-06-02 01:00:11] INFO root fetch - processPackages [SplatStats]: Downloading https://files.pythonhosted.org/packages/54/12/fd74e5f6d5cfec4207b39b49d20ef49676d2a99e513a26e6cb8c25e2eefd/SplatStats-4.2.2.tar.gz
+[2024-06-02 01:00:11] INFO root fetch - processPackages [almax-common]: Downloading https://files.pythonhosted.org/packages/63/3f/da294d661a3784debe606ec7766230535485bddef86ac3fb3e91d6a16f3c/almax_common-1.0.5.dev20240601224724.tar.gz
+[2024-06-02 01:00:11] INFO root fetch - processPackages [aixhello]: executing diffoscope
+[2024-06-02 01:00:11] INFO root fetch - processPackages [aixhello]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aixhello-2.7.tar.gz tmp/aixhello-3.0.tar.gz --markdown 20240602/a/aixhello/2.7-3.0/README.md --exclude *.pyd
+[2024-06-02 01:00:11] INFO root fetch - processPackages [SplatStats]: executing diffoscope
+[2024-06-02 01:00:11] INFO root fetch - processPackages [SplatStats]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SplatStats-4.2.1.tar.gz tmp/SplatStats-4.2.2.tar.gz --markdown 20240602/S/SplatStats/4.2.1-4.2.2/README.md --exclude *.pyd
+[2024-06-02 01:00:11] INFO root fetch - processPackages [almax-common]: executing diffoscope
+[2024-06-02 01:00:11] INFO root fetch - processPackages [almax-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/almax_common-1.0.5.dev20240601224039.tar.gz tmp/almax_common-1.0.5.dev20240601224724.tar.gz --markdown 20240602/a/almax-common/1.0.5.dev20240601224039-1.0.5.dev20240601224724/README.md --exclude *.pyd
+[2024-06-02 01:00:12] INFO root fetch - processPackages [almax-common]: Remove: archive file [/home/abi/fetcher/tmp/almax_common-1.0.5.dev20240601224039.tar.gz]
+[2024-06-02 01:00:12] INFO root fetch - processPackages [almax-common]: Remove: archive file [/home/abi/fetcher/tmp/almax_common-1.0.5.dev20240601224724.tar.gz]
+[2024-06-02 01:00:12] INFO root fetch - main [MainThread]: End processing [almax-common]: success
+[2024-06-02 01:00:12] INFO root fetch - processPackages [aixhello]: Remove: archive file [/home/abi/fetcher/tmp/aixhello-2.7.tar.gz]
+[2024-06-02 01:00:12] INFO root fetch - processPackages [aixhello]: Remove: archive file [/home/abi/fetcher/tmp/aixhello-3.0.tar.gz]
+[2024-06-02 01:00:12] INFO root fetch - main [MainThread]: End processing [aixhello]: success
+[2024-06-02 01:00:12] INFO root fetch - processPackages [SplatStats]: Remove: archive file [/home/abi/fetcher/tmp/SplatStats-4.2.1.tar.gz]
+[2024-06-02 01:00:12] INFO root fetch - processPackages [SplatStats]: Remove: archive file [/home/abi/fetcher/tmp/SplatStats-4.2.2.tar.gz]
+[2024-06-02 01:00:12] INFO root fetch - main [MainThread]: End processing [SplatStats]: success
+[2024-06-02 01:00:12] INFO root fetch - main [MainThread]: Store serial: [23484461]
