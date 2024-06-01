@@ -294,3 +294,18 @@
 [2024-06-02 00:14:21] INFO root fetch - processPackages [Tooldelta]: Remove: archive file [/home/abi/fetcher/tmp/tooldelta-0.7.0.tar.gz]
 [2024-06-02 00:14:21] INFO root fetch - main [MainThread]: End processing [Tooldelta]: success
 [2024-06-02 00:14:21] INFO root fetch - main [MainThread]: Store serial: [23484090]
+[2024-06-02 00:16:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23484090]
+[2024-06-02 00:16:29] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-02 00:16:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ThreeDTool
+[2024-06-02 00:16:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: FanFicFare
+[2024-06-02 00:16:29] WARNING root fetch - processPackages [ThreeDTool]: Skipping, unable to determine old version
+[2024-06-02 00:16:29] INFO root fetch - main [MainThread]: End processing [ThreeDTool] error
+[2024-06-02 00:16:29] INFO root fetch - processPackages [FanFicFare]: New version: [4.9.0] Old Version: [4.8.0]
+[2024-06-02 00:16:29] INFO root fetch - processPackages [FanFicFare]: Downloading https://files.pythonhosted.org/packages/65/3c/613804b633302b19386d97264f6bf5dbe92d582179d73817ac7f423da8ee/FanFicFare-4.8.0.tar.gz
+[2024-06-02 00:16:30] INFO root fetch - processPackages [FanFicFare]: Downloading https://files.pythonhosted.org/packages/90/9e/67fd90f648717f76346e4199615d175d1315a0901c081b90a79401b8a818/FanFicFare-4.9.0.tar.gz
+[2024-06-02 00:16:30] INFO root fetch - processPackages [FanFicFare]: executing diffoscope
+[2024-06-02 00:16:30] INFO root fetch - processPackages [FanFicFare]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/FanFicFare-4.8.0.tar.gz tmp/FanFicFare-4.9.0.tar.gz --markdown 20240602/F/FanFicFare/4.8.0-4.9.0/README.md --exclude *.pyd
+[2024-06-02 00:16:31] INFO root fetch - processPackages [FanFicFare]: Remove: archive file [/home/abi/fetcher/tmp/FanFicFare-4.8.0.tar.gz]
+[2024-06-02 00:16:31] INFO root fetch - processPackages [FanFicFare]: Remove: archive file [/home/abi/fetcher/tmp/FanFicFare-4.9.0.tar.gz]
+[2024-06-02 00:16:31] INFO root fetch - main [MainThread]: End processing [FanFicFare]: success
+[2024-06-02 00:16:31] INFO root fetch - main [MainThread]: Store serial: [23484099]
