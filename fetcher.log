@@ -1180,3 +1180,24 @@
 [2024-06-02 01:17:32] INFO root fetch - processPackages [ubicoders-vrobots]: Remove: archive file [/home/abi/fetcher/tmp/ubicoders-vrobots-0.2.8.tar.gz]
 [2024-06-02 01:17:32] INFO root fetch - main [MainThread]: End processing [ubicoders-vrobots]: success
 [2024-06-02 01:17:32] INFO root fetch - main [MainThread]: Store serial: [23484650]
+[2024-06-02 01:19:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23484650]
+[2024-06-02 01:19:40] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-02 01:19:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: MobileInventoryCLI
+[2024-06-02 01:19:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sounderpy
+[2024-06-02 01:19:40] INFO root fetch - processPackages [MobileInventoryCLI]: New version: [0.4.99] Old Version: [0.4.98]
+[2024-06-02 01:19:41] INFO root fetch - processPackages [MobileInventoryCLI]: Downloading https://files.pythonhosted.org/packages/34/2d/1e50d7f512e3d39590afb4a6c37340af98e5c4eadc77d9de653aab0cb49f/MobileInventoryCLI-0.4.98.tar.gz
+[2024-06-02 01:19:41] INFO root fetch - processPackages [sounderpy]: New version: [3.0.4.dev3] Old Version: [3.0.4.dev2]
+[2024-06-02 01:19:41] INFO root fetch - processPackages [sounderpy]: Downloading https://files.pythonhosted.org/packages/4b/8f/396eed504e2955a92d01dbb055206aecd4f969ce806c25b4601dcc70f53a/sounderpy-3.0.4.dev2.tar.gz
+[2024-06-02 01:19:41] INFO root fetch - processPackages [MobileInventoryCLI]: Downloading https://files.pythonhosted.org/packages/44/8c/14cdf7fc3f0b69cae35ba7ee2852fb70e3cab687142869ee3deb104ffc71/MobileInventoryCLI-0.4.99.tar.gz
+[2024-06-02 01:19:41] INFO root fetch - processPackages [MobileInventoryCLI]: executing diffoscope
+[2024-06-02 01:19:41] INFO root fetch - processPackages [MobileInventoryCLI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MobileInventoryCLI-0.4.98.tar.gz tmp/MobileInventoryCLI-0.4.99.tar.gz --markdown 20240602/M/MobileInventoryCLI/0.4.98-0.4.99/README.md --exclude *.pyd
+[2024-06-02 01:19:41] INFO root fetch - processPackages [sounderpy]: Downloading https://files.pythonhosted.org/packages/51/6a/e3fedd804fc48c80969abc2c7e107e1c83473cf1860ec8d59167de99b0db/sounderpy-3.0.4.dev3.tar.gz
+[2024-06-02 01:19:41] INFO root fetch - processPackages [sounderpy]: executing diffoscope
+[2024-06-02 01:19:41] INFO root fetch - processPackages [sounderpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sounderpy-3.0.4.dev2.tar.gz tmp/sounderpy-3.0.4.dev3.tar.gz --markdown 20240602/s/sounderpy/3.0.4.dev2-3.0.4.dev3/README.md --exclude *.pyd
+[2024-06-02 01:19:42] INFO root fetch - processPackages [MobileInventoryCLI]: Remove: archive file [/home/abi/fetcher/tmp/MobileInventoryCLI-0.4.98.tar.gz]
+[2024-06-02 01:19:42] INFO root fetch - processPackages [MobileInventoryCLI]: Remove: archive file [/home/abi/fetcher/tmp/MobileInventoryCLI-0.4.99.tar.gz]
+[2024-06-02 01:19:42] INFO root fetch - main [MainThread]: End processing [MobileInventoryCLI]: success
+[2024-06-02 01:19:42] INFO root fetch - processPackages [sounderpy]: Remove: archive file [/home/abi/fetcher/tmp/sounderpy-3.0.4.dev2.tar.gz]
+[2024-06-02 01:19:42] INFO root fetch - processPackages [sounderpy]: Remove: archive file [/home/abi/fetcher/tmp/sounderpy-3.0.4.dev3.tar.gz]
+[2024-06-02 01:19:42] INFO root fetch - main [MainThread]: End processing [sounderpy]: success
+[2024-06-02 01:19:42] INFO root fetch - main [MainThread]: Store serial: [23484655]
