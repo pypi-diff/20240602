@@ -890,3 +890,31 @@
 [2024-06-02 00:55:51] INFO root fetch - processPackages [zeroize]: Remove: archive file [/home/abi/fetcher/tmp/zeroize-0.1.1-pp39-pypy39_pp73-manylinux_2_17_armv7l.manylinux2014_armv7l.whl.zip]
 [2024-06-02 00:55:51] INFO root fetch - main [MainThread]: End processing [zeroize]: success
 [2024-06-02 00:55:51] INFO root fetch - main [MainThread]: Store serial: [23484378]
+[2024-06-02 00:57:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23484378]
+[2024-06-02 00:57:59] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-02 00:57:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mktdata
+[2024-06-02 00:57:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mktdata
+[2024-06-02 00:57:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pkscreener
+[2024-06-02 00:58:00] INFO root fetch - processPackages [mktdata]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-06-02 00:58:00] INFO root fetch - processPackages [mktdata]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-06-02 00:58:00] INFO root fetch - processPackages [mktdata]: Downloading https://files.pythonhosted.org/packages/2b/12/3d3caba50bcb67874839d7c7e275e36bee8bf4bc64d1e5e2a1f17f2af53a/mktdata-0.0.8.tar.gz
+[2024-06-02 00:58:00] INFO root fetch - processPackages [mktdata]: Downloading https://files.pythonhosted.org/packages/2b/12/3d3caba50bcb67874839d7c7e275e36bee8bf4bc64d1e5e2a1f17f2af53a/mktdata-0.0.8.tar.gz
+[2024-06-02 00:58:00] INFO root fetch - processPackages [pkscreener]: New version: [0.45.20240601.425] Old Version: [0.45.20240601.424]
+[2024-06-02 00:58:00] INFO root fetch - processPackages [pkscreener]: Downloading https://files.pythonhosted.org/packages/03/5c/3107eecf7d343ac35e93afeff8c6570bf0e51da6be754a77d8f1be648eb8/pkscreener-0.45.20240601.424.tar.gz
+[2024-06-02 00:58:00] INFO root fetch - processPackages [mktdata]: Downloading https://files.pythonhosted.org/packages/cf/6b/861d8b83850dfb8d458b5bc9779b92413cbb2c64b36b427201dd3b4513da/mktdata-0.0.9.tar.gz
+[2024-06-02 00:58:00] INFO root fetch - processPackages [mktdata]: Downloading https://files.pythonhosted.org/packages/cf/6b/861d8b83850dfb8d458b5bc9779b92413cbb2c64b36b427201dd3b4513da/mktdata-0.0.9.tar.gz
+[2024-06-02 00:58:00] INFO root fetch - processPackages [mktdata]: executing diffoscope
+[2024-06-02 00:58:00] INFO root fetch - processPackages [mktdata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mktdata-0.0.8.tar.gz tmp/mktdata-0.0.9.tar.gz --markdown 20240602/m/mktdata/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-06-02 00:58:00] INFO root fetch - processPackages [mktdata]: executing diffoscope
+[2024-06-02 00:58:00] INFO root fetch - processPackages [mktdata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mktdata-0.0.8.tar.gz tmp/mktdata-0.0.9.tar.gz --markdown 20240602/m/mktdata/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-06-02 00:58:00] INFO root fetch - processPackages [pkscreener]: Downloading https://files.pythonhosted.org/packages/26/6c/ba79b53fc64fb054b4a40bf9bf37b45ef37130efbfdd3495b6ded8246c3e/pkscreener-0.45.20240601.425.tar.gz
+[2024-06-02 00:58:01] INFO root fetch - processPackages [pkscreener]: executing diffoscope
+[2024-06-02 00:58:01] INFO root fetch - processPackages [pkscreener]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pkscreener-0.45.20240601.424.tar.gz tmp/pkscreener-0.45.20240601.425.tar.gz --markdown 20240602/p/pkscreener/0.45.20240601.424-0.45.20240601.425/README.md --exclude *.pyd
+[2024-06-02 00:58:01] INFO root fetch - processPackages [mktdata]: Remove: archive file [/home/abi/fetcher/tmp/mktdata-0.0.8.tar.gz]
+[2024-06-02 00:58:01] INFO root fetch - processPackages [mktdata]: Remove: archive file [/home/abi/fetcher/tmp/mktdata-0.0.9.tar.gz]
+[2024-06-02 00:58:01] INFO root fetch - main [MainThread]: End processing [mktdata]: success
+[2024-06-02 00:58:01] INFO root fetch - main [MainThread]: End processing [mktdata]: success
+[2024-06-02 00:58:02] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.45.20240601.424.tar.gz]
+[2024-06-02 00:58:02] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.45.20240601.425.tar.gz]
+[2024-06-02 00:58:02] INFO root fetch - main [MainThread]: End processing [pkscreener]: success
+[2024-06-02 00:58:02] INFO root fetch - main [MainThread]: Store serial: [23484451]
