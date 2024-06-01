@@ -1107,3 +1107,31 @@
 [2024-06-02 01:11:01] INFO root fetch - processPackages [isolate]: Remove: archive file [/home/abi/fetcher/tmp/isolate-0.9.3.tar.gz]
 [2024-06-02 01:11:01] INFO root fetch - main [MainThread]: End processing [isolate]: success
 [2024-06-02 01:11:01] INFO root fetch - main [MainThread]: Store serial: [23484625]
+[2024-06-02 01:13:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23484625]
+[2024-06-02 01:13:11] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-02 01:13:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: c2cwsgiutils
+[2024-06-02 01:13:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: c2cwsgiutils
+[2024-06-02 01:13:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyiwe
+[2024-06-02 01:13:11] INFO root fetch - processPackages [pyiwe]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-06-02 01:13:11] INFO root fetch - processPackages [c2cwsgiutils]: New version: [6.1.0.dev99] Old Version: [6.1.0.dev97]
+[2024-06-02 01:13:11] INFO root fetch - processPackages [c2cwsgiutils]: New version: [6.1.0.dev99] Old Version: [6.1.0.dev97]
+[2024-06-02 01:13:11] INFO root fetch - processPackages [c2cwsgiutils]: Downloading https://files.pythonhosted.org/packages/70/82/1062250c5f8b684273f1f576ab49863eb71b99aedcf0e638b7d18af727dc/c2cwsgiutils-6.1.0.dev97.tar.gz
+[2024-06-02 01:13:11] INFO root fetch - processPackages [c2cwsgiutils]: Downloading https://files.pythonhosted.org/packages/70/82/1062250c5f8b684273f1f576ab49863eb71b99aedcf0e638b7d18af727dc/c2cwsgiutils-6.1.0.dev97.tar.gz
+[2024-06-02 01:13:11] INFO root fetch - processPackages [pyiwe]: Downloading https://files.pythonhosted.org/packages/a7/a9/8c5368e046e5a3871c3713a998d495d8d7bb5dfa5f20abfdc7db02e93a1b/pyiwe-0.0.6-py3-none-any.whl
+[2024-06-02 01:13:11] INFO root fetch - processPackages [c2cwsgiutils]: Downloading https://files.pythonhosted.org/packages/ab/62/7a161c456f1828f37b18431d8f5cf1bbda9dfe8ef509b1c94d8dad7c8da1/c2cwsgiutils-6.1.0.dev99.tar.gz
+[2024-06-02 01:13:11] INFO root fetch - processPackages [c2cwsgiutils]: Downloading https://files.pythonhosted.org/packages/ab/62/7a161c456f1828f37b18431d8f5cf1bbda9dfe8ef509b1c94d8dad7c8da1/c2cwsgiutils-6.1.0.dev99.tar.gz
+[2024-06-02 01:13:11] INFO root fetch - processPackages [c2cwsgiutils]: executing diffoscope
+[2024-06-02 01:13:11] INFO root fetch - processPackages [c2cwsgiutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/c2cwsgiutils-6.1.0.dev97.tar.gz tmp/c2cwsgiutils-6.1.0.dev99.tar.gz --markdown 20240602/c/c2cwsgiutils/6.1.0.dev97-6.1.0.dev99/README.md --exclude *.pyd
+[2024-06-02 01:13:11] INFO root fetch - processPackages [pyiwe]: Downloading https://files.pythonhosted.org/packages/82/b4/897b24d46dafb1331a40c09dd25f674ef2ca39ee0e37c9f899c43eaeeb80/pyiwe-0.0.7-py3-none-any.whl
+[2024-06-02 01:13:11] INFO root fetch - processPackages [c2cwsgiutils]: executing diffoscope
+[2024-06-02 01:13:11] INFO root fetch - processPackages [c2cwsgiutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/c2cwsgiutils-6.1.0.dev97.tar.gz tmp/c2cwsgiutils-6.1.0.dev99.tar.gz --markdown 20240602/c/c2cwsgiutils/6.1.0.dev97-6.1.0.dev99/README.md --exclude *.pyd
+[2024-06-02 01:13:12] INFO root fetch - processPackages [pyiwe]: executing diffoscope
+[2024-06-02 01:13:12] INFO root fetch - processPackages [pyiwe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyiwe-0.0.6-py3-none-any.whl.zip tmp/pyiwe-0.0.7-py3-none-any.whl.zip --markdown 20240602/p/pyiwe/0.0.6-0.0.7/README.md --exclude *.pyd
+[2024-06-02 01:13:12] INFO root fetch - processPackages [c2cwsgiutils]: Remove: archive file [/home/abi/fetcher/tmp/c2cwsgiutils-6.1.0.dev97.tar.gz]
+[2024-06-02 01:13:12] INFO root fetch - processPackages [c2cwsgiutils]: Remove: archive file [/home/abi/fetcher/tmp/c2cwsgiutils-6.1.0.dev99.tar.gz]
+[2024-06-02 01:13:12] INFO root fetch - main [MainThread]: End processing [c2cwsgiutils]: success
+[2024-06-02 01:13:12] INFO root fetch - processPackages [pyiwe]: Remove: archive file [/home/abi/fetcher/tmp/pyiwe-0.0.6-py3-none-any.whl.zip]
+[2024-06-02 01:13:12] INFO root fetch - processPackages [pyiwe]: Remove: archive file [/home/abi/fetcher/tmp/pyiwe-0.0.7-py3-none-any.whl.zip]
+[2024-06-02 01:13:12] INFO root fetch - main [MainThread]: End processing [pyiwe]: success
+[2024-06-02 01:13:12] INFO root fetch - main [MainThread]: End processing [c2cwsgiutils]: success
+[2024-06-02 01:13:12] INFO root fetch - main [MainThread]: Store serial: [23484633]
