@@ -494,3 +494,35 @@
 [2024-06-02 00:36:02] INFO root fetch - processPackages [aixhello]: Remove: archive file [/home/abi/fetcher/tmp/aixhello-2.6.tar.gz]
 [2024-06-02 00:36:02] INFO root fetch - main [MainThread]: End processing [aixhello]: success
 [2024-06-02 00:36:02] INFO root fetch - main [MainThread]: Store serial: [23484161]
+[2024-06-02 00:38:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23484161]
+[2024-06-02 00:38:12] INFO root fetch - main [MainThread]: No changed packages found
+[2024-06-02 00:40:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23484161]
+[2024-06-02 00:40:17] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-02 00:40:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aiocloudweather
+[2024-06-02 00:40:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: poetry-plugin-dynamic-override-sources
+[2024-06-02 00:40:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: zprp-ffmpeg
+[2024-06-02 00:40:18] INFO root fetch - processPackages [zprp-ffmpeg]: New version: [2.1.1] Old Version: [2.1.0]
+[2024-06-02 00:40:18] INFO root fetch - processPackages [aiocloudweather]: New version: [2024.6.2] Old Version: [2024.6.1]
+[2024-06-02 00:40:18] INFO root fetch - processPackages [poetry-plugin-dynamic-override-sources]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-06-02 00:40:18] INFO root fetch - processPackages [aiocloudweather]: Downloading https://files.pythonhosted.org/packages/11/b6/bfb1dd4679cdaee1dcd8eb747eb9d61b4bba6b6807caa750da6932c97a30/aiocloudweather-2024.6.1.tar.gz
+[2024-06-02 00:40:18] INFO root fetch - processPackages [poetry-plugin-dynamic-override-sources]: Downloading https://files.pythonhosted.org/packages/2d/5e/b87e553243bf44c6e701840dbccc7ca0ef32284f7081f0ef8006fc4cd945/poetry_plugin_dynamic_override_sources-0.0.2.tar.gz
+[2024-06-02 00:40:18] INFO root fetch - processPackages [zprp-ffmpeg]: Downloading https://files.pythonhosted.org/packages/09/54/f133e8c64c8c9d983fd1f970be843b8600e315d9a78d2b9f3b4d433e690d/zprp_ffmpeg-2.1.0.tar.gz
+[2024-06-02 00:40:18] INFO root fetch - processPackages [aiocloudweather]: Downloading https://files.pythonhosted.org/packages/91/d6/eb8746a3c50d480d748cb05fd6140282ffda6c497e55048b9d71fb1627dd/aiocloudweather-2024.6.2.tar.gz
+[2024-06-02 00:40:18] INFO root fetch - processPackages [poetry-plugin-dynamic-override-sources]: Downloading https://files.pythonhosted.org/packages/67/c6/9cf5530b74a58bbfd036e6f3e2cb59157729e12a7001868ea77d5eeb05cb/poetry_plugin_dynamic_override_sources-0.0.3.tar.gz
+[2024-06-02 00:40:18] INFO root fetch - processPackages [zprp-ffmpeg]: Downloading https://files.pythonhosted.org/packages/af/3a/31121fd3ee78c2de12c78eeb55305e8f7d34ee47bfcda584f094f5b8cc9e/zprp_ffmpeg-2.1.1.tar.gz
+[2024-06-02 00:40:18] INFO root fetch - processPackages [aiocloudweather]: executing diffoscope
+[2024-06-02 00:40:18] INFO root fetch - processPackages [aiocloudweather]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiocloudweather-2024.6.1.tar.gz tmp/aiocloudweather-2024.6.2.tar.gz --markdown 20240602/a/aiocloudweather/2024.6.1-2024.6.2/README.md --exclude *.pyd
+[2024-06-02 00:40:18] INFO root fetch - processPackages [poetry-plugin-dynamic-override-sources]: executing diffoscope
+[2024-06-02 00:40:18] INFO root fetch - processPackages [poetry-plugin-dynamic-override-sources]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/poetry_plugin_dynamic_override_sources-0.0.2.tar.gz tmp/poetry_plugin_dynamic_override_sources-0.0.3.tar.gz --markdown 20240602/p/poetry-plugin-dynamic-override-sources/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-06-02 00:40:18] INFO root fetch - processPackages [zprp-ffmpeg]: executing diffoscope
+[2024-06-02 00:40:18] INFO root fetch - processPackages [zprp-ffmpeg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zprp_ffmpeg-2.1.0.tar.gz tmp/zprp_ffmpeg-2.1.1.tar.gz --markdown 20240602/z/zprp-ffmpeg/2.1.0-2.1.1/README.md --exclude *.pyd
+[2024-06-02 00:40:19] INFO root fetch - processPackages [poetry-plugin-dynamic-override-sources]: Remove: archive file [/home/abi/fetcher/tmp/poetry_plugin_dynamic_override_sources-0.0.2.tar.gz]
+[2024-06-02 00:40:19] INFO root fetch - processPackages [poetry-plugin-dynamic-override-sources]: Remove: archive file [/home/abi/fetcher/tmp/poetry_plugin_dynamic_override_sources-0.0.3.tar.gz]
+[2024-06-02 00:40:19] INFO root fetch - main [MainThread]: End processing [poetry-plugin-dynamic-override-sources]: success
+[2024-06-02 00:40:19] INFO root fetch - processPackages [aiocloudweather]: Remove: archive file [/home/abi/fetcher/tmp/aiocloudweather-2024.6.1.tar.gz]
+[2024-06-02 00:40:19] INFO root fetch - processPackages [aiocloudweather]: Remove: archive file [/home/abi/fetcher/tmp/aiocloudweather-2024.6.2.tar.gz]
+[2024-06-02 00:40:19] INFO root fetch - main [MainThread]: End processing [aiocloudweather]: success
+[2024-06-02 00:40:19] INFO root fetch - processPackages [zprp-ffmpeg]: Remove: archive file [/home/abi/fetcher/tmp/zprp_ffmpeg-2.1.0.tar.gz]
+[2024-06-02 00:40:19] INFO root fetch - processPackages [zprp-ffmpeg]: Remove: archive file [/home/abi/fetcher/tmp/zprp_ffmpeg-2.1.1.tar.gz]
+[2024-06-02 00:40:19] INFO root fetch - main [MainThread]: End processing [zprp-ffmpeg]: success
+[2024-06-02 00:40:19] INFO root fetch - main [MainThread]: Store serial: [23484169]
