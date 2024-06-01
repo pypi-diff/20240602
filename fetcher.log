@@ -591,3 +591,36 @@
 [2024-06-02 00:44:48] INFO root fetch - processPackages [fudstop]: Remove: archive file [/home/abi/fetcher/tmp/fudstop-2.8.9.tar.gz]
 [2024-06-02 00:44:48] INFO root fetch - main [MainThread]: End processing [fudstop]: success
 [2024-06-02 00:44:48] INFO root fetch - main [MainThread]: Store serial: [23484251]
+[2024-06-02 00:46:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23484251]
+[2024-06-02 00:46:57] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-02 00:46:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: poetry-plugin-dynamic-override-sources
+[2024-06-02 00:46:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mktdata
+[2024-06-02 00:46:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aiomql
+[2024-06-02 00:46:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bussinwebx-get
+[2024-06-02 00:46:57] INFO root fetch - processPackages [poetry-plugin-dynamic-override-sources]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-06-02 00:46:57] WARNING root fetch - processPackages [bussinwebx-get]: Skipping, unable to determine old version
+[2024-06-02 00:46:57] INFO root fetch - main [MainThread]: End processing [bussinwebx-get] error
+[2024-06-02 00:46:57] INFO root fetch - processPackages [aiomql]: New version: [3.22] Old Version: [3.21]
+[2024-06-02 00:46:57] INFO root fetch - processPackages [poetry-plugin-dynamic-override-sources]: Downloading https://files.pythonhosted.org/packages/67/c6/9cf5530b74a58bbfd036e6f3e2cb59157729e12a7001868ea77d5eeb05cb/poetry_plugin_dynamic_override_sources-0.0.3.tar.gz
+[2024-06-02 00:46:57] INFO root fetch - processPackages [mktdata]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-06-02 00:46:57] INFO root fetch - processPackages [aiomql]: Downloading https://files.pythonhosted.org/packages/73/67/7371c51f3c42fc0ca581ba581b8f45f34544b7fd5b77b16082692755f2ab/aiomql-3.21.tar.gz
+[2024-06-02 00:46:57] INFO root fetch - processPackages [mktdata]: Downloading https://files.pythonhosted.org/packages/19/b6/e8d3de92f661be5f9c598c808d61b5ee28a95a4bd86a1e7d7d17402a773a/mktdata-0.0.7.tar.gz
+[2024-06-02 00:46:57] INFO root fetch - processPackages [aiomql]: Downloading https://files.pythonhosted.org/packages/e5/76/95caf2a34a1bc9d6c87e82425ccda4681c0d1d6d4bb77f7cc8c196c6f722/aiomql-3.22.tar.gz
+[2024-06-02 00:46:57] INFO root fetch - processPackages [poetry-plugin-dynamic-override-sources]: Downloading https://files.pythonhosted.org/packages/55/39/3f4f0fc8fd34cf1bd9e35f22dc7e1a8702c88c815feab00ef59dc1bd671e/poetry_plugin_dynamic_override_sources-0.0.4.tar.gz
+[2024-06-02 00:46:57] INFO root fetch - processPackages [aiomql]: executing diffoscope
+[2024-06-02 00:46:57] INFO root fetch - processPackages [aiomql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiomql-3.21.tar.gz tmp/aiomql-3.22.tar.gz --markdown 20240602/a/aiomql/3.21-3.22/README.md --exclude *.pyd
+[2024-06-02 00:46:57] INFO root fetch - processPackages [poetry-plugin-dynamic-override-sources]: executing diffoscope
+[2024-06-02 00:46:57] INFO root fetch - processPackages [poetry-plugin-dynamic-override-sources]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/poetry_plugin_dynamic_override_sources-0.0.3.tar.gz tmp/poetry_plugin_dynamic_override_sources-0.0.4.tar.gz --markdown 20240602/p/poetry-plugin-dynamic-override-sources/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-06-02 00:46:57] INFO root fetch - processPackages [mktdata]: Downloading https://files.pythonhosted.org/packages/2b/12/3d3caba50bcb67874839d7c7e275e36bee8bf4bc64d1e5e2a1f17f2af53a/mktdata-0.0.8.tar.gz
+[2024-06-02 00:46:58] INFO root fetch - processPackages [mktdata]: executing diffoscope
+[2024-06-02 00:46:58] INFO root fetch - processPackages [mktdata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mktdata-0.0.7.tar.gz tmp/mktdata-0.0.8.tar.gz --markdown 20240602/m/mktdata/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-06-02 00:46:58] INFO root fetch - processPackages [poetry-plugin-dynamic-override-sources]: Remove: archive file [/home/abi/fetcher/tmp/poetry_plugin_dynamic_override_sources-0.0.3.tar.gz]
+[2024-06-02 00:46:58] INFO root fetch - processPackages [poetry-plugin-dynamic-override-sources]: Remove: archive file [/home/abi/fetcher/tmp/poetry_plugin_dynamic_override_sources-0.0.4.tar.gz]
+[2024-06-02 00:46:58] INFO root fetch - main [MainThread]: End processing [poetry-plugin-dynamic-override-sources]: success
+[2024-06-02 00:46:58] INFO root fetch - processPackages [aiomql]: Remove: archive file [/home/abi/fetcher/tmp/aiomql-3.21.tar.gz]
+[2024-06-02 00:46:58] INFO root fetch - processPackages [aiomql]: Remove: archive file [/home/abi/fetcher/tmp/aiomql-3.22.tar.gz]
+[2024-06-02 00:46:58] INFO root fetch - main [MainThread]: End processing [aiomql]: success
+[2024-06-02 00:46:58] INFO root fetch - processPackages [mktdata]: Remove: archive file [/home/abi/fetcher/tmp/mktdata-0.0.7.tar.gz]
+[2024-06-02 00:46:58] INFO root fetch - processPackages [mktdata]: Remove: archive file [/home/abi/fetcher/tmp/mktdata-0.0.8.tar.gz]
+[2024-06-02 00:46:58] INFO root fetch - main [MainThread]: End processing [mktdata]: success
+[2024-06-02 00:46:58] INFO root fetch - main [MainThread]: Store serial: [23484281]
