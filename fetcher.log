@@ -1,0 +1,21 @@
+[2024-06-02 00:00:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23484004]
+[2024-06-02 00:00:58] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-02 00:00:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: honeybee-radiance-postprocess
+[2024-06-02 00:00:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aiocloudweather
+[2024-06-02 00:00:58] INFO root fetch - processPackages [aiocloudweather]: New version: [2024.6.1] Old Version: [2024.6.0]
+[2024-06-02 00:00:58] INFO root fetch - processPackages [honeybee-radiance-postprocess]: New version: [0.4.99] Old Version: [0.4.98]
+[2024-06-02 00:00:58] INFO root fetch - processPackages [aiocloudweather]: Downloading https://files.pythonhosted.org/packages/2d/e6/a38e878635f9c7f9e245b56514d3397ffb7fdb0078e06d12e55e9d1c2894/aiocloudweather-2024.6.0.tar.gz
+[2024-06-02 00:00:58] INFO root fetch - processPackages [honeybee-radiance-postprocess]: Downloading https://files.pythonhosted.org/packages/b6/91/e656cf214b08dde444b27576e74fc06004fa6bbc0d5f04f1d6514eb05429/honeybee-radiance-postprocess-0.4.98.tar.gz
+[2024-06-02 00:00:59] INFO root fetch - processPackages [aiocloudweather]: Downloading https://files.pythonhosted.org/packages/11/b6/bfb1dd4679cdaee1dcd8eb747eb9d61b4bba6b6807caa750da6932c97a30/aiocloudweather-2024.6.1.tar.gz
+[2024-06-02 00:00:59] INFO root fetch - processPackages [honeybee-radiance-postprocess]: Downloading https://files.pythonhosted.org/packages/e0/41/5be881e0724bb4d271ee5bb707666eff4c4b9ca79bc8c67f7316687d2f67/honeybee-radiance-postprocess-0.4.99.tar.gz
+[2024-06-02 00:00:59] INFO root fetch - processPackages [aiocloudweather]: executing diffoscope
+[2024-06-02 00:00:59] INFO root fetch - processPackages [aiocloudweather]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiocloudweather-2024.6.0.tar.gz tmp/aiocloudweather-2024.6.1.tar.gz --markdown 20240602/a/aiocloudweather/2024.6.0-2024.6.1/README.md --exclude *.pyd
+[2024-06-02 00:00:59] INFO root fetch - processPackages [honeybee-radiance-postprocess]: executing diffoscope
+[2024-06-02 00:00:59] INFO root fetch - processPackages [honeybee-radiance-postprocess]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/honeybee-radiance-postprocess-0.4.98.tar.gz tmp/honeybee-radiance-postprocess-0.4.99.tar.gz --markdown 20240602/h/honeybee-radiance-postprocess/0.4.98-0.4.99/README.md --exclude *.pyd
+[2024-06-02 00:00:59] INFO root fetch - processPackages [aiocloudweather]: Remove: archive file [/home/abi/fetcher/tmp/aiocloudweather-2024.6.0.tar.gz]
+[2024-06-02 00:00:59] INFO root fetch - processPackages [aiocloudweather]: Remove: archive file [/home/abi/fetcher/tmp/aiocloudweather-2024.6.1.tar.gz]
+[2024-06-02 00:00:59] INFO root fetch - main [MainThread]: End processing [aiocloudweather]: success
+[2024-06-02 00:00:59] INFO root fetch - processPackages [honeybee-radiance-postprocess]: Remove: archive file [/home/abi/fetcher/tmp/honeybee-radiance-postprocess-0.4.98.tar.gz]
+[2024-06-02 00:00:59] INFO root fetch - processPackages [honeybee-radiance-postprocess]: Remove: archive file [/home/abi/fetcher/tmp/honeybee-radiance-postprocess-0.4.99.tar.gz]
+[2024-06-02 00:00:59] INFO root fetch - main [MainThread]: End processing [honeybee-radiance-postprocess]: success
+[2024-06-02 00:00:59] INFO root fetch - main [MainThread]: Store serial: [23484010]
