@@ -1207,3 +1207,51 @@
 [2024-06-02 01:21:50] WARNING root fetch - processPackages [mypackage202461]: Skipping, unable to determine old version
 [2024-06-02 01:21:50] INFO root fetch - main [MainThread]: End processing [mypackage202461] error
 [2024-06-02 01:21:50] INFO root fetch - main [MainThread]: Store serial: [23484658]
+[2024-06-02 01:23:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23484658]
+[2024-06-02 01:23:59] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-06-02 01:23:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyGetComics
+[2024-06-02 01:23:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mmdiary
+[2024-06-02 01:23:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ubicoders-vrobots
+[2024-06-02 01:23:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: MobileInventoryCLI
+[2024-06-02 01:23:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: isolate-proto
+[2024-06-02 01:23:59] INFO root fetch - processPackages [ubicoders-vrobots]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-06-02 01:23:59] INFO root fetch - processPackages [pyGetComics]: New version: [1.4.5] Old Version: [1.4.4]
+[2024-06-02 01:23:59] INFO root fetch - processPackages [isolate-proto]: New version: [0.4.0] Old Version: [0.3.4]
+[2024-06-02 01:23:59] INFO root fetch - processPackages [MobileInventoryCLI]: New version: [0.4.99] Old Version: [0.4.98]
+[2024-06-02 01:23:59] INFO root fetch - processPackages [ubicoders-vrobots]: Downloading https://files.pythonhosted.org/packages/99/f2/fee87266aec985f414db26a5bb66efaff5101c561a8b39052935ead89c1e/ubicoders-vrobots-0.2.8.tar.gz
+[2024-06-02 01:23:59] INFO root fetch - processPackages [mmdiary]: New version: [0.4.0] Old Version: [0.3.0]
+[2024-06-02 01:23:59] INFO root fetch - processPackages [MobileInventoryCLI]: Downloading https://files.pythonhosted.org/packages/34/2d/1e50d7f512e3d39590afb4a6c37340af98e5c4eadc77d9de653aab0cb49f/MobileInventoryCLI-0.4.98.tar.gz
+[2024-06-02 01:23:59] INFO root fetch - processPackages [pyGetComics]: Downloading https://files.pythonhosted.org/packages/69/40/5a5fa39c399e4cdf1167f964f169337d82a1d9fdd9124540b0de5a331444/pygetcomics-1.4.4.tar.gz
+[2024-06-02 01:23:59] INFO root fetch - processPackages [isolate-proto]: Downloading https://files.pythonhosted.org/packages/2a/cc/132216c2cd94b941408addda399c0c57cda1542d25d0eedd2fb94f1462eb/isolate_proto-0.3.4.tar.gz
+[2024-06-02 01:23:59] INFO root fetch - processPackages [mmdiary]: Downloading https://files.pythonhosted.org/packages/86/5a/b3175ffe659ef73d147ef8b936a6ffb1e0001075a1a734f3b2c960158e13/mmdiary-0.3.0.tar.gz
+[2024-06-02 01:23:59] INFO root fetch - processPackages [MobileInventoryCLI]: Downloading https://files.pythonhosted.org/packages/44/8c/14cdf7fc3f0b69cae35ba7ee2852fb70e3cab687142869ee3deb104ffc71/MobileInventoryCLI-0.4.99.tar.gz
+[2024-06-02 01:23:59] INFO root fetch - processPackages [ubicoders-vrobots]: Downloading https://files.pythonhosted.org/packages/de/7a/bf27fa6a34721cfde65da1665ae417b813264a846aacca0d96a6a8017543/ubicoders-vrobots-0.2.9.tar.gz
+[2024-06-02 01:23:59] INFO root fetch - processPackages [pyGetComics]: Downloading https://files.pythonhosted.org/packages/f4/38/aa6be9a6b9c5425c16c57be563215b76ad7897319e3391ee7944530059b5/pygetcomics-1.4.5.tar.gz
+[2024-06-02 01:23:59] INFO root fetch - processPackages [ubicoders-vrobots]: executing diffoscope
+[2024-06-02 01:23:59] INFO root fetch - processPackages [ubicoders-vrobots]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ubicoders-vrobots-0.2.8.tar.gz tmp/ubicoders-vrobots-0.2.9.tar.gz --markdown 20240602/u/ubicoders-vrobots/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-06-02 01:23:59] INFO root fetch - processPackages [isolate-proto]: Downloading https://files.pythonhosted.org/packages/cc/e8/9f2f461bb36c0e20f1e1297140c0e1c1118f46584b9de62490974fe5b192/isolate_proto-0.4.0.tar.gz
+[2024-06-02 01:23:59] INFO root fetch - processPackages [MobileInventoryCLI]: executing diffoscope
+[2024-06-02 01:23:59] INFO root fetch - processPackages [MobileInventoryCLI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MobileInventoryCLI-0.4.98.tar.gz tmp/MobileInventoryCLI-0.4.99.tar.gz --markdown 20240602/M/MobileInventoryCLI/0.4.98-0.4.99/README.md --exclude *.pyd
+[2024-06-02 01:23:59] INFO root fetch - processPackages [pyGetComics]: executing diffoscope
+[2024-06-02 01:23:59] INFO root fetch - processPackages [pyGetComics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pygetcomics-1.4.4.tar.gz tmp/pygetcomics-1.4.5.tar.gz --markdown 20240602/p/pyGetComics/1.4.4-1.4.5/README.md --exclude *.pyd
+[2024-06-02 01:23:59] INFO root fetch - processPackages [mmdiary]: Downloading https://files.pythonhosted.org/packages/c3/dd/f6778ffb8a18369cace588b886cb0a23498ed8c16c5bf2d3b0a8411dd429/mmdiary-0.4.0.tar.gz
+[2024-06-02 01:23:59] INFO root fetch - processPackages [isolate-proto]: executing diffoscope
+[2024-06-02 01:23:59] INFO root fetch - processPackages [isolate-proto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/isolate_proto-0.3.4.tar.gz tmp/isolate_proto-0.4.0.tar.gz --markdown 20240602/i/isolate-proto/0.3.4-0.4.0/README.md --exclude *.pyd
+[2024-06-02 01:23:59] INFO root fetch - processPackages [mmdiary]: executing diffoscope
+[2024-06-02 01:23:59] INFO root fetch - processPackages [mmdiary]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mmdiary-0.3.0.tar.gz tmp/mmdiary-0.4.0.tar.gz --markdown 20240602/m/mmdiary/0.3.0-0.4.0/README.md --exclude *.pyd
+[2024-06-02 01:24:00] INFO root fetch - processPackages [ubicoders-vrobots]: Remove: archive file [/home/abi/fetcher/tmp/ubicoders-vrobots-0.2.8.tar.gz]
+[2024-06-02 01:24:00] INFO root fetch - processPackages [ubicoders-vrobots]: Remove: archive file [/home/abi/fetcher/tmp/ubicoders-vrobots-0.2.9.tar.gz]
+[2024-06-02 01:24:00] INFO root fetch - main [MainThread]: End processing [ubicoders-vrobots]: success
+[2024-06-02 01:24:00] INFO root fetch - processPackages [pyGetComics]: Remove: archive file [/home/abi/fetcher/tmp/pygetcomics-1.4.4.tar.gz]
+[2024-06-02 01:24:00] INFO root fetch - processPackages [pyGetComics]: Remove: archive file [/home/abi/fetcher/tmp/pygetcomics-1.4.5.tar.gz]
+[2024-06-02 01:24:00] INFO root fetch - main [MainThread]: End processing [pyGetComics]: success
+[2024-06-02 01:24:00] INFO root fetch - processPackages [isolate-proto]: Remove: archive file [/home/abi/fetcher/tmp/isolate_proto-0.3.4.tar.gz]
+[2024-06-02 01:24:00] INFO root fetch - processPackages [isolate-proto]: Remove: archive file [/home/abi/fetcher/tmp/isolate_proto-0.4.0.tar.gz]
+[2024-06-02 01:24:00] INFO root fetch - main [MainThread]: End processing [isolate-proto]: success
+[2024-06-02 01:24:00] INFO root fetch - processPackages [MobileInventoryCLI]: Remove: archive file [/home/abi/fetcher/tmp/MobileInventoryCLI-0.4.98.tar.gz]
+[2024-06-02 01:24:00] INFO root fetch - processPackages [MobileInventoryCLI]: Remove: archive file [/home/abi/fetcher/tmp/MobileInventoryCLI-0.4.99.tar.gz]
+[2024-06-02 01:24:00] INFO root fetch - main [MainThread]: End processing [MobileInventoryCLI]: success
+[2024-06-02 01:24:00] INFO root fetch - processPackages [mmdiary]: Remove: archive file [/home/abi/fetcher/tmp/mmdiary-0.3.0.tar.gz]
+[2024-06-02 01:24:00] INFO root fetch - processPackages [mmdiary]: Remove: archive file [/home/abi/fetcher/tmp/mmdiary-0.4.0.tar.gz]
+[2024-06-02 01:24:00] INFO root fetch - main [MainThread]: End processing [mmdiary]: success
+[2024-06-02 01:24:00] INFO root fetch - main [MainThread]: Store serial: [23484683]
