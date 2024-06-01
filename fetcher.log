@@ -431,3 +431,15 @@
 [2024-06-02 00:29:32] INFO root fetch - processPackages [cdo-sdk-python]: Remove: archive file [/home/abi/fetcher/tmp/cdo-sdk-python-1.0.99.tar.gz]
 [2024-06-02 00:29:32] INFO root fetch - main [MainThread]: End processing [cdo-sdk-python]: success
 [2024-06-02 00:29:32] INFO root fetch - main [MainThread]: Store serial: [23484139]
+[2024-06-02 00:31:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23484139]
+[2024-06-02 00:31:42] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-02 00:31:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aixhello
+[2024-06-02 00:31:42] INFO root fetch - processPackages [aixhello]: New version: [2.6] Old Version: [2.3]
+[2024-06-02 00:31:42] INFO root fetch - processPackages [aixhello]: Downloading https://files.pythonhosted.org/packages/0e/f7/baab2ceb80ddf76753b336a7778039d11888c3111c97d5ef3229896a0054/aixhello-2.3.tar.gz
+[2024-06-02 00:31:42] INFO root fetch - processPackages [aixhello]: Downloading https://files.pythonhosted.org/packages/30/82/67c7bb226e884d1c3512c032010c647d7cdcad059e26601fa948f50e1924/aixhello-2.6.tar.gz
+[2024-06-02 00:31:42] INFO root fetch - processPackages [aixhello]: executing diffoscope
+[2024-06-02 00:31:42] INFO root fetch - processPackages [aixhello]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aixhello-2.3.tar.gz tmp/aixhello-2.6.tar.gz --markdown 20240602/a/aixhello/2.3-2.6/README.md --exclude *.pyd
+[2024-06-02 00:31:43] INFO root fetch - processPackages [aixhello]: Remove: archive file [/home/abi/fetcher/tmp/aixhello-2.3.tar.gz]
+[2024-06-02 00:31:43] INFO root fetch - processPackages [aixhello]: Remove: archive file [/home/abi/fetcher/tmp/aixhello-2.6.tar.gz]
+[2024-06-02 00:31:43] INFO root fetch - main [MainThread]: End processing [aixhello]: success
+[2024-06-02 00:31:43] INFO root fetch - main [MainThread]: Store serial: [23484144]
