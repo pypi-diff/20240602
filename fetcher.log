@@ -1156,3 +1156,27 @@
 [2024-06-02 01:15:23] INFO root fetch - processPackages [ubicoders-vrobots]: Remove: archive file [/home/abi/fetcher/tmp/ubicoders-vrobots-0.2.8.tar.gz]
 [2024-06-02 01:15:23] INFO root fetch - main [MainThread]: End processing [ubicoders-vrobots]: success
 [2024-06-02 01:15:23] INFO root fetch - main [MainThread]: Store serial: [23484639]
+[2024-06-02 01:17:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23484639]
+[2024-06-02 01:17:31] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-02 01:17:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lambda-forge
+[2024-06-02 01:17:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ubicoders-vrobots
+[2024-06-02 01:17:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bussinwebx-get
+[2024-06-02 01:17:31] INFO root fetch - processPackages [bussinwebx-get]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-06-02 01:17:31] INFO root fetch - processPackages [ubicoders-vrobots]: New version: [0.2.8] Old Version: [0.2.7]
+[2024-06-02 01:17:31] INFO root fetch - processPackages [bussinwebx-get]: Downloading https://files.pythonhosted.org/packages/38/d9/8134704d78940fe95b1bd1b05d7da6dad00d984cf7cca66f64010071a6a1/bussinwebx_get-1.0.0.tar.gz
+[2024-06-02 01:17:31] WARNING root fetch - processPackages [lambda-forge]: Skipping, unable to determine old version
+[2024-06-02 01:17:31] INFO root fetch - main [MainThread]: End processing [lambda-forge] error
+[2024-06-02 01:17:31] INFO root fetch - processPackages [ubicoders-vrobots]: Downloading https://files.pythonhosted.org/packages/94/90/0c3853c9e6e355d860460eb42b362f9c6d3394ad66744ade32295e77aea2/ubicoders-vrobots-0.2.7.tar.gz
+[2024-06-02 01:17:31] INFO root fetch - processPackages [ubicoders-vrobots]: Downloading https://files.pythonhosted.org/packages/99/f2/fee87266aec985f414db26a5bb66efaff5101c561a8b39052935ead89c1e/ubicoders-vrobots-0.2.8.tar.gz
+[2024-06-02 01:17:32] INFO root fetch - processPackages [bussinwebx-get]: Downloading https://files.pythonhosted.org/packages/05/07/59c7167cb93d3c0e0a373ca959a658c0b08660236fb417cc47166acde005/bussinwebx_get-1.0.1.tar.gz
+[2024-06-02 01:17:32] INFO root fetch - processPackages [ubicoders-vrobots]: executing diffoscope
+[2024-06-02 01:17:32] INFO root fetch - processPackages [ubicoders-vrobots]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ubicoders-vrobots-0.2.7.tar.gz tmp/ubicoders-vrobots-0.2.8.tar.gz --markdown 20240602/u/ubicoders-vrobots/0.2.7-0.2.8/README.md --exclude *.pyd
+[2024-06-02 01:17:32] INFO root fetch - processPackages [bussinwebx-get]: executing diffoscope
+[2024-06-02 01:17:32] INFO root fetch - processPackages [bussinwebx-get]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bussinwebx_get-1.0.0.tar.gz tmp/bussinwebx_get-1.0.1.tar.gz --markdown 20240602/b/bussinwebx-get/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-06-02 01:17:32] INFO root fetch - processPackages [bussinwebx-get]: Remove: archive file [/home/abi/fetcher/tmp/bussinwebx_get-1.0.0.tar.gz]
+[2024-06-02 01:17:32] INFO root fetch - processPackages [bussinwebx-get]: Remove: archive file [/home/abi/fetcher/tmp/bussinwebx_get-1.0.1.tar.gz]
+[2024-06-02 01:17:32] INFO root fetch - main [MainThread]: End processing [bussinwebx-get]: success
+[2024-06-02 01:17:32] INFO root fetch - processPackages [ubicoders-vrobots]: Remove: archive file [/home/abi/fetcher/tmp/ubicoders-vrobots-0.2.7.tar.gz]
+[2024-06-02 01:17:32] INFO root fetch - processPackages [ubicoders-vrobots]: Remove: archive file [/home/abi/fetcher/tmp/ubicoders-vrobots-0.2.8.tar.gz]
+[2024-06-02 01:17:32] INFO root fetch - main [MainThread]: End processing [ubicoders-vrobots]: success
+[2024-06-02 01:17:32] INFO root fetch - main [MainThread]: Store serial: [23484650]
