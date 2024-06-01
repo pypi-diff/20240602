@@ -1321,3 +1321,42 @@
 [2024-06-02 01:32:39] INFO root fetch - processPackages [sounderpy]: Remove: archive file [/home/abi/fetcher/tmp/sounderpy-3.0.4.dev3.tar.gz]
 [2024-06-02 01:32:39] INFO root fetch - main [MainThread]: End processing [sounderpy]: success
 [2024-06-02 01:32:39] INFO root fetch - main [MainThread]: Store serial: [23484703]
+[2024-06-02 01:34:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23484703]
+[2024-06-02 01:34:47] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-02 01:34:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: eenhoorntje-llm-lib
+[2024-06-02 01:34:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: yt-dlp
+[2024-06-02 01:34:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lbt-ladybug
+[2024-06-02 01:34:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: almax-common
+[2024-06-02 01:34:47] INFO root fetch - processPackages [almax-common]: New version: [1.0.5.dev20240601232428] Old Version: [1.0.5.dev20240601230451]
+[2024-06-02 01:34:47] INFO root fetch - processPackages [yt-dlp]: New version: [2024.5.8.232715.dev0] Old Version: [2024.5.5.232701.dev0]
+[2024-06-02 01:34:47] INFO root fetch - processPackages [lbt-ladybug]: New version: [0.9.0] Old Version: [0.8.1]
+[2024-06-02 01:34:47] INFO root fetch - processPackages [almax-common]: Downloading https://files.pythonhosted.org/packages/ff/f0/0dc91e6399431e47b1cf40b91af4b310f27107d964539395a94b0311deef/almax_common-1.0.5.dev20240601230451.tar.gz
+[2024-06-02 01:34:47] INFO root fetch - processPackages [eenhoorntje-llm-lib]: New version: [0.9] Old Version: [0.8]
+[2024-06-02 01:34:47] INFO root fetch - processPackages [lbt-ladybug]: Downloading https://files.pythonhosted.org/packages/e4/ac/474c600d6f495b8d63c49d7689b2b076f0c5f94c22728fe795233852a9e1/lbt-ladybug-0.8.1.tar.gz
+[2024-06-02 01:34:47] INFO root fetch - processPackages [yt-dlp]: Downloading https://files.pythonhosted.org/packages/84/b9/776c1dd6af3d11b008b3d15993bd9675fea67e86f7b78a1dac88febb9fcf/yt_dlp-2024.5.5.232701.dev0.tar.gz
+[2024-06-02 01:34:47] INFO root fetch - processPackages [eenhoorntje-llm-lib]: Downloading https://files.pythonhosted.org/packages/58/53/c1bd6020de71ee2c61bd61f6c2d4ad72551fc6b613896bfdf423f9900b0a/eenhoorntje_llm_lib-0.8.tar.gz
+[2024-06-02 01:34:48] INFO root fetch - processPackages [almax-common]: Downloading https://files.pythonhosted.org/packages/62/c8/ef4815be05d93c5eeca2953138d273c1f322c7a616ed291bf0277301f7d1/almax_common-1.0.5.dev20240601232428.tar.gz
+[2024-06-02 01:34:48] INFO root fetch - processPackages [lbt-ladybug]: Downloading https://files.pythonhosted.org/packages/6e/e7/a4e6dcfc6b2750475acd6dee9e849a991053471ff22a90aa8f986eaef25b/lbt-ladybug-0.9.0.tar.gz
+[2024-06-02 01:34:48] INFO root fetch - processPackages [almax-common]: executing diffoscope
+[2024-06-02 01:34:48] INFO root fetch - processPackages [almax-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/almax_common-1.0.5.dev20240601230451.tar.gz tmp/almax_common-1.0.5.dev20240601232428.tar.gz --markdown 20240602/a/almax-common/1.0.5.dev20240601230451-1.0.5.dev20240601232428/README.md --exclude *.pyd
+[2024-06-02 01:34:48] INFO root fetch - processPackages [eenhoorntje-llm-lib]: Downloading https://files.pythonhosted.org/packages/6b/11/c58a3da50ee0ab313c0bb6c3b32dfcc29ee0022b5157d9e22cbdc4e456be/eenhoorntje_llm_lib-0.9.tar.gz
+[2024-06-02 01:34:48] INFO root fetch - processPackages [lbt-ladybug]: executing diffoscope
+[2024-06-02 01:34:48] INFO root fetch - processPackages [lbt-ladybug]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lbt-ladybug-0.8.1.tar.gz tmp/lbt-ladybug-0.9.0.tar.gz --markdown 20240602/l/lbt-ladybug/0.8.1-0.9.0/README.md --exclude *.pyd
+[2024-06-02 01:34:48] INFO root fetch - processPackages [eenhoorntje-llm-lib]: executing diffoscope
+[2024-06-02 01:34:48] INFO root fetch - processPackages [eenhoorntje-llm-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eenhoorntje_llm_lib-0.8.tar.gz tmp/eenhoorntje_llm_lib-0.9.tar.gz --markdown 20240602/e/eenhoorntje-llm-lib/0.8-0.9/README.md --exclude *.pyd
+[2024-06-02 01:34:48] INFO root fetch - processPackages [yt-dlp]: Downloading https://files.pythonhosted.org/packages/29/37/4d7e7b1d095d515aef0e3e9af758d0dc33fceebfe46ebce02a1a240d274c/yt_dlp-2024.5.8.232715.dev0.tar.gz
+[2024-06-02 01:34:48] INFO root fetch - processPackages [almax-common]: Remove: archive file [/home/abi/fetcher/tmp/almax_common-1.0.5.dev20240601230451.tar.gz]
+[2024-06-02 01:34:48] INFO root fetch - processPackages [almax-common]: Remove: archive file [/home/abi/fetcher/tmp/almax_common-1.0.5.dev20240601232428.tar.gz]
+[2024-06-02 01:34:48] INFO root fetch - main [MainThread]: End processing [almax-common]: success
+[2024-06-02 01:34:48] INFO root fetch - processPackages [yt-dlp]: executing diffoscope
+[2024-06-02 01:34:48] INFO root fetch - processPackages [yt-dlp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yt_dlp-2024.5.5.232701.dev0.tar.gz tmp/yt_dlp-2024.5.8.232715.dev0.tar.gz --markdown 20240602/y/yt-dlp/2024.5.5.232701.dev0-2024.5.8.232715.dev0/README.md --exclude *.pyd
+[2024-06-02 01:34:49] INFO root fetch - processPackages [eenhoorntje-llm-lib]: Remove: archive file [/home/abi/fetcher/tmp/eenhoorntje_llm_lib-0.8.tar.gz]
+[2024-06-02 01:34:49] INFO root fetch - processPackages [eenhoorntje-llm-lib]: Remove: archive file [/home/abi/fetcher/tmp/eenhoorntje_llm_lib-0.9.tar.gz]
+[2024-06-02 01:34:49] INFO root fetch - main [MainThread]: End processing [eenhoorntje-llm-lib]: success
+[2024-06-02 01:34:49] INFO root fetch - processPackages [lbt-ladybug]: Remove: archive file [/home/abi/fetcher/tmp/lbt-ladybug-0.8.1.tar.gz]
+[2024-06-02 01:34:49] INFO root fetch - processPackages [lbt-ladybug]: Remove: archive file [/home/abi/fetcher/tmp/lbt-ladybug-0.9.0.tar.gz]
+[2024-06-02 01:34:49] INFO root fetch - main [MainThread]: End processing [lbt-ladybug]: success
+[2024-06-02 01:34:53] INFO root fetch - processPackages [yt-dlp]: Remove: archive file [/home/abi/fetcher/tmp/yt_dlp-2024.5.5.232701.dev0.tar.gz]
+[2024-06-02 01:34:53] INFO root fetch - processPackages [yt-dlp]: Remove: archive file [/home/abi/fetcher/tmp/yt_dlp-2024.5.8.232715.dev0.tar.gz]
+[2024-06-02 01:34:53] INFO root fetch - main [MainThread]: End processing [yt-dlp]: success
+[2024-06-02 01:34:53] INFO root fetch - main [MainThread]: Store serial: [23484715]
