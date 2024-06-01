@@ -103,3 +103,42 @@
 [2024-06-02 00:03:11] INFO root fetch - processPackages [matrix-nio]: Remove: archive file [/home/abi/fetcher/tmp/matrix-nio-0.9.0.tar.gz]
 [2024-06-02 00:03:11] INFO root fetch - main [MainThread]: End processing [matrix-nio]: success
 [2024-06-02 00:03:11] INFO root fetch - main [MainThread]: Store serial: [23484033]
+[2024-06-02 00:05:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23484033]
+[2024-06-02 00:05:21] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-02 00:05:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: leetcode-study-tool
+[2024-06-02 00:05:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wetrade
+[2024-06-02 00:05:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lbt-dragonfly
+[2024-06-02 00:05:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: rxnSMILES4AtomEco
+[2024-06-02 00:05:21] INFO root fetch - processPackages [leetcode-study-tool]: New version: [1.3.1] Old Version: [1.3]
+[2024-06-02 00:05:21] INFO root fetch - processPackages [rxnSMILES4AtomEco]: New version: [1.0.4] Old Version: [1.0.2]
+[2024-06-02 00:05:21] INFO root fetch - processPackages [lbt-dragonfly]: New version: [0.9.99] Old Version: [0.9.98]
+[2024-06-02 00:05:21] INFO root fetch - processPackages [wetrade]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-06-02 00:05:21] INFO root fetch - processPackages [leetcode-study-tool]: Downloading https://files.pythonhosted.org/packages/21/ac/61a67641aa4e02a27b32cf03af8742f29b8619bce45cdb423aa8b570f6fe/leetcode-study-tool-1.3.tar.gz
+[2024-06-02 00:05:21] INFO root fetch - processPackages [rxnSMILES4AtomEco]: Downloading https://files.pythonhosted.org/packages/00/c7/3df2483429becd94872068341f63fe365e574e17a0c4e9ccdb96c4bde708/rxnSMILES4AtomEco-1.0.2.tar.gz
+[2024-06-02 00:05:21] INFO root fetch - processPackages [lbt-dragonfly]: Downloading https://files.pythonhosted.org/packages/be/ae/7267dfd241a0641f3fbadea4128db5ffa29609911cadb5fc4840656bb44a/lbt-dragonfly-0.9.98.tar.gz
+[2024-06-02 00:05:21] INFO root fetch - processPackages [wetrade]: Downloading https://files.pythonhosted.org/packages/d8/c9/ffc33ea1620d1f6dd4809393caf4ff6f07b7c2743563422228156321e6fe/wetrade-0.1.1.tar.gz
+[2024-06-02 00:05:21] INFO root fetch - processPackages [lbt-dragonfly]: Downloading https://files.pythonhosted.org/packages/b4/08/0ca46e9f7eef7b2cce7f0c6110106c42aa35a79bd88110559177f64d733a/lbt-dragonfly-0.9.99.tar.gz
+[2024-06-02 00:05:21] INFO root fetch - processPackages [leetcode-study-tool]: Downloading https://files.pythonhosted.org/packages/61/90/ab98ad1a659fa8a7370a1f6b6f71c655ec48276d21f519c8e045940f0b40/leetcode_study_tool-1.3.1-py3-none-any.whl
+[2024-06-02 00:05:21] INFO root fetch - processPackages [rxnSMILES4AtomEco]: Downloading https://files.pythonhosted.org/packages/02/f8/0abcdbac401baf2600086d95f406d5be02337a86131e4e925f2f81a6bac7/rxnSMILES4AtomEco-1.0.4.tar.gz
+[2024-06-02 00:05:22] INFO root fetch - processPackages [lbt-dragonfly]: executing diffoscope
+[2024-06-02 00:05:22] INFO root fetch - processPackages [lbt-dragonfly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lbt-dragonfly-0.9.98.tar.gz tmp/lbt-dragonfly-0.9.99.tar.gz --markdown 20240602/l/lbt-dragonfly/0.9.98-0.9.99/README.md --exclude *.pyd
+[2024-06-02 00:05:22] INFO root fetch - processPackages [leetcode-study-tool]: executing diffoscope
+[2024-06-02 00:05:22] INFO root fetch - processPackages [leetcode-study-tool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/leetcode-study-tool-1.3.tar.gz tmp/leetcode_study_tool-1.3.1-py3-none-any.whl.zip --markdown 20240602/l/leetcode-study-tool/1.3-1.3.1/README.md --exclude *.pyd
+[2024-06-02 00:05:22] INFO root fetch - processPackages [rxnSMILES4AtomEco]: executing diffoscope
+[2024-06-02 00:05:22] INFO root fetch - processPackages [rxnSMILES4AtomEco]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rxnSMILES4AtomEco-1.0.2.tar.gz tmp/rxnSMILES4AtomEco-1.0.4.tar.gz --markdown 20240602/r/rxnSMILES4AtomEco/1.0.2-1.0.4/README.md --exclude *.pyd
+[2024-06-02 00:05:22] INFO root fetch - processPackages [wetrade]: Downloading https://files.pythonhosted.org/packages/20/7b/bdaa033bd27006e6ad128b80f919fac28fae88d12cf8b3154ab2c45cd339/wetrade-0.1.2.tar.gz
+[2024-06-02 00:05:22] INFO root fetch - processPackages [wetrade]: executing diffoscope
+[2024-06-02 00:05:22] INFO root fetch - processPackages [wetrade]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wetrade-0.1.1.tar.gz tmp/wetrade-0.1.2.tar.gz --markdown 20240602/w/wetrade/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-06-02 00:05:22] INFO root fetch - processPackages [leetcode-study-tool]: Remove: archive file [/home/abi/fetcher/tmp/leetcode-study-tool-1.3.tar.gz]
+[2024-06-02 00:05:22] INFO root fetch - processPackages [leetcode-study-tool]: Remove: archive file [/home/abi/fetcher/tmp/leetcode_study_tool-1.3.1-py3-none-any.whl.zip]
+[2024-06-02 00:05:22] INFO root fetch - main [MainThread]: End processing [leetcode-study-tool]: success
+[2024-06-02 00:05:22] INFO root fetch - processPackages [rxnSMILES4AtomEco]: Remove: archive file [/home/abi/fetcher/tmp/rxnSMILES4AtomEco-1.0.2.tar.gz]
+[2024-06-02 00:05:22] INFO root fetch - processPackages [rxnSMILES4AtomEco]: Remove: archive file [/home/abi/fetcher/tmp/rxnSMILES4AtomEco-1.0.4.tar.gz]
+[2024-06-02 00:05:22] INFO root fetch - main [MainThread]: End processing [rxnSMILES4AtomEco]: success
+[2024-06-02 00:05:22] INFO root fetch - processPackages [lbt-dragonfly]: Remove: archive file [/home/abi/fetcher/tmp/lbt-dragonfly-0.9.98.tar.gz]
+[2024-06-02 00:05:22] INFO root fetch - processPackages [lbt-dragonfly]: Remove: archive file [/home/abi/fetcher/tmp/lbt-dragonfly-0.9.99.tar.gz]
+[2024-06-02 00:05:22] INFO root fetch - main [MainThread]: End processing [lbt-dragonfly]: success
+[2024-06-02 00:05:22] INFO root fetch - processPackages [wetrade]: Remove: archive file [/home/abi/fetcher/tmp/wetrade-0.1.1.tar.gz]
+[2024-06-02 00:05:22] INFO root fetch - processPackages [wetrade]: Remove: archive file [/home/abi/fetcher/tmp/wetrade-0.1.2.tar.gz]
+[2024-06-02 00:05:22] INFO root fetch - main [MainThread]: End processing [wetrade]: success
+[2024-06-02 00:05:22] INFO root fetch - main [MainThread]: Store serial: [23484045]
