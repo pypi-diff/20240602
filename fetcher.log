@@ -1086,3 +1086,24 @@
 [2024-06-02 01:08:52] INFO root fetch - processPackages [class-cache]: Remove: archive file [/home/abi/fetcher/tmp/class_cache-0.5.0.tar.gz]
 [2024-06-02 01:08:52] INFO root fetch - main [MainThread]: End processing [class-cache]: success
 [2024-06-02 01:08:52] INFO root fetch - main [MainThread]: Store serial: [23484619]
+[2024-06-02 01:10:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23484619]
+[2024-06-02 01:11:00] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-02 01:11:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: c2cwsgiutils
+[2024-06-02 01:11:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: isolate
+[2024-06-02 01:11:00] INFO root fetch - processPackages [isolate]: New version: [0.9.3] Old Version: [0.9.2]
+[2024-06-02 01:11:00] INFO root fetch - processPackages [c2cwsgiutils]: New version: [6.1.0.dev99] Old Version: [6.1.0.dev97]
+[2024-06-02 01:11:00] INFO root fetch - processPackages [c2cwsgiutils]: Downloading https://files.pythonhosted.org/packages/70/82/1062250c5f8b684273f1f576ab49863eb71b99aedcf0e638b7d18af727dc/c2cwsgiutils-6.1.0.dev97.tar.gz
+[2024-06-02 01:11:00] INFO root fetch - processPackages [isolate]: Downloading https://files.pythonhosted.org/packages/64/32/211fe725a3bf7449d63f5b9210aed9bebdc93f360ec91a4e8804c891e5dd/isolate-0.9.2.tar.gz
+[2024-06-02 01:11:00] INFO root fetch - processPackages [c2cwsgiutils]: Downloading https://files.pythonhosted.org/packages/ab/62/7a161c456f1828f37b18431d8f5cf1bbda9dfe8ef509b1c94d8dad7c8da1/c2cwsgiutils-6.1.0.dev99.tar.gz
+[2024-06-02 01:11:01] INFO root fetch - processPackages [c2cwsgiutils]: executing diffoscope
+[2024-06-02 01:11:01] INFO root fetch - processPackages [c2cwsgiutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/c2cwsgiutils-6.1.0.dev97.tar.gz tmp/c2cwsgiutils-6.1.0.dev99.tar.gz --markdown 20240602/c/c2cwsgiutils/6.1.0.dev97-6.1.0.dev99/README.md --exclude *.pyd
+[2024-06-02 01:11:01] INFO root fetch - processPackages [isolate]: Downloading https://files.pythonhosted.org/packages/93/d5/1ab6e68b9f2f196a9982c5cab3879975f19e872887debadb439227f3e01b/isolate-0.9.3.tar.gz
+[2024-06-02 01:11:01] INFO root fetch - processPackages [isolate]: executing diffoscope
+[2024-06-02 01:11:01] INFO root fetch - processPackages [isolate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/isolate-0.9.2.tar.gz tmp/isolate-0.9.3.tar.gz --markdown 20240602/i/isolate/0.9.2-0.9.3/README.md --exclude *.pyd
+[2024-06-02 01:11:01] INFO root fetch - processPackages [c2cwsgiutils]: Remove: archive file [/home/abi/fetcher/tmp/c2cwsgiutils-6.1.0.dev97.tar.gz]
+[2024-06-02 01:11:01] INFO root fetch - processPackages [c2cwsgiutils]: Remove: archive file [/home/abi/fetcher/tmp/c2cwsgiutils-6.1.0.dev99.tar.gz]
+[2024-06-02 01:11:01] INFO root fetch - main [MainThread]: End processing [c2cwsgiutils]: success
+[2024-06-02 01:11:01] INFO root fetch - processPackages [isolate]: Remove: archive file [/home/abi/fetcher/tmp/isolate-0.9.2.tar.gz]
+[2024-06-02 01:11:01] INFO root fetch - processPackages [isolate]: Remove: archive file [/home/abi/fetcher/tmp/isolate-0.9.3.tar.gz]
+[2024-06-02 01:11:01] INFO root fetch - main [MainThread]: End processing [isolate]: success
+[2024-06-02 01:11:01] INFO root fetch - main [MainThread]: Store serial: [23484625]
