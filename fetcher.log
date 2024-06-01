@@ -1497,3 +1497,15 @@
 [2024-06-02 01:52:12] INFO root fetch - processPackages [location-local]: Remove: archive file [/home/abi/fetcher/tmp/location_local-0.0.99.tar.gz]
 [2024-06-02 01:52:12] INFO root fetch - main [MainThread]: End processing [location-local]: success
 [2024-06-02 01:52:12] INFO root fetch - main [MainThread]: Store serial: [23484760]
+[2024-06-02 01:54:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23484760]
+[2024-06-02 01:54:21] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-02 01:54:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: termgraphics
+[2024-06-02 01:54:21] INFO root fetch - processPackages [termgraphics]: New version: [1.1.0] Old Version: [1.0.1]
+[2024-06-02 01:54:22] INFO root fetch - processPackages [termgraphics]: Downloading https://files.pythonhosted.org/packages/17/e4/b4733c1862d62584ae9ffe3c9e07c855b2f3baed71e0b24dc941629c7eb2/termgraphics-1.0.1.tar.gz
+[2024-06-02 01:54:22] INFO root fetch - processPackages [termgraphics]: Downloading https://files.pythonhosted.org/packages/07/57/909545de7b084377ad7b7ac8ffa846e747cd7213e53c02cf6a7dbb7b2ab6/termgraphics-1.1.0-py3-none-any.whl
+[2024-06-02 01:54:22] INFO root fetch - processPackages [termgraphics]: executing diffoscope
+[2024-06-02 01:54:22] INFO root fetch - processPackages [termgraphics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/termgraphics-1.0.1.tar.gz tmp/termgraphics-1.1.0-py3-none-any.whl.zip --markdown 20240602/t/termgraphics/1.0.1-1.1.0/README.md --exclude *.pyd
+[2024-06-02 01:54:23] INFO root fetch - processPackages [termgraphics]: Remove: archive file [/home/abi/fetcher/tmp/termgraphics-1.0.1.tar.gz]
+[2024-06-02 01:54:23] INFO root fetch - processPackages [termgraphics]: Remove: archive file [/home/abi/fetcher/tmp/termgraphics-1.1.0-py3-none-any.whl.zip]
+[2024-06-02 01:54:23] INFO root fetch - main [MainThread]: End processing [termgraphics]: success
+[2024-06-02 01:54:23] INFO root fetch - main [MainThread]: Store serial: [23484762]
