@@ -1509,3 +1509,15 @@
 [2024-06-02 01:54:23] INFO root fetch - processPackages [termgraphics]: Remove: archive file [/home/abi/fetcher/tmp/termgraphics-1.1.0-py3-none-any.whl.zip]
 [2024-06-02 01:54:23] INFO root fetch - main [MainThread]: End processing [termgraphics]: success
 [2024-06-02 01:54:23] INFO root fetch - main [MainThread]: Store serial: [23484762]
+[2024-06-02 01:56:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23484762]
+[2024-06-02 01:56:31] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-02 01:56:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyGetComics
+[2024-06-02 01:56:31] INFO root fetch - processPackages [pyGetComics]: New version: [1.4.6] Old Version: [1.4.5]
+[2024-06-02 01:56:31] INFO root fetch - processPackages [pyGetComics]: Downloading https://files.pythonhosted.org/packages/f4/38/aa6be9a6b9c5425c16c57be563215b76ad7897319e3391ee7944530059b5/pygetcomics-1.4.5.tar.gz
+[2024-06-02 01:56:31] INFO root fetch - processPackages [pyGetComics]: Downloading https://files.pythonhosted.org/packages/3e/ba/68709a143961fc51e59ea2346d0e8d338f6555c6375cba67eecfdb490f0c/pygetcomics-1.4.6.tar.gz
+[2024-06-02 01:56:31] INFO root fetch - processPackages [pyGetComics]: executing diffoscope
+[2024-06-02 01:56:31] INFO root fetch - processPackages [pyGetComics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pygetcomics-1.4.5.tar.gz tmp/pygetcomics-1.4.6.tar.gz --markdown 20240602/p/pyGetComics/1.4.5-1.4.6/README.md --exclude *.pyd
+[2024-06-02 01:56:32] INFO root fetch - processPackages [pyGetComics]: Remove: archive file [/home/abi/fetcher/tmp/pygetcomics-1.4.5.tar.gz]
+[2024-06-02 01:56:32] INFO root fetch - processPackages [pyGetComics]: Remove: archive file [/home/abi/fetcher/tmp/pygetcomics-1.4.6.tar.gz]
+[2024-06-02 01:56:32] INFO root fetch - main [MainThread]: End processing [pyGetComics]: success
+[2024-06-02 01:56:32] INFO root fetch - main [MainThread]: Store serial: [23484765]
