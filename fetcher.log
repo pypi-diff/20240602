@@ -309,3 +309,45 @@
 [2024-06-02 00:16:31] INFO root fetch - processPackages [FanFicFare]: Remove: archive file [/home/abi/fetcher/tmp/FanFicFare-4.9.0.tar.gz]
 [2024-06-02 00:16:31] INFO root fetch - main [MainThread]: End processing [FanFicFare]: success
 [2024-06-02 00:16:31] INFO root fetch - main [MainThread]: Store serial: [23484099]
+[2024-06-02 00:18:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23484099]
+[2024-06-02 00:18:40] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-06-02 00:18:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: python-datapack
+[2024-06-02 00:18:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: jcgutier-logger
+[2024-06-02 00:18:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: database-knotinfo
+[2024-06-02 00:18:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dalpha
+[2024-06-02 00:18:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: aixhello
+[2024-06-02 00:18:41] INFO root fetch - processPackages [aixhello]: New version: [2.1] Old Version: [2.0]
+[2024-06-02 00:18:41] INFO root fetch - processPackages [dalpha]: New version: [0.5.5rc1] Old Version: [0.5.5rc0]
+[2024-06-02 00:18:41] INFO root fetch - processPackages [python-datapack]: New version: [0.2.2] Old Version: [0.2.1]
+[2024-06-02 00:18:41] INFO root fetch - processPackages [aixhello]: Downloading https://files.pythonhosted.org/packages/fd/b0/5bec15689352a13cd5ba6058e345437de6a606f3bde61984bb3a70257dd8/aixhello-2.0.tar.gz
+[2024-06-02 00:18:41] WARNING root fetch - processPackages [jcgutier-logger]: Skipping, unable to determine old version
+[2024-06-02 00:18:41] INFO root fetch - main [MainThread]: End processing [jcgutier-logger] error
+[2024-06-02 00:18:41] INFO root fetch - processPackages [database-knotinfo]: New version: [21.7.15] Old Version: [21.7]
+[2024-06-02 00:18:41] INFO root fetch - processPackages [dalpha]: Downloading https://files.pythonhosted.org/packages/37/d8/b218c27a2e7591c77a9c6f3969c4b2c03240c8153fbe134b2e63f50a90b9/dalpha-0.5.5rc0.tar.gz
+[2024-06-02 00:18:41] INFO root fetch - processPackages [python-datapack]: Downloading https://files.pythonhosted.org/packages/7b/f1/bad60c9cb79bb4500c489edcb317178c03c2e2a22fbcc1809a4cd7493733/python_datapack-0.2.1.tar.gz
+[2024-06-02 00:18:41] INFO root fetch - processPackages [database-knotinfo]: Downloading https://files.pythonhosted.org/packages/ed/10/02c95e09f90ea3ca6a6622ba42077bf5e1bb8004d969c78a73d79bc763fc/database_knotinfo-21.7.tar.gz
+[2024-06-02 00:18:41] INFO root fetch - processPackages [aixhello]: Downloading https://files.pythonhosted.org/packages/f3/1c/947892702b7239f388eb9a65b672359d8d07ed5573b9345e5a1ac3a04f83/aixhello-2.1.tar.gz
+[2024-06-02 00:18:41] INFO root fetch - processPackages [python-datapack]: Downloading https://files.pythonhosted.org/packages/c8/d6/045bce8cdcd8305855972e56da66e50750c7ffb0541dee3f5e53744df502/python_datapack-0.2.2.tar.gz
+[2024-06-02 00:18:41] INFO root fetch - processPackages [dalpha]: Downloading https://files.pythonhosted.org/packages/be/4c/aea2c212387142c6ea52594cf08ee6c0ce6219a588d7e391fced9bfb741e/dalpha-0.5.5rc1.tar.gz
+[2024-06-02 00:18:41] INFO root fetch - processPackages [aixhello]: executing diffoscope
+[2024-06-02 00:18:41] INFO root fetch - processPackages [aixhello]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aixhello-2.0.tar.gz tmp/aixhello-2.1.tar.gz --markdown 20240602/a/aixhello/2.0-2.1/README.md --exclude *.pyd
+[2024-06-02 00:18:41] INFO root fetch - processPackages [dalpha]: executing diffoscope
+[2024-06-02 00:18:41] INFO root fetch - processPackages [dalpha]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dalpha-0.5.5rc0.tar.gz tmp/dalpha-0.5.5rc1.tar.gz --markdown 20240602/d/dalpha/0.5.5rc0-0.5.5rc1/README.md --exclude *.pyd
+[2024-06-02 00:18:41] INFO root fetch - processPackages [python-datapack]: executing diffoscope
+[2024-06-02 00:18:41] INFO root fetch - processPackages [python-datapack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_datapack-0.2.1.tar.gz tmp/python_datapack-0.2.2.tar.gz --markdown 20240602/p/python-datapack/0.2.1-0.2.2/README.md --exclude *.pyd
+[2024-06-02 00:18:42] INFO root fetch - processPackages [aixhello]: Remove: archive file [/home/abi/fetcher/tmp/aixhello-2.0.tar.gz]
+[2024-06-02 00:18:42] INFO root fetch - processPackages [aixhello]: Remove: archive file [/home/abi/fetcher/tmp/aixhello-2.1.tar.gz]
+[2024-06-02 00:18:42] INFO root fetch - main [MainThread]: End processing [aixhello]: success
+[2024-06-02 00:18:42] INFO root fetch - processPackages [python-datapack]: Remove: archive file [/home/abi/fetcher/tmp/python_datapack-0.2.1.tar.gz]
+[2024-06-02 00:18:42] INFO root fetch - processPackages [python-datapack]: Remove: archive file [/home/abi/fetcher/tmp/python_datapack-0.2.2.tar.gz]
+[2024-06-02 00:18:42] INFO root fetch - main [MainThread]: End processing [python-datapack]: success
+[2024-06-02 00:18:42] INFO root fetch - processPackages [dalpha]: Remove: archive file [/home/abi/fetcher/tmp/dalpha-0.5.5rc0.tar.gz]
+[2024-06-02 00:18:42] INFO root fetch - processPackages [dalpha]: Remove: archive file [/home/abi/fetcher/tmp/dalpha-0.5.5rc1.tar.gz]
+[2024-06-02 00:18:42] INFO root fetch - main [MainThread]: End processing [dalpha]: success
+[2024-06-02 00:18:43] INFO root fetch - processPackages [database-knotinfo]: Downloading https://files.pythonhosted.org/packages/41/30/c317860b531bb854820f45d9dd7f7a377cb7f44dc35a5e3f5d73f0521eda/database_knotinfo-21.7.15.tar.gz
+[2024-06-02 00:18:43] INFO root fetch - processPackages [database-knotinfo]: executing diffoscope
+[2024-06-02 00:18:43] INFO root fetch - processPackages [database-knotinfo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/database_knotinfo-21.7.tar.gz tmp/database_knotinfo-21.7.15.tar.gz --markdown 20240602/d/database-knotinfo/21.7-21.7.15/README.md --exclude *.pyd
+[2024-06-02 00:18:45] INFO root fetch - processPackages [database-knotinfo]: Remove: archive file [/home/abi/fetcher/tmp/database_knotinfo-21.7.tar.gz]
+[2024-06-02 00:18:45] INFO root fetch - processPackages [database-knotinfo]: Remove: archive file [/home/abi/fetcher/tmp/database_knotinfo-21.7.15.tar.gz]
+[2024-06-02 00:18:45] INFO root fetch - main [MainThread]: End processing [database-knotinfo]: success
+[2024-06-02 00:18:45] INFO root fetch - main [MainThread]: Store serial: [23484116]
