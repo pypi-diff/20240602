@@ -1485,3 +1485,15 @@
 [2024-06-02 01:50:02] INFO root fetch - processPackages [copyparty]: Remove: archive file [/home/abi/fetcher/tmp/copyparty-1.9.9.tar.gz]
 [2024-06-02 01:50:02] INFO root fetch - main [MainThread]: End processing [copyparty]: success
 [2024-06-02 01:50:02] INFO root fetch - main [MainThread]: Store serial: [23484757]
+[2024-06-02 01:52:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23484757]
+[2024-06-02 01:52:10] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-02 01:52:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: location-local
+[2024-06-02 01:52:11] INFO root fetch - processPackages [location-local]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-06-02 01:52:11] INFO root fetch - processPackages [location-local]: Downloading https://files.pythonhosted.org/packages/9c/f2/fcc760989d48c5e33cbe7c435b39b0a9e8eba895ccbf5832a8b83178d5ab/location_local-0.0.98.tar.gz
+[2024-06-02 01:52:11] INFO root fetch - processPackages [location-local]: Downloading https://files.pythonhosted.org/packages/2e/1e/2a1e6264292214bc558e1230d4660d51bbe681d2921a250cb4f94052fc9e/location_local-0.0.99.tar.gz
+[2024-06-02 01:52:11] INFO root fetch - processPackages [location-local]: executing diffoscope
+[2024-06-02 01:52:11] INFO root fetch - processPackages [location-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/location_local-0.0.98.tar.gz tmp/location_local-0.0.99.tar.gz --markdown 20240602/l/location-local/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-06-02 01:52:12] INFO root fetch - processPackages [location-local]: Remove: archive file [/home/abi/fetcher/tmp/location_local-0.0.98.tar.gz]
+[2024-06-02 01:52:12] INFO root fetch - processPackages [location-local]: Remove: archive file [/home/abi/fetcher/tmp/location_local-0.0.99.tar.gz]
+[2024-06-02 01:52:12] INFO root fetch - main [MainThread]: End processing [location-local]: success
+[2024-06-02 01:52:12] INFO root fetch - main [MainThread]: Store serial: [23484760]
