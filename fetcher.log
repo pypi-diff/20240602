@@ -860,3 +860,33 @@
 [2024-06-02 00:53:41] INFO root fetch - processPackages [fudstop]: Remove: archive file [/home/abi/fetcher/tmp/fudstop-2.9.1.tar.gz]
 [2024-06-02 00:53:41] INFO root fetch - main [MainThread]: End processing [fudstop]: success
 [2024-06-02 00:53:41] INFO root fetch - main [MainThread]: Store serial: [23484352]
+[2024-06-02 00:55:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23484352]
+[2024-06-02 00:55:49] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-02 00:55:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: zeroize
+[2024-06-02 00:55:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tensortrax
+[2024-06-02 00:55:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mktdata
+[2024-06-02 00:55:49] INFO root fetch - processPackages [mktdata]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-06-02 00:55:50] INFO root fetch - processPackages [mktdata]: Downloading https://files.pythonhosted.org/packages/19/b6/e8d3de92f661be5f9c598c808d61b5ee28a95a4bd86a1e7d7d17402a773a/mktdata-0.0.7.tar.gz
+[2024-06-02 00:55:50] INFO root fetch - processPackages [tensortrax]: New version: [0.9.0] Old Version: [0.8.5]
+[2024-06-02 00:55:50] INFO root fetch - processPackages [zeroize]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-06-02 00:55:50] INFO root fetch - processPackages [mktdata]: Downloading https://files.pythonhosted.org/packages/2b/12/3d3caba50bcb67874839d7c7e275e36bee8bf4bc64d1e5e2a1f17f2af53a/mktdata-0.0.8.tar.gz
+[2024-06-02 00:55:50] INFO root fetch - processPackages [mktdata]: executing diffoscope
+[2024-06-02 00:55:50] INFO root fetch - processPackages [mktdata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mktdata-0.0.7.tar.gz tmp/mktdata-0.0.8.tar.gz --markdown 20240602/m/mktdata/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-06-02 00:55:50] INFO root fetch - processPackages [tensortrax]: Downloading https://files.pythonhosted.org/packages/89/90/35a2c54ede65e72fe80b04f638e7a8151b0671dbd4e55318c2de29784a04/tensortrax-0.8.5.tar.gz
+[2024-06-02 00:55:50] INFO root fetch - processPackages [zeroize]: Downloading https://files.pythonhosted.org/packages/a3/95/0dbd1d06838f8457d62a185edb73b89d45e0be8ee2242bf964ff29c8922b/zeroize-0.1.0.tar.gz
+[2024-06-02 00:55:50] INFO root fetch - processPackages [zeroize]: Downloading https://files.pythonhosted.org/packages/cf/00/d9b5078d92c624fa6de2755cb0b8f2d572e173946a5b4d0062e9793e7344/zeroize-0.1.1-pp39-pypy39_pp73-manylinux_2_17_armv7l.manylinux2014_armv7l.whl
+[2024-06-02 00:55:50] INFO root fetch - processPackages [tensortrax]: Downloading https://files.pythonhosted.org/packages/d5/ee/5781c8a0fd8be11b0a4fef0fa32c022b900698e16870bf834671c45e36c3/tensortrax-0.9.0.tar.gz
+[2024-06-02 00:55:50] INFO root fetch - processPackages [tensortrax]: executing diffoscope
+[2024-06-02 00:55:50] INFO root fetch - processPackages [tensortrax]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tensortrax-0.8.5.tar.gz tmp/tensortrax-0.9.0.tar.gz --markdown 20240602/t/tensortrax/0.8.5-0.9.0/README.md --exclude *.pyd
+[2024-06-02 00:55:50] INFO root fetch - processPackages [mktdata]: Remove: archive file [/home/abi/fetcher/tmp/mktdata-0.0.7.tar.gz]
+[2024-06-02 00:55:50] INFO root fetch - processPackages [mktdata]: Remove: archive file [/home/abi/fetcher/tmp/mktdata-0.0.8.tar.gz]
+[2024-06-02 00:55:50] INFO root fetch - main [MainThread]: End processing [mktdata]: success
+[2024-06-02 00:55:51] INFO root fetch - processPackages [zeroize]: executing diffoscope
+[2024-06-02 00:55:51] INFO root fetch - processPackages [zeroize]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zeroize-0.1.0.tar.gz tmp/zeroize-0.1.1-pp39-pypy39_pp73-manylinux_2_17_armv7l.manylinux2014_armv7l.whl.zip --markdown 20240602/z/zeroize/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-06-02 00:55:51] INFO root fetch - processPackages [tensortrax]: Remove: archive file [/home/abi/fetcher/tmp/tensortrax-0.8.5.tar.gz]
+[2024-06-02 00:55:51] INFO root fetch - processPackages [tensortrax]: Remove: archive file [/home/abi/fetcher/tmp/tensortrax-0.9.0.tar.gz]
+[2024-06-02 00:55:51] INFO root fetch - main [MainThread]: End processing [tensortrax]: success
+[2024-06-02 00:55:51] INFO root fetch - processPackages [zeroize]: Remove: archive file [/home/abi/fetcher/tmp/zeroize-0.1.0.tar.gz]
+[2024-06-02 00:55:51] INFO root fetch - processPackages [zeroize]: Remove: archive file [/home/abi/fetcher/tmp/zeroize-0.1.1-pp39-pypy39_pp73-manylinux_2_17_armv7l.manylinux2014_armv7l.whl.zip]
+[2024-06-02 00:55:51] INFO root fetch - main [MainThread]: End processing [zeroize]: success
+[2024-06-02 00:55:51] INFO root fetch - main [MainThread]: Store serial: [23484378]
