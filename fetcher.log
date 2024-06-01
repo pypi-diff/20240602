@@ -443,3 +443,24 @@
 [2024-06-02 00:31:43] INFO root fetch - processPackages [aixhello]: Remove: archive file [/home/abi/fetcher/tmp/aixhello-2.6.tar.gz]
 [2024-06-02 00:31:43] INFO root fetch - main [MainThread]: End processing [aixhello]: success
 [2024-06-02 00:31:43] INFO root fetch - main [MainThread]: Store serial: [23484144]
+[2024-06-02 00:33:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23484144]
+[2024-06-02 00:33:51] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-02 00:33:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: codal-tsetmc
+[2024-06-02 00:33:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: empower-functions
+[2024-06-02 00:33:52] INFO root fetch - processPackages [codal-tsetmc]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-06-02 00:33:52] INFO root fetch - processPackages [empower-functions]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-06-02 00:33:52] INFO root fetch - processPackages [empower-functions]: Downloading https://files.pythonhosted.org/packages/23/85/92f0d686bcb5b724f7c39d5d7366549ddfcde978ae824a26dd6f34e6b6af/empower_functions-0.1.3.tar.gz
+[2024-06-02 00:33:52] INFO root fetch - processPackages [codal-tsetmc]: Downloading https://files.pythonhosted.org/packages/d9/c4/267edd26f171e53aad2716c1b19a4a3cee6527999bf2d119dff8de0f061c/codal_tsetmc-0.0.8.tar.gz
+[2024-06-02 00:33:52] INFO root fetch - processPackages [empower-functions]: Downloading https://files.pythonhosted.org/packages/4f/94/e11ccbbab758485af5c9f8262c3e0af1aa52453f34760c541e4a45ccad2f/empower_functions-0.1.4.tar.gz
+[2024-06-02 00:33:52] INFO root fetch - processPackages [codal-tsetmc]: Downloading https://files.pythonhosted.org/packages/10/18/92ca7e952acd820cc5293286bb96017f583d9ac1c5f6ddb222758d65ee89/codal_tsetmc-0.0.9.tar.gz
+[2024-06-02 00:33:52] INFO root fetch - processPackages [empower-functions]: executing diffoscope
+[2024-06-02 00:33:52] INFO root fetch - processPackages [empower-functions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/empower_functions-0.1.3.tar.gz tmp/empower_functions-0.1.4.tar.gz --markdown 20240602/e/empower-functions/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-06-02 00:33:52] INFO root fetch - processPackages [codal-tsetmc]: executing diffoscope
+[2024-06-02 00:33:52] INFO root fetch - processPackages [codal-tsetmc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/codal_tsetmc-0.0.8.tar.gz tmp/codal_tsetmc-0.0.9.tar.gz --markdown 20240602/c/codal-tsetmc/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-06-02 00:33:53] INFO root fetch - processPackages [empower-functions]: Remove: archive file [/home/abi/fetcher/tmp/empower_functions-0.1.3.tar.gz]
+[2024-06-02 00:33:53] INFO root fetch - processPackages [empower-functions]: Remove: archive file [/home/abi/fetcher/tmp/empower_functions-0.1.4.tar.gz]
+[2024-06-02 00:33:53] INFO root fetch - main [MainThread]: End processing [empower-functions]: success
+[2024-06-02 00:33:53] INFO root fetch - processPackages [codal-tsetmc]: Remove: archive file [/home/abi/fetcher/tmp/codal_tsetmc-0.0.8.tar.gz]
+[2024-06-02 00:33:53] INFO root fetch - processPackages [codal-tsetmc]: Remove: archive file [/home/abi/fetcher/tmp/codal_tsetmc-0.0.9.tar.gz]
+[2024-06-02 00:33:53] INFO root fetch - main [MainThread]: End processing [codal-tsetmc]: success
+[2024-06-02 00:33:53] INFO root fetch - main [MainThread]: Store serial: [23484151]
