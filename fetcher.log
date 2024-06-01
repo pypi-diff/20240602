@@ -1521,3 +1521,33 @@
 [2024-06-02 01:56:32] INFO root fetch - processPackages [pyGetComics]: Remove: archive file [/home/abi/fetcher/tmp/pygetcomics-1.4.6.tar.gz]
 [2024-06-02 01:56:32] INFO root fetch - main [MainThread]: End processing [pyGetComics]: success
 [2024-06-02 01:56:32] INFO root fetch - main [MainThread]: Store serial: [23484765]
+[2024-06-02 01:58:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23484765]
+[2024-06-02 01:58:42] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-02 01:58:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: novelai-api
+[2024-06-02 01:58:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: minorimpact
+[2024-06-02 01:58:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rag-assistant
+[2024-06-02 01:58:42] INFO root fetch - processPackages [rag-assistant]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-06-02 01:58:42] INFO root fetch - processPackages [novelai-api]: New version: [0.9] Old Version: [0.8]
+[2024-06-02 01:58:42] INFO root fetch - processPackages [minorimpact]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-06-02 01:58:42] INFO root fetch - processPackages [rag-assistant]: Downloading https://files.pythonhosted.org/packages/a4/19/7416b6eb15f6056bdbd4d0d826d8d9028b76f3e60cabea03af0792692d69/rag_assistant-0.1.8.tar.gz
+[2024-06-02 01:58:42] INFO root fetch - processPackages [novelai-api]: Downloading https://files.pythonhosted.org/packages/fc/5f/4521adcc080f088c499ad70d5ea4d991b23f72661d4aa68a9112d0b3283e/novelai-api-0.8.tar.gz
+[2024-06-02 01:58:42] INFO root fetch - processPackages [rag-assistant]: Downloading https://files.pythonhosted.org/packages/ab/f1/620c7fb54b4a7ccc6bfb8b3fef465d28ab6f59106745edd2d05206cead9f/rag_assistant-0.1.9.tar.gz
+[2024-06-02 01:58:42] INFO root fetch - processPackages [minorimpact]: Downloading https://files.pythonhosted.org/packages/db/3a/79a698a7c01e22107e120bb920697510f7a274a2bc04a276c3756bdf8cb2/minorimpact-0.0.8.tar.gz
+[2024-06-02 01:58:42] INFO root fetch - processPackages [rag-assistant]: executing diffoscope
+[2024-06-02 01:58:42] INFO root fetch - processPackages [rag-assistant]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rag_assistant-0.1.8.tar.gz tmp/rag_assistant-0.1.9.tar.gz --markdown 20240602/r/rag-assistant/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-06-02 01:58:42] INFO root fetch - processPackages [novelai-api]: Downloading https://files.pythonhosted.org/packages/69/ed/74960ad9154e8dc49c4d6c47cbc174dc97461bb9e5e113a548c167b72455/novelai-api-0.9.tar.gz
+[2024-06-02 01:58:42] INFO root fetch - processPackages [minorimpact]: Downloading https://files.pythonhosted.org/packages/c7/d4/0f3a4d57beea89bc04267f79bf1d7172374920cecc792072a46f2b445138/minorimpact-0.0.9.tar.gz
+[2024-06-02 01:58:42] INFO root fetch - processPackages [minorimpact]: executing diffoscope
+[2024-06-02 01:58:42] INFO root fetch - processPackages [minorimpact]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/minorimpact-0.0.8.tar.gz tmp/minorimpact-0.0.9.tar.gz --markdown 20240602/m/minorimpact/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-06-02 01:58:43] INFO root fetch - processPackages [novelai-api]: executing diffoscope
+[2024-06-02 01:58:43] INFO root fetch - processPackages [novelai-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/novelai-api-0.8.tar.gz tmp/novelai-api-0.9.tar.gz --markdown 20240602/n/novelai-api/0.8-0.9/README.md --exclude *.pyd
+[2024-06-02 01:58:43] INFO root fetch - processPackages [rag-assistant]: Remove: archive file [/home/abi/fetcher/tmp/rag_assistant-0.1.8.tar.gz]
+[2024-06-02 01:58:43] INFO root fetch - processPackages [rag-assistant]: Remove: archive file [/home/abi/fetcher/tmp/rag_assistant-0.1.9.tar.gz]
+[2024-06-02 01:58:43] INFO root fetch - main [MainThread]: End processing [rag-assistant]: success
+[2024-06-02 01:58:43] INFO root fetch - processPackages [minorimpact]: Remove: archive file [/home/abi/fetcher/tmp/minorimpact-0.0.8.tar.gz]
+[2024-06-02 01:58:43] INFO root fetch - processPackages [minorimpact]: Remove: archive file [/home/abi/fetcher/tmp/minorimpact-0.0.9.tar.gz]
+[2024-06-02 01:58:43] INFO root fetch - main [MainThread]: End processing [minorimpact]: success
+[2024-06-02 01:58:43] INFO root fetch - processPackages [novelai-api]: Remove: archive file [/home/abi/fetcher/tmp/novelai-api-0.8.tar.gz]
+[2024-06-02 01:58:43] INFO root fetch - processPackages [novelai-api]: Remove: archive file [/home/abi/fetcher/tmp/novelai-api-0.9.tar.gz]
+[2024-06-02 01:58:43] INFO root fetch - main [MainThread]: End processing [novelai-api]: success
+[2024-06-02 01:58:43] INFO root fetch - main [MainThread]: Store serial: [23484773]
