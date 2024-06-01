@@ -1047,3 +1047,42 @@
 [2024-06-02 01:06:42] INFO root fetch - processPackages [tmnt]: Remove: archive file [/home/abi/fetcher/tmp/tmnt-0.7.52b20240531.tar.gz]
 [2024-06-02 01:06:42] INFO root fetch - main [MainThread]: End processing [tmnt]: success
 [2024-06-02 01:06:42] INFO root fetch - main [MainThread]: Store serial: [23484598]
+[2024-06-02 01:08:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23484598]
+[2024-06-02 01:08:50] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-06-02 01:08:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fairlyuncertain
+[2024-06-02 01:08:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: class-cache
+[2024-06-02 01:08:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pygayme
+[2024-06-02 01:08:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: c2cwsgiutils
+[2024-06-02 01:08:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mypackage202461
+[2024-06-02 01:08:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: chainlite
+[2024-06-02 01:08:50] WARNING root fetch - processPackages [pygayme]: Skipping, unable to determine old version
+[2024-06-02 01:08:50] INFO root fetch - main [MainThread]: End processing [pygayme] error
+[2024-06-02 01:08:50] INFO root fetch - processPackages [c2cwsgiutils]: New version: [6.1.0.dev99] Old Version: [6.1.0.dev97]
+[2024-06-02 01:08:50] WARNING root fetch - processPackages [mypackage202461]: Skipping, unable to determine old version
+[2024-06-02 01:08:50] INFO root fetch - main [MainThread]: End processing [mypackage202461] error
+[2024-06-02 01:08:50] INFO root fetch - processPackages [class-cache]: New version: [0.5.0] Old Version: [0.4.1]
+[2024-06-02 01:08:50] WARNING root fetch - processPackages [fairlyuncertain]: Skipping, unable to determine old version
+[2024-06-02 01:08:50] INFO root fetch - main [MainThread]: End processing [fairlyuncertain] error
+[2024-06-02 01:08:50] INFO root fetch - processPackages [chainlite]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-06-02 01:08:50] INFO root fetch - processPackages [c2cwsgiutils]: Downloading https://files.pythonhosted.org/packages/70/82/1062250c5f8b684273f1f576ab49863eb71b99aedcf0e638b7d18af727dc/c2cwsgiutils-6.1.0.dev97.tar.gz
+[2024-06-02 01:08:51] INFO root fetch - processPackages [class-cache]: Downloading https://files.pythonhosted.org/packages/3d/ed/c72095631b14945e15674b569c35afd2fa7fadd7628230f5cd152fb7ae6a/class_cache-0.4.1.tar.gz
+[2024-06-02 01:08:51] INFO root fetch - processPackages [chainlite]: Downloading https://files.pythonhosted.org/packages/d1/17/d225fb3eacbe1f0b484b103cba34c91e807830cc73c44a1f62e1f67293a3/chainlite-0.1.8.tar.gz
+[2024-06-02 01:08:51] INFO root fetch - processPackages [c2cwsgiutils]: Downloading https://files.pythonhosted.org/packages/ab/62/7a161c456f1828f37b18431d8f5cf1bbda9dfe8ef509b1c94d8dad7c8da1/c2cwsgiutils-6.1.0.dev99.tar.gz
+[2024-06-02 01:08:51] INFO root fetch - processPackages [c2cwsgiutils]: executing diffoscope
+[2024-06-02 01:08:51] INFO root fetch - processPackages [c2cwsgiutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/c2cwsgiutils-6.1.0.dev97.tar.gz tmp/c2cwsgiutils-6.1.0.dev99.tar.gz --markdown 20240602/c/c2cwsgiutils/6.1.0.dev97-6.1.0.dev99/README.md --exclude *.pyd
+[2024-06-02 01:08:51] INFO root fetch - processPackages [class-cache]: Downloading https://files.pythonhosted.org/packages/43/d5/3c8c2bc94c100de244dbc2888f0b8990b9c75bf3f338b11d36122bbb964a/class_cache-0.5.0.tar.gz
+[2024-06-02 01:08:51] INFO root fetch - processPackages [chainlite]: Downloading https://files.pythonhosted.org/packages/00/38/75ddd9bf7de664b880ab23d3009566d68ef7c9704db1993bb69840aec0ff/chainlite-0.1.9.tar.gz
+[2024-06-02 01:08:51] INFO root fetch - processPackages [class-cache]: executing diffoscope
+[2024-06-02 01:08:51] INFO root fetch - processPackages [class-cache]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/class_cache-0.4.1.tar.gz tmp/class_cache-0.5.0.tar.gz --markdown 20240602/c/class-cache/0.4.1-0.5.0/README.md --exclude *.pyd
+[2024-06-02 01:08:51] INFO root fetch - processPackages [chainlite]: executing diffoscope
+[2024-06-02 01:08:51] INFO root fetch - processPackages [chainlite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chainlite-0.1.8.tar.gz tmp/chainlite-0.1.9.tar.gz --markdown 20240602/c/chainlite/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-06-02 01:08:52] INFO root fetch - processPackages [c2cwsgiutils]: Remove: archive file [/home/abi/fetcher/tmp/c2cwsgiutils-6.1.0.dev97.tar.gz]
+[2024-06-02 01:08:52] INFO root fetch - processPackages [c2cwsgiutils]: Remove: archive file [/home/abi/fetcher/tmp/c2cwsgiutils-6.1.0.dev99.tar.gz]
+[2024-06-02 01:08:52] INFO root fetch - main [MainThread]: End processing [c2cwsgiutils]: success
+[2024-06-02 01:08:52] INFO root fetch - processPackages [chainlite]: Remove: archive file [/home/abi/fetcher/tmp/chainlite-0.1.8.tar.gz]
+[2024-06-02 01:08:52] INFO root fetch - processPackages [chainlite]: Remove: archive file [/home/abi/fetcher/tmp/chainlite-0.1.9.tar.gz]
+[2024-06-02 01:08:52] INFO root fetch - main [MainThread]: End processing [chainlite]: success
+[2024-06-02 01:08:52] INFO root fetch - processPackages [class-cache]: Remove: archive file [/home/abi/fetcher/tmp/class_cache-0.4.1.tar.gz]
+[2024-06-02 01:08:52] INFO root fetch - processPackages [class-cache]: Remove: archive file [/home/abi/fetcher/tmp/class_cache-0.5.0.tar.gz]
+[2024-06-02 01:08:52] INFO root fetch - main [MainThread]: End processing [class-cache]: success
+[2024-06-02 01:08:52] INFO root fetch - main [MainThread]: Store serial: [23484619]
