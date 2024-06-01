@@ -1360,3 +1360,42 @@
 [2024-06-02 01:34:53] INFO root fetch - processPackages [yt-dlp]: Remove: archive file [/home/abi/fetcher/tmp/yt_dlp-2024.5.8.232715.dev0.tar.gz]
 [2024-06-02 01:34:53] INFO root fetch - main [MainThread]: End processing [yt-dlp]: success
 [2024-06-02 01:34:53] INFO root fetch - main [MainThread]: Store serial: [23484715]
+[2024-06-02 01:36:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23484715]
+[2024-06-02 01:37:03] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-02 01:37:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kvalchemy
+[2024-06-02 01:37:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rocat
+[2024-06-02 01:37:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: songs-to-youtube
+[2024-06-02 01:37:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lbt-honeybee
+[2024-06-02 01:37:03] INFO root fetch - processPackages [kvalchemy]: New version: [0.2.1] Old Version: [0.1.1]
+[2024-06-02 01:37:03] INFO root fetch - processPackages [lbt-honeybee]: New version: [0.8.99] Old Version: [0.8.98]
+[2024-06-02 01:37:03] INFO root fetch - processPackages [songs-to-youtube]: New version: [0.12.9] Old Version: [0.12.8]
+[2024-06-02 01:37:03] INFO root fetch - processPackages [rocat]: New version: [0.2.0] Old Version: [0.1.14]
+[2024-06-02 01:37:03] INFO root fetch - processPackages [kvalchemy]: Downloading https://files.pythonhosted.org/packages/7c/86/cedee502356b2d41a0a76cb8483e87ee3992d419b6e360130fee5f49aceb/kvalchemy-0.1.1.tar.gz
+[2024-06-02 01:37:03] INFO root fetch - processPackages [lbt-honeybee]: Downloading https://files.pythonhosted.org/packages/b5/a0/c6742c4b1a93565a552f073a8cad3689b9e2edcf401d45bd9fddf0485a8d/lbt-honeybee-0.8.98.tar.gz
+[2024-06-02 01:37:04] INFO root fetch - processPackages [songs-to-youtube]: Downloading https://files.pythonhosted.org/packages/f6/34/986f3442a74e136172d95d58d083f71b33bb55d06b6559eb9c0c0cf69473/songs_to_youtube-0.12.8.tar.gz
+[2024-06-02 01:37:04] INFO root fetch - processPackages [rocat]: Downloading https://files.pythonhosted.org/packages/a7/b8/77fc6d999963263568dbcf97f9d7de5ea4afba238b0db1537af6e36878c8/rocat-0.1.14.tar.gz
+[2024-06-02 01:37:04] INFO root fetch - processPackages [kvalchemy]: Downloading https://files.pythonhosted.org/packages/50/aa/4c1d4f48cbc7a7f3d5d805c75e177c47c22162a9033e8bda2a971adb03f0/kvalchemy-0.2.1.tar.gz
+[2024-06-02 01:37:04] INFO root fetch - processPackages [lbt-honeybee]: Downloading https://files.pythonhosted.org/packages/f1/61/4f36e668d3e1767b0f4d921481ad087bec472a2afc14ea20f916e083c690/lbt-honeybee-0.8.99.tar.gz
+[2024-06-02 01:37:04] INFO root fetch - processPackages [kvalchemy]: executing diffoscope
+[2024-06-02 01:37:04] INFO root fetch - processPackages [kvalchemy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kvalchemy-0.1.1.tar.gz tmp/kvalchemy-0.2.1.tar.gz --markdown 20240602/k/kvalchemy/0.1.1-0.2.1/README.md --exclude *.pyd
+[2024-06-02 01:37:04] INFO root fetch - processPackages [lbt-honeybee]: executing diffoscope
+[2024-06-02 01:37:04] INFO root fetch - processPackages [lbt-honeybee]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lbt-honeybee-0.8.98.tar.gz tmp/lbt-honeybee-0.8.99.tar.gz --markdown 20240602/l/lbt-honeybee/0.8.98-0.8.99/README.md --exclude *.pyd
+[2024-06-02 01:37:04] INFO root fetch - processPackages [rocat]: Downloading https://files.pythonhosted.org/packages/ff/4e/ed6d80caae7d042a4573d2a62b02607de9f414ad2358b1b9bd4aae01fe39/rocat-0.2.0.tar.gz
+[2024-06-02 01:37:04] INFO root fetch - processPackages [songs-to-youtube]: Downloading https://files.pythonhosted.org/packages/33/50/329813650e401e32e1ebcd8c2e881a314bf92783e6a988d87b95d33ac400/songs_to_youtube-0.12.9.tar.gz
+[2024-06-02 01:37:04] INFO root fetch - processPackages [rocat]: executing diffoscope
+[2024-06-02 01:37:04] INFO root fetch - processPackages [rocat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rocat-0.1.14.tar.gz tmp/rocat-0.2.0.tar.gz --markdown 20240602/r/rocat/0.1.14-0.2.0/README.md --exclude *.pyd
+[2024-06-02 01:37:04] INFO root fetch - processPackages [songs-to-youtube]: executing diffoscope
+[2024-06-02 01:37:04] INFO root fetch - processPackages [songs-to-youtube]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/songs_to_youtube-0.12.8.tar.gz tmp/songs_to_youtube-0.12.9.tar.gz --markdown 20240602/s/songs-to-youtube/0.12.8-0.12.9/README.md --exclude *.pyd
+[2024-06-02 01:37:04] INFO root fetch - processPackages [lbt-honeybee]: Remove: archive file [/home/abi/fetcher/tmp/lbt-honeybee-0.8.98.tar.gz]
+[2024-06-02 01:37:04] INFO root fetch - processPackages [lbt-honeybee]: Remove: archive file [/home/abi/fetcher/tmp/lbt-honeybee-0.8.99.tar.gz]
+[2024-06-02 01:37:04] INFO root fetch - main [MainThread]: End processing [lbt-honeybee]: success
+[2024-06-02 01:37:05] INFO root fetch - processPackages [kvalchemy]: Remove: archive file [/home/abi/fetcher/tmp/kvalchemy-0.1.1.tar.gz]
+[2024-06-02 01:37:05] INFO root fetch - processPackages [kvalchemy]: Remove: archive file [/home/abi/fetcher/tmp/kvalchemy-0.2.1.tar.gz]
+[2024-06-02 01:37:05] INFO root fetch - main [MainThread]: End processing [kvalchemy]: success
+[2024-06-02 01:37:05] INFO root fetch - processPackages [rocat]: Remove: archive file [/home/abi/fetcher/tmp/rocat-0.1.14.tar.gz]
+[2024-06-02 01:37:05] INFO root fetch - processPackages [rocat]: Remove: archive file [/home/abi/fetcher/tmp/rocat-0.2.0.tar.gz]
+[2024-06-02 01:37:05] INFO root fetch - main [MainThread]: End processing [rocat]: success
+[2024-06-02 01:37:05] INFO root fetch - processPackages [songs-to-youtube]: Remove: archive file [/home/abi/fetcher/tmp/songs_to_youtube-0.12.8.tar.gz]
+[2024-06-02 01:37:05] INFO root fetch - processPackages [songs-to-youtube]: Remove: archive file [/home/abi/fetcher/tmp/songs_to_youtube-0.12.9.tar.gz]
+[2024-06-02 01:37:05] INFO root fetch - main [MainThread]: End processing [songs-to-youtube]: success
+[2024-06-02 01:37:05] INFO root fetch - main [MainThread]: Store serial: [23484728]
