@@ -1468,3 +1468,20 @@
 [2024-06-02 01:45:45] INFO root fetch - processPackages [simevopy]: Remove: archive file [/home/abi/fetcher/tmp/simevopy-0.1.9.tar.gz]
 [2024-06-02 01:45:45] INFO root fetch - main [MainThread]: End processing [simevopy]: success
 [2024-06-02 01:45:45] INFO root fetch - main [MainThread]: Store serial: [23484749]
+[2024-06-02 01:47:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23484749]
+[2024-06-02 01:47:54] INFO root fetch - main [MainThread]: No changed packages found
+[2024-06-02 01:49:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23484749]
+[2024-06-02 01:49:59] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-02 01:49:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aserial
+[2024-06-02 01:49:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: copyparty
+[2024-06-02 01:49:59] WARNING root fetch - processPackages [aserial]: Skipping, unable to determine old version
+[2024-06-02 01:49:59] INFO root fetch - main [MainThread]: End processing [aserial] error
+[2024-06-02 01:49:59] INFO root fetch - processPackages [copyparty]: New version: [1.9.9] Old Version: [1.9.8]
+[2024-06-02 01:50:00] INFO root fetch - processPackages [copyparty]: Downloading https://files.pythonhosted.org/packages/aa/91/e640302f729af122c993bc72216142859cf0d38009436473c9de51f2918f/copyparty-1.9.8.tar.gz
+[2024-06-02 01:50:00] INFO root fetch - processPackages [copyparty]: Downloading https://files.pythonhosted.org/packages/fb/5b/a1bc07b4a139d33dbbb0b5355223c94f0621cab166e1b656113ab7ccb921/copyparty-1.9.9.tar.gz
+[2024-06-02 01:50:01] INFO root fetch - processPackages [copyparty]: executing diffoscope
+[2024-06-02 01:50:01] INFO root fetch - processPackages [copyparty]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/copyparty-1.9.8.tar.gz tmp/copyparty-1.9.9.tar.gz --markdown 20240602/c/copyparty/1.9.8-1.9.9/README.md --exclude *.pyd
+[2024-06-02 01:50:02] INFO root fetch - processPackages [copyparty]: Remove: archive file [/home/abi/fetcher/tmp/copyparty-1.9.8.tar.gz]
+[2024-06-02 01:50:02] INFO root fetch - processPackages [copyparty]: Remove: archive file [/home/abi/fetcher/tmp/copyparty-1.9.9.tar.gz]
+[2024-06-02 01:50:02] INFO root fetch - main [MainThread]: End processing [copyparty]: success
+[2024-06-02 01:50:02] INFO root fetch - main [MainThread]: Store serial: [23484757]
