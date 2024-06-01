@@ -1011,3 +1011,39 @@
 [2024-06-02 01:04:32] INFO root fetch - main [MainThread]: End processing [getpack]: success
 [2024-06-02 01:04:32] INFO root fetch - main [MainThread]: End processing [getpack]: success
 [2024-06-02 01:04:32] INFO root fetch - main [MainThread]: Store serial: [23484574]
+[2024-06-02 01:06:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23484574]
+[2024-06-02 01:06:41] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-06-02 01:06:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tmnt
+[2024-06-02 01:06:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pykylie
+[2024-06-02 01:06:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: almax-common
+[2024-06-02 01:06:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bussinwebx-get
+[2024-06-02 01:06:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: walletAVA
+[2024-06-02 01:06:41] INFO root fetch - processPackages [almax-common]: New version: [1.0.5.dev20240601225905] Old Version: [1.0.5.dev20240601224724]
+[2024-06-02 01:06:41] WARNING root fetch - processPackages [walletAVA]: Skipping, unable to determine old version
+[2024-06-02 01:06:41] INFO root fetch - main [MainThread]: End processing [walletAVA] error
+[2024-06-02 01:06:41] INFO root fetch - processPackages [bussinwebx-get]: New version: [1.0.0] Old Version: [0.0.0]
+[2024-06-02 01:06:41] INFO root fetch - processPackages [tmnt]: New version: [0.7.52b20240531] Old Version: [0.7.52b20240530]
+[2024-06-02 01:06:41] INFO root fetch - processPackages [almax-common]: Downloading https://files.pythonhosted.org/packages/63/3f/da294d661a3784debe606ec7766230535485bddef86ac3fb3e91d6a16f3c/almax_common-1.0.5.dev20240601224724.tar.gz
+[2024-06-02 01:06:41] WARNING root fetch - processPackages [pykylie]: Skipping, unable to determine old version
+[2024-06-02 01:06:41] INFO root fetch - main [MainThread]: End processing [pykylie] error
+[2024-06-02 01:06:41] INFO root fetch - processPackages [tmnt]: Downloading https://files.pythonhosted.org/packages/82/84/e83ac2fd36bd2131cf50bdbc1469a500bbb3a0e5c4d8198f805a1072d60d/tmnt-0.7.52b20240530.tar.gz
+[2024-06-02 01:06:41] INFO root fetch - processPackages [bussinwebx-get]: Downloading https://files.pythonhosted.org/packages/0a/3c/d536352e14a58d6641a1bb6808259a791b0c7ed429f50ce9f8283613ece6/bussinwebx_get-0.0.0.tar.gz
+[2024-06-02 01:06:41] INFO root fetch - processPackages [almax-common]: Downloading https://files.pythonhosted.org/packages/91/01/86f63de5138cffe633a1c6b4df4b7edcd30ea868bb9ced941052b5d8df22/almax_common-1.0.5.dev20240601225905.tar.gz
+[2024-06-02 01:06:41] INFO root fetch - processPackages [tmnt]: Downloading https://files.pythonhosted.org/packages/1e/09/c222dc79c5f30efdd4d800e4db69cfc6654af5485dd8d09b8a03b096a62a/tmnt-0.7.52b20240531.tar.gz
+[2024-06-02 01:06:41] INFO root fetch - processPackages [almax-common]: executing diffoscope
+[2024-06-02 01:06:41] INFO root fetch - processPackages [almax-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/almax_common-1.0.5.dev20240601224724.tar.gz tmp/almax_common-1.0.5.dev20240601225905.tar.gz --markdown 20240602/a/almax-common/1.0.5.dev20240601224724-1.0.5.dev20240601225905/README.md --exclude *.pyd
+[2024-06-02 01:06:41] INFO root fetch - processPackages [tmnt]: executing diffoscope
+[2024-06-02 01:06:41] INFO root fetch - processPackages [tmnt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tmnt-0.7.52b20240530.tar.gz tmp/tmnt-0.7.52b20240531.tar.gz --markdown 20240602/t/tmnt/0.7.52b20240530-0.7.52b20240531/README.md --exclude *.pyd
+[2024-06-02 01:06:42] INFO root fetch - processPackages [bussinwebx-get]: Downloading https://files.pythonhosted.org/packages/38/d9/8134704d78940fe95b1bd1b05d7da6dad00d984cf7cca66f64010071a6a1/bussinwebx_get-1.0.0.tar.gz
+[2024-06-02 01:06:42] INFO root fetch - processPackages [bussinwebx-get]: executing diffoscope
+[2024-06-02 01:06:42] INFO root fetch - processPackages [bussinwebx-get]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bussinwebx_get-0.0.0.tar.gz tmp/bussinwebx_get-1.0.0.tar.gz --markdown 20240602/b/bussinwebx-get/0.0.0-1.0.0/README.md --exclude *.pyd
+[2024-06-02 01:06:42] INFO root fetch - processPackages [almax-common]: Remove: archive file [/home/abi/fetcher/tmp/almax_common-1.0.5.dev20240601224724.tar.gz]
+[2024-06-02 01:06:42] INFO root fetch - processPackages [almax-common]: Remove: archive file [/home/abi/fetcher/tmp/almax_common-1.0.5.dev20240601225905.tar.gz]
+[2024-06-02 01:06:42] INFO root fetch - main [MainThread]: End processing [almax-common]: success
+[2024-06-02 01:06:42] INFO root fetch - processPackages [bussinwebx-get]: Remove: archive file [/home/abi/fetcher/tmp/bussinwebx_get-0.0.0.tar.gz]
+[2024-06-02 01:06:42] INFO root fetch - processPackages [bussinwebx-get]: Remove: archive file [/home/abi/fetcher/tmp/bussinwebx_get-1.0.0.tar.gz]
+[2024-06-02 01:06:42] INFO root fetch - main [MainThread]: End processing [bussinwebx-get]: success
+[2024-06-02 01:06:42] INFO root fetch - processPackages [tmnt]: Remove: archive file [/home/abi/fetcher/tmp/tmnt-0.7.52b20240530.tar.gz]
+[2024-06-02 01:06:42] INFO root fetch - processPackages [tmnt]: Remove: archive file [/home/abi/fetcher/tmp/tmnt-0.7.52b20240531.tar.gz]
+[2024-06-02 01:06:42] INFO root fetch - main [MainThread]: End processing [tmnt]: success
+[2024-06-02 01:06:42] INFO root fetch - main [MainThread]: Store serial: [23484598]
