@@ -208,3 +208,47 @@
 [2024-06-02 00:07:41] INFO root fetch - processPackages [nnetsauce]: Remove: archive file [/home/abi/fetcher/tmp/nnetsauce-0.9.6-cp38-cp38-macosx_10_15_x86_64.whl.zip]
 [2024-06-02 00:07:41] INFO root fetch - main [MainThread]: End processing [nnetsauce]: success
 [2024-06-02 00:07:41] INFO root fetch - main [MainThread]: Store serial: [23484064]
+[2024-06-02 00:09:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23484064]
+[2024-06-02 00:09:49] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-06-02 00:09:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: antpack
+[2024-06-02 00:09:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mpflash
+[2024-06-02 00:09:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyscf
+[2024-06-02 00:09:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lbt-dragonfly
+[2024-06-02 00:09:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: monaco-qt
+[2024-06-02 00:09:49] INFO root fetch - processPackages [monaco-qt]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-06-02 00:09:49] INFO root fetch - processPackages [mpflash]: New version: [0.8.1b1] Old Version: [0.8.0]
+[2024-06-02 00:09:49] INFO root fetch - processPackages [lbt-dragonfly]: New version: [0.9.99] Old Version: [0.9.98]
+[2024-06-02 00:09:49] INFO root fetch - processPackages [antpack]: New version: [0.2.5] Old Version: [0.2.0]
+[2024-06-02 00:09:49] INFO root fetch - processPackages [monaco-qt]: Downloading https://files.pythonhosted.org/packages/0f/f0/dece02b940e5b6ad47041f7e87d86c381eb9b439932e0398a0bbe3093f9f/monaco-qt-0.1.7.tar.gz
+[2024-06-02 00:09:49] INFO root fetch - processPackages [mpflash]: Downloading https://files.pythonhosted.org/packages/52/7e/52f6297037f800ea3e66b26b7ee2e6f2d401c8d9f65a91864baac781e792/mpflash-0.8.0.tar.gz
+[2024-06-02 00:09:49] INFO root fetch - processPackages [pyscf]: New version: [2.6.0] Old Version: [2.5.0]
+[2024-06-02 00:09:49] INFO root fetch - processPackages [lbt-dragonfly]: Downloading https://files.pythonhosted.org/packages/be/ae/7267dfd241a0641f3fbadea4128db5ffa29609911cadb5fc4840656bb44a/lbt-dragonfly-0.9.98.tar.gz
+[2024-06-02 00:09:49] INFO root fetch - processPackages [antpack]: Downloading https://files.pythonhosted.org/packages/2b/2c/895db2f71c67379080cdf9346e7d4e9bfec8b069f6281a5df1efdf5d36b4/antpack-0.2.0.tar.gz
+[2024-06-02 00:09:49] INFO root fetch - processPackages [pyscf]: Downloading https://files.pythonhosted.org/packages/b4/df/e24bc63a972e8c933ea7857ce49fb1a63c35b6e5d8fa073d1fe3cfcc576f/pyscf-2.5.0.tar.gz
+[2024-06-02 00:09:49] INFO root fetch - processPackages [lbt-dragonfly]: Downloading https://files.pythonhosted.org/packages/b4/08/0ca46e9f7eef7b2cce7f0c6110106c42aa35a79bd88110559177f64d733a/lbt-dragonfly-0.9.99.tar.gz
+[2024-06-02 00:09:49] WARNING root fetch - processPackages [antpack]: Skipping package: exceeds size limit 13721929>=10485760
+[2024-06-02 00:09:49] INFO root fetch - main [MainThread]: End processing [antpack] error
+[2024-06-02 00:09:49] INFO root fetch - processPackages [mpflash]: Downloading https://files.pythonhosted.org/packages/00/c2/ff8eaacbe972a0e823997b7a6e85130f83d7d3ff4e2f74e953af4c10f42e/mpflash-0.8.1b1.tar.gz
+[2024-06-02 00:09:49] INFO root fetch - processPackages [lbt-dragonfly]: executing diffoscope
+[2024-06-02 00:09:49] INFO root fetch - processPackages [lbt-dragonfly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lbt-dragonfly-0.9.98.tar.gz tmp/lbt-dragonfly-0.9.99.tar.gz --markdown 20240602/l/lbt-dragonfly/0.9.98-0.9.99/README.md --exclude *.pyd
+[2024-06-02 00:09:49] INFO root fetch - processPackages [monaco-qt]: Downloading https://files.pythonhosted.org/packages/80/30/7fb968d86347d9e8c05c1589bed68eadf112cb372dec575930abc83b2ed3/monaco_qt-0.1.8.tar.gz
+[2024-06-02 00:09:49] INFO root fetch - processPackages [mpflash]: executing diffoscope
+[2024-06-02 00:09:49] INFO root fetch - processPackages [mpflash]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mpflash-0.8.0.tar.gz tmp/mpflash-0.8.1b1.tar.gz --markdown 20240602/m/mpflash/0.8.0-0.8.1b1/README.md --exclude *.pyd
+[2024-06-02 00:09:50] INFO root fetch - processPackages [monaco-qt]: executing diffoscope
+[2024-06-02 00:09:50] INFO root fetch - processPackages [monaco-qt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/monaco-qt-0.1.7.tar.gz tmp/monaco_qt-0.1.8.tar.gz --markdown 20240602/m/monaco-qt/0.1.7-0.1.8/README.md --exclude *.pyd
+[2024-06-02 00:09:50] INFO root fetch - processPackages [pyscf]: Downloading https://files.pythonhosted.org/packages/6f/f4/08b6b01dee89bd151ec462d2ee651fa43a38618a91b2fc669714270dceff/pyscf-2.6.0.tar.gz
+[2024-06-02 00:09:50] INFO root fetch - processPackages [lbt-dragonfly]: Remove: archive file [/home/abi/fetcher/tmp/lbt-dragonfly-0.9.98.tar.gz]
+[2024-06-02 00:09:50] INFO root fetch - processPackages [lbt-dragonfly]: Remove: archive file [/home/abi/fetcher/tmp/lbt-dragonfly-0.9.99.tar.gz]
+[2024-06-02 00:09:50] INFO root fetch - main [MainThread]: End processing [lbt-dragonfly]: success
+[2024-06-02 00:09:50] INFO root fetch - processPackages [mpflash]: Remove: archive file [/home/abi/fetcher/tmp/mpflash-0.8.0.tar.gz]
+[2024-06-02 00:09:50] INFO root fetch - processPackages [mpflash]: Remove: archive file [/home/abi/fetcher/tmp/mpflash-0.8.1b1.tar.gz]
+[2024-06-02 00:09:50] INFO root fetch - main [MainThread]: End processing [mpflash]: success
+[2024-06-02 00:09:51] INFO root fetch - processPackages [pyscf]: executing diffoscope
+[2024-06-02 00:09:51] INFO root fetch - processPackages [pyscf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyscf-2.5.0.tar.gz tmp/pyscf-2.6.0.tar.gz --markdown 20240602/p/pyscf/2.5.0-2.6.0/README.md --exclude *.pyd
+[2024-06-02 00:09:53] INFO root fetch - processPackages [monaco-qt]: Remove: archive file [/home/abi/fetcher/tmp/monaco-qt-0.1.7.tar.gz]
+[2024-06-02 00:09:53] INFO root fetch - processPackages [monaco-qt]: Remove: archive file [/home/abi/fetcher/tmp/monaco_qt-0.1.8.tar.gz]
+[2024-06-02 00:09:53] INFO root fetch - main [MainThread]: End processing [monaco-qt]: success
+[2024-06-02 00:10:00] INFO root fetch - processPackages [pyscf]: Remove: archive file [/home/abi/fetcher/tmp/pyscf-2.5.0.tar.gz]
+[2024-06-02 00:10:00] INFO root fetch - processPackages [pyscf]: Remove: archive file [/home/abi/fetcher/tmp/pyscf-2.6.0.tar.gz]
+[2024-06-02 00:10:00] INFO root fetch - main [MainThread]: End processing [pyscf]: success
+[2024-06-02 00:10:00] INFO root fetch - main [MainThread]: Store serial: [23484078]
