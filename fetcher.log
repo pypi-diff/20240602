@@ -1450,3 +1450,9 @@
 [2024-06-02 01:41:26] INFO root fetch - processPackages [phidata]: Remove: archive file [/home/abi/fetcher/tmp/phidata-2.4.9.tar.gz]
 [2024-06-02 01:41:26] INFO root fetch - main [MainThread]: End processing [phidata]: success
 [2024-06-02 01:41:26] INFO root fetch - main [MainThread]: Store serial: [23484743]
+[2024-06-02 01:43:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23484743]
+[2024-06-02 01:43:35] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-02 01:43:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lovecraft
+[2024-06-02 01:43:35] WARNING root fetch - processPackages [lovecraft]: Skipping, unable to determine old version
+[2024-06-02 01:43:35] INFO root fetch - main [MainThread]: End processing [lovecraft] error
+[2024-06-02 01:43:35] INFO root fetch - main [MainThread]: Store serial: [23484747]
