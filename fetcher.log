@@ -273,3 +273,24 @@
 [2024-06-02 00:12:11] INFO root fetch - processPackages [pywa]: Remove: archive file [/home/abi/fetcher/tmp/pywa-1.9.0.tar.gz]
 [2024-06-02 00:12:11] INFO root fetch - main [MainThread]: End processing [pywa]: success
 [2024-06-02 00:12:11] INFO root fetch - main [MainThread]: Store serial: [23484084]
+[2024-06-02 00:14:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23484084]
+[2024-06-02 00:14:20] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-02 00:14:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Tooldelta
+[2024-06-02 00:14:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rxnSMILES4AtomEco
+[2024-06-02 00:14:20] INFO root fetch - processPackages [rxnSMILES4AtomEco]: New version: [1.0.6] Old Version: [1.0.5]
+[2024-06-02 00:14:20] INFO root fetch - processPackages [Tooldelta]: New version: [0.7.0] Old Version: [0.6.2]
+[2024-06-02 00:14:20] INFO root fetch - processPackages [rxnSMILES4AtomEco]: Downloading https://files.pythonhosted.org/packages/d2/95/6860cd4ce9b43fad9628bb058f61da764eaf21ec22120c40f1642e2a5c4c/rxnSMILES4AtomEco-1.0.5.tar.gz
+[2024-06-02 00:14:20] INFO root fetch - processPackages [Tooldelta]: Downloading https://files.pythonhosted.org/packages/0c/c0/fe42180692ffa21b119f2aadf1eeff7caae12d0c8751d60b23ca55721695/tooldelta-0.6.2.tar.gz
+[2024-06-02 00:14:20] INFO root fetch - processPackages [Tooldelta]: Downloading https://files.pythonhosted.org/packages/78/4d/37d4f722fedeb19815bb4fae08e0d180172ec5da0b1fe472c7b2815a1f1c/tooldelta-0.7.0.tar.gz
+[2024-06-02 00:14:20] INFO root fetch - processPackages [rxnSMILES4AtomEco]: Downloading https://files.pythonhosted.org/packages/ae/6e/cc168418f1e706dad4b2bef3da3a5e5d9df088b058650d88523e50fea053/rxnSMILES4AtomEco-1.0.6.tar.gz
+[2024-06-02 00:14:20] INFO root fetch - processPackages [Tooldelta]: executing diffoscope
+[2024-06-02 00:14:20] INFO root fetch - processPackages [Tooldelta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tooldelta-0.6.2.tar.gz tmp/tooldelta-0.7.0.tar.gz --markdown 20240602/T/Tooldelta/0.6.2-0.7.0/README.md --exclude *.pyd
+[2024-06-02 00:14:20] INFO root fetch - processPackages [rxnSMILES4AtomEco]: executing diffoscope
+[2024-06-02 00:14:20] INFO root fetch - processPackages [rxnSMILES4AtomEco]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rxnSMILES4AtomEco-1.0.5.tar.gz tmp/rxnSMILES4AtomEco-1.0.6.tar.gz --markdown 20240602/r/rxnSMILES4AtomEco/1.0.5-1.0.6/README.md --exclude *.pyd
+[2024-06-02 00:14:21] INFO root fetch - processPackages [rxnSMILES4AtomEco]: Remove: archive file [/home/abi/fetcher/tmp/rxnSMILES4AtomEco-1.0.5.tar.gz]
+[2024-06-02 00:14:21] INFO root fetch - processPackages [rxnSMILES4AtomEco]: Remove: archive file [/home/abi/fetcher/tmp/rxnSMILES4AtomEco-1.0.6.tar.gz]
+[2024-06-02 00:14:21] INFO root fetch - main [MainThread]: End processing [rxnSMILES4AtomEco]: success
+[2024-06-02 00:14:21] INFO root fetch - processPackages [Tooldelta]: Remove: archive file [/home/abi/fetcher/tmp/tooldelta-0.6.2.tar.gz]
+[2024-06-02 00:14:21] INFO root fetch - processPackages [Tooldelta]: Remove: archive file [/home/abi/fetcher/tmp/tooldelta-0.7.0.tar.gz]
+[2024-06-02 00:14:21] INFO root fetch - main [MainThread]: End processing [Tooldelta]: success
+[2024-06-02 00:14:21] INFO root fetch - main [MainThread]: Store serial: [23484090]
