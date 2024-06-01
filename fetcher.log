@@ -365,3 +365,24 @@
 [2024-06-02 00:23:01] INFO root fetch - processPackages [pytest-fail-slow]: Remove: archive file [/home/abi/fetcher/tmp/pytest_fail_slow-0.5.0.tar.gz]
 [2024-06-02 00:23:01] INFO root fetch - main [MainThread]: End processing [pytest-fail-slow]: success
 [2024-06-02 00:23:01] INFO root fetch - main [MainThread]: Store serial: [23484119]
+[2024-06-02 00:25:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23484119]
+[2024-06-02 00:25:09] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-02 00:25:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aixhello
+[2024-06-02 00:25:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pywa
+[2024-06-02 00:25:09] INFO root fetch - processPackages [aixhello]: New version: [2.2] Old Version: [2.1]
+[2024-06-02 00:25:09] INFO root fetch - processPackages [pywa]: New version: [1.9.0] Old Version: [1.8.0]
+[2024-06-02 00:25:09] INFO root fetch - processPackages [aixhello]: Downloading https://files.pythonhosted.org/packages/f3/1c/947892702b7239f388eb9a65b672359d8d07ed5573b9345e5a1ac3a04f83/aixhello-2.1.tar.gz
+[2024-06-02 00:25:09] INFO root fetch - processPackages [pywa]: Downloading https://files.pythonhosted.org/packages/21/d5/82b05ef1fc76827e074a55d0196b129fdfdd86b59778cfc8cef9dcfe5dc0/pywa-1.8.0.tar.gz
+[2024-06-02 00:25:10] INFO root fetch - processPackages [pywa]: Downloading https://files.pythonhosted.org/packages/e6/e6/4ed5a576d70ef5d33bde9873d10999ce1d852a7682fb8a3ea7b7911ebcb1/pywa-1.9.0.tar.gz
+[2024-06-02 00:25:10] INFO root fetch - processPackages [aixhello]: Downloading https://files.pythonhosted.org/packages/1a/e1/50517be404a6a69e86cfe04ea9a11ce19aa76f9fb68e210a4ed3045f21ea/aixhello-2.2.tar.gz
+[2024-06-02 00:25:10] INFO root fetch - processPackages [pywa]: executing diffoscope
+[2024-06-02 00:25:10] INFO root fetch - processPackages [pywa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pywa-1.8.0.tar.gz tmp/pywa-1.9.0.tar.gz --markdown 20240602/p/pywa/1.8.0-1.9.0/README.md --exclude *.pyd
+[2024-06-02 00:25:10] INFO root fetch - processPackages [aixhello]: executing diffoscope
+[2024-06-02 00:25:10] INFO root fetch - processPackages [aixhello]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aixhello-2.1.tar.gz tmp/aixhello-2.2.tar.gz --markdown 20240602/a/aixhello/2.1-2.2/README.md --exclude *.pyd
+[2024-06-02 00:25:10] INFO root fetch - processPackages [aixhello]: Remove: archive file [/home/abi/fetcher/tmp/aixhello-2.1.tar.gz]
+[2024-06-02 00:25:10] INFO root fetch - processPackages [aixhello]: Remove: archive file [/home/abi/fetcher/tmp/aixhello-2.2.tar.gz]
+[2024-06-02 00:25:10] INFO root fetch - main [MainThread]: End processing [aixhello]: success
+[2024-06-02 00:25:10] INFO root fetch - processPackages [pywa]: Remove: archive file [/home/abi/fetcher/tmp/pywa-1.8.0.tar.gz]
+[2024-06-02 00:25:10] INFO root fetch - processPackages [pywa]: Remove: archive file [/home/abi/fetcher/tmp/pywa-1.9.0.tar.gz]
+[2024-06-02 00:25:10] INFO root fetch - main [MainThread]: End processing [pywa]: success
+[2024-06-02 00:25:10] INFO root fetch - main [MainThread]: Store serial: [23484125]
