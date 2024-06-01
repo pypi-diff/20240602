@@ -526,3 +526,38 @@
 [2024-06-02 00:40:19] INFO root fetch - processPackages [zprp-ffmpeg]: Remove: archive file [/home/abi/fetcher/tmp/zprp_ffmpeg-2.1.1.tar.gz]
 [2024-06-02 00:40:19] INFO root fetch - main [MainThread]: End processing [zprp-ffmpeg]: success
 [2024-06-02 00:40:19] INFO root fetch - main [MainThread]: Store serial: [23484169]
+[2024-06-02 00:42:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23484169]
+[2024-06-02 00:42:28] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-02 00:42:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: duckdb-server
+[2024-06-02 00:42:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mosaic-widget
+[2024-06-02 00:42:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: almax-common
+[2024-06-02 00:42:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ord-schema
+[2024-06-02 00:42:28] INFO root fetch - processPackages [almax-common]: New version: [1.0.5.dev20240601214939] Old Version: [1.0.4.dev20240601201036]
+[2024-06-02 00:42:28] INFO root fetch - processPackages [almax-common]: Downloading https://files.pythonhosted.org/packages/3f/bd/8051cc396773acb3d98d654e64dccbab710d39552a667dab0233ee716415/almax_common-1.0.4.dev20240601201036.tar.gz
+[2024-06-02 00:42:28] INFO root fetch - processPackages [duckdb-server]: New version: [0.9.0] Old Version: [0.7.0]
+[2024-06-02 00:42:28] INFO root fetch - processPackages [mosaic-widget]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-06-02 00:42:28] INFO root fetch - processPackages [ord-schema]: New version: [0.3.77] Old Version: [0.3.76]
+[2024-06-02 00:42:28] INFO root fetch - processPackages [duckdb-server]: Downloading https://files.pythonhosted.org/packages/7a/a9/8dd1b5b49e6baf8a5e2f5ed91361b4a6388cd7410ac1df7f585cf090d806/duckdb_server-0.7.0.tar.gz
+[2024-06-02 00:42:28] INFO root fetch - processPackages [mosaic-widget]: Downloading https://files.pythonhosted.org/packages/d5/33/9b2ec681bafe85df45fe6549fe5fad5abbe605c321b30ed41baf140f6fcb/mosaic_widget-0.8.0.tar.gz
+[2024-06-02 00:42:28] INFO root fetch - processPackages [ord-schema]: Downloading https://files.pythonhosted.org/packages/53/fa/af953c77b1382172aab5e30bae8c54b710c8deb0bfb2d0575cf697979e4a/ord_schema-0.3.76.tar.gz
+[2024-06-02 00:42:28] WARNING root fetch - processPackages [duckdb-server]: Skipping package: exceeds size limit 11407218>=10485760
+[2024-06-02 00:42:28] INFO root fetch - main [MainThread]: End processing [duckdb-server] error
+[2024-06-02 00:42:28] INFO root fetch - processPackages [almax-common]: Downloading https://files.pythonhosted.org/packages/76/cb/5c2060e3ce7d9e77b90ed3e8f3f62691aa3ca4974637a597f3cca463fcfa/almax_common-1.0.5.dev20240601214939.tar.gz
+[2024-06-02 00:42:28] INFO root fetch - processPackages [almax-common]: executing diffoscope
+[2024-06-02 00:42:28] INFO root fetch - processPackages [almax-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/almax_common-1.0.4.dev20240601201036.tar.gz tmp/almax_common-1.0.5.dev20240601214939.tar.gz --markdown 20240602/a/almax-common/1.0.4.dev20240601201036-1.0.5.dev20240601214939/README.md --exclude *.pyd
+[2024-06-02 00:42:29] INFO root fetch - processPackages [ord-schema]: Downloading https://files.pythonhosted.org/packages/4e/99/7542b622141f11a3b4617b97ec539c5ecd937f72927fa91010f08c1942e7/ord_schema-0.3.77.tar.gz
+[2024-06-02 00:42:29] INFO root fetch - processPackages [mosaic-widget]: Downloading https://files.pythonhosted.org/packages/96/c7/41cb2fc73e14e1b03bd0d85b0b2c6416eb891ac9ee9f2b594def7794ccb1/mosaic_widget-0.9.0.tar.gz
+[2024-06-02 00:42:29] INFO root fetch - processPackages [mosaic-widget]: executing diffoscope
+[2024-06-02 00:42:29] INFO root fetch - processPackages [mosaic-widget]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mosaic_widget-0.8.0.tar.gz tmp/mosaic_widget-0.9.0.tar.gz --markdown 20240602/m/mosaic-widget/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-06-02 00:42:29] INFO root fetch - processPackages [ord-schema]: executing diffoscope
+[2024-06-02 00:42:29] INFO root fetch - processPackages [ord-schema]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ord_schema-0.3.76.tar.gz tmp/ord_schema-0.3.77.tar.gz --markdown 20240602/o/ord-schema/0.3.76-0.3.77/README.md --exclude *.pyd
+[2024-06-02 00:42:29] INFO root fetch - processPackages [almax-common]: Remove: archive file [/home/abi/fetcher/tmp/almax_common-1.0.4.dev20240601201036.tar.gz]
+[2024-06-02 00:42:29] INFO root fetch - processPackages [almax-common]: Remove: archive file [/home/abi/fetcher/tmp/almax_common-1.0.5.dev20240601214939.tar.gz]
+[2024-06-02 00:42:29] INFO root fetch - main [MainThread]: End processing [almax-common]: success
+[2024-06-02 00:42:30] INFO root fetch - processPackages [ord-schema]: Remove: archive file [/home/abi/fetcher/tmp/ord_schema-0.3.76.tar.gz]
+[2024-06-02 00:42:30] INFO root fetch - processPackages [ord-schema]: Remove: archive file [/home/abi/fetcher/tmp/ord_schema-0.3.77.tar.gz]
+[2024-06-02 00:42:30] INFO root fetch - main [MainThread]: End processing [ord-schema]: success
+[2024-06-02 00:42:37] INFO root fetch - processPackages [mosaic-widget]: Remove: archive file [/home/abi/fetcher/tmp/mosaic_widget-0.8.0.tar.gz]
+[2024-06-02 00:42:37] INFO root fetch - processPackages [mosaic-widget]: Remove: archive file [/home/abi/fetcher/tmp/mosaic_widget-0.9.0.tar.gz]
+[2024-06-02 00:42:37] INFO root fetch - main [MainThread]: End processing [mosaic-widget]: success
+[2024-06-02 00:42:37] INFO root fetch - main [MainThread]: Store serial: [23484182]
