@@ -561,3 +561,33 @@
 [2024-06-02 00:42:37] INFO root fetch - processPackages [mosaic-widget]: Remove: archive file [/home/abi/fetcher/tmp/mosaic_widget-0.9.0.tar.gz]
 [2024-06-02 00:42:37] INFO root fetch - main [MainThread]: End processing [mosaic-widget]: success
 [2024-06-02 00:42:37] INFO root fetch - main [MainThread]: Store serial: [23484182]
+[2024-06-02 00:44:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23484182]
+[2024-06-02 00:44:46] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-06-02 00:44:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: zeroize
+[2024-06-02 00:44:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fudstop
+[2024-06-02 00:44:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bussinwebx-get
+[2024-06-02 00:44:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pssr
+[2024-06-02 00:44:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: walletWeb
+[2024-06-02 00:44:46] INFO root fetch - processPackages [fudstop]: New version: [2.8.9] Old Version: [2.8.8]
+[2024-06-02 00:44:46] WARNING root fetch - processPackages [walletWeb]: Skipping, unable to determine old version
+[2024-06-02 00:44:46] INFO root fetch - main [MainThread]: End processing [walletWeb] error
+[2024-06-02 00:44:46] INFO root fetch - processPackages [pssr]: New version: [2.0.0] Old Version: [1.2.2]
+[2024-06-02 00:44:46] WARNING root fetch - processPackages [zeroize]: Skipping, unable to determine old version
+[2024-06-02 00:44:46] INFO root fetch - main [MainThread]: End processing [zeroize] error
+[2024-06-02 00:44:47] WARNING root fetch - processPackages [bussinwebx-get]: Skipping, unable to determine old version
+[2024-06-02 00:44:47] INFO root fetch - main [MainThread]: End processing [bussinwebx-get] error
+[2024-06-02 00:44:47] INFO root fetch - processPackages [fudstop]: Downloading https://files.pythonhosted.org/packages/68/eb/67aa73ff5ba940d4a4902031b414f6fb3e8be6bb8abf3f1060ab339fc165/fudstop-2.8.8.tar.gz
+[2024-06-02 00:44:47] INFO root fetch - processPackages [pssr]: Downloading https://files.pythonhosted.org/packages/2d/17/d6f5c2ce0ced91902cd8691ef13a9238b104c361497ab67175efb3299158/pssr-1.2.2.tar.gz
+[2024-06-02 00:44:47] INFO root fetch - processPackages [fudstop]: Downloading https://files.pythonhosted.org/packages/40/4d/f525561386985328a0ebd43c61c11808b66fa79ded87c362faddb9757a34/fudstop-2.8.9.tar.gz
+[2024-06-02 00:44:47] INFO root fetch - processPackages [pssr]: Downloading https://files.pythonhosted.org/packages/db/d5/ad40f37a3ff69e91466b3ff5d86d246b96cfab9be9aae683cbb8253a575f/pssr-2.0.0.tar.gz
+[2024-06-02 00:44:47] INFO root fetch - processPackages [fudstop]: executing diffoscope
+[2024-06-02 00:44:47] INFO root fetch - processPackages [fudstop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fudstop-2.8.8.tar.gz tmp/fudstop-2.8.9.tar.gz --markdown 20240602/f/fudstop/2.8.8-2.8.9/README.md --exclude *.pyd
+[2024-06-02 00:44:47] INFO root fetch - processPackages [pssr]: executing diffoscope
+[2024-06-02 00:44:47] INFO root fetch - processPackages [pssr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pssr-1.2.2.tar.gz tmp/pssr-2.0.0.tar.gz --markdown 20240602/p/pssr/1.2.2-2.0.0/README.md --exclude *.pyd
+[2024-06-02 00:44:48] INFO root fetch - processPackages [pssr]: Remove: archive file [/home/abi/fetcher/tmp/pssr-1.2.2.tar.gz]
+[2024-06-02 00:44:48] INFO root fetch - processPackages [pssr]: Remove: archive file [/home/abi/fetcher/tmp/pssr-2.0.0.tar.gz]
+[2024-06-02 00:44:48] INFO root fetch - main [MainThread]: End processing [pssr]: success
+[2024-06-02 00:44:48] INFO root fetch - processPackages [fudstop]: Remove: archive file [/home/abi/fetcher/tmp/fudstop-2.8.8.tar.gz]
+[2024-06-02 00:44:48] INFO root fetch - processPackages [fudstop]: Remove: archive file [/home/abi/fetcher/tmp/fudstop-2.8.9.tar.gz]
+[2024-06-02 00:44:48] INFO root fetch - main [MainThread]: End processing [fudstop]: success
+[2024-06-02 00:44:48] INFO root fetch - main [MainThread]: Store serial: [23484251]
