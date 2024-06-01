@@ -1297,3 +1297,15 @@
 [2024-06-02 01:28:20] INFO root fetch - processPackages [ladybug-display]: Remove: archive file [/home/abi/fetcher/tmp/ladybug-display-0.9.1.tar.gz]
 [2024-06-02 01:28:20] INFO root fetch - main [MainThread]: End processing [ladybug-display]: success
 [2024-06-02 01:28:20] INFO root fetch - main [MainThread]: Store serial: [23484695]
+[2024-06-02 01:30:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23484695]
+[2024-06-02 01:30:28] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-02 01:30:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: youtube-up
+[2024-06-02 01:30:28] INFO root fetch - processPackages [youtube-up]: New version: [0.4.1] Old Version: [0.4.0]
+[2024-06-02 01:30:28] INFO root fetch - processPackages [youtube-up]: Downloading https://files.pythonhosted.org/packages/fb/57/af3c8219716edfbfc8940ac3bd8ab81db9fe556d65f2f5365ad03f77410b/youtube_up-0.4.0.tar.gz
+[2024-06-02 01:30:29] INFO root fetch - processPackages [youtube-up]: Downloading https://files.pythonhosted.org/packages/a4/1b/2e1429ce735ffd457944262550cc4ed4f1f0f88ff022595b46a57bcf03a1/youtube_up-0.4.1.tar.gz
+[2024-06-02 01:30:29] INFO root fetch - processPackages [youtube-up]: executing diffoscope
+[2024-06-02 01:30:29] INFO root fetch - processPackages [youtube-up]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/youtube_up-0.4.0.tar.gz tmp/youtube_up-0.4.1.tar.gz --markdown 20240602/y/youtube-up/0.4.0-0.4.1/README.md --exclude *.pyd
+[2024-06-02 01:30:29] INFO root fetch - processPackages [youtube-up]: Remove: archive file [/home/abi/fetcher/tmp/youtube_up-0.4.0.tar.gz]
+[2024-06-02 01:30:29] INFO root fetch - processPackages [youtube-up]: Remove: archive file [/home/abi/fetcher/tmp/youtube_up-0.4.1.tar.gz]
+[2024-06-02 01:30:29] INFO root fetch - main [MainThread]: End processing [youtube-up]: success
+[2024-06-02 01:30:29] INFO root fetch - main [MainThread]: Store serial: [23484697]
