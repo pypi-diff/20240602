@@ -13138,3 +13138,72 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 18:09:46] INFO root fetch - processPackages [glide-for-redis]: Remove: archive file [/home/abi/fetcher/tmp/glide_for_redis-0.4.1rc6-cp39-cp39-manylinux_2_28_aarch64.whl.zip]
 [2024-06-02 18:09:46] INFO root fetch - main [MainThread]: End processing [glide-for-redis]: success
 [2024-06-02 18:09:46] INFO root fetch - main [MainThread]: Store serial: [23490562]
+[2024-06-02 18:11:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23490562]
+[2024-06-02 18:11:58] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-06-02 18:11:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: homebase-calendar-sync
+[2024-06-02 18:11:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: movoid-debug
+[2024-06-02 18:11:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: copilothistoryexporter
+[2024-06-02 18:11:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: continuous-eval
+[2024-06-02 18:11:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: trytond-purchase-requisition
+[2024-06-02 18:11:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: open-meteo-solar-forecast
+[2024-06-02 18:11:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: MzhFunc
+[2024-06-02 18:11:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: fintime
+[2024-06-02 18:11:58] INFO root fetch - processPackages [homebase-calendar-sync]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-06-02 18:11:58] WARNING root fetch - processPackages [copilothistoryexporter]: Skipping, unable to determine old version
+[2024-06-02 18:11:58] INFO root fetch - main [MainThread]: End processing [copilothistoryexporter] error
+[2024-06-02 18:11:58] INFO root fetch - processPackages [trytond-purchase-requisition]: New version: [7.2.2] Old Version: [7.2.1]
+[2024-06-02 18:11:58] INFO root fetch - processPackages [MzhFunc]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-06-02 18:11:58] INFO root fetch - processPackages [movoid-debug]: New version: [1.2.0] Old Version: [1.0.1]
+[2024-06-02 18:11:58] INFO root fetch - processPackages [homebase-calendar-sync]: Downloading https://files.pythonhosted.org/packages/14/ca/9c931cdd4efeeeaf702b87639259e2f3b27b32d114e33395e4cc7ce32a46/homebase_calendar_sync-0.1.2.tar.gz
+[2024-06-02 18:11:58] INFO root fetch - processPackages [open-meteo-solar-forecast]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-06-02 18:11:58] INFO root fetch - processPackages [continuous-eval]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-06-02 18:11:58] INFO root fetch - processPackages [fintime]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-06-02 18:11:58] INFO root fetch - processPackages [MzhFunc]: Downloading https://files.pythonhosted.org/packages/eb/a7/290b2e372aaecb4c3a1717dfa8a882f5b5f16020e0fc0d4dad9a2f58b087/MzhFunc-0.0.5.tar.gz
+[2024-06-02 18:11:58] INFO root fetch - processPackages [trytond-purchase-requisition]: Downloading https://files.pythonhosted.org/packages/7e/94/2295b3110c8aa10460977c41691eaa37044c465df8ca92db21c136792f7f/trytond_purchase_requisition-7.2.1.tar.gz
+[2024-06-02 18:11:58] INFO root fetch - processPackages [movoid-debug]: Downloading https://files.pythonhosted.org/packages/7b/dd/42130f5af69ba4a973079491b613639619e387d7588cd3ca2193bb6bd339/movoid_debug-1.0.1.tar.gz
+[2024-06-02 18:11:58] INFO root fetch - processPackages [fintime]: Downloading https://files.pythonhosted.org/packages/85/b6/9dbf9a4e1dc700f8102cbcd66c39ee55a2e0c587f30c21174716b5543dd3/fintime-0.1.5.tar.gz
+[2024-06-02 18:11:58] INFO root fetch - processPackages [open-meteo-solar-forecast]: Downloading https://files.pythonhosted.org/packages/41/8e/4ef107c380c1c17539dba5dabf0f4c6e760a95766cd7e671f654798f9583/open_meteo_solar_forecast-0.1.7.tar.gz
+[2024-06-02 18:11:58] INFO root fetch - processPackages [continuous-eval]: Downloading https://files.pythonhosted.org/packages/35/9b/f05a5d379b4369ebc153fb8446937d31671dbd3056a210dd70bdd27b9f15/continuous_eval-0.3.8.tar.gz
+[2024-06-02 18:11:58] INFO root fetch - processPackages [trytond-purchase-requisition]: Downloading https://files.pythonhosted.org/packages/1a/4f/23e74c480b9050980d58c843b48c78c1804edc647affb792dec25f96e4da/trytond_purchase_requisition-7.2.2.tar.gz
+[2024-06-02 18:11:58] INFO root fetch - processPackages [homebase-calendar-sync]: Downloading https://files.pythonhosted.org/packages/11/ce/56f4bd063556f2759512c7aa1a7fccbb6da3832abc3ede5dbef89d47cdf4/homebase_calendar_sync-0.1.3.tar.gz
+[2024-06-02 18:11:58] INFO root fetch - processPackages [MzhFunc]: Downloading https://files.pythonhosted.org/packages/a4/d8/00e0752dfc8995841f2b60eb910fb3c0a64e98d4a7bda39ce1e406d7794c/mzhfunc-0.0.6.tar.gz
+[2024-06-02 18:11:58] INFO root fetch - processPackages [homebase-calendar-sync]: executing diffoscope
+[2024-06-02 18:11:58] INFO root fetch - processPackages [homebase-calendar-sync]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/homebase_calendar_sync-0.1.2.tar.gz tmp/homebase_calendar_sync-0.1.3.tar.gz --markdown 20240602/h/homebase-calendar-sync/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-06-02 18:11:58] INFO root fetch - processPackages [trytond-purchase-requisition]: executing diffoscope
+[2024-06-02 18:11:58] INFO root fetch - processPackages [trytond-purchase-requisition]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trytond_purchase_requisition-7.2.1.tar.gz tmp/trytond_purchase_requisition-7.2.2.tar.gz --markdown 20240602/t/trytond-purchase-requisition/7.2.1-7.2.2/README.md --exclude *.pyd
+[2024-06-02 18:11:58] INFO root fetch - processPackages [MzhFunc]: executing diffoscope
+[2024-06-02 18:11:58] INFO root fetch - processPackages [MzhFunc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MzhFunc-0.0.5.tar.gz tmp/mzhfunc-0.0.6.tar.gz --markdown 20240602/M/MzhFunc/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-06-02 18:11:58] INFO root fetch - processPackages [movoid-debug]: Downloading https://files.pythonhosted.org/packages/39/b2/9625651f034b73607acb714ad1de3bb148154992e2a49fd5212f1554ce20/movoid_debug-1.2.0.tar.gz
+[2024-06-02 18:11:59] INFO root fetch - processPackages [fintime]: Downloading https://files.pythonhosted.org/packages/cc/91/d4c6616e02bfff98e967b4582faea75cef532ad8549c19335ed3b0aea0c9/fintime-0.1.6.tar.gz
+[2024-06-02 18:11:59] INFO root fetch - processPackages [open-meteo-solar-forecast]: Downloading https://files.pythonhosted.org/packages/2c/c8/d6d159488be24b0f63b4a754960c767df0d8bcfc3b4d0c43493993541b50/open_meteo_solar_forecast-0.1.8.tar.gz
+[2024-06-02 18:11:59] INFO root fetch - processPackages [continuous-eval]: Downloading https://files.pythonhosted.org/packages/1b/70/ead71b439e046a38ee7b86bae0b56ff3bf1957930a716b578e62d4c1030d/continuous_eval-0.3.9.tar.gz
+[2024-06-02 18:11:59] INFO root fetch - processPackages [movoid-debug]: executing diffoscope
+[2024-06-02 18:11:59] INFO root fetch - processPackages [movoid-debug]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/movoid_debug-1.0.1.tar.gz tmp/movoid_debug-1.2.0.tar.gz --markdown 20240602/m/movoid-debug/1.0.1-1.2.0/README.md --exclude *.pyd
+[2024-06-02 18:11:59] INFO root fetch - processPackages [open-meteo-solar-forecast]: executing diffoscope
+[2024-06-02 18:11:59] INFO root fetch - processPackages [open-meteo-solar-forecast]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/open_meteo_solar_forecast-0.1.7.tar.gz tmp/open_meteo_solar_forecast-0.1.8.tar.gz --markdown 20240602/o/open-meteo-solar-forecast/0.1.7-0.1.8/README.md --exclude *.pyd
+[2024-06-02 18:11:59] INFO root fetch - processPackages [continuous-eval]: executing diffoscope
+[2024-06-02 18:11:59] INFO root fetch - processPackages [continuous-eval]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/continuous_eval-0.3.8.tar.gz tmp/continuous_eval-0.3.9.tar.gz --markdown 20240602/c/continuous-eval/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-06-02 18:11:59] INFO root fetch - processPackages [fintime]: executing diffoscope
+[2024-06-02 18:11:59] INFO root fetch - processPackages [fintime]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fintime-0.1.5.tar.gz tmp/fintime-0.1.6.tar.gz --markdown 20240602/f/fintime/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-06-02 18:11:59] INFO root fetch - processPackages [MzhFunc]: Remove: archive file [/home/abi/fetcher/tmp/MzhFunc-0.0.5.tar.gz]
+[2024-06-02 18:11:59] INFO root fetch - processPackages [MzhFunc]: Remove: archive file [/home/abi/fetcher/tmp/mzhfunc-0.0.6.tar.gz]
+[2024-06-02 18:11:59] INFO root fetch - main [MainThread]: End processing [MzhFunc]: success
+[2024-06-02 18:11:59] INFO root fetch - processPackages [homebase-calendar-sync]: Remove: archive file [/home/abi/fetcher/tmp/homebase_calendar_sync-0.1.2.tar.gz]
+[2024-06-02 18:11:59] INFO root fetch - processPackages [homebase-calendar-sync]: Remove: archive file [/home/abi/fetcher/tmp/homebase_calendar_sync-0.1.3.tar.gz]
+[2024-06-02 18:11:59] INFO root fetch - main [MainThread]: End processing [homebase-calendar-sync]: success
+[2024-06-02 18:11:59] INFO root fetch - processPackages [open-meteo-solar-forecast]: Remove: archive file [/home/abi/fetcher/tmp/open_meteo_solar_forecast-0.1.7.tar.gz]
+[2024-06-02 18:11:59] INFO root fetch - processPackages [open-meteo-solar-forecast]: Remove: archive file [/home/abi/fetcher/tmp/open_meteo_solar_forecast-0.1.8.tar.gz]
+[2024-06-02 18:11:59] INFO root fetch - main [MainThread]: End processing [open-meteo-solar-forecast]: success
+[2024-06-02 18:11:59] INFO root fetch - processPackages [trytond-purchase-requisition]: Remove: archive file [/home/abi/fetcher/tmp/trytond_purchase_requisition-7.2.1.tar.gz]
+[2024-06-02 18:11:59] INFO root fetch - processPackages [trytond-purchase-requisition]: Remove: archive file [/home/abi/fetcher/tmp/trytond_purchase_requisition-7.2.2.tar.gz]
+[2024-06-02 18:11:59] INFO root fetch - main [MainThread]: End processing [trytond-purchase-requisition]: success
+[2024-06-02 18:12:00] INFO root fetch - processPackages [continuous-eval]: Remove: archive file [/home/abi/fetcher/tmp/continuous_eval-0.3.8.tar.gz]
+[2024-06-02 18:12:00] INFO root fetch - processPackages [continuous-eval]: Remove: archive file [/home/abi/fetcher/tmp/continuous_eval-0.3.9.tar.gz]
+[2024-06-02 18:12:00] INFO root fetch - main [MainThread]: End processing [continuous-eval]: success
+[2024-06-02 18:12:00] INFO root fetch - processPackages [fintime]: Remove: archive file [/home/abi/fetcher/tmp/fintime-0.1.5.tar.gz]
+[2024-06-02 18:12:00] INFO root fetch - processPackages [fintime]: Remove: archive file [/home/abi/fetcher/tmp/fintime-0.1.6.tar.gz]
+[2024-06-02 18:12:00] INFO root fetch - main [MainThread]: End processing [fintime]: success
+[2024-06-02 18:12:00] INFO root fetch - processPackages [movoid-debug]: Remove: archive file [/home/abi/fetcher/tmp/movoid_debug-1.0.1.tar.gz]
+[2024-06-02 18:12:00] INFO root fetch - processPackages [movoid-debug]: Remove: archive file [/home/abi/fetcher/tmp/movoid_debug-1.2.0.tar.gz]
+[2024-06-02 18:12:00] INFO root fetch - main [MainThread]: End processing [movoid-debug]: success
+[2024-06-02 18:12:00] INFO root fetch - main [MainThread]: Store serial: [23490597]
