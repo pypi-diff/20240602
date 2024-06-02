@@ -8155,3 +8155,60 @@
 [2024-06-02 13:12:01] INFO root fetch - processPackages [alita-tools]: Remove: archive file [/home/abi/fetcher/tmp/alita_tools-0.0.9.tar.gz]
 [2024-06-02 13:12:01] INFO root fetch - main [MainThread]: End processing [alita-tools]: success
 [2024-06-02 13:12:01] INFO root fetch - main [MainThread]: Store serial: [23488329]
+[2024-06-02 13:14:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23488329]
+[2024-06-02 13:14:09] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-06-02 13:14:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tb-nightly
+[2024-06-02 13:14:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: typer-shell
+[2024-06-02 13:14:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: semchunk
+[2024-06-02 13:14:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: websc-client
+[2024-06-02 13:14:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: hddm-s
+[2024-06-02 13:14:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: batched-chatgpt
+[2024-06-02 13:14:09] INFO root fetch - processPackages [hddm-s]: New version: [1.1.0] Old Version: [1.0.9]
+[2024-06-02 13:14:10] INFO root fetch - processPackages [tb-nightly]: New version: [2.9.0a20220502] Old Version: [2.9.0a20220501]
+[2024-06-02 13:14:10] INFO root fetch - processPackages [hddm-s]: Downloading https://files.pythonhosted.org/packages/d2/24/0bac70948a0f916016590dddfc7e17148c466fa4b02e8bd2d4f3119e1816/hddm_s-1.0.9.tar.gz
+[2024-06-02 13:14:10] INFO root fetch - processPackages [typer-shell]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-06-02 13:14:10] INFO root fetch - processPackages [batched-chatgpt]: New version: [0.1.0] Old Version: [0.0.5]
+[2024-06-02 13:14:10] INFO root fetch - processPackages [semchunk]: New version: [1.0.0] Old Version: [0.3.2]
+[2024-06-02 13:14:10] INFO root fetch - processPackages [websc-client]: New version: [1.0.3] Old Version: [1.0.2]
+[2024-06-02 13:14:10] INFO root fetch - processPackages [tb-nightly]: Downloading https://files.pythonhosted.org/packages/cc/bf/76bb32cf070e37f4b777ed5596c5d082fb60a1bfc06e9463401d07021a8a/tb_nightly-2.9.0a20220501-py3-none-any.whl
+[2024-06-02 13:14:10] INFO root fetch - processPackages [semchunk]: Downloading https://files.pythonhosted.org/packages/45/05/8e2da0b9fafa43a0282eb3ad225fadff62e087ee71de4b6fed689b9d9942/semchunk-0.3.2.tar.gz
+[2024-06-02 13:14:10] INFO root fetch - processPackages [typer-shell]: Downloading https://files.pythonhosted.org/packages/e1/7e/bd72e071eb74beac71ce9cb9728783636877c94b16058d38015884701803/typer_shell-0.1.8.tar.gz
+[2024-06-02 13:14:10] INFO root fetch - processPackages [batched-chatgpt]: Downloading https://files.pythonhosted.org/packages/db/ed/6d1485b828d522630649cacfb3fb2b069c894e9219b973f2d900dea2cb04/batched_chatgpt-0.0.5.tar.gz
+[2024-06-02 13:14:10] INFO root fetch - processPackages [hddm-s]: Downloading https://files.pythonhosted.org/packages/e3/92/06fcc0b58cd99786731fe242d377522e0abcf034f8bcf72889deba90d145/hddm_s-1.1.0.tar.gz
+[2024-06-02 13:14:10] INFO root fetch - processPackages [websc-client]: Downloading https://files.pythonhosted.org/packages/29/1f/c4ee1cc41942044b94dbe46816aba1ef9e983f073afb2c5d1e3e775f581e/websc_client-1.0.2.tar.gz
+[2024-06-02 13:14:10] INFO root fetch - processPackages [hddm-s]: executing diffoscope
+[2024-06-02 13:14:10] INFO root fetch - processPackages [hddm-s]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hddm_s-1.0.9.tar.gz tmp/hddm_s-1.1.0.tar.gz --markdown 20240602/h/hddm-s/1.0.9-1.1.0/README.md --exclude *.pyd
+[2024-06-02 13:14:10] INFO root fetch - processPackages [semchunk]: Downloading https://files.pythonhosted.org/packages/a0/09/8e03765334073251d1d7db3bbad73e7d58f27c1647c700cc6c0bf5ae3400/semchunk-1.0.0.tar.gz
+[2024-06-02 13:14:10] INFO root fetch - processPackages [tb-nightly]: Downloading https://files.pythonhosted.org/packages/68/8e/03bca092830a4abf26a80c7387b02478c5f948656cb79d63c1bffab65c00/tb_nightly-2.9.0a20220502-py3-none-any.whl
+[2024-06-02 13:14:10] INFO root fetch - processPackages [batched-chatgpt]: Downloading https://files.pythonhosted.org/packages/63/4a/3e571f14c3a9ff3a3a313b6bc1bf1fdbfa2fcd56af4d66b53419b10a4fc0/batched_chatgpt-0.1.0.tar.gz
+[2024-06-02 13:14:10] INFO root fetch - processPackages [websc-client]: Downloading https://files.pythonhosted.org/packages/39/51/06c17d425bf5715b08f44d6ed9f8afa1de0684209798c0a908e36e51f6f2/websc_client-1.0.3.tar.gz
+[2024-06-02 13:14:10] INFO root fetch - processPackages [typer-shell]: Downloading https://files.pythonhosted.org/packages/17/cb/54879f0d79e295dbd8c3805f3b87c88d3c9df854e3992121ff3ecbd027c9/typer_shell-0.1.9.tar.gz
+[2024-06-02 13:14:10] INFO root fetch - processPackages [semchunk]: executing diffoscope
+[2024-06-02 13:14:10] INFO root fetch - processPackages [semchunk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/semchunk-0.3.2.tar.gz tmp/semchunk-1.0.0.tar.gz --markdown 20240602/s/semchunk/0.3.2-1.0.0/README.md --exclude *.pyd
+[2024-06-02 13:14:10] INFO root fetch - processPackages [batched-chatgpt]: executing diffoscope
+[2024-06-02 13:14:10] INFO root fetch - processPackages [batched-chatgpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/batched_chatgpt-0.0.5.tar.gz tmp/batched_chatgpt-0.1.0.tar.gz --markdown 20240602/b/batched-chatgpt/0.0.5-0.1.0/README.md --exclude *.pyd
+[2024-06-02 13:14:10] INFO root fetch - processPackages [websc-client]: executing diffoscope
+[2024-06-02 13:14:10] INFO root fetch - processPackages [websc-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/websc_client-1.0.2.tar.gz tmp/websc_client-1.0.3.tar.gz --markdown 20240602/w/websc-client/1.0.2-1.0.3/README.md --exclude *.pyd
+[2024-06-02 13:14:10] INFO root fetch - processPackages [typer-shell]: executing diffoscope
+[2024-06-02 13:14:10] INFO root fetch - processPackages [typer-shell]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/typer_shell-0.1.8.tar.gz tmp/typer_shell-0.1.9.tar.gz --markdown 20240602/t/typer-shell/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-06-02 13:14:10] INFO root fetch - processPackages [tb-nightly]: executing diffoscope
+[2024-06-02 13:14:10] INFO root fetch - processPackages [tb-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tb_nightly-2.9.0a20220501-py3-none-any.whl.zip tmp/tb_nightly-2.9.0a20220502-py3-none-any.whl.zip --markdown 20240602/t/tb-nightly/2.9.0a20220501-2.9.0a20220502/README.md --exclude *.pyd
+[2024-06-02 13:14:11] INFO root fetch - processPackages [hddm-s]: Remove: archive file [/home/abi/fetcher/tmp/hddm_s-1.0.9.tar.gz]
+[2024-06-02 13:14:11] INFO root fetch - processPackages [hddm-s]: Remove: archive file [/home/abi/fetcher/tmp/hddm_s-1.1.0.tar.gz]
+[2024-06-02 13:14:11] INFO root fetch - main [MainThread]: End processing [hddm-s]: success
+[2024-06-02 13:14:11] INFO root fetch - processPackages [websc-client]: Remove: archive file [/home/abi/fetcher/tmp/websc_client-1.0.2.tar.gz]
+[2024-06-02 13:14:11] INFO root fetch - processPackages [websc-client]: Remove: archive file [/home/abi/fetcher/tmp/websc_client-1.0.3.tar.gz]
+[2024-06-02 13:14:11] INFO root fetch - main [MainThread]: End processing [websc-client]: success
+[2024-06-02 13:14:11] INFO root fetch - processPackages [semchunk]: Remove: archive file [/home/abi/fetcher/tmp/semchunk-0.3.2.tar.gz]
+[2024-06-02 13:14:11] INFO root fetch - processPackages [semchunk]: Remove: archive file [/home/abi/fetcher/tmp/semchunk-1.0.0.tar.gz]
+[2024-06-02 13:14:11] INFO root fetch - main [MainThread]: End processing [semchunk]: success
+[2024-06-02 13:14:11] INFO root fetch - processPackages [batched-chatgpt]: Remove: archive file [/home/abi/fetcher/tmp/batched_chatgpt-0.0.5.tar.gz]
+[2024-06-02 13:14:11] INFO root fetch - processPackages [batched-chatgpt]: Remove: archive file [/home/abi/fetcher/tmp/batched_chatgpt-0.1.0.tar.gz]
+[2024-06-02 13:14:11] INFO root fetch - main [MainThread]: End processing [batched-chatgpt]: success
+[2024-06-02 13:14:11] INFO root fetch - processPackages [typer-shell]: Remove: archive file [/home/abi/fetcher/tmp/typer_shell-0.1.8.tar.gz]
+[2024-06-02 13:14:11] INFO root fetch - processPackages [typer-shell]: Remove: archive file [/home/abi/fetcher/tmp/typer_shell-0.1.9.tar.gz]
+[2024-06-02 13:14:11] INFO root fetch - main [MainThread]: End processing [typer-shell]: success
+[2024-06-02 13:14:12] INFO root fetch - processPackages [tb-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tb_nightly-2.9.0a20220501-py3-none-any.whl.zip]
+[2024-06-02 13:14:12] INFO root fetch - processPackages [tb-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tb_nightly-2.9.0a20220502-py3-none-any.whl.zip]
+[2024-06-02 13:14:12] INFO root fetch - main [MainThread]: End processing [tb-nightly]: success
+[2024-06-02 13:14:12] INFO root fetch - main [MainThread]: Store serial: [23488346]
