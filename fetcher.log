@@ -9940,3 +9940,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-02 15:04:52] INFO root fetch - processPackages [ovos-skill-fallback-unknown]: Remove: archive file [/home/abi/fetcher/tmp/ovos_skill_fallback_unknown-0.0.4a3-py3-none-any.whl.zip]
 [2024-06-02 15:04:52] INFO root fetch - main [MainThread]: End processing [ovos-skill-fallback-unknown]: success
 [2024-06-02 15:04:52] INFO root fetch - main [MainThread]: Store serial: [23489117]
+[2024-06-02 15:06:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23489117]
+[2024-06-02 15:07:01] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-02 15:07:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ovos-skill-fallback-unknown
+[2024-06-02 15:07:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: drf-user-activity-tracker-mongodb
+[2024-06-02 15:07:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: Geode-Simplex
+[2024-06-02 15:07:01] INFO root fetch - processPackages [ovos-skill-fallback-unknown]: New version: [0.0.4a3] Old Version: [0.0.4a2]
+[2024-06-02 15:07:01] INFO root fetch - processPackages [ovos-skill-fallback-unknown]: Downloading https://files.pythonhosted.org/packages/f8/ed/b86c4a646b78f50ed392162d210c40fa8eb6a90dc3d8ebc5f65ef71f024d/ovos_skill_fallback_unknown-0.0.4a2-py3-none-any.whl
+[2024-06-02 15:07:01] INFO root fetch - processPackages [drf-user-activity-tracker-mongodb]: New version: [1.4.2] Old Version: [1.4.1]
+[2024-06-02 15:07:01] INFO root fetch - processPackages [Geode-Simplex]: New version: [6.8.3rc1] Old Version: [6.8.2rc1]
+[2024-06-02 15:07:01] INFO root fetch - processPackages [drf-user-activity-tracker-mongodb]: Downloading https://files.pythonhosted.org/packages/8b/21/f57309f5d1b58d138c53eac4b512bebc2a5979734dc364b50f73da2256ba/drf-user-activity-tracker-mongodb-1.4.1.tar.gz
+[2024-06-02 15:07:01] INFO root fetch - processPackages [ovos-skill-fallback-unknown]: Downloading https://files.pythonhosted.org/packages/63/ed/fb69e3568327139603f789bf6471fc7bd05de31cfcd8c177fb922b74acca/ovos_skill_fallback_unknown-0.0.4a3-py3-none-any.whl
+[2024-06-02 15:07:01] INFO root fetch - processPackages [Geode-Simplex]: Downloading https://files.pythonhosted.org/packages/a5/d7/922cefb0f9d487d5c718f467de9c92a35d25abc6825c702e0d19e9c6770b/Geode_Simplex-6.8.2rc1-cp39-cp39-win_amd64.whl
+[2024-06-02 15:07:02] INFO root fetch - processPackages [ovos-skill-fallback-unknown]: executing diffoscope
+[2024-06-02 15:07:02] INFO root fetch - processPackages [ovos-skill-fallback-unknown]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos_skill_fallback_unknown-0.0.4a2-py3-none-any.whl.zip tmp/ovos_skill_fallback_unknown-0.0.4a3-py3-none-any.whl.zip --markdown 20240602/o/ovos-skill-fallback-unknown/0.0.4a2-0.0.4a3/README.md --exclude *.pyd
+[2024-06-02 15:07:02] INFO root fetch - processPackages [drf-user-activity-tracker-mongodb]: Downloading https://files.pythonhosted.org/packages/87/62/e157d190160e329006ab17ed3e4d6734db5eefc3149557af50a5ed55fc8a/drf-user-activity-tracker-mongodb-1.4.2.tar.gz
+[2024-06-02 15:07:02] INFO root fetch - processPackages [Geode-Simplex]: Downloading https://files.pythonhosted.org/packages/a8/51/64b5018a48b5bd0cb6592ac0f778e6cec4d07a5dd8e740e28158352f84ca/Geode_Simplex-6.8.3rc1-cp39-cp39-manylinux2014_x86_64.whl
+[2024-06-02 15:07:02] INFO root fetch - processPackages [drf-user-activity-tracker-mongodb]: executing diffoscope
+[2024-06-02 15:07:02] INFO root fetch - processPackages [drf-user-activity-tracker-mongodb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/drf-user-activity-tracker-mongodb-1.4.1.tar.gz tmp/drf-user-activity-tracker-mongodb-1.4.2.tar.gz --markdown 20240602/d/drf-user-activity-tracker-mongodb/1.4.1-1.4.2/README.md --exclude *.pyd
+[2024-06-02 15:07:03] INFO root fetch - processPackages [ovos-skill-fallback-unknown]: Remove: archive file [/home/abi/fetcher/tmp/ovos_skill_fallback_unknown-0.0.4a2-py3-none-any.whl.zip]
+[2024-06-02 15:07:03] INFO root fetch - processPackages [ovos-skill-fallback-unknown]: Remove: archive file [/home/abi/fetcher/tmp/ovos_skill_fallback_unknown-0.0.4a3-py3-none-any.whl.zip]
+[2024-06-02 15:07:03] INFO root fetch - main [MainThread]: End processing [ovos-skill-fallback-unknown]: success
+[2024-06-02 15:07:03] INFO root fetch - processPackages [Geode-Simplex]: executing diffoscope
+[2024-06-02 15:07:03] INFO root fetch - processPackages [Geode-Simplex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Geode_Simplex-6.8.2rc1-cp39-cp39-win_amd64.whl.zip tmp/Geode_Simplex-6.8.3rc1-cp39-cp39-manylinux2014_x86_64.whl.zip --markdown 20240602/G/Geode-Simplex/6.8.2rc1-6.8.3rc1/README.md --exclude *.pyd
+[2024-06-02 15:07:03] INFO root fetch - processPackages [drf-user-activity-tracker-mongodb]: Remove: archive file [/home/abi/fetcher/tmp/drf-user-activity-tracker-mongodb-1.4.1.tar.gz]
+[2024-06-02 15:07:03] INFO root fetch - processPackages [drf-user-activity-tracker-mongodb]: Remove: archive file [/home/abi/fetcher/tmp/drf-user-activity-tracker-mongodb-1.4.2.tar.gz]
+[2024-06-02 15:07:03] INFO root fetch - main [MainThread]: End processing [drf-user-activity-tracker-mongodb]: success
+[2024-06-02 15:07:04] INFO root fetch - processPackages [Geode-Simplex]: Remove: archive file [/home/abi/fetcher/tmp/Geode_Simplex-6.8.2rc1-cp39-cp39-win_amd64.whl.zip]
+[2024-06-02 15:07:04] INFO root fetch - processPackages [Geode-Simplex]: Remove: archive file [/home/abi/fetcher/tmp/Geode_Simplex-6.8.3rc1-cp39-cp39-manylinux2014_x86_64.whl.zip]
+[2024-06-02 15:07:04] INFO root fetch - main [MainThread]: End processing [Geode-Simplex]: success
+[2024-06-02 15:07:04] INFO root fetch - main [MainThread]: Store serial: [23489130]
