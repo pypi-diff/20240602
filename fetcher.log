@@ -6369,3 +6369,18 @@
 [2024-06-02 10:51:22] INFO root fetch - processPackages [ReverseBox]: Remove: archive file [/home/abi/fetcher/tmp/ReverseBox-0.9.9.tar.gz]
 [2024-06-02 10:51:22] INFO root fetch - main [MainThread]: End processing [ReverseBox]: success
 [2024-06-02 10:51:22] INFO root fetch - main [MainThread]: Store serial: [23487490]
+[2024-06-02 10:53:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23487490]
+[2024-06-02 10:53:31] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-02 10:53:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ruqia
+[2024-06-02 10:53:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: single-object-detection
+[2024-06-02 10:53:31] WARNING root fetch - processPackages [single-object-detection]: Skipping, unable to determine old version
+[2024-06-02 10:53:31] INFO root fetch - main [MainThread]: End processing [single-object-detection] error
+[2024-06-02 10:53:31] INFO root fetch - processPackages [ruqia]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-06-02 10:53:31] INFO root fetch - processPackages [ruqia]: Downloading https://files.pythonhosted.org/packages/00/6e/947f842f446dc3c06f4c72f25f4faf2f40d7ee8d535636e379f541a68606/ruqia-0.0.8.tar.gz
+[2024-06-02 10:53:32] INFO root fetch - processPackages [ruqia]: Downloading https://files.pythonhosted.org/packages/04/7e/91a622c32fde873979352ba2f81b9e503bcc5368785872602ed8d9e9a394/ruqia-0.0.9.tar.gz
+[2024-06-02 10:53:32] INFO root fetch - processPackages [ruqia]: executing diffoscope
+[2024-06-02 10:53:32] INFO root fetch - processPackages [ruqia]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ruqia-0.0.8.tar.gz tmp/ruqia-0.0.9.tar.gz --markdown 20240602/r/ruqia/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-06-02 10:53:32] INFO root fetch - processPackages [ruqia]: Remove: archive file [/home/abi/fetcher/tmp/ruqia-0.0.8.tar.gz]
+[2024-06-02 10:53:32] INFO root fetch - processPackages [ruqia]: Remove: archive file [/home/abi/fetcher/tmp/ruqia-0.0.9.tar.gz]
+[2024-06-02 10:53:32] INFO root fetch - main [MainThread]: End processing [ruqia]: success
+[2024-06-02 10:53:32] INFO root fetch - main [MainThread]: Store serial: [23487496]
