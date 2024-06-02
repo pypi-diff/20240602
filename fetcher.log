@@ -14988,3 +14988,93 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 19:39:11] INFO root fetch - main [MainThread]: End processing [trytond-account]: success
 [2024-06-02 19:39:11] INFO root fetch - main [MainThread]: End processing [trytond-account]: success
 [2024-06-02 19:39:11] INFO root fetch - main [MainThread]: Store serial: [23491391]
+[2024-06-02 19:41:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23491391]
+[2024-06-02 19:41:20] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2024-06-02 19:41:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: flask-Captchaify
+[2024-06-02 19:41:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mwxlib
+[2024-06-02 19:41:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pywise
+[2024-06-02 19:41:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: vtacML
+[2024-06-02 19:41:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: optimized-utility-library
+[2024-06-02 19:41:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: schwab-api-wrapper
+[2024-06-02 19:41:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: krdict.py
+[2024-06-02 19:41:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: flask-Captchaify
+[2024-06-02 19:41:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: micropython-europi
+[2024-06-02 19:41:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: micropython-europi-contrib
+[2024-06-02 19:41:20] INFO root fetch - processPackages [flask-Captchaify]: New version: [1.6.9.8.1] Old Version: [1.6.9.8]
+[2024-06-02 19:41:20] INFO root fetch - processPackages [pywise]: New version: [0.8.0] Old Version: [0.7.0]
+[2024-06-02 19:41:20] INFO root fetch - processPackages [vtacML]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-06-02 19:41:20] INFO root fetch - processPackages [schwab-api-wrapper]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-06-02 19:41:20] INFO root fetch - processPackages [flask-Captchaify]: New version: [1.6.9.8.1] Old Version: [1.6.9.8]
+[2024-06-02 19:41:20] INFO root fetch - processPackages [vtacML]: Downloading https://files.pythonhosted.org/packages/af/31/e6451c82cb5bd62679ed942a8911beae12be24a37a36ccd4da13829871ca/vtacML-0.1.8.tar.gz
+[2024-06-02 19:41:20] INFO root fetch - processPackages [optimized-utility-library]: New version: [0.1.3] Old Version: [0.1.1]
+[2024-06-02 19:41:20] INFO root fetch - processPackages [krdict.py]: New version: [3.0.1] Old Version: [3.0.0]
+[2024-06-02 19:41:20] INFO root fetch - processPackages [micropython-europi-contrib]: New version: [0.9.1] Old Version: [0.8.1]
+[2024-06-02 19:41:20] INFO root fetch - processPackages [mwxlib]: New version: [0.95.3] Old Version: [0.95.2]
+[2024-06-02 19:41:20] INFO root fetch - processPackages [micropython-europi]: New version: [0.9.1] Old Version: [0.8.1]
+[2024-06-02 19:41:20] INFO root fetch - processPackages [pywise]: Downloading https://files.pythonhosted.org/packages/e8/bc/66166db7fcb5dfab715ba904213cfa39a55624015685d89aec36e09cb685/pywise-0.7.0.tar.gz
+[2024-06-02 19:41:20] INFO root fetch - processPackages [schwab-api-wrapper]: Downloading https://files.pythonhosted.org/packages/73/4a/54514845044e53c7c6da174bbf374ae7463686e15e7e02a472fee1846577/schwab_api_wrapper-0.1.5.tar.gz
+[2024-06-02 19:41:20] WARNING root fetch - processPackages [vtacML]: Skipping package: exceeds size limit 67197768>=10485760
+[2024-06-02 19:41:20] INFO root fetch - processPackages [vtacML]: Start processing: ml4co-kit
+[2024-06-02 19:41:20] INFO root fetch - main [MainThread]: End processing [vtacML] error
+[2024-06-02 19:41:20] INFO root fetch - processPackages [flask-Captchaify]: Downloading https://files.pythonhosted.org/packages/27/8b/c2af5ceae370a8d8c4ddcb93c4e300303e62f86c9eae569c0875009d6f96/flask_captchaify-1.6.9.8.tar.gz
+[2024-06-02 19:41:20] INFO root fetch - processPackages [flask-Captchaify]: Downloading https://files.pythonhosted.org/packages/27/8b/c2af5ceae370a8d8c4ddcb93c4e300303e62f86c9eae569c0875009d6f96/flask_captchaify-1.6.9.8.tar.gz
+[2024-06-02 19:41:20] WARNING root fetch - processPackages [flask-Captchaify]: Skipping package: exceeds size limit 43915927>=10485760
+[2024-06-02 19:41:20] INFO root fetch - main [MainThread]: End processing [flask-Captchaify] error
+[2024-06-02 19:41:20] WARNING root fetch - processPackages [flask-Captchaify]: Skipping package: exceeds size limit 43915927>=10485760
+[2024-06-02 19:41:20] INFO root fetch - main [MainThread]: End processing [flask-Captchaify] error
+[2024-06-02 19:41:20] INFO root fetch - processPackages [krdict.py]: Downloading https://files.pythonhosted.org/packages/64/c0/760612c82e52c197419e87dd8d6d4012ae67d14da5660a2ddb4a4ae449d6/krdict.py-3.0.0.tar.gz
+[2024-06-02 19:41:20] INFO root fetch - processPackages [optimized-utility-library]: Downloading https://files.pythonhosted.org/packages/e7/4b/8620b86dc17aa7737c402c7d721fe6ba8c95b73cbb87791ee8f7e8c6149f/optimized-utility-library-0.1.1.tar.gz
+[2024-06-02 19:41:20] INFO root fetch - processPackages [mwxlib]: Downloading https://files.pythonhosted.org/packages/f0/a8/c3e235bfb92e15f9798f704ea1640b1f9b0fbffb0b39884cbe2f91b4566b/mwxlib-0.95.2-py3-none-any.whl
+[2024-06-02 19:41:20] INFO root fetch - processPackages [micropython-europi-contrib]: Downloading https://files.pythonhosted.org/packages/a8/08/c1da487051f59521428ca729477c96a336c485a488be4998961cb22429bd/micropython-europi-contrib-0.8.1.tar.gz
+[2024-06-02 19:41:20] INFO root fetch - processPackages [micropython-europi]: Downloading https://files.pythonhosted.org/packages/19/67/6ede82381e8d0ee4c1a3cd7195bb5e716de70a6c78f274ebaafb45f05e3f/micropython-europi-0.8.1.tar.gz
+[2024-06-02 19:41:20] INFO root fetch - processPackages [pywise]: Downloading https://files.pythonhosted.org/packages/4b/44/7066f4c023c57eba34e9066f891203f9572d6b22c44dedba501b3c4f7a30/pywise-0.8.0.tar.gz
+[2024-06-02 19:41:20] INFO root fetch - processPackages [ml4co-kit]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-06-02 19:41:20] INFO root fetch - processPackages [schwab-api-wrapper]: Downloading https://files.pythonhosted.org/packages/cf/97/77f904679840c6990dc9fa18a56f6331813b00a839fc95952f8d528a0617/schwab_api_wrapper-0.1.6.tar.gz
+[2024-06-02 19:41:20] INFO root fetch - processPackages [pywise]: executing diffoscope
+[2024-06-02 19:41:20] INFO root fetch - processPackages [pywise]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pywise-0.7.0.tar.gz tmp/pywise-0.8.0.tar.gz --markdown 20240602/p/pywise/0.7.0-0.8.0/README.md --exclude *.pyd
+[2024-06-02 19:41:21] INFO root fetch - processPackages [schwab-api-wrapper]: executing diffoscope
+[2024-06-02 19:41:21] INFO root fetch - processPackages [schwab-api-wrapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/schwab_api_wrapper-0.1.5.tar.gz tmp/schwab_api_wrapper-0.1.6.tar.gz --markdown 20240602/s/schwab-api-wrapper/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-06-02 19:41:21] INFO root fetch - processPackages [ml4co-kit]: Downloading https://files.pythonhosted.org/packages/60/38/17c17f4da8fe1d987341880d1c43c7493d0f089e1f1c561a8646b51dbd41/ml4co_kit-0.0.6.tar.gz
+[2024-06-02 19:41:21] INFO root fetch - processPackages [optimized-utility-library]: Downloading https://files.pythonhosted.org/packages/2d/38/708d125355e83e36d7b13d8236a9384bddbe981a39e36dba72c22fc2bdb8/optimized-utility-library-0.1.3.tar.gz
+[2024-06-02 19:41:21] INFO root fetch - processPackages [krdict.py]: Downloading https://files.pythonhosted.org/packages/48/fb/da199abda86fbf71e23aac72d0b3f72acb94c84932e012c0117819d6b096/krdict.py-3.0.1.tar.gz
+[2024-06-02 19:41:21] INFO root fetch - processPackages [mwxlib]: Downloading https://files.pythonhosted.org/packages/61/8f/c2159a280886d94de8bcaf3e381a7526e9b1428ad71883e98c9c3d9b3d63/mwxlib-0.95.3-py3-none-any.whl
+[2024-06-02 19:41:21] INFO root fetch - processPackages [micropython-europi-contrib]: Downloading https://files.pythonhosted.org/packages/6a/c7/c4d7169753da39ff2963d884f4df76b45bc66c4a6df69825c33328211956/micropython-europi-contrib-0.9.1.tar.gz
+[2024-06-02 19:41:21] INFO root fetch - processPackages [krdict.py]: executing diffoscope
+[2024-06-02 19:41:21] INFO root fetch - processPackages [krdict.py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/krdict.py-3.0.0.tar.gz tmp/krdict.py-3.0.1.tar.gz --markdown 20240602/k/krdict.py/3.0.0-3.0.1/README.md --exclude *.pyd
+[2024-06-02 19:41:21] INFO root fetch - processPackages [micropython-europi]: Downloading https://files.pythonhosted.org/packages/60/ca/10f8546a9a256167c3bbffbc3a3d112dfdb2a038a221dec17cf59828ae49/micropython-europi-0.9.1.tar.gz
+[2024-06-02 19:41:21] INFO root fetch - processPackages [optimized-utility-library]: executing diffoscope
+[2024-06-02 19:41:21] INFO root fetch - processPackages [optimized-utility-library]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/optimized-utility-library-0.1.1.tar.gz tmp/optimized-utility-library-0.1.3.tar.gz --markdown 20240602/o/optimized-utility-library/0.1.1-0.1.3/README.md --exclude *.pyd
+[2024-06-02 19:41:21] INFO root fetch - processPackages [mwxlib]: executing diffoscope
+[2024-06-02 19:41:21] INFO root fetch - processPackages [mwxlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mwxlib-0.95.2-py3-none-any.whl.zip tmp/mwxlib-0.95.3-py3-none-any.whl.zip --markdown 20240602/m/mwxlib/0.95.2-0.95.3/README.md --exclude *.pyd
+[2024-06-02 19:41:21] INFO root fetch - processPackages [micropython-europi-contrib]: executing diffoscope
+[2024-06-02 19:41:21] INFO root fetch - processPackages [micropython-europi-contrib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/micropython-europi-contrib-0.8.1.tar.gz tmp/micropython-europi-contrib-0.9.1.tar.gz --markdown 20240602/m/micropython-europi-contrib/0.8.1-0.9.1/README.md --exclude *.pyd
+[2024-06-02 19:41:21] INFO root fetch - processPackages [micropython-europi]: executing diffoscope
+[2024-06-02 19:41:21] INFO root fetch - processPackages [micropython-europi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/micropython-europi-0.8.1.tar.gz tmp/micropython-europi-0.9.1.tar.gz --markdown 20240602/m/micropython-europi/0.8.1-0.9.1/README.md --exclude *.pyd
+[2024-06-02 19:41:21] INFO root fetch - processPackages [pywise]: Remove: archive file [/home/abi/fetcher/tmp/pywise-0.7.0.tar.gz]
+[2024-06-02 19:41:21] INFO root fetch - processPackages [pywise]: Remove: archive file [/home/abi/fetcher/tmp/pywise-0.8.0.tar.gz]
+[2024-06-02 19:41:21] INFO root fetch - main [MainThread]: End processing [pywise]: success
+[2024-06-02 19:41:21] INFO root fetch - processPackages [ml4co-kit]: Downloading https://files.pythonhosted.org/packages/88/e6/3af7ec05fcc7e92ee1e782ddd400cb6d3fdca54306455aa7ef450bccf1d6/ml4co_kit-0.0.7.tar.gz
+[2024-06-02 19:41:21] INFO root fetch - processPackages [schwab-api-wrapper]: Remove: archive file [/home/abi/fetcher/tmp/schwab_api_wrapper-0.1.5.tar.gz]
+[2024-06-02 19:41:21] INFO root fetch - processPackages [schwab-api-wrapper]: Remove: archive file [/home/abi/fetcher/tmp/schwab_api_wrapper-0.1.6.tar.gz]
+[2024-06-02 19:41:21] INFO root fetch - main [MainThread]: End processing [schwab-api-wrapper]: success
+[2024-06-02 19:41:21] INFO root fetch - processPackages [optimized-utility-library]: Remove: archive file [/home/abi/fetcher/tmp/optimized-utility-library-0.1.1.tar.gz]
+[2024-06-02 19:41:21] INFO root fetch - processPackages [optimized-utility-library]: Remove: archive file [/home/abi/fetcher/tmp/optimized-utility-library-0.1.3.tar.gz]
+[2024-06-02 19:41:21] INFO root fetch - main [MainThread]: End processing [optimized-utility-library]: success
+[2024-06-02 19:41:22] INFO root fetch - processPackages [mwxlib]: Remove: archive file [/home/abi/fetcher/tmp/mwxlib-0.95.2-py3-none-any.whl.zip]
+[2024-06-02 19:41:22] INFO root fetch - processPackages [mwxlib]: Remove: archive file [/home/abi/fetcher/tmp/mwxlib-0.95.3-py3-none-any.whl.zip]
+[2024-06-02 19:41:22] INFO root fetch - main [MainThread]: End processing [mwxlib]: success
+[2024-06-02 19:41:22] INFO root fetch - processPackages [krdict.py]: Remove: archive file [/home/abi/fetcher/tmp/krdict.py-3.0.0.tar.gz]
+[2024-06-02 19:41:22] INFO root fetch - processPackages [krdict.py]: Remove: archive file [/home/abi/fetcher/tmp/krdict.py-3.0.1.tar.gz]
+[2024-06-02 19:41:22] INFO root fetch - main [MainThread]: End processing [krdict.py]: success
+[2024-06-02 19:41:22] INFO root fetch - processPackages [micropython-europi-contrib]: Remove: archive file [/home/abi/fetcher/tmp/micropython-europi-contrib-0.8.1.tar.gz]
+[2024-06-02 19:41:22] INFO root fetch - processPackages [micropython-europi-contrib]: Remove: archive file [/home/abi/fetcher/tmp/micropython-europi-contrib-0.9.1.tar.gz]
+[2024-06-02 19:41:22] INFO root fetch - main [MainThread]: End processing [micropython-europi-contrib]: success
+[2024-06-02 19:41:22] INFO root fetch - processPackages [micropython-europi]: Remove: archive file [/home/abi/fetcher/tmp/micropython-europi-0.8.1.tar.gz]
+[2024-06-02 19:41:22] INFO root fetch - processPackages [micropython-europi]: Remove: archive file [/home/abi/fetcher/tmp/micropython-europi-0.9.1.tar.gz]
+[2024-06-02 19:41:22] INFO root fetch - main [MainThread]: End processing [micropython-europi]: success
+[2024-06-02 19:41:22] INFO root fetch - processPackages [ml4co-kit]: executing diffoscope
+[2024-06-02 19:41:22] INFO root fetch - processPackages [ml4co-kit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ml4co_kit-0.0.6.tar.gz tmp/ml4co_kit-0.0.7.tar.gz --markdown 20240602/m/ml4co-kit/0.0.6-0.0.7/README.md --exclude *.pyd
+[2024-06-02 19:41:25] INFO root fetch - processPackages [ml4co-kit]: Remove: archive file [/home/abi/fetcher/tmp/ml4co_kit-0.0.6.tar.gz]
+[2024-06-02 19:41:25] INFO root fetch - processPackages [ml4co-kit]: Remove: archive file [/home/abi/fetcher/tmp/ml4co_kit-0.0.7.tar.gz]
+[2024-06-02 19:41:25] INFO root fetch - main [MainThread]: End processing [ml4co-kit]: success
+[2024-06-02 19:41:25] INFO root fetch - main [MainThread]: Store serial: [23491421]
