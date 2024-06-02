@@ -5797,3 +5797,36 @@
 [2024-06-02 09:53:37] INFO root fetch - processPackages [x12306]: Remove: archive file [/home/abi/fetcher/tmp/x12306-0.3.2.tar.gz]
 [2024-06-02 09:53:37] INFO root fetch - main [MainThread]: End processing [x12306]: success
 [2024-06-02 09:53:37] INFO root fetch - main [MainThread]: Store serial: [23487208]
+[2024-06-02 09:55:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23487208]
+[2024-06-02 09:55:47] INFO root fetch - main [MainThread]: No changed packages found
+[2024-06-02 09:57:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23487209]
+[2024-06-02 09:57:52] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-02 09:57:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: certora-cli-alpha-master
+[2024-06-02 09:57:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nonebot-plugin-resolver
+[2024-06-02 09:57:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: eric-ide
+[2024-06-02 09:57:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tf-nightly
+[2024-06-02 09:57:52] INFO root fetch - processPackages [certora-cli-alpha-master]: New version: [20240602.6.6.541630] Old Version: [20240601.13.45.443207]
+[2024-06-02 09:57:52] INFO root fetch - processPackages [eric-ide]: New version: [24.5] Old Version: [24.4]
+[2024-06-02 09:57:52] INFO root fetch - processPackages [nonebot-plugin-resolver]: New version: [1.1.0] Old Version: [1.0.9]
+[2024-06-02 09:57:52] INFO root fetch - processPackages [tf-nightly]: New version: [2.17.0.dev20240602] Old Version: [2.17.0.dev20240601]
+[2024-06-02 09:57:52] INFO root fetch - processPackages [certora-cli-alpha-master]: Downloading https://files.pythonhosted.org/packages/bb/20/fd10b3b009f94eca850e25f0b6822f0cd7661224ab4d9fe519dfe930b5d9/certora-cli-alpha-master-20240601.13.45.443207.tar.gz
+[2024-06-02 09:57:52] INFO root fetch - processPackages [eric-ide]: Downloading https://files.pythonhosted.org/packages/60/e5/2783eb17c5f98288fb92777f3a1655260e194b692e8d16883cd05d22aac1/eric-ide-24.4.tar.gz
+[2024-06-02 09:57:52] INFO root fetch - processPackages [nonebot-plugin-resolver]: Downloading https://files.pythonhosted.org/packages/51/a7/510bd8c201f4db070bbc88a1b7c29f9640737628810f3c87d503898dfb6b/nonebot_plugin_resolver-1.0.9.tar.gz
+[2024-06-02 09:57:52] WARNING root fetch - processPackages [certora-cli-alpha-master]: Skipping package: exceeds size limit 14611844>=10485760
+[2024-06-02 09:57:52] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-master] error
+[2024-06-02 09:57:52] WARNING root fetch - processPackages [eric-ide]: Skipping package: exceeds size limit 19263152>=10485760
+[2024-06-02 09:57:52] INFO root fetch - main [MainThread]: End processing [eric-ide] error
+[2024-06-02 09:57:52] INFO root fetch - processPackages [tf-nightly]: Downloading https://files.pythonhosted.org/packages/91/1d/8e8245ef7e097e6a757f71a4761ddff7586ad87218adb04e931af0570ab2/tf_nightly-2.17.0.dev20240601-cp39-cp39-win_amd64.whl
+[2024-06-02 09:57:53] INFO root fetch - processPackages [nonebot-plugin-resolver]: Downloading https://files.pythonhosted.org/packages/e5/9e/04f07c32df58c9046ea0d2ca8c4e101943db973ca0cbe5fc55dce756ccbe/nonebot_plugin_resolver-1.1.0.tar.gz
+[2024-06-02 09:57:53] INFO root fetch - processPackages [tf-nightly]: Downloading https://files.pythonhosted.org/packages/d4/90/96567c47de8d2ff8c68fcd9711198bfc5f502e09270ea43ea5b5014a74b2/tf_nightly-2.17.0.dev20240602-cp39-cp39-win_amd64.whl
+[2024-06-02 09:57:53] INFO root fetch - processPackages [nonebot-plugin-resolver]: executing diffoscope
+[2024-06-02 09:57:53] INFO root fetch - processPackages [nonebot-plugin-resolver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_resolver-1.0.9.tar.gz tmp/nonebot_plugin_resolver-1.1.0.tar.gz --markdown 20240602/n/nonebot-plugin-resolver/1.0.9-1.1.0/README.md --exclude *.pyd
+[2024-06-02 09:57:53] INFO root fetch - processPackages [tf-nightly]: executing diffoscope
+[2024-06-02 09:57:53] INFO root fetch - processPackages [tf-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_nightly-2.17.0.dev20240601-cp39-cp39-win_amd64.whl.zip tmp/tf_nightly-2.17.0.dev20240602-cp39-cp39-win_amd64.whl.zip --markdown 20240602/t/tf-nightly/2.17.0.dev20240601-2.17.0.dev20240602/README.md --exclude *.pyd
+[2024-06-02 09:57:53] INFO root fetch - processPackages [tf-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_nightly-2.17.0.dev20240601-cp39-cp39-win_amd64.whl.zip]
+[2024-06-02 09:57:53] INFO root fetch - processPackages [tf-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_nightly-2.17.0.dev20240602-cp39-cp39-win_amd64.whl.zip]
+[2024-06-02 09:57:53] INFO root fetch - main [MainThread]: End processing [tf-nightly]: success
+[2024-06-02 09:57:53] INFO root fetch - processPackages [nonebot-plugin-resolver]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_resolver-1.0.9.tar.gz]
+[2024-06-02 09:57:53] INFO root fetch - processPackages [nonebot-plugin-resolver]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_resolver-1.1.0.tar.gz]
+[2024-06-02 09:57:53] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-resolver]: success
+[2024-06-02 09:57:53] INFO root fetch - main [MainThread]: Store serial: [23487225]
