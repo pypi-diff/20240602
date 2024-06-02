@@ -3053,3 +3053,15 @@
 [2024-06-02 04:22:17] INFO root fetch - processPackages [pyproject-pip]: Remove: archive file [/home/abi/fetcher/tmp/pyproject_pip-0.0.3.tar.gz]
 [2024-06-02 04:22:17] INFO root fetch - main [MainThread]: End processing [pyproject-pip]: success
 [2024-06-02 04:22:17] INFO root fetch - main [MainThread]: Store serial: [23485685]
+[2024-06-02 04:24:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23485685]
+[2024-06-02 04:24:26] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-02 04:24:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sweetrpg-web-core
+[2024-06-02 04:24:26] INFO root fetch - processPackages [sweetrpg-web-core]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-06-02 04:24:26] INFO root fetch - processPackages [sweetrpg-web-core]: Downloading https://files.pythonhosted.org/packages/10/78/7e4ec24c92190fa564c9ba8a1797ccda0c7472064d109da37e0d283f94d2/sweetrpg-web-core-0.0.98.tar.gz
+[2024-06-02 04:24:26] INFO root fetch - processPackages [sweetrpg-web-core]: Downloading https://files.pythonhosted.org/packages/bd/15/72a761101e501277066578a42896229ae4a254ecf7602e2e15f38b35310d/sweetrpg-web-core-0.0.99.tar.gz
+[2024-06-02 04:24:26] INFO root fetch - processPackages [sweetrpg-web-core]: executing diffoscope
+[2024-06-02 04:24:26] INFO root fetch - processPackages [sweetrpg-web-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sweetrpg-web-core-0.0.98.tar.gz tmp/sweetrpg-web-core-0.0.99.tar.gz --markdown 20240602/s/sweetrpg-web-core/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-06-02 04:24:27] INFO root fetch - processPackages [sweetrpg-web-core]: Remove: archive file [/home/abi/fetcher/tmp/sweetrpg-web-core-0.0.98.tar.gz]
+[2024-06-02 04:24:27] INFO root fetch - processPackages [sweetrpg-web-core]: Remove: archive file [/home/abi/fetcher/tmp/sweetrpg-web-core-0.0.99.tar.gz]
+[2024-06-02 04:24:27] INFO root fetch - main [MainThread]: End processing [sweetrpg-web-core]: success
+[2024-06-02 04:24:27] INFO root fetch - main [MainThread]: Store serial: [23485688]
