@@ -14930,3 +14930,14 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 19:32:42] INFO root fetch - processPackages [copilothistoryexporter]: Remove: archive file [/home/abi/fetcher/tmp/copilothistoryexporter-1.0.2.tar.gz]
 [2024-06-02 19:32:42] INFO root fetch - main [MainThread]: End processing [copilothistoryexporter]: success
 [2024-06-02 19:32:42] INFO root fetch - main [MainThread]: Store serial: [23491356]
+[2024-06-02 19:34:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23491356]
+[2024-06-02 19:34:50] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-02 19:34:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: informal-detector
+[2024-06-02 19:34:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: flask-Captchaify
+[2024-06-02 19:34:51] WARNING root fetch - processPackages [informal-detector]: Skipping, unable to determine old version
+[2024-06-02 19:34:51] INFO root fetch - main [MainThread]: End processing [informal-detector] error
+[2024-06-02 19:34:51] INFO root fetch - processPackages [flask-Captchaify]: New version: [1.6.9.8] Old Version: [1.6.9.7]
+[2024-06-02 19:34:51] INFO root fetch - processPackages [flask-Captchaify]: Downloading https://files.pythonhosted.org/packages/c2/07/f87560bbd2fc7a1638270a90427bdc6aa5ba58ab0733d764dd80b40b4147/flask_captchaify-1.6.9.7.tar.gz
+[2024-06-02 19:34:51] WARNING root fetch - processPackages [flask-Captchaify]: Skipping package: exceeds size limit 43917454>=10485760
+[2024-06-02 19:34:51] INFO root fetch - main [MainThread]: End processing [flask-Captchaify] error
+[2024-06-02 19:34:51] INFO root fetch - main [MainThread]: Store serial: [23491363]
