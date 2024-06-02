@@ -9170,3 +9170,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-02 14:07:21] INFO root fetch - processPackages [boj-cli]: Remove: archive file [/home/abi/fetcher/tmp/boj-cli-1.2.4.tar.gz]
 [2024-06-02 14:07:21] INFO root fetch - main [MainThread]: End processing [boj-cli]: success
 [2024-06-02 14:07:21] INFO root fetch - main [MainThread]: Store serial: [23488677]
+[2024-06-02 14:09:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23488677]
+[2024-06-02 14:09:29] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-02 14:09:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: autoutils-log
+[2024-06-02 14:09:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: miksiai
+[2024-06-02 14:09:30] INFO root fetch - processPackages [autoutils-log]: New version: [0.4.0] Old Version: [0.3.0]
+[2024-06-02 14:09:30] INFO root fetch - processPackages [miksiai]: New version: [1.0.8] Old Version: [1.0.7]
+[2024-06-02 14:09:30] INFO root fetch - processPackages [autoutils-log]: Downloading https://files.pythonhosted.org/packages/ba/5f/55925a507968ae8056660fb2e3900a0804a98381dc4f79269e20f3a51e8b/autoutils_log-0.3.0.tar.gz
+[2024-06-02 14:09:30] INFO root fetch - processPackages [miksiai]: Downloading https://files.pythonhosted.org/packages/e6/7c/45935d96a8ee9c06edc33d0570725485a27a9a81aeed1c7b3a29f8a82aa0/miksiai-1.0.7-pp39-pypy39_pp73-win_amd64.whl
+[2024-06-02 14:09:30] INFO root fetch - processPackages [autoutils-log]: Downloading https://files.pythonhosted.org/packages/7a/6f/f59e80a8bdb3236753894c7732b4e806f803c524ebf402a34b8ef0e752ea/autoutils_log-0.4.0.tar.gz
+[2024-06-02 14:09:30] INFO root fetch - processPackages [autoutils-log]: executing diffoscope
+[2024-06-02 14:09:30] INFO root fetch - processPackages [autoutils-log]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autoutils_log-0.3.0.tar.gz tmp/autoutils_log-0.4.0.tar.gz --markdown 20240602/a/autoutils-log/0.3.0-0.4.0/README.md --exclude *.pyd
+[2024-06-02 14:09:30] INFO root fetch - processPackages [miksiai]: Downloading https://files.pythonhosted.org/packages/1d/e6/820151ee284c3a532670e9b34e0755c773d696c1063d2a1edc4a285e45fa/miksiai-1.0.8-cp38-cp38-musllinux_1_1_x86_64.whl
+[2024-06-02 14:09:31] INFO root fetch - processPackages [autoutils-log]: Remove: archive file [/home/abi/fetcher/tmp/autoutils_log-0.3.0.tar.gz]
+[2024-06-02 14:09:31] INFO root fetch - processPackages [autoutils-log]: Remove: archive file [/home/abi/fetcher/tmp/autoutils_log-0.4.0.tar.gz]
+[2024-06-02 14:09:31] INFO root fetch - main [MainThread]: End processing [autoutils-log]: success
+[2024-06-02 14:09:33] INFO root fetch - processPackages [miksiai]: executing diffoscope
+[2024-06-02 14:09:33] INFO root fetch - processPackages [miksiai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/miksiai-1.0.7-pp39-pypy39_pp73-win_amd64.whl.zip tmp/miksiai-1.0.8-cp38-cp38-musllinux_1_1_x86_64.whl.zip --markdown 20240602/m/miksiai/1.0.7-1.0.8/README.md --exclude *.pyd
+[2024-06-02 14:09:34] INFO root fetch - processPackages [miksiai]: Remove: archive file [/home/abi/fetcher/tmp/miksiai-1.0.7-pp39-pypy39_pp73-win_amd64.whl.zip]
+[2024-06-02 14:09:34] INFO root fetch - processPackages [miksiai]: Remove: archive file [/home/abi/fetcher/tmp/miksiai-1.0.8-cp38-cp38-musllinux_1_1_x86_64.whl.zip]
+[2024-06-02 14:09:34] INFO root fetch - main [MainThread]: End processing [miksiai]: success
+[2024-06-02 14:09:34] INFO root fetch - main [MainThread]: Store serial: [23488722]
