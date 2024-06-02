@@ -4510,3 +4510,26 @@
 [2024-06-02 07:36:21] INFO root fetch - processPackages [schwab-api-wrapper]: Remove: archive file [/home/abi/fetcher/tmp/schwab_api_wrapper-0.1.5.tar.gz]
 [2024-06-02 07:36:21] INFO root fetch - main [MainThread]: End processing [schwab-api-wrapper]: success
 [2024-06-02 07:36:21] INFO root fetch - main [MainThread]: Store serial: [23486480]
+[2024-06-02 07:38:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23486480]
+[2024-06-02 07:38:30] INFO root fetch - main [MainThread]: No changed packages found
+[2024-06-02 07:40:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23486485]
+[2024-06-02 07:40:36] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-02 07:40:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pycardano
+[2024-06-02 07:40:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: morphdb-utils
+[2024-06-02 07:40:36] INFO root fetch - processPackages [pycardano]: New version: [0.9.0] Old Version: [0.8.1]
+[2024-06-02 07:40:37] INFO root fetch - processPackages [morphdb-utils]: New version: [0.2.1] Old Version: [0.2.0]
+[2024-06-02 07:40:37] INFO root fetch - processPackages [pycardano]: Downloading https://files.pythonhosted.org/packages/93/bd/23eb3212b1f0b6017875ddbb6e81dfb825f75a886de162e7dc3923dbd0be/pycardano-0.8.1.tar.gz
+[2024-06-02 07:40:37] INFO root fetch - processPackages [morphdb-utils]: Downloading https://files.pythonhosted.org/packages/45/64/98d9257d80ac89069d20348e40f756c49f07bdceb458bcb6d4c8f84caac5/morphdb_utils-0.2.0.tar.gz
+[2024-06-02 07:40:37] INFO root fetch - processPackages [pycardano]: Downloading https://files.pythonhosted.org/packages/c7/62/b43ff764d142fc891668fe00aa024e9f3b8349a9c2e9a4427301d89293e1/pycardano-0.9.0.tar.gz
+[2024-06-02 07:40:37] INFO root fetch - processPackages [morphdb-utils]: Downloading https://files.pythonhosted.org/packages/02/ff/a753d22feda3ed63998e9a35adec52c325e614359f5ed992ba666cb4aac8/morphdb_utils-0.2.1.tar.gz
+[2024-06-02 07:40:37] INFO root fetch - processPackages [pycardano]: executing diffoscope
+[2024-06-02 07:40:37] INFO root fetch - processPackages [pycardano]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pycardano-0.8.1.tar.gz tmp/pycardano-0.9.0.tar.gz --markdown 20240602/p/pycardano/0.8.1-0.9.0/README.md --exclude *.pyd
+[2024-06-02 07:40:37] INFO root fetch - processPackages [morphdb-utils]: executing diffoscope
+[2024-06-02 07:40:37] INFO root fetch - processPackages [morphdb-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/morphdb_utils-0.2.0.tar.gz tmp/morphdb_utils-0.2.1.tar.gz --markdown 20240602/m/morphdb-utils/0.2.0-0.2.1/README.md --exclude *.pyd
+[2024-06-02 07:40:38] INFO root fetch - processPackages [morphdb-utils]: Remove: archive file [/home/abi/fetcher/tmp/morphdb_utils-0.2.0.tar.gz]
+[2024-06-02 07:40:38] INFO root fetch - processPackages [morphdb-utils]: Remove: archive file [/home/abi/fetcher/tmp/morphdb_utils-0.2.1.tar.gz]
+[2024-06-02 07:40:38] INFO root fetch - main [MainThread]: End processing [morphdb-utils]: success
+[2024-06-02 07:40:38] INFO root fetch - processPackages [pycardano]: Remove: archive file [/home/abi/fetcher/tmp/pycardano-0.8.1.tar.gz]
+[2024-06-02 07:40:38] INFO root fetch - processPackages [pycardano]: Remove: archive file [/home/abi/fetcher/tmp/pycardano-0.9.0.tar.gz]
+[2024-06-02 07:40:38] INFO root fetch - main [MainThread]: End processing [pycardano]: success
+[2024-06-02 07:40:38] INFO root fetch - main [MainThread]: Store serial: [23486491]
