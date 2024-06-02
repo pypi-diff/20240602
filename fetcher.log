@@ -15090,3 +15090,33 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 19:43:35] INFO root fetch - processPackages [pypi-cicd]: Remove: archive file [/home/abi/fetcher/tmp/pypi_cicd-0.5.tar.gz]
 [2024-06-02 19:43:35] INFO root fetch - main [MainThread]: End processing [pypi-cicd]: success
 [2024-06-02 19:43:35] INFO root fetch - main [MainThread]: Store serial: [23491428]
+[2024-06-02 19:45:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23491428]
+[2024-06-02 19:45:43] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-02 19:45:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: browserxt
+[2024-06-02 19:45:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: a9x-webstatistics
+[2024-06-02 19:45:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: morphosamplers
+[2024-06-02 19:45:43] INFO root fetch - processPackages [a9x-webstatistics]: New version: [0.2.3] Old Version: [0.2.2]
+[2024-06-02 19:45:43] INFO root fetch - processPackages [a9x-webstatistics]: Downloading https://files.pythonhosted.org/packages/e8/bd/288ee837e061932ca4f9f97ff5107a2e3d49c0e1ee7a6e77534f673a4a26/a9x_webstatistics-0.2.2.tar.gz
+[2024-06-02 19:45:43] INFO root fetch - processPackages [browserxt]: New version: [0.2.0] Old Version: [0.1.5]
+[2024-06-02 19:45:43] INFO root fetch - processPackages [morphosamplers]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-06-02 19:45:43] INFO root fetch - processPackages [browserxt]: Downloading https://files.pythonhosted.org/packages/3f/67/091a3da192e7aae8dce504890a664a216150f536c781b42318d58321a052/browserxt-0.1.5.tar.gz
+[2024-06-02 19:45:43] INFO root fetch - processPackages [morphosamplers]: Downloading https://files.pythonhosted.org/packages/99/33/46f2f06b7d57f7026c796190e13d65e963346dec108f2fa4b87407301863/morphosamplers-0.0.8.tar.gz
+[2024-06-02 19:45:44] INFO root fetch - processPackages [a9x-webstatistics]: Downloading https://files.pythonhosted.org/packages/34/04/fb4b23282d73009ae7a30976e97c121998045a3491c450236a14272b8272/a9x_webstatistics-0.2.3.tar.gz
+[2024-06-02 19:45:44] INFO root fetch - processPackages [a9x-webstatistics]: executing diffoscope
+[2024-06-02 19:45:44] INFO root fetch - processPackages [a9x-webstatistics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/a9x_webstatistics-0.2.2.tar.gz tmp/a9x_webstatistics-0.2.3.tar.gz --markdown 20240602/a/a9x-webstatistics/0.2.2-0.2.3/README.md --exclude *.pyd
+[2024-06-02 19:45:44] INFO root fetch - processPackages [browserxt]: Downloading https://files.pythonhosted.org/packages/1a/f1/52672de5036a99cd8f67658b1576fe4e2f44fd06e731ca9ba68e9e25540c/browserxt-0.2.0.tar.gz
+[2024-06-02 19:45:44] INFO root fetch - processPackages [browserxt]: executing diffoscope
+[2024-06-02 19:45:44] INFO root fetch - processPackages [browserxt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/browserxt-0.1.5.tar.gz tmp/browserxt-0.2.0.tar.gz --markdown 20240602/b/browserxt/0.1.5-0.2.0/README.md --exclude *.pyd
+[2024-06-02 19:45:44] INFO root fetch - processPackages [morphosamplers]: Downloading https://files.pythonhosted.org/packages/23/52/7a4a4fe2cc41cf520c1bad9a247ace3b7c599855162c167a47eed3acbe13/morphosamplers-0.0.9.tar.gz
+[2024-06-02 19:45:44] INFO root fetch - processPackages [morphosamplers]: executing diffoscope
+[2024-06-02 19:45:44] INFO root fetch - processPackages [morphosamplers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/morphosamplers-0.0.8.tar.gz tmp/morphosamplers-0.0.9.tar.gz --markdown 20240602/m/morphosamplers/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-06-02 19:45:44] INFO root fetch - processPackages [a9x-webstatistics]: Remove: archive file [/home/abi/fetcher/tmp/a9x_webstatistics-0.2.2.tar.gz]
+[2024-06-02 19:45:44] INFO root fetch - processPackages [a9x-webstatistics]: Remove: archive file [/home/abi/fetcher/tmp/a9x_webstatistics-0.2.3.tar.gz]
+[2024-06-02 19:45:44] INFO root fetch - main [MainThread]: End processing [a9x-webstatistics]: success
+[2024-06-02 19:45:44] INFO root fetch - processPackages [browserxt]: Remove: archive file [/home/abi/fetcher/tmp/browserxt-0.1.5.tar.gz]
+[2024-06-02 19:45:44] INFO root fetch - processPackages [browserxt]: Remove: archive file [/home/abi/fetcher/tmp/browserxt-0.2.0.tar.gz]
+[2024-06-02 19:45:44] INFO root fetch - main [MainThread]: End processing [browserxt]: success
+[2024-06-02 19:45:45] INFO root fetch - processPackages [morphosamplers]: Remove: archive file [/home/abi/fetcher/tmp/morphosamplers-0.0.8.tar.gz]
+[2024-06-02 19:45:45] INFO root fetch - processPackages [morphosamplers]: Remove: archive file [/home/abi/fetcher/tmp/morphosamplers-0.0.9.tar.gz]
+[2024-06-02 19:45:45] INFO root fetch - main [MainThread]: End processing [morphosamplers]: success
+[2024-06-02 19:45:45] INFO root fetch - main [MainThread]: Store serial: [23491442]
