@@ -5475,3 +5475,47 @@
 [2024-06-02 09:25:28] INFO root fetch - processPackages [jaaql-middleware-python]: Remove: archive file [/home/abi/fetcher/tmp/jaaql-middleware-python-4.9.1.tar.gz]
 [2024-06-02 09:25:28] INFO root fetch - main [MainThread]: End processing [jaaql-middleware-python]: success
 [2024-06-02 09:25:28] INFO root fetch - main [MainThread]: Store serial: [23487021]
+[2024-06-02 09:27:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23487021]
+[2024-06-02 09:27:37] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-06-02 09:27:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: python-115
+[2024-06-02 09:27:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: CI-CloudConnector
+[2024-06-02 09:27:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: compushady
+[2024-06-02 09:27:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pipx
+[2024-06-02 09:27:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: telometer
+[2024-06-02 09:27:37] INFO root fetch - processPackages [pipx]: New version: [1.5.0] Old Version: [1.4.3]
+[2024-06-02 09:27:37] INFO root fetch - processPackages [python-115]: New version: [0.0.8.7.5] Old Version: [0.0.8.7.4]
+[2024-06-02 09:27:37] INFO root fetch - processPackages [telometer]: New version: [0.78] Old Version: [0.76]
+[2024-06-02 09:27:37] INFO root fetch - processPackages [python-115]: Downloading https://files.pythonhosted.org/packages/3e/28/d998fb9ec18d9a0258329db6681842cc046598aecce24377a9c2ac8226cb/python_115-0.0.8.7.4.tar.gz
+[2024-06-02 09:27:37] INFO root fetch - processPackages [CI-CloudConnector]: New version: [2.5] Old Version: [2.4]
+[2024-06-02 09:27:37] INFO root fetch - processPackages [compushady]: New version: [0.17.4] Old Version: [0.17.3]
+[2024-06-02 09:27:37] INFO root fetch - processPackages [pipx]: Downloading https://files.pythonhosted.org/packages/c6/8e/63d1bb26319d0fbb44b21fc068a7c0dab96e8516fbb2dd5f572f7ad178d2/pipx-1.4.3.tar.gz
+[2024-06-02 09:27:37] INFO root fetch - processPackages [telometer]: Downloading https://files.pythonhosted.org/packages/69/7d/a84dd9a4388910ce8dfac654cb021880221d329baddfac7f4676d4c11dbe/telometer-0.76.tar.gz
+[2024-06-02 09:27:37] INFO root fetch - processPackages [CI-CloudConnector]: Downloading https://files.pythonhosted.org/packages/aa/3b/e7572b8226d5114054dc25f7329ad8f696e4cc5855c6f6c106634caae9a8/ci_cloudconnector-2.4.tar.gz
+[2024-06-02 09:27:37] INFO root fetch - processPackages [compushady]: Downloading https://files.pythonhosted.org/packages/3d/f0/9d69ba2318c486101bbd697f6367477ec0a5bd15e4d571a9beace08d9d38/compushady-0.17.3.tar.gz
+[2024-06-02 09:27:37] WARNING root fetch - processPackages [compushady]: Skipping package: exceeds size limit 67089192>=10485760
+[2024-06-02 09:27:37] INFO root fetch - main [MainThread]: End processing [compushady] error
+[2024-06-02 09:27:37] INFO root fetch - processPackages [python-115]: Downloading https://files.pythonhosted.org/packages/53/01/e415fa7ca33b90bfcfc4037d11893cb0151d134ecf8ad1609c356d0a6480/python_115-0.0.8.7.5.tar.gz
+[2024-06-02 09:27:37] INFO root fetch - processPackages [python-115]: executing diffoscope
+[2024-06-02 09:27:37] INFO root fetch - processPackages [python-115]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_115-0.0.8.7.4.tar.gz tmp/python_115-0.0.8.7.5.tar.gz --markdown 20240602/p/python-115/0.0.8.7.4-0.0.8.7.5/README.md --exclude *.pyd
+[2024-06-02 09:27:37] INFO root fetch - processPackages [pipx]: Downloading https://files.pythonhosted.org/packages/97/a2/901a10ebedc68c12e686ac79f2d981fb748dd41fc54414bc408e502b8db0/pipx-1.5.0.tar.gz
+[2024-06-02 09:27:38] INFO root fetch - processPackages [CI-CloudConnector]: Downloading https://files.pythonhosted.org/packages/17/bb/9dc99050d9d2c21c5107a695cac213a276e604a7350e46c46786a805446d/ci_cloudconnector-2.5.tar.gz
+[2024-06-02 09:27:38] INFO root fetch - processPackages [telometer]: Downloading https://files.pythonhosted.org/packages/9c/c9/53650e4d29327c4089c85df3d4b8573b60cf62e4fcfcb20ed0d0923fbf5e/telometer-0.78.tar.gz
+[2024-06-02 09:27:38] INFO root fetch - processPackages [pipx]: executing diffoscope
+[2024-06-02 09:27:38] INFO root fetch - processPackages [pipx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pipx-1.4.3.tar.gz tmp/pipx-1.5.0.tar.gz --markdown 20240602/p/pipx/1.4.3-1.5.0/README.md --exclude *.pyd
+[2024-06-02 09:27:38] INFO root fetch - processPackages [CI-CloudConnector]: executing diffoscope
+[2024-06-02 09:27:38] INFO root fetch - processPackages [CI-CloudConnector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ci_cloudconnector-2.4.tar.gz tmp/ci_cloudconnector-2.5.tar.gz --markdown 20240602/C/CI-CloudConnector/2.4-2.5/README.md --exclude *.pyd
+[2024-06-02 09:27:38] INFO root fetch - processPackages [telometer]: executing diffoscope
+[2024-06-02 09:27:38] INFO root fetch - processPackages [telometer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/telometer-0.76.tar.gz tmp/telometer-0.78.tar.gz --markdown 20240602/t/telometer/0.76-0.78/README.md --exclude *.pyd
+[2024-06-02 09:27:38] INFO root fetch - processPackages [python-115]: Remove: archive file [/home/abi/fetcher/tmp/python_115-0.0.8.7.4.tar.gz]
+[2024-06-02 09:27:38] INFO root fetch - processPackages [python-115]: Remove: archive file [/home/abi/fetcher/tmp/python_115-0.0.8.7.5.tar.gz]
+[2024-06-02 09:27:38] INFO root fetch - main [MainThread]: End processing [python-115]: success
+[2024-06-02 09:27:38] INFO root fetch - processPackages [CI-CloudConnector]: Remove: archive file [/home/abi/fetcher/tmp/ci_cloudconnector-2.4.tar.gz]
+[2024-06-02 09:27:38] INFO root fetch - processPackages [CI-CloudConnector]: Remove: archive file [/home/abi/fetcher/tmp/ci_cloudconnector-2.5.tar.gz]
+[2024-06-02 09:27:38] INFO root fetch - main [MainThread]: End processing [CI-CloudConnector]: success
+[2024-06-02 09:27:38] INFO root fetch - processPackages [telometer]: Remove: archive file [/home/abi/fetcher/tmp/telometer-0.76.tar.gz]
+[2024-06-02 09:27:38] INFO root fetch - processPackages [telometer]: Remove: archive file [/home/abi/fetcher/tmp/telometer-0.78.tar.gz]
+[2024-06-02 09:27:38] INFO root fetch - main [MainThread]: End processing [telometer]: success
+[2024-06-02 09:27:38] INFO root fetch - processPackages [pipx]: Remove: archive file [/home/abi/fetcher/tmp/pipx-1.4.3.tar.gz]
+[2024-06-02 09:27:38] INFO root fetch - processPackages [pipx]: Remove: archive file [/home/abi/fetcher/tmp/pipx-1.5.0.tar.gz]
+[2024-06-02 09:27:38] INFO root fetch - main [MainThread]: End processing [pipx]: success
+[2024-06-02 09:27:38] INFO root fetch - main [MainThread]: Store serial: [23487035]
