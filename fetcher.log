@@ -15479,3 +15479,33 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 20:03:18] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.5.9.tar.gz]
 [2024-06-02 20:03:18] INFO root fetch - main [MainThread]: End processing [mimllearning]: success
 [2024-06-02 20:03:18] INFO root fetch - main [MainThread]: Store serial: [23491585]
+[2024-06-02 20:05:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23491585]
+[2024-06-02 20:05:26] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-02 20:05:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mimllearning
+[2024-06-02 20:05:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyastbuilder
+[2024-06-02 20:05:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ok-script
+[2024-06-02 20:05:26] INFO root fetch - processPackages [ok-script]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-06-02 20:05:26] INFO root fetch - processPackages [mimllearning]: New version: [0.5.9] Old Version: [0.5.8]
+[2024-06-02 20:05:27] INFO root fetch - processPackages [ok-script]: Downloading https://files.pythonhosted.org/packages/5f/e3/968a4bfd4b0c82df5c5171f3d7d42fc8d8354283f3bae8becf975bc2cfb9/ok-script-0.0.8.tar.gz
+[2024-06-02 20:05:27] INFO root fetch - processPackages [pyastbuilder]: New version: [0.0.2.9340208910] Old Version: [0.0.2.8336239607]
+[2024-06-02 20:05:27] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/d2/b3/87b8f5c10d5ff5cbe23d28e3faecc4f6f19fc43cd453209ee58b914621c6/mimllearning-0.5.8.tar.gz
+[2024-06-02 20:05:27] INFO root fetch - processPackages [ok-script]: Downloading https://files.pythonhosted.org/packages/7e/57/3cb2ecf6f3abc49a58957eb87297ca0e7574e568b46c512c2a5fc710a462/ok-script-0.0.9.tar.gz
+[2024-06-02 20:05:27] INFO root fetch - processPackages [pyastbuilder]: Downloading https://files.pythonhosted.org/packages/c5/fd/fb348dcea7f27617012717fc16ff4896101487f00bcd1f973ab9cc736090/pyastbuilder-0.0.2.8336239607-py2.py3-none-any.whl
+[2024-06-02 20:05:27] INFO root fetch - processPackages [ok-script]: executing diffoscope
+[2024-06-02 20:05:27] INFO root fetch - processPackages [ok-script]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ok-script-0.0.8.tar.gz tmp/ok-script-0.0.9.tar.gz --markdown 20240602/o/ok-script/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-06-02 20:05:27] INFO root fetch - processPackages [pyastbuilder]: Downloading https://files.pythonhosted.org/packages/50/9c/6d82861922e2a5e3e5785af0ece7c53ed221c53c14ae20edc046fb3dd645/pyastbuilder-0.0.2.9340208910-py2.py3-none-any.whl
+[2024-06-02 20:05:27] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/41/4c/aef517b03341ea8031423a65e9a40cfa58845de36d6cbca2d6c4a11eb61c/mimllearning-0.5.9.tar.gz
+[2024-06-02 20:05:27] INFO root fetch - processPackages [pyastbuilder]: executing diffoscope
+[2024-06-02 20:05:27] INFO root fetch - processPackages [pyastbuilder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyastbuilder-0.0.2.8336239607-py2.py3-none-any.whl.zip tmp/pyastbuilder-0.0.2.9340208910-py2.py3-none-any.whl.zip --markdown 20240602/p/pyastbuilder/0.0.2.8336239607-0.0.2.9340208910/README.md --exclude *.pyd
+[2024-06-02 20:05:28] INFO root fetch - processPackages [mimllearning]: executing diffoscope
+[2024-06-02 20:05:28] INFO root fetch - processPackages [mimllearning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mimllearning-0.5.8.tar.gz tmp/mimllearning-0.5.9.tar.gz --markdown 20240602/m/mimllearning/0.5.8-0.5.9/README.md --exclude *.pyd
+[2024-06-02 20:05:28] INFO root fetch - processPackages [ok-script]: Remove: archive file [/home/abi/fetcher/tmp/ok-script-0.0.8.tar.gz]
+[2024-06-02 20:05:28] INFO root fetch - processPackages [ok-script]: Remove: archive file [/home/abi/fetcher/tmp/ok-script-0.0.9.tar.gz]
+[2024-06-02 20:05:28] INFO root fetch - main [MainThread]: End processing [ok-script]: success
+[2024-06-02 20:05:28] INFO root fetch - processPackages [pyastbuilder]: Remove: archive file [/home/abi/fetcher/tmp/pyastbuilder-0.0.2.8336239607-py2.py3-none-any.whl.zip]
+[2024-06-02 20:05:28] INFO root fetch - processPackages [pyastbuilder]: Remove: archive file [/home/abi/fetcher/tmp/pyastbuilder-0.0.2.9340208910-py2.py3-none-any.whl.zip]
+[2024-06-02 20:05:28] INFO root fetch - main [MainThread]: End processing [pyastbuilder]: success
+[2024-06-02 20:05:31] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.5.8.tar.gz]
+[2024-06-02 20:05:31] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.5.9.tar.gz]
+[2024-06-02 20:05:31] INFO root fetch - main [MainThread]: End processing [mimllearning]: success
+[2024-06-02 20:05:31] INFO root fetch - main [MainThread]: Store serial: [23491593]
