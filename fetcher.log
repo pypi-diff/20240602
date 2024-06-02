@@ -6060,3 +6060,27 @@
 [2024-06-02 10:17:26] INFO root fetch - processPackages [hstrader]: Remove: archive file [/home/abi/fetcher/tmp/hstrader-1.0.2.tar.gz]
 [2024-06-02 10:17:26] INFO root fetch - main [MainThread]: End processing [hstrader]: success
 [2024-06-02 10:17:26] INFO root fetch - main [MainThread]: Store serial: [23487329]
+[2024-06-02 10:19:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23487329]
+[2024-06-02 10:19:35] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-02 10:19:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: item-matching
+[2024-06-02 10:19:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gutta
+[2024-06-02 10:19:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bakarSecure
+[2024-06-02 10:19:35] WARNING root fetch - processPackages [bakarSecure]: Skipping, unable to determine old version
+[2024-06-02 10:19:35] INFO root fetch - main [MainThread]: End processing [bakarSecure] error
+[2024-06-02 10:19:35] INFO root fetch - processPackages [gutta]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-06-02 10:19:35] INFO root fetch - processPackages [item-matching]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-06-02 10:19:35] INFO root fetch - processPackages [gutta]: Downloading https://files.pythonhosted.org/packages/27/f5/54ef86894fd691ec740621406d5aa3bb99910f1e1e7c80b5211d59d1f42a/gutta-0.1.8-py3-none-any.whl
+[2024-06-02 10:19:35] INFO root fetch - processPackages [item-matching]: Downloading https://files.pythonhosted.org/packages/c1/eb/6af9341e91340108c6bd813fdbaf99df20b024ef720ba95fd98f5f9b1e67/item_matching-0.0.8.tar.gz
+[2024-06-02 10:19:35] INFO root fetch - processPackages [item-matching]: Downloading https://files.pythonhosted.org/packages/d6/27/06995957de9e3e2dc832d765e63268da03fc82c05f5e99df1fad645a8853/item_matching-0.0.9.tar.gz
+[2024-06-02 10:19:35] INFO root fetch - processPackages [gutta]: Downloading https://files.pythonhosted.org/packages/a1/e1/2466d83bc821ce2e5daba52adb88edb68abe30789b40cac0065a8a3834f9/gutta-0.1.9-py3-none-any.whl
+[2024-06-02 10:19:35] INFO root fetch - processPackages [item-matching]: executing diffoscope
+[2024-06-02 10:19:35] INFO root fetch - processPackages [item-matching]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/item_matching-0.0.8.tar.gz tmp/item_matching-0.0.9.tar.gz --markdown 20240602/i/item-matching/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-06-02 10:19:35] INFO root fetch - processPackages [gutta]: executing diffoscope
+[2024-06-02 10:19:35] INFO root fetch - processPackages [gutta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gutta-0.1.8-py3-none-any.whl.zip tmp/gutta-0.1.9-py3-none-any.whl.zip --markdown 20240602/g/gutta/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-06-02 10:19:36] INFO root fetch - processPackages [item-matching]: Remove: archive file [/home/abi/fetcher/tmp/item_matching-0.0.8.tar.gz]
+[2024-06-02 10:19:36] INFO root fetch - processPackages [item-matching]: Remove: archive file [/home/abi/fetcher/tmp/item_matching-0.0.9.tar.gz]
+[2024-06-02 10:19:36] INFO root fetch - main [MainThread]: End processing [item-matching]: success
+[2024-06-02 10:19:36] INFO root fetch - processPackages [gutta]: Remove: archive file [/home/abi/fetcher/tmp/gutta-0.1.8-py3-none-any.whl.zip]
+[2024-06-02 10:19:36] INFO root fetch - processPackages [gutta]: Remove: archive file [/home/abi/fetcher/tmp/gutta-0.1.9-py3-none-any.whl.zip]
+[2024-06-02 10:19:36] INFO root fetch - main [MainThread]: End processing [gutta]: success
+[2024-06-02 10:19:36] INFO root fetch - main [MainThread]: Store serial: [23487336]
