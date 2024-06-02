@@ -20703,3 +20703,42 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 23:12:26] INFO root fetch - processPackages [sotopia]: Remove: archive file [/home/abi/fetcher/tmp/sotopia-0.0.8.tar.gz]
 [2024-06-02 23:12:26] INFO root fetch - main [MainThread]: End processing [sotopia]: success
 [2024-06-02 23:12:26] INFO root fetch - main [MainThread]: Store serial: [23493852]
+[2024-06-02 23:14:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23493852]
+[2024-06-02 23:14:35] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-02 23:14:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: strictdoc
+[2024-06-02 23:14:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: langgraph
+[2024-06-02 23:14:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: stockdatamanager
+[2024-06-02 23:14:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ovos-plugin-common-play
+[2024-06-02 23:14:35] INFO root fetch - processPackages [stockdatamanager]: New version: [1.1.1] Old Version: [1.1]
+[2024-06-02 23:14:35] INFO root fetch - processPackages [stockdatamanager]: Downloading https://files.pythonhosted.org/packages/48/d0/6570ed8db62dfa51535513534c9bab0dcab67119db2e8bf35ba1a6fa02e7/stockdatamanager-1.1.tar.gz
+[2024-06-02 23:14:35] INFO root fetch - processPackages [ovos-plugin-common-play]: New version: [0.0.7a7] Old Version: [0.0.7a6]
+[2024-06-02 23:14:35] INFO root fetch - processPackages [strictdoc]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-06-02 23:14:35] INFO root fetch - processPackages [langgraph]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-06-02 23:14:35] INFO root fetch - processPackages [ovos-plugin-common-play]: Downloading https://files.pythonhosted.org/packages/0d/f6/0531c666c126576e373dddc80ae303c483b9dc640f8b4cd4f47f9a99250d/ovos_plugin_common_play-0.0.7a6.tar.gz
+[2024-06-02 23:14:35] INFO root fetch - processPackages [langgraph]: Downloading https://files.pythonhosted.org/packages/c3/4c/9b4e9602b53407f902478465aed68d9de3c50e5d87e57689b587d47b3da7/langgraph-0.0.8.tar.gz
+[2024-06-02 23:14:35] INFO root fetch - processPackages [strictdoc]: Downloading https://files.pythonhosted.org/packages/0e/0c/3782c5673a36cda9e2189ef1e7d9661ba2f1e5c9822b736cf2ce0d2545a7/strictdoc-0.0.8.tar.gz
+[2024-06-02 23:14:36] INFO root fetch - processPackages [stockdatamanager]: Downloading https://files.pythonhosted.org/packages/3d/1d/068d1241091d51e038e48c7892ba34a08679d3a786665cb828ea0c412766/stockdatamanager-1.1.1.tar.gz
+[2024-06-02 23:14:36] INFO root fetch - processPackages [stockdatamanager]: executing diffoscope
+[2024-06-02 23:14:36] INFO root fetch - processPackages [stockdatamanager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stockdatamanager-1.1.tar.gz tmp/stockdatamanager-1.1.1.tar.gz --markdown 20240602/s/stockdatamanager/1.1-1.1.1/README.md --exclude *.pyd
+[2024-06-02 23:14:36] INFO root fetch - processPackages [ovos-plugin-common-play]: Downloading https://files.pythonhosted.org/packages/a7/5d/ae8a43d39bf29480eae979f4819f1a7dd7e4aacddca828e11c4fae666c2e/ovos_plugin_common_play-0.0.7a7.tar.gz
+[2024-06-02 23:14:36] INFO root fetch - processPackages [langgraph]: Downloading https://files.pythonhosted.org/packages/f4/a0/daf7cdeb4d1bf5e82dbc320b0a09159087efca3e06f23971c0144e7114f0/langgraph-0.0.9.tar.gz
+[2024-06-02 23:14:36] INFO root fetch - processPackages [strictdoc]: Downloading https://files.pythonhosted.org/packages/b6/06/2219b569301c00406d344dca69ac5e31a169bb9529b66ec957609495d940/strictdoc-0.0.9.tar.gz
+[2024-06-02 23:14:36] INFO root fetch - processPackages [langgraph]: executing diffoscope
+[2024-06-02 23:14:36] INFO root fetch - processPackages [langgraph]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langgraph-0.0.8.tar.gz tmp/langgraph-0.0.9.tar.gz --markdown 20240602/l/langgraph/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-06-02 23:14:36] INFO root fetch - processPackages [strictdoc]: executing diffoscope
+[2024-06-02 23:14:36] INFO root fetch - processPackages [strictdoc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/strictdoc-0.0.8.tar.gz tmp/strictdoc-0.0.9.tar.gz --markdown 20240602/s/strictdoc/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-06-02 23:14:36] INFO root fetch - processPackages [ovos-plugin-common-play]: executing diffoscope
+[2024-06-02 23:14:36] INFO root fetch - processPackages [ovos-plugin-common-play]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos_plugin_common_play-0.0.7a6.tar.gz tmp/ovos_plugin_common_play-0.0.7a7.tar.gz --markdown 20240602/o/ovos-plugin-common-play/0.0.7a6-0.0.7a7/README.md --exclude *.pyd
+[2024-06-02 23:14:36] INFO root fetch - processPackages [stockdatamanager]: Remove: archive file [/home/abi/fetcher/tmp/stockdatamanager-1.1.tar.gz]
+[2024-06-02 23:14:36] INFO root fetch - processPackages [stockdatamanager]: Remove: archive file [/home/abi/fetcher/tmp/stockdatamanager-1.1.1.tar.gz]
+[2024-06-02 23:14:36] INFO root fetch - main [MainThread]: End processing [stockdatamanager]: success
+[2024-06-02 23:14:37] INFO root fetch - processPackages [langgraph]: Remove: archive file [/home/abi/fetcher/tmp/langgraph-0.0.8.tar.gz]
+[2024-06-02 23:14:37] INFO root fetch - processPackages [langgraph]: Remove: archive file [/home/abi/fetcher/tmp/langgraph-0.0.9.tar.gz]
+[2024-06-02 23:14:37] INFO root fetch - main [MainThread]: End processing [langgraph]: success
+[2024-06-02 23:14:37] INFO root fetch - processPackages [strictdoc]: Remove: archive file [/home/abi/fetcher/tmp/strictdoc-0.0.8.tar.gz]
+[2024-06-02 23:14:37] INFO root fetch - processPackages [strictdoc]: Remove: archive file [/home/abi/fetcher/tmp/strictdoc-0.0.9.tar.gz]
+[2024-06-02 23:14:37] INFO root fetch - main [MainThread]: End processing [strictdoc]: success
+[2024-06-02 23:14:38] INFO root fetch - processPackages [ovos-plugin-common-play]: Remove: archive file [/home/abi/fetcher/tmp/ovos_plugin_common_play-0.0.7a6.tar.gz]
+[2024-06-02 23:14:38] INFO root fetch - processPackages [ovos-plugin-common-play]: Remove: archive file [/home/abi/fetcher/tmp/ovos_plugin_common_play-0.0.7a7.tar.gz]
+[2024-06-02 23:14:38] INFO root fetch - main [MainThread]: End processing [ovos-plugin-common-play]: success
+[2024-06-02 23:14:38] INFO root fetch - main [MainThread]: Store serial: [23493863]
