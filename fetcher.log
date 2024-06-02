@@ -6012,3 +6012,18 @@
 [2024-06-02 10:10:57] INFO root fetch - processPackages [joker-mongodb]: Remove: archive file [/home/abi/fetcher/tmp/joker-mongodb-0.3.1.tar.gz]
 [2024-06-02 10:10:57] INFO root fetch - main [MainThread]: End processing [joker-mongodb]: success
 [2024-06-02 10:10:57] INFO root fetch - main [MainThread]: Store serial: [23487312]
+[2024-06-02 10:13:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23487312]
+[2024-06-02 10:13:05] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-02 10:13:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: anydi
+[2024-06-02 10:13:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bakarSecure
+[2024-06-02 10:13:05] INFO root fetch - processPackages [anydi]: New version: [0.27.0a0] Old Version: [0.26.2a0]
+[2024-06-02 10:13:05] WARNING root fetch - processPackages [bakarSecure]: Skipping, unable to determine old version
+[2024-06-02 10:13:05] INFO root fetch - main [MainThread]: End processing [bakarSecure] error
+[2024-06-02 10:13:05] INFO root fetch - processPackages [anydi]: Downloading https://files.pythonhosted.org/packages/05/68/a713be62c4880d1cfb98a8e1eb566668e594e75f13552ed2cabd033c7127/anydi-0.26.2a0.tar.gz
+[2024-06-02 10:13:05] INFO root fetch - processPackages [anydi]: Downloading https://files.pythonhosted.org/packages/fc/76/2c036fb9463fd91799470293bf9caeb9fb3b353728492ccde1a6d912ca15/anydi-0.27.0a0.tar.gz
+[2024-06-02 10:13:06] INFO root fetch - processPackages [anydi]: executing diffoscope
+[2024-06-02 10:13:06] INFO root fetch - processPackages [anydi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anydi-0.26.2a0.tar.gz tmp/anydi-0.27.0a0.tar.gz --markdown 20240602/a/anydi/0.26.2a0-0.27.0a0/README.md --exclude *.pyd
+[2024-06-02 10:13:06] INFO root fetch - processPackages [anydi]: Remove: archive file [/home/abi/fetcher/tmp/anydi-0.26.2a0.tar.gz]
+[2024-06-02 10:13:06] INFO root fetch - processPackages [anydi]: Remove: archive file [/home/abi/fetcher/tmp/anydi-0.27.0a0.tar.gz]
+[2024-06-02 10:13:06] INFO root fetch - main [MainThread]: End processing [anydi]: success
+[2024-06-02 10:13:06] INFO root fetch - main [MainThread]: Store serial: [23487320]
