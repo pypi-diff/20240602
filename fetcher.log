@@ -5653,3 +5653,39 @@
 [2024-06-02 09:38:29] INFO root fetch - processPackages [rocat]: Remove: archive file [/home/abi/fetcher/tmp/rocat-0.2.0.tar.gz]
 [2024-06-02 09:38:29] INFO root fetch - main [MainThread]: End processing [rocat]: success
 [2024-06-02 09:38:29] INFO root fetch - main [MainThread]: Store serial: [23487121]
+[2024-06-02 09:40:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23487121]
+[2024-06-02 09:40:38] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-06-02 09:40:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: drawlib
+[2024-06-02 09:40:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ALbedo
+[2024-06-02 09:40:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: canu
+[2024-06-02 09:40:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: DendroPy
+[2024-06-02 09:40:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: federated-learn
+[2024-06-02 09:40:38] INFO root fetch - processPackages [drawlib]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-06-02 09:40:39] WARNING root fetch - processPackages [ALbedo]: Skipping, unable to determine old version
+[2024-06-02 09:40:39] INFO root fetch - main [MainThread]: End processing [ALbedo] error
+[2024-06-02 09:40:39] INFO root fetch - processPackages [DendroPy]: New version: [5.0.1] Old Version: [5.0.0]
+[2024-06-02 09:40:39] WARNING root fetch - processPackages [federated-learn]: Skipping, unable to determine old version
+[2024-06-02 09:40:39] INFO root fetch - main [MainThread]: End processing [federated-learn] error
+[2024-06-02 09:40:39] INFO root fetch - processPackages [drawlib]: Downloading https://files.pythonhosted.org/packages/60/e9/e832f5447986e057ab79ab1e5d7e016a362ea358b59663545cca63fbafe5/drawlib-0.1.8.tar.gz
+[2024-06-02 09:40:39] INFO root fetch - processPackages [canu]: New version: [0.2.0] Old Version: [0.1.0]
+[2024-06-02 09:40:39] INFO root fetch - processPackages [canu]: Downloading https://files.pythonhosted.org/packages/6a/7e/e3eb49a5e7a9fcc43003f8f5039ac339320511a06aab4191eadaf974ea77/canu-0.1.0.tar.gz
+[2024-06-02 09:40:39] INFO root fetch - processPackages [DendroPy]: Downloading https://files.pythonhosted.org/packages/96/33/c3a06df7aec829e8b79b91503708d750d9c4842cfc4377ae215c1e61d97d/DendroPy-5.0.0.tar.gz
+[2024-06-02 09:40:39] INFO root fetch - processPackages [drawlib]: Downloading https://files.pythonhosted.org/packages/14/38/2b20ad6663407cd5099289880ae7cc2bc2817b52f1751da02396f59388dc/drawlib-0.1.9.tar.gz
+[2024-06-02 09:40:39] INFO root fetch - processPackages [drawlib]: executing diffoscope
+[2024-06-02 09:40:39] INFO root fetch - processPackages [drawlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/drawlib-0.1.8.tar.gz tmp/drawlib-0.1.9.tar.gz --markdown 20240602/d/drawlib/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-06-02 09:40:39] INFO root fetch - processPackages [canu]: Downloading https://files.pythonhosted.org/packages/ee/03/44359ccc8ac767c9673a280ceb3cdb6aca4063d1dbb78a178df16dca97c2/canu-0.2.0.tar.gz
+[2024-06-02 09:40:39] INFO root fetch - processPackages [DendroPy]: Downloading https://files.pythonhosted.org/packages/42/4b/6b300d145575ac7445e3b79b5c0c3a4ea441937278528b8dbd5b0aab42fc/DendroPy-5.0.1.tar.gz
+[2024-06-02 09:40:39] INFO root fetch - processPackages [canu]: executing diffoscope
+[2024-06-02 09:40:39] INFO root fetch - processPackages [canu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/canu-0.1.0.tar.gz tmp/canu-0.2.0.tar.gz --markdown 20240602/c/canu/0.1.0-0.2.0/README.md --exclude *.pyd
+[2024-06-02 09:40:39] INFO root fetch - processPackages [DendroPy]: executing diffoscope
+[2024-06-02 09:40:39] INFO root fetch - processPackages [DendroPy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/DendroPy-5.0.0.tar.gz tmp/DendroPy-5.0.1.tar.gz --markdown 20240602/D/DendroPy/5.0.0-5.0.1/README.md --exclude *.pyd
+[2024-06-02 09:40:40] INFO root fetch - processPackages [drawlib]: Remove: archive file [/home/abi/fetcher/tmp/drawlib-0.1.8.tar.gz]
+[2024-06-02 09:40:40] INFO root fetch - processPackages [drawlib]: Remove: archive file [/home/abi/fetcher/tmp/drawlib-0.1.9.tar.gz]
+[2024-06-02 09:40:40] INFO root fetch - main [MainThread]: End processing [drawlib]: success
+[2024-06-02 09:40:40] INFO root fetch - processPackages [canu]: Remove: archive file [/home/abi/fetcher/tmp/canu-0.1.0.tar.gz]
+[2024-06-02 09:40:40] INFO root fetch - processPackages [canu]: Remove: archive file [/home/abi/fetcher/tmp/canu-0.2.0.tar.gz]
+[2024-06-02 09:40:40] INFO root fetch - main [MainThread]: End processing [canu]: success
+[2024-06-02 09:40:40] INFO root fetch - processPackages [DendroPy]: Remove: archive file [/home/abi/fetcher/tmp/DendroPy-5.0.0.tar.gz]
+[2024-06-02 09:40:40] INFO root fetch - processPackages [DendroPy]: Remove: archive file [/home/abi/fetcher/tmp/DendroPy-5.0.1.tar.gz]
+[2024-06-02 09:40:40] INFO root fetch - main [MainThread]: End processing [DendroPy]: success
+[2024-06-02 09:40:40] INFO root fetch - main [MainThread]: Store serial: [23487152]
