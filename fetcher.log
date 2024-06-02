@@ -9658,3 +9658,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-02 14:40:14] INFO root fetch - processPackages [smol_k8s_lab]: Remove: archive file [/home/abi/fetcher/tmp/smol_k8s_lab-5.3.2.tar.gz]
 [2024-06-02 14:40:14] INFO root fetch - main [MainThread]: End processing [smol_k8s_lab]: success
 [2024-06-02 14:40:14] INFO root fetch - main [MainThread]: Store serial: [23488932]
+[2024-06-02 14:42:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23488932]
+[2024-06-02 14:42:23] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-02 14:42:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: projen
+[2024-06-02 14:42:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: imgcv
+[2024-06-02 14:42:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bigdl-llm
+[2024-06-02 14:42:23] INFO root fetch - processPackages [bigdl-llm]: New version: [2.5.0b20240601] Old Version: [2.5.0b20240531]
+[2024-06-02 14:42:23] INFO root fetch - processPackages [bigdl-llm]: Downloading https://files.pythonhosted.org/packages/96/46/47a16a0b612565771292ebc4695a0cf3b2929918466a1814308b92f1cd15/bigdl_llm-2.5.0b20240531-py3-none-win_amd64.whl
+[2024-06-02 14:42:23] INFO root fetch - processPackages [imgcv]: New version: [0.7.0] Old Version: [0.6.0]
+[2024-06-02 14:42:23] INFO root fetch - processPackages [projen]: New version: [0.82.3] Old Version: [0.82.2]
+[2024-06-02 14:42:23] INFO root fetch - processPackages [imgcv]: Downloading https://files.pythonhosted.org/packages/54/4d/07f69a2da580c98c292191bd75f24da4885f15e2422d422d06457989bcee/imgcv-0.6.0.tar.gz
+[2024-06-02 14:42:23] INFO root fetch - processPackages [projen]: Downloading https://files.pythonhosted.org/packages/4b/b4/07c9fe54cb21434055682380249512c721360f2e121665c1aaaaeb532d2d/projen-0.82.2.tar.gz
+[2024-06-02 14:42:23] INFO root fetch - processPackages [bigdl-llm]: Downloading https://files.pythonhosted.org/packages/a1/1b/fb2186ebfa24b41d48ce5fea6eddf7577f6e205bf0871c9473f6121523bc/bigdl_llm-2.5.0b20240601-py3-none-win_amd64.whl
+[2024-06-02 14:42:23] INFO root fetch - processPackages [imgcv]: Downloading https://files.pythonhosted.org/packages/33/02/668202db2ffc0f9e5aadb9e9db54737a0172a3a2a9cce60918d2e128a32e/imgcv-0.7.0.tar.gz
+[2024-06-02 14:42:23] INFO root fetch - processPackages [imgcv]: executing diffoscope
+[2024-06-02 14:42:23] INFO root fetch - processPackages [imgcv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/imgcv-0.6.0.tar.gz tmp/imgcv-0.7.0.tar.gz --markdown 20240602/i/imgcv/0.6.0-0.7.0/README.md --exclude *.pyd
+[2024-06-02 14:42:23] INFO root fetch - processPackages [bigdl-llm]: executing diffoscope
+[2024-06-02 14:42:23] INFO root fetch - processPackages [bigdl-llm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigdl_llm-2.5.0b20240531-py3-none-win_amd64.whl.zip tmp/bigdl_llm-2.5.0b20240601-py3-none-win_amd64.whl.zip --markdown 20240602/b/bigdl-llm/2.5.0b20240531-2.5.0b20240601/README.md --exclude *.pyd
+[2024-06-02 14:42:24] INFO root fetch - processPackages [projen]: Downloading https://files.pythonhosted.org/packages/27/01/9cade801c981186dd30be6406621f9193ef7e78f58f22ebd01ec323ad46c/projen-0.82.3.tar.gz
+[2024-06-02 14:42:24] INFO root fetch - processPackages [imgcv]: Remove: archive file [/home/abi/fetcher/tmp/imgcv-0.6.0.tar.gz]
+[2024-06-02 14:42:24] INFO root fetch - processPackages [imgcv]: Remove: archive file [/home/abi/fetcher/tmp/imgcv-0.7.0.tar.gz]
+[2024-06-02 14:42:24] INFO root fetch - main [MainThread]: End processing [imgcv]: success
+[2024-06-02 14:42:24] INFO root fetch - processPackages [projen]: executing diffoscope
+[2024-06-02 14:42:24] INFO root fetch - processPackages [projen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/projen-0.82.2.tar.gz tmp/projen-0.82.3.tar.gz --markdown 20240602/p/projen/0.82.2-0.82.3/README.md --exclude *.pyd
+[2024-06-02 14:42:25] INFO root fetch - processPackages [bigdl-llm]: Remove: archive file [/home/abi/fetcher/tmp/bigdl_llm-2.5.0b20240531-py3-none-win_amd64.whl.zip]
+[2024-06-02 14:42:25] INFO root fetch - processPackages [bigdl-llm]: Remove: archive file [/home/abi/fetcher/tmp/bigdl_llm-2.5.0b20240601-py3-none-win_amd64.whl.zip]
+[2024-06-02 14:42:25] INFO root fetch - main [MainThread]: End processing [bigdl-llm]: success
+[2024-06-02 14:42:25] INFO root fetch - processPackages [projen]: Remove: archive file [/home/abi/fetcher/tmp/projen-0.82.2.tar.gz]
+[2024-06-02 14:42:25] INFO root fetch - processPackages [projen]: Remove: archive file [/home/abi/fetcher/tmp/projen-0.82.3.tar.gz]
+[2024-06-02 14:42:25] INFO root fetch - main [MainThread]: End processing [projen]: success
+[2024-06-02 14:42:25] INFO root fetch - main [MainThread]: Store serial: [23488941]
