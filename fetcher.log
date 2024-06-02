@@ -9592,3 +9592,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-02 14:35:51] INFO root fetch - processPackages [simpleworkspace]: Remove: archive file [/home/abi/fetcher/tmp/simpleworkspace-1.2.213.tar.gz]
 [2024-06-02 14:35:51] INFO root fetch - main [MainThread]: End processing [simpleworkspace]: success
 [2024-06-02 14:35:51] INFO root fetch - main [MainThread]: Store serial: [23488908]
+[2024-06-02 14:37:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23488908]
+[2024-06-02 14:38:00] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-02 14:38:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: stashconnect
+[2024-06-02 14:38:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kal-utils
+[2024-06-02 14:38:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: autoCal
+[2024-06-02 14:38:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: uk_bin_collection
+[2024-06-02 14:38:00] INFO root fetch - processPackages [stashconnect]: New version: [0.8.7] Old Version: [0.8.6]
+[2024-06-02 14:38:00] INFO root fetch - processPackages [stashconnect]: Downloading https://files.pythonhosted.org/packages/ca/0a/52459c52bcaf3921fe873efd13270f1abc8194371c284915d3c35df9da65/stashconnect-0.8.6.tar.gz
+[2024-06-02 14:38:00] INFO root fetch - processPackages [autoCal]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-06-02 14:38:00] INFO root fetch - processPackages [kal-utils]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-06-02 14:38:00] INFO root fetch - processPackages [uk_bin_collection]: New version: [0.9.0] Old Version: [0.80.0]
+[2024-06-02 14:38:00] INFO root fetch - processPackages [kal-utils]: Downloading https://files.pythonhosted.org/packages/ee/cc/55a88a2f69c0f38277121ae8b9a0a186397df763b4c5143a265b34f3c35c/kal_utils-0.0.3.tar.gz
+[2024-06-02 14:38:00] INFO root fetch - processPackages [autoCal]: Downloading https://files.pythonhosted.org/packages/f8/c9/3c57bbca44890dde7fcfa8d90f0e78642a30605159e2e2cf47d18ad2e045/autocal-0.0.4.tar.gz
+[2024-06-02 14:38:01] INFO root fetch - processPackages [uk_bin_collection]: Downloading https://files.pythonhosted.org/packages/22/5e/a315e2c59b853f707c6c9ee591551e512b9e4f289dff0e16898bec1c8654/uk_bin_collection-0.80.0.tar.gz
+[2024-06-02 14:38:01] INFO root fetch - processPackages [stashconnect]: Downloading https://files.pythonhosted.org/packages/67/8d/e3192e4816047fdb23eb170fbaffa9cac3414dfcbd8cb7bcf0507cecd132/stashconnect-0.8.7.tar.gz
+[2024-06-02 14:38:01] INFO root fetch - processPackages [stashconnect]: executing diffoscope
+[2024-06-02 14:38:01] INFO root fetch - processPackages [stashconnect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stashconnect-0.8.6.tar.gz tmp/stashconnect-0.8.7.tar.gz --markdown 20240602/s/stashconnect/0.8.6-0.8.7/README.md --exclude *.pyd
+[2024-06-02 14:38:01] INFO root fetch - processPackages [autoCal]: Downloading https://files.pythonhosted.org/packages/81/ae/333e20c492b4e441549249f3198c96ad1af25764e10c0200210ead4a8b6f/autoCal-0.0.5-py3-none-any.whl
+[2024-06-02 14:38:01] INFO root fetch - processPackages [kal-utils]: Downloading https://files.pythonhosted.org/packages/81/d5/6e9fecce7ac52c448dd6c0a176731803bdc01a98fdc226d9d4c11842cead/kal_utils-0.0.4.tar.gz
+[2024-06-02 14:38:01] INFO root fetch - processPackages [autoCal]: executing diffoscope
+[2024-06-02 14:38:01] INFO root fetch - processPackages [autoCal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autocal-0.0.4.tar.gz tmp/autoCal-0.0.5-py3-none-any.whl.zip --markdown 20240602/a/autoCal/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-06-02 14:38:01] INFO root fetch - processPackages [uk_bin_collection]: Downloading https://files.pythonhosted.org/packages/55/0e/a2cb2057f203540273a20c67ef245d13d61a542934302f0475c939494a96/uk_bin_collection-0.9.0.tar.gz
+[2024-06-02 14:38:01] INFO root fetch - processPackages [kal-utils]: executing diffoscope
+[2024-06-02 14:38:01] INFO root fetch - processPackages [kal-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kal_utils-0.0.3.tar.gz tmp/kal_utils-0.0.4.tar.gz --markdown 20240602/k/kal-utils/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-06-02 14:38:01] INFO root fetch - processPackages [uk_bin_collection]: executing diffoscope
+[2024-06-02 14:38:01] INFO root fetch - processPackages [uk_bin_collection]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/uk_bin_collection-0.80.0.tar.gz tmp/uk_bin_collection-0.9.0.tar.gz --markdown 20240602/u/uk_bin_collection/0.80.0-0.9.0/README.md --exclude *.pyd
+[2024-06-02 14:38:01] INFO root fetch - processPackages [stashconnect]: Remove: archive file [/home/abi/fetcher/tmp/stashconnect-0.8.6.tar.gz]
+[2024-06-02 14:38:01] INFO root fetch - processPackages [stashconnect]: Remove: archive file [/home/abi/fetcher/tmp/stashconnect-0.8.7.tar.gz]
+[2024-06-02 14:38:01] INFO root fetch - main [MainThread]: End processing [stashconnect]: success
+[2024-06-02 14:38:02] INFO root fetch - processPackages [autoCal]: Remove: archive file [/home/abi/fetcher/tmp/autocal-0.0.4.tar.gz]
+[2024-06-02 14:38:02] INFO root fetch - processPackages [autoCal]: Remove: archive file [/home/abi/fetcher/tmp/autoCal-0.0.5-py3-none-any.whl.zip]
+[2024-06-02 14:38:02] INFO root fetch - main [MainThread]: End processing [autoCal]: success
+[2024-06-02 14:38:02] INFO root fetch - processPackages [kal-utils]: Remove: archive file [/home/abi/fetcher/tmp/kal_utils-0.0.3.tar.gz]
+[2024-06-02 14:38:02] INFO root fetch - processPackages [kal-utils]: Remove: archive file [/home/abi/fetcher/tmp/kal_utils-0.0.4.tar.gz]
+[2024-06-02 14:38:02] INFO root fetch - main [MainThread]: End processing [kal-utils]: success
+[2024-06-02 14:38:02] INFO root fetch - processPackages [uk_bin_collection]: Remove: archive file [/home/abi/fetcher/tmp/uk_bin_collection-0.80.0.tar.gz]
+[2024-06-02 14:38:02] INFO root fetch - processPackages [uk_bin_collection]: Remove: archive file [/home/abi/fetcher/tmp/uk_bin_collection-0.9.0.tar.gz]
+[2024-06-02 14:38:02] INFO root fetch - main [MainThread]: End processing [uk_bin_collection]: success
+[2024-06-02 14:38:02] INFO root fetch - main [MainThread]: Store serial: [23488919]
