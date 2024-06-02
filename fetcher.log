@@ -10513,3 +10513,39 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-02 15:54:38] INFO root fetch - processPackages [tensordict-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tensordict_nightly-2024.6.2-cp39-cp39-manylinux1_x86_64.whl.zip]
 [2024-06-02 15:54:38] INFO root fetch - main [MainThread]: End processing [tensordict-nightly]: success
 [2024-06-02 15:54:38] INFO root fetch - main [MainThread]: Store serial: [23489351]
+[2024-06-02 15:56:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23489351]
+[2024-06-02 15:56:47] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-06-02 15:56:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: voyage-agents
+[2024-06-02 15:56:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: autoutils-log
+[2024-06-02 15:56:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: virny
+[2024-06-02 15:56:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: feedparse
+[2024-06-02 15:56:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: json-repair
+[2024-06-02 15:56:47] INFO root fetch - processPackages [autoutils-log]: New version: [0.4.1] Old Version: [0.4.0]
+[2024-06-02 15:56:47] INFO root fetch - processPackages [json-repair]: New version: [0.9.0] Old Version: [0.8.1]
+[2024-06-02 15:56:47] INFO root fetch - processPackages [autoutils-log]: Downloading https://files.pythonhosted.org/packages/7a/6f/f59e80a8bdb3236753894c7732b4e806f803c524ebf402a34b8ef0e752ea/autoutils_log-0.4.0.tar.gz
+[2024-06-02 15:56:47] ERROR root fetch - processPackages [feedparse]: Unable to get metadata: No such project 'feedparse'
+[2024-06-02 15:56:47] INFO root fetch - main [MainThread]: End processing [feedparse] error
+[2024-06-02 15:56:47] INFO root fetch - processPackages [json-repair]: Downloading https://files.pythonhosted.org/packages/30/98/8e5e70109f1541aeeeccf67fa2876d53b95f4dbf67deb476eaa6931ff9b5/json_repair-0.8.1.tar.gz
+[2024-06-02 15:56:47] INFO root fetch - processPackages [virny]: New version: [0.5.0] Old Version: [0.4.0]
+[2024-06-02 15:56:47] WARNING root fetch - processPackages [voyage-agents]: Skipping, unable to determine old version
+[2024-06-02 15:56:47] INFO root fetch - main [MainThread]: End processing [voyage-agents] error
+[2024-06-02 15:56:47] INFO root fetch - processPackages [virny]: Downloading https://files.pythonhosted.org/packages/ac/bd/fbe53f3473c6a742919c8c246f92eede470ee3623f445a06bb9973f12bcb/virny-0.4.0.tar.gz
+[2024-06-02 15:56:47] INFO root fetch - processPackages [json-repair]: Downloading https://files.pythonhosted.org/packages/a3/6d/f3cff9a4b72bae984511e3b5e198dc886ea044b979e7d59ebd53d0583a10/json_repair-0.9.0.tar.gz
+[2024-06-02 15:56:48] INFO root fetch - processPackages [autoutils-log]: Downloading https://files.pythonhosted.org/packages/f8/3c/f5eeb9f90a75c78bae3c754a436a66685218e7dfc8d7235b22c97cc4a5ac/autoutils_log-0.4.1.tar.gz
+[2024-06-02 15:56:48] INFO root fetch - processPackages [json-repair]: executing diffoscope
+[2024-06-02 15:56:48] INFO root fetch - processPackages [json-repair]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/json_repair-0.8.1.tar.gz tmp/json_repair-0.9.0.tar.gz --markdown 20240602/j/json-repair/0.8.1-0.9.0/README.md --exclude *.pyd
+[2024-06-02 15:56:48] INFO root fetch - processPackages [autoutils-log]: executing diffoscope
+[2024-06-02 15:56:48] INFO root fetch - processPackages [autoutils-log]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autoutils_log-0.4.0.tar.gz tmp/autoutils_log-0.4.1.tar.gz --markdown 20240602/a/autoutils-log/0.4.0-0.4.1/README.md --exclude *.pyd
+[2024-06-02 15:56:48] INFO root fetch - processPackages [autoutils-log]: Remove: archive file [/home/abi/fetcher/tmp/autoutils_log-0.4.0.tar.gz]
+[2024-06-02 15:56:48] INFO root fetch - processPackages [autoutils-log]: Remove: archive file [/home/abi/fetcher/tmp/autoutils_log-0.4.1.tar.gz]
+[2024-06-02 15:56:48] INFO root fetch - main [MainThread]: End processing [autoutils-log]: success
+[2024-06-02 15:56:48] INFO root fetch - processPackages [json-repair]: Remove: archive file [/home/abi/fetcher/tmp/json_repair-0.8.1.tar.gz]
+[2024-06-02 15:56:48] INFO root fetch - processPackages [json-repair]: Remove: archive file [/home/abi/fetcher/tmp/json_repair-0.9.0.tar.gz]
+[2024-06-02 15:56:48] INFO root fetch - main [MainThread]: End processing [json-repair]: success
+[2024-06-02 15:56:49] INFO root fetch - processPackages [virny]: Downloading https://files.pythonhosted.org/packages/03/46/fbbc17d1b93a7955b600fb2ed56d7e718f0c35ebac582c5607df3550af5b/virny-0.5.0.tar.gz
+[2024-06-02 15:56:49] INFO root fetch - processPackages [virny]: executing diffoscope
+[2024-06-02 15:56:49] INFO root fetch - processPackages [virny]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/virny-0.4.0.tar.gz tmp/virny-0.5.0.tar.gz --markdown 20240602/v/virny/0.4.0-0.5.0/README.md --exclude *.pyd
+[2024-06-02 15:56:51] INFO root fetch - processPackages [virny]: Remove: archive file [/home/abi/fetcher/tmp/virny-0.4.0.tar.gz]
+[2024-06-02 15:56:51] INFO root fetch - processPackages [virny]: Remove: archive file [/home/abi/fetcher/tmp/virny-0.5.0.tar.gz]
+[2024-06-02 15:56:51] INFO root fetch - main [MainThread]: End processing [virny]: success
+[2024-06-02 15:56:51] INFO root fetch - main [MainThread]: Store serial: [23489371]
