@@ -3374,3 +3374,9 @@
 [2024-06-02 05:09:40] INFO root fetch - processPackages [easy-llama]: Remove: archive file [/home/abi/fetcher/tmp/easy_llama-0.1.9.tar.gz]
 [2024-06-02 05:09:40] INFO root fetch - main [MainThread]: End processing [easy-llama]: success
 [2024-06-02 05:09:40] INFO root fetch - main [MainThread]: Store serial: [23485784]
+[2024-06-02 05:11:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23485784]
+[2024-06-02 05:11:48] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-02 05:11:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: schwabtools
+[2024-06-02 05:11:49] WARNING root fetch - processPackages [schwabtools]: Skipping, unable to determine old version
+[2024-06-02 05:11:49] INFO root fetch - main [MainThread]: End processing [schwabtools] error
+[2024-06-02 05:11:49] INFO root fetch - main [MainThread]: Store serial: [23485789]
