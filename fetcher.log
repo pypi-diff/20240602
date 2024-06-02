@@ -6176,3 +6176,15 @@
 [2024-06-02 10:28:23] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.45.20240602.426-cp310-cp310-macosx_12_0_arm64.whl.zip]
 [2024-06-02 10:28:23] INFO root fetch - main [MainThread]: End processing [pkscreener]: success
 [2024-06-02 10:28:23] INFO root fetch - main [MainThread]: Store serial: [23487389]
+[2024-06-02 10:30:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23487389]
+[2024-06-02 10:30:31] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-02 10:30:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyEDAA.Reports
+[2024-06-02 10:30:32] INFO root fetch - processPackages [pyEDAA.Reports]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-06-02 10:30:32] INFO root fetch - processPackages [pyEDAA.Reports]: Downloading https://files.pythonhosted.org/packages/bc/2b/198e34b10f5812c5e8a350a72826a77cf4f146eec6d8ff1ea130df548aca/pyedaa_reports-0.8.0.tar.gz
+[2024-06-02 10:30:32] INFO root fetch - processPackages [pyEDAA.Reports]: Downloading https://files.pythonhosted.org/packages/d3/fe/9ef435112990efdd2b2c52c7c01a4ff303ddcdd3dd2af66114fb8547520b/pyedaa_reports-0.9.0.tar.gz
+[2024-06-02 10:30:32] INFO root fetch - processPackages [pyEDAA.Reports]: executing diffoscope
+[2024-06-02 10:30:32] INFO root fetch - processPackages [pyEDAA.Reports]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyedaa_reports-0.8.0.tar.gz tmp/pyedaa_reports-0.9.0.tar.gz --markdown 20240602/p/pyEDAA.Reports/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-06-02 10:30:33] INFO root fetch - processPackages [pyEDAA.Reports]: Remove: archive file [/home/abi/fetcher/tmp/pyedaa_reports-0.8.0.tar.gz]
+[2024-06-02 10:30:33] INFO root fetch - processPackages [pyEDAA.Reports]: Remove: archive file [/home/abi/fetcher/tmp/pyedaa_reports-0.9.0.tar.gz]
+[2024-06-02 10:30:33] INFO root fetch - main [MainThread]: End processing [pyEDAA.Reports]: success
+[2024-06-02 10:30:33] INFO root fetch - main [MainThread]: Store serial: [23487395]
