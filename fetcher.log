@@ -7246,3 +7246,27 @@
 [2024-06-02 12:00:17] INFO root fetch - processPackages [moto]: Remove: archive file [/home/abi/fetcher/tmp/moto-5.0.9.dev9.tar.gz]
 [2024-06-02 12:00:17] INFO root fetch - main [MainThread]: End processing [moto]: success
 [2024-06-02 12:00:17] INFO root fetch - main [MainThread]: Store serial: [23487979]
+[2024-06-02 12:02:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23487979]
+[2024-06-02 12:02:31] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-02 12:02:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ervdetective
+[2024-06-02 12:02:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: changy
+[2024-06-02 12:02:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: python-fm
+[2024-06-02 12:02:31] INFO root fetch - processPackages [ervdetective]: New version: [1.0.7] Old Version: [1.0.6]
+[2024-06-02 12:02:31] INFO root fetch - processPackages [ervdetective]: Downloading https://files.pythonhosted.org/packages/f7/25/923e03544ac6b87eb0586c84b128e90a522a3c2e7eb568dbfeccbf196706/ervdetective-1.0.6.tar.gz
+[2024-06-02 12:02:32] ERROR root fetch - processPackages [python-fm]: Unable to get metadata: No such project 'python-fm'
+[2024-06-02 12:02:32] INFO root fetch - main [MainThread]: End processing [python-fm] error
+[2024-06-02 12:02:32] INFO root fetch - processPackages [changy]: New version: [0.4.2] Old Version: [0.4.1]
+[2024-06-02 12:02:32] INFO root fetch - processPackages [changy]: Downloading https://files.pythonhosted.org/packages/87/81/093c221c932a88d990f8b3c2c061c7d1cdc708afe3366857c96fa2a8a67c/changy-0.4.1.tar.gz
+[2024-06-02 12:02:32] INFO root fetch - processPackages [ervdetective]: Downloading https://files.pythonhosted.org/packages/f5/d0/5f12291dcaf908d2e448819d1ff93063015fdbb307f88d708dc681b632cf/ervdetective-1.0.7.tar.gz
+[2024-06-02 12:02:32] INFO root fetch - processPackages [ervdetective]: executing diffoscope
+[2024-06-02 12:02:32] INFO root fetch - processPackages [ervdetective]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ervdetective-1.0.6.tar.gz tmp/ervdetective-1.0.7.tar.gz --markdown 20240602/e/ervdetective/1.0.6-1.0.7/README.md --exclude *.pyd
+[2024-06-02 12:02:32] INFO root fetch - processPackages [changy]: Downloading https://files.pythonhosted.org/packages/41/24/9e50c8604ca880636d90cc31cd0c3a9c32d83cfb83c49b8c61ef8d3def80/changy-0.4.2.tar.gz
+[2024-06-02 12:02:32] INFO root fetch - processPackages [changy]: executing diffoscope
+[2024-06-02 12:02:32] INFO root fetch - processPackages [changy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/changy-0.4.1.tar.gz tmp/changy-0.4.2.tar.gz --markdown 20240602/c/changy/0.4.1-0.4.2/README.md --exclude *.pyd
+[2024-06-02 12:02:33] INFO root fetch - processPackages [ervdetective]: Remove: archive file [/home/abi/fetcher/tmp/ervdetective-1.0.6.tar.gz]
+[2024-06-02 12:02:33] INFO root fetch - processPackages [ervdetective]: Remove: archive file [/home/abi/fetcher/tmp/ervdetective-1.0.7.tar.gz]
+[2024-06-02 12:02:33] INFO root fetch - main [MainThread]: End processing [ervdetective]: success
+[2024-06-02 12:02:33] INFO root fetch - processPackages [changy]: Remove: archive file [/home/abi/fetcher/tmp/changy-0.4.1.tar.gz]
+[2024-06-02 12:02:33] INFO root fetch - processPackages [changy]: Remove: archive file [/home/abi/fetcher/tmp/changy-0.4.2.tar.gz]
+[2024-06-02 12:02:33] INFO root fetch - main [MainThread]: End processing [changy]: success
+[2024-06-02 12:02:33] INFO root fetch - main [MainThread]: Store serial: [23487990]
