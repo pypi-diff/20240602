@@ -7270,3 +7270,39 @@
 [2024-06-02 12:02:33] INFO root fetch - processPackages [changy]: Remove: archive file [/home/abi/fetcher/tmp/changy-0.4.2.tar.gz]
 [2024-06-02 12:02:33] INFO root fetch - main [MainThread]: End processing [changy]: success
 [2024-06-02 12:02:33] INFO root fetch - main [MainThread]: Store serial: [23487990]
+[2024-06-02 12:04:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23487990]
+[2024-06-02 12:04:42] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-02 12:04:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: protoc-polyglot
+[2024-06-02 12:04:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mavsdk
+[2024-06-02 12:04:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: contact-profile-local
+[2024-06-02 12:04:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: NiaAML-GUI
+[2024-06-02 12:04:42] INFO root fetch - processPackages [contact-profile-local]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-06-02 12:04:42] INFO root fetch - processPackages [protoc-polyglot]: New version: [0.0.1.post9] Old Version: [0.0.1.post8]
+[2024-06-02 12:04:43] INFO root fetch - processPackages [protoc-polyglot]: Downloading https://files.pythonhosted.org/packages/e9/7b/373a68a962cdfb85f4bd76f6f4ea13ad3f2cfaca73bf0a9f70d0e7d34380/protoc_polyglot-0.0.1.post8.tar.gz
+[2024-06-02 12:04:43] INFO root fetch - processPackages [contact-profile-local]: Downloading https://files.pythonhosted.org/packages/25/4a/9c68dad06d1a31f725b72a9ffc13addd416fc1a79227150e4cf02bed13fd/contact_profile_local-0.0.8.tar.gz
+[2024-06-02 12:04:43] INFO root fetch - processPackages [mavsdk]: New version: [2.7.0] Old Version: [2.6.2]
+[2024-06-02 12:04:43] INFO root fetch - processPackages [NiaAML-GUI]: New version: [0.3.1] Old Version: [0.3.0]
+[2024-06-02 12:04:43] INFO root fetch - processPackages [protoc-polyglot]: Downloading https://files.pythonhosted.org/packages/01/80/bdadb218d1c3271c3a258316c3d5991f2676b54e6f358ac689f9495990f5/protoc_polyglot-0.0.1.post9.tar.gz
+[2024-06-02 12:04:43] INFO root fetch - processPackages [contact-profile-local]: Downloading https://files.pythonhosted.org/packages/8f/de/661db7b84762d21a0fe82f0b63a31a7df9b884479bcaa52c125b53e4caa3/contact_profile_local-0.0.9.tar.gz
+[2024-06-02 12:04:43] INFO root fetch - processPackages [mavsdk]: Downloading https://files.pythonhosted.org/packages/b7/c5/23ab48359f02e466a3eb69eba79762098bd17dea5ba551e674d54f4ebc2b/mavsdk-2.6.2-py3-none-win_amd64.whl
+[2024-06-02 12:04:43] INFO root fetch - processPackages [NiaAML-GUI]: Downloading https://files.pythonhosted.org/packages/e0/24/1864aa6c37ed592eb22a8ad0c8df29528570940f45b9296b895666d6294d/niaaml_gui-0.3.0.tar.gz
+[2024-06-02 12:04:43] INFO root fetch - processPackages [contact-profile-local]: executing diffoscope
+[2024-06-02 12:04:43] INFO root fetch - processPackages [contact-profile-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/contact_profile_local-0.0.8.tar.gz tmp/contact_profile_local-0.0.9.tar.gz --markdown 20240602/c/contact-profile-local/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-06-02 12:04:43] INFO root fetch - processPackages [protoc-polyglot]: executing diffoscope
+[2024-06-02 12:04:43] INFO root fetch - processPackages [protoc-polyglot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/protoc_polyglot-0.0.1.post8.tar.gz tmp/protoc_polyglot-0.0.1.post9.tar.gz --markdown 20240602/p/protoc-polyglot/0.0.1.post8-0.0.1.post9/README.md --exclude *.pyd
+[2024-06-02 12:04:43] INFO root fetch - processPackages [NiaAML-GUI]: Downloading https://files.pythonhosted.org/packages/12/56/7651df5f064a8fa64c2831f1515b690bbef747225ea3b99f69643a97ea56/niaaml_gui-0.3.1.tar.gz
+[2024-06-02 12:04:43] INFO root fetch - processPackages [mavsdk]: Downloading https://files.pythonhosted.org/packages/5a/91/aa2b6589cfaf04a6541bd461ce452d55832f0c818d8d1947969f371d18c4/mavsdk-2.7.0-py3-none-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-06-02 12:04:43] WARNING root fetch - processPackages [mavsdk]: Skipping package: exceeds size limit 13541295>=10485760
+[2024-06-02 12:04:43] INFO root fetch - main [MainThread]: End processing [mavsdk] error
+[2024-06-02 12:04:43] INFO root fetch - processPackages [NiaAML-GUI]: executing diffoscope
+[2024-06-02 12:04:43] INFO root fetch - processPackages [NiaAML-GUI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/niaaml_gui-0.3.0.tar.gz tmp/niaaml_gui-0.3.1.tar.gz --markdown 20240602/N/NiaAML-GUI/0.3.0-0.3.1/README.md --exclude *.pyd
+[2024-06-02 12:04:43] INFO root fetch - processPackages [protoc-polyglot]: Remove: archive file [/home/abi/fetcher/tmp/protoc_polyglot-0.0.1.post8.tar.gz]
+[2024-06-02 12:04:43] INFO root fetch - processPackages [protoc-polyglot]: Remove: archive file [/home/abi/fetcher/tmp/protoc_polyglot-0.0.1.post9.tar.gz]
+[2024-06-02 12:04:43] INFO root fetch - main [MainThread]: End processing [protoc-polyglot]: success
+[2024-06-02 12:04:44] INFO root fetch - processPackages [contact-profile-local]: Remove: archive file [/home/abi/fetcher/tmp/contact_profile_local-0.0.8.tar.gz]
+[2024-06-02 12:04:44] INFO root fetch - processPackages [contact-profile-local]: Remove: archive file [/home/abi/fetcher/tmp/contact_profile_local-0.0.9.tar.gz]
+[2024-06-02 12:04:44] INFO root fetch - main [MainThread]: End processing [contact-profile-local]: success
+[2024-06-02 12:04:44] INFO root fetch - processPackages [NiaAML-GUI]: Remove: archive file [/home/abi/fetcher/tmp/niaaml_gui-0.3.0.tar.gz]
+[2024-06-02 12:04:44] INFO root fetch - processPackages [NiaAML-GUI]: Remove: archive file [/home/abi/fetcher/tmp/niaaml_gui-0.3.1.tar.gz]
+[2024-06-02 12:04:44] INFO root fetch - main [MainThread]: End processing [NiaAML-GUI]: success
+[2024-06-02 12:04:44] INFO root fetch - main [MainThread]: Store serial: [23488006]
