@@ -9688,3 +9688,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-02 14:42:25] INFO root fetch - processPackages [projen]: Remove: archive file [/home/abi/fetcher/tmp/projen-0.82.3.tar.gz]
 [2024-06-02 14:42:25] INFO root fetch - main [MainThread]: End processing [projen]: success
 [2024-06-02 14:42:25] INFO root fetch - main [MainThread]: Store serial: [23488941]
+[2024-06-02 14:44:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23488941]
+[2024-06-02 14:44:33] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-06-02 14:44:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sklearntools
+[2024-06-02 14:44:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: autoCal
+[2024-06-02 14:44:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PySimultanUI
+[2024-06-02 14:44:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ovos-i2c-detection
+[2024-06-02 14:44:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sc3dg
+[2024-06-02 14:44:34] INFO root fetch - processPackages [PySimultanUI]: New version: [0.3.0] Old Version: [0.2.1]
+[2024-06-02 14:44:34] INFO root fetch - processPackages [sklearntools]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-06-02 14:44:34] INFO root fetch - processPackages [sc3dg]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-06-02 14:44:34] INFO root fetch - processPackages [autoCal]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-06-02 14:44:34] WARNING root fetch - processPackages [ovos-i2c-detection]: Skipping, unable to determine old version
+[2024-06-02 14:44:34] INFO root fetch - main [MainThread]: End processing [ovos-i2c-detection] error
+[2024-06-02 14:44:34] INFO root fetch - processPackages [autoCal]: Downloading https://files.pythonhosted.org/packages/b0/dd/3d5d08bfa98a62e704bbc80a652c0d728887d2acc20e6a16223736519001/autocal-0.0.5.tar.gz
+[2024-06-02 14:44:34] INFO root fetch - processPackages [sc3dg]: Downloading https://files.pythonhosted.org/packages/c7/98/00398783f591f3dc3e8f278af3a3fa730c86e61e932b71b0760135139eeb/sc3dg-0.0.7.tar.gz
+[2024-06-02 14:44:34] INFO root fetch - processPackages [sklearntools]: Downloading https://files.pythonhosted.org/packages/30/f8/fe65cad3d8daee40666020ade6a2253b0e43c2bda92ae8ecf6dd5322428e/sklearntools-1.0.0.tar.gz
+[2024-06-02 14:44:34] INFO root fetch - processPackages [PySimultanUI]: Downloading https://files.pythonhosted.org/packages/89/45/a006e29f3a9f4650a4b8b634f9f3f11d8cc0b0542631f168a41976094ab4/pysimultanui-0.2.1.tar.gz
+[2024-06-02 14:44:34] INFO root fetch - processPackages [autoCal]: Downloading https://files.pythonhosted.org/packages/99/3a/caa5b1fa49fcf8a51468cbf9ca26926a95d72f4abdd6d3a6bb501b7b5e06/autocal-0.0.6.tar.gz
+[2024-06-02 14:44:34] INFO root fetch - processPackages [sklearntools]: Downloading https://files.pythonhosted.org/packages/11/e5/07626271f500b071483c8bf6948433c394ce859994090eca3305b9f0a53e/sklearntools-1.0.1.tar.gz
+[2024-06-02 14:44:34] INFO root fetch - processPackages [sc3dg]: Downloading https://files.pythonhosted.org/packages/97/65/1394420940d9bdc212860a3842baed2ba84016ee1556fa9c66bfb0fa3d07/sc3dg-0.0.8.tar.gz
+[2024-06-02 14:44:34] INFO root fetch - processPackages [PySimultanUI]: Downloading https://files.pythonhosted.org/packages/08/cb/9cdd3d4849814b4a45d8563c017a7f694a5fc63b6871bf02ad8c544a69d5/pysimultanui-0.3.0.tar.gz
+[2024-06-02 14:44:34] INFO root fetch - processPackages [autoCal]: executing diffoscope
+[2024-06-02 14:44:34] INFO root fetch - processPackages [autoCal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autocal-0.0.5.tar.gz tmp/autocal-0.0.6.tar.gz --markdown 20240602/a/autoCal/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-06-02 14:44:34] INFO root fetch - processPackages [sklearntools]: executing diffoscope
+[2024-06-02 14:44:34] INFO root fetch - processPackages [sklearntools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sklearntools-1.0.0.tar.gz tmp/sklearntools-1.0.1.tar.gz --markdown 20240602/s/sklearntools/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-06-02 14:44:34] INFO root fetch - processPackages [sc3dg]: executing diffoscope
+[2024-06-02 14:44:34] INFO root fetch - processPackages [sc3dg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sc3dg-0.0.7.tar.gz tmp/sc3dg-0.0.8.tar.gz --markdown 20240602/s/sc3dg/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-06-02 14:44:34] INFO root fetch - processPackages [PySimultanUI]: executing diffoscope
+[2024-06-02 14:44:34] INFO root fetch - processPackages [PySimultanUI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysimultanui-0.2.1.tar.gz tmp/pysimultanui-0.3.0.tar.gz --markdown 20240602/P/PySimultanUI/0.2.1-0.3.0/README.md --exclude *.pyd
+[2024-06-02 14:44:35] INFO root fetch - processPackages [sklearntools]: Remove: archive file [/home/abi/fetcher/tmp/sklearntools-1.0.0.tar.gz]
+[2024-06-02 14:44:35] INFO root fetch - processPackages [sklearntools]: Remove: archive file [/home/abi/fetcher/tmp/sklearntools-1.0.1.tar.gz]
+[2024-06-02 14:44:35] INFO root fetch - main [MainThread]: End processing [sklearntools]: success
+[2024-06-02 14:44:35] INFO root fetch - processPackages [autoCal]: Remove: archive file [/home/abi/fetcher/tmp/autocal-0.0.5.tar.gz]
+[2024-06-02 14:44:35] INFO root fetch - processPackages [autoCal]: Remove: archive file [/home/abi/fetcher/tmp/autocal-0.0.6.tar.gz]
+[2024-06-02 14:44:35] INFO root fetch - main [MainThread]: End processing [autoCal]: success
+[2024-06-02 14:44:35] INFO root fetch - processPackages [sc3dg]: Remove: archive file [/home/abi/fetcher/tmp/sc3dg-0.0.7.tar.gz]
+[2024-06-02 14:44:35] INFO root fetch - processPackages [sc3dg]: Remove: archive file [/home/abi/fetcher/tmp/sc3dg-0.0.8.tar.gz]
+[2024-06-02 14:44:35] INFO root fetch - main [MainThread]: End processing [sc3dg]: success
+[2024-06-02 14:44:35] INFO root fetch - processPackages [PySimultanUI]: Remove: archive file [/home/abi/fetcher/tmp/pysimultanui-0.2.1.tar.gz]
+[2024-06-02 14:44:35] INFO root fetch - processPackages [PySimultanUI]: Remove: archive file [/home/abi/fetcher/tmp/pysimultanui-0.3.0.tar.gz]
+[2024-06-02 14:44:35] INFO root fetch - main [MainThread]: End processing [PySimultanUI]: success
+[2024-06-02 14:44:35] INFO root fetch - main [MainThread]: Store serial: [23488958]
