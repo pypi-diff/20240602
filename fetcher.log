@@ -10297,3 +10297,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-02 15:37:27] INFO root fetch - processPackages [batch-framework]: Remove: archive file [/home/abi/fetcher/tmp/batch-framework-0.2.5.tar.gz]
 [2024-06-02 15:37:27] INFO root fetch - main [MainThread]: End processing [batch-framework]: success
 [2024-06-02 15:37:27] INFO root fetch - main [MainThread]: Store serial: [23489256]
+[2024-06-02 15:39:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23489256]
+[2024-06-02 15:39:35] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-02 15:39:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: arcfutil
+[2024-06-02 15:39:35] INFO root fetch - processPackages [arcfutil]: New version: [0.9.2] Old Version: [0.9.1]
+[2024-06-02 15:39:35] INFO root fetch - processPackages [arcfutil]: Downloading https://files.pythonhosted.org/packages/52/53/15b6c2c13279cab4d92558dc29b517ad46805d5cf2eefa963e24910cd581/arcfutil-0.9.1.tar.gz
+[2024-06-02 15:39:36] INFO root fetch - processPackages [arcfutil]: Downloading https://files.pythonhosted.org/packages/62/ad/a9074a950c00d22f5099061729909703a5c57cbe6f21c995e86201d8a9f1/arcfutil-0.9.2.tar.gz
+[2024-06-02 15:39:36] INFO root fetch - processPackages [arcfutil]: executing diffoscope
+[2024-06-02 15:39:36] INFO root fetch - processPackages [arcfutil]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arcfutil-0.9.1.tar.gz tmp/arcfutil-0.9.2.tar.gz --markdown 20240602/a/arcfutil/0.9.1-0.9.2/README.md --exclude *.pyd
+[2024-06-02 15:39:36] INFO root fetch - processPackages [arcfutil]: Remove: archive file [/home/abi/fetcher/tmp/arcfutil-0.9.1.tar.gz]
+[2024-06-02 15:39:36] INFO root fetch - processPackages [arcfutil]: Remove: archive file [/home/abi/fetcher/tmp/arcfutil-0.9.2.tar.gz]
+[2024-06-02 15:39:36] INFO root fetch - main [MainThread]: End processing [arcfutil]: success
+[2024-06-02 15:39:36] INFO root fetch - main [MainThread]: Store serial: [23489259]
