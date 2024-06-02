@@ -7151,3 +7151,27 @@
 [2024-06-02 11:51:32] INFO root fetch - processPackages [extract-emails]: Remove: archive file [/home/abi/fetcher/tmp/extract_emails-5.3.4.tar.gz]
 [2024-06-02 11:51:32] INFO root fetch - main [MainThread]: End processing [extract-emails]: success
 [2024-06-02 11:51:32] INFO root fetch - main [MainThread]: Store serial: [23487949]
+[2024-06-02 11:53:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23487949]
+[2024-06-02 11:53:40] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-02 11:53:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bdmc
+[2024-06-02 11:53:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: timestamper99
+[2024-06-02 11:53:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: stashconnect
+[2024-06-02 11:53:40] INFO root fetch - processPackages [stashconnect]: New version: [0.7.9] Old Version: [0.7.8]
+[2024-06-02 11:53:40] INFO root fetch - processPackages [stashconnect]: Downloading https://files.pythonhosted.org/packages/90/4c/30d829e65120fca3e1277c0ff1e4adab564925ddd8326b60dda5990a40a3/stashconnect-0.7.8.tar.gz
+[2024-06-02 11:53:40] WARNING root fetch - processPackages [timestamper99]: Skipping, unable to determine old version
+[2024-06-02 11:53:40] INFO root fetch - main [MainThread]: End processing [timestamper99] error
+[2024-06-02 11:53:40] INFO root fetch - processPackages [bdmc]: New version: [0.1.5.9] Old Version: [0.1.5.8]
+[2024-06-02 11:53:41] INFO root fetch - processPackages [bdmc]: Downloading https://files.pythonhosted.org/packages/7b/a4/6d673f004389618881a3a5641b084f02f3e3c9606bea3e6b2a5fb9f265d6/bdmc-0.1.5.8.tar.gz
+[2024-06-02 11:53:41] INFO root fetch - processPackages [stashconnect]: Downloading https://files.pythonhosted.org/packages/de/f8/ca8fbd2de044aaca60eea7e60dbf9a19300da4aa56bf04905966b91d8dad/stashconnect-0.7.9.tar.gz
+[2024-06-02 11:53:41] INFO root fetch - processPackages [stashconnect]: executing diffoscope
+[2024-06-02 11:53:41] INFO root fetch - processPackages [stashconnect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stashconnect-0.7.8.tar.gz tmp/stashconnect-0.7.9.tar.gz --markdown 20240602/s/stashconnect/0.7.8-0.7.9/README.md --exclude *.pyd
+[2024-06-02 11:53:41] INFO root fetch - processPackages [bdmc]: Downloading https://files.pythonhosted.org/packages/0b/9d/0fd87f38893641236ff55f80f919c108ccfbe16165193350adcd472d5b64/bdmc-0.1.5.9.tar.gz
+[2024-06-02 11:53:41] INFO root fetch - processPackages [bdmc]: executing diffoscope
+[2024-06-02 11:53:41] INFO root fetch - processPackages [bdmc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bdmc-0.1.5.8.tar.gz tmp/bdmc-0.1.5.9.tar.gz --markdown 20240602/b/bdmc/0.1.5.8-0.1.5.9/README.md --exclude *.pyd
+[2024-06-02 11:53:41] INFO root fetch - processPackages [stashconnect]: Remove: archive file [/home/abi/fetcher/tmp/stashconnect-0.7.8.tar.gz]
+[2024-06-02 11:53:41] INFO root fetch - processPackages [stashconnect]: Remove: archive file [/home/abi/fetcher/tmp/stashconnect-0.7.9.tar.gz]
+[2024-06-02 11:53:41] INFO root fetch - main [MainThread]: End processing [stashconnect]: success
+[2024-06-02 11:53:42] INFO root fetch - processPackages [bdmc]: Remove: archive file [/home/abi/fetcher/tmp/bdmc-0.1.5.8.tar.gz]
+[2024-06-02 11:53:42] INFO root fetch - processPackages [bdmc]: Remove: archive file [/home/abi/fetcher/tmp/bdmc-0.1.5.9.tar.gz]
+[2024-06-02 11:53:42] INFO root fetch - main [MainThread]: End processing [bdmc]: success
+[2024-06-02 11:53:42] INFO root fetch - main [MainThread]: Store serial: [23487960]
