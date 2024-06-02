@@ -5600,3 +5600,33 @@
 [2024-06-02 09:34:08] INFO root fetch - processPackages [lesscode-utils]: Remove: archive file [/home/abi/fetcher/tmp/lesscode_utils-0.0.9.tar.gz]
 [2024-06-02 09:34:08] INFO root fetch - main [MainThread]: End processing [lesscode-utils]: success
 [2024-06-02 09:34:08] INFO root fetch - main [MainThread]: Store serial: [23487066]
+[2024-06-02 09:36:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23487066]
+[2024-06-02 09:36:17] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-06-02 09:36:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: real-time-translator
+[2024-06-02 09:36:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dash-spread-grid
+[2024-06-02 09:36:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: package-auto-assembler
+[2024-06-02 09:36:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: immutable-defaults
+[2024-06-02 09:36:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pkg-vers
+[2024-06-02 09:36:17] INFO root fetch - processPackages [dash-spread-grid]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-06-02 09:36:17] INFO root fetch - processPackages [dash-spread-grid]: Downloading https://files.pythonhosted.org/packages/eb/14/1f937b8dc225291f302bb282113a51af24c1555c1ff9dc47c433c59a8d0f/dash_spread_grid-0.1.8.tar.gz
+[2024-06-02 09:36:17] WARNING root fetch - processPackages [real-time-translator]: Skipping, unable to determine old version
+[2024-06-02 09:36:17] INFO root fetch - main [MainThread]: End processing [real-time-translator] error
+[2024-06-02 09:36:17] INFO root fetch - processPackages [package-auto-assembler]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-06-02 09:36:17] WARNING root fetch - processPackages [immutable-defaults]: Skipping, unable to determine old version
+[2024-06-02 09:36:17] INFO root fetch - main [MainThread]: End processing [immutable-defaults] error
+[2024-06-02 09:36:17] WARNING root fetch - processPackages [pkg-vers]: Skipping, unable to determine old version
+[2024-06-02 09:36:17] INFO root fetch - main [MainThread]: End processing [pkg-vers] error
+[2024-06-02 09:36:17] INFO root fetch - processPackages [package-auto-assembler]: Downloading https://files.pythonhosted.org/packages/5d/fa/1eebe4ced67c42f9d2afeb320522cd8cc225ed48b74389f84e35b8be1805/package_auto_assembler-0.1.5.tar.gz
+[2024-06-02 09:36:17] INFO root fetch - processPackages [dash-spread-grid]: Downloading https://files.pythonhosted.org/packages/89/2b/d155c80f5a1224a20847405006b40e916778cf3a36419c7359af19678b4e/dash_spread_grid-0.1.9.tar.gz
+[2024-06-02 09:36:17] INFO root fetch - processPackages [dash-spread-grid]: executing diffoscope
+[2024-06-02 09:36:17] INFO root fetch - processPackages [dash-spread-grid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dash_spread_grid-0.1.8.tar.gz tmp/dash_spread_grid-0.1.9.tar.gz --markdown 20240602/d/dash-spread-grid/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-06-02 09:36:17] INFO root fetch - processPackages [package-auto-assembler]: Downloading https://files.pythonhosted.org/packages/1e/3f/0bd8b5064e47971f3a9ac7a292b229b243e6738d9f21d36bde0da40fd295/package_auto_assembler-0.1.6.tar.gz
+[2024-06-02 09:36:17] INFO root fetch - processPackages [package-auto-assembler]: executing diffoscope
+[2024-06-02 09:36:17] INFO root fetch - processPackages [package-auto-assembler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/package_auto_assembler-0.1.5.tar.gz tmp/package_auto_assembler-0.1.6.tar.gz --markdown 20240602/p/package-auto-assembler/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-06-02 09:36:18] INFO root fetch - processPackages [package-auto-assembler]: Remove: archive file [/home/abi/fetcher/tmp/package_auto_assembler-0.1.5.tar.gz]
+[2024-06-02 09:36:18] INFO root fetch - processPackages [package-auto-assembler]: Remove: archive file [/home/abi/fetcher/tmp/package_auto_assembler-0.1.6.tar.gz]
+[2024-06-02 09:36:18] INFO root fetch - main [MainThread]: End processing [package-auto-assembler]: success
+[2024-06-02 09:36:19] INFO root fetch - processPackages [dash-spread-grid]: Remove: archive file [/home/abi/fetcher/tmp/dash_spread_grid-0.1.8.tar.gz]
+[2024-06-02 09:36:19] INFO root fetch - processPackages [dash-spread-grid]: Remove: archive file [/home/abi/fetcher/tmp/dash_spread_grid-0.1.9.tar.gz]
+[2024-06-02 09:36:19] INFO root fetch - main [MainThread]: End processing [dash-spread-grid]: success
+[2024-06-02 09:36:19] INFO root fetch - main [MainThread]: Store serial: [23487087]
