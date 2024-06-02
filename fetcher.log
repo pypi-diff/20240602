@@ -4477,3 +4477,24 @@
 [2024-06-02 07:32:02] INFO root fetch - processPackages [vpx-rtp-py]: Remove: archive file [/home/abi/fetcher/tmp/vpx_rtp_py-0.1.1.tar.gz]
 [2024-06-02 07:32:02] INFO root fetch - main [MainThread]: End processing [vpx-rtp-py]: success
 [2024-06-02 07:32:02] INFO root fetch - main [MainThread]: Store serial: [23486454]
+[2024-06-02 07:34:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23486454]
+[2024-06-02 07:34:11] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-02 07:34:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: llmdo
+[2024-06-02 07:34:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ajvpy2
+[2024-06-02 07:34:11] INFO root fetch - processPackages [llmdo]: New version: [0.2.0] Old Version: [0.1.0]
+[2024-06-02 07:34:11] INFO root fetch - processPackages [ajvpy2]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-06-02 07:34:11] INFO root fetch - processPackages [ajvpy2]: Downloading https://files.pythonhosted.org/packages/e3/2f/914617542023293a7c2aa72e7af303ca5655029c089135c81c758be7342c/ajvpy2-0.1.0.tar.gz
+[2024-06-02 07:34:11] INFO root fetch - processPackages [llmdo]: Downloading https://files.pythonhosted.org/packages/26/e7/c3a08e0674d43825010870fcd8e8ffc0fdd02847aefe9a99d62ca71f3e70/llmdo-0.1.0.tar.gz
+[2024-06-02 07:34:11] INFO root fetch - processPackages [ajvpy2]: Downloading https://files.pythonhosted.org/packages/99/44/e346aadd6105c67d3b5a56c36b1e9548360a1b97d4d5d57268599d113423/ajvpy2-0.1.1.tar.gz
+[2024-06-02 07:34:11] INFO root fetch - processPackages [ajvpy2]: executing diffoscope
+[2024-06-02 07:34:11] INFO root fetch - processPackages [ajvpy2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ajvpy2-0.1.0.tar.gz tmp/ajvpy2-0.1.1.tar.gz --markdown 20240602/a/ajvpy2/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-06-02 07:34:11] INFO root fetch - processPackages [llmdo]: Downloading https://files.pythonhosted.org/packages/f4/28/740abd1c52102a02a2ff099bbee3409ec80d54ad725d71bd8704e02911b1/llmdo-0.2.0.tar.gz
+[2024-06-02 07:34:11] INFO root fetch - processPackages [llmdo]: executing diffoscope
+[2024-06-02 07:34:11] INFO root fetch - processPackages [llmdo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llmdo-0.1.0.tar.gz tmp/llmdo-0.2.0.tar.gz --markdown 20240602/l/llmdo/0.1.0-0.2.0/README.md --exclude *.pyd
+[2024-06-02 07:34:12] INFO root fetch - processPackages [ajvpy2]: Remove: archive file [/home/abi/fetcher/tmp/ajvpy2-0.1.0.tar.gz]
+[2024-06-02 07:34:12] INFO root fetch - processPackages [ajvpy2]: Remove: archive file [/home/abi/fetcher/tmp/ajvpy2-0.1.1.tar.gz]
+[2024-06-02 07:34:12] INFO root fetch - main [MainThread]: End processing [ajvpy2]: success
+[2024-06-02 07:34:12] INFO root fetch - processPackages [llmdo]: Remove: archive file [/home/abi/fetcher/tmp/llmdo-0.1.0.tar.gz]
+[2024-06-02 07:34:12] INFO root fetch - processPackages [llmdo]: Remove: archive file [/home/abi/fetcher/tmp/llmdo-0.2.0.tar.gz]
+[2024-06-02 07:34:12] INFO root fetch - main [MainThread]: End processing [llmdo]: success
+[2024-06-02 07:34:12] INFO root fetch - main [MainThread]: Store serial: [23486462]
