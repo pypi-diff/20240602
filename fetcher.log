@@ -21024,3 +21024,52 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 23:34:20] INFO root fetch - processPackages [eurepoc]: Remove: archive file [/home/abi/fetcher/tmp/eurepoc-0.1.9.tar.gz]
 [2024-06-02 23:34:20] INFO root fetch - main [MainThread]: End processing [eurepoc]: success
 [2024-06-02 23:34:20] INFO root fetch - main [MainThread]: Store serial: [23493974]
+[2024-06-02 23:36:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23493974]
+[2024-06-02 23:36:29] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-06-02 23:36:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sae-lens
+[2024-06-02 23:36:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: quick-python-project
+[2024-06-02 23:36:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: protoc-polyglot
+[2024-06-02 23:36:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: protoc-polyglot
+[2024-06-02 23:36:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: dcs-scripts
+[2024-06-02 23:36:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cosmic-crisp
+[2024-06-02 23:36:29] INFO root fetch - processPackages [protoc-polyglot]: New version: [0.0.1.post9] Old Version: [0.0.1.post8]
+[2024-06-02 23:36:29] INFO root fetch - processPackages [protoc-polyglot]: New version: [0.0.1.post9] Old Version: [0.0.1.post8]
+[2024-06-02 23:36:29] INFO root fetch - processPackages [protoc-polyglot]: Downloading https://files.pythonhosted.org/packages/e9/7b/373a68a962cdfb85f4bd76f6f4ea13ad3f2cfaca73bf0a9f70d0e7d34380/protoc_polyglot-0.0.1.post8.tar.gz
+[2024-06-02 23:36:29] INFO root fetch - processPackages [sae-lens]: New version: [3.2.2] Old Version: [3.2.1]
+[2024-06-02 23:36:29] INFO root fetch - processPackages [protoc-polyglot]: Downloading https://files.pythonhosted.org/packages/e9/7b/373a68a962cdfb85f4bd76f6f4ea13ad3f2cfaca73bf0a9f70d0e7d34380/protoc_polyglot-0.0.1.post8.tar.gz
+[2024-06-02 23:36:29] WARNING root fetch - processPackages [dcs-scripts]: Skipping, unable to determine old version
+[2024-06-02 23:36:29] INFO root fetch - main [MainThread]: End processing [dcs-scripts] error
+[2024-06-02 23:36:29] INFO root fetch - processPackages [quick-python-project]: New version: [1.0.0] Old Version: [0.4.2]
+[2024-06-02 23:36:29] INFO root fetch - processPackages [cosmic-crisp]: New version: [0.1.0.dev20240602213601] Old Version: [0.1.0.dev20240529172149]
+[2024-06-02 23:36:29] INFO root fetch - processPackages [sae-lens]: Downloading https://files.pythonhosted.org/packages/00/e2/6de7fac80d23c291fbd2c84b5b609a0e360e2592ebbdefd66d3ea692153e/sae_lens-3.2.1.tar.gz
+[2024-06-02 23:36:30] INFO root fetch - processPackages [protoc-polyglot]: Downloading https://files.pythonhosted.org/packages/01/80/bdadb218d1c3271c3a258316c3d5991f2676b54e6f358ac689f9495990f5/protoc_polyglot-0.0.1.post9.tar.gz
+[2024-06-02 23:36:30] INFO root fetch - processPackages [quick-python-project]: Downloading https://files.pythonhosted.org/packages/8a/bf/71fb72902d9374c81637efe11549d633ea5078f8fcb8653a424f7f176264/quick_python_project-0.4.2.tar.gz
+[2024-06-02 23:36:30] INFO root fetch - processPackages [protoc-polyglot]: Downloading https://files.pythonhosted.org/packages/01/80/bdadb218d1c3271c3a258316c3d5991f2676b54e6f358ac689f9495990f5/protoc_polyglot-0.0.1.post9.tar.gz
+[2024-06-02 23:36:30] INFO root fetch - processPackages [cosmic-crisp]: Downloading https://files.pythonhosted.org/packages/c0/53/8c861ec7cf430b26e7c91519b4d1ddf5649d055957d17369db40e2cede03/cosmic_crisp-0.1.0.dev20240529172149.tar.gz
+[2024-06-02 23:36:30] INFO root fetch - processPackages [protoc-polyglot]: executing diffoscope
+[2024-06-02 23:36:30] INFO root fetch - processPackages [protoc-polyglot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/protoc_polyglot-0.0.1.post8.tar.gz tmp/protoc_polyglot-0.0.1.post9.tar.gz --markdown 20240602/p/protoc-polyglot/0.0.1.post8-0.0.1.post9/README.md --exclude *.pyd
+[2024-06-02 23:36:30] INFO root fetch - processPackages [protoc-polyglot]: executing diffoscope
+[2024-06-02 23:36:30] INFO root fetch - processPackages [protoc-polyglot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/protoc_polyglot-0.0.1.post8.tar.gz tmp/protoc_polyglot-0.0.1.post9.tar.gz --markdown 20240602/p/protoc-polyglot/0.0.1.post8-0.0.1.post9/README.md --exclude *.pyd
+[2024-06-02 23:36:30] INFO root fetch - processPackages [sae-lens]: Downloading https://files.pythonhosted.org/packages/51/f6/6dc801acfd766f0b8947db1a5272c0fd0a2d2c8159b54ac46529795c3812/sae_lens-3.2.2.tar.gz
+[2024-06-02 23:36:30] INFO root fetch - processPackages [sae-lens]: executing diffoscope
+[2024-06-02 23:36:30] INFO root fetch - processPackages [sae-lens]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sae_lens-3.2.1.tar.gz tmp/sae_lens-3.2.2.tar.gz --markdown 20240602/s/sae-lens/3.2.1-3.2.2/README.md --exclude *.pyd
+[2024-06-02 23:36:30] INFO root fetch - processPackages [quick-python-project]: Downloading https://files.pythonhosted.org/packages/97/7c/afee0f26fe39238cc3a95adefcfaefd2e537c423acc0f1c0b39a6d3c7b6d/quick_python_project-1.0.0.tar.gz
+[2024-06-02 23:36:30] INFO root fetch - processPackages [cosmic-crisp]: Downloading https://files.pythonhosted.org/packages/d4/71/478b92cb292c7a1297f45ae3ae2c42b7da9fa29438c4b1cee09426b9dd0d/cosmic_crisp-0.1.0.dev20240602213601.tar.gz
+[2024-06-02 23:36:30] INFO root fetch - processPackages [quick-python-project]: executing diffoscope
+[2024-06-02 23:36:30] INFO root fetch - processPackages [quick-python-project]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quick_python_project-0.4.2.tar.gz tmp/quick_python_project-1.0.0.tar.gz --markdown 20240602/q/quick-python-project/0.4.2-1.0.0/README.md --exclude *.pyd
+[2024-06-02 23:36:30] INFO root fetch - processPackages [cosmic-crisp]: executing diffoscope
+[2024-06-02 23:36:30] INFO root fetch - processPackages [cosmic-crisp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cosmic_crisp-0.1.0.dev20240529172149.tar.gz tmp/cosmic_crisp-0.1.0.dev20240602213601.tar.gz --markdown 20240602/c/cosmic-crisp/0.1.0.dev20240529172149-0.1.0.dev20240602213601/README.md --exclude *.pyd
+[2024-06-02 23:36:30] INFO root fetch - processPackages [protoc-polyglot]: Remove: archive file [/home/abi/fetcher/tmp/protoc_polyglot-0.0.1.post8.tar.gz]
+[2024-06-02 23:36:30] INFO root fetch - processPackages [protoc-polyglot]: Remove: archive file [/home/abi/fetcher/tmp/protoc_polyglot-0.0.1.post9.tar.gz]
+[2024-06-02 23:36:30] INFO root fetch - main [MainThread]: End processing [protoc-polyglot]: success
+[2024-06-02 23:36:30] INFO root fetch - main [MainThread]: End processing [protoc-polyglot]: success
+[2024-06-02 23:36:31] INFO root fetch - processPackages [sae-lens]: Remove: archive file [/home/abi/fetcher/tmp/sae_lens-3.2.1.tar.gz]
+[2024-06-02 23:36:31] INFO root fetch - processPackages [sae-lens]: Remove: archive file [/home/abi/fetcher/tmp/sae_lens-3.2.2.tar.gz]
+[2024-06-02 23:36:31] INFO root fetch - main [MainThread]: End processing [sae-lens]: success
+[2024-06-02 23:36:31] INFO root fetch - processPackages [quick-python-project]: Remove: archive file [/home/abi/fetcher/tmp/quick_python_project-0.4.2.tar.gz]
+[2024-06-02 23:36:31] INFO root fetch - processPackages [quick-python-project]: Remove: archive file [/home/abi/fetcher/tmp/quick_python_project-1.0.0.tar.gz]
+[2024-06-02 23:36:31] INFO root fetch - main [MainThread]: End processing [quick-python-project]: success
+[2024-06-02 23:36:31] INFO root fetch - processPackages [cosmic-crisp]: Remove: archive file [/home/abi/fetcher/tmp/cosmic_crisp-0.1.0.dev20240529172149.tar.gz]
+[2024-06-02 23:36:31] INFO root fetch - processPackages [cosmic-crisp]: Remove: archive file [/home/abi/fetcher/tmp/cosmic_crisp-0.1.0.dev20240602213601.tar.gz]
+[2024-06-02 23:36:31] INFO root fetch - main [MainThread]: End processing [cosmic-crisp]: success
+[2024-06-02 23:36:31] INFO root fetch - main [MainThread]: Store serial: [23493994]
