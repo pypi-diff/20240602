@@ -1563,3 +1563,30 @@
 [2024-06-02 02:00:54] INFO root fetch - processPackages [network-diffusion]: Remove: archive file [/home/abi/fetcher/tmp/network_diffusion-0.9.0.tar.gz]
 [2024-06-02 02:00:54] INFO root fetch - main [MainThread]: End processing [network-diffusion]: success
 [2024-06-02 02:00:54] INFO root fetch - main [MainThread]: Store serial: [23484777]
+[2024-06-02 02:02:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23484777]
+[2024-06-02 02:03:03] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-02 02:03:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: general-tamsat-alert
+[2024-06-02 02:03:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: polars-strsim
+[2024-06-02 02:03:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sif-tools
+[2024-06-02 02:03:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ibis-framework
+[2024-06-02 02:03:03] INFO root fetch - processPackages [general-tamsat-alert]: New version: [1.2.2] Old Version: [1.2.1]
+[2024-06-02 02:03:03] WARNING root fetch - processPackages [sif-tools]: Skipping, unable to determine old version
+[2024-06-02 02:03:03] INFO root fetch - main [MainThread]: End processing [sif-tools] error
+[2024-06-02 02:03:03] WARNING root fetch - processPackages [polars-strsim]: Skipping, unable to determine old version
+[2024-06-02 02:03:03] INFO root fetch - main [MainThread]: End processing [polars-strsim] error
+[2024-06-02 02:03:03] INFO root fetch - processPackages [ibis-framework]: New version: [v0.6.0] Old Version: [9.0.0.dev686]
+[2024-06-02 02:03:03] INFO root fetch - processPackages [general-tamsat-alert]: Downloading https://files.pythonhosted.org/packages/7d/a6/1f563fe29cb98272c0bf131e4d9352693371247ecaae4df1bcf233454363/general_tamsat_alert-1.2.1.tar.gz
+[2024-06-02 02:03:03] INFO root fetch - processPackages [ibis-framework]: Downloading https://files.pythonhosted.org/packages/25/27/d42cad7d2f3e8dfcb90f08cf43c86239cd0e143735dd698a882ee93975cc/ibis_framework-9.0.0.dev686.tar.gz
+[2024-06-02 02:03:03] INFO root fetch - processPackages [general-tamsat-alert]: Downloading https://files.pythonhosted.org/packages/44/7a/87a67205b7026cc48a308d0876c9b6b08f17cebe31e54bfe95fcb8459ff9/general_tamsat_alert-1.2.2.tar.gz
+[2024-06-02 02:03:03] INFO root fetch - processPackages [general-tamsat-alert]: executing diffoscope
+[2024-06-02 02:03:03] INFO root fetch - processPackages [general-tamsat-alert]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/general_tamsat_alert-1.2.1.tar.gz tmp/general_tamsat_alert-1.2.2.tar.gz --markdown 20240602/g/general-tamsat-alert/1.2.1-1.2.2/README.md --exclude *.pyd
+[2024-06-02 02:03:04] INFO root fetch - processPackages [ibis-framework]: Downloading https://files.pythonhosted.org/packages/0b/3d/fbf4278e9e436717a6fe476a81d1abec511869bba1cf642b601472bf6408/ibis-framework-v0.6.0.tar.gz
+[2024-06-02 02:03:04] INFO root fetch - processPackages [ibis-framework]: executing diffoscope
+[2024-06-02 02:03:04] INFO root fetch - processPackages [ibis-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ibis_framework-9.0.0.dev686.tar.gz tmp/ibis-framework-v0.6.0.tar.gz --markdown 20240602/i/ibis-framework/9.0.0.dev686-v0.6.0/README.md --exclude *.pyd
+[2024-06-02 02:03:04] INFO root fetch - processPackages [general-tamsat-alert]: Remove: archive file [/home/abi/fetcher/tmp/general_tamsat_alert-1.2.1.tar.gz]
+[2024-06-02 02:03:04] INFO root fetch - processPackages [general-tamsat-alert]: Remove: archive file [/home/abi/fetcher/tmp/general_tamsat_alert-1.2.2.tar.gz]
+[2024-06-02 02:03:04] INFO root fetch - main [MainThread]: End processing [general-tamsat-alert]: success
+[2024-06-02 02:03:05] INFO root fetch - processPackages [ibis-framework]: Remove: archive file [/home/abi/fetcher/tmp/ibis_framework-9.0.0.dev686.tar.gz]
+[2024-06-02 02:03:05] INFO root fetch - processPackages [ibis-framework]: Remove: archive file [/home/abi/fetcher/tmp/ibis-framework-v0.6.0.tar.gz]
+[2024-06-02 02:03:05] INFO root fetch - main [MainThread]: End processing [ibis-framework]: success
+[2024-06-02 02:03:05] INFO root fetch - main [MainThread]: Store serial: [23484795]
