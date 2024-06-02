@@ -17305,3 +17305,21 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 21:48:52] INFO root fetch - processPackages [foo-et-al-parameterization]: Remove: archive file [/home/abi/fetcher/tmp/foo_et_al_parameterization-0.0.2.tar.gz]
 [2024-06-02 21:48:52] INFO root fetch - main [MainThread]: End processing [foo-et-al-parameterization]: success
 [2024-06-02 21:48:52] INFO root fetch - main [MainThread]: Store serial: [23492520]
+[2024-06-02 21:50:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23492520]
+[2024-06-02 21:51:00] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-02 21:51:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: medicraft
+[2024-06-02 21:51:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hello-auz2
+[2024-06-02 21:51:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: stashapp-tools
+[2024-06-02 21:51:00] INFO root fetch - processPackages [stashapp-tools]: New version: [0.2.9] Old Version: [0.2.7]
+[2024-06-02 21:51:01] WARNING root fetch - processPackages [hello-auz2]: Skipping, unable to determine old version
+[2024-06-02 21:51:01] INFO root fetch - main [MainThread]: End processing [hello-auz2] error
+[2024-06-02 21:51:01] WARNING root fetch - processPackages [medicraft]: Skipping, unable to determine old version
+[2024-06-02 21:51:01] INFO root fetch - main [MainThread]: End processing [medicraft] error
+[2024-06-02 21:51:01] INFO root fetch - processPackages [stashapp-tools]: Downloading https://files.pythonhosted.org/packages/13/37/5dc9b1af56bff91fcd0a65649933c4572503f05bcc50b2ed6bca1800bf3f/stashapp-tools-0.2.7.tar.gz
+[2024-06-02 21:51:02] INFO root fetch - processPackages [stashapp-tools]: Downloading https://files.pythonhosted.org/packages/10/83/df6a945c364057e4440ad9edd49938ae31ae0d97d6f0088ebcc0001db9d5/stashapp-tools-0.2.9.tar.gz
+[2024-06-02 21:51:02] INFO root fetch - processPackages [stashapp-tools]: executing diffoscope
+[2024-06-02 21:51:02] INFO root fetch - processPackages [stashapp-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stashapp-tools-0.2.7.tar.gz tmp/stashapp-tools-0.2.9.tar.gz --markdown 20240602/s/stashapp-tools/0.2.7-0.2.9/README.md --exclude *.pyd
+[2024-06-02 21:51:03] INFO root fetch - processPackages [stashapp-tools]: Remove: archive file [/home/abi/fetcher/tmp/stashapp-tools-0.2.7.tar.gz]
+[2024-06-02 21:51:03] INFO root fetch - processPackages [stashapp-tools]: Remove: archive file [/home/abi/fetcher/tmp/stashapp-tools-0.2.9.tar.gz]
+[2024-06-02 21:51:03] INFO root fetch - main [MainThread]: End processing [stashapp-tools]: success
+[2024-06-02 21:51:03] INFO root fetch - main [MainThread]: Store serial: [23492530]
