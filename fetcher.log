@@ -14894,3 +14894,27 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 19:28:22] INFO root fetch - processPackages [paquo]: Remove: archive file [/home/abi/fetcher/tmp/paquo-0.8.0.tar.gz]
 [2024-06-02 19:28:22] INFO root fetch - main [MainThread]: End processing [paquo]: success
 [2024-06-02 19:28:22] INFO root fetch - main [MainThread]: Store serial: [23491342]
+[2024-06-02 19:30:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23491342]
+[2024-06-02 19:30:31] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-02 19:30:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: expmiband2
+[2024-06-02 19:30:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dash-handsontable
+[2024-06-02 19:30:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: crazy-thursday
+[2024-06-02 19:30:31] INFO root fetch - processPackages [crazy-thursday]: New version: [2024.6.2.1] Old Version: [2024.6.2.0]
+[2024-06-02 19:30:31] INFO root fetch - processPackages [expmiband2]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-06-02 19:30:31] WARNING root fetch - processPackages [dash-handsontable]: Skipping, unable to determine old version
+[2024-06-02 19:30:31] INFO root fetch - main [MainThread]: End processing [dash-handsontable] error
+[2024-06-02 19:30:31] INFO root fetch - processPackages [crazy-thursday]: Downloading https://files.pythonhosted.org/packages/e2/90/69d65686eed7f6b5202015c2da170bf89a0acfdb05e2edda013635769c4d/crazy_thursday-2024.6.2.0.tar.gz
+[2024-06-02 19:30:31] INFO root fetch - processPackages [expmiband2]: Downloading https://files.pythonhosted.org/packages/6e/59/f61d576036f0646ab8e012b9556ee6a3ed9e3718743d0ef236ef1e092fb6/expmiband2-0.1.2.tar.gz
+[2024-06-02 19:30:32] INFO root fetch - processPackages [crazy-thursday]: Downloading https://files.pythonhosted.org/packages/d9/34/d775fea4c2e4be1303d0158c30e120f77a71a9f35a973354f568eddb5d25/crazy_thursday-2024.6.2.1.tar.gz
+[2024-06-02 19:30:32] INFO root fetch - processPackages [crazy-thursday]: executing diffoscope
+[2024-06-02 19:30:32] INFO root fetch - processPackages [crazy-thursday]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crazy_thursday-2024.6.2.0.tar.gz tmp/crazy_thursday-2024.6.2.1.tar.gz --markdown 20240602/c/crazy-thursday/2024.6.2.0-2024.6.2.1/README.md --exclude *.pyd
+[2024-06-02 19:30:32] INFO root fetch - processPackages [expmiband2]: Downloading https://files.pythonhosted.org/packages/cd/0b/8b45dc821a93c014416a11e4ed85118d4f6aead19544cafb6d09ccabaf12/expmiband2-0.1.3.tar.gz
+[2024-06-02 19:30:32] INFO root fetch - processPackages [expmiband2]: executing diffoscope
+[2024-06-02 19:30:32] INFO root fetch - processPackages [expmiband2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/expmiband2-0.1.2.tar.gz tmp/expmiband2-0.1.3.tar.gz --markdown 20240602/e/expmiband2/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-06-02 19:30:32] INFO root fetch - processPackages [crazy-thursday]: Remove: archive file [/home/abi/fetcher/tmp/crazy_thursday-2024.6.2.0.tar.gz]
+[2024-06-02 19:30:32] INFO root fetch - processPackages [crazy-thursday]: Remove: archive file [/home/abi/fetcher/tmp/crazy_thursday-2024.6.2.1.tar.gz]
+[2024-06-02 19:30:32] INFO root fetch - main [MainThread]: End processing [crazy-thursday]: success
+[2024-06-02 19:30:32] INFO root fetch - processPackages [expmiband2]: Remove: archive file [/home/abi/fetcher/tmp/expmiband2-0.1.2.tar.gz]
+[2024-06-02 19:30:32] INFO root fetch - processPackages [expmiband2]: Remove: archive file [/home/abi/fetcher/tmp/expmiband2-0.1.3.tar.gz]
+[2024-06-02 19:30:32] INFO root fetch - main [MainThread]: End processing [expmiband2]: success
+[2024-06-02 19:30:32] INFO root fetch - main [MainThread]: Store serial: [23491353]
