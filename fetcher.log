@@ -4235,3 +4235,24 @@
 [2024-06-02 07:01:39] INFO root fetch - processPackages [pyRealtor]: Remove: archive file [/home/abi/fetcher/tmp/pyRealtor-0.1.5-py3-none-any.whl.zip]
 [2024-06-02 07:01:39] INFO root fetch - main [MainThread]: End processing [pyRealtor]: success
 [2024-06-02 07:01:39] INFO root fetch - main [MainThread]: Store serial: [23486334]
+[2024-06-02 07:03:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23486334]
+[2024-06-02 07:03:47] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-02 07:03:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyconfig-util
+[2024-06-02 07:03:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: NsparkleLog
+[2024-06-02 07:03:47] INFO root fetch - processPackages [NsparkleLog]: New version: [1.0.4] Old Version: [1.0.3]
+[2024-06-02 07:03:47] INFO root fetch - processPackages [pyconfig-util]: New version: [1.0.3] Old Version: [1.0.2]
+[2024-06-02 07:03:48] INFO root fetch - processPackages [pyconfig-util]: Downloading https://files.pythonhosted.org/packages/2a/0a/05f6722137e3d1c08677e8615cda134d08d0514248e726f8351340dc9b9f/pyconfig_util-1.0.2.tar.gz
+[2024-06-02 07:03:48] INFO root fetch - processPackages [NsparkleLog]: Downloading https://files.pythonhosted.org/packages/fb/a4/4db560884924cc008c8079734375d9155056324748440a7fb0d451e706ce/NsparkleLog-1.0.3.tar.gz
+[2024-06-02 07:03:48] INFO root fetch - processPackages [pyconfig-util]: Downloading https://files.pythonhosted.org/packages/bf/1f/3679fe9a8ff5f7940460190fdc3dd662c394964129c1045515c0e788eefc/pyconfig_util-1.0.3.tar.gz
+[2024-06-02 07:03:48] INFO root fetch - processPackages [NsparkleLog]: Downloading https://files.pythonhosted.org/packages/65/23/fb5d3f8987816ce3d8b790b996ef451ecbcb2ef387550206c4c6248c8655/NsparkleLog-1.0.4.tar.gz
+[2024-06-02 07:03:48] INFO root fetch - processPackages [NsparkleLog]: executing diffoscope
+[2024-06-02 07:03:48] INFO root fetch - processPackages [NsparkleLog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/NsparkleLog-1.0.3.tar.gz tmp/NsparkleLog-1.0.4.tar.gz --markdown 20240602/N/NsparkleLog/1.0.3-1.0.4/README.md --exclude *.pyd
+[2024-06-02 07:03:48] INFO root fetch - processPackages [pyconfig-util]: executing diffoscope
+[2024-06-02 07:03:48] INFO root fetch - processPackages [pyconfig-util]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyconfig_util-1.0.2.tar.gz tmp/pyconfig_util-1.0.3.tar.gz --markdown 20240602/p/pyconfig-util/1.0.2-1.0.3/README.md --exclude *.pyd
+[2024-06-02 07:03:49] INFO root fetch - processPackages [pyconfig-util]: Remove: archive file [/home/abi/fetcher/tmp/pyconfig_util-1.0.2.tar.gz]
+[2024-06-02 07:03:49] INFO root fetch - processPackages [pyconfig-util]: Remove: archive file [/home/abi/fetcher/tmp/pyconfig_util-1.0.3.tar.gz]
+[2024-06-02 07:03:49] INFO root fetch - main [MainThread]: End processing [pyconfig-util]: success
+[2024-06-02 07:03:49] INFO root fetch - processPackages [NsparkleLog]: Remove: archive file [/home/abi/fetcher/tmp/NsparkleLog-1.0.3.tar.gz]
+[2024-06-02 07:03:49] INFO root fetch - processPackages [NsparkleLog]: Remove: archive file [/home/abi/fetcher/tmp/NsparkleLog-1.0.4.tar.gz]
+[2024-06-02 07:03:49] INFO root fetch - main [MainThread]: End processing [NsparkleLog]: success
+[2024-06-02 07:03:49] INFO root fetch - main [MainThread]: Store serial: [23486341]
