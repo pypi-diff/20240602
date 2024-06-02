@@ -15952,3 +15952,24 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 20:25:36] INFO root fetch - processPackages [pcleaner]: Remove: archive file [/home/abi/fetcher/tmp/pcleaner-2.7.1.tar.gz]
 [2024-06-02 20:25:36] INFO root fetch - main [MainThread]: End processing [pcleaner]: success
 [2024-06-02 20:25:36] INFO root fetch - main [MainThread]: Store serial: [23491865]
+[2024-06-02 20:27:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23491865]
+[2024-06-02 20:27:44] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-02 20:27:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: diaspora-event-sdk
+[2024-06-02 20:27:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: uaiDiffusers
+[2024-06-02 20:27:44] INFO root fetch - processPackages [uaiDiffusers]: New version: [1.1.5.6] Old Version: [1.1.5.5]
+[2024-06-02 20:27:44] INFO root fetch - processPackages [diaspora-event-sdk]: New version: [0.3.1] Old Version: [0.3.0]
+[2024-06-02 20:27:44] INFO root fetch - processPackages [uaiDiffusers]: Downloading https://files.pythonhosted.org/packages/e6/e2/95a72cb2f952dfacc9c710c9fd3c62decb8abb5ce27ff6d35535894288de/uaiDiffusers-1.1.5.5-py2.py3-none-any.whl
+[2024-06-02 20:27:44] INFO root fetch - processPackages [diaspora-event-sdk]: Downloading https://files.pythonhosted.org/packages/a6/94/5a64ebbb782f5b21183ebc7226fce506e35193f4cec444139fdcec8c510c/diaspora-event-sdk-0.3.0.tar.gz
+[2024-06-02 20:27:44] INFO root fetch - processPackages [diaspora-event-sdk]: Downloading https://files.pythonhosted.org/packages/45/5d/a288842969a8426e5b6c9c5f6cfa70adc9a9c4e6a9c51493b693e488a085/diaspora-event-sdk-0.3.1.tar.gz
+[2024-06-02 20:27:44] INFO root fetch - processPackages [uaiDiffusers]: Downloading https://files.pythonhosted.org/packages/22/c7/72a69e97a63784a6a0433a0c40bf1d119160cf12fbd1371914bc67661c07/uaiDiffusers-1.1.5.6-py2.py3-none-any.whl
+[2024-06-02 20:27:44] INFO root fetch - processPackages [diaspora-event-sdk]: executing diffoscope
+[2024-06-02 20:27:44] INFO root fetch - processPackages [diaspora-event-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/diaspora-event-sdk-0.3.0.tar.gz tmp/diaspora-event-sdk-0.3.1.tar.gz --markdown 20240602/d/diaspora-event-sdk/0.3.0-0.3.1/README.md --exclude *.pyd
+[2024-06-02 20:27:45] INFO root fetch - processPackages [uaiDiffusers]: executing diffoscope
+[2024-06-02 20:27:45] INFO root fetch - processPackages [uaiDiffusers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/uaiDiffusers-1.1.5.5-py2.py3-none-any.whl.zip tmp/uaiDiffusers-1.1.5.6-py2.py3-none-any.whl.zip --markdown 20240602/u/uaiDiffusers/1.1.5.5-1.1.5.6/README.md --exclude *.pyd
+[2024-06-02 20:27:45] INFO root fetch - processPackages [diaspora-event-sdk]: Remove: archive file [/home/abi/fetcher/tmp/diaspora-event-sdk-0.3.0.tar.gz]
+[2024-06-02 20:27:45] INFO root fetch - processPackages [diaspora-event-sdk]: Remove: archive file [/home/abi/fetcher/tmp/diaspora-event-sdk-0.3.1.tar.gz]
+[2024-06-02 20:27:45] INFO root fetch - main [MainThread]: End processing [diaspora-event-sdk]: success
+[2024-06-02 20:27:45] INFO root fetch - processPackages [uaiDiffusers]: Remove: archive file [/home/abi/fetcher/tmp/uaiDiffusers-1.1.5.5-py2.py3-none-any.whl.zip]
+[2024-06-02 20:27:45] INFO root fetch - processPackages [uaiDiffusers]: Remove: archive file [/home/abi/fetcher/tmp/uaiDiffusers-1.1.5.6-py2.py3-none-any.whl.zip]
+[2024-06-02 20:27:45] INFO root fetch - main [MainThread]: End processing [uaiDiffusers]: success
+[2024-06-02 20:27:45] INFO root fetch - main [MainThread]: Store serial: [23491870]
