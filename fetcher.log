@@ -11981,3 +11981,42 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 17:15:52] INFO root fetch - processPackages [simplebox]: Remove: archive file [/home/abi/fetcher/tmp/simplebox-0.0.1a211-py3-none-any.whl.zip]
 [2024-06-02 17:15:52] INFO root fetch - main [MainThread]: End processing [simplebox]: success
 [2024-06-02 17:15:52] INFO root fetch - main [MainThread]: Store serial: [23490006]
+[2024-06-02 17:17:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23490006]
+[2024-06-02 17:18:00] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-02 17:18:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: voyage-agents
+[2024-06-02 17:18:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: anydi
+[2024-06-02 17:18:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aimodelshare
+[2024-06-02 17:18:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: llama-index-llms-ipex-llm
+[2024-06-02 17:18:00] INFO root fetch - processPackages [voyage-agents]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-06-02 17:18:00] INFO root fetch - processPackages [anydi]: New version: [0.27.0a3] Old Version: [0.27.0a2]
+[2024-06-02 17:18:00] INFO root fetch - processPackages [aimodelshare]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-06-02 17:18:01] INFO root fetch - processPackages [llama-index-llms-ipex-llm]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-06-02 17:18:01] INFO root fetch - processPackages [voyage-agents]: Downloading https://files.pythonhosted.org/packages/b2/7a/99ab51cb5c57153f4fb397796dc5aa95b602eb42937208cc6fff95ba947b/voyage_agents-0.0.1.tar.gz
+[2024-06-02 17:18:01] INFO root fetch - processPackages [anydi]: Downloading https://files.pythonhosted.org/packages/0b/86/6904c0596b25545ac04cfbdd1de7289c75cbc6c9a0af00f96e12bc6132b9/anydi-0.27.0a2.tar.gz
+[2024-06-02 17:18:01] INFO root fetch - processPackages [aimodelshare]: Downloading https://files.pythonhosted.org/packages/c0/89/8d5c1ec1f29fb33b0fe43c98e3f08f65c921359d526635068eef7a186e2c/aimodelshare-0.1.8.tar.gz
+[2024-06-02 17:18:01] INFO root fetch - processPackages [llama-index-llms-ipex-llm]: Downloading https://files.pythonhosted.org/packages/0e/ce/b23dc4abb54c4357156048ae30113b276fb80b6b5868c0e4727ad6334ed1/llama_index_llms_ipex_llm-0.1.5.tar.gz
+[2024-06-02 17:18:01] INFO root fetch - processPackages [voyage-agents]: Downloading https://files.pythonhosted.org/packages/dc/19/7c6bc2512ade30576375b6627584d47101b9f659a2aecc399143288182f4/voyage_agents-0.0.2.tar.gz
+[2024-06-02 17:18:01] INFO root fetch - processPackages [anydi]: Downloading https://files.pythonhosted.org/packages/e5/87/0301cb0d0ebe08c1a738f4fd2c60c397443f6bad3486e0d5b35a71198950/anydi-0.27.0a3.tar.gz
+[2024-06-02 17:18:01] INFO root fetch - processPackages [voyage-agents]: executing diffoscope
+[2024-06-02 17:18:01] INFO root fetch - processPackages [voyage-agents]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/voyage_agents-0.0.1.tar.gz tmp/voyage_agents-0.0.2.tar.gz --markdown 20240602/v/voyage-agents/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-06-02 17:18:01] INFO root fetch - processPackages [aimodelshare]: Downloading https://files.pythonhosted.org/packages/92/1b/5990f7c62044a2ad0776737091765068646eecee14dd251c5ea3732caeb0/aimodelshare-0.1.9.tar.gz
+[2024-06-02 17:18:01] INFO root fetch - processPackages [llama-index-llms-ipex-llm]: Downloading https://files.pythonhosted.org/packages/d3/54/270f49515aafd1a98f5d4c01303da7d1fcba98e244ec016dde3d0e50d746/llama_index_llms_ipex_llm-0.1.6.tar.gz
+[2024-06-02 17:18:01] INFO root fetch - processPackages [anydi]: executing diffoscope
+[2024-06-02 17:18:01] INFO root fetch - processPackages [anydi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anydi-0.27.0a2.tar.gz tmp/anydi-0.27.0a3.tar.gz --markdown 20240602/a/anydi/0.27.0a2-0.27.0a3/README.md --exclude *.pyd
+[2024-06-02 17:18:01] INFO root fetch - processPackages [aimodelshare]: executing diffoscope
+[2024-06-02 17:18:01] INFO root fetch - processPackages [aimodelshare]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aimodelshare-0.1.8.tar.gz tmp/aimodelshare-0.1.9.tar.gz --markdown 20240602/a/aimodelshare/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-06-02 17:18:01] INFO root fetch - processPackages [llama-index-llms-ipex-llm]: executing diffoscope
+[2024-06-02 17:18:01] INFO root fetch - processPackages [llama-index-llms-ipex-llm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llama_index_llms_ipex_llm-0.1.5.tar.gz tmp/llama_index_llms_ipex_llm-0.1.6.tar.gz --markdown 20240602/l/llama-index-llms-ipex-llm/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-06-02 17:18:01] INFO root fetch - processPackages [voyage-agents]: Remove: archive file [/home/abi/fetcher/tmp/voyage_agents-0.0.1.tar.gz]
+[2024-06-02 17:18:01] INFO root fetch - processPackages [voyage-agents]: Remove: archive file [/home/abi/fetcher/tmp/voyage_agents-0.0.2.tar.gz]
+[2024-06-02 17:18:01] INFO root fetch - main [MainThread]: End processing [voyage-agents]: success
+[2024-06-02 17:18:02] INFO root fetch - processPackages [anydi]: Remove: archive file [/home/abi/fetcher/tmp/anydi-0.27.0a2.tar.gz]
+[2024-06-02 17:18:02] INFO root fetch - processPackages [anydi]: Remove: archive file [/home/abi/fetcher/tmp/anydi-0.27.0a3.tar.gz]
+[2024-06-02 17:18:02] INFO root fetch - main [MainThread]: End processing [anydi]: success
+[2024-06-02 17:18:02] INFO root fetch - processPackages [llama-index-llms-ipex-llm]: Remove: archive file [/home/abi/fetcher/tmp/llama_index_llms_ipex_llm-0.1.5.tar.gz]
+[2024-06-02 17:18:02] INFO root fetch - processPackages [llama-index-llms-ipex-llm]: Remove: archive file [/home/abi/fetcher/tmp/llama_index_llms_ipex_llm-0.1.6.tar.gz]
+[2024-06-02 17:18:02] INFO root fetch - main [MainThread]: End processing [llama-index-llms-ipex-llm]: success
+[2024-06-02 17:18:02] INFO root fetch - processPackages [aimodelshare]: Remove: archive file [/home/abi/fetcher/tmp/aimodelshare-0.1.8.tar.gz]
+[2024-06-02 17:18:02] INFO root fetch - processPackages [aimodelshare]: Remove: archive file [/home/abi/fetcher/tmp/aimodelshare-0.1.9.tar.gz]
+[2024-06-02 17:18:02] INFO root fetch - main [MainThread]: End processing [aimodelshare]: success
+[2024-06-02 17:18:02] INFO root fetch - main [MainThread]: Store serial: [23490019]
