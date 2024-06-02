@@ -7452,3 +7452,33 @@
 [2024-06-02 12:17:46] INFO root fetch - processPackages [mnistvit]: Remove: archive file [/home/abi/fetcher/tmp/mnistvit-1.0.2.tar.gz]
 [2024-06-02 12:17:46] INFO root fetch - main [MainThread]: End processing [mnistvit]: success
 [2024-06-02 12:17:46] INFO root fetch - main [MainThread]: Store serial: [23488071]
+[2024-06-02 12:19:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23488071]
+[2024-06-02 12:19:55] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-02 12:19:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: baidu-serp-api
+[2024-06-02 12:19:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: danila-lib
+[2024-06-02 12:19:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: stashconnect
+[2024-06-02 12:19:56] INFO root fetch - processPackages [stashconnect]: New version: [0.8.1] Old Version: [0.8.0]
+[2024-06-02 12:19:56] INFO root fetch - processPackages [baidu-serp-api]: New version: [0.7] Old Version: [0.6]
+[2024-06-02 12:19:56] INFO root fetch - processPackages [stashconnect]: Downloading https://files.pythonhosted.org/packages/c0/b0/cd27726f8e88cb10ec0398ba59c6d7b3255d6db985bd7bf818486cfcce2b/stashconnect-0.8.0.tar.gz
+[2024-06-02 12:19:56] INFO root fetch - processPackages [baidu-serp-api]: Downloading https://files.pythonhosted.org/packages/a2/92/524b5fdb9f1f195122a89efd066dd492efc8fe0c839c7d599c21259856fc/baidu_serp_api-0.6.tar.gz
+[2024-06-02 12:19:56] INFO root fetch - processPackages [danila-lib]: New version: [1.8.5] Old Version: [1.8.4]
+[2024-06-02 12:19:56] INFO root fetch - processPackages [danila-lib]: Downloading https://files.pythonhosted.org/packages/c5/39/757bca22a449630c4f1b8cadcfa0a32f2b456e0267df3788f99d7d27ed0d/danila-lib-1.8.4.tar.gz
+[2024-06-02 12:19:56] INFO root fetch - processPackages [baidu-serp-api]: Downloading https://files.pythonhosted.org/packages/61/b0/d7036e37b4be5d4e0f4bca56d69173c865bead1420b80ef6aa10eddc613c/baidu_serp_api-0.7.tar.gz
+[2024-06-02 12:19:56] INFO root fetch - processPackages [baidu-serp-api]: executing diffoscope
+[2024-06-02 12:19:56] INFO root fetch - processPackages [baidu-serp-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/baidu_serp_api-0.6.tar.gz tmp/baidu_serp_api-0.7.tar.gz --markdown 20240602/b/baidu-serp-api/0.6-0.7/README.md --exclude *.pyd
+[2024-06-02 12:19:56] INFO root fetch - processPackages [stashconnect]: Downloading https://files.pythonhosted.org/packages/39/b2/a4da5202efdad1a3f76ca31047b68ee72ee4a5a4f6b4c912a163bc7d0cac/stashconnect-0.8.1.tar.gz
+[2024-06-02 12:19:56] INFO root fetch - processPackages [stashconnect]: executing diffoscope
+[2024-06-02 12:19:56] INFO root fetch - processPackages [stashconnect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stashconnect-0.8.0.tar.gz tmp/stashconnect-0.8.1.tar.gz --markdown 20240602/s/stashconnect/0.8.0-0.8.1/README.md --exclude *.pyd
+[2024-06-02 12:19:56] INFO root fetch - processPackages [danila-lib]: Downloading https://files.pythonhosted.org/packages/c3/0a/bb9e6276e1b71b006ac55cbd6f0761cb3568bfb3fa5f98ff0633e02699cf/danila-lib-1.8.5.tar.gz
+[2024-06-02 12:19:56] INFO root fetch - processPackages [danila-lib]: executing diffoscope
+[2024-06-02 12:19:56] INFO root fetch - processPackages [danila-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/danila-lib-1.8.4.tar.gz tmp/danila-lib-1.8.5.tar.gz --markdown 20240602/d/danila-lib/1.8.4-1.8.5/README.md --exclude *.pyd
+[2024-06-02 12:19:57] INFO root fetch - processPackages [baidu-serp-api]: Remove: archive file [/home/abi/fetcher/tmp/baidu_serp_api-0.6.tar.gz]
+[2024-06-02 12:19:57] INFO root fetch - processPackages [baidu-serp-api]: Remove: archive file [/home/abi/fetcher/tmp/baidu_serp_api-0.7.tar.gz]
+[2024-06-02 12:19:57] INFO root fetch - main [MainThread]: End processing [baidu-serp-api]: success
+[2024-06-02 12:19:57] INFO root fetch - processPackages [stashconnect]: Remove: archive file [/home/abi/fetcher/tmp/stashconnect-0.8.0.tar.gz]
+[2024-06-02 12:19:57] INFO root fetch - processPackages [stashconnect]: Remove: archive file [/home/abi/fetcher/tmp/stashconnect-0.8.1.tar.gz]
+[2024-06-02 12:19:57] INFO root fetch - main [MainThread]: End processing [stashconnect]: success
+[2024-06-02 12:19:57] INFO root fetch - processPackages [danila-lib]: Remove: archive file [/home/abi/fetcher/tmp/danila-lib-1.8.4.tar.gz]
+[2024-06-02 12:19:57] INFO root fetch - processPackages [danila-lib]: Remove: archive file [/home/abi/fetcher/tmp/danila-lib-1.8.5.tar.gz]
+[2024-06-02 12:19:57] INFO root fetch - main [MainThread]: End processing [danila-lib]: success
+[2024-06-02 12:19:57] INFO root fetch - main [MainThread]: Store serial: [23488080]
