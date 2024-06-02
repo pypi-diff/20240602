@@ -14643,3 +14643,27 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 19:15:19] INFO root fetch - processPackages [localstack-core]: Remove: archive file [/home/abi/fetcher/tmp/localstack_core-3.4.1.dev20240601180838.tar.gz]
 [2024-06-02 19:15:19] INFO root fetch - main [MainThread]: End processing [localstack-core]: success
 [2024-06-02 19:15:19] INFO root fetch - main [MainThread]: Store serial: [23491253]
+[2024-06-02 19:17:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23491253]
+[2024-06-02 19:17:27] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-02 19:17:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pywise
+[2024-06-02 19:17:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: jeff-api-common
+[2024-06-02 19:17:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lxdbapi
+[2024-06-02 19:17:27] WARNING root fetch - processPackages [jeff-api-common]: Skipping, unable to determine old version
+[2024-06-02 19:17:27] INFO root fetch - main [MainThread]: End processing [jeff-api-common] error
+[2024-06-02 19:17:28] INFO root fetch - processPackages [pywise]: New version: [0.8.0] Old Version: [0.7.0]
+[2024-06-02 19:17:28] INFO root fetch - processPackages [lxdbapi]: New version: [2.3.202406020004] Old Version: [2.3.202405310003]
+[2024-06-02 19:17:28] INFO root fetch - processPackages [pywise]: Downloading https://files.pythonhosted.org/packages/e8/bc/66166db7fcb5dfab715ba904213cfa39a55624015685d89aec36e09cb685/pywise-0.7.0.tar.gz
+[2024-06-02 19:17:28] INFO root fetch - processPackages [lxdbapi]: Downloading https://files.pythonhosted.org/packages/6a/c2/c92f9d5c21732342fab6f3a1470798e55f37d92fb886a8f93e9d3a8cef93/lxdbapi-2.3.202405310003.tar.gz
+[2024-06-02 19:17:28] INFO root fetch - processPackages [pywise]: Downloading https://files.pythonhosted.org/packages/4b/44/7066f4c023c57eba34e9066f891203f9572d6b22c44dedba501b3c4f7a30/pywise-0.8.0.tar.gz
+[2024-06-02 19:17:28] INFO root fetch - processPackages [lxdbapi]: Downloading https://files.pythonhosted.org/packages/ce/96/0dfcfa63a8f7378d98ccbe237818f6a31824d993ea94eb0602ee8adab199/lxdbapi-2.3.202406020004.tar.gz
+[2024-06-02 19:17:28] INFO root fetch - processPackages [pywise]: executing diffoscope
+[2024-06-02 19:17:28] INFO root fetch - processPackages [pywise]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pywise-0.7.0.tar.gz tmp/pywise-0.8.0.tar.gz --markdown 20240602/p/pywise/0.7.0-0.8.0/README.md --exclude *.pyd
+[2024-06-02 19:17:28] INFO root fetch - processPackages [lxdbapi]: executing diffoscope
+[2024-06-02 19:17:28] INFO root fetch - processPackages [lxdbapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lxdbapi-2.3.202405310003.tar.gz tmp/lxdbapi-2.3.202406020004.tar.gz --markdown 20240602/l/lxdbapi/2.3.202405310003-2.3.202406020004/README.md --exclude *.pyd
+[2024-06-02 19:17:29] INFO root fetch - processPackages [pywise]: Remove: archive file [/home/abi/fetcher/tmp/pywise-0.7.0.tar.gz]
+[2024-06-02 19:17:29] INFO root fetch - processPackages [pywise]: Remove: archive file [/home/abi/fetcher/tmp/pywise-0.8.0.tar.gz]
+[2024-06-02 19:17:29] INFO root fetch - main [MainThread]: End processing [pywise]: success
+[2024-06-02 19:17:30] INFO root fetch - processPackages [lxdbapi]: Remove: archive file [/home/abi/fetcher/tmp/lxdbapi-2.3.202405310003.tar.gz]
+[2024-06-02 19:17:30] INFO root fetch - processPackages [lxdbapi]: Remove: archive file [/home/abi/fetcher/tmp/lxdbapi-2.3.202406020004.tar.gz]
+[2024-06-02 19:17:30] INFO root fetch - main [MainThread]: End processing [lxdbapi]: success
+[2024-06-02 19:17:30] INFO root fetch - main [MainThread]: Store serial: [23491263]
