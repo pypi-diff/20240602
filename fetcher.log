@@ -15868,3 +15868,87 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 20:23:25] INFO root fetch - processPackages [gink]: Remove: archive file [/home/abi/fetcher/tmp/gink-0.20240602.1717352499.tar.gz]
 [2024-06-02 20:23:25] INFO root fetch - main [MainThread]: End processing [gink]: success
 [2024-06-02 20:23:25] INFO root fetch - main [MainThread]: Store serial: [23491839]
+[2024-06-02 20:25:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23491839]
+[2024-06-02 20:25:33] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2024-06-02 20:25:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: VoiceProcessingToolkit
+[2024-06-02 20:25:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kfactory
+[2024-06-02 20:25:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gammarers.aws-secure-vpc-bucket
+[2024-06-02 20:25:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pcleaner
+[2024-06-02 20:25:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pcleaner-cli
+[2024-06-02 20:25:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: dearpygui-extend
+[2024-06-02 20:25:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: gammarers.aws-secure-frontend-web-app-cloudfront-distribution
+[2024-06-02 20:25:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: gammarers.aws-secure-log-bucket
+[2024-06-02 20:25:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: mds-account-de-skr04
+[2024-06-02 20:25:33] INFO root fetch - processPackages [kfactory]: New version: [0.9.3] Old Version: [0.9.2]
+[2024-06-02 20:25:33] INFO root fetch - processPackages [pcleaner-cli]: New version: [2.7.1] Old Version: [2.7.0]
+[2024-06-02 20:25:33] INFO root fetch - processPackages [pcleaner]: New version: [2.7.1] Old Version: [2.7.0]
+[2024-06-02 20:25:33] INFO root fetch - processPackages [VoiceProcessingToolkit]: New version: [0.1.8.2] Old Version: [0.1.8.1]
+[2024-06-02 20:25:33] INFO root fetch - processPackages [gammarers.aws-secure-log-bucket]: New version: [1.7.1] Old Version: [1.7.0]
+[2024-06-02 20:25:33] INFO root fetch - processPackages [kfactory]: Downloading https://files.pythonhosted.org/packages/0f/b6/721b57bf8b2ae07b65396295ba273e13669561ae94fadbe9eb4afd8e9b00/kfactory-0.9.2.tar.gz
+[2024-06-02 20:25:33] INFO root fetch - processPackages [gammarers.aws-secure-vpc-bucket]: New version: [1.4.1] Old Version: [1.4.0]
+[2024-06-02 20:25:33] INFO root fetch - processPackages [dearpygui-extend]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-06-02 20:25:33] INFO root fetch - processPackages [gammarers.aws-secure-frontend-web-app-cloudfront-distribution]: New version: [1.3.6] Old Version: [1.3.5]
+[2024-06-02 20:25:33] INFO root fetch - processPackages [pcleaner]: Downloading https://files.pythonhosted.org/packages/2b/f6/c434792f525f1627b1ad128334938b91a9e13b646a489b3e814660ef84f2/pcleaner-2.7.0.tar.gz
+[2024-06-02 20:25:33] INFO root fetch - processPackages [mds-account-de-skr04]: New version: [7.0.9] Old Version: [7.0.8]
+[2024-06-02 20:25:34] INFO root fetch - processPackages [pcleaner-cli]: Downloading https://files.pythonhosted.org/packages/43/24/60080452ea6a0c124d83a2a81095dde47ce196b22f498fd8ee366642c7dc/pcleaner_cli-2.7.0.tar.gz
+[2024-06-02 20:25:34] INFO root fetch - processPackages [VoiceProcessingToolkit]: Downloading https://files.pythonhosted.org/packages/ce/9c/424bd67cc542916f25d1b0013fec49db10aa3758b9ca9942c616e4580032/VoiceProcessingToolkit-0.1.8.1.tar.gz
+[2024-06-02 20:25:34] INFO root fetch - processPackages [gammarers.aws-secure-log-bucket]: Downloading https://files.pythonhosted.org/packages/6f/5d/daea012ed627951adcf2a7972246d45d7d6af6fad7dfae357afa1eb49f67/gammarers.aws-secure-log-bucket-1.7.0.tar.gz
+[2024-06-02 20:25:34] INFO root fetch - processPackages [gammarers.aws-secure-vpc-bucket]: Downloading https://files.pythonhosted.org/packages/6b/71/d77ba5a8dbab204091a6564c7767160da380b4ea6e952931448049068238/gammarers.aws-secure-vpc-bucket-1.4.0.tar.gz
+[2024-06-02 20:25:34] INFO root fetch - processPackages [gammarers.aws-secure-frontend-web-app-cloudfront-distribution]: Downloading https://files.pythonhosted.org/packages/96/fa/f034f9a263ea82c09813ea439a4d1817fe1f0cbe19dcd386cbaa6fd59b64/gammarers.aws-secure-frontend-web-app-cloudfront-distribution-1.3.5.tar.gz
+[2024-06-02 20:25:34] INFO root fetch - processPackages [dearpygui-extend]: Downloading https://files.pythonhosted.org/packages/cf/ff/eb952afc6a85771ac0e50e9a39a22d1f60c368fda81a2893088050ba572a/dearpygui_extend-0.1.3.tar.gz
+[2024-06-02 20:25:34] INFO root fetch - processPackages [mds-account-de-skr04]: Downloading https://files.pythonhosted.org/packages/36/5c/6c5660f631d348211274f921df22a2b3b5c8b0abb91db010c6226638203a/mds_account_de_skr04-7.0.8.tar.gz
+[2024-06-02 20:25:34] INFO root fetch - processPackages [pcleaner]: Downloading https://files.pythonhosted.org/packages/18/41/c8034f49c384a15ab48ad5787cea3a265e0fcb4a2bc663410ea3c637020e/pcleaner-2.7.1.tar.gz
+[2024-06-02 20:25:34] INFO root fetch - processPackages [VoiceProcessingToolkit]: Downloading https://files.pythonhosted.org/packages/cc/39/70681d7c3170fe5be9c44c356fa31197f1e6110d20938e39564b4975333c/voiceprocessingtoolkit-0.1.8.2.tar.gz
+[2024-06-02 20:25:34] INFO root fetch - processPackages [kfactory]: Downloading https://files.pythonhosted.org/packages/c9/36/7559666b6cdc35c7cc7128cb3f2c99b3f5fcdca3d73c396d4c13a34f7466/kfactory-0.9.3.tar.gz
+[2024-06-02 20:25:34] INFO root fetch - processPackages [gammarers.aws-secure-log-bucket]: Downloading https://files.pythonhosted.org/packages/9b/4d/f6f2c690f6e38fc36b795e0f6307ea5a48304407644b1c4420fea1f84638/gammarers.aws-secure-log-bucket-1.7.1.tar.gz
+[2024-06-02 20:25:34] INFO root fetch - processPackages [pcleaner-cli]: Downloading https://files.pythonhosted.org/packages/da/0d/151c09f1397e9e911ddf461c0cc5b99182a49a53208f9222ce760f361acd/pcleaner_cli-2.7.1.tar.gz
+[2024-06-02 20:25:34] INFO root fetch - processPackages [gammarers.aws-secure-frontend-web-app-cloudfront-distribution]: Downloading https://files.pythonhosted.org/packages/81/b9/7197bd69365876c64556862b111dc30fb1c76bd6f9697c3f3b9e4c88d3b0/gammarers.aws-secure-frontend-web-app-cloudfront-distribution-1.3.6.tar.gz
+[2024-06-02 20:25:34] INFO root fetch - processPackages [gammarers.aws-secure-vpc-bucket]: Downloading https://files.pythonhosted.org/packages/3d/62/e2d1eea77dd9212c97ba6c12da8478f424917da13c148522e5f2e9ee44c0/gammarers.aws-secure-vpc-bucket-1.4.1.tar.gz
+[2024-06-02 20:25:34] INFO root fetch - processPackages [VoiceProcessingToolkit]: executing diffoscope
+[2024-06-02 20:25:34] INFO root fetch - processPackages [VoiceProcessingToolkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/VoiceProcessingToolkit-0.1.8.1.tar.gz tmp/voiceprocessingtoolkit-0.1.8.2.tar.gz --markdown 20240602/V/VoiceProcessingToolkit/0.1.8.1-0.1.8.2/README.md --exclude *.pyd
+[2024-06-02 20:25:34] INFO root fetch - processPackages [dearpygui-extend]: Downloading https://files.pythonhosted.org/packages/41/e8/5cc05a7061678c040152b274caf4e309be0f4a29bb922d606a2707539cb5/dearpygui_extend-0.1.4.tar.gz
+[2024-06-02 20:25:34] INFO root fetch - processPackages [mds-account-de-skr04]: Downloading https://files.pythonhosted.org/packages/85/7e/abe27af9333a18861966f281c77e987ba17ae0b0717d1ea0eec89298f0ae/mds_account_de_skr04-7.0.9.tar.gz
+[2024-06-02 20:25:34] INFO root fetch - processPackages [pcleaner]: executing diffoscope
+[2024-06-02 20:25:34] INFO root fetch - processPackages [pcleaner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pcleaner-2.7.0.tar.gz tmp/pcleaner-2.7.1.tar.gz --markdown 20240602/p/pcleaner/2.7.0-2.7.1/README.md --exclude *.pyd
+[2024-06-02 20:25:34] INFO root fetch - processPackages [gammarers.aws-secure-log-bucket]: executing diffoscope
+[2024-06-02 20:25:34] INFO root fetch - processPackages [gammarers.aws-secure-log-bucket]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gammarers.aws-secure-log-bucket-1.7.0.tar.gz tmp/gammarers.aws-secure-log-bucket-1.7.1.tar.gz --markdown 20240602/g/gammarers.aws-secure-log-bucket/1.7.0-1.7.1/README.md --exclude *.pyd
+[2024-06-02 20:25:34] INFO root fetch - processPackages [kfactory]: executing diffoscope
+[2024-06-02 20:25:34] INFO root fetch - processPackages [kfactory]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kfactory-0.9.2.tar.gz tmp/kfactory-0.9.3.tar.gz --markdown 20240602/k/kfactory/0.9.2-0.9.3/README.md --exclude *.pyd
+[2024-06-02 20:25:34] INFO root fetch - processPackages [gammarers.aws-secure-frontend-web-app-cloudfront-distribution]: executing diffoscope
+[2024-06-02 20:25:34] INFO root fetch - processPackages [gammarers.aws-secure-frontend-web-app-cloudfront-distribution]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gammarers.aws-secure-frontend-web-app-cloudfront-distribution-1.3.5.tar.gz tmp/gammarers.aws-secure-frontend-web-app-cloudfront-distribution-1.3.6.tar.gz --markdown 20240602/g/gammarers.aws-secure-frontend-web-app-cloudfront-distribution/1.3.5-1.3.6/README.md --exclude *.pyd
+[2024-06-02 20:25:34] INFO root fetch - processPackages [gammarers.aws-secure-vpc-bucket]: executing diffoscope
+[2024-06-02 20:25:34] INFO root fetch - processPackages [gammarers.aws-secure-vpc-bucket]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gammarers.aws-secure-vpc-bucket-1.4.0.tar.gz tmp/gammarers.aws-secure-vpc-bucket-1.4.1.tar.gz --markdown 20240602/g/gammarers.aws-secure-vpc-bucket/1.4.0-1.4.1/README.md --exclude *.pyd
+[2024-06-02 20:25:34] INFO root fetch - processPackages [pcleaner-cli]: executing diffoscope
+[2024-06-02 20:25:34] INFO root fetch - processPackages [pcleaner-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pcleaner_cli-2.7.0.tar.gz tmp/pcleaner_cli-2.7.1.tar.gz --markdown 20240602/p/pcleaner-cli/2.7.0-2.7.1/README.md --exclude *.pyd
+[2024-06-02 20:25:34] INFO root fetch - processPackages [dearpygui-extend]: executing diffoscope
+[2024-06-02 20:25:34] INFO root fetch - processPackages [dearpygui-extend]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dearpygui_extend-0.1.3.tar.gz tmp/dearpygui_extend-0.1.4.tar.gz --markdown 20240602/d/dearpygui-extend/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-06-02 20:25:34] INFO root fetch - processPackages [mds-account-de-skr04]: executing diffoscope
+[2024-06-02 20:25:34] INFO root fetch - processPackages [mds-account-de-skr04]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mds_account_de_skr04-7.0.8.tar.gz tmp/mds_account_de_skr04-7.0.9.tar.gz --markdown 20240602/m/mds-account-de-skr04/7.0.8-7.0.9/README.md --exclude *.pyd
+[2024-06-02 20:25:35] INFO root fetch - processPackages [VoiceProcessingToolkit]: Remove: archive file [/home/abi/fetcher/tmp/VoiceProcessingToolkit-0.1.8.1.tar.gz]
+[2024-06-02 20:25:35] INFO root fetch - processPackages [VoiceProcessingToolkit]: Remove: archive file [/home/abi/fetcher/tmp/voiceprocessingtoolkit-0.1.8.2.tar.gz]
+[2024-06-02 20:25:35] INFO root fetch - main [MainThread]: End processing [VoiceProcessingToolkit]: success
+[2024-06-02 20:25:35] INFO root fetch - processPackages [dearpygui-extend]: Remove: archive file [/home/abi/fetcher/tmp/dearpygui_extend-0.1.3.tar.gz]
+[2024-06-02 20:25:35] INFO root fetch - processPackages [dearpygui-extend]: Remove: archive file [/home/abi/fetcher/tmp/dearpygui_extend-0.1.4.tar.gz]
+[2024-06-02 20:25:35] INFO root fetch - main [MainThread]: End processing [dearpygui-extend]: success
+[2024-06-02 20:25:35] INFO root fetch - processPackages [gammarers.aws-secure-log-bucket]: Remove: archive file [/home/abi/fetcher/tmp/gammarers.aws-secure-log-bucket-1.7.0.tar.gz]
+[2024-06-02 20:25:35] INFO root fetch - processPackages [gammarers.aws-secure-log-bucket]: Remove: archive file [/home/abi/fetcher/tmp/gammarers.aws-secure-log-bucket-1.7.1.tar.gz]
+[2024-06-02 20:25:35] INFO root fetch - main [MainThread]: End processing [gammarers.aws-secure-log-bucket]: success
+[2024-06-02 20:25:35] INFO root fetch - processPackages [gammarers.aws-secure-frontend-web-app-cloudfront-distribution]: Remove: archive file [/home/abi/fetcher/tmp/gammarers.aws-secure-frontend-web-app-cloudfront-distribution-1.3.5.tar.gz]
+[2024-06-02 20:25:35] INFO root fetch - processPackages [gammarers.aws-secure-frontend-web-app-cloudfront-distribution]: Remove: archive file [/home/abi/fetcher/tmp/gammarers.aws-secure-frontend-web-app-cloudfront-distribution-1.3.6.tar.gz]
+[2024-06-02 20:25:35] INFO root fetch - main [MainThread]: End processing [gammarers.aws-secure-frontend-web-app-cloudfront-distribution]: success
+[2024-06-02 20:25:35] INFO root fetch - processPackages [pcleaner-cli]: Remove: archive file [/home/abi/fetcher/tmp/pcleaner_cli-2.7.0.tar.gz]
+[2024-06-02 20:25:35] INFO root fetch - processPackages [pcleaner-cli]: Remove: archive file [/home/abi/fetcher/tmp/pcleaner_cli-2.7.1.tar.gz]
+[2024-06-02 20:25:35] INFO root fetch - main [MainThread]: End processing [pcleaner-cli]: success
+[2024-06-02 20:25:35] INFO root fetch - processPackages [gammarers.aws-secure-vpc-bucket]: Remove: archive file [/home/abi/fetcher/tmp/gammarers.aws-secure-vpc-bucket-1.4.0.tar.gz]
+[2024-06-02 20:25:35] INFO root fetch - processPackages [gammarers.aws-secure-vpc-bucket]: Remove: archive file [/home/abi/fetcher/tmp/gammarers.aws-secure-vpc-bucket-1.4.1.tar.gz]
+[2024-06-02 20:25:35] INFO root fetch - main [MainThread]: End processing [gammarers.aws-secure-vpc-bucket]: success
+[2024-06-02 20:25:35] INFO root fetch - processPackages [kfactory]: Remove: archive file [/home/abi/fetcher/tmp/kfactory-0.9.2.tar.gz]
+[2024-06-02 20:25:35] INFO root fetch - processPackages [kfactory]: Remove: archive file [/home/abi/fetcher/tmp/kfactory-0.9.3.tar.gz]
+[2024-06-02 20:25:35] INFO root fetch - main [MainThread]: End processing [kfactory]: success
+[2024-06-02 20:25:36] INFO root fetch - processPackages [mds-account-de-skr04]: Remove: archive file [/home/abi/fetcher/tmp/mds_account_de_skr04-7.0.8.tar.gz]
+[2024-06-02 20:25:36] INFO root fetch - processPackages [mds-account-de-skr04]: Remove: archive file [/home/abi/fetcher/tmp/mds_account_de_skr04-7.0.9.tar.gz]
+[2024-06-02 20:25:36] INFO root fetch - main [MainThread]: End processing [mds-account-de-skr04]: success
+[2024-06-02 20:25:36] INFO root fetch - processPackages [pcleaner]: Remove: archive file [/home/abi/fetcher/tmp/pcleaner-2.7.0.tar.gz]
+[2024-06-02 20:25:36] INFO root fetch - processPackages [pcleaner]: Remove: archive file [/home/abi/fetcher/tmp/pcleaner-2.7.1.tar.gz]
+[2024-06-02 20:25:36] INFO root fetch - main [MainThread]: End processing [pcleaner]: success
+[2024-06-02 20:25:36] INFO root fetch - main [MainThread]: Store serial: [23491865]
