@@ -9814,3 +9814,23 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-02 14:53:19] INFO root fetch - processPackages [mteb]: Remove: archive file [/home/abi/fetcher/tmp/mteb-1.9.3.tar.gz]
 [2024-06-02 14:53:19] INFO root fetch - main [MainThread]: End processing [mteb]: success
 [2024-06-02 14:53:19] INFO root fetch - main [MainThread]: Store serial: [23489066]
+[2024-06-02 14:55:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23489066]
+[2024-06-02 14:55:27] INFO root fetch - main [MainThread]: No changed packages found
+[2024-06-02 14:57:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23489067]
+[2024-06-02 14:57:33] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-02 14:57:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: copilothistoryexporter
+[2024-06-02 14:57:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dragons96-tools
+[2024-06-02 14:57:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: wingsdk
+[2024-06-02 14:57:33] WARNING root fetch - processPackages [copilothistoryexporter]: Skipping, unable to determine old version
+[2024-06-02 14:57:33] INFO root fetch - main [MainThread]: End processing [copilothistoryexporter] error
+[2024-06-02 14:57:33] ERROR root fetch - processPackages [wingsdk]: Unable to get metadata: No such project 'wingsdk'
+[2024-06-02 14:57:33] INFO root fetch - main [MainThread]: End processing [wingsdk] error
+[2024-06-02 14:57:33] INFO root fetch - processPackages [dragons96-tools]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-06-02 14:57:33] INFO root fetch - processPackages [dragons96-tools]: Downloading https://files.pythonhosted.org/packages/a3/35/4f02f0f12780bf7b791989ab642ec21f06b9fd66e4025906bb9c6a5af6a4/dragons96_tools-0.0.8.tar.gz
+[2024-06-02 14:57:33] INFO root fetch - processPackages [dragons96-tools]: Downloading https://files.pythonhosted.org/packages/ac/7c/813105da4cb1a3a4e0403b37ea632347837dd95f4dabad1c6224360f1284/dragons96_tools-0.0.9.tar.gz
+[2024-06-02 14:57:34] INFO root fetch - processPackages [dragons96-tools]: executing diffoscope
+[2024-06-02 14:57:34] INFO root fetch - processPackages [dragons96-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dragons96_tools-0.0.8.tar.gz tmp/dragons96_tools-0.0.9.tar.gz --markdown 20240602/d/dragons96-tools/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-06-02 14:57:34] INFO root fetch - processPackages [dragons96-tools]: Remove: archive file [/home/abi/fetcher/tmp/dragons96_tools-0.0.8.tar.gz]
+[2024-06-02 14:57:34] INFO root fetch - processPackages [dragons96-tools]: Remove: archive file [/home/abi/fetcher/tmp/dragons96_tools-0.0.9.tar.gz]
+[2024-06-02 14:57:34] INFO root fetch - main [MainThread]: End processing [dragons96-tools]: success
+[2024-06-02 14:57:34] INFO root fetch - main [MainThread]: Store serial: [23489078]
