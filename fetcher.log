@@ -6877,3 +6877,13 @@
 [2024-06-02 11:25:35] INFO root fetch - processPackages [appier]: Remove: archive file [/home/abi/fetcher/tmp/appier-1.9.9.tar.gz]
 [2024-06-02 11:25:35] INFO root fetch - main [MainThread]: End processing [appier]: success
 [2024-06-02 11:25:35] INFO root fetch - main [MainThread]: Store serial: [23487804]
+[2024-06-02 11:27:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23487804]
+[2024-06-02 11:27:44] INFO root fetch - main [MainThread]: No changed packages found
+[2024-06-02 11:29:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23487805]
+[2024-06-02 11:29:49] INFO root fetch - main [MainThread]: No changed packages found
+[2024-06-02 11:31:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23487805]
+[2024-06-02 11:31:55] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-02 11:31:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: scaler-pics
+[2024-06-02 11:31:55] WARNING root fetch - processPackages [scaler-pics]: Skipping, unable to determine old version
+[2024-06-02 11:31:55] INFO root fetch - main [MainThread]: End processing [scaler-pics] error
+[2024-06-02 11:31:55] INFO root fetch - main [MainThread]: Store serial: [23487810]
