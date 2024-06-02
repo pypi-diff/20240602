@@ -6155,3 +6155,24 @@
 [2024-06-02 10:26:08] INFO root fetch - processPackages [tree-sitter-arduino]: Remove: archive file [/home/abi/fetcher/tmp/tree-sitter-arduino-0.21.1.tar.gz]
 [2024-06-02 10:26:08] INFO root fetch - main [MainThread]: End processing [tree-sitter-arduino]: success
 [2024-06-02 10:26:08] INFO root fetch - main [MainThread]: Store serial: [23487384]
+[2024-06-02 10:28:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23487384]
+[2024-06-02 10:28:21] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-02 10:28:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: setux
+[2024-06-02 10:28:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pkscreener
+[2024-06-02 10:28:21] INFO root fetch - processPackages [setux]: New version: [0.6.3.1] Old Version: [0.6.3.0]
+[2024-06-02 10:28:22] INFO root fetch - processPackages [pkscreener]: New version: [0.45.20240602.426] Old Version: [0.45.20240601.425]
+[2024-06-02 10:28:22] INFO root fetch - processPackages [setux]: Downloading https://files.pythonhosted.org/packages/2f/49/91934bd9aee6533448fdf391683c7a735a63a59ad2cf2563b52b98ad4201/setux-0.6.3.0.tar.gz
+[2024-06-02 10:28:22] INFO root fetch - processPackages [pkscreener]: Downloading https://files.pythonhosted.org/packages/26/6c/ba79b53fc64fb054b4a40bf9bf37b45ef37130efbfdd3495b6ded8246c3e/pkscreener-0.45.20240601.425.tar.gz
+[2024-06-02 10:28:22] INFO root fetch - processPackages [setux]: Downloading https://files.pythonhosted.org/packages/ad/0f/ea659bb0a2030b085f60069b2fb29d1dc322f7444f95eaa97478e78035e2/setux-0.6.3.1.tar.gz
+[2024-06-02 10:28:22] INFO root fetch - processPackages [setux]: executing diffoscope
+[2024-06-02 10:28:22] INFO root fetch - processPackages [setux]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/setux-0.6.3.0.tar.gz tmp/setux-0.6.3.1.tar.gz --markdown 20240602/s/setux/0.6.3.0-0.6.3.1/README.md --exclude *.pyd
+[2024-06-02 10:28:22] INFO root fetch - processPackages [pkscreener]: Downloading https://files.pythonhosted.org/packages/ee/39/7d0bb4a5d8cb116e7b7983c205b098fb304a153b06b0f2d8fb0994e9225e/pkscreener-0.45.20240602.426-cp310-cp310-macosx_12_0_arm64.whl
+[2024-06-02 10:28:22] INFO root fetch - processPackages [pkscreener]: executing diffoscope
+[2024-06-02 10:28:22] INFO root fetch - processPackages [pkscreener]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pkscreener-0.45.20240601.425.tar.gz tmp/pkscreener-0.45.20240602.426-cp310-cp310-macosx_12_0_arm64.whl.zip --markdown 20240602/p/pkscreener/0.45.20240601.425-0.45.20240602.426/README.md --exclude *.pyd
+[2024-06-02 10:28:23] INFO root fetch - processPackages [setux]: Remove: archive file [/home/abi/fetcher/tmp/setux-0.6.3.0.tar.gz]
+[2024-06-02 10:28:23] INFO root fetch - processPackages [setux]: Remove: archive file [/home/abi/fetcher/tmp/setux-0.6.3.1.tar.gz]
+[2024-06-02 10:28:23] INFO root fetch - main [MainThread]: End processing [setux]: success
+[2024-06-02 10:28:23] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.45.20240601.425.tar.gz]
+[2024-06-02 10:28:23] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.45.20240602.426-cp310-cp310-macosx_12_0_arm64.whl.zip]
+[2024-06-02 10:28:23] INFO root fetch - main [MainThread]: End processing [pkscreener]: success
+[2024-06-02 10:28:23] INFO root fetch - main [MainThread]: Store serial: [23487389]
