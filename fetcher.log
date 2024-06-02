@@ -3241,3 +3241,9 @@
 [2024-06-02 04:46:04] INFO root fetch - processPackages [mwbot]: Remove: archive file [/home/abi/fetcher/tmp/mwbot-1.0.9.tar.gz]
 [2024-06-02 04:46:04] INFO root fetch - main [MainThread]: End processing [mwbot]: success
 [2024-06-02 04:46:04] INFO root fetch - main [MainThread]: Store serial: [23485745]
+[2024-06-02 04:48:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23485745]
+[2024-06-02 04:48:12] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-02 04:48:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: parameter-fooetal
+[2024-06-02 04:48:13] WARNING root fetch - processPackages [parameter-fooetal]: Skipping, unable to determine old version
+[2024-06-02 04:48:13] INFO root fetch - main [MainThread]: End processing [parameter-fooetal] error
+[2024-06-02 04:48:13] INFO root fetch - main [MainThread]: Store serial: [23485750]
