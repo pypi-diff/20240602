@@ -4432,3 +4432,9 @@
 [2024-06-02 07:25:33] INFO root fetch - processPackages [naludaq]: Remove: archive file [/home/abi/fetcher/tmp/naludaq-0.27.0.tar.gz]
 [2024-06-02 07:25:33] INFO root fetch - main [MainThread]: End processing [naludaq]: success
 [2024-06-02 07:25:33] INFO root fetch - main [MainThread]: Store serial: [23486423]
+[2024-06-02 07:27:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23486423]
+[2024-06-02 07:27:43] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-02 07:27:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: llmdo
+[2024-06-02 07:27:43] WARNING root fetch - processPackages [llmdo]: Skipping, unable to determine old version
+[2024-06-02 07:27:43] INFO root fetch - main [MainThread]: End processing [llmdo] error
+[2024-06-02 07:27:43] INFO root fetch - main [MainThread]: Store serial: [23486425]
