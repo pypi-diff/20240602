@@ -4664,3 +4664,9 @@
 [2024-06-02 08:00:09] INFO root fetch - processPackages [data-manipulation]: Remove: archive file [/home/abi/fetcher/tmp/data_manipulation-0.9.tar.gz]
 [2024-06-02 08:00:09] INFO root fetch - main [MainThread]: End processing [data-manipulation]: success
 [2024-06-02 08:00:09] INFO root fetch - main [MainThread]: Store serial: [23486556]
+[2024-06-02 08:02:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23486556]
+[2024-06-02 08:02:17] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-02 08:02:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hostinjection
+[2024-06-02 08:02:17] ERROR root fetch - processPackages [hostinjection]: Unable to get metadata: No such project 'hostinjection'
+[2024-06-02 08:02:17] INFO root fetch - main [MainThread]: End processing [hostinjection] error
+[2024-06-02 08:02:17] INFO root fetch - main [MainThread]: Store serial: [23486561]
