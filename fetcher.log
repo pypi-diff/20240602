@@ -13090,3 +13090,51 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 18:07:23] INFO root fetch - processPackages [trytond-sale]: Remove: archive file [/home/abi/fetcher/tmp/trytond_sale-7.2.2.tar.gz]
 [2024-06-02 18:07:23] INFO root fetch - main [MainThread]: End processing [trytond-sale]: success
 [2024-06-02 18:07:23] INFO root fetch - main [MainThread]: Store serial: [23490542]
+[2024-06-02 18:09:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23490542]
+[2024-06-02 18:09:32] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-06-02 18:09:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: MzhFunc
+[2024-06-02 18:09:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mltoolkit-laht
+[2024-06-02 18:09:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: trytond-purchase-requisition
+[2024-06-02 18:09:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: textlong
+[2024-06-02 18:09:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: glide-for-redis
+[2024-06-02 18:09:32] INFO root fetch - processPackages [MzhFunc]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-06-02 18:09:32] INFO root fetch - processPackages [textlong]: New version: [0.2.1] Old Version: [0.1.8]
+[2024-06-02 18:09:32] INFO root fetch - processPackages [glide-for-redis]: New version: [0.4.1rc6] Old Version: [0.4.1rc5]
+[2024-06-02 18:09:32] INFO root fetch - processPackages [mltoolkit-laht]: New version: [0.2.0] Old Version: [0.1.4]
+[2024-06-02 18:09:32] INFO root fetch - processPackages [MzhFunc]: Downloading https://files.pythonhosted.org/packages/91/a8/2ab35eaed3cce97533fb3d64695cffe1418c940c22c7cbbe4a5da88d8743/MzhFunc-0.0.4.tar.gz
+[2024-06-02 18:09:32] INFO root fetch - processPackages [trytond-purchase-requisition]: New version: [7.2.2] Old Version: [7.2.1]
+[2024-06-02 18:09:32] INFO root fetch - processPackages [textlong]: Downloading https://files.pythonhosted.org/packages/f3/5c/e52529d017c7c21520349dec9d36d5a3f0ae1e5dbf104ec52caa071e470d/textlong-0.1.8.tar.gz
+[2024-06-02 18:09:32] INFO root fetch - processPackages [glide-for-redis]: Downloading https://files.pythonhosted.org/packages/0c/7c/dcdeb945380ea6d168bb3a50aa131bbb28926bf86362d4966387419822cf/glide_for_redis-0.4.1rc5-cp39-cp39-manylinux_2_28_aarch64.whl
+[2024-06-02 18:09:32] INFO root fetch - processPackages [mltoolkit-laht]: Downloading https://files.pythonhosted.org/packages/cf/ed/df313b189c9bd9506324683f2e2b246f3e633d5cab0c0383c4af9b2335fb/mltoolkit-laht-0.1.4.tar.gz
+[2024-06-02 18:09:32] INFO root fetch - processPackages [textlong]: Downloading https://files.pythonhosted.org/packages/89/19/ba15422eabb43f0811012c6468bcbbbc4951ab0de3aa496313dbc800765e/textlong-0.2.1.tar.gz
+[2024-06-02 18:09:32] INFO root fetch - processPackages [trytond-purchase-requisition]: Downloading https://files.pythonhosted.org/packages/7e/94/2295b3110c8aa10460977c41691eaa37044c465df8ca92db21c136792f7f/trytond_purchase_requisition-7.2.1.tar.gz
+[2024-06-02 18:09:33] INFO root fetch - processPackages [MzhFunc]: Downloading https://files.pythonhosted.org/packages/eb/a7/290b2e372aaecb4c3a1717dfa8a882f5b5f16020e0fc0d4dad9a2f58b087/MzhFunc-0.0.5.tar.gz
+[2024-06-02 18:09:33] INFO root fetch - processPackages [textlong]: executing diffoscope
+[2024-06-02 18:09:33] INFO root fetch - processPackages [textlong]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/textlong-0.1.8.tar.gz tmp/textlong-0.2.1.tar.gz --markdown 20240602/t/textlong/0.1.8-0.2.1/README.md --exclude *.pyd
+[2024-06-02 18:09:33] INFO root fetch - processPackages [MzhFunc]: executing diffoscope
+[2024-06-02 18:09:33] INFO root fetch - processPackages [MzhFunc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MzhFunc-0.0.4.tar.gz tmp/MzhFunc-0.0.5.tar.gz --markdown 20240602/M/MzhFunc/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-06-02 18:09:33] INFO root fetch - processPackages [mltoolkit-laht]: Downloading https://files.pythonhosted.org/packages/73/fe/c95b23953ccbe1505d0e5e72248477eafb0ed81bf90bcb51146e352a15b9/mltoolkit-laht-0.2.0.tar.gz
+[2024-06-02 18:09:33] INFO root fetch - processPackages [glide-for-redis]: Downloading https://files.pythonhosted.org/packages/cd/33/08302cb3e94f3050ae5272dc45c8eb096d779388df8f96e74f45a87523ff/glide_for_redis-0.4.1rc6-cp39-cp39-manylinux_2_28_aarch64.whl
+[2024-06-02 18:09:33] INFO root fetch - processPackages [trytond-purchase-requisition]: Downloading https://files.pythonhosted.org/packages/1a/4f/23e74c480b9050980d58c843b48c78c1804edc647affb792dec25f96e4da/trytond_purchase_requisition-7.2.2.tar.gz
+[2024-06-02 18:09:33] INFO root fetch - processPackages [mltoolkit-laht]: executing diffoscope
+[2024-06-02 18:09:33] INFO root fetch - processPackages [mltoolkit-laht]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mltoolkit-laht-0.1.4.tar.gz tmp/mltoolkit-laht-0.2.0.tar.gz --markdown 20240602/m/mltoolkit-laht/0.1.4-0.2.0/README.md --exclude *.pyd
+[2024-06-02 18:09:33] INFO root fetch - processPackages [trytond-purchase-requisition]: executing diffoscope
+[2024-06-02 18:09:33] INFO root fetch - processPackages [trytond-purchase-requisition]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trytond_purchase_requisition-7.2.1.tar.gz tmp/trytond_purchase_requisition-7.2.2.tar.gz --markdown 20240602/t/trytond-purchase-requisition/7.2.1-7.2.2/README.md --exclude *.pyd
+[2024-06-02 18:09:33] INFO root fetch - processPackages [MzhFunc]: Remove: archive file [/home/abi/fetcher/tmp/MzhFunc-0.0.4.tar.gz]
+[2024-06-02 18:09:33] INFO root fetch - processPackages [MzhFunc]: Remove: archive file [/home/abi/fetcher/tmp/MzhFunc-0.0.5.tar.gz]
+[2024-06-02 18:09:33] INFO root fetch - main [MainThread]: End processing [MzhFunc]: success
+[2024-06-02 18:09:33] INFO root fetch - processPackages [glide-for-redis]: executing diffoscope
+[2024-06-02 18:09:33] INFO root fetch - processPackages [glide-for-redis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/glide_for_redis-0.4.1rc5-cp39-cp39-manylinux_2_28_aarch64.whl.zip tmp/glide_for_redis-0.4.1rc6-cp39-cp39-manylinux_2_28_aarch64.whl.zip --markdown 20240602/g/glide-for-redis/0.4.1rc5-0.4.1rc6/README.md --exclude *.pyd
+[2024-06-02 18:09:33] INFO root fetch - processPackages [textlong]: Remove: archive file [/home/abi/fetcher/tmp/textlong-0.1.8.tar.gz]
+[2024-06-02 18:09:33] INFO root fetch - processPackages [textlong]: Remove: archive file [/home/abi/fetcher/tmp/textlong-0.2.1.tar.gz]
+[2024-06-02 18:09:33] INFO root fetch - main [MainThread]: End processing [textlong]: success
+[2024-06-02 18:09:33] INFO root fetch - processPackages [mltoolkit-laht]: Remove: archive file [/home/abi/fetcher/tmp/mltoolkit-laht-0.1.4.tar.gz]
+[2024-06-02 18:09:33] INFO root fetch - processPackages [mltoolkit-laht]: Remove: archive file [/home/abi/fetcher/tmp/mltoolkit-laht-0.2.0.tar.gz]
+[2024-06-02 18:09:33] INFO root fetch - main [MainThread]: End processing [mltoolkit-laht]: success
+[2024-06-02 18:09:34] INFO root fetch - processPackages [trytond-purchase-requisition]: Remove: archive file [/home/abi/fetcher/tmp/trytond_purchase_requisition-7.2.1.tar.gz]
+[2024-06-02 18:09:34] INFO root fetch - processPackages [trytond-purchase-requisition]: Remove: archive file [/home/abi/fetcher/tmp/trytond_purchase_requisition-7.2.2.tar.gz]
+[2024-06-02 18:09:34] INFO root fetch - main [MainThread]: End processing [trytond-purchase-requisition]: success
+[2024-06-02 18:09:46] INFO root fetch - processPackages [glide-for-redis]: Remove: archive file [/home/abi/fetcher/tmp/glide_for_redis-0.4.1rc5-cp39-cp39-manylinux_2_28_aarch64.whl.zip]
+[2024-06-02 18:09:46] INFO root fetch - processPackages [glide-for-redis]: Remove: archive file [/home/abi/fetcher/tmp/glide_for_redis-0.4.1rc6-cp39-cp39-manylinux_2_28_aarch64.whl.zip]
+[2024-06-02 18:09:46] INFO root fetch - main [MainThread]: End processing [glide-for-redis]: success
+[2024-06-02 18:09:46] INFO root fetch - main [MainThread]: Store serial: [23490562]
