@@ -4738,3 +4738,38 @@
 [2024-06-02 08:10:59] INFO root fetch - processPackages [opengamedata-core]: Remove: archive file [/home/abi/fetcher/tmp/opengamedata_core-0.0.9.tar.gz]
 [2024-06-02 08:10:59] INFO root fetch - main [MainThread]: End processing [opengamedata-core]: success
 [2024-06-02 08:10:59] INFO root fetch - main [MainThread]: Store serial: [23486590]
+[2024-06-02 08:13:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23486590]
+[2024-06-02 08:13:09] INFO root fetch - main [MainThread]: No changed packages found
+[2024-06-02 08:15:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23486590]
+[2024-06-02 08:15:14] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-02 08:15:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dedup-rs
+[2024-06-02 08:15:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Tooldelta
+[2024-06-02 08:15:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyg-nightly
+[2024-06-02 08:15:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: robotframework-confluentkafkalibrary
+[2024-06-02 08:15:14] INFO root fetch - processPackages [Tooldelta]: New version: [0.7.1] Old Version: [0.7.0]
+[2024-06-02 08:15:14] INFO root fetch - processPackages [pyg-nightly]: New version: [2.6.0.dev20240601] Old Version: [2.6.0.dev20240531]
+[2024-06-02 08:15:14] INFO root fetch - processPackages [Tooldelta]: Downloading https://files.pythonhosted.org/packages/78/4d/37d4f722fedeb19815bb4fae08e0d180172ec5da0b1fe472c7b2815a1f1c/tooldelta-0.7.0.tar.gz
+[2024-06-02 08:15:14] INFO root fetch - processPackages [robotframework-confluentkafkalibrary]: New version: [2.4.0.post1] Old Version: [2.3.0.post1]
+[2024-06-02 08:15:14] WARNING root fetch - processPackages [dedup-rs]: Skipping, unable to determine old version
+[2024-06-02 08:15:14] INFO root fetch - main [MainThread]: End processing [dedup-rs] error
+[2024-06-02 08:15:14] INFO root fetch - processPackages [pyg-nightly]: Downloading https://files.pythonhosted.org/packages/00/75/6b8e50ce5e9e8c3a6d1276583da993d5d207cd466f4ca5b7bc83f9cbf899/pyg_nightly-2.6.0.dev20240531.tar.gz
+[2024-06-02 08:15:15] INFO root fetch - processPackages [robotframework-confluentkafkalibrary]: Downloading https://files.pythonhosted.org/packages/dc/32/38fea2d6b987c39181d9e040c70cecbbc722b628fe05a410a638717785ec/robotframework_confluentkafkalibrary-2.3.0.post1.tar.gz
+[2024-06-02 08:15:15] INFO root fetch - processPackages [Tooldelta]: Downloading https://files.pythonhosted.org/packages/ce/50/123880d2e63136bbdadd4fd7552117a7028d53ffd8401603fb0e1985c004/tooldelta-0.7.1.tar.gz
+[2024-06-02 08:15:15] INFO root fetch - processPackages [pyg-nightly]: Downloading https://files.pythonhosted.org/packages/5e/4d/6e2e742f83b18cdc5dd4bb10ac84e43a6a46d3ad7dba34d4af216a8edd26/pyg_nightly-2.6.0.dev20240601.tar.gz
+[2024-06-02 08:15:15] INFO root fetch - processPackages [robotframework-confluentkafkalibrary]: Downloading https://files.pythonhosted.org/packages/1b/a8/eaf15b6eb6268238baef622061e0e6f5aed3cbd65774b74869b049151d6a/robotframework_confluentkafkalibrary-2.4.0.post1.tar.gz
+[2024-06-02 08:15:15] INFO root fetch - processPackages [Tooldelta]: executing diffoscope
+[2024-06-02 08:15:15] INFO root fetch - processPackages [Tooldelta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tooldelta-0.7.0.tar.gz tmp/tooldelta-0.7.1.tar.gz --markdown 20240602/T/Tooldelta/0.7.0-0.7.1/README.md --exclude *.pyd
+[2024-06-02 08:15:15] INFO root fetch - processPackages [pyg-nightly]: executing diffoscope
+[2024-06-02 08:15:15] INFO root fetch - processPackages [pyg-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyg_nightly-2.6.0.dev20240531.tar.gz tmp/pyg_nightly-2.6.0.dev20240601.tar.gz --markdown 20240602/p/pyg-nightly/2.6.0.dev20240531-2.6.0.dev20240601/README.md --exclude *.pyd
+[2024-06-02 08:15:15] INFO root fetch - processPackages [robotframework-confluentkafkalibrary]: executing diffoscope
+[2024-06-02 08:15:15] INFO root fetch - processPackages [robotframework-confluentkafkalibrary]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/robotframework_confluentkafkalibrary-2.3.0.post1.tar.gz tmp/robotframework_confluentkafkalibrary-2.4.0.post1.tar.gz --markdown 20240602/r/robotframework-confluentkafkalibrary/2.3.0.post1-2.4.0.post1/README.md --exclude *.pyd
+[2024-06-02 08:15:16] INFO root fetch - processPackages [Tooldelta]: Remove: archive file [/home/abi/fetcher/tmp/tooldelta-0.7.0.tar.gz]
+[2024-06-02 08:15:16] INFO root fetch - processPackages [Tooldelta]: Remove: archive file [/home/abi/fetcher/tmp/tooldelta-0.7.1.tar.gz]
+[2024-06-02 08:15:16] INFO root fetch - main [MainThread]: End processing [Tooldelta]: success
+[2024-06-02 08:15:16] INFO root fetch - processPackages [robotframework-confluentkafkalibrary]: Remove: archive file [/home/abi/fetcher/tmp/robotframework_confluentkafkalibrary-2.3.0.post1.tar.gz]
+[2024-06-02 08:15:16] INFO root fetch - processPackages [robotframework-confluentkafkalibrary]: Remove: archive file [/home/abi/fetcher/tmp/robotframework_confluentkafkalibrary-2.4.0.post1.tar.gz]
+[2024-06-02 08:15:16] INFO root fetch - main [MainThread]: End processing [robotframework-confluentkafkalibrary]: success
+[2024-06-02 08:15:17] INFO root fetch - processPackages [pyg-nightly]: Remove: archive file [/home/abi/fetcher/tmp/pyg_nightly-2.6.0.dev20240531.tar.gz]
+[2024-06-02 08:15:17] INFO root fetch - processPackages [pyg-nightly]: Remove: archive file [/home/abi/fetcher/tmp/pyg_nightly-2.6.0.dev20240601.tar.gz]
+[2024-06-02 08:15:17] INFO root fetch - main [MainThread]: End processing [pyg-nightly]: success
+[2024-06-02 08:15:17] INFO root fetch - main [MainThread]: Store serial: [23486641]
