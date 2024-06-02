@@ -11536,3 +11536,63 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 16:55:45] INFO root fetch - processPackages [Flask-QRcode]: Remove: archive file [/home/abi/fetcher/tmp/flask_qrcode-3.2.0.tar.gz]
 [2024-06-02 16:55:45] INFO root fetch - main [MainThread]: End processing [Flask-QRcode]: success
 [2024-06-02 16:55:45] INFO root fetch - main [MainThread]: Store serial: [23489805]
+[2024-06-02 16:57:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23489805]
+[2024-06-02 16:57:53] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2024-06-02 16:57:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: symclosestwannier
+[2024-06-02 16:57:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ml4co-kit
+[2024-06-02 16:57:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aws-sso-util
+[2024-06-02 16:57:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: rl-test-task-1
+[2024-06-02 16:57:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: rl-test-task-2
+[2024-06-02 16:57:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: rl-test-task-3
+[2024-06-02 16:57:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: rl-tasks
+[2024-06-02 16:57:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: sc3dg
+[2024-06-02 16:57:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: argrelay
+[2024-06-02 16:57:53] WARNING root fetch - processPackages [rl-tasks]: Skipping, unable to determine old version
+[2024-06-02 16:57:53] INFO root fetch - main [MainThread]: End processing [rl-tasks] error
+[2024-06-02 16:57:53] WARNING root fetch - processPackages [rl-test-task-2]: Skipping, unable to determine old version
+[2024-06-02 16:57:53] INFO root fetch - main [MainThread]: End processing [rl-test-task-2] error
+[2024-06-02 16:57:53] INFO root fetch - processPackages [sc3dg]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-06-02 16:57:53] WARNING root fetch - processPackages [rl-test-task-3]: Skipping, unable to determine old version
+[2024-06-02 16:57:53] INFO root fetch - main [MainThread]: End processing [rl-test-task-3] error
+[2024-06-02 16:57:53] INFO root fetch - processPackages [symclosestwannier]: New version: [1.2.1] Old Version: [1.1.9]
+[2024-06-02 16:57:53] INFO root fetch - processPackages [sc3dg]: Downloading https://files.pythonhosted.org/packages/97/65/1394420940d9bdc212860a3842baed2ba84016ee1556fa9c66bfb0fa3d07/sc3dg-0.0.8.tar.gz
+[2024-06-02 16:57:53] WARNING root fetch - processPackages [rl-test-task-1]: Skipping, unable to determine old version
+[2024-06-02 16:57:53] INFO root fetch - main [MainThread]: End processing [rl-test-task-1] error
+[2024-06-02 16:57:53] INFO root fetch - processPackages [ml4co-kit]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-06-02 16:57:53] INFO root fetch - processPackages [aws-sso-util]: New version: [4.33.0] Old Version: [4.32.0]
+[2024-06-02 16:57:53] INFO root fetch - processPackages [argrelay]: New version: [0.7.2.dev0] Old Version: [0.7.1.dev9]
+[2024-06-02 16:57:53] INFO root fetch - processPackages [symclosestwannier]: Downloading https://files.pythonhosted.org/packages/c9/6b/dc4bc941bb36b0a925990b345183e0f0a585e8a567bd72a1b30a0ca7d7bd/symclosestwannier-1.1.9.tar.gz
+[2024-06-02 16:57:53] INFO root fetch - processPackages [argrelay]: Downloading https://files.pythonhosted.org/packages/41/61/23651b2ac54bd70dd766c39e0f5ea91ca47f9db54ee35a349a5a39d791ac/argrelay-0.7.1.dev9.tar.gz
+[2024-06-02 16:57:53] INFO root fetch - processPackages [ml4co-kit]: Downloading https://files.pythonhosted.org/packages/45/73/a668891c3670c79ab233d2497c785c4daac752109490e650ce2595439f1b/ml4co_kit-0.0.5.tar.gz
+[2024-06-02 16:57:53] INFO root fetch - processPackages [aws-sso-util]: Downloading https://files.pythonhosted.org/packages/6e/93/90d3753ac7ea3148c41c43929cace11d8fc1331c629497ab24a91a6c3724/aws_sso_util-4.32.0.tar.gz
+[2024-06-02 16:57:53] INFO root fetch - processPackages [sc3dg]: Downloading https://files.pythonhosted.org/packages/36/99/5a97c5b877e089a11d7fcbc1d935f5e5301bcc0f77867bda7d000fc1eb58/sc3dg-0.0.9.tar.gz
+[2024-06-02 16:57:53] INFO root fetch - processPackages [sc3dg]: executing diffoscope
+[2024-06-02 16:57:53] INFO root fetch - processPackages [sc3dg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sc3dg-0.0.8.tar.gz tmp/sc3dg-0.0.9.tar.gz --markdown 20240602/s/sc3dg/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-06-02 16:57:54] INFO root fetch - processPackages [aws-sso-util]: Downloading https://files.pythonhosted.org/packages/4f/64/f00272ecbc60703d0f1a3b17ab75d893c05ec5d60b0e6e9d59ef9b8b9c61/aws_sso_util-4.33.0.tar.gz
+[2024-06-02 16:57:54] INFO root fetch - processPackages [argrelay]: Downloading https://files.pythonhosted.org/packages/20/87/38fac671f6a1ae2190df013f4055548cc4410d940c740c2f1dabfd9a8bd0/argrelay-0.7.2.dev0.tar.gz
+[2024-06-02 16:57:54] INFO root fetch - processPackages [symclosestwannier]: Downloading https://files.pythonhosted.org/packages/4f/1d/199cf80e13cd99ae20f642ecbf65dc036fd3c9c8f098330cf45aa6cc38bd/symclosestwannier-1.2.1.tar.gz
+[2024-06-02 16:57:54] INFO root fetch - processPackages [aws-sso-util]: executing diffoscope
+[2024-06-02 16:57:54] INFO root fetch - processPackages [aws-sso-util]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aws_sso_util-4.32.0.tar.gz tmp/aws_sso_util-4.33.0.tar.gz --markdown 20240602/a/aws-sso-util/4.32.0-4.33.0/README.md --exclude *.pyd
+[2024-06-02 16:57:54] INFO root fetch - processPackages [symclosestwannier]: executing diffoscope
+[2024-06-02 16:57:54] INFO root fetch - processPackages [symclosestwannier]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/symclosestwannier-1.1.9.tar.gz tmp/symclosestwannier-1.2.1.tar.gz --markdown 20240602/s/symclosestwannier/1.1.9-1.2.1/README.md --exclude *.pyd
+[2024-06-02 16:57:54] INFO root fetch - processPackages [ml4co-kit]: Downloading https://files.pythonhosted.org/packages/60/38/17c17f4da8fe1d987341880d1c43c7493d0f089e1f1c561a8646b51dbd41/ml4co_kit-0.0.6.tar.gz
+[2024-06-02 16:57:54] INFO root fetch - processPackages [argrelay]: executing diffoscope
+[2024-06-02 16:57:54] INFO root fetch - processPackages [argrelay]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/argrelay-0.7.1.dev9.tar.gz tmp/argrelay-0.7.2.dev0.tar.gz --markdown 20240602/a/argrelay/0.7.1.dev9-0.7.2.dev0/README.md --exclude *.pyd
+[2024-06-02 16:57:54] INFO root fetch - processPackages [sc3dg]: Remove: archive file [/home/abi/fetcher/tmp/sc3dg-0.0.8.tar.gz]
+[2024-06-02 16:57:54] INFO root fetch - processPackages [sc3dg]: Remove: archive file [/home/abi/fetcher/tmp/sc3dg-0.0.9.tar.gz]
+[2024-06-02 16:57:54] INFO root fetch - main [MainThread]: End processing [sc3dg]: success
+[2024-06-02 16:57:54] INFO root fetch - processPackages [ml4co-kit]: executing diffoscope
+[2024-06-02 16:57:54] INFO root fetch - processPackages [ml4co-kit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ml4co_kit-0.0.5.tar.gz tmp/ml4co_kit-0.0.6.tar.gz --markdown 20240602/m/ml4co-kit/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-06-02 16:57:54] INFO root fetch - processPackages [aws-sso-util]: Remove: archive file [/home/abi/fetcher/tmp/aws_sso_util-4.32.0.tar.gz]
+[2024-06-02 16:57:54] INFO root fetch - processPackages [aws-sso-util]: Remove: archive file [/home/abi/fetcher/tmp/aws_sso_util-4.33.0.tar.gz]
+[2024-06-02 16:57:54] INFO root fetch - main [MainThread]: End processing [aws-sso-util]: success
+[2024-06-02 16:57:55] INFO root fetch - processPackages [symclosestwannier]: Remove: archive file [/home/abi/fetcher/tmp/symclosestwannier-1.1.9.tar.gz]
+[2024-06-02 16:57:55] INFO root fetch - processPackages [symclosestwannier]: Remove: archive file [/home/abi/fetcher/tmp/symclosestwannier-1.2.1.tar.gz]
+[2024-06-02 16:57:55] INFO root fetch - main [MainThread]: End processing [symclosestwannier]: success
+[2024-06-02 16:57:56] INFO root fetch - processPackages [argrelay]: Remove: archive file [/home/abi/fetcher/tmp/argrelay-0.7.1.dev9.tar.gz]
+[2024-06-02 16:57:56] INFO root fetch - processPackages [argrelay]: Remove: archive file [/home/abi/fetcher/tmp/argrelay-0.7.2.dev0.tar.gz]
+[2024-06-02 16:57:56] INFO root fetch - main [MainThread]: End processing [argrelay]: success
+[2024-06-02 16:57:57] INFO root fetch - processPackages [ml4co-kit]: Remove: archive file [/home/abi/fetcher/tmp/ml4co_kit-0.0.5.tar.gz]
+[2024-06-02 16:57:57] INFO root fetch - processPackages [ml4co-kit]: Remove: archive file [/home/abi/fetcher/tmp/ml4co_kit-0.0.6.tar.gz]
+[2024-06-02 16:57:57] INFO root fetch - main [MainThread]: End processing [ml4co-kit]: success
+[2024-06-02 16:57:57] INFO root fetch - main [MainThread]: Store serial: [23489832]
