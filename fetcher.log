@@ -5172,3 +5172,24 @@
 [2024-06-02 08:54:19] INFO root fetch - processPackages [SupervisedClustering]: Remove: archive file [/home/abi/fetcher/tmp/supervisedclustering-0.0.2.tar.gz]
 [2024-06-02 08:54:19] INFO root fetch - main [MainThread]: End processing [SupervisedClustering]: success
 [2024-06-02 08:54:19] INFO root fetch - main [MainThread]: Store serial: [23486817]
+[2024-06-02 08:56:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23486817]
+[2024-06-02 08:56:27] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-02 08:56:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dash-spread-grid
+[2024-06-02 08:56:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: streamlit-nightly
+[2024-06-02 08:56:27] INFO root fetch - processPackages [dash-spread-grid]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-06-02 08:56:27] INFO root fetch - processPackages [streamlit-nightly]: New version: [1.35.1.dev20240531] Old Version: [1.35.1.dev20240530]
+[2024-06-02 08:56:27] INFO root fetch - processPackages [dash-spread-grid]: Downloading https://files.pythonhosted.org/packages/76/17/3188aa3d693ffb9db5714126c6b6f637625ead5a6330e20d292b7f09846e/dash_spread_grid-0.1.7.tar.gz
+[2024-06-02 08:56:27] INFO root fetch - processPackages [streamlit-nightly]: Downloading https://files.pythonhosted.org/packages/9b/f5/df9c9d9aee87478a548bb6f2af1b3af769d087f71961a65b0f1dddf80289/streamlit_nightly-1.35.1.dev20240530.tar.gz
+[2024-06-02 08:56:27] INFO root fetch - processPackages [dash-spread-grid]: Downloading https://files.pythonhosted.org/packages/eb/14/1f937b8dc225291f302bb282113a51af24c1555c1ff9dc47c433c59a8d0f/dash_spread_grid-0.1.8.tar.gz
+[2024-06-02 08:56:27] INFO root fetch - processPackages [dash-spread-grid]: executing diffoscope
+[2024-06-02 08:56:27] INFO root fetch - processPackages [dash-spread-grid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dash_spread_grid-0.1.7.tar.gz tmp/dash_spread_grid-0.1.8.tar.gz --markdown 20240602/d/dash-spread-grid/0.1.7-0.1.8/README.md --exclude *.pyd
+[2024-06-02 08:56:27] INFO root fetch - processPackages [streamlit-nightly]: Downloading https://files.pythonhosted.org/packages/81/ac/65b5dad411806c65cebaee3b65d60b0231c91b98016437b0f49dd21dc328/streamlit_nightly-1.35.1.dev20240531.tar.gz
+[2024-06-02 08:56:28] INFO root fetch - processPackages [streamlit-nightly]: executing diffoscope
+[2024-06-02 08:56:28] INFO root fetch - processPackages [streamlit-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streamlit_nightly-1.35.1.dev20240530.tar.gz tmp/streamlit_nightly-1.35.1.dev20240531.tar.gz --markdown 20240602/s/streamlit-nightly/1.35.1.dev20240530-1.35.1.dev20240531/README.md --exclude *.pyd
+[2024-06-02 08:56:29] INFO root fetch - processPackages [dash-spread-grid]: Remove: archive file [/home/abi/fetcher/tmp/dash_spread_grid-0.1.7.tar.gz]
+[2024-06-02 08:56:29] INFO root fetch - processPackages [dash-spread-grid]: Remove: archive file [/home/abi/fetcher/tmp/dash_spread_grid-0.1.8.tar.gz]
+[2024-06-02 08:56:29] INFO root fetch - main [MainThread]: End processing [dash-spread-grid]: success
+[2024-06-02 08:57:00] INFO root fetch - processPackages [streamlit-nightly]: Remove: archive file [/home/abi/fetcher/tmp/streamlit_nightly-1.35.1.dev20240530.tar.gz]
+[2024-06-02 08:57:00] INFO root fetch - processPackages [streamlit-nightly]: Remove: archive file [/home/abi/fetcher/tmp/streamlit_nightly-1.35.1.dev20240531.tar.gz]
+[2024-06-02 08:57:00] INFO root fetch - main [MainThread]: End processing [streamlit-nightly]: success
+[2024-06-02 08:57:00] INFO root fetch - main [MainThread]: Store serial: [23486823]
