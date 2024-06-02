@@ -20991,3 +20991,36 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 23:32:09] INFO root fetch - processPackages [reorder-python-imports]: Remove: archive file [/home/abi/fetcher/tmp/reorder_python_imports-3.9.0.tar.gz]
 [2024-06-02 23:32:09] INFO root fetch - main [MainThread]: End processing [reorder-python-imports]: success
 [2024-06-02 23:32:09] INFO root fetch - main [MainThread]: Store serial: [23493962]
+[2024-06-02 23:34:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23493962]
+[2024-06-02 23:34:17] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-02 23:34:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dcnum
+[2024-06-02 23:34:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: protoc-polyglot
+[2024-06-02 23:34:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: deshi-hello-world
+[2024-06-02 23:34:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: eurepoc
+[2024-06-02 23:34:17] WARNING root fetch - processPackages [deshi-hello-world]: Skipping, unable to determine old version
+[2024-06-02 23:34:17] INFO root fetch - main [MainThread]: End processing [deshi-hello-world] error
+[2024-06-02 23:34:17] INFO root fetch - processPackages [dcnum]: New version: [0.21.2] Old Version: [0.21.1]
+[2024-06-02 23:34:17] INFO root fetch - processPackages [protoc-polyglot]: New version: [0.0.1.post9] Old Version: [0.0.1.post8]
+[2024-06-02 23:34:18] INFO root fetch - processPackages [dcnum]: Downloading https://files.pythonhosted.org/packages/0e/ac/825d11589e1e45ae18004f801589f5ee2bba511d63c392db1dfefc71f73c/dcnum-0.21.1.tar.gz
+[2024-06-02 23:34:18] INFO root fetch - processPackages [eurepoc]: New version: [0.1.9] Old Version: [0.1.5]
+[2024-06-02 23:34:18] INFO root fetch - processPackages [protoc-polyglot]: Downloading https://files.pythonhosted.org/packages/e9/7b/373a68a962cdfb85f4bd76f6f4ea13ad3f2cfaca73bf0a9f70d0e7d34380/protoc_polyglot-0.0.1.post8.tar.gz
+[2024-06-02 23:34:18] INFO root fetch - processPackages [protoc-polyglot]: Downloading https://files.pythonhosted.org/packages/01/80/bdadb218d1c3271c3a258316c3d5991f2676b54e6f358ac689f9495990f5/protoc_polyglot-0.0.1.post9.tar.gz
+[2024-06-02 23:34:18] INFO root fetch - processPackages [eurepoc]: Downloading https://files.pythonhosted.org/packages/cc/18/5e4e0a7976833783cb169501afac813115ff87c0f2b960bd9ff5c464b0d4/eurepoc-0.1.5.tar.gz
+[2024-06-02 23:34:18] INFO root fetch - processPackages [protoc-polyglot]: executing diffoscope
+[2024-06-02 23:34:18] INFO root fetch - processPackages [protoc-polyglot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/protoc_polyglot-0.0.1.post8.tar.gz tmp/protoc_polyglot-0.0.1.post9.tar.gz --markdown 20240602/p/protoc-polyglot/0.0.1.post8-0.0.1.post9/README.md --exclude *.pyd
+[2024-06-02 23:34:18] INFO root fetch - processPackages [dcnum]: Downloading https://files.pythonhosted.org/packages/ea/4d/2c23831243f63a2b10fea912de15b1a2c59a3831531fbe0df7d8a55f4196/dcnum-0.21.2.tar.gz
+[2024-06-02 23:34:18] INFO root fetch - processPackages [eurepoc]: Downloading https://files.pythonhosted.org/packages/85/8e/62d3a1112ac20b015a1e8136feed872477022b66dff6078ceeb2239df75b/eurepoc-0.1.9.tar.gz
+[2024-06-02 23:34:18] INFO root fetch - processPackages [dcnum]: executing diffoscope
+[2024-06-02 23:34:18] INFO root fetch - processPackages [dcnum]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dcnum-0.21.1.tar.gz tmp/dcnum-0.21.2.tar.gz --markdown 20240602/d/dcnum/0.21.1-0.21.2/README.md --exclude *.pyd
+[2024-06-02 23:34:18] INFO root fetch - processPackages [eurepoc]: executing diffoscope
+[2024-06-02 23:34:18] INFO root fetch - processPackages [eurepoc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eurepoc-0.1.5.tar.gz tmp/eurepoc-0.1.9.tar.gz --markdown 20240602/e/eurepoc/0.1.5-0.1.9/README.md --exclude *.pyd
+[2024-06-02 23:34:18] INFO root fetch - processPackages [protoc-polyglot]: Remove: archive file [/home/abi/fetcher/tmp/protoc_polyglot-0.0.1.post8.tar.gz]
+[2024-06-02 23:34:18] INFO root fetch - processPackages [protoc-polyglot]: Remove: archive file [/home/abi/fetcher/tmp/protoc_polyglot-0.0.1.post9.tar.gz]
+[2024-06-02 23:34:18] INFO root fetch - main [MainThread]: End processing [protoc-polyglot]: success
+[2024-06-02 23:34:19] INFO root fetch - processPackages [dcnum]: Remove: archive file [/home/abi/fetcher/tmp/dcnum-0.21.1.tar.gz]
+[2024-06-02 23:34:19] INFO root fetch - processPackages [dcnum]: Remove: archive file [/home/abi/fetcher/tmp/dcnum-0.21.2.tar.gz]
+[2024-06-02 23:34:19] INFO root fetch - main [MainThread]: End processing [dcnum]: success
+[2024-06-02 23:34:20] INFO root fetch - processPackages [eurepoc]: Remove: archive file [/home/abi/fetcher/tmp/eurepoc-0.1.5.tar.gz]
+[2024-06-02 23:34:20] INFO root fetch - processPackages [eurepoc]: Remove: archive file [/home/abi/fetcher/tmp/eurepoc-0.1.9.tar.gz]
+[2024-06-02 23:34:20] INFO root fetch - main [MainThread]: End processing [eurepoc]: success
+[2024-06-02 23:34:20] INFO root fetch - main [MainThread]: Store serial: [23493974]
