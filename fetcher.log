@@ -4602,3 +4602,12 @@
 [2024-06-02 07:47:14] INFO root fetch - processPackages [drama-agent]: Remove: archive file [/home/abi/fetcher/tmp/drama_agent-0.1.4-py3-none-any.whl.zip]
 [2024-06-02 07:47:14] INFO root fetch - main [MainThread]: End processing [drama-agent]: success
 [2024-06-02 07:47:14] INFO root fetch - main [MainThread]: Store serial: [23486523]
+[2024-06-02 07:49:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23486523]
+[2024-06-02 07:49:23] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-02 07:49:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: checkptr
+[2024-06-02 07:49:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: procfuse
+[2024-06-02 07:49:23] WARNING root fetch - processPackages [procfuse]: Skipping, unable to determine old version
+[2024-06-02 07:49:23] INFO root fetch - main [MainThread]: End processing [procfuse] error
+[2024-06-02 07:49:23] WARNING root fetch - processPackages [checkptr]: Skipping, unable to determine old version
+[2024-06-02 07:49:23] INFO root fetch - main [MainThread]: End processing [checkptr] error
+[2024-06-02 07:49:23] INFO root fetch - main [MainThread]: Store serial: [23486541]
