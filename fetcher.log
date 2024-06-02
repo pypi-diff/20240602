@@ -6357,3 +6357,15 @@
 [2024-06-02 10:49:13] INFO root fetch - processPackages [fast-mime]: Remove: archive file [/home/abi/fetcher/tmp/fast_mime-0.1.1.tar.gz]
 [2024-06-02 10:49:13] INFO root fetch - main [MainThread]: End processing [fast-mime]: success
 [2024-06-02 10:49:13] INFO root fetch - main [MainThread]: Store serial: [23487488]
+[2024-06-02 10:51:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23487488]
+[2024-06-02 10:51:21] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-02 10:51:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ReverseBox
+[2024-06-02 10:51:21] INFO root fetch - processPackages [ReverseBox]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-06-02 10:51:21] INFO root fetch - processPackages [ReverseBox]: Downloading https://files.pythonhosted.org/packages/4a/58/7a7b782237cfeaa6f4930edfd83b87995cd40b65c79be087c32798140949/ReverseBox-0.9.8.tar.gz
+[2024-06-02 10:51:21] INFO root fetch - processPackages [ReverseBox]: Downloading https://files.pythonhosted.org/packages/d7/8f/aa29e161586daf66c5f6fd603cf46241f860d6b15409053887e60b6bf890/ReverseBox-0.9.9.tar.gz
+[2024-06-02 10:51:22] INFO root fetch - processPackages [ReverseBox]: executing diffoscope
+[2024-06-02 10:51:22] INFO root fetch - processPackages [ReverseBox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ReverseBox-0.9.8.tar.gz tmp/ReverseBox-0.9.9.tar.gz --markdown 20240602/R/ReverseBox/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-06-02 10:51:22] INFO root fetch - processPackages [ReverseBox]: Remove: archive file [/home/abi/fetcher/tmp/ReverseBox-0.9.8.tar.gz]
+[2024-06-02 10:51:22] INFO root fetch - processPackages [ReverseBox]: Remove: archive file [/home/abi/fetcher/tmp/ReverseBox-0.9.9.tar.gz]
+[2024-06-02 10:51:22] INFO root fetch - main [MainThread]: End processing [ReverseBox]: success
+[2024-06-02 10:51:22] INFO root fetch - main [MainThread]: Store serial: [23487490]
