@@ -3173,3 +3173,22 @@
 [2024-06-02 04:31:01] INFO root fetch - processPackages [naif-eop-high-prec]: Remove: archive file [/home/abi/fetcher/tmp/naif_eop_high_prec-2024.6.1.tar.gz]
 [2024-06-02 04:31:01] INFO root fetch - main [MainThread]: End processing [naif-eop-high-prec]: success
 [2024-06-02 04:31:01] INFO root fetch - main [MainThread]: Store serial: [23485720]
+[2024-06-02 04:33:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23485720]
+[2024-06-02 04:33:17] INFO root fetch - main [MainThread]: No changed packages found
+[2024-06-02 04:35:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23485720]
+[2024-06-02 04:35:22] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-02 04:35:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: shadowsocks-manager
+[2024-06-02 04:35:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: airbyte-source-gocardless
+[2024-06-02 04:35:22] INFO root fetch - processPackages [airbyte-source-gocardless]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-06-02 04:35:22] INFO root fetch - processPackages [shadowsocks-manager]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-06-02 04:35:22] INFO root fetch - processPackages [airbyte-source-gocardless]: Downloading https://files.pythonhosted.org/packages/6e/3d/eb59ff38e069bd112cfba64175e494a1c48a210f5ac7478248b7b3bcc656/airbyte_source_gocardless-0.1.1.tar.gz
+[2024-06-02 04:35:22] INFO root fetch - processPackages [shadowsocks-manager]: Downloading https://files.pythonhosted.org/packages/8e/5a/437ebba93b3e7c2bef6f4a2943901874ae3ed89ea8360836cd384d33442e/shadowsocks_manager-0.1.8.tar.gz
+[2024-06-02 04:35:23] ERROR root fetch - processPackages [airbyte-source-gocardless]: Unable to fetch info: No such project/version 'airbyte-source-gocardless' 0.1.2
+[2024-06-02 04:35:23] INFO root fetch - main [MainThread]: End processing [airbyte-source-gocardless] error
+[2024-06-02 04:35:23] INFO root fetch - processPackages [shadowsocks-manager]: Downloading https://files.pythonhosted.org/packages/5e/87/dd033ea2df308b68951d584575fe0c7d32b0220a8c1b87a0236235391075/shadowsocks_manager-0.1.9.tar.gz
+[2024-06-02 04:35:23] INFO root fetch - processPackages [shadowsocks-manager]: executing diffoscope
+[2024-06-02 04:35:23] INFO root fetch - processPackages [shadowsocks-manager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shadowsocks_manager-0.1.8.tar.gz tmp/shadowsocks_manager-0.1.9.tar.gz --markdown 20240602/s/shadowsocks-manager/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-06-02 04:35:24] INFO root fetch - processPackages [shadowsocks-manager]: Remove: archive file [/home/abi/fetcher/tmp/shadowsocks_manager-0.1.8.tar.gz]
+[2024-06-02 04:35:24] INFO root fetch - processPackages [shadowsocks-manager]: Remove: archive file [/home/abi/fetcher/tmp/shadowsocks_manager-0.1.9.tar.gz]
+[2024-06-02 04:35:24] INFO root fetch - main [MainThread]: End processing [shadowsocks-manager]: success
+[2024-06-02 04:35:24] INFO root fetch - main [MainThread]: Store serial: [23485726]
