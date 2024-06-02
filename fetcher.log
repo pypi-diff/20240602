@@ -7497,3 +7497,33 @@
 [2024-06-02 12:22:07] INFO root fetch - processPackages [gaiah-toolkit]: Remove: archive file [/home/abi/fetcher/tmp/gaiah_toolkit-0.6.1.tar.gz]
 [2024-06-02 12:22:07] INFO root fetch - main [MainThread]: End processing [gaiah-toolkit]: success
 [2024-06-02 12:22:07] INFO root fetch - main [MainThread]: Store serial: [23488086]
+[2024-06-02 12:24:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23488086]
+[2024-06-02 12:24:15] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-02 12:24:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: songfinder
+[2024-06-02 12:24:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyluba
+[2024-06-02 12:24:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: megaparse
+[2024-06-02 12:24:16] INFO root fetch - processPackages [pyluba]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-06-02 12:24:16] INFO root fetch - processPackages [megaparse]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-06-02 12:24:16] INFO root fetch - processPackages [songfinder]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-06-02 12:24:16] INFO root fetch - processPackages [pyluba]: Downloading https://files.pythonhosted.org/packages/52/99/e29e1d5ada99bf72806e253adb260c8ac9718c47fdfc9c9a26d99fcc0d52/pyluba-0.0.8.tar.gz
+[2024-06-02 12:24:16] INFO root fetch - processPackages [songfinder]: Downloading https://files.pythonhosted.org/packages/3a/28/39075557563a026fcaef353af7c9f070fc429b14a49059bc21694215c938/songfinder-1.0.0-py3-none-any.whl
+[2024-06-02 12:24:16] INFO root fetch - processPackages [megaparse]: Downloading https://files.pythonhosted.org/packages/5f/04/d486fc73a1d4e4b84ff2f171f5a892a8e9e47172374b44980078b381e6c7/megaparse-0.0.3.tar.gz
+[2024-06-02 12:24:16] INFO root fetch - processPackages [megaparse]: Downloading https://files.pythonhosted.org/packages/48/48/998a8e6b33c1f633374e3fe0b648294633e1209f805dd74f0089c0dfd44c/megaparse-0.0.4.tar.gz
+[2024-06-02 12:24:16] INFO root fetch - processPackages [pyluba]: Downloading https://files.pythonhosted.org/packages/84/ab/a79a516adda0073565ebbe893c1269969eb2e11db4ea3957e1d76e1ebf9e/pyluba-0.0.9.tar.gz
+[2024-06-02 12:24:16] INFO root fetch - processPackages [songfinder]: Downloading https://files.pythonhosted.org/packages/29/e1/81bb206be8336f23824e68e3aecc02f30b8baf216fb315d9640f4ee051cb/songfinder-1.0.1-py3-none-any.whl
+[2024-06-02 12:24:16] INFO root fetch - processPackages [megaparse]: executing diffoscope
+[2024-06-02 12:24:16] INFO root fetch - processPackages [megaparse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/megaparse-0.0.3.tar.gz tmp/megaparse-0.0.4.tar.gz --markdown 20240602/m/megaparse/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-06-02 12:24:16] INFO root fetch - processPackages [pyluba]: executing diffoscope
+[2024-06-02 12:24:16] INFO root fetch - processPackages [pyluba]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyluba-0.0.8.tar.gz tmp/pyluba-0.0.9.tar.gz --markdown 20240602/p/pyluba/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-06-02 12:24:16] INFO root fetch - processPackages [songfinder]: executing diffoscope
+[2024-06-02 12:24:16] INFO root fetch - processPackages [songfinder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/songfinder-1.0.0-py3-none-any.whl.zip tmp/songfinder-1.0.1-py3-none-any.whl.zip --markdown 20240602/s/songfinder/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-06-02 12:24:17] INFO root fetch - processPackages [megaparse]: Remove: archive file [/home/abi/fetcher/tmp/megaparse-0.0.3.tar.gz]
+[2024-06-02 12:24:17] INFO root fetch - processPackages [megaparse]: Remove: archive file [/home/abi/fetcher/tmp/megaparse-0.0.4.tar.gz]
+[2024-06-02 12:24:17] INFO root fetch - main [MainThread]: End processing [megaparse]: success
+[2024-06-02 12:24:17] INFO root fetch - processPackages [pyluba]: Remove: archive file [/home/abi/fetcher/tmp/pyluba-0.0.8.tar.gz]
+[2024-06-02 12:24:17] INFO root fetch - processPackages [pyluba]: Remove: archive file [/home/abi/fetcher/tmp/pyluba-0.0.9.tar.gz]
+[2024-06-02 12:24:17] INFO root fetch - main [MainThread]: End processing [pyluba]: success
+[2024-06-02 12:24:17] INFO root fetch - processPackages [songfinder]: Remove: archive file [/home/abi/fetcher/tmp/songfinder-1.0.0-py3-none-any.whl.zip]
+[2024-06-02 12:24:17] INFO root fetch - processPackages [songfinder]: Remove: archive file [/home/abi/fetcher/tmp/songfinder-1.0.1-py3-none-any.whl.zip]
+[2024-06-02 12:24:17] INFO root fetch - main [MainThread]: End processing [songfinder]: success
+[2024-06-02 12:24:17] INFO root fetch - main [MainThread]: Store serial: [23488094]
