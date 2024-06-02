@@ -17215,3 +17215,24 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 21:38:04] INFO root fetch - processPackages [syndot]: Remove: archive file [/home/abi/fetcher/tmp/syndot-0.2.0.tar.gz]
 [2024-06-02 21:38:04] INFO root fetch - main [MainThread]: End processing [syndot]: success
 [2024-06-02 21:38:04] INFO root fetch - main [MainThread]: Store serial: [23492474]
+[2024-06-02 21:40:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23492474]
+[2024-06-02 21:40:12] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-02 21:40:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: simpleworkspace
+[2024-06-02 21:40:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: vlite2
+[2024-06-02 21:40:12] INFO root fetch - processPackages [simpleworkspace]: New version: [1.2.216] Old Version: [1.2.215]
+[2024-06-02 21:40:12] INFO root fetch - processPackages [simpleworkspace]: Downloading https://files.pythonhosted.org/packages/15/55/b0c545d6340cf80d46953be40bed2f3c3f3c5da9be318a53f774c5ac6f87/simpleworkspace-1.2.215.tar.gz
+[2024-06-02 21:40:12] INFO root fetch - processPackages [vlite2]: New version: [3.5.0] Old Version: [3.4.0]
+[2024-06-02 21:40:13] INFO root fetch - processPackages [vlite2]: Downloading https://files.pythonhosted.org/packages/94/2d/783e2aee98b615c5bd0eebb30f433bf133a8cd837009e38920df9e704d5b/vlite2-3.4.0.tar.gz
+[2024-06-02 21:40:13] INFO root fetch - processPackages [simpleworkspace]: Downloading https://files.pythonhosted.org/packages/41/bb/8bb01a9071de93c42a8817ac8e042848aad8b9c84a6b969c50660c34d95e/simpleworkspace-1.2.216.tar.gz
+[2024-06-02 21:40:13] INFO root fetch - processPackages [simpleworkspace]: executing diffoscope
+[2024-06-02 21:40:13] INFO root fetch - processPackages [simpleworkspace]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simpleworkspace-1.2.215.tar.gz tmp/simpleworkspace-1.2.216.tar.gz --markdown 20240602/s/simpleworkspace/1.2.215-1.2.216/README.md --exclude *.pyd
+[2024-06-02 21:40:13] INFO root fetch - processPackages [vlite2]: Downloading https://files.pythonhosted.org/packages/48/b8/9cce203446114a095e69d31fb0780c25b035e231af95b49e365ed4636523/vlite2-3.5.0.tar.gz
+[2024-06-02 21:40:13] INFO root fetch - processPackages [vlite2]: executing diffoscope
+[2024-06-02 21:40:13] INFO root fetch - processPackages [vlite2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vlite2-3.4.0.tar.gz tmp/vlite2-3.5.0.tar.gz --markdown 20240602/v/vlite2/3.4.0-3.5.0/README.md --exclude *.pyd
+[2024-06-02 21:40:14] INFO root fetch - processPackages [simpleworkspace]: Remove: archive file [/home/abi/fetcher/tmp/simpleworkspace-1.2.215.tar.gz]
+[2024-06-02 21:40:14] INFO root fetch - processPackages [simpleworkspace]: Remove: archive file [/home/abi/fetcher/tmp/simpleworkspace-1.2.216.tar.gz]
+[2024-06-02 21:40:14] INFO root fetch - main [MainThread]: End processing [simpleworkspace]: success
+[2024-06-02 21:40:14] INFO root fetch - processPackages [vlite2]: Remove: archive file [/home/abi/fetcher/tmp/vlite2-3.4.0.tar.gz]
+[2024-06-02 21:40:14] INFO root fetch - processPackages [vlite2]: Remove: archive file [/home/abi/fetcher/tmp/vlite2-3.5.0.tar.gz]
+[2024-06-02 21:40:14] INFO root fetch - main [MainThread]: End processing [vlite2]: success
+[2024-06-02 21:40:14] INFO root fetch - main [MainThread]: Store serial: [23492484]
