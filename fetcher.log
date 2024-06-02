@@ -13601,3 +13601,27 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 18:27:16] INFO root fetch - processPackages [runningz]: Remove: archive file [/home/abi/fetcher/tmp/runningz-0.16.5-py39-none-any.whl.zip]
 [2024-06-02 18:27:16] INFO root fetch - main [MainThread]: End processing [runningz]: success
 [2024-06-02 18:27:16] INFO root fetch - main [MainThread]: Store serial: [23490731]
+[2024-06-02 18:29:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23490731]
+[2024-06-02 18:29:24] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-02 18:29:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: netband
+[2024-06-02 18:29:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pwright
+[2024-06-02 18:29:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: manga-scrape
+[2024-06-02 18:29:24] WARNING root fetch - processPackages [netband]: Skipping, unable to determine old version
+[2024-06-02 18:29:24] INFO root fetch - main [MainThread]: End processing [netband] error
+[2024-06-02 18:29:24] INFO root fetch - processPackages [manga-scrape]: New version: [4.9.0] Old Version: [4.8.0]
+[2024-06-02 18:29:24] INFO root fetch - processPackages [pwright]: New version: [9.5.0] Old Version: [9.4.0]
+[2024-06-02 18:29:24] INFO root fetch - processPackages [pwright]: Downloading https://files.pythonhosted.org/packages/d0/75/a5bfddf3c8956eef31cbb6849c6f9e0865b1498d393b9d0f495f21913ebe/pwright-9.4.0.tar.gz
+[2024-06-02 18:29:24] INFO root fetch - processPackages [manga-scrape]: Downloading https://files.pythonhosted.org/packages/bd/f8/0b1c4e019f16b186ed6cc5e5d90e416c4c610bdffb21fae5a0c787b18513/manga_scrape-4.8.0.tar.gz
+[2024-06-02 18:29:24] INFO root fetch - processPackages [pwright]: Downloading https://files.pythonhosted.org/packages/41/07/e61042e977c29b99a880bccf7a2dc6c3d49c5061918a3dc1e57c3e4939fd/pwright-9.5.0.tar.gz
+[2024-06-02 18:29:25] INFO root fetch - processPackages [manga-scrape]: Downloading https://files.pythonhosted.org/packages/2b/c5/ce06b355f4b6a9087524a466a76eb5a124e0fe06d2a3d0326e3693d1f160/manga_scrape-4.9.0.tar.gz
+[2024-06-02 18:29:25] INFO root fetch - processPackages [pwright]: executing diffoscope
+[2024-06-02 18:29:25] INFO root fetch - processPackages [pwright]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pwright-9.4.0.tar.gz tmp/pwright-9.5.0.tar.gz --markdown 20240602/p/pwright/9.4.0-9.5.0/README.md --exclude *.pyd
+[2024-06-02 18:29:25] INFO root fetch - processPackages [manga-scrape]: executing diffoscope
+[2024-06-02 18:29:25] INFO root fetch - processPackages [manga-scrape]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/manga_scrape-4.8.0.tar.gz tmp/manga_scrape-4.9.0.tar.gz --markdown 20240602/m/manga-scrape/4.8.0-4.9.0/README.md --exclude *.pyd
+[2024-06-02 18:29:25] INFO root fetch - processPackages [pwright]: Remove: archive file [/home/abi/fetcher/tmp/pwright-9.4.0.tar.gz]
+[2024-06-02 18:29:25] INFO root fetch - processPackages [pwright]: Remove: archive file [/home/abi/fetcher/tmp/pwright-9.5.0.tar.gz]
+[2024-06-02 18:29:25] INFO root fetch - main [MainThread]: End processing [pwright]: success
+[2024-06-02 18:29:25] INFO root fetch - processPackages [manga-scrape]: Remove: archive file [/home/abi/fetcher/tmp/manga_scrape-4.8.0.tar.gz]
+[2024-06-02 18:29:25] INFO root fetch - processPackages [manga-scrape]: Remove: archive file [/home/abi/fetcher/tmp/manga_scrape-4.9.0.tar.gz]
+[2024-06-02 18:29:25] INFO root fetch - main [MainThread]: End processing [manga-scrape]: success
+[2024-06-02 18:29:25] INFO root fetch - main [MainThread]: Store serial: [23490740]
