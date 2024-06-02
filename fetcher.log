@@ -8651,3 +8651,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-02 13:38:11] INFO root fetch - processPackages [term-piechart]: Remove: archive file [/home/abi/fetcher/tmp/term_piechart-0.1.3.tar.gz]
 [2024-06-02 13:38:11] INFO root fetch - main [MainThread]: End processing [term-piechart]: success
 [2024-06-02 13:38:11] INFO root fetch - main [MainThread]: Store serial: [23488481]
+[2024-06-02 13:40:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23488481]
+[2024-06-02 13:40:20] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-02 13:40:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rio-ui
+[2024-06-02 13:40:20] INFO root fetch - processPackages [rio-ui]: New version: [0.8.7] Old Version: [0.8.6]
+[2024-06-02 13:40:20] INFO root fetch - processPackages [rio-ui]: Downloading https://files.pythonhosted.org/packages/34/7d/7df245f9650c0c8bbc1041f6190badf80b598d16ba682f0229e33b2a22f0/rio_ui-0.8.6.tar.gz
+[2024-06-02 13:40:20] INFO root fetch - processPackages [rio-ui]: Downloading https://files.pythonhosted.org/packages/66/36/fe33ca0408a42b6f97df92f35d93fe2b01e4aa0bc716116740649a340bb5/rio_ui-0.8.7.tar.gz
+[2024-06-02 13:40:21] INFO root fetch - processPackages [rio-ui]: executing diffoscope
+[2024-06-02 13:40:21] INFO root fetch - processPackages [rio-ui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rio_ui-0.8.6.tar.gz tmp/rio_ui-0.8.7.tar.gz --markdown 20240602/r/rio-ui/0.8.6-0.8.7/README.md --exclude *.pyd
+[2024-06-02 13:40:23] INFO root fetch - processPackages [rio-ui]: Remove: archive file [/home/abi/fetcher/tmp/rio_ui-0.8.6.tar.gz]
+[2024-06-02 13:40:23] INFO root fetch - processPackages [rio-ui]: Remove: archive file [/home/abi/fetcher/tmp/rio_ui-0.8.7.tar.gz]
+[2024-06-02 13:40:23] INFO root fetch - main [MainThread]: End processing [rio-ui]: success
+[2024-06-02 13:40:23] INFO root fetch - main [MainThread]: Store serial: [23488484]
