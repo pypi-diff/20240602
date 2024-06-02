@@ -21073,3 +21073,33 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 23:36:31] INFO root fetch - processPackages [cosmic-crisp]: Remove: archive file [/home/abi/fetcher/tmp/cosmic_crisp-0.1.0.dev20240602213601.tar.gz]
 [2024-06-02 23:36:31] INFO root fetch - main [MainThread]: End processing [cosmic-crisp]: success
 [2024-06-02 23:36:31] INFO root fetch - main [MainThread]: Store serial: [23493994]
+[2024-06-02 23:38:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23493994]
+[2024-06-02 23:38:40] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-02 23:38:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ckanext-dcor-schemas
+[2024-06-02 23:38:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: muFFT
+[2024-06-02 23:38:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: protoc-polyglot
+[2024-06-02 23:38:40] INFO root fetch - processPackages [protoc-polyglot]: New version: [0.0.1.post9] Old Version: [0.0.1.post8]
+[2024-06-02 23:38:40] INFO root fetch - processPackages [protoc-polyglot]: Downloading https://files.pythonhosted.org/packages/e9/7b/373a68a962cdfb85f4bd76f6f4ea13ad3f2cfaca73bf0a9f70d0e7d34380/protoc_polyglot-0.0.1.post8.tar.gz
+[2024-06-02 23:38:40] INFO root fetch - processPackages [muFFT]: New version: [0.91.0] Old Version: [0.90.0]
+[2024-06-02 23:38:40] INFO root fetch - processPackages [ckanext-dcor-schemas]: New version: [0.9.5] Old Version: [0.9.4]
+[2024-06-02 23:38:40] INFO root fetch - processPackages [protoc-polyglot]: Downloading https://files.pythonhosted.org/packages/01/80/bdadb218d1c3271c3a258316c3d5991f2676b54e6f358ac689f9495990f5/protoc_polyglot-0.0.1.post9.tar.gz
+[2024-06-02 23:38:40] INFO root fetch - processPackages [muFFT]: Downloading https://files.pythonhosted.org/packages/47/49/6b0e7ff756bde2bf8d1cf9c27295a4e2599144aa351612a88549bbf7c381/mufft-0.90.0.tar.gz
+[2024-06-02 23:38:40] INFO root fetch - processPackages [ckanext-dcor-schemas]: Downloading https://files.pythonhosted.org/packages/31/7d/aa435646331bb819f2fa2389b3b38c6dc285d3676303ed2be13a9d316224/ckanext-dcor_schemas-0.9.4.tar.gz
+[2024-06-02 23:38:40] INFO root fetch - processPackages [protoc-polyglot]: executing diffoscope
+[2024-06-02 23:38:40] INFO root fetch - processPackages [protoc-polyglot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/protoc_polyglot-0.0.1.post8.tar.gz tmp/protoc_polyglot-0.0.1.post9.tar.gz --markdown 20240602/p/protoc-polyglot/0.0.1.post8-0.0.1.post9/README.md --exclude *.pyd
+[2024-06-02 23:38:40] INFO root fetch - processPackages [muFFT]: Downloading https://files.pythonhosted.org/packages/3d/fb/3071849250e9bcb45b1d4b62059a8b76168be5c35f7f8197204c5244dcb5/mufft-0.91.0.tar.gz
+[2024-06-02 23:38:40] INFO root fetch - processPackages [ckanext-dcor-schemas]: Downloading https://files.pythonhosted.org/packages/4b/ab/9e7314cf0a7fe2d2ead4b26056a12757a6238c55a51fa7d77cf0f6320596/ckanext-dcor_schemas-0.9.5.tar.gz
+[2024-06-02 23:38:41] INFO root fetch - processPackages [muFFT]: executing diffoscope
+[2024-06-02 23:38:41] INFO root fetch - processPackages [muFFT]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mufft-0.90.0.tar.gz tmp/mufft-0.91.0.tar.gz --markdown 20240602/m/muFFT/0.90.0-0.91.0/README.md --exclude *.pyd
+[2024-06-02 23:38:41] INFO root fetch - processPackages [ckanext-dcor-schemas]: executing diffoscope
+[2024-06-02 23:38:41] INFO root fetch - processPackages [ckanext-dcor-schemas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ckanext-dcor_schemas-0.9.4.tar.gz tmp/ckanext-dcor_schemas-0.9.5.tar.gz --markdown 20240602/c/ckanext-dcor-schemas/0.9.4-0.9.5/README.md --exclude *.pyd
+[2024-06-02 23:38:41] INFO root fetch - processPackages [protoc-polyglot]: Remove: archive file [/home/abi/fetcher/tmp/protoc_polyglot-0.0.1.post8.tar.gz]
+[2024-06-02 23:38:41] INFO root fetch - processPackages [protoc-polyglot]: Remove: archive file [/home/abi/fetcher/tmp/protoc_polyglot-0.0.1.post9.tar.gz]
+[2024-06-02 23:38:41] INFO root fetch - main [MainThread]: End processing [protoc-polyglot]: success
+[2024-06-02 23:38:41] INFO root fetch - processPackages [ckanext-dcor-schemas]: Remove: archive file [/home/abi/fetcher/tmp/ckanext-dcor_schemas-0.9.4.tar.gz]
+[2024-06-02 23:38:41] INFO root fetch - processPackages [ckanext-dcor-schemas]: Remove: archive file [/home/abi/fetcher/tmp/ckanext-dcor_schemas-0.9.5.tar.gz]
+[2024-06-02 23:38:41] INFO root fetch - main [MainThread]: End processing [ckanext-dcor-schemas]: success
+[2024-06-02 23:38:41] INFO root fetch - processPackages [muFFT]: Remove: archive file [/home/abi/fetcher/tmp/mufft-0.90.0.tar.gz]
+[2024-06-02 23:38:41] INFO root fetch - processPackages [muFFT]: Remove: archive file [/home/abi/fetcher/tmp/mufft-0.91.0.tar.gz]
+[2024-06-02 23:38:41] INFO root fetch - main [MainThread]: End processing [muFFT]: success
+[2024-06-02 23:38:41] INFO root fetch - main [MainThread]: Store serial: [23494002]
