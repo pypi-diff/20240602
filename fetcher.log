@@ -14068,3 +14068,33 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 18:49:03] INFO root fetch - processPackages [ez-etl]: Remove: archive file [/home/abi/fetcher/tmp/ez-etl-1.1.3.tar.gz]
 [2024-06-02 18:49:03] INFO root fetch - main [MainThread]: End processing [ez-etl]: success
 [2024-06-02 18:49:03] INFO root fetch - main [MainThread]: Store serial: [23490887]
+[2024-06-02 18:51:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23490887]
+[2024-06-02 18:51:12] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-02 18:51:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PyMieSim
+[2024-06-02 18:51:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: trytond-account-stock-anglo-saxon
+[2024-06-02 18:51:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: to-literal
+[2024-06-02 18:51:12] INFO root fetch - processPackages [to-literal]: New version: [1.1.1] Old Version: [1]
+[2024-06-02 18:51:12] INFO root fetch - processPackages [to-literal]: Downloading https://files.pythonhosted.org/packages/06/ed/3874cb7bd2033313f283ef362dfae9082aa7b220f513eb0319ba61b6258f/to_literal-1-py3-none-any.whl
+[2024-06-02 18:51:12] INFO root fetch - processPackages [trytond-account-stock-anglo-saxon]: New version: [7.2.1] Old Version: [7.2.0]
+[2024-06-02 18:51:12] INFO root fetch - processPackages [PyMieSim]: New version: [1.9.5] Old Version: [1.9.4]
+[2024-06-02 18:51:12] INFO root fetch - processPackages [to-literal]: Downloading https://files.pythonhosted.org/packages/41/d9/0bbaa9e315605d4dcac4cb98032e3f4949fd1e7de4bcca9f2e6a4d2e9dcb/to_literal-1.1.1.tar.gz
+[2024-06-02 18:51:12] INFO root fetch - processPackages [trytond-account-stock-anglo-saxon]: Downloading https://files.pythonhosted.org/packages/a8/10/c3e4122e4ad889724fa88b572a50051d1a9b55387a18328d2c24d7ec98aa/trytond_account_stock_anglo_saxon-7.2.0.tar.gz
+[2024-06-02 18:51:12] INFO root fetch - processPackages [PyMieSim]: Downloading https://files.pythonhosted.org/packages/5d/15/4e3018c5dd3cab8df6a5669ef3536e69d667064f46c9acfff42ebce86b16/PyMieSim-1.9.4-cp312-cp312-win_amd64.whl
+[2024-06-02 18:51:13] INFO root fetch - processPackages [to-literal]: executing diffoscope
+[2024-06-02 18:51:13] INFO root fetch - processPackages [to-literal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/to_literal-1-py3-none-any.whl.zip tmp/to_literal-1.1.1.tar.gz --markdown 20240602/t/to-literal/1-1.1.1/README.md --exclude *.pyd
+[2024-06-02 18:51:13] INFO root fetch - processPackages [trytond-account-stock-anglo-saxon]: Downloading https://files.pythonhosted.org/packages/7c/55/9c722fa650f2dc722e60952eef0dc9fde52e8bf6cad0b8e17cb712faf8b9/trytond_account_stock_anglo_saxon-7.2.1.tar.gz
+[2024-06-02 18:51:13] INFO root fetch - processPackages [trytond-account-stock-anglo-saxon]: executing diffoscope
+[2024-06-02 18:51:13] INFO root fetch - processPackages [trytond-account-stock-anglo-saxon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trytond_account_stock_anglo_saxon-7.2.0.tar.gz tmp/trytond_account_stock_anglo_saxon-7.2.1.tar.gz --markdown 20240602/t/trytond-account-stock-anglo-saxon/7.2.0-7.2.1/README.md --exclude *.pyd
+[2024-06-02 18:51:13] INFO root fetch - processPackages [to-literal]: Remove: archive file [/home/abi/fetcher/tmp/to_literal-1-py3-none-any.whl.zip]
+[2024-06-02 18:51:13] INFO root fetch - processPackages [to-literal]: Remove: archive file [/home/abi/fetcher/tmp/to_literal-1.1.1.tar.gz]
+[2024-06-02 18:51:13] INFO root fetch - main [MainThread]: End processing [to-literal]: success
+[2024-06-02 18:51:13] INFO root fetch - processPackages [PyMieSim]: Downloading https://files.pythonhosted.org/packages/40/65/008907764880f039fc9a5baaefd38ae46344df0b1749b9a42bf9f8950d6b/PyMieSim-1.9.5-cp312-cp312-win_amd64.whl
+[2024-06-02 18:51:13] INFO root fetch - processPackages [trytond-account-stock-anglo-saxon]: Remove: archive file [/home/abi/fetcher/tmp/trytond_account_stock_anglo_saxon-7.2.0.tar.gz]
+[2024-06-02 18:51:13] INFO root fetch - processPackages [trytond-account-stock-anglo-saxon]: Remove: archive file [/home/abi/fetcher/tmp/trytond_account_stock_anglo_saxon-7.2.1.tar.gz]
+[2024-06-02 18:51:13] INFO root fetch - main [MainThread]: End processing [trytond-account-stock-anglo-saxon]: success
+[2024-06-02 18:51:14] INFO root fetch - processPackages [PyMieSim]: executing diffoscope
+[2024-06-02 18:51:14] INFO root fetch - processPackages [PyMieSim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyMieSim-1.9.4-cp312-cp312-win_amd64.whl.zip tmp/PyMieSim-1.9.5-cp312-cp312-win_amd64.whl.zip --markdown 20240602/P/PyMieSim/1.9.4-1.9.5/README.md --exclude *.pyd
+[2024-06-02 18:51:15] INFO root fetch - processPackages [PyMieSim]: Remove: archive file [/home/abi/fetcher/tmp/PyMieSim-1.9.4-cp312-cp312-win_amd64.whl.zip]
+[2024-06-02 18:51:15] INFO root fetch - processPackages [PyMieSim]: Remove: archive file [/home/abi/fetcher/tmp/PyMieSim-1.9.5-cp312-cp312-win_amd64.whl.zip]
+[2024-06-02 18:51:15] INFO root fetch - main [MainThread]: End processing [PyMieSim]: success
+[2024-06-02 18:51:15] INFO root fetch - main [MainThread]: Store serial: [23490909]
