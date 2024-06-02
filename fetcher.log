@@ -21291,3 +21291,36 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 23:53:55] INFO root fetch - main [MainThread]: End processing [lunary]: success
 [2024-06-02 23:53:55] INFO root fetch - main [MainThread]: End processing [lunary]: success
 [2024-06-02 23:53:55] INFO root fetch - main [MainThread]: Store serial: [23494088]
+[2024-06-02 23:55:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23494088]
+[2024-06-02 23:56:03] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-02 23:56:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: eidolon-ai-sdk
+[2024-06-02 23:56:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: notipi
+[2024-06-02 23:56:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: knuckles
+[2024-06-02 23:56:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mimllearning
+[2024-06-02 23:56:04] INFO root fetch - processPackages [eidolon-ai-sdk]: New version: [0.1.62] Old Version: [0.1.61]
+[2024-06-02 23:56:04] INFO root fetch - processPackages [knuckles]: New version: [0.2.0] Old Version: [0.1.0]
+[2024-06-02 23:56:04] INFO root fetch - processPackages [mimllearning]: New version: [1.0.0] Old Version: [0.5.9]
+[2024-06-02 23:56:04] INFO root fetch - processPackages [eidolon-ai-sdk]: Downloading https://files.pythonhosted.org/packages/a3/43/966d93c710f44a1cafefb8ca05bf499f43a05948183fa77c090f45ae5a05/eidolon_ai_sdk-0.1.61.tar.gz
+[2024-06-02 23:56:04] WARNING root fetch - processPackages [notipi]: Skipping, unable to determine old version
+[2024-06-02 23:56:04] INFO root fetch - main [MainThread]: End processing [notipi] error
+[2024-06-02 23:56:04] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/41/4c/aef517b03341ea8031423a65e9a40cfa58845de36d6cbca2d6c4a11eb61c/mimllearning-0.5.9.tar.gz
+[2024-06-02 23:56:04] INFO root fetch - processPackages [knuckles]: Downloading https://files.pythonhosted.org/packages/81/42/f78b97cf8af58ea8b3509d4007a2e00b7543af4d0375727dcb6d66582976/knuckles-0.1.0.tar.gz
+[2024-06-02 23:56:04] INFO root fetch - processPackages [eidolon-ai-sdk]: Downloading https://files.pythonhosted.org/packages/20/8c/55ec11e6d6a4154068fc2967db7ae4a52865db4e5fbe362a49a6be97891a/eidolon_ai_sdk-0.1.62.tar.gz
+[2024-06-02 23:56:04] INFO root fetch - processPackages [eidolon-ai-sdk]: executing diffoscope
+[2024-06-02 23:56:04] INFO root fetch - processPackages [eidolon-ai-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eidolon_ai_sdk-0.1.61.tar.gz tmp/eidolon_ai_sdk-0.1.62.tar.gz --markdown 20240602/e/eidolon-ai-sdk/0.1.61-0.1.62/README.md --exclude *.pyd
+[2024-06-02 23:56:04] INFO root fetch - processPackages [knuckles]: Downloading https://files.pythonhosted.org/packages/95/04/9d07eae42fd3ff27a468821f07704fe692730dcaac54494717f2908a2167/knuckles-0.2.0.tar.gz
+[2024-06-02 23:56:04] INFO root fetch - processPackages [knuckles]: executing diffoscope
+[2024-06-02 23:56:04] INFO root fetch - processPackages [knuckles]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/knuckles-0.1.0.tar.gz tmp/knuckles-0.2.0.tar.gz --markdown 20240602/k/knuckles/0.1.0-0.2.0/README.md --exclude *.pyd
+[2024-06-02 23:56:04] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/a4/9c/2c49bfd37dc0016c9ca088be78706ce2f9b173aebbaa1be2978f415be3d4/mimllearning-1.0.0.tar.gz
+[2024-06-02 23:56:05] INFO root fetch - processPackages [mimllearning]: executing diffoscope
+[2024-06-02 23:56:05] INFO root fetch - processPackages [mimllearning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mimllearning-0.5.9.tar.gz tmp/mimllearning-1.0.0.tar.gz --markdown 20240602/m/mimllearning/0.5.9-1.0.0/README.md --exclude *.pyd
+[2024-06-02 23:56:05] INFO root fetch - processPackages [eidolon-ai-sdk]: Remove: archive file [/home/abi/fetcher/tmp/eidolon_ai_sdk-0.1.61.tar.gz]
+[2024-06-02 23:56:05] INFO root fetch - processPackages [eidolon-ai-sdk]: Remove: archive file [/home/abi/fetcher/tmp/eidolon_ai_sdk-0.1.62.tar.gz]
+[2024-06-02 23:56:05] INFO root fetch - main [MainThread]: End processing [eidolon-ai-sdk]: success
+[2024-06-02 23:56:05] INFO root fetch - processPackages [knuckles]: Remove: archive file [/home/abi/fetcher/tmp/knuckles-0.1.0.tar.gz]
+[2024-06-02 23:56:05] INFO root fetch - processPackages [knuckles]: Remove: archive file [/home/abi/fetcher/tmp/knuckles-0.2.0.tar.gz]
+[2024-06-02 23:56:05] INFO root fetch - main [MainThread]: End processing [knuckles]: success
+[2024-06-02 23:56:07] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.5.9.tar.gz]
+[2024-06-02 23:56:07] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-1.0.0.tar.gz]
+[2024-06-02 23:56:07] INFO root fetch - main [MainThread]: End processing [mimllearning]: success
+[2024-06-02 23:56:07] INFO root fetch - main [MainThread]: Store serial: [23494102]
