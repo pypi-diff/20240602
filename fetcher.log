@@ -3134,3 +3134,42 @@
 [2024-06-02 04:28:47] INFO root fetch - processPackages [types-requests]: Remove: archive file [/home/abi/fetcher/tmp/types-requests-2.32.0.20240602.tar.gz]
 [2024-06-02 04:28:47] INFO root fetch - main [MainThread]: End processing [types-requests]: success
 [2024-06-02 04:28:47] INFO root fetch - main [MainThread]: Store serial: [23485708]
+[2024-06-02 04:30:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23485708]
+[2024-06-02 04:30:56] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-02 04:30:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: iam-actions
+[2024-06-02 04:30:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: naif-eop-high-prec
+[2024-06-02 04:30:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: whyhow
+[2024-06-02 04:30:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nnops
+[2024-06-02 04:30:56] INFO root fetch - processPackages [nnops]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-06-02 04:30:56] INFO root fetch - processPackages [naif-eop-high-prec]: New version: [2024.6.1] Old Version: [2024.5.31]
+[2024-06-02 04:30:56] INFO root fetch - processPackages [iam-actions]: New version: [1.2.20240601] Old Version: [1.2.20240531]
+[2024-06-02 04:30:56] INFO root fetch - processPackages [nnops]: Downloading https://files.pythonhosted.org/packages/d0/75/8b3f98f15eea839bb92a83c1471be18cba1cb8e750860290d634a38beb10/nnops-0.0.1.tar.gz
+[2024-06-02 04:30:56] INFO root fetch - processPackages [whyhow]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-06-02 04:30:56] INFO root fetch - processPackages [naif-eop-high-prec]: Downloading https://files.pythonhosted.org/packages/0b/d9/6bbc52827ee50b8d3222c80faabb462a6efa4d10e552a35bf224f5c00a18/naif_eop_high_prec-2024.5.31.tar.gz
+[2024-06-02 04:30:56] INFO root fetch - processPackages [iam-actions]: Downloading https://files.pythonhosted.org/packages/81/95/6b5b43c7c0a962cbf7ed16394883030fb811d6bd717777b0ec3f6fd1fbc4/iam_actions-1.2.20240531.tar.gz
+[2024-06-02 04:30:56] INFO root fetch - processPackages [whyhow]: Downloading https://files.pythonhosted.org/packages/60/68/f91b67e110a603c4a98c519edab04a8ca0d701a729c0a6e2730c5a113146/whyhow-0.0.6.tar.gz
+[2024-06-02 04:30:56] INFO root fetch - processPackages [nnops]: Downloading https://files.pythonhosted.org/packages/b6/dd/49ae9819b522d957f3eb847295f6da80b96d153225c051a494c7814a9680/nnops-0.0.2.tar.gz
+[2024-06-02 04:30:57] INFO root fetch - processPackages [iam-actions]: Downloading https://files.pythonhosted.org/packages/97/cb/0bde663844a2be14c547da10290ad51de1e8de6cfaf28a57b37eefeb122b/iam_actions-1.2.20240601.tar.gz
+[2024-06-02 04:30:57] INFO root fetch - processPackages [nnops]: executing diffoscope
+[2024-06-02 04:30:57] INFO root fetch - processPackages [nnops]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nnops-0.0.1.tar.gz tmp/nnops-0.0.2.tar.gz --markdown 20240602/n/nnops/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-06-02 04:30:57] INFO root fetch - processPackages [whyhow]: Downloading https://files.pythonhosted.org/packages/76/e8/f323b214d34c541c074afde65456f91f90eccc83f43acb804646da9b9cf1/whyhow-0.0.7.tar.gz
+[2024-06-02 04:30:57] INFO root fetch - processPackages [naif-eop-high-prec]: Downloading https://files.pythonhosted.org/packages/ae/f1/3614635a902184535409fb992eba6e6a3b16e7a5c3f7544b1f1671c81e7a/naif_eop_high_prec-2024.6.1.tar.gz
+[2024-06-02 04:30:57] INFO root fetch - processPackages [whyhow]: executing diffoscope
+[2024-06-02 04:30:57] INFO root fetch - processPackages [whyhow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/whyhow-0.0.6.tar.gz tmp/whyhow-0.0.7.tar.gz --markdown 20240602/w/whyhow/0.0.6-0.0.7/README.md --exclude *.pyd
+[2024-06-02 04:30:57] INFO root fetch - processPackages [iam-actions]: executing diffoscope
+[2024-06-02 04:30:57] INFO root fetch - processPackages [iam-actions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iam_actions-1.2.20240531.tar.gz tmp/iam_actions-1.2.20240601.tar.gz --markdown 20240602/i/iam-actions/1.2.20240531-1.2.20240601/README.md --exclude *.pyd
+[2024-06-02 04:30:57] INFO root fetch - processPackages [naif-eop-high-prec]: executing diffoscope
+[2024-06-02 04:30:57] INFO root fetch - processPackages [naif-eop-high-prec]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/naif_eop_high_prec-2024.5.31.tar.gz tmp/naif_eop_high_prec-2024.6.1.tar.gz --markdown 20240602/n/naif-eop-high-prec/2024.5.31-2024.6.1/README.md --exclude *.pyd
+[2024-06-02 04:30:57] INFO root fetch - processPackages [whyhow]: Remove: archive file [/home/abi/fetcher/tmp/whyhow-0.0.6.tar.gz]
+[2024-06-02 04:30:57] INFO root fetch - processPackages [whyhow]: Remove: archive file [/home/abi/fetcher/tmp/whyhow-0.0.7.tar.gz]
+[2024-06-02 04:30:57] INFO root fetch - main [MainThread]: End processing [whyhow]: success
+[2024-06-02 04:30:57] INFO root fetch - processPackages [nnops]: Remove: archive file [/home/abi/fetcher/tmp/nnops-0.0.1.tar.gz]
+[2024-06-02 04:30:57] INFO root fetch - processPackages [nnops]: Remove: archive file [/home/abi/fetcher/tmp/nnops-0.0.2.tar.gz]
+[2024-06-02 04:30:57] INFO root fetch - main [MainThread]: End processing [nnops]: success
+[2024-06-02 04:30:58] INFO root fetch - processPackages [iam-actions]: Remove: archive file [/home/abi/fetcher/tmp/iam_actions-1.2.20240531.tar.gz]
+[2024-06-02 04:30:58] INFO root fetch - processPackages [iam-actions]: Remove: archive file [/home/abi/fetcher/tmp/iam_actions-1.2.20240601.tar.gz]
+[2024-06-02 04:30:58] INFO root fetch - main [MainThread]: End processing [iam-actions]: success
+[2024-06-02 04:31:01] INFO root fetch - processPackages [naif-eop-high-prec]: Remove: archive file [/home/abi/fetcher/tmp/naif_eop_high_prec-2024.5.31.tar.gz]
+[2024-06-02 04:31:01] INFO root fetch - processPackages [naif-eop-high-prec]: Remove: archive file [/home/abi/fetcher/tmp/naif_eop_high_prec-2024.6.1.tar.gz]
+[2024-06-02 04:31:01] INFO root fetch - main [MainThread]: End processing [naif-eop-high-prec]: success
+[2024-06-02 04:31:01] INFO root fetch - main [MainThread]: Store serial: [23485720]
