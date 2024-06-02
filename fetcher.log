@@ -13328,3 +13328,38 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 18:18:31] INFO root fetch - processPackages [beta9]: Remove: archive file [/home/abi/fetcher/tmp/beta9-0.1.8.tar.gz]
 [2024-06-02 18:18:31] INFO root fetch - main [MainThread]: End processing [beta9]: success
 [2024-06-02 18:18:31] INFO root fetch - main [MainThread]: Store serial: [23490639]
+[2024-06-02 18:20:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23490639]
+[2024-06-02 18:20:39] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-02 18:20:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Montreal-Forced-Aligner
+[2024-06-02 18:20:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PySimpleGUI
+[2024-06-02 18:20:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: trytond-purchase
+[2024-06-02 18:20:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: beam-client
+[2024-06-02 18:20:39] INFO root fetch - processPackages [PySimpleGUI]: New version: [5.0.4] Old Version: [5.0.3]
+[2024-06-02 18:20:39] INFO root fetch - processPackages [beam-client]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-06-02 18:20:39] INFO root fetch - processPackages [Montreal-Forced-Aligner]: New version: [3.1.0] Old Version: [3.0.7]
+[2024-06-02 18:20:39] INFO root fetch - processPackages [trytond-purchase]: New version: [7.2.2] Old Version: [7.2.1]
+[2024-06-02 18:20:39] INFO root fetch - processPackages [PySimpleGUI]: Downloading https://files.pythonhosted.org/packages/03/d0/d8c6c2e2320e7c9b666f6f8cbe2eb1c225ec499b055d45cd3d4991add012/PySimpleGUI-5.0.3.tar.gz
+[2024-06-02 18:20:39] INFO root fetch - processPackages [Montreal-Forced-Aligner]: Downloading https://files.pythonhosted.org/packages/09/2e/d67b0d166dc84004aa856010ed29c170542a6162433d26e9aff06db069d0/montreal_forced_aligner-3.0.7.tar.gz
+[2024-06-02 18:20:39] INFO root fetch - processPackages [beam-client]: Downloading https://files.pythonhosted.org/packages/ac/ee/27de4b2569a707f2361330414b50f795635cafa3adaf9743f08393a1b368/beam_client-0.2.8.tar.gz
+[2024-06-02 18:20:39] WARNING root fetch - processPackages [Montreal-Forced-Aligner]: Skipping package: exceeds size limit 22217989>=10485760
+[2024-06-02 18:20:39] INFO root fetch - main [MainThread]: End processing [Montreal-Forced-Aligner] error
+[2024-06-02 18:20:39] INFO root fetch - processPackages [trytond-purchase]: Downloading https://files.pythonhosted.org/packages/63/dd/0ea89019d35e2933bafb5058a2b19063e359602b4490504be1d201ee3760/trytond_purchase-7.2.1.tar.gz
+[2024-06-02 18:20:40] INFO root fetch - processPackages [PySimpleGUI]: Downloading https://files.pythonhosted.org/packages/1f/18/518bee2394ffb02eadbc8d3e46adb0af09a41e0807dd86b0216ab28a23d2/PySimpleGUI-5.0.4.tar.gz
+[2024-06-02 18:20:40] INFO root fetch - processPackages [beam-client]: Downloading https://files.pythonhosted.org/packages/30/15/606a85353776a9e1c941977e724bfc92806b27223b9e341df4fc22e5bbdf/beam_client-0.2.9.tar.gz
+[2024-06-02 18:20:40] INFO root fetch - processPackages [trytond-purchase]: Downloading https://files.pythonhosted.org/packages/b5/e7/77daa34d216e892d602600db10646cab3c7a39990121d9b6b46dc9453bca/trytond_purchase-7.2.2.tar.gz
+[2024-06-02 18:20:40] INFO root fetch - processPackages [PySimpleGUI]: executing diffoscope
+[2024-06-02 18:20:40] INFO root fetch - processPackages [PySimpleGUI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PySimpleGUI-5.0.3.tar.gz tmp/PySimpleGUI-5.0.4.tar.gz --markdown 20240602/P/PySimpleGUI/5.0.3-5.0.4/README.md --exclude *.pyd
+[2024-06-02 18:20:40] INFO root fetch - processPackages [beam-client]: executing diffoscope
+[2024-06-02 18:20:40] INFO root fetch - processPackages [beam-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/beam_client-0.2.8.tar.gz tmp/beam_client-0.2.9.tar.gz --markdown 20240602/b/beam-client/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-06-02 18:20:40] INFO root fetch - processPackages [trytond-purchase]: executing diffoscope
+[2024-06-02 18:20:40] INFO root fetch - processPackages [trytond-purchase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trytond_purchase-7.2.1.tar.gz tmp/trytond_purchase-7.2.2.tar.gz --markdown 20240602/t/trytond-purchase/7.2.1-7.2.2/README.md --exclude *.pyd
+[2024-06-02 18:20:40] INFO root fetch - processPackages [beam-client]: Remove: archive file [/home/abi/fetcher/tmp/beam_client-0.2.8.tar.gz]
+[2024-06-02 18:20:40] INFO root fetch - processPackages [beam-client]: Remove: archive file [/home/abi/fetcher/tmp/beam_client-0.2.9.tar.gz]
+[2024-06-02 18:20:40] INFO root fetch - main [MainThread]: End processing [beam-client]: success
+[2024-06-02 18:20:41] INFO root fetch - processPackages [trytond-purchase]: Remove: archive file [/home/abi/fetcher/tmp/trytond_purchase-7.2.1.tar.gz]
+[2024-06-02 18:20:41] INFO root fetch - processPackages [trytond-purchase]: Remove: archive file [/home/abi/fetcher/tmp/trytond_purchase-7.2.2.tar.gz]
+[2024-06-02 18:20:41] INFO root fetch - main [MainThread]: End processing [trytond-purchase]: success
+[2024-06-02 18:20:41] INFO root fetch - processPackages [PySimpleGUI]: Remove: archive file [/home/abi/fetcher/tmp/PySimpleGUI-5.0.3.tar.gz]
+[2024-06-02 18:20:41] INFO root fetch - processPackages [PySimpleGUI]: Remove: archive file [/home/abi/fetcher/tmp/PySimpleGUI-5.0.4.tar.gz]
+[2024-06-02 18:20:41] INFO root fetch - main [MainThread]: End processing [PySimpleGUI]: success
+[2024-06-02 18:20:41] INFO root fetch - main [MainThread]: Store serial: [23490652]
