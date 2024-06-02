@@ -15973,3 +15973,63 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 20:27:45] INFO root fetch - processPackages [uaiDiffusers]: Remove: archive file [/home/abi/fetcher/tmp/uaiDiffusers-1.1.5.6-py2.py3-none-any.whl.zip]
 [2024-06-02 20:27:45] INFO root fetch - main [MainThread]: End processing [uaiDiffusers]: success
 [2024-06-02 20:27:45] INFO root fetch - main [MainThread]: Store serial: [23491870]
+[2024-06-02 20:29:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23491870]
+[2024-06-02 20:29:54] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-06-02 20:29:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ambient-backend-api-client
+[2024-06-02 20:29:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: feincms3
+[2024-06-02 20:29:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PyAsyncTracker
+[2024-06-02 20:29:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mds-account-de-skr04
+[2024-06-02 20:29:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: HiggsML
+[2024-06-02 20:29:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: loopquest
+[2024-06-02 20:29:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: gammarers.aws-secure-cloudfront-origin-bucket
+[2024-06-02 20:29:54] INFO root fetch - processPackages [ambient-backend-api-client]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-06-02 20:29:54] INFO root fetch - processPackages [mds-account-de-skr04]: New version: [7.0.9] Old Version: [7.0.8]
+[2024-06-02 20:29:54] WARNING root fetch - processPackages [PyAsyncTracker]: Skipping, unable to determine old version
+[2024-06-02 20:29:54] INFO root fetch - main [MainThread]: End processing [PyAsyncTracker] error
+[2024-06-02 20:29:54] INFO root fetch - processPackages [feincms3]: New version: [5.0a1] Old Version: [4.6.1]
+[2024-06-02 20:29:54] INFO root fetch - processPackages [HiggsML]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-06-02 20:29:54] INFO root fetch - processPackages [ambient-backend-api-client]: Downloading https://files.pythonhosted.org/packages/f6/eb/59da8ec681d918996a898f98dd992f0dd01c4e66248583c87fd5d597e6bb/ambient_backend_api_client-0.1.8.tar.gz
+[2024-06-02 20:29:54] INFO root fetch - processPackages [mds-account-de-skr04]: Downloading https://files.pythonhosted.org/packages/36/5c/6c5660f631d348211274f921df22a2b3b5c8b0abb91db010c6226638203a/mds_account_de_skr04-7.0.8.tar.gz
+[2024-06-02 20:29:54] INFO root fetch - processPackages [gammarers.aws-secure-cloudfront-origin-bucket]: New version: [1.6.1] Old Version: [1.6.0]
+[2024-06-02 20:29:54] INFO root fetch - processPackages [loopquest]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-06-02 20:29:54] INFO root fetch - processPackages [feincms3]: Downloading https://files.pythonhosted.org/packages/56/4a/9b877377f9efe843041969731927cb5a00457fdbc3f75ff19bf01d750a6b/feincms3-4.6.1.tar.gz
+[2024-06-02 20:29:54] INFO root fetch - processPackages [HiggsML]: Downloading https://files.pythonhosted.org/packages/51/14/508744d17a41e352fb307bdfe258e299319dc15bdff344902e5f9ec56ff4/higgsml-0.0.8.tar.gz
+[2024-06-02 20:29:54] INFO root fetch - processPackages [ambient-backend-api-client]: Downloading https://files.pythonhosted.org/packages/0b/1f/b717fb08cbd4446f6c3ef2f503b2b7cf7489a90af64d9e8982283ae67928/ambient_backend_api_client-0.1.9.tar.gz
+[2024-06-02 20:29:54] INFO root fetch - processPackages [loopquest]: Downloading https://files.pythonhosted.org/packages/c8/4a/0d5277f189651425b4dbab337e95e60a8331965faa292d5edd400ff84ca1/loopquest-0.2.8.tar.gz
+[2024-06-02 20:29:54] INFO root fetch - processPackages [mds-account-de-skr04]: Downloading https://files.pythonhosted.org/packages/85/7e/abe27af9333a18861966f281c77e987ba17ae0b0717d1ea0eec89298f0ae/mds_account_de_skr04-7.0.9.tar.gz
+[2024-06-02 20:29:54] INFO root fetch - processPackages [gammarers.aws-secure-cloudfront-origin-bucket]: Downloading https://files.pythonhosted.org/packages/95/51/7eb3facd8b0262b02296d43b5df19761877046dc079e1c0010f7efdcf41d/gammarers.aws-secure-cloudfront-origin-bucket-1.6.0.tar.gz
+[2024-06-02 20:29:54] INFO root fetch - processPackages [feincms3]: Downloading https://files.pythonhosted.org/packages/97/20/2dd4d78fff3ad8bfb4f18715b13ca0d26d82e7d9480d0ce9d90e53810d5b/feincms3-5.0a1.tar.gz
+[2024-06-02 20:29:55] INFO root fetch - processPackages [ambient-backend-api-client]: executing diffoscope
+[2024-06-02 20:29:55] INFO root fetch - processPackages [ambient-backend-api-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ambient_backend_api_client-0.1.8.tar.gz tmp/ambient_backend_api_client-0.1.9.tar.gz --markdown 20240602/a/ambient-backend-api-client/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-06-02 20:29:55] INFO root fetch - processPackages [mds-account-de-skr04]: executing diffoscope
+[2024-06-02 20:29:55] INFO root fetch - processPackages [mds-account-de-skr04]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mds_account_de_skr04-7.0.8.tar.gz tmp/mds_account_de_skr04-7.0.9.tar.gz --markdown 20240602/m/mds-account-de-skr04/7.0.8-7.0.9/README.md --exclude *.pyd
+[2024-06-02 20:29:55] INFO root fetch - processPackages [feincms3]: executing diffoscope
+[2024-06-02 20:29:55] INFO root fetch - processPackages [feincms3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/feincms3-4.6.1.tar.gz tmp/feincms3-5.0a1.tar.gz --markdown 20240602/f/feincms3/4.6.1-5.0a1/README.md --exclude *.pyd
+[2024-06-02 20:29:55] INFO root fetch - processPackages [HiggsML]: Downloading https://files.pythonhosted.org/packages/16/3a/936d763cb3c0985c6cf3e10ea7d42c693e9d98fbe8eb34b646793b51b6f5/higgsml-0.0.9.tar.gz
+[2024-06-02 20:29:55] INFO root fetch - processPackages [loopquest]: Downloading https://files.pythonhosted.org/packages/60/f9/677cad484beb0f55911354cb3a726fdcd4d3f4ffc67f650f010521f33d83/loopquest-0.2.9.tar.gz
+[2024-06-02 20:29:55] INFO root fetch - processPackages [gammarers.aws-secure-cloudfront-origin-bucket]: Downloading https://files.pythonhosted.org/packages/68/66/5f9a144b757338addc745c80ca09850a669eff722c9eff11702812c6a827/gammarers.aws-secure-cloudfront-origin-bucket-1.6.1.tar.gz
+[2024-06-02 20:29:55] INFO root fetch - processPackages [HiggsML]: executing diffoscope
+[2024-06-02 20:29:55] INFO root fetch - processPackages [HiggsML]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/higgsml-0.0.8.tar.gz tmp/higgsml-0.0.9.tar.gz --markdown 20240602/H/HiggsML/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-06-02 20:29:55] INFO root fetch - processPackages [loopquest]: executing diffoscope
+[2024-06-02 20:29:55] INFO root fetch - processPackages [loopquest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/loopquest-0.2.8.tar.gz tmp/loopquest-0.2.9.tar.gz --markdown 20240602/l/loopquest/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-06-02 20:29:55] INFO root fetch - processPackages [gammarers.aws-secure-cloudfront-origin-bucket]: executing diffoscope
+[2024-06-02 20:29:55] INFO root fetch - processPackages [gammarers.aws-secure-cloudfront-origin-bucket]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gammarers.aws-secure-cloudfront-origin-bucket-1.6.0.tar.gz tmp/gammarers.aws-secure-cloudfront-origin-bucket-1.6.1.tar.gz --markdown 20240602/g/gammarers.aws-secure-cloudfront-origin-bucket/1.6.0-1.6.1/README.md --exclude *.pyd
+[2024-06-02 20:29:56] INFO root fetch - processPackages [ambient-backend-api-client]: Remove: archive file [/home/abi/fetcher/tmp/ambient_backend_api_client-0.1.8.tar.gz]
+[2024-06-02 20:29:56] INFO root fetch - processPackages [ambient-backend-api-client]: Remove: archive file [/home/abi/fetcher/tmp/ambient_backend_api_client-0.1.9.tar.gz]
+[2024-06-02 20:29:56] INFO root fetch - main [MainThread]: End processing [ambient-backend-api-client]: success
+[2024-06-02 20:29:56] INFO root fetch - processPackages [mds-account-de-skr04]: Remove: archive file [/home/abi/fetcher/tmp/mds_account_de_skr04-7.0.8.tar.gz]
+[2024-06-02 20:29:56] INFO root fetch - processPackages [mds-account-de-skr04]: Remove: archive file [/home/abi/fetcher/tmp/mds_account_de_skr04-7.0.9.tar.gz]
+[2024-06-02 20:29:56] INFO root fetch - main [MainThread]: End processing [mds-account-de-skr04]: success
+[2024-06-02 20:29:56] INFO root fetch - processPackages [loopquest]: Remove: archive file [/home/abi/fetcher/tmp/loopquest-0.2.8.tar.gz]
+[2024-06-02 20:29:56] INFO root fetch - processPackages [loopquest]: Remove: archive file [/home/abi/fetcher/tmp/loopquest-0.2.9.tar.gz]
+[2024-06-02 20:29:56] INFO root fetch - main [MainThread]: End processing [loopquest]: success
+[2024-06-02 20:29:56] INFO root fetch - processPackages [feincms3]: Remove: archive file [/home/abi/fetcher/tmp/feincms3-4.6.1.tar.gz]
+[2024-06-02 20:29:56] INFO root fetch - processPackages [feincms3]: Remove: archive file [/home/abi/fetcher/tmp/feincms3-5.0a1.tar.gz]
+[2024-06-02 20:29:56] INFO root fetch - main [MainThread]: End processing [feincms3]: success
+[2024-06-02 20:29:56] INFO root fetch - processPackages [HiggsML]: Remove: archive file [/home/abi/fetcher/tmp/higgsml-0.0.8.tar.gz]
+[2024-06-02 20:29:56] INFO root fetch - processPackages [HiggsML]: Remove: archive file [/home/abi/fetcher/tmp/higgsml-0.0.9.tar.gz]
+[2024-06-02 20:29:56] INFO root fetch - main [MainThread]: End processing [HiggsML]: success
+[2024-06-02 20:29:56] INFO root fetch - processPackages [gammarers.aws-secure-cloudfront-origin-bucket]: Remove: archive file [/home/abi/fetcher/tmp/gammarers.aws-secure-cloudfront-origin-bucket-1.6.0.tar.gz]
+[2024-06-02 20:29:56] INFO root fetch - processPackages [gammarers.aws-secure-cloudfront-origin-bucket]: Remove: archive file [/home/abi/fetcher/tmp/gammarers.aws-secure-cloudfront-origin-bucket-1.6.1.tar.gz]
+[2024-06-02 20:29:56] INFO root fetch - main [MainThread]: End processing [gammarers.aws-secure-cloudfront-origin-bucket]: success
+[2024-06-02 20:29:56] INFO root fetch - main [MainThread]: Store serial: [23491891]
