@@ -14527,3 +14527,22 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 19:08:43] INFO root fetch - processPackages [trytond-account-es]: Remove: archive file [/home/abi/fetcher/tmp/trytond_account_es-7.2.1.tar.gz]
 [2024-06-02 19:08:43] INFO root fetch - main [MainThread]: End processing [trytond-account-es]: success
 [2024-06-02 19:08:43] INFO root fetch - main [MainThread]: Store serial: [23491214]
+[2024-06-02 19:10:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23491214]
+[2024-06-02 19:10:52] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-02 19:10:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: trytond-account-es
+[2024-06-02 19:10:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: trytond-account-es
+[2024-06-02 19:10:52] INFO root fetch - processPackages [trytond-account-es]: New version: [7.2.1] Old Version: [7.2.0]
+[2024-06-02 19:10:52] INFO root fetch - processPackages [trytond-account-es]: New version: [7.2.1] Old Version: [7.2.0]
+[2024-06-02 19:10:52] INFO root fetch - processPackages [trytond-account-es]: Downloading https://files.pythonhosted.org/packages/71/ce/d7b9acb3213d086dcaded1843e62d60eab2f00689b3387f899ff1f6522a5/trytond_account_es-7.2.0.tar.gz
+[2024-06-02 19:10:52] INFO root fetch - processPackages [trytond-account-es]: Downloading https://files.pythonhosted.org/packages/71/ce/d7b9acb3213d086dcaded1843e62d60eab2f00689b3387f899ff1f6522a5/trytond_account_es-7.2.0.tar.gz
+[2024-06-02 19:10:52] INFO root fetch - processPackages [trytond-account-es]: Downloading https://files.pythonhosted.org/packages/dd/dd/16769089a862ef81e916ab8165eb757205e8ae20c0183685c29c0d7d5d56/trytond_account_es-7.2.1.tar.gz
+[2024-06-02 19:10:52] INFO root fetch - processPackages [trytond-account-es]: Downloading https://files.pythonhosted.org/packages/dd/dd/16769089a862ef81e916ab8165eb757205e8ae20c0183685c29c0d7d5d56/trytond_account_es-7.2.1.tar.gz
+[2024-06-02 19:10:52] INFO root fetch - processPackages [trytond-account-es]: executing diffoscope
+[2024-06-02 19:10:52] INFO root fetch - processPackages [trytond-account-es]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trytond_account_es-7.2.0.tar.gz tmp/trytond_account_es-7.2.1.tar.gz --markdown 20240602/t/trytond-account-es/7.2.0-7.2.1/README.md --exclude *.pyd
+[2024-06-02 19:10:52] INFO root fetch - processPackages [trytond-account-es]: executing diffoscope
+[2024-06-02 19:10:52] INFO root fetch - processPackages [trytond-account-es]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trytond_account_es-7.2.0.tar.gz tmp/trytond_account_es-7.2.1.tar.gz --markdown 20240602/t/trytond-account-es/7.2.0-7.2.1/README.md --exclude *.pyd
+[2024-06-02 19:10:54] INFO root fetch - processPackages [trytond-account-es]: Remove: archive file [/home/abi/fetcher/tmp/trytond_account_es-7.2.0.tar.gz]
+[2024-06-02 19:10:54] INFO root fetch - processPackages [trytond-account-es]: Remove: archive file [/home/abi/fetcher/tmp/trytond_account_es-7.2.1.tar.gz]
+[2024-06-02 19:10:54] INFO root fetch - main [MainThread]: End processing [trytond-account-es]: success
+[2024-06-02 19:10:54] INFO root fetch - main [MainThread]: End processing [trytond-account-es]: success
+[2024-06-02 19:10:54] INFO root fetch - main [MainThread]: Store serial: [23491220]
