@@ -13625,3 +13625,72 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 18:29:25] INFO root fetch - processPackages [manga-scrape]: Remove: archive file [/home/abi/fetcher/tmp/manga_scrape-4.9.0.tar.gz]
 [2024-06-02 18:29:25] INFO root fetch - main [MainThread]: End processing [manga-scrape]: success
 [2024-06-02 18:29:25] INFO root fetch - main [MainThread]: Store serial: [23490740]
+[2024-06-02 18:31:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23490740]
+[2024-06-02 18:31:34] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-06-02 18:31:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: libretro.py
+[2024-06-02 18:31:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: spotify-utils
+[2024-06-02 18:31:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: trytond-product-cost-fifo
+[2024-06-02 18:31:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: alphafold3-pytorch
+[2024-06-02 18:31:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: heaserver
+[2024-06-02 18:31:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ANTIPASTI
+[2024-06-02 18:31:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pyftms
+[2024-06-02 18:31:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: PyAsyncTracker
+[2024-06-02 18:31:34] INFO root fetch - processPackages [pyftms]: New version: [0.2.4] Old Version: [0.2.3]
+[2024-06-02 18:31:34] INFO root fetch - processPackages [libretro.py]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-06-02 18:31:34] INFO root fetch - processPackages [ANTIPASTI]: New version: [1.2] Old Version: [1.1]
+[2024-06-02 18:31:34] INFO root fetch - processPackages [pyftms]: Downloading https://files.pythonhosted.org/packages/5d/fd/9639ed046110fa197012248943dd54228355d9c244f0e52205820634d0e0/pyftms-0.2.3.tar.gz
+[2024-06-02 18:31:34] INFO root fetch - processPackages [trytond-product-cost-fifo]: New version: [7.2.1] Old Version: [7.2.0]
+[2024-06-02 18:31:34] INFO root fetch - processPackages [spotify-utils]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-06-02 18:31:34] WARNING root fetch - processPackages [PyAsyncTracker]: Skipping, unable to determine old version
+[2024-06-02 18:31:34] INFO root fetch - main [MainThread]: End processing [PyAsyncTracker] error
+[2024-06-02 18:31:34] INFO root fetch - processPackages [alphafold3-pytorch]: New version: [0.1.9] Old Version: [0.1.7]
+[2024-06-02 18:31:34] INFO root fetch - processPackages [heaserver]: New version: [1.6.3] Old Version: [1.6.2]
+[2024-06-02 18:31:34] INFO root fetch - processPackages [trytond-product-cost-fifo]: Downloading https://files.pythonhosted.org/packages/fe/c1/d188f8e42f8eca9c862a005c1abd92a9f3685a589c0fb2a076c58b4ed920/trytond_product_cost_fifo-7.2.0.tar.gz
+[2024-06-02 18:31:34] INFO root fetch - processPackages [libretro.py]: Downloading https://files.pythonhosted.org/packages/56/02/9363e160fd3bf2f117d3e56fa69c6ac1fc0e5bda638f671d601dadc2cf9e/libretro_py-0.1.2.tar.gz
+[2024-06-02 18:31:34] INFO root fetch - processPackages [ANTIPASTI]: Downloading https://files.pythonhosted.org/packages/71/e2/686cad7b264f0e03acfadf0a87f95e4baef9196d11c85ba9f25e2f81a5c4/ANTIPASTI-1.1.tar.gz
+[2024-06-02 18:31:34] INFO root fetch - processPackages [spotify-utils]: Downloading https://files.pythonhosted.org/packages/bd/10/98bd146e9c1396adb8fafd457538d970e47efc67169f9c5844b17d8f2344/spotify_utils-1.0.8.tar.gz
+[2024-06-02 18:31:34] INFO root fetch - processPackages [alphafold3-pytorch]: Downloading https://files.pythonhosted.org/packages/d9/0b/e493f7660d3beb0aa4d207749979b3d9b256dcb4cc5bbc6b67f7db93071d/alphafold3_pytorch-0.1.7.tar.gz
+[2024-06-02 18:31:34] INFO root fetch - processPackages [heaserver]: Downloading https://files.pythonhosted.org/packages/58/af/76b7e0135a51ccb22313e770d2337b6fbddb4459f757fd3fb9e2ea24cedb/heaserver-1.6.2.tar.gz
+[2024-06-02 18:31:34] INFO root fetch - processPackages [pyftms]: Downloading https://files.pythonhosted.org/packages/1a/9b/8b55bd178d2881850e2f196d54c3bdc7fb6d93117a4fdb75660e9dc6d045/pyftms-0.2.4.tar.gz
+[2024-06-02 18:31:34] INFO root fetch - processPackages [trytond-product-cost-fifo]: Downloading https://files.pythonhosted.org/packages/5d/45/b92f4d4373fe978c78ccc3ac17b21699c16c0122c891324101864efc8097/trytond_product_cost_fifo-7.2.1.tar.gz
+[2024-06-02 18:31:34] INFO root fetch - processPackages [libretro.py]: Downloading https://files.pythonhosted.org/packages/c5/20/878b582b198c42c0ece3a3c48cf465851a831381fb88d933c97e4ce7238b/libretro_py-0.1.3.tar.gz
+[2024-06-02 18:31:34] INFO root fetch - processPackages [pyftms]: executing diffoscope
+[2024-06-02 18:31:34] INFO root fetch - processPackages [pyftms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyftms-0.2.3.tar.gz tmp/pyftms-0.2.4.tar.gz --markdown 20240602/p/pyftms/0.2.3-0.2.4/README.md --exclude *.pyd
+[2024-06-02 18:31:34] INFO root fetch - processPackages [spotify-utils]: Downloading https://files.pythonhosted.org/packages/aa/db/a2b259741f25e3cddb2fd70cf766003979f3cc00d39858a21666c745943b/spotify_utils-1.0.9.tar.gz
+[2024-06-02 18:31:34] INFO root fetch - processPackages [alphafold3-pytorch]: Downloading https://files.pythonhosted.org/packages/cc/d2/c39ecafade11ccfb71fa0cf5a7af109426893636c16321d47eb26391a78f/alphafold3_pytorch-0.1.9.tar.gz
+[2024-06-02 18:31:34] INFO root fetch - processPackages [trytond-product-cost-fifo]: executing diffoscope
+[2024-06-02 18:31:34] INFO root fetch - processPackages [trytond-product-cost-fifo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trytond_product_cost_fifo-7.2.0.tar.gz tmp/trytond_product_cost_fifo-7.2.1.tar.gz --markdown 20240602/t/trytond-product-cost-fifo/7.2.0-7.2.1/README.md --exclude *.pyd
+[2024-06-02 18:31:34] INFO root fetch - processPackages [heaserver]: Downloading https://files.pythonhosted.org/packages/b0/64/139d814260d99f05f5b3e9a2a3e790cc44bdd766519220e3240ac301eef4/heaserver-1.6.3.tar.gz
+[2024-06-02 18:31:34] INFO root fetch - processPackages [ANTIPASTI]: Downloading https://files.pythonhosted.org/packages/d6/a0/41b2569ba03fca17f7707ac6815eeb85c9860ab4bc6cef36679b43594f84/antipasti-1.2.tar.gz
+[2024-06-02 18:31:35] INFO root fetch - processPackages [libretro.py]: executing diffoscope
+[2024-06-02 18:31:35] INFO root fetch - processPackages [libretro.py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/libretro_py-0.1.2.tar.gz tmp/libretro_py-0.1.3.tar.gz --markdown 20240602/l/libretro.py/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-06-02 18:31:35] INFO root fetch - processPackages [spotify-utils]: executing diffoscope
+[2024-06-02 18:31:35] INFO root fetch - processPackages [spotify-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spotify_utils-1.0.8.tar.gz tmp/spotify_utils-1.0.9.tar.gz --markdown 20240602/s/spotify-utils/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-06-02 18:31:35] INFO root fetch - processPackages [alphafold3-pytorch]: executing diffoscope
+[2024-06-02 18:31:35] INFO root fetch - processPackages [alphafold3-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alphafold3_pytorch-0.1.7.tar.gz tmp/alphafold3_pytorch-0.1.9.tar.gz --markdown 20240602/a/alphafold3-pytorch/0.1.7-0.1.9/README.md --exclude *.pyd
+[2024-06-02 18:31:35] INFO root fetch - processPackages [ANTIPASTI]: executing diffoscope
+[2024-06-02 18:31:35] INFO root fetch - processPackages [ANTIPASTI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ANTIPASTI-1.1.tar.gz tmp/antipasti-1.2.tar.gz --markdown 20240602/A/ANTIPASTI/1.1-1.2/README.md --exclude *.pyd
+[2024-06-02 18:31:35] INFO root fetch - processPackages [heaserver]: executing diffoscope
+[2024-06-02 18:31:35] INFO root fetch - processPackages [heaserver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/heaserver-1.6.2.tar.gz tmp/heaserver-1.6.3.tar.gz --markdown 20240602/h/heaserver/1.6.2-1.6.3/README.md --exclude *.pyd
+[2024-06-02 18:31:35] INFO root fetch - processPackages [pyftms]: Remove: archive file [/home/abi/fetcher/tmp/pyftms-0.2.3.tar.gz]
+[2024-06-02 18:31:35] INFO root fetch - processPackages [pyftms]: Remove: archive file [/home/abi/fetcher/tmp/pyftms-0.2.4.tar.gz]
+[2024-06-02 18:31:35] INFO root fetch - main [MainThread]: End processing [pyftms]: success
+[2024-06-02 18:31:35] INFO root fetch - processPackages [spotify-utils]: Remove: archive file [/home/abi/fetcher/tmp/spotify_utils-1.0.8.tar.gz]
+[2024-06-02 18:31:35] INFO root fetch - processPackages [spotify-utils]: Remove: archive file [/home/abi/fetcher/tmp/spotify_utils-1.0.9.tar.gz]
+[2024-06-02 18:31:35] INFO root fetch - main [MainThread]: End processing [spotify-utils]: success
+[2024-06-02 18:31:35] INFO root fetch - processPackages [trytond-product-cost-fifo]: Remove: archive file [/home/abi/fetcher/tmp/trytond_product_cost_fifo-7.2.0.tar.gz]
+[2024-06-02 18:31:35] INFO root fetch - processPackages [trytond-product-cost-fifo]: Remove: archive file [/home/abi/fetcher/tmp/trytond_product_cost_fifo-7.2.1.tar.gz]
+[2024-06-02 18:31:35] INFO root fetch - main [MainThread]: End processing [trytond-product-cost-fifo]: success
+[2024-06-02 18:31:36] INFO root fetch - processPackages [alphafold3-pytorch]: Remove: archive file [/home/abi/fetcher/tmp/alphafold3_pytorch-0.1.7.tar.gz]
+[2024-06-02 18:31:36] INFO root fetch - processPackages [alphafold3-pytorch]: Remove: archive file [/home/abi/fetcher/tmp/alphafold3_pytorch-0.1.9.tar.gz]
+[2024-06-02 18:31:36] INFO root fetch - main [MainThread]: End processing [alphafold3-pytorch]: success
+[2024-06-02 18:31:36] INFO root fetch - processPackages [libretro.py]: Remove: archive file [/home/abi/fetcher/tmp/libretro_py-0.1.2.tar.gz]
+[2024-06-02 18:31:36] INFO root fetch - processPackages [libretro.py]: Remove: archive file [/home/abi/fetcher/tmp/libretro_py-0.1.3.tar.gz]
+[2024-06-02 18:31:36] INFO root fetch - main [MainThread]: End processing [libretro.py]: success
+[2024-06-02 18:31:36] INFO root fetch - processPackages [ANTIPASTI]: Remove: archive file [/home/abi/fetcher/tmp/ANTIPASTI-1.1.tar.gz]
+[2024-06-02 18:31:36] INFO root fetch - processPackages [ANTIPASTI]: Remove: archive file [/home/abi/fetcher/tmp/antipasti-1.2.tar.gz]
+[2024-06-02 18:31:36] INFO root fetch - main [MainThread]: End processing [ANTIPASTI]: success
+[2024-06-02 18:31:36] INFO root fetch - processPackages [heaserver]: Remove: archive file [/home/abi/fetcher/tmp/heaserver-1.6.2.tar.gz]
+[2024-06-02 18:31:36] INFO root fetch - processPackages [heaserver]: Remove: archive file [/home/abi/fetcher/tmp/heaserver-1.6.3.tar.gz]
+[2024-06-02 18:31:36] INFO root fetch - main [MainThread]: End processing [heaserver]: success
+[2024-06-02 18:31:36] INFO root fetch - main [MainThread]: Store serial: [23490766]
