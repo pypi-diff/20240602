@@ -16902,3 +16902,42 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 21:15:45] INFO root fetch - processPackages [django-tmmis]: Remove: archive file [/home/abi/fetcher/tmp/django_tmmis-24.6.1.tar.gz]
 [2024-06-02 21:15:45] INFO root fetch - main [MainThread]: End processing [django-tmmis]: success
 [2024-06-02 21:15:45] INFO root fetch - main [MainThread]: Store serial: [23492314]
+[2024-06-02 21:17:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23492314]
+[2024-06-02 21:17:53] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-02 21:17:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PyScopedStorage
+[2024-06-02 21:17:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: llm-structured-output
+[2024-06-02 21:17:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: syndot
+[2024-06-02 21:17:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PyAsyncTracker
+[2024-06-02 21:17:53] INFO root fetch - processPackages [PyAsyncTracker]: New version: [0.2.0] Old Version: [0.1.0]
+[2024-06-02 21:17:53] INFO root fetch - processPackages [syndot]: New version: [0.1.0] Old Version: [0.0.0]
+[2024-06-02 21:17:53] INFO root fetch - processPackages [syndot]: Downloading https://files.pythonhosted.org/packages/e7/e0/00e2e8ba3f4e6a7da57bb13e803ed5e306de11dd607cfee14d9f42b9424b/syndot-0.0.0.tar.gz
+[2024-06-02 21:17:53] INFO root fetch - processPackages [llm-structured-output]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-06-02 21:17:53] INFO root fetch - processPackages [PyScopedStorage]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-06-02 21:17:53] INFO root fetch - processPackages [PyAsyncTracker]: Downloading https://files.pythonhosted.org/packages/1d/22/418315df80e33c295cc611318dd41d5d60e4e02951507f1e341a5fb49057/pyasynctracker-0.1.0.tar.gz
+[2024-06-02 21:17:53] INFO root fetch - processPackages [llm-structured-output]: Downloading https://files.pythonhosted.org/packages/23/58/a6fe6fd07d1ec5c2791f5a5db0ed3b196c60d87bd8e17cc0afa3bc420f68/llm_structured_output-0.0.8.tar.gz
+[2024-06-02 21:17:53] INFO root fetch - processPackages [PyScopedStorage]: Downloading https://files.pythonhosted.org/packages/6f/5d/abb658b9fe2a0ca36b8bf8651df3b8fcd0f7f2404a42b7731ceca121ba7e/pyscopedstorage-0.0.3.tar.gz
+[2024-06-02 21:17:54] INFO root fetch - processPackages [syndot]: Downloading https://files.pythonhosted.org/packages/49/db/428fb171d20352310fac063a3884f5189bcae570b70b06fd2a94420f87b7/syndot-0.1.0.tar.gz
+[2024-06-02 21:17:54] INFO root fetch - processPackages [syndot]: executing diffoscope
+[2024-06-02 21:17:54] INFO root fetch - processPackages [syndot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/syndot-0.0.0.tar.gz tmp/syndot-0.1.0.tar.gz --markdown 20240602/s/syndot/0.0.0-0.1.0/README.md --exclude *.pyd
+[2024-06-02 21:17:54] INFO root fetch - processPackages [PyAsyncTracker]: Downloading https://files.pythonhosted.org/packages/01/26/de15e3b2109ddb48702c2812cbcc46d2b5f44194d7cd29d2fc74e0fef575/pyasynctracker-0.2.0.tar.gz
+[2024-06-02 21:17:54] INFO root fetch - processPackages [PyScopedStorage]: Downloading https://files.pythonhosted.org/packages/ff/78/c9aaebb6ca7b9f76d46abb9938d8da4e8ea299a7d47023117e645472baad/pyscopedstorage-0.0.4.tar.gz
+[2024-06-02 21:17:54] INFO root fetch - processPackages [PyAsyncTracker]: executing diffoscope
+[2024-06-02 21:17:54] INFO root fetch - processPackages [PyAsyncTracker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyasynctracker-0.1.0.tar.gz tmp/pyasynctracker-0.2.0.tar.gz --markdown 20240602/P/PyAsyncTracker/0.1.0-0.2.0/README.md --exclude *.pyd
+[2024-06-02 21:17:54] INFO root fetch - processPackages [PyScopedStorage]: executing diffoscope
+[2024-06-02 21:17:54] INFO root fetch - processPackages [PyScopedStorage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyscopedstorage-0.0.3.tar.gz tmp/pyscopedstorage-0.0.4.tar.gz --markdown 20240602/P/PyScopedStorage/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-06-02 21:17:54] INFO root fetch - processPackages [llm-structured-output]: Downloading https://files.pythonhosted.org/packages/77/03/dc0e6c04dafdfdb4b262825150f7096497f03fe68be63f79635f7f47383a/llm_structured_output-0.0.9.tar.gz
+[2024-06-02 21:17:54] INFO root fetch - processPackages [syndot]: Remove: archive file [/home/abi/fetcher/tmp/syndot-0.0.0.tar.gz]
+[2024-06-02 21:17:54] INFO root fetch - processPackages [syndot]: Remove: archive file [/home/abi/fetcher/tmp/syndot-0.1.0.tar.gz]
+[2024-06-02 21:17:54] INFO root fetch - main [MainThread]: End processing [syndot]: success
+[2024-06-02 21:17:54] INFO root fetch - processPackages [llm-structured-output]: executing diffoscope
+[2024-06-02 21:17:54] INFO root fetch - processPackages [llm-structured-output]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llm_structured_output-0.0.8.tar.gz tmp/llm_structured_output-0.0.9.tar.gz --markdown 20240602/l/llm-structured-output/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-06-02 21:17:54] INFO root fetch - processPackages [PyAsyncTracker]: Remove: archive file [/home/abi/fetcher/tmp/pyasynctracker-0.1.0.tar.gz]
+[2024-06-02 21:17:54] INFO root fetch - processPackages [PyAsyncTracker]: Remove: archive file [/home/abi/fetcher/tmp/pyasynctracker-0.2.0.tar.gz]
+[2024-06-02 21:17:54] INFO root fetch - main [MainThread]: End processing [PyAsyncTracker]: success
+[2024-06-02 21:17:54] INFO root fetch - processPackages [PyScopedStorage]: Remove: archive file [/home/abi/fetcher/tmp/pyscopedstorage-0.0.3.tar.gz]
+[2024-06-02 21:17:54] INFO root fetch - processPackages [PyScopedStorage]: Remove: archive file [/home/abi/fetcher/tmp/pyscopedstorage-0.0.4.tar.gz]
+[2024-06-02 21:17:54] INFO root fetch - main [MainThread]: End processing [PyScopedStorage]: success
+[2024-06-02 21:17:55] INFO root fetch - processPackages [llm-structured-output]: Remove: archive file [/home/abi/fetcher/tmp/llm_structured_output-0.0.8.tar.gz]
+[2024-06-02 21:17:55] INFO root fetch - processPackages [llm-structured-output]: Remove: archive file [/home/abi/fetcher/tmp/llm_structured_output-0.0.9.tar.gz]
+[2024-06-02 21:17:55] INFO root fetch - main [MainThread]: End processing [llm-structured-output]: success
+[2024-06-02 21:17:55] INFO root fetch - main [MainThread]: Store serial: [23492327]
