@@ -13300,3 +13300,31 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 18:16:20] INFO root fetch - processPackages [trytond-purchase-blanket-agreement]: Remove: archive file [/home/abi/fetcher/tmp/trytond_purchase_blanket_agreement-7.2.2.tar.gz]
 [2024-06-02 18:16:20] INFO root fetch - main [MainThread]: End processing [trytond-purchase-blanket-agreement]: success
 [2024-06-02 18:16:20] INFO root fetch - main [MainThread]: Store serial: [23490630]
+[2024-06-02 18:18:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23490630]
+[2024-06-02 18:18:29] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-02 18:18:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: trytond-purchase-blanket-agreement
+[2024-06-02 18:18:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: trytond-purchase-blanket-agreement
+[2024-06-02 18:18:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: beta9
+[2024-06-02 18:18:29] INFO root fetch - processPackages [trytond-purchase-blanket-agreement]: New version: [7.2.2] Old Version: [7.2.1]
+[2024-06-02 18:18:29] INFO root fetch - processPackages [trytond-purchase-blanket-agreement]: New version: [7.2.2] Old Version: [7.2.1]
+[2024-06-02 18:18:29] INFO root fetch - processPackages [trytond-purchase-blanket-agreement]: Downloading https://files.pythonhosted.org/packages/f8/fc/3fdc4b25154eba96b3ab9989836911eeddb62241a6cdf17cbdd033156eee/trytond_purchase_blanket_agreement-7.2.1.tar.gz
+[2024-06-02 18:18:29] INFO root fetch - processPackages [beta9]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-06-02 18:18:29] INFO root fetch - processPackages [trytond-purchase-blanket-agreement]: Downloading https://files.pythonhosted.org/packages/f8/fc/3fdc4b25154eba96b3ab9989836911eeddb62241a6cdf17cbdd033156eee/trytond_purchase_blanket_agreement-7.2.1.tar.gz
+[2024-06-02 18:18:29] INFO root fetch - processPackages [trytond-purchase-blanket-agreement]: Downloading https://files.pythonhosted.org/packages/6b/23/5b678a4cf8b7efcbbdb63e24873086513940f542a5275fbec5c07af363ce/trytond_purchase_blanket_agreement-7.2.2.tar.gz
+[2024-06-02 18:18:29] INFO root fetch - processPackages [beta9]: Downloading https://files.pythonhosted.org/packages/ef/cc/70806f6e01d8b8e311af6e2e9d3a1336489db4b9009f10e521e2128084e7/beta9-0.1.7.tar.gz
+[2024-06-02 18:18:29] INFO root fetch - processPackages [trytond-purchase-blanket-agreement]: Downloading https://files.pythonhosted.org/packages/6b/23/5b678a4cf8b7efcbbdb63e24873086513940f542a5275fbec5c07af363ce/trytond_purchase_blanket_agreement-7.2.2.tar.gz
+[2024-06-02 18:18:29] INFO root fetch - processPackages [trytond-purchase-blanket-agreement]: executing diffoscope
+[2024-06-02 18:18:29] INFO root fetch - processPackages [trytond-purchase-blanket-agreement]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trytond_purchase_blanket_agreement-7.2.1.tar.gz tmp/trytond_purchase_blanket_agreement-7.2.2.tar.gz --markdown 20240602/t/trytond-purchase-blanket-agreement/7.2.1-7.2.2/README.md --exclude *.pyd
+[2024-06-02 18:18:30] INFO root fetch - processPackages [trytond-purchase-blanket-agreement]: executing diffoscope
+[2024-06-02 18:18:30] INFO root fetch - processPackages [trytond-purchase-blanket-agreement]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trytond_purchase_blanket_agreement-7.2.1.tar.gz tmp/trytond_purchase_blanket_agreement-7.2.2.tar.gz --markdown 20240602/t/trytond-purchase-blanket-agreement/7.2.1-7.2.2/README.md --exclude *.pyd
+[2024-06-02 18:18:30] INFO root fetch - processPackages [beta9]: Downloading https://files.pythonhosted.org/packages/11/67/b604fdb1907c1ee8dda9654212239b97efe74c015aa742cfe9806173d4d3/beta9-0.1.8.tar.gz
+[2024-06-02 18:18:30] INFO root fetch - processPackages [beta9]: executing diffoscope
+[2024-06-02 18:18:30] INFO root fetch - processPackages [beta9]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/beta9-0.1.7.tar.gz tmp/beta9-0.1.8.tar.gz --markdown 20240602/b/beta9/0.1.7-0.1.8/README.md --exclude *.pyd
+[2024-06-02 18:18:30] INFO root fetch - processPackages [trytond-purchase-blanket-agreement]: Remove: archive file [/home/abi/fetcher/tmp/trytond_purchase_blanket_agreement-7.2.1.tar.gz]
+[2024-06-02 18:18:30] INFO root fetch - processPackages [trytond-purchase-blanket-agreement]: Remove: archive file [/home/abi/fetcher/tmp/trytond_purchase_blanket_agreement-7.2.2.tar.gz]
+[2024-06-02 18:18:30] INFO root fetch - main [MainThread]: End processing [trytond-purchase-blanket-agreement]: success
+[2024-06-02 18:18:30] INFO root fetch - main [MainThread]: End processing [trytond-purchase-blanket-agreement]: success
+[2024-06-02 18:18:31] INFO root fetch - processPackages [beta9]: Remove: archive file [/home/abi/fetcher/tmp/beta9-0.1.7.tar.gz]
+[2024-06-02 18:18:31] INFO root fetch - processPackages [beta9]: Remove: archive file [/home/abi/fetcher/tmp/beta9-0.1.8.tar.gz]
+[2024-06-02 18:18:31] INFO root fetch - main [MainThread]: End processing [beta9]: success
+[2024-06-02 18:18:31] INFO root fetch - main [MainThread]: Store serial: [23490639]
