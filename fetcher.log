@@ -10103,3 +10103,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-02 15:15:45] INFO root fetch - processPackages [naluconfigs]: Remove: archive file [/home/abi/fetcher/tmp/naluconfigs-13.8.4.tar.gz]
 [2024-06-02 15:15:45] INFO root fetch - main [MainThread]: End processing [naluconfigs]: success
 [2024-06-02 15:15:45] INFO root fetch - main [MainThread]: Store serial: [23489188]
+[2024-06-02 15:17:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23489188]
+[2024-06-02 15:17:54] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-02 15:17:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: stockdatamanager
+[2024-06-02 15:17:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: xingpyc
+[2024-06-02 15:17:54] INFO root fetch - processPackages [stockdatamanager]: New version: [1.1] Old Version: [1.0.1]
+[2024-06-02 15:17:54] INFO root fetch - processPackages [stockdatamanager]: Downloading https://files.pythonhosted.org/packages/c1/42/6f5d7588b21f7fcc784445a7a2f6ab1daf4e0b51377f5aeaf4efd7ba8a19/stockdatamanager-1.0.1.tar.gz
+[2024-06-02 15:17:54] INFO root fetch - processPackages [xingpyc]: New version: [0.3.1] Old Version: [0.3.0]
+[2024-06-02 15:17:54] INFO root fetch - processPackages [stockdatamanager]: Downloading https://files.pythonhosted.org/packages/48/d0/6570ed8db62dfa51535513534c9bab0dcab67119db2e8bf35ba1a6fa02e7/stockdatamanager-1.1.tar.gz
+[2024-06-02 15:17:54] INFO root fetch - processPackages [xingpyc]: Downloading https://files.pythonhosted.org/packages/db/29/3923a173a6a97cb9858445ea7add7f03a3874d1ea26fcf3338e9e31f6089/xingpyc-0.3.0.tar.gz
+[2024-06-02 15:17:54] INFO root fetch - processPackages [stockdatamanager]: executing diffoscope
+[2024-06-02 15:17:54] INFO root fetch - processPackages [stockdatamanager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stockdatamanager-1.0.1.tar.gz tmp/stockdatamanager-1.1.tar.gz --markdown 20240602/s/stockdatamanager/1.0.1-1.1/README.md --exclude *.pyd
+[2024-06-02 15:17:55] INFO root fetch - processPackages [xingpyc]: Downloading https://files.pythonhosted.org/packages/50/f2/30e0b7c739997860f9223a97cf41e3016c4c9c6650631460e77f6401f92e/xingpyc-0.3.1.tar.gz
+[2024-06-02 15:17:55] INFO root fetch - processPackages [xingpyc]: executing diffoscope
+[2024-06-02 15:17:55] INFO root fetch - processPackages [xingpyc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xingpyc-0.3.0.tar.gz tmp/xingpyc-0.3.1.tar.gz --markdown 20240602/x/xingpyc/0.3.0-0.3.1/README.md --exclude *.pyd
+[2024-06-02 15:17:55] INFO root fetch - processPackages [stockdatamanager]: Remove: archive file [/home/abi/fetcher/tmp/stockdatamanager-1.0.1.tar.gz]
+[2024-06-02 15:17:55] INFO root fetch - processPackages [stockdatamanager]: Remove: archive file [/home/abi/fetcher/tmp/stockdatamanager-1.1.tar.gz]
+[2024-06-02 15:17:55] INFO root fetch - main [MainThread]: End processing [stockdatamanager]: success
+[2024-06-02 15:17:55] INFO root fetch - processPackages [xingpyc]: Remove: archive file [/home/abi/fetcher/tmp/xingpyc-0.3.0.tar.gz]
+[2024-06-02 15:17:55] INFO root fetch - processPackages [xingpyc]: Remove: archive file [/home/abi/fetcher/tmp/xingpyc-0.3.1.tar.gz]
+[2024-06-02 15:17:55] INFO root fetch - main [MainThread]: End processing [xingpyc]: success
+[2024-06-02 15:17:55] INFO root fetch - main [MainThread]: Store serial: [23489195]
