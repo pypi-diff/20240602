@@ -16360,3 +16360,80 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 20:45:17] INFO root fetch - processPackages [kcli]: Remove: archive file [/home/abi/fetcher/tmp/kcli-99.0.202406021753.tar.gz]
 [2024-06-02 20:45:17] INFO root fetch - main [MainThread]: End processing [kcli]: success
 [2024-06-02 20:45:17] INFO root fetch - main [MainThread]: Store serial: [23492097]
+[2024-06-02 20:47:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23492097]
+[2024-06-02 20:47:25] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2024-06-02 20:47:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pynboard
+[2024-06-02 20:47:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: savemoney
+[2024-06-02 20:47:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cycls
+[2024-06-02 20:47:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pymodins
+[2024-06-02 20:47:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyiwe
+[2024-06-02 20:47:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: foo-et-al-parameterization
+[2024-06-02 20:47:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: gage-summary
+[2024-06-02 20:47:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: kfish
+[2024-06-02 20:47:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: copilothistoryexporter
+[2024-06-02 20:47:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: PyCatFile
+[2024-06-02 20:47:25] INFO root fetch - processPackages [pynboard]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-06-02 20:47:25] INFO root fetch - processPackages [cycls]: New version: [0.0.2.1] Old Version: [0.0.2.0]
+[2024-06-02 20:47:25] INFO root fetch - processPackages [pyiwe]: New version: [0.0.8.post1] Old Version: [0.0.7]
+[2024-06-02 20:47:25] INFO root fetch - processPackages [copilothistoryexporter]: New version: [1.0.2.4] Old Version: [1.0.2.3]
+[2024-06-02 20:47:25] INFO root fetch - processPackages [kfish]: New version: [99.0.202406021756] Old Version: [99.0.202406021634]
+[2024-06-02 20:47:26] INFO root fetch - processPackages [savemoney]: New version: [0.2.9] Old Version: [0.2.8b2]
+[2024-06-02 20:47:26] WARNING root fetch - processPackages [gage-summary]: Skipping, unable to determine old version
+[2024-06-02 20:47:26] INFO root fetch - main [MainThread]: End processing [gage-summary] error
+[2024-06-02 20:47:26] INFO root fetch - processPackages [pymodins]: New version: [2.0.4] Old Version: [2.0.3]
+[2024-06-02 20:47:26] WARNING root fetch - processPackages [foo-et-al-parameterization]: Skipping, unable to determine old version
+[2024-06-02 20:47:26] INFO root fetch - main [MainThread]: End processing [foo-et-al-parameterization] error
+[2024-06-02 20:47:26] INFO root fetch - processPackages [PyCatFile]: New version: [0.9.8] Old Version: [0.9.6]
+[2024-06-02 20:47:26] INFO root fetch - processPackages [cycls]: Downloading https://files.pythonhosted.org/packages/b7/49/21b01bc8e40082a0f85d110ded53ffca5c0967ade6c43259ce47abffe145/cycls-0.0.2.0.tar.gz
+[2024-06-02 20:47:26] INFO root fetch - processPackages [pyiwe]: Downloading https://files.pythonhosted.org/packages/82/b4/897b24d46dafb1331a40c09dd25f674ef2ca39ee0e37c9f899c43eaeeb80/pyiwe-0.0.7-py3-none-any.whl
+[2024-06-02 20:47:26] INFO root fetch - processPackages [copilothistoryexporter]: Downloading https://files.pythonhosted.org/packages/4c/d1/f76bc96d7af0dbb1a8053759bcab3bf6e4de8d26bf35dd63b64cf5609126/copilothistoryexporter-1.0.2.3.tar.gz
+[2024-06-02 20:47:26] INFO root fetch - processPackages [kfish]: Downloading https://files.pythonhosted.org/packages/27/8f/dbd4c036fc19d6bdbe3bf0878a1c48b60831f6edb5fec4a4dc4fdef9c2f4/kfish-99.0.202406021634.tar.gz
+[2024-06-02 20:47:26] INFO root fetch - processPackages [pynboard]: Downloading https://files.pythonhosted.org/packages/34/3b/1d4ee2c120ac9dc4dd13a9f97c7b149235ea2bde950321c5bc29b95129a6/pynboard-0.0.1.tar.gz
+[2024-06-02 20:47:26] WARNING root fetch - processPackages [kfish]: Skipping package: exceeds size limit 17007148>=10485760
+[2024-06-02 20:47:26] INFO root fetch - main [MainThread]: End processing [kfish] error
+[2024-06-02 20:47:26] INFO root fetch - processPackages [savemoney]: Downloading https://files.pythonhosted.org/packages/6c/13/a1a93e0c185d626dcf4a874180aa7a639ff876b6d42cd1a48f53546000ac/savemoney-0.2.8b2.tar.gz
+[2024-06-02 20:47:26] INFO root fetch - processPackages [pymodins]: Downloading https://files.pythonhosted.org/packages/e0/dd/1a084a45ead73c0abe63f3d7ee490ae3723e34c0f95727d437f608c026f9/pymodins-2.0.3.tar.gz
+[2024-06-02 20:47:26] INFO root fetch - processPackages [pyiwe]: Downloading https://files.pythonhosted.org/packages/d6/d0/b202ef13c3bcd897d6ccf0c5e007feaa0bea5c265b9ead80f69d338efb96/pyiwe-0.0.8.post1-py3-none-any.whl
+[2024-06-02 20:47:26] INFO root fetch - processPackages [PyCatFile]: Downloading https://files.pythonhosted.org/packages/08/96/4c154ca314dbb76c0bba84e70c73f3a53cd4528ee43f7ac17b54954c0b85/pycatfile-0.9.6.tar.gz
+[2024-06-02 20:47:26] INFO root fetch - processPackages [pyiwe]: executing diffoscope
+[2024-06-02 20:47:26] INFO root fetch - processPackages [pyiwe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyiwe-0.0.7-py3-none-any.whl.zip tmp/pyiwe-0.0.8.post1-py3-none-any.whl.zip --markdown 20240602/p/pyiwe/0.0.7-0.0.8.post1/README.md --exclude *.pyd
+[2024-06-02 20:47:26] INFO root fetch - processPackages [cycls]: Downloading https://files.pythonhosted.org/packages/24/e5/fab86579bf05f8b072bd52468fda70ec26068813ee6e0161c29ffa8f306d/cycls-0.0.2.1.tar.gz
+[2024-06-02 20:47:26] INFO root fetch - processPackages [pynboard]: Downloading https://files.pythonhosted.org/packages/7f/b8/47943a56d38af2e1afd61ff8abb518cbd1315349d7a10ff35d0abf87c338/pynboard-0.0.2.tar.gz
+[2024-06-02 20:47:26] INFO root fetch - processPackages [copilothistoryexporter]: Downloading https://files.pythonhosted.org/packages/51/45/b1968f2dea6d9a4fdea861603c4e6b78faffe6f5a76656e80284d77419c5/copilothistoryexporter-1.0.2.4.tar.gz
+[2024-06-02 20:47:26] INFO root fetch - processPackages [cycls]: executing diffoscope
+[2024-06-02 20:47:26] INFO root fetch - processPackages [cycls]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cycls-0.0.2.0.tar.gz tmp/cycls-0.0.2.1.tar.gz --markdown 20240602/c/cycls/0.0.2.0-0.0.2.1/README.md --exclude *.pyd
+[2024-06-02 20:47:26] INFO root fetch - processPackages [pynboard]: executing diffoscope
+[2024-06-02 20:47:26] INFO root fetch - processPackages [pynboard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pynboard-0.0.1.tar.gz tmp/pynboard-0.0.2.tar.gz --markdown 20240602/p/pynboard/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-06-02 20:47:26] INFO root fetch - processPackages [pymodins]: Downloading https://files.pythonhosted.org/packages/4f/92/974e7e612b4f9bb20fb888322b67adbc324daf77dced715a9d1a1f27cc9d/pymodins-2.0.4.tar.gz
+[2024-06-02 20:47:26] INFO root fetch - processPackages [copilothistoryexporter]: executing diffoscope
+[2024-06-02 20:47:26] INFO root fetch - processPackages [copilothistoryexporter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/copilothistoryexporter-1.0.2.3.tar.gz tmp/copilothistoryexporter-1.0.2.4.tar.gz --markdown 20240602/c/copilothistoryexporter/1.0.2.3-1.0.2.4/README.md --exclude *.pyd
+[2024-06-02 20:47:26] INFO root fetch - processPackages [savemoney]: Downloading https://files.pythonhosted.org/packages/a9/9a/5ba41b65cfe3d107996e156a4076cd66d718ba3fa191aa62cc52a9514fb0/savemoney-0.2.9.tar.gz
+[2024-06-02 20:47:26] INFO root fetch - processPackages [PyCatFile]: Downloading https://files.pythonhosted.org/packages/d8/c3/779688dd1beca850480edb18c8e26ce64dcf364b8ab9b110d2a55552ca93/pycatfile-0.9.8.tar.gz
+[2024-06-02 20:47:26] INFO root fetch - processPackages [pymodins]: executing diffoscope
+[2024-06-02 20:47:26] INFO root fetch - processPackages [pymodins]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymodins-2.0.3.tar.gz tmp/pymodins-2.0.4.tar.gz --markdown 20240602/p/pymodins/2.0.3-2.0.4/README.md --exclude *.pyd
+[2024-06-02 20:47:26] INFO root fetch - processPackages [savemoney]: executing diffoscope
+[2024-06-02 20:47:26] INFO root fetch - processPackages [savemoney]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/savemoney-0.2.8b2.tar.gz tmp/savemoney-0.2.9.tar.gz --markdown 20240602/s/savemoney/0.2.8b2-0.2.9/README.md --exclude *.pyd
+[2024-06-02 20:47:26] INFO root fetch - processPackages [PyCatFile]: executing diffoscope
+[2024-06-02 20:47:26] INFO root fetch - processPackages [PyCatFile]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pycatfile-0.9.6.tar.gz tmp/pycatfile-0.9.8.tar.gz --markdown 20240602/P/PyCatFile/0.9.6-0.9.8/README.md --exclude *.pyd
+[2024-06-02 20:47:27] INFO root fetch - processPackages [pynboard]: Remove: archive file [/home/abi/fetcher/tmp/pynboard-0.0.1.tar.gz]
+[2024-06-02 20:47:27] INFO root fetch - processPackages [pynboard]: Remove: archive file [/home/abi/fetcher/tmp/pynboard-0.0.2.tar.gz]
+[2024-06-02 20:47:27] INFO root fetch - main [MainThread]: End processing [pynboard]: success
+[2024-06-02 20:47:27] INFO root fetch - processPackages [pyiwe]: Remove: archive file [/home/abi/fetcher/tmp/pyiwe-0.0.7-py3-none-any.whl.zip]
+[2024-06-02 20:47:27] INFO root fetch - processPackages [copilothistoryexporter]: Remove: archive file [/home/abi/fetcher/tmp/copilothistoryexporter-1.0.2.3.tar.gz]
+[2024-06-02 20:47:27] INFO root fetch - processPackages [pyiwe]: Remove: archive file [/home/abi/fetcher/tmp/pyiwe-0.0.8.post1-py3-none-any.whl.zip]
+[2024-06-02 20:47:27] INFO root fetch - processPackages [copilothistoryexporter]: Remove: archive file [/home/abi/fetcher/tmp/copilothistoryexporter-1.0.2.4.tar.gz]
+[2024-06-02 20:47:27] INFO root fetch - main [MainThread]: End processing [pyiwe]: success
+[2024-06-02 20:47:27] INFO root fetch - main [MainThread]: End processing [copilothistoryexporter]: success
+[2024-06-02 20:47:27] INFO root fetch - processPackages [cycls]: Remove: archive file [/home/abi/fetcher/tmp/cycls-0.0.2.0.tar.gz]
+[2024-06-02 20:47:27] INFO root fetch - processPackages [cycls]: Remove: archive file [/home/abi/fetcher/tmp/cycls-0.0.2.1.tar.gz]
+[2024-06-02 20:47:27] INFO root fetch - main [MainThread]: End processing [cycls]: success
+[2024-06-02 20:47:27] INFO root fetch - processPackages [pymodins]: Remove: archive file [/home/abi/fetcher/tmp/pymodins-2.0.3.tar.gz]
+[2024-06-02 20:47:27] INFO root fetch - processPackages [pymodins]: Remove: archive file [/home/abi/fetcher/tmp/pymodins-2.0.4.tar.gz]
+[2024-06-02 20:47:27] INFO root fetch - main [MainThread]: End processing [pymodins]: success
+[2024-06-02 20:47:27] INFO root fetch - processPackages [PyCatFile]: Remove: archive file [/home/abi/fetcher/tmp/pycatfile-0.9.6.tar.gz]
+[2024-06-02 20:47:27] INFO root fetch - processPackages [PyCatFile]: Remove: archive file [/home/abi/fetcher/tmp/pycatfile-0.9.8.tar.gz]
+[2024-06-02 20:47:27] INFO root fetch - main [MainThread]: End processing [PyCatFile]: success
+[2024-06-02 20:47:28] INFO root fetch - processPackages [savemoney]: Remove: archive file [/home/abi/fetcher/tmp/savemoney-0.2.8b2.tar.gz]
+[2024-06-02 20:47:28] INFO root fetch - processPackages [savemoney]: Remove: archive file [/home/abi/fetcher/tmp/savemoney-0.2.9.tar.gz]
+[2024-06-02 20:47:28] INFO root fetch - main [MainThread]: End processing [savemoney]: success
+[2024-06-02 20:47:28] INFO root fetch - main [MainThread]: Store serial: [23492132]
