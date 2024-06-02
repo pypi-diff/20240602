@@ -16033,3 +16033,45 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 20:29:56] INFO root fetch - processPackages [gammarers.aws-secure-cloudfront-origin-bucket]: Remove: archive file [/home/abi/fetcher/tmp/gammarers.aws-secure-cloudfront-origin-bucket-1.6.1.tar.gz]
 [2024-06-02 20:29:56] INFO root fetch - main [MainThread]: End processing [gammarers.aws-secure-cloudfront-origin-bucket]: success
 [2024-06-02 20:29:56] INFO root fetch - main [MainThread]: Store serial: [23491891]
+[2024-06-02 20:32:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23491891]
+[2024-06-02 20:32:05] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-06-02 20:32:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tarebar
+[2024-06-02 20:32:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: stdf-tamer
+[2024-06-02 20:32:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: contact-person-profile-csv-imp-local
+[2024-06-02 20:32:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cycls
+[2024-06-02 20:32:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nusacrowd
+[2024-06-02 20:32:05] INFO root fetch - processPackages [cycls]: New version: [0.0.2.0] Old Version: [0.0.1.5]
+[2024-06-02 20:32:05] INFO root fetch - processPackages [cycls]: Downloading https://files.pythonhosted.org/packages/3d/12/764bc2b95c1eb82e955e40ba58a35c288c35bc758be5ba6b90f373fd8d7e/cycls-0.0.1.5.tar.gz
+[2024-06-02 20:32:05] INFO root fetch - processPackages [contact-person-profile-csv-imp-local]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-06-02 20:32:05] INFO root fetch - processPackages [stdf-tamer]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-06-02 20:32:05] INFO root fetch - processPackages [nusacrowd]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-06-02 20:32:05] INFO root fetch - processPackages [stdf-tamer]: Downloading https://files.pythonhosted.org/packages/31/c2/d1606fef389c807cd052724994f5d6d23f2dfd5a14b8577710f483ace7e9/stdf_tamer-1.0.8.tar.gz
+[2024-06-02 20:32:05] INFO root fetch - processPackages [contact-person-profile-csv-imp-local]: Downloading https://files.pythonhosted.org/packages/38/8e/697a7a19f7efccb43ada97483628a3b05cd2c0ecf731e43238d4c94beb46/contact_person_profile_csv_imp_local-0.0.8.tar.gz
+[2024-06-02 20:32:05] INFO root fetch - processPackages [cycls]: Downloading https://files.pythonhosted.org/packages/b7/49/21b01bc8e40082a0f85d110ded53ffca5c0967ade6c43259ce47abffe145/cycls-0.0.2.0.tar.gz
+[2024-06-02 20:32:05] INFO root fetch - processPackages [nusacrowd]: Downloading https://files.pythonhosted.org/packages/d3/8e/71dab450f66d9f29871d89a568f716f995e32e64df136af4ff7b8a0c8af5/nusacrowd-0.1.3.tar.gz
+[2024-06-02 20:32:05] WARNING root fetch - processPackages [tarebar]: Skipping, unable to determine old version
+[2024-06-02 20:32:05] INFO root fetch - main [MainThread]: End processing [tarebar] error
+[2024-06-02 20:32:05] INFO root fetch - processPackages [cycls]: executing diffoscope
+[2024-06-02 20:32:05] INFO root fetch - processPackages [cycls]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cycls-0.0.1.5.tar.gz tmp/cycls-0.0.2.0.tar.gz --markdown 20240602/c/cycls/0.0.1.5-0.0.2.0/README.md --exclude *.pyd
+[2024-06-02 20:32:05] INFO root fetch - processPackages [stdf-tamer]: Downloading https://files.pythonhosted.org/packages/46/04/dd2d98127a10dc17e24249e74dddf31d7873d9be4df391c1f1f433b49d82/stdf_tamer-1.0.9.tar.gz
+[2024-06-02 20:32:05] INFO root fetch - processPackages [contact-person-profile-csv-imp-local]: Downloading https://files.pythonhosted.org/packages/2c/27/f654a86e934199e979e23917591a3a16a0877f5bfff9aa07956945918b8b/contact_person_profile_csv_imp_local-0.0.9.tar.gz
+[2024-06-02 20:32:05] INFO root fetch - processPackages [nusacrowd]: Downloading https://files.pythonhosted.org/packages/2b/93/d05d8155c21facc3b19c3ca02d8826e67e66e7386473fbe6aceff415ad29/nusacrowd-0.1.4.tar.gz
+[2024-06-02 20:32:06] INFO root fetch - processPackages [stdf-tamer]: executing diffoscope
+[2024-06-02 20:32:06] INFO root fetch - processPackages [stdf-tamer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stdf_tamer-1.0.8.tar.gz tmp/stdf_tamer-1.0.9.tar.gz --markdown 20240602/s/stdf-tamer/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-06-02 20:32:06] INFO root fetch - processPackages [contact-person-profile-csv-imp-local]: executing diffoscope
+[2024-06-02 20:32:06] INFO root fetch - processPackages [contact-person-profile-csv-imp-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/contact_person_profile_csv_imp_local-0.0.8.tar.gz tmp/contact_person_profile_csv_imp_local-0.0.9.tar.gz --markdown 20240602/c/contact-person-profile-csv-imp-local/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-06-02 20:32:06] INFO root fetch - processPackages [nusacrowd]: executing diffoscope
+[2024-06-02 20:32:06] INFO root fetch - processPackages [nusacrowd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nusacrowd-0.1.3.tar.gz tmp/nusacrowd-0.1.4.tar.gz --markdown 20240602/n/nusacrowd/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-06-02 20:32:06] INFO root fetch - processPackages [cycls]: Remove: archive file [/home/abi/fetcher/tmp/cycls-0.0.1.5.tar.gz]
+[2024-06-02 20:32:06] INFO root fetch - processPackages [cycls]: Remove: archive file [/home/abi/fetcher/tmp/cycls-0.0.2.0.tar.gz]
+[2024-06-02 20:32:06] INFO root fetch - main [MainThread]: End processing [cycls]: success
+[2024-06-02 20:32:06] INFO root fetch - processPackages [stdf-tamer]: Remove: archive file [/home/abi/fetcher/tmp/stdf_tamer-1.0.8.tar.gz]
+[2024-06-02 20:32:06] INFO root fetch - processPackages [stdf-tamer]: Remove: archive file [/home/abi/fetcher/tmp/stdf_tamer-1.0.9.tar.gz]
+[2024-06-02 20:32:06] INFO root fetch - main [MainThread]: End processing [stdf-tamer]: success
+[2024-06-02 20:32:06] INFO root fetch - processPackages [contact-person-profile-csv-imp-local]: Remove: archive file [/home/abi/fetcher/tmp/contact_person_profile_csv_imp_local-0.0.8.tar.gz]
+[2024-06-02 20:32:06] INFO root fetch - processPackages [contact-person-profile-csv-imp-local]: Remove: archive file [/home/abi/fetcher/tmp/contact_person_profile_csv_imp_local-0.0.9.tar.gz]
+[2024-06-02 20:32:06] INFO root fetch - main [MainThread]: End processing [contact-person-profile-csv-imp-local]: success
+[2024-06-02 20:32:07] INFO root fetch - processPackages [nusacrowd]: Remove: archive file [/home/abi/fetcher/tmp/nusacrowd-0.1.3.tar.gz]
+[2024-06-02 20:32:07] INFO root fetch - processPackages [nusacrowd]: Remove: archive file [/home/abi/fetcher/tmp/nusacrowd-0.1.4.tar.gz]
+[2024-06-02 20:32:07] INFO root fetch - main [MainThread]: End processing [nusacrowd]: success
+[2024-06-02 20:32:07] INFO root fetch - main [MainThread]: Store serial: [23491908]
