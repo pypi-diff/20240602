@@ -6633,3 +6633,18 @@
 [2024-06-02 11:06:46] INFO root fetch - processPackages [cdo-sdk-python]: Remove: archive file [/home/abi/fetcher/tmp/cdo-sdk-python-1.0.99.tar.gz]
 [2024-06-02 11:06:46] INFO root fetch - main [MainThread]: End processing [cdo-sdk-python]: success
 [2024-06-02 11:06:46] INFO root fetch - main [MainThread]: Store serial: [23487592]
+[2024-06-02 11:08:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23487592]
+[2024-06-02 11:08:56] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-02 11:08:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: smart-resume-job-matcher
+[2024-06-02 11:08:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: minishell
+[2024-06-02 11:08:56] WARNING root fetch - processPackages [smart-resume-job-matcher]: Skipping, unable to determine old version
+[2024-06-02 11:08:56] INFO root fetch - processPackages [minishell]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-06-02 11:08:56] INFO root fetch - main [MainThread]: End processing [smart-resume-job-matcher] error
+[2024-06-02 11:08:56] INFO root fetch - processPackages [minishell]: Downloading https://files.pythonhosted.org/packages/e0/7e/a1cf7c633ed564c076b159b83aeca584031a6c977b6158523be0a2ddd944/minishell-0.0.1.tar.gz
+[2024-06-02 11:08:56] INFO root fetch - processPackages [minishell]: Downloading https://files.pythonhosted.org/packages/ae/c3/325fa5c1cfe764afba57b20d9f8429be24fb0ad8fd76a33abfc529fb5517/minishell-0.0.2.tar.gz
+[2024-06-02 11:08:56] INFO root fetch - processPackages [minishell]: executing diffoscope
+[2024-06-02 11:08:56] INFO root fetch - processPackages [minishell]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/minishell-0.0.1.tar.gz tmp/minishell-0.0.2.tar.gz --markdown 20240602/m/minishell/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-06-02 11:08:57] INFO root fetch - processPackages [minishell]: Remove: archive file [/home/abi/fetcher/tmp/minishell-0.0.1.tar.gz]
+[2024-06-02 11:08:57] INFO root fetch - processPackages [minishell]: Remove: archive file [/home/abi/fetcher/tmp/minishell-0.0.2.tar.gz]
+[2024-06-02 11:08:57] INFO root fetch - main [MainThread]: End processing [minishell]: success
+[2024-06-02 11:08:57] INFO root fetch - main [MainThread]: Store serial: [23487597]
