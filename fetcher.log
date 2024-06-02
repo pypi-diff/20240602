@@ -6125,3 +6125,18 @@
 [2024-06-02 10:21:46] INFO root fetch - processPackages [setux-modules]: Remove: archive file [/home/abi/fetcher/tmp/setux_modules-0.3.4.tar.gz]
 [2024-06-02 10:21:46] INFO root fetch - main [MainThread]: End processing [setux-modules]: success
 [2024-06-02 10:21:46] INFO root fetch - main [MainThread]: Store serial: [23487357]
+[2024-06-02 10:23:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23487357]
+[2024-06-02 10:23:55] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-02 10:23:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: toru
+[2024-06-02 10:23:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyoload
+[2024-06-02 10:23:55] WARNING root fetch - processPackages [toru]: Skipping, unable to determine old version
+[2024-06-02 10:23:55] INFO root fetch - main [MainThread]: End processing [toru] error
+[2024-06-02 10:23:55] INFO root fetch - processPackages [pyoload]: New version: [1.1.1] Old Version: [1.1.0]
+[2024-06-02 10:23:55] INFO root fetch - processPackages [pyoload]: Downloading https://files.pythonhosted.org/packages/98/43/d78405eb409c1f4f72108d9ac7f1ed2dc1f93a48c366a5726711fb5fd781/pyoload-1.1.0.tar.gz
+[2024-06-02 10:23:55] INFO root fetch - processPackages [pyoload]: Downloading https://files.pythonhosted.org/packages/0b/46/71dae661cb3c103c4f5b7550f03f2eb9c5a8d12c0ab85e9cacf37ed018fe/pyoload-1.1.1.tar.gz
+[2024-06-02 10:23:55] INFO root fetch - processPackages [pyoload]: executing diffoscope
+[2024-06-02 10:23:55] INFO root fetch - processPackages [pyoload]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyoload-1.1.0.tar.gz tmp/pyoload-1.1.1.tar.gz --markdown 20240602/p/pyoload/1.1.0-1.1.1/README.md --exclude *.pyd
+[2024-06-02 10:23:56] INFO root fetch - processPackages [pyoload]: Remove: archive file [/home/abi/fetcher/tmp/pyoload-1.1.0.tar.gz]
+[2024-06-02 10:23:56] INFO root fetch - processPackages [pyoload]: Remove: archive file [/home/abi/fetcher/tmp/pyoload-1.1.1.tar.gz]
+[2024-06-02 10:23:56] INFO root fetch - main [MainThread]: End processing [pyoload]: success
+[2024-06-02 10:23:56] INFO root fetch - main [MainThread]: Store serial: [23487370]
