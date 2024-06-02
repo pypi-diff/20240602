@@ -12682,3 +12682,62 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 17:51:57] INFO root fetch - processPackages [dash-express-components]: Remove: archive file [/home/abi/fetcher/tmp/dash_express_components-0.0.99.tar.gz]
 [2024-06-02 17:51:57] INFO root fetch - main [MainThread]: End processing [dash-express-components]: success
 [2024-06-02 17:51:57] INFO root fetch - main [MainThread]: Store serial: [23490354]
+[2024-06-02 17:54:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23490354]
+[2024-06-02 17:54:05] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-06-02 17:54:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mkdocs-juvix-plugin
+[2024-06-02 17:54:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: coincurve
+[2024-06-02 17:54:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pcleaner
+[2024-06-02 17:54:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: voyage-agents
+[2024-06-02 17:54:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pcleaner-cli
+[2024-06-02 17:54:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: aispark-plugin-test
+[2024-06-02 17:54:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: kfish
+[2024-06-02 17:54:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: trytond
+[2024-06-02 17:54:06] INFO root fetch - processPackages [mkdocs-juvix-plugin]: New version: [0.2.6] Old Version: [0.2.5]
+[2024-06-02 17:54:06] INFO root fetch - processPackages [voyage-agents]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-06-02 17:54:06] WARNING root fetch - processPackages [pcleaner-cli]: Skipping, unable to determine old version
+[2024-06-02 17:54:06] INFO root fetch - main [MainThread]: End processing [pcleaner-cli] error
+[2024-06-02 17:54:06] INFO root fetch - processPackages [coincurve]: New version: [9.0.0] Old Version: [8.0.2rc3]
+[2024-06-02 17:54:06] INFO root fetch - processPackages [kfish]: New version: [99.0.202406021522] Old Version: [99.0.202406021511]
+[2024-06-02 17:54:06] WARNING root fetch - processPackages [aispark-plugin-test]: Skipping, unable to determine old version
+[2024-06-02 17:54:06] INFO root fetch - main [MainThread]: End processing [aispark-plugin-test] error
+[2024-06-02 17:54:06] INFO root fetch - processPackages [mkdocs-juvix-plugin]: Downloading https://files.pythonhosted.org/packages/58/b4/57830e07f19bdae2ffaf431f372ed26def198ceae525142575ed80bb8d39/mkdocs-juvix-plugin-0.2.5.tar.gz
+[2024-06-02 17:54:06] INFO root fetch - processPackages [voyage-agents]: Downloading https://files.pythonhosted.org/packages/dc/46/4eab17b2625e44b240262a42338743d717ca6781ee2286f906ab89993d02/voyage_agents-0.0.3.tar.gz
+[2024-06-02 17:54:06] INFO root fetch - processPackages [pcleaner]: New version: [2.7.1] Old Version: [2.7.0]
+[2024-06-02 17:54:06] INFO root fetch - processPackages [trytond]: New version: [7.2.3] Old Version: [7.2.2]
+[2024-06-02 17:54:06] INFO root fetch - processPackages [coincurve]: Downloading https://files.pythonhosted.org/packages/c5/aa/4ec12959cc263de1f1e063e8823e1de028315fab7b415633e92116d303d6/coincurve-8.0.2rc3.tar.gz
+[2024-06-02 17:54:06] INFO root fetch - processPackages [kfish]: Downloading https://files.pythonhosted.org/packages/8a/31/f4e6e5615db11f1bc972406153e4afb49ba44d688a23794a29567688f832/kfish-99.0.202406021511.tar.gz
+[2024-06-02 17:54:06] INFO root fetch - processPackages [pcleaner]: Downloading https://files.pythonhosted.org/packages/2b/f6/c434792f525f1627b1ad128334938b91a9e13b646a489b3e814660ef84f2/pcleaner-2.7.0.tar.gz
+[2024-06-02 17:54:06] WARNING root fetch - processPackages [kfish]: Skipping package: exceeds size limit 17007036>=10485760
+[2024-06-02 17:54:06] INFO root fetch - main [MainThread]: End processing [kfish] error
+[2024-06-02 17:54:06] INFO root fetch - processPackages [mkdocs-juvix-plugin]: Downloading https://files.pythonhosted.org/packages/64/0e/fe2d13a2f5e075753ad6f41ca1343982e54d03a63ee5972e458e6355ba3d/mkdocs-juvix-plugin-0.2.6.tar.gz
+[2024-06-02 17:54:06] INFO root fetch - processPackages [voyage-agents]: Downloading https://files.pythonhosted.org/packages/b6/e6/a6d40c5c84fd314cf8c670b5c263f55f0fdccbf3737ab40e0d0c7de58966/voyage_agents-0.0.4.tar.gz
+[2024-06-02 17:54:06] INFO root fetch - processPackages [trytond]: Downloading https://files.pythonhosted.org/packages/90/5a/b6f4d30c6b9cd3849cb9b0440e1ee5120395bb53bc080c5ed6ba812565a8/trytond-7.2.2.tar.gz
+[2024-06-02 17:54:06] INFO root fetch - processPackages [mkdocs-juvix-plugin]: executing diffoscope
+[2024-06-02 17:54:06] INFO root fetch - processPackages [mkdocs-juvix-plugin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mkdocs-juvix-plugin-0.2.5.tar.gz tmp/mkdocs-juvix-plugin-0.2.6.tar.gz --markdown 20240602/m/mkdocs-juvix-plugin/0.2.5-0.2.6/README.md --exclude *.pyd
+[2024-06-02 17:54:06] INFO root fetch - processPackages [voyage-agents]: executing diffoscope
+[2024-06-02 17:54:06] INFO root fetch - processPackages [voyage-agents]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/voyage_agents-0.0.3.tar.gz tmp/voyage_agents-0.0.4.tar.gz --markdown 20240602/v/voyage-agents/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-06-02 17:54:06] INFO root fetch - processPackages [pcleaner]: Downloading https://files.pythonhosted.org/packages/18/41/c8034f49c384a15ab48ad5787cea3a265e0fcb4a2bc663410ea3c637020e/pcleaner-2.7.1.tar.gz
+[2024-06-02 17:54:07] INFO root fetch - processPackages [trytond]: Downloading https://files.pythonhosted.org/packages/f6/c2/6234e5c14f25d07af58c7b12392a8c7a0d54e7f345502d974ba8955dea3b/trytond-7.2.3.tar.gz
+[2024-06-02 17:54:07] INFO root fetch - processPackages [pcleaner]: executing diffoscope
+[2024-06-02 17:54:07] INFO root fetch - processPackages [pcleaner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pcleaner-2.7.0.tar.gz tmp/pcleaner-2.7.1.tar.gz --markdown 20240602/p/pcleaner/2.7.0-2.7.1/README.md --exclude *.pyd
+[2024-06-02 17:54:07] INFO root fetch - processPackages [mkdocs-juvix-plugin]: Remove: archive file [/home/abi/fetcher/tmp/mkdocs-juvix-plugin-0.2.5.tar.gz]
+[2024-06-02 17:54:07] INFO root fetch - processPackages [mkdocs-juvix-plugin]: Remove: archive file [/home/abi/fetcher/tmp/mkdocs-juvix-plugin-0.2.6.tar.gz]
+[2024-06-02 17:54:07] INFO root fetch - main [MainThread]: End processing [mkdocs-juvix-plugin]: success
+[2024-06-02 17:54:07] INFO root fetch - processPackages [trytond]: executing diffoscope
+[2024-06-02 17:54:07] INFO root fetch - processPackages [trytond]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trytond-7.2.2.tar.gz tmp/trytond-7.2.3.tar.gz --markdown 20240602/t/trytond/7.2.2-7.2.3/README.md --exclude *.pyd
+[2024-06-02 17:54:07] INFO root fetch - processPackages [voyage-agents]: Remove: archive file [/home/abi/fetcher/tmp/voyage_agents-0.0.3.tar.gz]
+[2024-06-02 17:54:07] INFO root fetch - processPackages [voyage-agents]: Remove: archive file [/home/abi/fetcher/tmp/voyage_agents-0.0.4.tar.gz]
+[2024-06-02 17:54:07] INFO root fetch - main [MainThread]: End processing [voyage-agents]: success
+[2024-06-02 17:54:07] INFO root fetch - processPackages [coincurve]: Downloading https://files.pythonhosted.org/packages/f4/1d/008a37946ed0a8a818a7d92b25e6799691052c505b59ec676b8d65be7e88/coincurve-9.0.0.tar.gz
+[2024-06-02 17:54:08] INFO root fetch - processPackages [coincurve]: executing diffoscope
+[2024-06-02 17:54:08] INFO root fetch - processPackages [coincurve]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coincurve-8.0.2rc3.tar.gz tmp/coincurve-9.0.0.tar.gz --markdown 20240602/c/coincurve/8.0.2rc3-9.0.0/README.md --exclude *.pyd
+[2024-06-02 17:54:08] INFO root fetch - processPackages [pcleaner]: Remove: archive file [/home/abi/fetcher/tmp/pcleaner-2.7.0.tar.gz]
+[2024-06-02 17:54:08] INFO root fetch - processPackages [pcleaner]: Remove: archive file [/home/abi/fetcher/tmp/pcleaner-2.7.1.tar.gz]
+[2024-06-02 17:54:08] INFO root fetch - main [MainThread]: End processing [pcleaner]: success
+[2024-06-02 17:54:09] INFO root fetch - processPackages [trytond]: Remove: archive file [/home/abi/fetcher/tmp/trytond-7.2.2.tar.gz]
+[2024-06-02 17:54:09] INFO root fetch - processPackages [trytond]: Remove: archive file [/home/abi/fetcher/tmp/trytond-7.2.3.tar.gz]
+[2024-06-02 17:54:09] INFO root fetch - main [MainThread]: End processing [trytond]: success
+[2024-06-02 17:54:10] INFO root fetch - processPackages [coincurve]: Remove: archive file [/home/abi/fetcher/tmp/coincurve-8.0.2rc3.tar.gz]
+[2024-06-02 17:54:10] INFO root fetch - processPackages [coincurve]: Remove: archive file [/home/abi/fetcher/tmp/coincurve-9.0.0.tar.gz]
+[2024-06-02 17:54:10] INFO root fetch - main [MainThread]: End processing [coincurve]: success
+[2024-06-02 17:54:10] INFO root fetch - main [MainThread]: Store serial: [23490428]
