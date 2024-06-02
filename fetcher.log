@@ -16683,3 +16683,24 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 21:02:41] INFO root fetch - processPackages [flake8-classmethod-staticmethod]: Remove: archive file [/home/abi/fetcher/tmp/flake8_classmethod_staticmethod-2.1.tar.gz]
 [2024-06-02 21:02:41] INFO root fetch - main [MainThread]: End processing [flake8-classmethod-staticmethod]: success
 [2024-06-02 21:02:41] INFO root fetch - main [MainThread]: Store serial: [23492237]
+[2024-06-02 21:04:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23492237]
+[2024-06-02 21:04:49] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-02 21:04:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: easymp3
+[2024-06-02 21:04:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyerualjetwork
+[2024-06-02 21:04:49] INFO root fetch - processPackages [easymp3]: New version: [1.2] Old Version: [1.1]
+[2024-06-02 21:04:49] INFO root fetch - processPackages [pyerualjetwork]: New version: [2.0.1] Old Version: [2.0]
+[2024-06-02 21:04:49] INFO root fetch - processPackages [pyerualjetwork]: Downloading https://files.pythonhosted.org/packages/11/68/339c73645cedbf85afd794ba7066986dccc247835c5885c4bbd6d1167938/pyerualjetwork-2-py3-none-any.whl
+[2024-06-02 21:04:49] INFO root fetch - processPackages [easymp3]: Downloading https://files.pythonhosted.org/packages/7b/34/400660aedb7e3e99c3ccfc510bbf371cb10c5e80594e9194f923e7757cd7/easymp3-1.1.tar.gz
+[2024-06-02 21:04:49] INFO root fetch - processPackages [easymp3]: Downloading https://files.pythonhosted.org/packages/59/25/bfcdd5533c3e570815192f7c9e5581136347f3e05754c7e4218f0dfc8b4a/easymp3-1.2.tar.gz
+[2024-06-02 21:04:49] INFO root fetch - processPackages [pyerualjetwork]: Downloading https://files.pythonhosted.org/packages/c4/21/a4c118d08dd04ba201dc51efc0cd1bcc658bc29f1342237111cdbd3f3144/pyerualjetwork-2.0.1.tar.gz
+[2024-06-02 21:04:49] INFO root fetch - processPackages [easymp3]: executing diffoscope
+[2024-06-02 21:04:49] INFO root fetch - processPackages [easymp3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/easymp3-1.1.tar.gz tmp/easymp3-1.2.tar.gz --markdown 20240602/e/easymp3/1.1-1.2/README.md --exclude *.pyd
+[2024-06-02 21:04:49] INFO root fetch - processPackages [pyerualjetwork]: executing diffoscope
+[2024-06-02 21:04:49] INFO root fetch - processPackages [pyerualjetwork]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyerualjetwork-2-py3-none-any.whl.zip tmp/pyerualjetwork-2.0.1.tar.gz --markdown 20240602/p/pyerualjetwork/2.0-2.0.1/README.md --exclude *.pyd
+[2024-06-02 21:04:50] INFO root fetch - processPackages [easymp3]: Remove: archive file [/home/abi/fetcher/tmp/easymp3-1.1.tar.gz]
+[2024-06-02 21:04:50] INFO root fetch - processPackages [easymp3]: Remove: archive file [/home/abi/fetcher/tmp/easymp3-1.2.tar.gz]
+[2024-06-02 21:04:50] INFO root fetch - main [MainThread]: End processing [easymp3]: success
+[2024-06-02 21:04:50] INFO root fetch - processPackages [pyerualjetwork]: Remove: archive file [/home/abi/fetcher/tmp/pyerualjetwork-2-py3-none-any.whl.zip]
+[2024-06-02 21:04:50] INFO root fetch - processPackages [pyerualjetwork]: Remove: archive file [/home/abi/fetcher/tmp/pyerualjetwork-2.0.1.tar.gz]
+[2024-06-02 21:04:50] INFO root fetch - main [MainThread]: End processing [pyerualjetwork]: success
+[2024-06-02 21:04:50] INFO root fetch - main [MainThread]: Store serial: [23492244]
