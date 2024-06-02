@@ -12334,3 +12334,71 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 17:34:18] INFO root fetch - processPackages [aimodelshare]: Remove: archive file [/home/abi/fetcher/tmp/aimodelshare-0.1.9.tar.gz]
 [2024-06-02 17:34:18] INFO root fetch - main [MainThread]: End processing [aimodelshare]: success
 [2024-06-02 17:34:18] INFO root fetch - main [MainThread]: Store serial: [23490152]
+[2024-06-02 17:36:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23490152]
+[2024-06-02 17:36:26] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2024-06-02 17:36:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rl-test-storage-handlers
+[2024-06-02 17:36:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rl-test-task-1
+[2024-06-02 17:36:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rl-test-task-2
+[2024-06-02 17:36:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: rl-test-task-3
+[2024-06-02 17:36:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: rl-tasks
+[2024-06-02 17:36:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: vtacML
+[2024-06-02 17:36:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: yay-automation
+[2024-06-02 17:36:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: toyai
+[2024-06-02 17:36:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: janim
+[2024-06-02 17:36:26] INFO root fetch - processPackages [rl-tasks]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-06-02 17:36:26] WARNING root fetch - processPackages [yay-automation]: Skipping, unable to determine old version
+[2024-06-02 17:36:26] INFO root fetch - main [MainThread]: End processing [yay-automation] error
+[2024-06-02 17:36:26] INFO root fetch - processPackages [toyai]: New version: [0.2] Old Version: [0.1.2]
+[2024-06-02 17:36:26] INFO root fetch - processPackages [vtacML]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-06-02 17:36:26] WARNING root fetch - processPackages [rl-test-storage-handlers]: Skipping, unable to determine old version
+[2024-06-02 17:36:26] INFO root fetch - main [MainThread]: End processing [rl-test-storage-handlers] error
+[2024-06-02 17:36:26] INFO root fetch - processPackages [rl-test-task-2]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-06-02 17:36:26] INFO root fetch - processPackages [rl-test-task-1]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-06-02 17:36:26] INFO root fetch - processPackages [rl-test-task-2]: Downloading https://files.pythonhosted.org/packages/c7/aa/097de70c7efcd43bb8948dbda96f05641a519faa30cdd9dd135ce6dfff95/rl_test_task_2-0.1.2.tar.gz
+[2024-06-02 17:36:26] INFO root fetch - processPackages [janim]: New version: [1.2.2] Old Version: [1.2.1]
+[2024-06-02 17:36:26] INFO root fetch - processPackages [vtacML]: Downloading https://files.pythonhosted.org/packages/64/66/ec535000b09b3219255280a24b7a8d79995dcd4863129ac031f06d7f1b16/vtacML-0.1.7.tar.gz
+[2024-06-02 17:36:26] INFO root fetch - processPackages [rl-test-task-3]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-06-02 17:36:26] INFO root fetch - processPackages [rl-test-task-1]: Downloading https://files.pythonhosted.org/packages/c2/be/fe95243fe4e60652d6a6777f684a1a03b2630bd727cac58bceb8b8aff79d/rl_test_task_1-0.1.2.tar.gz
+[2024-06-02 17:36:26] WARNING root fetch - processPackages [vtacML]: Skipping package: exceeds size limit 37262345>=10485760
+[2024-06-02 17:36:26] INFO root fetch - main [MainThread]: End processing [vtacML] error
+[2024-06-02 17:36:26] INFO root fetch - processPackages [rl-tasks]: Downloading https://files.pythonhosted.org/packages/0d/68/ba52108ccfbefb4c849a74ff0bc72fd25bcd4fe6df2ac84f2367cbb7f326/rl_tasks-0.1.2.tar.gz
+[2024-06-02 17:36:27] INFO root fetch - processPackages [toyai]: Downloading https://files.pythonhosted.org/packages/18/f2/0044e6f92e7cb465d41e88a496776561768976cb32d4a403af91439ec10d/toyai-0.1.2-py3-none-any.whl
+[2024-06-02 17:36:27] INFO root fetch - processPackages [rl-test-task-3]: Downloading https://files.pythonhosted.org/packages/2d/09/79ab266bfebc2f3bfa176586782e732f737f8e2a7b701167a5703e2fe1f3/rl_test_task_3-0.1.3.tar.gz
+[2024-06-02 17:36:27] INFO root fetch - processPackages [janim]: Downloading https://files.pythonhosted.org/packages/6c/15/c9f54a57bb707881b71ab11b28ecabaf4d274563d94b4c7d887b18c69846/janim-1.2.1.tar.gz
+[2024-06-02 17:36:27] INFO root fetch - processPackages [toyai]: Downloading https://files.pythonhosted.org/packages/d8/76/14ea5a41222e4908226cf7603c97b8b57ef0ce6364586e0488f93a7e62e3/toyai-0.2.tar.gz
+[2024-06-02 17:36:27] INFO root fetch - processPackages [rl-test-task-2]: Downloading https://files.pythonhosted.org/packages/ed/1a/68cbdaed91dec91f626c7bd0eba5402c78b678f918013e35d95fa56181e1/rl_test_task_2-0.1.3.tar.gz
+[2024-06-02 17:36:27] INFO root fetch - processPackages [rl-test-task-1]: Downloading https://files.pythonhosted.org/packages/8a/a6/423a340dba5f22a30fee163d7f99ac995640c21ead4749bbeda68bf8c595/rl_test_task_1-0.1.3.tar.gz
+[2024-06-02 17:36:27] INFO root fetch - processPackages [rl-tasks]: Downloading https://files.pythonhosted.org/packages/c2/52/168b0d01ae7f5e61acdad7ca768cbda53f1b68704103d54ea07145bdb839/rl_tasks-0.1.3.tar.gz
+[2024-06-02 17:36:27] INFO root fetch - processPackages [rl-test-task-3]: Downloading https://files.pythonhosted.org/packages/29/1e/c36844255365431ba3b3f2ebc694320849d5097f22c50c3e5ec6bd8a4376/rl_test_task_3-0.1.4.tar.gz
+[2024-06-02 17:36:27] INFO root fetch - processPackages [toyai]: executing diffoscope
+[2024-06-02 17:36:27] INFO root fetch - processPackages [toyai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/toyai-0.1.2-py3-none-any.whl.zip tmp/toyai-0.2.tar.gz --markdown 20240602/t/toyai/0.1.2-0.2/README.md --exclude *.pyd
+[2024-06-02 17:36:27] INFO root fetch - processPackages [rl-test-task-2]: executing diffoscope
+[2024-06-02 17:36:27] INFO root fetch - processPackages [rl-test-task-2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rl_test_task_2-0.1.2.tar.gz tmp/rl_test_task_2-0.1.3.tar.gz --markdown 20240602/r/rl-test-task-2/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-06-02 17:36:27] INFO root fetch - processPackages [rl-test-task-1]: executing diffoscope
+[2024-06-02 17:36:27] INFO root fetch - processPackages [rl-test-task-1]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rl_test_task_1-0.1.2.tar.gz tmp/rl_test_task_1-0.1.3.tar.gz --markdown 20240602/r/rl-test-task-1/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-06-02 17:36:27] INFO root fetch - processPackages [rl-tasks]: executing diffoscope
+[2024-06-02 17:36:27] INFO root fetch - processPackages [rl-tasks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rl_tasks-0.1.2.tar.gz tmp/rl_tasks-0.1.3.tar.gz --markdown 20240602/r/rl-tasks/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-06-02 17:36:27] INFO root fetch - processPackages [janim]: Downloading https://files.pythonhosted.org/packages/b1/93/78066a9d9cf8788107359c80aab769aaf644053892581aee37670d878565/janim-1.2.2.tar.gz
+[2024-06-02 17:36:27] INFO root fetch - processPackages [rl-test-task-3]: executing diffoscope
+[2024-06-02 17:36:27] INFO root fetch - processPackages [rl-test-task-3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rl_test_task_3-0.1.3.tar.gz tmp/rl_test_task_3-0.1.4.tar.gz --markdown 20240602/r/rl-test-task-3/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-06-02 17:36:27] INFO root fetch - processPackages [janim]: executing diffoscope
+[2024-06-02 17:36:27] INFO root fetch - processPackages [janim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/janim-1.2.1.tar.gz tmp/janim-1.2.2.tar.gz --markdown 20240602/j/janim/1.2.1-1.2.2/README.md --exclude *.pyd
+[2024-06-02 17:36:28] INFO root fetch - processPackages [rl-test-task-2]: Remove: archive file [/home/abi/fetcher/tmp/rl_test_task_2-0.1.2.tar.gz]
+[2024-06-02 17:36:28] INFO root fetch - processPackages [rl-test-task-2]: Remove: archive file [/home/abi/fetcher/tmp/rl_test_task_2-0.1.3.tar.gz]
+[2024-06-02 17:36:28] INFO root fetch - main [MainThread]: End processing [rl-test-task-2]: success
+[2024-06-02 17:36:28] INFO root fetch - processPackages [rl-test-task-1]: Remove: archive file [/home/abi/fetcher/tmp/rl_test_task_1-0.1.2.tar.gz]
+[2024-06-02 17:36:28] INFO root fetch - processPackages [rl-test-task-1]: Remove: archive file [/home/abi/fetcher/tmp/rl_test_task_1-0.1.3.tar.gz]
+[2024-06-02 17:36:28] INFO root fetch - main [MainThread]: End processing [rl-test-task-1]: success
+[2024-06-02 17:36:28] INFO root fetch - processPackages [rl-tasks]: Remove: archive file [/home/abi/fetcher/tmp/rl_tasks-0.1.2.tar.gz]
+[2024-06-02 17:36:28] INFO root fetch - processPackages [rl-tasks]: Remove: archive file [/home/abi/fetcher/tmp/rl_tasks-0.1.3.tar.gz]
+[2024-06-02 17:36:28] INFO root fetch - main [MainThread]: End processing [rl-tasks]: success
+[2024-06-02 17:36:28] INFO root fetch - processPackages [toyai]: Remove: archive file [/home/abi/fetcher/tmp/toyai-0.1.2-py3-none-any.whl.zip]
+[2024-06-02 17:36:28] INFO root fetch - processPackages [toyai]: Remove: archive file [/home/abi/fetcher/tmp/toyai-0.2.tar.gz]
+[2024-06-02 17:36:28] INFO root fetch - main [MainThread]: End processing [toyai]: success
+[2024-06-02 17:36:28] INFO root fetch - processPackages [rl-test-task-3]: Remove: archive file [/home/abi/fetcher/tmp/rl_test_task_3-0.1.3.tar.gz]
+[2024-06-02 17:36:28] INFO root fetch - processPackages [rl-test-task-3]: Remove: archive file [/home/abi/fetcher/tmp/rl_test_task_3-0.1.4.tar.gz]
+[2024-06-02 17:36:28] INFO root fetch - main [MainThread]: End processing [rl-test-task-3]: success
+[2024-06-02 17:36:28] INFO root fetch - processPackages [janim]: Remove: archive file [/home/abi/fetcher/tmp/janim-1.2.1.tar.gz]
+[2024-06-02 17:36:28] INFO root fetch - processPackages [janim]: Remove: archive file [/home/abi/fetcher/tmp/janim-1.2.2.tar.gz]
+[2024-06-02 17:36:28] INFO root fetch - main [MainThread]: End processing [janim]: success
+[2024-06-02 17:36:28] INFO root fetch - main [MainThread]: Store serial: [23490177]
