@@ -7740,3 +7740,33 @@
 [2024-06-02 12:39:13] INFO root fetch - processPackages [nnetsauce]: Remove: archive file [/home/abi/fetcher/tmp/nnetsauce-0.9.6-cp38-cp38-macosx_10_15_x86_64.whl.zip]
 [2024-06-02 12:39:13] INFO root fetch - main [MainThread]: End processing [nnetsauce]: success
 [2024-06-02 12:39:13] INFO root fetch - main [MainThread]: Store serial: [23488174]
+[2024-06-02 12:41:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23488174]
+[2024-06-02 12:41:28] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-02 12:41:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lines-dataset
+[2024-06-02 12:41:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pymemgpt-nightly
+[2024-06-02 12:41:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: chess-utils
+[2024-06-02 12:41:28] INFO root fetch - processPackages [lines-dataset]: New version: [0.2.1] Old Version: [0.2.0]
+[2024-06-02 12:41:28] INFO root fetch - processPackages [pymemgpt-nightly]: New version: [0.3.9.dev20240412103904] Old Version: [0.3.9.dev20240411103902]
+[2024-06-02 12:41:28] INFO root fetch - processPackages [lines-dataset]: Downloading https://files.pythonhosted.org/packages/60/ac/854b3d323fa27b222cd6658bf5591e7525b7140eb32dd85d9e9a56b703d9/lines_dataset-0.2.0.tar.gz
+[2024-06-02 12:41:28] INFO root fetch - processPackages [pymemgpt-nightly]: Downloading https://files.pythonhosted.org/packages/28/e7/e8c0c970c21e3670e810627cef085bbbbac1f9e994540354838d7781a0ac/pymemgpt_nightly-0.3.9.dev20240411103902.tar.gz
+[2024-06-02 12:41:28] INFO root fetch - processPackages [chess-utils]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-06-02 12:41:28] INFO root fetch - processPackages [chess-utils]: Downloading https://files.pythonhosted.org/packages/a3/dc/1afe218e54667934bab5660e347ffb7cefed78c6dfddc717fb5f962ae659/chess_utils-0.1.8.tar.gz
+[2024-06-02 12:41:28] INFO root fetch - processPackages [pymemgpt-nightly]: Downloading https://files.pythonhosted.org/packages/50/4a/4c9c1fb70a7ee971f3c8697cc6dedb251e3b10cafdd23be4d035ece0f2ec/pymemgpt_nightly-0.3.9.dev20240412103904.tar.gz
+[2024-06-02 12:41:28] INFO root fetch - processPackages [lines-dataset]: Downloading https://files.pythonhosted.org/packages/d8/da/966ea155dfd7a6ae1d862b7c09256d225c77cdfe35433be01f78d1c51e96/lines_dataset-0.2.1.tar.gz
+[2024-06-02 12:41:29] INFO root fetch - processPackages [lines-dataset]: executing diffoscope
+[2024-06-02 12:41:29] INFO root fetch - processPackages [lines-dataset]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lines_dataset-0.2.0.tar.gz tmp/lines_dataset-0.2.1.tar.gz --markdown 20240602/l/lines-dataset/0.2.0-0.2.1/README.md --exclude *.pyd
+[2024-06-02 12:41:29] INFO root fetch - processPackages [pymemgpt-nightly]: executing diffoscope
+[2024-06-02 12:41:29] INFO root fetch - processPackages [pymemgpt-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymemgpt_nightly-0.3.9.dev20240411103902.tar.gz tmp/pymemgpt_nightly-0.3.9.dev20240412103904.tar.gz --markdown 20240602/p/pymemgpt-nightly/0.3.9.dev20240411103902-0.3.9.dev20240412103904/README.md --exclude *.pyd
+[2024-06-02 12:41:29] INFO root fetch - processPackages [chess-utils]: Downloading https://files.pythonhosted.org/packages/91/10/67dd0bbf7400db91ed6e38e5428df297885a142cb6307e0a05c302654e5e/chess_utils-0.1.9.tar.gz
+[2024-06-02 12:41:29] INFO root fetch - processPackages [chess-utils]: executing diffoscope
+[2024-06-02 12:41:29] INFO root fetch - processPackages [chess-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chess_utils-0.1.8.tar.gz tmp/chess_utils-0.1.9.tar.gz --markdown 20240602/c/chess-utils/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-06-02 12:41:29] INFO root fetch - processPackages [lines-dataset]: Remove: archive file [/home/abi/fetcher/tmp/lines_dataset-0.2.0.tar.gz]
+[2024-06-02 12:41:29] INFO root fetch - processPackages [lines-dataset]: Remove: archive file [/home/abi/fetcher/tmp/lines_dataset-0.2.1.tar.gz]
+[2024-06-02 12:41:29] INFO root fetch - main [MainThread]: End processing [lines-dataset]: success
+[2024-06-02 12:41:29] INFO root fetch - processPackages [chess-utils]: Remove: archive file [/home/abi/fetcher/tmp/chess_utils-0.1.8.tar.gz]
+[2024-06-02 12:41:29] INFO root fetch - processPackages [chess-utils]: Remove: archive file [/home/abi/fetcher/tmp/chess_utils-0.1.9.tar.gz]
+[2024-06-02 12:41:29] INFO root fetch - main [MainThread]: End processing [chess-utils]: success
+[2024-06-02 12:41:30] INFO root fetch - processPackages [pymemgpt-nightly]: Remove: archive file [/home/abi/fetcher/tmp/pymemgpt_nightly-0.3.9.dev20240411103902.tar.gz]
+[2024-06-02 12:41:30] INFO root fetch - processPackages [pymemgpt-nightly]: Remove: archive file [/home/abi/fetcher/tmp/pymemgpt_nightly-0.3.9.dev20240412103904.tar.gz]
+[2024-06-02 12:41:30] INFO root fetch - main [MainThread]: End processing [pymemgpt-nightly]: success
+[2024-06-02 12:41:30] INFO root fetch - main [MainThread]: Store serial: [23488187]
