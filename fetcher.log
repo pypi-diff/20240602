@@ -17523,3 +17523,36 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 21:59:49] INFO root fetch - processPackages [ratarmount]: Remove: archive file [/home/abi/fetcher/tmp/ratarmount-0.9.3.tar.gz]
 [2024-06-02 21:59:49] INFO root fetch - main [MainThread]: End processing [ratarmount]: success
 [2024-06-02 21:59:49] INFO root fetch - main [MainThread]: Store serial: [23492626]
+[2024-06-02 22:01:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23492626]
+[2024-06-02 22:01:58] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-02 22:01:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lenlp
+[2024-06-02 22:01:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wlr-layout-ui
+[2024-06-02 22:01:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyiso20022
+[2024-06-02 22:01:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nummulith-drawing
+[2024-06-02 22:01:58] WARNING root fetch - processPackages [nummulith-drawing]: Skipping, unable to determine old version
+[2024-06-02 22:01:58] INFO root fetch - main [MainThread]: End processing [nummulith-drawing] error
+[2024-06-02 22:01:58] INFO root fetch - processPackages [pyiso20022]: New version: [0.3.1] Old Version: [0.2.0]
+[2024-06-02 22:01:58] INFO root fetch - processPackages [wlr-layout-ui]: New version: [1.6.9] Old Version: [1.6.8]
+[2024-06-02 22:01:58] INFO root fetch - processPackages [lenlp]: New version: [1.1.1] Old Version: [1.1.0]
+[2024-06-02 22:01:58] INFO root fetch - processPackages [pyiso20022]: Downloading https://files.pythonhosted.org/packages/b9/6c/70fa894a678c8e53ac882c244aee7052a3892cd83e143c2411246d669056/pyiso20022-0.2.0.tar.gz
+[2024-06-02 22:01:58] INFO root fetch - processPackages [wlr-layout-ui]: Downloading https://files.pythonhosted.org/packages/06/d7/3e9626f4efa8a82efeff6b5d02ec768aa8538e1040fe6c6a871e41647767/wlr_layout_ui-1.6.8.tar.gz
+[2024-06-02 22:01:58] INFO root fetch - processPackages [lenlp]: Downloading https://files.pythonhosted.org/packages/55/52/afc728ee2ef21c0ff7f83c003be59c893371e714aaeef83d4671a5b32671/lenlp-1.1.0.tar.gz
+[2024-06-02 22:01:59] INFO root fetch - processPackages [wlr-layout-ui]: Downloading https://files.pythonhosted.org/packages/31/ac/58a6e19edffc7b9089c68eba5ce7a9f8bab9c42c248fd314a4231ddd8386/wlr_layout_ui-1.6.9.tar.gz
+[2024-06-02 22:01:59] INFO root fetch - processPackages [pyiso20022]: Downloading https://files.pythonhosted.org/packages/73/d5/92f32c470575760783d5e0526a01398268529a89d471b419c69bdc04aa79/pyiso20022-0.3.1.tar.gz
+[2024-06-02 22:01:59] INFO root fetch - processPackages [wlr-layout-ui]: executing diffoscope
+[2024-06-02 22:01:59] INFO root fetch - processPackages [wlr-layout-ui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wlr_layout_ui-1.6.8.tar.gz tmp/wlr_layout_ui-1.6.9.tar.gz --markdown 20240602/w/wlr-layout-ui/1.6.8-1.6.9/README.md --exclude *.pyd
+[2024-06-02 22:01:59] INFO root fetch - processPackages [pyiso20022]: executing diffoscope
+[2024-06-02 22:01:59] INFO root fetch - processPackages [pyiso20022]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyiso20022-0.2.0.tar.gz tmp/pyiso20022-0.3.1.tar.gz --markdown 20240602/p/pyiso20022/0.2.0-0.3.1/README.md --exclude *.pyd
+[2024-06-02 22:01:59] INFO root fetch - processPackages [lenlp]: Downloading https://files.pythonhosted.org/packages/84/a6/48a9f6c117ab4452d85b738f25a755df7cdf241e492b58d839960830f703/lenlp-1.1.1-pp39-pypy39_pp73-manylinux_2_17_s390x.manylinux2014_s390x.whl
+[2024-06-02 22:01:59] INFO root fetch - processPackages [wlr-layout-ui]: Remove: archive file [/home/abi/fetcher/tmp/wlr_layout_ui-1.6.8.tar.gz]
+[2024-06-02 22:01:59] INFO root fetch - processPackages [wlr-layout-ui]: Remove: archive file [/home/abi/fetcher/tmp/wlr_layout_ui-1.6.9.tar.gz]
+[2024-06-02 22:01:59] INFO root fetch - main [MainThread]: End processing [wlr-layout-ui]: success
+[2024-06-02 22:02:00] INFO root fetch - processPackages [lenlp]: executing diffoscope
+[2024-06-02 22:02:00] INFO root fetch - processPackages [lenlp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lenlp-1.1.0.tar.gz tmp/lenlp-1.1.1-pp39-pypy39_pp73-manylinux_2_17_s390x.manylinux2014_s390x.whl.zip --markdown 20240602/l/lenlp/1.1.0-1.1.1/README.md --exclude *.pyd
+[2024-06-02 22:02:00] INFO root fetch - processPackages [pyiso20022]: Remove: archive file [/home/abi/fetcher/tmp/pyiso20022-0.2.0.tar.gz]
+[2024-06-02 22:02:00] INFO root fetch - processPackages [pyiso20022]: Remove: archive file [/home/abi/fetcher/tmp/pyiso20022-0.3.1.tar.gz]
+[2024-06-02 22:02:00] INFO root fetch - main [MainThread]: End processing [pyiso20022]: success
+[2024-06-02 22:02:00] INFO root fetch - processPackages [lenlp]: Remove: archive file [/home/abi/fetcher/tmp/lenlp-1.1.0.tar.gz]
+[2024-06-02 22:02:00] INFO root fetch - processPackages [lenlp]: Remove: archive file [/home/abi/fetcher/tmp/lenlp-1.1.1-pp39-pypy39_pp73-manylinux_2_17_s390x.manylinux2014_s390x.whl.zip]
+[2024-06-02 22:02:00] INFO root fetch - main [MainThread]: End processing [lenlp]: success
+[2024-06-02 22:02:00] INFO root fetch - main [MainThread]: Store serial: [23492671]
