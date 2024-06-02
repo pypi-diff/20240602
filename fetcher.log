@@ -2393,3 +2393,24 @@
 [2024-06-02 03:02:21] INFO root fetch - processPackages [cdk-lambda-layer-curl]: Remove: archive file [/home/abi/fetcher/tmp/cdk-lambda-layer-curl-2.0.99.tar.gz]
 [2024-06-02 03:02:21] INFO root fetch - main [MainThread]: End processing [cdk-lambda-layer-curl]: success
 [2024-06-02 03:02:21] INFO root fetch - main [MainThread]: Store serial: [23485257]
+[2024-06-02 03:04:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23485257]
+[2024-06-02 03:04:29] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-02 03:04:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bussinwebx-get
+[2024-06-02 03:04:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lvmguider
+[2024-06-02 03:04:29] INFO root fetch - processPackages [bussinwebx-get]: New version: [1.0.5] Old Version: [1.0.4]
+[2024-06-02 03:04:29] INFO root fetch - processPackages [lvmguider]: New version: [0.5.2] Old Version: [0.5.1]
+[2024-06-02 03:04:30] INFO root fetch - processPackages [bussinwebx-get]: Downloading https://files.pythonhosted.org/packages/83/b7/55f510fe711ca4645d4bc3863327ba0e6edd097386eb786a126520ff7102/bussinwebx_get-1.0.4.tar.gz
+[2024-06-02 03:04:30] INFO root fetch - processPackages [lvmguider]: Downloading https://files.pythonhosted.org/packages/46/04/6013bcefbbeb8d883c192283126ab1479e382f973b9c8c1dc1c648f6ece0/lvmguider-0.5.1.tar.gz
+[2024-06-02 03:04:30] INFO root fetch - processPackages [lvmguider]: Downloading https://files.pythonhosted.org/packages/42/59/7de433edd6f63234c59985b3a423945ad2520144dd6154baa7f5a96cb783/lvmguider-0.5.2.tar.gz
+[2024-06-02 03:04:30] INFO root fetch - processPackages [bussinwebx-get]: Downloading https://files.pythonhosted.org/packages/d6/00/6f8d716ae4cde38fbc5e3e10abe39c3ad9cf0230c4e0c97085fc7dfd03d7/bussinwebx_get-1.0.5.tar.gz
+[2024-06-02 03:04:30] INFO root fetch - processPackages [lvmguider]: executing diffoscope
+[2024-06-02 03:04:30] INFO root fetch - processPackages [lvmguider]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lvmguider-0.5.1.tar.gz tmp/lvmguider-0.5.2.tar.gz --markdown 20240602/l/lvmguider/0.5.1-0.5.2/README.md --exclude *.pyd
+[2024-06-02 03:04:30] INFO root fetch - processPackages [bussinwebx-get]: executing diffoscope
+[2024-06-02 03:04:30] INFO root fetch - processPackages [bussinwebx-get]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bussinwebx_get-1.0.4.tar.gz tmp/bussinwebx_get-1.0.5.tar.gz --markdown 20240602/b/bussinwebx-get/1.0.4-1.0.5/README.md --exclude *.pyd
+[2024-06-02 03:04:31] INFO root fetch - processPackages [lvmguider]: Remove: archive file [/home/abi/fetcher/tmp/lvmguider-0.5.1.tar.gz]
+[2024-06-02 03:04:31] INFO root fetch - processPackages [lvmguider]: Remove: archive file [/home/abi/fetcher/tmp/lvmguider-0.5.2.tar.gz]
+[2024-06-02 03:04:31] INFO root fetch - main [MainThread]: End processing [lvmguider]: success
+[2024-06-02 03:04:31] INFO root fetch - processPackages [bussinwebx-get]: Remove: archive file [/home/abi/fetcher/tmp/bussinwebx_get-1.0.4.tar.gz]
+[2024-06-02 03:04:31] INFO root fetch - processPackages [bussinwebx-get]: Remove: archive file [/home/abi/fetcher/tmp/bussinwebx_get-1.0.5.tar.gz]
+[2024-06-02 03:04:31] INFO root fetch - main [MainThread]: End processing [bussinwebx-get]: success
+[2024-06-02 03:04:31] INFO root fetch - main [MainThread]: Store serial: [23485263]
