@@ -6447,3 +6447,18 @@
 [2024-06-02 10:57:54] INFO root fetch - processPackages [minishell]: Remove: archive file [/home/abi/fetcher/tmp/minishell-0.0.2.tar.gz]
 [2024-06-02 10:57:54] INFO root fetch - main [MainThread]: End processing [minishell]: success
 [2024-06-02 10:57:54] INFO root fetch - main [MainThread]: Store serial: [23487519]
+[2024-06-02 10:59:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23487519]
+[2024-06-02 11:00:03] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-02 11:00:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mongo-connect-lite
+[2024-06-02 11:00:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lightrun
+[2024-06-02 11:00:04] WARNING root fetch - processPackages [mongo-connect-lite]: Skipping, unable to determine old version
+[2024-06-02 11:00:04] INFO root fetch - main [MainThread]: End processing [mongo-connect-lite] error
+[2024-06-02 11:00:04] INFO root fetch - processPackages [lightrun]: New version: [1.9.0] Old Version: [1.8.0]
+[2024-06-02 11:00:04] INFO root fetch - processPackages [lightrun]: Downloading https://files.pythonhosted.org/packages/1c/fa/1f2db5b7b74d95d09b9552bfc814cd973a3977912207c6286d62da01940a/lightrun-1.8.0-cp39-cp39-win_amd64.whl
+[2024-06-02 11:00:04] INFO root fetch - processPackages [lightrun]: Downloading https://files.pythonhosted.org/packages/f3/f9/5b9aa0522b79061906e42d2d13697949e70a85f928f9ace8975f96b3785c/lightrun-1.9.0-cp39-cp39-win_amd64.whl
+[2024-06-02 11:00:05] INFO root fetch - processPackages [lightrun]: executing diffoscope
+[2024-06-02 11:00:05] INFO root fetch - processPackages [lightrun]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lightrun-1.8.0-cp39-cp39-win_amd64.whl.zip tmp/lightrun-1.9.0-cp39-cp39-win_amd64.whl.zip --markdown 20240602/l/lightrun/1.8.0-1.9.0/README.md --exclude *.pyd
+[2024-06-02 11:00:09] INFO root fetch - processPackages [lightrun]: Remove: archive file [/home/abi/fetcher/tmp/lightrun-1.8.0-cp39-cp39-win_amd64.whl.zip]
+[2024-06-02 11:00:09] INFO root fetch - processPackages [lightrun]: Remove: archive file [/home/abi/fetcher/tmp/lightrun-1.9.0-cp39-cp39-win_amd64.whl.zip]
+[2024-06-02 11:00:09] INFO root fetch - main [MainThread]: End processing [lightrun]: success
+[2024-06-02 11:00:09] INFO root fetch - main [MainThread]: Store serial: [23487538]
