@@ -7833,3 +7833,24 @@
 [2024-06-02 12:48:08] WARNING root fetch - processPackages [custom-maya]: Skipping, unable to determine old version
 [2024-06-02 12:48:08] INFO root fetch - main [MainThread]: End processing [custom-maya] error
 [2024-06-02 12:48:08] INFO root fetch - main [MainThread]: Store serial: [23488214]
+[2024-06-02 12:50:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23488214]
+[2024-06-02 12:50:17] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-02 12:50:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: harmon-ai
+[2024-06-02 12:50:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: yafowil.widget.autocomplete
+[2024-06-02 12:50:17] INFO root fetch - processPackages [yafowil.widget.autocomplete]: New version: [2.0a1] Old Version: [1.7]
+[2024-06-02 12:50:17] INFO root fetch - processPackages [harmon-ai]: New version: [1.5.1] Old Version: [1.4.0]
+[2024-06-02 12:50:17] INFO root fetch - processPackages [yafowil.widget.autocomplete]: Downloading https://files.pythonhosted.org/packages/25/1c/6f83867d278d0eed4f29c3d82cf1bf10879fbd9100628c54a2f3356741eb/yafowil.widget.autocomplete-1.7.tar.gz
+[2024-06-02 12:50:17] INFO root fetch - processPackages [harmon-ai]: Downloading https://files.pythonhosted.org/packages/0c/89/efde7e6eef29df3ef80a035f8f59c00c3a010e10a8e1ccf8489e06f63a45/harmon_ai-1.4.0.tar.gz
+[2024-06-02 12:50:18] INFO root fetch - processPackages [yafowil.widget.autocomplete]: Downloading https://files.pythonhosted.org/packages/9d/a1/f9db96f2c160d88fcc9032e00c9e920e2e953d3168bb7a9d21f159b17972/yafowil_widget_autocomplete-2.0a1.tar.gz
+[2024-06-02 12:50:18] INFO root fetch - processPackages [harmon-ai]: Downloading https://files.pythonhosted.org/packages/05/c5/6029eeecd927a460684c37e229c7f173cead0d7d9f2f7728bcef3e53c8ee/harmon_ai-1.5.1.tar.gz
+[2024-06-02 12:50:18] INFO root fetch - processPackages [harmon-ai]: executing diffoscope
+[2024-06-02 12:50:18] INFO root fetch - processPackages [harmon-ai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/harmon_ai-1.4.0.tar.gz tmp/harmon_ai-1.5.1.tar.gz --markdown 20240602/h/harmon-ai/1.4.0-1.5.1/README.md --exclude *.pyd
+[2024-06-02 12:50:18] INFO root fetch - processPackages [yafowil.widget.autocomplete]: executing diffoscope
+[2024-06-02 12:50:18] INFO root fetch - processPackages [yafowil.widget.autocomplete]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yafowil.widget.autocomplete-1.7.tar.gz tmp/yafowil_widget_autocomplete-2.0a1.tar.gz --markdown 20240602/y/yafowil.widget.autocomplete/1.7-2.0a1/README.md --exclude *.pyd
+[2024-06-02 12:50:18] INFO root fetch - processPackages [harmon-ai]: Remove: archive file [/home/abi/fetcher/tmp/harmon_ai-1.4.0.tar.gz]
+[2024-06-02 12:50:18] INFO root fetch - processPackages [harmon-ai]: Remove: archive file [/home/abi/fetcher/tmp/harmon_ai-1.5.1.tar.gz]
+[2024-06-02 12:50:18] INFO root fetch - main [MainThread]: End processing [harmon-ai]: success
+[2024-06-02 12:50:19] INFO root fetch - processPackages [yafowil.widget.autocomplete]: Remove: archive file [/home/abi/fetcher/tmp/yafowil.widget.autocomplete-1.7.tar.gz]
+[2024-06-02 12:50:19] INFO root fetch - processPackages [yafowil.widget.autocomplete]: Remove: archive file [/home/abi/fetcher/tmp/yafowil_widget_autocomplete-2.0a1.tar.gz]
+[2024-06-02 12:50:19] INFO root fetch - main [MainThread]: End processing [yafowil.widget.autocomplete]: success
+[2024-06-02 12:50:19] INFO root fetch - main [MainThread]: Store serial: [23488220]
