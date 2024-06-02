@@ -3282,3 +3282,24 @@
 [2024-06-02 04:54:38] INFO root fetch - processPackages [ubicoders-vrobots]: Remove: archive file [/home/abi/fetcher/tmp/ubicoders-vrobots-0.3.2.tar.gz]
 [2024-06-02 04:54:38] INFO root fetch - main [MainThread]: End processing [ubicoders-vrobots]: success
 [2024-06-02 04:54:38] INFO root fetch - main [MainThread]: Store serial: [23485758]
+[2024-06-02 04:56:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23485758]
+[2024-06-02 04:56:46] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-02 04:56:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: adafruit-circuitpython-matrixportal
+[2024-06-02 04:56:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: torrey
+[2024-06-02 04:56:46] INFO root fetch - processPackages [torrey]: New version: [3.2.2.dev20240602022838] Old Version: [3.2.2.dev20240602013528]
+[2024-06-02 04:56:46] INFO root fetch - processPackages [torrey]: Downloading https://files.pythonhosted.org/packages/b7/f7/fba3a3ab7a94946d7ea7f25661b949b75ab735c7e67aa82c58eb7e03c72a/torrey-3.2.2.dev20240602013528.tar.gz
+[2024-06-02 04:56:46] INFO root fetch - processPackages [adafruit-circuitpython-matrixportal]: New version: [3.2.0] Old Version: [3.1.13]
+[2024-06-02 04:56:46] INFO root fetch - processPackages [adafruit-circuitpython-matrixportal]: Downloading https://files.pythonhosted.org/packages/40/1c/70b409da2a9486f6a52a4029565462a129b4b7f48292caa85cd4704faaff/adafruit-circuitpython-matrixportal-3.1.13.tar.gz
+[2024-06-02 04:56:46] INFO root fetch - processPackages [torrey]: Downloading https://files.pythonhosted.org/packages/77/53/a5a8f89ed288c357b7c49aae82273bd6584fc3c558a7673134ad491bca08/torrey-3.2.2.dev20240602022838.tar.gz
+[2024-06-02 04:56:46] INFO root fetch - processPackages [torrey]: executing diffoscope
+[2024-06-02 04:56:46] INFO root fetch - processPackages [torrey]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torrey-3.2.2.dev20240602013528.tar.gz tmp/torrey-3.2.2.dev20240602022838.tar.gz --markdown 20240602/t/torrey/3.2.2.dev20240602013528-3.2.2.dev20240602022838/README.md --exclude *.pyd
+[2024-06-02 04:56:46] INFO root fetch - processPackages [adafruit-circuitpython-matrixportal]: Downloading https://files.pythonhosted.org/packages/0e/d5/341a4e85631a8696eeaec138560f6b65d01d5fb481135aea2386311c6ff1/adafruit_circuitpython_matrixportal-3.2.0.tar.gz
+[2024-06-02 04:56:46] INFO root fetch - processPackages [adafruit-circuitpython-matrixportal]: executing diffoscope
+[2024-06-02 04:56:46] INFO root fetch - processPackages [adafruit-circuitpython-matrixportal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/adafruit-circuitpython-matrixportal-3.1.13.tar.gz tmp/adafruit_circuitpython_matrixportal-3.2.0.tar.gz --markdown 20240602/a/adafruit-circuitpython-matrixportal/3.1.13-3.2.0/README.md --exclude *.pyd
+[2024-06-02 04:56:47] INFO root fetch - processPackages [adafruit-circuitpython-matrixportal]: Remove: archive file [/home/abi/fetcher/tmp/adafruit-circuitpython-matrixportal-3.1.13.tar.gz]
+[2024-06-02 04:56:47] INFO root fetch - processPackages [adafruit-circuitpython-matrixportal]: Remove: archive file [/home/abi/fetcher/tmp/adafruit_circuitpython_matrixportal-3.2.0.tar.gz]
+[2024-06-02 04:56:47] INFO root fetch - main [MainThread]: End processing [adafruit-circuitpython-matrixportal]: success
+[2024-06-02 04:56:47] INFO root fetch - processPackages [torrey]: Remove: archive file [/home/abi/fetcher/tmp/torrey-3.2.2.dev20240602013528.tar.gz]
+[2024-06-02 04:56:47] INFO root fetch - processPackages [torrey]: Remove: archive file [/home/abi/fetcher/tmp/torrey-3.2.2.dev20240602022838.tar.gz]
+[2024-06-02 04:56:47] INFO root fetch - main [MainThread]: End processing [torrey]: success
+[2024-06-02 04:56:47] INFO root fetch - main [MainThread]: Store serial: [23485765]
