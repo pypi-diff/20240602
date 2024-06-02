@@ -8416,3 +8416,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-02 13:25:03] INFO root fetch - processPackages [Baseball-Info]: Remove: archive file [/home/abi/fetcher/tmp/Baseball-Info-0.0.0.2.tar.gz]
 [2024-06-02 13:25:03] INFO root fetch - main [MainThread]: End processing [Baseball-Info]: success
 [2024-06-02 13:25:03] INFO root fetch - main [MainThread]: Store serial: [23488393]
+[2024-06-02 13:27:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23488393]
+[2024-06-02 13:27:12] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-06-02 13:27:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: torchrl-nightly
+[2024-06-02 13:27:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyvents
+[2024-06-02 13:27:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: torchtnt-nightly
+[2024-06-02 13:27:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: torchx-nightly
+[2024-06-02 13:27:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: bdmc
+[2024-06-02 13:27:12] INFO root fetch - processPackages [bdmc]: New version: [0.1.5.9] Old Version: [0.1.5.8]
+[2024-06-02 13:27:12] INFO root fetch - processPackages [torchtnt-nightly]: New version: [2024.6.1] Old Version: [2024.5.31]
+[2024-06-02 13:27:12] INFO root fetch - processPackages [torchx-nightly]: New version: [2024.6.1] Old Version: [2024.5.9]
+[2024-06-02 13:27:12] WARNING root fetch - processPackages [pyvents]: Skipping, unable to determine old version
+[2024-06-02 13:27:12] INFO root fetch - main [MainThread]: End processing [pyvents] error
+[2024-06-02 13:27:12] INFO root fetch - processPackages [bdmc]: Downloading https://files.pythonhosted.org/packages/7b/a4/6d673f004389618881a3a5641b084f02f3e3c9606bea3e6b2a5fb9f265d6/bdmc-0.1.5.8.tar.gz
+[2024-06-02 13:27:12] INFO root fetch - processPackages [torchtnt-nightly]: Downloading https://files.pythonhosted.org/packages/c0/e1/1ff1a765357d7181f52f9ef48b54960e44360b280fe4e2004bc0d0a33152/torchtnt_nightly-2024.5.31-py3-none-any.whl
+[2024-06-02 13:27:12] INFO root fetch - processPackages [torchx-nightly]: Downloading https://files.pythonhosted.org/packages/77/19/3475ceeec15466054f155b399d006faaf128258c35d771397c04ac9cf1e4/torchx_nightly-2024.5.9-py3-none-any.whl
+[2024-06-02 13:27:12] INFO root fetch - processPackages [torchrl-nightly]: New version: [2024.6.2] Old Version: [2024.6.1]
+[2024-06-02 13:27:12] INFO root fetch - processPackages [torchrl-nightly]: Downloading https://files.pythonhosted.org/packages/69/33/1b0678c295b575be3a29414e8c66d816b1643824b41dc916030961ab1d56/torchrl_nightly-2024.6.1-cp39-cp39-win_amd64.whl
+[2024-06-02 13:27:12] INFO root fetch - processPackages [bdmc]: Downloading https://files.pythonhosted.org/packages/0b/9d/0fd87f38893641236ff55f80f919c108ccfbe16165193350adcd472d5b64/bdmc-0.1.5.9.tar.gz
+[2024-06-02 13:27:12] INFO root fetch - processPackages [torchtnt-nightly]: Downloading https://files.pythonhosted.org/packages/e2/82/2e61fb55400936e7447735d7dde6d9c6a4e40f19c98fb9a7005654600234/torchtnt_nightly-2024.6.1.tar.gz
+[2024-06-02 13:27:12] INFO root fetch - processPackages [bdmc]: executing diffoscope
+[2024-06-02 13:27:12] INFO root fetch - processPackages [bdmc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bdmc-0.1.5.8.tar.gz tmp/bdmc-0.1.5.9.tar.gz --markdown 20240602/b/bdmc/0.1.5.8-0.1.5.9/README.md --exclude *.pyd
+[2024-06-02 13:27:12] INFO root fetch - processPackages [torchx-nightly]: Downloading https://files.pythonhosted.org/packages/e9/3d/8e8fd2590bbd66b4715ed56f12a21f0b73bbf1a9fb80efed09259e9d072d/torchx_nightly-2024.6.1-py3-none-any.whl
+[2024-06-02 13:27:12] INFO root fetch - processPackages [torchtnt-nightly]: executing diffoscope
+[2024-06-02 13:27:12] INFO root fetch - processPackages [torchtnt-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchtnt_nightly-2024.5.31-py3-none-any.whl.zip tmp/torchtnt_nightly-2024.6.1.tar.gz --markdown 20240602/t/torchtnt-nightly/2024.5.31-2024.6.1/README.md --exclude *.pyd
+[2024-06-02 13:27:13] INFO root fetch - processPackages [torchx-nightly]: executing diffoscope
+[2024-06-02 13:27:13] INFO root fetch - processPackages [torchx-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchx_nightly-2024.5.9-py3-none-any.whl.zip tmp/torchx_nightly-2024.6.1-py3-none-any.whl.zip --markdown 20240602/t/torchx-nightly/2024.5.9-2024.6.1/README.md --exclude *.pyd
+[2024-06-02 13:27:13] INFO root fetch - processPackages [torchrl-nightly]: Downloading https://files.pythonhosted.org/packages/18/c8/b64006f88c140a670db839534272db4e568235674d8b871a92fd2e4f9f9e/torchrl_nightly-2024.6.2-cp39-cp39-manylinux1_x86_64.whl
+[2024-06-02 13:27:13] INFO root fetch - processPackages [bdmc]: Remove: archive file [/home/abi/fetcher/tmp/bdmc-0.1.5.8.tar.gz]
+[2024-06-02 13:27:13] INFO root fetch - processPackages [bdmc]: Remove: archive file [/home/abi/fetcher/tmp/bdmc-0.1.5.9.tar.gz]
+[2024-06-02 13:27:13] INFO root fetch - main [MainThread]: End processing [bdmc]: success
+[2024-06-02 13:27:13] INFO root fetch - processPackages [torchtnt-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torchtnt_nightly-2024.5.31-py3-none-any.whl.zip]
+[2024-06-02 13:27:13] INFO root fetch - processPackages [torchtnt-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torchtnt_nightly-2024.6.1.tar.gz]
+[2024-06-02 13:27:13] INFO root fetch - main [MainThread]: End processing [torchtnt-nightly]: success
+[2024-06-02 13:27:13] INFO root fetch - processPackages [torchx-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torchx_nightly-2024.5.9-py3-none-any.whl.zip]
+[2024-06-02 13:27:13] INFO root fetch - processPackages [torchx-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torchx_nightly-2024.6.1-py3-none-any.whl.zip]
+[2024-06-02 13:27:13] INFO root fetch - main [MainThread]: End processing [torchx-nightly]: success
+[2024-06-02 13:27:14] INFO root fetch - processPackages [torchrl-nightly]: executing diffoscope
+[2024-06-02 13:27:14] INFO root fetch - processPackages [torchrl-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchrl_nightly-2024.6.1-cp39-cp39-win_amd64.whl.zip tmp/torchrl_nightly-2024.6.2-cp39-cp39-manylinux1_x86_64.whl.zip --markdown 20240602/t/torchrl-nightly/2024.6.1-2024.6.2/README.md --exclude *.pyd
+[2024-06-02 13:27:17] INFO root fetch - processPackages [torchrl-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torchrl_nightly-2024.6.1-cp39-cp39-win_amd64.whl.zip]
+[2024-06-02 13:27:17] INFO root fetch - processPackages [torchrl-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torchrl_nightly-2024.6.2-cp39-cp39-manylinux1_x86_64.whl.zip]
+[2024-06-02 13:27:17] INFO root fetch - main [MainThread]: End processing [torchrl-nightly]: success
+[2024-06-02 13:27:17] INFO root fetch - main [MainThread]: Store serial: [23488410]
