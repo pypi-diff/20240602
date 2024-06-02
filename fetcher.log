@@ -2639,3 +2639,33 @@
 [2024-06-02 03:30:20] INFO root fetch - processPackages [onediff]: Remove: archive file [/home/abi/fetcher/tmp/onediff-1.1.0.dev202406010129.tar.gz]
 [2024-06-02 03:30:20] INFO root fetch - main [MainThread]: End processing [onediff]: success
 [2024-06-02 03:30:20] INFO root fetch - main [MainThread]: Store serial: [23485476]
+[2024-06-02 03:32:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23485476]
+[2024-06-02 03:32:29] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-02 03:32:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lbt-dragonfly
+[2024-06-02 03:32:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: onediffx
+[2024-06-02 03:32:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: python-115
+[2024-06-02 03:32:29] INFO root fetch - processPackages [onediffx]: New version: [1.1.0.dev202406010129] Old Version: [1.1.0.dev202405300128]
+[2024-06-02 03:32:29] INFO root fetch - processPackages [lbt-dragonfly]: New version: [0.9.99] Old Version: [0.9.98]
+[2024-06-02 03:32:29] INFO root fetch - processPackages [onediffx]: Downloading https://files.pythonhosted.org/packages/f6/67/ed787fb60e434db124b262f2bc11021898fbff092735ec1e6de27e5549b9/onediffx-1.1.0.dev202405300128.tar.gz
+[2024-06-02 03:32:29] INFO root fetch - processPackages [python-115]: New version: [0.0.8.7.3] Old Version: [0.0.8.7.2]
+[2024-06-02 03:32:29] INFO root fetch - processPackages [lbt-dragonfly]: Downloading https://files.pythonhosted.org/packages/be/ae/7267dfd241a0641f3fbadea4128db5ffa29609911cadb5fc4840656bb44a/lbt-dragonfly-0.9.98.tar.gz
+[2024-06-02 03:32:29] INFO root fetch - processPackages [onediffx]: Downloading https://files.pythonhosted.org/packages/e4/d2/b7e33405a2b0caa12d9d54f1bf86cadf01c98a186d490573a04a857100e2/onediffx-1.1.0.dev202406010129.tar.gz
+[2024-06-02 03:32:29] INFO root fetch - processPackages [lbt-dragonfly]: Downloading https://files.pythonhosted.org/packages/b4/08/0ca46e9f7eef7b2cce7f0c6110106c42aa35a79bd88110559177f64d733a/lbt-dragonfly-0.9.99.tar.gz
+[2024-06-02 03:32:29] INFO root fetch - processPackages [python-115]: Downloading https://files.pythonhosted.org/packages/64/b9/08c10759f7c8b9b6c655d33385b77a796e0e3ec1f8bc1c579162c2c70627/python_115-0.0.8.7.2.tar.gz
+[2024-06-02 03:32:30] INFO root fetch - processPackages [lbt-dragonfly]: executing diffoscope
+[2024-06-02 03:32:30] INFO root fetch - processPackages [lbt-dragonfly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lbt-dragonfly-0.9.98.tar.gz tmp/lbt-dragonfly-0.9.99.tar.gz --markdown 20240602/l/lbt-dragonfly/0.9.98-0.9.99/README.md --exclude *.pyd
+[2024-06-02 03:32:30] INFO root fetch - processPackages [onediffx]: executing diffoscope
+[2024-06-02 03:32:30] INFO root fetch - processPackages [onediffx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onediffx-1.1.0.dev202405300128.tar.gz tmp/onediffx-1.1.0.dev202406010129.tar.gz --markdown 20240602/o/onediffx/1.1.0.dev202405300128-1.1.0.dev202406010129/README.md --exclude *.pyd
+[2024-06-02 03:32:30] INFO root fetch - processPackages [python-115]: Downloading https://files.pythonhosted.org/packages/94/d0/429e80eeef3a5f82101e901e96703a1f5401792edfbcc0762bc1f86c1dfb/python_115-0.0.8.7.3.tar.gz
+[2024-06-02 03:32:30] INFO root fetch - processPackages [python-115]: executing diffoscope
+[2024-06-02 03:32:30] INFO root fetch - processPackages [python-115]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_115-0.0.8.7.2.tar.gz tmp/python_115-0.0.8.7.3.tar.gz --markdown 20240602/p/python-115/0.0.8.7.2-0.0.8.7.3/README.md --exclude *.pyd
+[2024-06-02 03:32:30] INFO root fetch - processPackages [lbt-dragonfly]: Remove: archive file [/home/abi/fetcher/tmp/lbt-dragonfly-0.9.98.tar.gz]
+[2024-06-02 03:32:30] INFO root fetch - processPackages [lbt-dragonfly]: Remove: archive file [/home/abi/fetcher/tmp/lbt-dragonfly-0.9.99.tar.gz]
+[2024-06-02 03:32:30] INFO root fetch - main [MainThread]: End processing [lbt-dragonfly]: success
+[2024-06-02 03:32:30] INFO root fetch - processPackages [onediffx]: Remove: archive file [/home/abi/fetcher/tmp/onediffx-1.1.0.dev202405300128.tar.gz]
+[2024-06-02 03:32:30] INFO root fetch - processPackages [onediffx]: Remove: archive file [/home/abi/fetcher/tmp/onediffx-1.1.0.dev202406010129.tar.gz]
+[2024-06-02 03:32:30] INFO root fetch - main [MainThread]: End processing [onediffx]: success
+[2024-06-02 03:32:31] INFO root fetch - processPackages [python-115]: Remove: archive file [/home/abi/fetcher/tmp/python_115-0.0.8.7.2.tar.gz]
+[2024-06-02 03:32:31] INFO root fetch - processPackages [python-115]: Remove: archive file [/home/abi/fetcher/tmp/python_115-0.0.8.7.3.tar.gz]
+[2024-06-02 03:32:31] INFO root fetch - main [MainThread]: End processing [python-115]: success
+[2024-06-02 03:32:31] INFO root fetch - main [MainThread]: Store serial: [23485487]
