@@ -1680,3 +1680,24 @@
 [2024-06-02 02:09:39] INFO root fetch - processPackages [style-bert-vits2]: Remove: archive file [/home/abi/fetcher/tmp/style_bert_vits2-2.5.0.tar.gz]
 [2024-06-02 02:09:39] INFO root fetch - main [MainThread]: End processing [style-bert-vits2]: success
 [2024-06-02 02:09:39] INFO root fetch - main [MainThread]: Store serial: [23484831]
+[2024-06-02 02:11:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23484831]
+[2024-06-02 02:11:48] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-02 02:11:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: profile-local
+[2024-06-02 02:11:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gdaicommons
+[2024-06-02 02:11:48] INFO root fetch - processPackages [gdaicommons]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-06-02 02:11:48] INFO root fetch - processPackages [profile-local]: New version: [0.0.9] Old Version: [0.0.81]
+[2024-06-02 02:11:48] INFO root fetch - processPackages [gdaicommons]: Downloading https://files.pythonhosted.org/packages/b3/6f/78a920db090239f2a6a7f38832177c139e8e4ce8ffe796520fadab354120/gdaicommons-0.0.6.tar.gz
+[2024-06-02 02:11:48] INFO root fetch - processPackages [profile-local]: Downloading https://files.pythonhosted.org/packages/1b/2e/db5c64e29a978727a476aaa6a32c7552471152ee5c79d83fc95b6bfe212e/profile_local-0.0.81.tar.gz
+[2024-06-02 02:11:48] INFO root fetch - processPackages [gdaicommons]: Downloading https://files.pythonhosted.org/packages/1f/14/25612a4240f1ead5574b195ad23e7e1d960defe8ed8fc96cca8f0556be1e/gdaicommons-0.0.7.tar.gz
+[2024-06-02 02:11:48] INFO root fetch - processPackages [profile-local]: Downloading https://files.pythonhosted.org/packages/a8/54/e07308090c523485559291c7a02f014be5ed9511f87a7701fb7328a58149/profile-local-0.0.9.tar.gz
+[2024-06-02 02:11:48] INFO root fetch - processPackages [profile-local]: executing diffoscope
+[2024-06-02 02:11:48] INFO root fetch - processPackages [profile-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/profile_local-0.0.81.tar.gz tmp/profile-local-0.0.9.tar.gz --markdown 20240602/p/profile-local/0.0.81-0.0.9/README.md --exclude *.pyd
+[2024-06-02 02:11:48] INFO root fetch - processPackages [gdaicommons]: executing diffoscope
+[2024-06-02 02:11:48] INFO root fetch - processPackages [gdaicommons]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gdaicommons-0.0.6.tar.gz tmp/gdaicommons-0.0.7.tar.gz --markdown 20240602/g/gdaicommons/0.0.6-0.0.7/README.md --exclude *.pyd
+[2024-06-02 02:11:49] INFO root fetch - processPackages [profile-local]: Remove: archive file [/home/abi/fetcher/tmp/profile_local-0.0.81.tar.gz]
+[2024-06-02 02:11:49] INFO root fetch - processPackages [profile-local]: Remove: archive file [/home/abi/fetcher/tmp/profile-local-0.0.9.tar.gz]
+[2024-06-02 02:11:49] INFO root fetch - main [MainThread]: End processing [profile-local]: success
+[2024-06-02 02:11:49] INFO root fetch - processPackages [gdaicommons]: Remove: archive file [/home/abi/fetcher/tmp/gdaicommons-0.0.6.tar.gz]
+[2024-06-02 02:11:49] INFO root fetch - processPackages [gdaicommons]: Remove: archive file [/home/abi/fetcher/tmp/gdaicommons-0.0.7.tar.gz]
+[2024-06-02 02:11:49] INFO root fetch - main [MainThread]: End processing [gdaicommons]: success
+[2024-06-02 02:11:49] INFO root fetch - main [MainThread]: Store serial: [23484838]
