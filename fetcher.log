@@ -17263,3 +17263,30 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 21:44:32] INFO root fetch - processPackages [spotify-utils]: Remove: archive file [/home/abi/fetcher/tmp/spotify_utils-1.0.9.tar.gz]
 [2024-06-02 21:44:32] INFO root fetch - main [MainThread]: End processing [spotify-utils]: success
 [2024-06-02 21:44:32] INFO root fetch - main [MainThread]: Store serial: [23492497]
+[2024-06-02 21:46:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23492497]
+[2024-06-02 21:46:41] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-02 21:46:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pynboard
+[2024-06-02 21:46:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hello-auz
+[2024-06-02 21:46:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: prompt-defender
+[2024-06-02 21:46:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: prompt-defender-llm-defences
+[2024-06-02 21:46:41] INFO root fetch - processPackages [prompt-defender]: New version: [0.1.1] Old Version: [0.0.28]
+[2024-06-02 21:46:41] INFO root fetch - processPackages [prompt-defender]: Downloading https://files.pythonhosted.org/packages/c5/a8/64d0ea0a17a6fb02185294f4e4dcbe1f17e3ee05756b99e4ed08813a42d1/prompt_defender-0.0.28.tar.gz
+[2024-06-02 21:46:41] WARNING root fetch - processPackages [hello-auz]: Skipping, unable to determine old version
+[2024-06-02 21:46:41] INFO root fetch - main [MainThread]: End processing [hello-auz] error
+[2024-06-02 21:46:41] INFO root fetch - processPackages [pynboard]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-06-02 21:46:41] WARNING root fetch - processPackages [prompt-defender-llm-defences]: Skipping, unable to determine old version
+[2024-06-02 21:46:41] INFO root fetch - main [MainThread]: End processing [prompt-defender-llm-defences] error
+[2024-06-02 21:46:41] INFO root fetch - processPackages [pynboard]: Downloading https://files.pythonhosted.org/packages/7f/b8/47943a56d38af2e1afd61ff8abb518cbd1315349d7a10ff35d0abf87c338/pynboard-0.0.2.tar.gz
+[2024-06-02 21:46:41] INFO root fetch - processPackages [prompt-defender]: Downloading https://files.pythonhosted.org/packages/64/44/2ec5fc7f869be55346d26c46aa44396fb5e322601a05b2d4f064f86662df/prompt_defender-0.1.1.tar.gz
+[2024-06-02 21:46:41] INFO root fetch - processPackages [prompt-defender]: executing diffoscope
+[2024-06-02 21:46:41] INFO root fetch - processPackages [prompt-defender]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prompt_defender-0.0.28.tar.gz tmp/prompt_defender-0.1.1.tar.gz --markdown 20240602/p/prompt-defender/0.0.28-0.1.1/README.md --exclude *.pyd
+[2024-06-02 21:46:42] INFO root fetch - processPackages [pynboard]: Downloading https://files.pythonhosted.org/packages/0d/b0/1cae5f9f5cc66113e4b648d57258c03ffb05e9f8c7060077e4ff3faa133e/pynboard-0.0.3.tar.gz
+[2024-06-02 21:46:42] INFO root fetch - processPackages [pynboard]: executing diffoscope
+[2024-06-02 21:46:42] INFO root fetch - processPackages [pynboard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pynboard-0.0.2.tar.gz tmp/pynboard-0.0.3.tar.gz --markdown 20240602/p/pynboard/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-06-02 21:46:42] INFO root fetch - processPackages [prompt-defender]: Remove: archive file [/home/abi/fetcher/tmp/prompt_defender-0.0.28.tar.gz]
+[2024-06-02 21:46:42] INFO root fetch - processPackages [prompt-defender]: Remove: archive file [/home/abi/fetcher/tmp/prompt_defender-0.1.1.tar.gz]
+[2024-06-02 21:46:42] INFO root fetch - main [MainThread]: End processing [prompt-defender]: success
+[2024-06-02 21:46:42] INFO root fetch - processPackages [pynboard]: Remove: archive file [/home/abi/fetcher/tmp/pynboard-0.0.2.tar.gz]
+[2024-06-02 21:46:42] INFO root fetch - processPackages [pynboard]: Remove: archive file [/home/abi/fetcher/tmp/pynboard-0.0.3.tar.gz]
+[2024-06-02 21:46:42] INFO root fetch - main [MainThread]: End processing [pynboard]: success
+[2024-06-02 21:46:42] INFO root fetch - main [MainThread]: Store serial: [23492513]
