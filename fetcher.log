@@ -5391,3 +5391,18 @@
 [2024-06-02 09:18:57] INFO root fetch - processPackages [dltrain]: Remove: archive file [/home/abi/fetcher/tmp/dltrain-0.1.4.tar.gz]
 [2024-06-02 09:18:57] INFO root fetch - main [MainThread]: End processing [dltrain]: success
 [2024-06-02 09:18:57] INFO root fetch - main [MainThread]: Store serial: [23486991]
+[2024-06-02 09:21:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23486991]
+[2024-06-02 09:21:06] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-02 09:21:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pydal
+[2024-06-02 09:21:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: decades
+[2024-06-02 09:21:06] INFO root fetch - processPackages [pydal]: New version: [20240601.2] Old Version: [20240601.1]
+[2024-06-02 09:21:06] INFO root fetch - processPackages [pydal]: Downloading https://files.pythonhosted.org/packages/4f/79/8f4a15ff8a74009c5614e041dd323bb1b292035f95574f841b253cb7bd65/pydal-20240601.1.tar.gz
+[2024-06-02 09:21:06] WARNING root fetch - processPackages [decades]: Skipping, unable to determine old version
+[2024-06-02 09:21:06] INFO root fetch - main [MainThread]: End processing [decades] error
+[2024-06-02 09:21:07] INFO root fetch - processPackages [pydal]: Downloading https://files.pythonhosted.org/packages/a4/2e/f40b72efa1316bcbb421ae34242750caded77ddd07e241c750844a2ed490/pydal-20240601.2.tar.gz
+[2024-06-02 09:21:07] INFO root fetch - processPackages [pydal]: executing diffoscope
+[2024-06-02 09:21:07] INFO root fetch - processPackages [pydal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydal-20240601.1.tar.gz tmp/pydal-20240601.2.tar.gz --markdown 20240602/p/pydal/20240601.1-20240601.2/README.md --exclude *.pyd
+[2024-06-02 09:21:08] INFO root fetch - processPackages [pydal]: Remove: archive file [/home/abi/fetcher/tmp/pydal-20240601.1.tar.gz]
+[2024-06-02 09:21:08] INFO root fetch - processPackages [pydal]: Remove: archive file [/home/abi/fetcher/tmp/pydal-20240601.2.tar.gz]
+[2024-06-02 09:21:08] INFO root fetch - main [MainThread]: End processing [pydal]: success
+[2024-06-02 09:21:08] INFO root fetch - main [MainThread]: Store serial: [23486999]
