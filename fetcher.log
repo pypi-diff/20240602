@@ -5884,3 +5884,57 @@
 [2024-06-02 10:02:17] INFO root fetch - processPackages [pyrofork]: Remove: archive file [/home/abi/fetcher/tmp/pyrofork-2.4.0rc1.tar.gz]
 [2024-06-02 10:02:17] INFO root fetch - main [MainThread]: End processing [pyrofork]: success
 [2024-06-02 10:02:17] INFO root fetch - main [MainThread]: Store serial: [23487247]
+[2024-06-02 10:04:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23487247]
+[2024-06-02 10:04:27] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-06-02 10:04:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: LLMEasyTools
+[2024-06-02 10:04:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cube-recognizer-for-agv
+[2024-06-02 10:04:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: real-time-translator
+[2024-06-02 10:04:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: hstrader
+[2024-06-02 10:04:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pytest-zcc
+[2024-06-02 10:04:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: langfun
+[2024-06-02 10:04:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: beforerr
+[2024-06-02 10:04:27] INFO root fetch - processPackages [LLMEasyTools]: New version: [0.9] Old Version: [0.8]
+[2024-06-02 10:04:27] INFO root fetch - processPackages [real-time-translator]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-06-02 10:04:27] WARNING root fetch - processPackages [pytest-zcc]: Skipping, unable to determine old version
+[2024-06-02 10:04:27] INFO root fetch - main [MainThread]: End processing [pytest-zcc] error
+[2024-06-02 10:04:27] INFO root fetch - processPackages [langfun]: New version: [0.0.2.dev20240601] Old Version: [0.0.2.dev20240531]
+[2024-06-02 10:04:27] INFO root fetch - processPackages [hstrader]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-06-02 10:04:27] INFO root fetch - processPackages [LLMEasyTools]: Downloading https://files.pythonhosted.org/packages/82/92/3b67230d7ddb3b80cc3c61e5bd7678372c21db75cd4249fc296e1e48663c/LLMEasyTools-0.8.tar.gz
+[2024-06-02 10:04:27] WARNING root fetch - processPackages [cube-recognizer-for-agv]: Skipping, unable to determine old version
+[2024-06-02 10:04:27] INFO root fetch - main [MainThread]: End processing [cube-recognizer-for-agv] error
+[2024-06-02 10:04:27] INFO root fetch - processPackages [beforerr]: New version: [2024.6.2] Old Version: [2024.6.1]
+[2024-06-02 10:04:27] INFO root fetch - processPackages [langfun]: Downloading https://files.pythonhosted.org/packages/23/0d/90aa50bfd178e3d8723d773822deb8750638baf062ba4b9434c83565cf55/langfun-0.0.2.dev20240531.tar.gz
+[2024-06-02 10:04:27] INFO root fetch - processPackages [real-time-translator]: Downloading https://files.pythonhosted.org/packages/27/bc/3fe6be0090b0438cec0eb15133e7c9a6f05c30f5ed03c8a52642082e15a9/real_time_translator-0.1.0.tar.gz
+[2024-06-02 10:04:27] INFO root fetch - processPackages [hstrader]: Downloading https://files.pythonhosted.org/packages/02/41/1f2ca7c03973dff4e10b61f49b6b0e2de5a271fd970d5868f1c1bb2685c9/hstrader-1.0.0.tar.gz
+[2024-06-02 10:04:27] INFO root fetch - processPackages [beforerr]: Downloading https://files.pythonhosted.org/packages/37/51/512c69927d3939e3cd8b6e821de23ad5c9a00ea53aff79332e761638e90b/beforerr-2024.6.1.tar.gz
+[2024-06-02 10:04:27] INFO root fetch - processPackages [LLMEasyTools]: Downloading https://files.pythonhosted.org/packages/72/a3/c49ac0fb7ddf156d6a831d2b908fcf1ca4c36f2081aec1178176f19d3958/LLMEasyTools-0.9.tar.gz
+[2024-06-02 10:04:28] INFO root fetch - processPackages [LLMEasyTools]: executing diffoscope
+[2024-06-02 10:04:28] INFO root fetch - processPackages [LLMEasyTools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/LLMEasyTools-0.8.tar.gz tmp/LLMEasyTools-0.9.tar.gz --markdown 20240602/L/LLMEasyTools/0.8-0.9/README.md --exclude *.pyd
+[2024-06-02 10:04:28] INFO root fetch - processPackages [langfun]: Downloading https://files.pythonhosted.org/packages/19/82/70c477a9a2f355e61616a35d08c17d78be6b4175d27483ddee0b8387a6df/langfun-0.0.2.dev20240601.tar.gz
+[2024-06-02 10:04:28] INFO root fetch - processPackages [real-time-translator]: Downloading https://files.pythonhosted.org/packages/0d/16/199e022d735b50fce78cb4a7d056e9e5ce6708f9148e008b0af582a3bd30/real_time_translator-0.1.1.tar.gz
+[2024-06-02 10:04:28] INFO root fetch - processPackages [hstrader]: Downloading https://files.pythonhosted.org/packages/dd/52/88ba809be495042cf76ac55642b8c9f0c8f6894e37651a657e982034ed7b/hstrader-1.0.1.tar.gz
+[2024-06-02 10:04:28] INFO root fetch - processPackages [langfun]: executing diffoscope
+[2024-06-02 10:04:28] INFO root fetch - processPackages [langfun]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langfun-0.0.2.dev20240531.tar.gz tmp/langfun-0.0.2.dev20240601.tar.gz --markdown 20240602/l/langfun/0.0.2.dev20240531-0.0.2.dev20240601/README.md --exclude *.pyd
+[2024-06-02 10:04:28] INFO root fetch - processPackages [beforerr]: Downloading https://files.pythonhosted.org/packages/ed/12/8f4a0cadf7d728159ee012859b3b70a373302ffd84cca6e816c568d40352/beforerr-2024.6.2.tar.gz
+[2024-06-02 10:04:28] INFO root fetch - processPackages [real-time-translator]: executing diffoscope
+[2024-06-02 10:04:28] INFO root fetch - processPackages [real-time-translator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/real_time_translator-0.1.0.tar.gz tmp/real_time_translator-0.1.1.tar.gz --markdown 20240602/r/real-time-translator/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-06-02 10:04:28] INFO root fetch - processPackages [hstrader]: executing diffoscope
+[2024-06-02 10:04:28] INFO root fetch - processPackages [hstrader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hstrader-1.0.0.tar.gz tmp/hstrader-1.0.1.tar.gz --markdown 20240602/h/hstrader/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-06-02 10:04:28] INFO root fetch - processPackages [beforerr]: executing diffoscope
+[2024-06-02 10:04:28] INFO root fetch - processPackages [beforerr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/beforerr-2024.6.1.tar.gz tmp/beforerr-2024.6.2.tar.gz --markdown 20240602/b/beforerr/2024.6.1-2024.6.2/README.md --exclude *.pyd
+[2024-06-02 10:04:28] INFO root fetch - processPackages [LLMEasyTools]: Remove: archive file [/home/abi/fetcher/tmp/LLMEasyTools-0.8.tar.gz]
+[2024-06-02 10:04:28] INFO root fetch - processPackages [LLMEasyTools]: Remove: archive file [/home/abi/fetcher/tmp/LLMEasyTools-0.9.tar.gz]
+[2024-06-02 10:04:28] INFO root fetch - main [MainThread]: End processing [LLMEasyTools]: success
+[2024-06-02 10:04:28] INFO root fetch - processPackages [real-time-translator]: Remove: archive file [/home/abi/fetcher/tmp/real_time_translator-0.1.0.tar.gz]
+[2024-06-02 10:04:28] INFO root fetch - processPackages [real-time-translator]: Remove: archive file [/home/abi/fetcher/tmp/real_time_translator-0.1.1.tar.gz]
+[2024-06-02 10:04:28] INFO root fetch - main [MainThread]: End processing [real-time-translator]: success
+[2024-06-02 10:04:28] INFO root fetch - processPackages [beforerr]: Remove: archive file [/home/abi/fetcher/tmp/beforerr-2024.6.1.tar.gz]
+[2024-06-02 10:04:28] INFO root fetch - processPackages [beforerr]: Remove: archive file [/home/abi/fetcher/tmp/beforerr-2024.6.2.tar.gz]
+[2024-06-02 10:04:28] INFO root fetch - main [MainThread]: End processing [beforerr]: success
+[2024-06-02 10:04:29] INFO root fetch - processPackages [hstrader]: Remove: archive file [/home/abi/fetcher/tmp/hstrader-1.0.0.tar.gz]
+[2024-06-02 10:04:29] INFO root fetch - processPackages [hstrader]: Remove: archive file [/home/abi/fetcher/tmp/hstrader-1.0.1.tar.gz]
+[2024-06-02 10:04:29] INFO root fetch - main [MainThread]: End processing [hstrader]: success
+[2024-06-02 10:04:29] INFO root fetch - processPackages [langfun]: Remove: archive file [/home/abi/fetcher/tmp/langfun-0.0.2.dev20240531.tar.gz]
+[2024-06-02 10:04:29] INFO root fetch - processPackages [langfun]: Remove: archive file [/home/abi/fetcher/tmp/langfun-0.0.2.dev20240601.tar.gz]
+[2024-06-02 10:04:29] INFO root fetch - main [MainThread]: End processing [langfun]: success
+[2024-06-02 10:04:29] INFO root fetch - main [MainThread]: Store serial: [23487268]
