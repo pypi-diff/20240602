@@ -2098,3 +2098,20 @@
 [2024-06-02 02:33:35] INFO root fetch - main [MainThread]: End processing [id-card-recognition]: success
 [2024-06-02 02:33:35] INFO root fetch - main [MainThread]: End processing [id-card-recognition]: success
 [2024-06-02 02:33:35] INFO root fetch - main [MainThread]: Store serial: [23484997]
+[2024-06-02 02:35:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23484997]
+[2024-06-02 02:35:43] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-02 02:35:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aeppl-nightly
+[2024-06-02 02:35:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: airbyte-source-whisky-hunter
+[2024-06-02 02:35:43] INFO root fetch - processPackages [aeppl-nightly]: New version: [0.1.5.dev20240601] Old Version: [0.1.5.dev20240531]
+[2024-06-02 02:35:43] INFO root fetch - processPackages [airbyte-source-whisky-hunter]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-06-02 02:35:43] INFO root fetch - processPackages [aeppl-nightly]: Downloading https://files.pythonhosted.org/packages/eb/c1/4ada4b1650cfd6d52002fe0ef96d35b4cfd0a0e8f1d9b9b80070f2656681/aeppl_nightly-0.1.5.dev20240531.tar.gz
+[2024-06-02 02:35:44] INFO root fetch - processPackages [airbyte-source-whisky-hunter]: Downloading https://files.pythonhosted.org/packages/44/07/0f4ace024ac69ba59af234e4f63839634204e47372c6ce29807e7ae4e08b/airbyte_source_whisky_hunter-0.1.1.tar.gz
+[2024-06-02 02:35:44] INFO root fetch - processPackages [aeppl-nightly]: Downloading https://files.pythonhosted.org/packages/88/7e/f0982768adb71dbe875e0e726ed5078b48e6b8012b1edd649e7695742039/aeppl_nightly-0.1.5.dev20240601.tar.gz
+[2024-06-02 02:35:44] INFO root fetch - processPackages [aeppl-nightly]: executing diffoscope
+[2024-06-02 02:35:44] INFO root fetch - processPackages [aeppl-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aeppl_nightly-0.1.5.dev20240531.tar.gz tmp/aeppl_nightly-0.1.5.dev20240601.tar.gz --markdown 20240602/a/aeppl-nightly/0.1.5.dev20240531-0.1.5.dev20240601/README.md --exclude *.pyd
+[2024-06-02 02:35:44] ERROR root fetch - processPackages [airbyte-source-whisky-hunter]: Unable to fetch info: No such project/version 'airbyte-source-whisky-hunter' 0.1.2
+[2024-06-02 02:35:44] INFO root fetch - main [MainThread]: End processing [airbyte-source-whisky-hunter] error
+[2024-06-02 02:35:45] INFO root fetch - processPackages [aeppl-nightly]: Remove: archive file [/home/abi/fetcher/tmp/aeppl_nightly-0.1.5.dev20240531.tar.gz]
+[2024-06-02 02:35:45] INFO root fetch - processPackages [aeppl-nightly]: Remove: archive file [/home/abi/fetcher/tmp/aeppl_nightly-0.1.5.dev20240601.tar.gz]
+[2024-06-02 02:35:45] INFO root fetch - main [MainThread]: End processing [aeppl-nightly]: success
+[2024-06-02 02:35:45] INFO root fetch - main [MainThread]: Store serial: [23485002]
