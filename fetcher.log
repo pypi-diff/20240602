@@ -2278,3 +2278,42 @@
 [2024-06-02 02:53:21] INFO root fetch - processPackages [bussinwebx-get]: Remove: archive file [/home/abi/fetcher/tmp/bussinwebx_get-1.0.4.tar.gz]
 [2024-06-02 02:53:21] INFO root fetch - main [MainThread]: End processing [bussinwebx-get]: success
 [2024-06-02 02:53:21] INFO root fetch - main [MainThread]: Store serial: [23485141]
+[2024-06-02 02:55:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23485141]
+[2024-06-02 02:55:29] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-02 02:55:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: simevopy
+[2024-06-02 02:55:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: flashback
+[2024-06-02 02:55:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bioversions
+[2024-06-02 02:55:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: zeroize
+[2024-06-02 02:55:29] INFO root fetch - processPackages [simevopy]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-06-02 02:55:29] INFO root fetch - processPackages [bioversions]: New version: [0.5.99] Old Version: [0.5.98]
+[2024-06-02 02:55:29] INFO root fetch - processPackages [simevopy]: Downloading https://files.pythonhosted.org/packages/a7/95/7b73e01221c239dbb21ad69e6e31e4bf710b1f289bd7cdb74c540f13b0c6/simevopy-0.1.8.tar.gz
+[2024-06-02 02:55:29] INFO root fetch - processPackages [flashback]: New version: [2.1.0] Old Version: [2.0.0]
+[2024-06-02 02:55:29] INFO root fetch - processPackages [bioversions]: Downloading https://files.pythonhosted.org/packages/e6/34/7c40209c13edc9fe7c611a00fd4b0d6e59d501613427ed6713ad6398b655/bioversions-0.5.98.tar.gz
+[2024-06-02 02:55:29] INFO root fetch - processPackages [zeroize]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-06-02 02:55:29] INFO root fetch - processPackages [flashback]: Downloading https://files.pythonhosted.org/packages/04/68/2f9f02cb34eb2c3a587b3a98e676477979b1d62ae3ec5724980f52a751ad/flashback-2.0.0.tar.gz
+[2024-06-02 02:55:29] INFO root fetch - processPackages [simevopy]: Downloading https://files.pythonhosted.org/packages/22/53/31d63eb0aba745235ab86e254349ffc473dcf70538f3ab35a99fc2cf58ed/simevopy-0.1.9.tar.gz
+[2024-06-02 02:55:29] INFO root fetch - processPackages [bioversions]: Downloading https://files.pythonhosted.org/packages/0d/f5/5956eccd9643084cc5f7aba6325ec9de1ed3a2bb3568a8ee7ab88d0eac77/bioversions-0.5.99.tar.gz
+[2024-06-02 02:55:29] INFO root fetch - processPackages [simevopy]: executing diffoscope
+[2024-06-02 02:55:29] INFO root fetch - processPackages [simevopy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simevopy-0.1.8.tar.gz tmp/simevopy-0.1.9.tar.gz --markdown 20240602/s/simevopy/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-06-02 02:55:30] INFO root fetch - processPackages [zeroize]: Downloading https://files.pythonhosted.org/packages/2d/a8/1cd75fcfd698fbde9d155df6b56bfb0b90aa4cb312f5748c988fa22958b0/zeroize-0.1.3.tar.gz
+[2024-06-02 02:55:30] INFO root fetch - processPackages [bioversions]: executing diffoscope
+[2024-06-02 02:55:30] INFO root fetch - processPackages [bioversions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bioversions-0.5.98.tar.gz tmp/bioversions-0.5.99.tar.gz --markdown 20240602/b/bioversions/0.5.98-0.5.99/README.md --exclude *.pyd
+[2024-06-02 02:55:30] INFO root fetch - processPackages [flashback]: Downloading https://files.pythonhosted.org/packages/c8/c3/afbefd2c8f23303ec8e1b740bac6f8513717f3f1bfd096073613644bfcc8/flashback-2.1.0.tar.gz
+[2024-06-02 02:55:30] INFO root fetch - processPackages [flashback]: executing diffoscope
+[2024-06-02 02:55:30] INFO root fetch - processPackages [flashback]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flashback-2.0.0.tar.gz tmp/flashback-2.1.0.tar.gz --markdown 20240602/f/flashback/2.0.0-2.1.0/README.md --exclude *.pyd
+[2024-06-02 02:55:30] INFO root fetch - processPackages [zeroize]: Downloading https://files.pythonhosted.org/packages/2a/8d/268307d3a0a23fb4217832a742e927ea7da6f7c828922dc61dbeda47f957/zeroize-0.1.4-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl
+[2024-06-02 02:55:30] INFO root fetch - processPackages [simevopy]: Remove: archive file [/home/abi/fetcher/tmp/simevopy-0.1.8.tar.gz]
+[2024-06-02 02:55:30] INFO root fetch - processPackages [simevopy]: Remove: archive file [/home/abi/fetcher/tmp/simevopy-0.1.9.tar.gz]
+[2024-06-02 02:55:30] INFO root fetch - main [MainThread]: End processing [simevopy]: success
+[2024-06-02 02:55:30] INFO root fetch - processPackages [flashback]: Remove: archive file [/home/abi/fetcher/tmp/flashback-2.0.0.tar.gz]
+[2024-06-02 02:55:30] INFO root fetch - processPackages [flashback]: Remove: archive file [/home/abi/fetcher/tmp/flashback-2.1.0.tar.gz]
+[2024-06-02 02:55:30] INFO root fetch - main [MainThread]: End processing [flashback]: success
+[2024-06-02 02:55:31] INFO root fetch - processPackages [zeroize]: executing diffoscope
+[2024-06-02 02:55:31] INFO root fetch - processPackages [zeroize]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zeroize-0.1.3.tar.gz tmp/zeroize-0.1.4-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.zip --markdown 20240602/z/zeroize/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-06-02 02:55:31] INFO root fetch - processPackages [zeroize]: Remove: archive file [/home/abi/fetcher/tmp/zeroize-0.1.3.tar.gz]
+[2024-06-02 02:55:31] INFO root fetch - processPackages [zeroize]: Remove: archive file [/home/abi/fetcher/tmp/zeroize-0.1.4-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.zip]
+[2024-06-02 02:55:31] INFO root fetch - main [MainThread]: End processing [zeroize]: success
+[2024-06-02 02:55:49] INFO root fetch - processPackages [bioversions]: Remove: archive file [/home/abi/fetcher/tmp/bioversions-0.5.98.tar.gz]
+[2024-06-02 02:55:49] INFO root fetch - processPackages [bioversions]: Remove: archive file [/home/abi/fetcher/tmp/bioversions-0.5.99.tar.gz]
+[2024-06-02 02:55:49] INFO root fetch - main [MainThread]: End processing [bioversions]: success
+[2024-06-02 02:55:49] INFO root fetch - main [MainThread]: Store serial: [23485149]
