@@ -16437,3 +16437,15 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 20:47:28] INFO root fetch - processPackages [savemoney]: Remove: archive file [/home/abi/fetcher/tmp/savemoney-0.2.9.tar.gz]
 [2024-06-02 20:47:28] INFO root fetch - main [MainThread]: End processing [savemoney]: success
 [2024-06-02 20:47:28] INFO root fetch - main [MainThread]: Store serial: [23492132]
+[2024-06-02 20:49:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23492132]
+[2024-06-02 20:49:37] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-02 20:49:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cornsnake
+[2024-06-02 20:49:37] INFO root fetch - processPackages [cornsnake]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-06-02 20:49:37] INFO root fetch - processPackages [cornsnake]: Downloading https://files.pythonhosted.org/packages/37/d3/da98adf156a10c9be5a0df884d31353b9206685170d04247770e40286bfc/cornsnake-0.0.8.tar.gz
+[2024-06-02 20:49:37] INFO root fetch - processPackages [cornsnake]: Downloading https://files.pythonhosted.org/packages/b8/3f/a5334cd8a36a0c8234efdf0d9d77296d6037ec10c538a7785aa9e7853913/cornsnake-0.0.9.tar.gz
+[2024-06-02 20:49:37] INFO root fetch - processPackages [cornsnake]: executing diffoscope
+[2024-06-02 20:49:37] INFO root fetch - processPackages [cornsnake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cornsnake-0.0.8.tar.gz tmp/cornsnake-0.0.9.tar.gz --markdown 20240602/c/cornsnake/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-06-02 20:49:38] INFO root fetch - processPackages [cornsnake]: Remove: archive file [/home/abi/fetcher/tmp/cornsnake-0.0.8.tar.gz]
+[2024-06-02 20:49:38] INFO root fetch - processPackages [cornsnake]: Remove: archive file [/home/abi/fetcher/tmp/cornsnake-0.0.9.tar.gz]
+[2024-06-02 20:49:38] INFO root fetch - main [MainThread]: End processing [cornsnake]: success
+[2024-06-02 20:49:38] INFO root fetch - main [MainThread]: Store serial: [23492147]
