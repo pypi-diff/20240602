@@ -2704,3 +2704,26 @@
 [2024-06-02 03:36:47] INFO root fetch - processPackages [torrey]: Remove: archive file [/home/abi/fetcher/tmp/torrey-3.2.2.dev20240602013528.tar.gz]
 [2024-06-02 03:36:47] INFO root fetch - main [MainThread]: End processing [torrey]: success
 [2024-06-02 03:36:47] INFO root fetch - main [MainThread]: Store serial: [23485517]
+[2024-06-02 03:38:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23485517]
+[2024-06-02 03:38:56] INFO root fetch - main [MainThread]: No changed packages found
+[2024-06-02 03:40:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23485523]
+[2024-06-02 03:41:01] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-02 03:41:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: url-remote
+[2024-06-02 03:41:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: codeflash
+[2024-06-02 03:41:02] INFO root fetch - processPackages [codeflash]: New version: [0.6.6] Old Version: [0.6.5]
+[2024-06-02 03:41:02] INFO root fetch - processPackages [url-remote]: New version: [0.0.98] Old Version: [0.0.97]
+[2024-06-02 03:41:02] INFO root fetch - processPackages [url-remote]: Downloading https://files.pythonhosted.org/packages/1b/dd/6cf808dff5649ee31cc2944dd5fb163e67905eabb57b6d7300f210e01b85/url_remote-0.0.97.tar.gz
+[2024-06-02 03:41:02] INFO root fetch - processPackages [codeflash]: Downloading https://files.pythonhosted.org/packages/de/b8/8e0339f3cce9ba39592af920a2ec69c49fbd33be6080fdd950299d586e2d/codeflash-0.6.5.tar.gz
+[2024-06-02 03:41:02] INFO root fetch - processPackages [url-remote]: Downloading https://files.pythonhosted.org/packages/eb/65/915c4a213106adc522a4ae2c505825c86a7111dbdac825416260d469dcbe/url_remote-0.0.98.tar.gz
+[2024-06-02 03:41:02] INFO root fetch - processPackages [codeflash]: Downloading https://files.pythonhosted.org/packages/b7/8d/bc6febbc734e68ee425df42e8ad7da7cd581ca81ca1c66138537a74816fa/codeflash-0.6.6.tar.gz
+[2024-06-02 03:41:02] INFO root fetch - processPackages [url-remote]: executing diffoscope
+[2024-06-02 03:41:02] INFO root fetch - processPackages [url-remote]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/url_remote-0.0.97.tar.gz tmp/url_remote-0.0.98.tar.gz --markdown 20240602/u/url-remote/0.0.97-0.0.98/README.md --exclude *.pyd
+[2024-06-02 03:41:02] INFO root fetch - processPackages [codeflash]: executing diffoscope
+[2024-06-02 03:41:02] INFO root fetch - processPackages [codeflash]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/codeflash-0.6.5.tar.gz tmp/codeflash-0.6.6.tar.gz --markdown 20240602/c/codeflash/0.6.5-0.6.6/README.md --exclude *.pyd
+[2024-06-02 03:41:03] INFO root fetch - processPackages [url-remote]: Remove: archive file [/home/abi/fetcher/tmp/url_remote-0.0.97.tar.gz]
+[2024-06-02 03:41:03] INFO root fetch - processPackages [url-remote]: Remove: archive file [/home/abi/fetcher/tmp/url_remote-0.0.98.tar.gz]
+[2024-06-02 03:41:03] INFO root fetch - main [MainThread]: End processing [url-remote]: success
+[2024-06-02 03:41:03] INFO root fetch - processPackages [codeflash]: Remove: archive file [/home/abi/fetcher/tmp/codeflash-0.6.5.tar.gz]
+[2024-06-02 03:41:03] INFO root fetch - processPackages [codeflash]: Remove: archive file [/home/abi/fetcher/tmp/codeflash-0.6.6.tar.gz]
+[2024-06-02 03:41:03] INFO root fetch - main [MainThread]: End processing [codeflash]: success
+[2024-06-02 03:41:03] INFO root fetch - main [MainThread]: Store serial: [23485529]
