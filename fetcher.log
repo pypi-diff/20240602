@@ -16608,3 +16608,63 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 20:58:20] INFO root fetch - processPackages [seamm-datastore]: Remove: archive file [/home/abi/fetcher/tmp/seamm_datastore-2024.6.2.tar.gz]
 [2024-06-02 20:58:20] INFO root fetch - main [MainThread]: End processing [seamm-datastore]: success
 [2024-06-02 20:58:20] INFO root fetch - main [MainThread]: Store serial: [23492206]
+[2024-06-02 21:00:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23492206]
+[2024-06-02 21:00:29] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-06-02 21:00:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: marasigan-raloso-finals
+[2024-06-02 21:00:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pymodins
+[2024-06-02 21:00:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: OpenTTDLab
+[2024-06-02 21:00:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: omop2survey
+[2024-06-02 21:00:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyiwe
+[2024-06-02 21:00:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cornsnake
+[2024-06-02 21:00:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pyerualjetwork
+[2024-06-02 21:00:29] INFO root fetch - processPackages [OpenTTDLab]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-06-02 21:00:29] INFO root fetch - processPackages [pymodins]: New version: [2.0.4] Old Version: [2.0.3]
+[2024-06-02 21:00:29] INFO root fetch - processPackages [omop2survey]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-06-02 21:00:29] INFO root fetch - processPackages [cornsnake]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-06-02 21:00:29] INFO root fetch - processPackages [pyerualjetwork]: New version: [2.0] Old Version: [1.3.9]
+[2024-06-02 21:00:29] INFO root fetch - processPackages [pyiwe]: New version: [0.0.8.post2] Old Version: [0.0.8.post1]
+[2024-06-02 21:00:29] WARNING root fetch - processPackages [marasigan-raloso-finals]: Skipping, unable to determine old version
+[2024-06-02 21:00:29] INFO root fetch - main [MainThread]: End processing [marasigan-raloso-finals] error
+[2024-06-02 21:00:29] INFO root fetch - processPackages [cornsnake]: Downloading https://files.pythonhosted.org/packages/37/d3/da98adf156a10c9be5a0df884d31353b9206685170d04247770e40286bfc/cornsnake-0.0.8.tar.gz
+[2024-06-02 21:00:29] INFO root fetch - processPackages [OpenTTDLab]: Downloading https://files.pythonhosted.org/packages/1f/6e/f9d8e929738fb28f0cf285d806e9d1e0b273a3abd0c627b823c266f87274/openttdlab-0.0.8.tar.gz
+[2024-06-02 21:00:29] INFO root fetch - processPackages [pymodins]: Downloading https://files.pythonhosted.org/packages/e0/dd/1a084a45ead73c0abe63f3d7ee490ae3723e34c0f95727d437f608c026f9/pymodins-2.0.3.tar.gz
+[2024-06-02 21:00:29] INFO root fetch - processPackages [omop2survey]: Downloading https://files.pythonhosted.org/packages/d0/3d/a88573a96f559d123cb3e1d168e45f905a3a99a738efb65bb74f949ea018/omop2survey-0.0.5.tar.gz
+[2024-06-02 21:00:29] INFO root fetch - processPackages [pyerualjetwork]: Downloading https://files.pythonhosted.org/packages/4f/92/6b26292c572cc5883dec47514965a18ff91a0f9f404fc6ae1a6e7e5e2136/pyerualjetwork-1.3.9.tar.gz
+[2024-06-02 21:00:29] INFO root fetch - processPackages [pyiwe]: Downloading https://files.pythonhosted.org/packages/d6/d0/b202ef13c3bcd897d6ccf0c5e007feaa0bea5c265b9ead80f69d338efb96/pyiwe-0.0.8.post1-py3-none-any.whl
+[2024-06-02 21:00:29] INFO root fetch - processPackages [OpenTTDLab]: Downloading https://files.pythonhosted.org/packages/c9/28/0b49734d3f0e2b039817ac8dbe0930487e1d1764bc5c7cc16063210352e0/openttdlab-0.0.9.tar.gz
+[2024-06-02 21:00:29] INFO root fetch - processPackages [pymodins]: Downloading https://files.pythonhosted.org/packages/4f/92/974e7e612b4f9bb20fb888322b67adbc324daf77dced715a9d1a1f27cc9d/pymodins-2.0.4.tar.gz
+[2024-06-02 21:00:29] INFO root fetch - processPackages [cornsnake]: Downloading https://files.pythonhosted.org/packages/b8/3f/a5334cd8a36a0c8234efdf0d9d77296d6037ec10c538a7785aa9e7853913/cornsnake-0.0.9.tar.gz
+[2024-06-02 21:00:29] INFO root fetch - processPackages [omop2survey]: Downloading https://files.pythonhosted.org/packages/40/8e/00f2e64641121c524dd7d6d01bb95ccf064bfb020b83cf52d2517311dae9/omop2survey-0.0.6.tar.gz
+[2024-06-02 21:00:29] INFO root fetch - processPackages [pyerualjetwork]: Downloading https://files.pythonhosted.org/packages/ab/98/a43ba457881f3984734315580075b308e5d5ede7e0cf920027894966a9b5/pyerualjetwork-2.0.tar.gz
+[2024-06-02 21:00:30] INFO root fetch - processPackages [OpenTTDLab]: executing diffoscope
+[2024-06-02 21:00:30] INFO root fetch - processPackages [OpenTTDLab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openttdlab-0.0.8.tar.gz tmp/openttdlab-0.0.9.tar.gz --markdown 20240602/O/OpenTTDLab/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-06-02 21:00:30] INFO root fetch - processPackages [pymodins]: executing diffoscope
+[2024-06-02 21:00:30] INFO root fetch - processPackages [pymodins]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymodins-2.0.3.tar.gz tmp/pymodins-2.0.4.tar.gz --markdown 20240602/p/pymodins/2.0.3-2.0.4/README.md --exclude *.pyd
+[2024-06-02 21:00:30] INFO root fetch - processPackages [pyiwe]: Downloading https://files.pythonhosted.org/packages/82/bb/e160cab54426c0286f52955a5a3a1144d7c0a22676eb6926993642e478fd/pyiwe-0.0.8.post2-py3-none-any.whl
+[2024-06-02 21:00:30] INFO root fetch - processPackages [omop2survey]: executing diffoscope
+[2024-06-02 21:00:30] INFO root fetch - processPackages [omop2survey]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/omop2survey-0.0.5.tar.gz tmp/omop2survey-0.0.6.tar.gz --markdown 20240602/o/omop2survey/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-06-02 21:00:30] INFO root fetch - processPackages [pyerualjetwork]: executing diffoscope
+[2024-06-02 21:00:30] INFO root fetch - processPackages [pyerualjetwork]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyerualjetwork-1.3.9.tar.gz tmp/pyerualjetwork-2.0.tar.gz --markdown 20240602/p/pyerualjetwork/1.3.9-2.0/README.md --exclude *.pyd
+[2024-06-02 21:00:30] INFO root fetch - processPackages [pyiwe]: executing diffoscope
+[2024-06-02 21:00:30] INFO root fetch - processPackages [cornsnake]: executing diffoscope
+[2024-06-02 21:00:30] INFO root fetch - processPackages [pyiwe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyiwe-0.0.8.post1-py3-none-any.whl.zip tmp/pyiwe-0.0.8.post2-py3-none-any.whl.zip --markdown 20240602/p/pyiwe/0.0.8.post1-0.0.8.post2/README.md --exclude *.pyd
+[2024-06-02 21:00:30] INFO root fetch - processPackages [cornsnake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cornsnake-0.0.8.tar.gz tmp/cornsnake-0.0.9.tar.gz --markdown 20240602/c/cornsnake/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-06-02 21:00:30] INFO root fetch - processPackages [OpenTTDLab]: Remove: archive file [/home/abi/fetcher/tmp/openttdlab-0.0.8.tar.gz]
+[2024-06-02 21:00:30] INFO root fetch - processPackages [OpenTTDLab]: Remove: archive file [/home/abi/fetcher/tmp/openttdlab-0.0.9.tar.gz]
+[2024-06-02 21:00:30] INFO root fetch - main [MainThread]: End processing [OpenTTDLab]: success
+[2024-06-02 21:00:30] INFO root fetch - processPackages [pymodins]: Remove: archive file [/home/abi/fetcher/tmp/pymodins-2.0.3.tar.gz]
+[2024-06-02 21:00:30] INFO root fetch - processPackages [pymodins]: Remove: archive file [/home/abi/fetcher/tmp/pymodins-2.0.4.tar.gz]
+[2024-06-02 21:00:30] INFO root fetch - main [MainThread]: End processing [pymodins]: success
+[2024-06-02 21:00:30] INFO root fetch - processPackages [omop2survey]: Remove: archive file [/home/abi/fetcher/tmp/omop2survey-0.0.5.tar.gz]
+[2024-06-02 21:00:30] INFO root fetch - processPackages [omop2survey]: Remove: archive file [/home/abi/fetcher/tmp/omop2survey-0.0.6.tar.gz]
+[2024-06-02 21:00:30] INFO root fetch - main [MainThread]: End processing [omop2survey]: success
+[2024-06-02 21:00:30] INFO root fetch - processPackages [pyerualjetwork]: Remove: archive file [/home/abi/fetcher/tmp/pyerualjetwork-1.3.9.tar.gz]
+[2024-06-02 21:00:30] INFO root fetch - processPackages [pyerualjetwork]: Remove: archive file [/home/abi/fetcher/tmp/pyerualjetwork-2.0.tar.gz]
+[2024-06-02 21:00:30] INFO root fetch - main [MainThread]: End processing [pyerualjetwork]: success
+[2024-06-02 21:00:30] INFO root fetch - processPackages [cornsnake]: Remove: archive file [/home/abi/fetcher/tmp/cornsnake-0.0.8.tar.gz]
+[2024-06-02 21:00:30] INFO root fetch - processPackages [cornsnake]: Remove: archive file [/home/abi/fetcher/tmp/cornsnake-0.0.9.tar.gz]
+[2024-06-02 21:00:30] INFO root fetch - main [MainThread]: End processing [cornsnake]: success
+[2024-06-02 21:00:30] INFO root fetch - processPackages [pyiwe]: Remove: archive file [/home/abi/fetcher/tmp/pyiwe-0.0.8.post1-py3-none-any.whl.zip]
+[2024-06-02 21:00:30] INFO root fetch - processPackages [pyiwe]: Remove: archive file [/home/abi/fetcher/tmp/pyiwe-0.0.8.post2-py3-none-any.whl.zip]
+[2024-06-02 21:00:30] INFO root fetch - main [MainThread]: End processing [pyiwe]: success
+[2024-06-02 21:00:30] INFO root fetch - main [MainThread]: Store serial: [23492229]
