@@ -3956,3 +3956,51 @@
 [2024-06-02 06:39:59] INFO root fetch - processPackages [fretbursts]: Remove: archive file [/home/abi/fetcher/tmp/fretbursts-0.8.1-cp312-cp312-macosx_11_0_arm64.whl.zip]
 [2024-06-02 06:39:59] INFO root fetch - main [MainThread]: End processing [fretbursts]: success
 [2024-06-02 06:39:59] INFO root fetch - main [MainThread]: Store serial: [23486140]
+[2024-06-02 06:42:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23486140]
+[2024-06-02 06:42:07] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-06-02 06:42:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nbdev
+[2024-06-02 06:42:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aixhello
+[2024-06-02 06:42:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: asktable
+[2024-06-02 06:42:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: contact-persons-local
+[2024-06-02 06:42:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: openctp-ctp
+[2024-06-02 06:42:07] INFO root fetch - processPackages [aixhello]: New version: [3.5] Old Version: [3.4]
+[2024-06-02 06:42:07] INFO root fetch - processPackages [openctp-ctp]: New version: [6.7.2.6] Old Version: [6.7.2.5]
+[2024-06-02 06:42:07] INFO root fetch - processPackages [contact-persons-local]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-06-02 06:42:07] INFO root fetch - processPackages [aixhello]: Downloading https://files.pythonhosted.org/packages/69/bb/49e478943f355705915d6a4486481a7322604f5ab8380bdead028b8e0687/aixhello-3.4.tar.gz
+[2024-06-02 06:42:07] INFO root fetch - processPackages [asktable]: New version: [0.17.5] Old Version: [0.17.0]
+[2024-06-02 06:42:07] INFO root fetch - processPackages [openctp-ctp]: Downloading https://files.pythonhosted.org/packages/b8/5b/55216866b439f1def4957d8af137cb241904d679c85834403f05136a73c9/openctp_ctp-6.7.2.5-cp39-cp39-win_amd64.whl
+[2024-06-02 06:42:07] INFO root fetch - processPackages [nbdev]: New version: [2.3.9] Old Version: [2.3.8]
+[2024-06-02 06:42:07] INFO root fetch - processPackages [contact-persons-local]: Downloading https://files.pythonhosted.org/packages/0b/6b/76ed2113b4e86e4aaa68d65f4c760c036c393ee03064566f505f44867a22/contact-persons-local-0.0.8.tar.gz
+[2024-06-02 06:42:07] INFO root fetch - processPackages [nbdev]: Downloading https://files.pythonhosted.org/packages/81/51/fab74a54685fb8abc7a3e35834c91c5b2dace9b02d4cb11fdd42c1e1671e/nbdev-2.3.8.tar.gz
+[2024-06-02 06:42:07] INFO root fetch - processPackages [asktable]: Downloading https://files.pythonhosted.org/packages/4d/d2/6ff0086df7a4b7e9a2c46722f282727f1fa135e0aca508fff4ba4e50dabc/asktable-0.17.0-py3-none-any.whl
+[2024-06-02 06:42:07] INFO root fetch - processPackages [openctp-ctp]: Downloading https://files.pythonhosted.org/packages/7a/f5/56a4437572c797bdb3c05323ab79671b27a5bf2ba350efc7b2a258abc4d5/openctp_ctp-6.7.2.6-cp39-cp39-win_amd64.whl
+[2024-06-02 06:42:08] INFO root fetch - processPackages [aixhello]: Downloading https://files.pythonhosted.org/packages/dd/a9/9c722d06071db45b0f117c340697439d27ca24a3ceb638cf5110422dd8a8/aixhello-3.5.tar.gz
+[2024-06-02 06:42:08] INFO root fetch - processPackages [aixhello]: executing diffoscope
+[2024-06-02 06:42:08] INFO root fetch - processPackages [aixhello]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aixhello-3.4.tar.gz tmp/aixhello-3.5.tar.gz --markdown 20240602/a/aixhello/3.4-3.5/README.md --exclude *.pyd
+[2024-06-02 06:42:08] INFO root fetch - processPackages [nbdev]: Downloading https://files.pythonhosted.org/packages/40/d2/c90832233197e9f55e8869a7f75fd019929dcd8c6c18e14a34a4c1c087aa/nbdev-2.3.9.tar.gz
+[2024-06-02 06:42:08] INFO root fetch - processPackages [contact-persons-local]: Downloading https://files.pythonhosted.org/packages/93/08/4bf1aef3fe8c2eb2bd907061dc10a7100c367ed8adfc58d6113cda458512/contact_persons_local-0.0.9.tar.gz
+[2024-06-02 06:42:08] INFO root fetch - processPackages [asktable]: Downloading https://files.pythonhosted.org/packages/65/4f/d73df8301e54266e7982d6951135c311b4a8433cb9964238b361818bac00/asktable-0.17.5-py3-none-any.whl
+[2024-06-02 06:42:08] INFO root fetch - processPackages [contact-persons-local]: executing diffoscope
+[2024-06-02 06:42:08] INFO root fetch - processPackages [contact-persons-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/contact-persons-local-0.0.8.tar.gz tmp/contact_persons_local-0.0.9.tar.gz --markdown 20240602/c/contact-persons-local/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-06-02 06:42:08] INFO root fetch - processPackages [openctp-ctp]: executing diffoscope
+[2024-06-02 06:42:08] INFO root fetch - processPackages [openctp-ctp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openctp_ctp-6.7.2.5-cp39-cp39-win_amd64.whl.zip tmp/openctp_ctp-6.7.2.6-cp39-cp39-win_amd64.whl.zip --markdown 20240602/o/openctp-ctp/6.7.2.5-6.7.2.6/README.md --exclude *.pyd
+[2024-06-02 06:42:08] INFO root fetch - processPackages [nbdev]: executing diffoscope
+[2024-06-02 06:42:08] INFO root fetch - processPackages [nbdev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-2.3.8.tar.gz tmp/nbdev-2.3.9.tar.gz --markdown 20240602/n/nbdev/2.3.8-2.3.9/README.md --exclude *.pyd
+[2024-06-02 06:42:08] INFO root fetch - processPackages [asktable]: executing diffoscope
+[2024-06-02 06:42:08] INFO root fetch - processPackages [asktable]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/asktable-0.17.0-py3-none-any.whl.zip tmp/asktable-0.17.5-py3-none-any.whl.zip --markdown 20240602/a/asktable/0.17.0-0.17.5/README.md --exclude *.pyd
+[2024-06-02 06:42:08] INFO root fetch - processPackages [aixhello]: Remove: archive file [/home/abi/fetcher/tmp/aixhello-3.4.tar.gz]
+[2024-06-02 06:42:08] INFO root fetch - processPackages [aixhello]: Remove: archive file [/home/abi/fetcher/tmp/aixhello-3.5.tar.gz]
+[2024-06-02 06:42:08] INFO root fetch - main [MainThread]: End processing [aixhello]: success
+[2024-06-02 06:42:09] INFO root fetch - processPackages [contact-persons-local]: Remove: archive file [/home/abi/fetcher/tmp/contact-persons-local-0.0.8.tar.gz]
+[2024-06-02 06:42:09] INFO root fetch - processPackages [contact-persons-local]: Remove: archive file [/home/abi/fetcher/tmp/contact_persons_local-0.0.9.tar.gz]
+[2024-06-02 06:42:09] INFO root fetch - main [MainThread]: End processing [contact-persons-local]: success
+[2024-06-02 06:42:09] INFO root fetch - processPackages [openctp-ctp]: Remove: archive file [/home/abi/fetcher/tmp/openctp_ctp-6.7.2.5-cp39-cp39-win_amd64.whl.zip]
+[2024-06-02 06:42:09] INFO root fetch - processPackages [openctp-ctp]: Remove: archive file [/home/abi/fetcher/tmp/openctp_ctp-6.7.2.6-cp39-cp39-win_amd64.whl.zip]
+[2024-06-02 06:42:09] INFO root fetch - main [MainThread]: End processing [openctp-ctp]: success
+[2024-06-02 06:42:09] INFO root fetch - processPackages [asktable]: Remove: archive file [/home/abi/fetcher/tmp/asktable-0.17.0-py3-none-any.whl.zip]
+[2024-06-02 06:42:09] INFO root fetch - processPackages [asktable]: Remove: archive file [/home/abi/fetcher/tmp/asktable-0.17.5-py3-none-any.whl.zip]
+[2024-06-02 06:42:09] INFO root fetch - main [MainThread]: End processing [asktable]: success
+[2024-06-02 06:42:09] INFO root fetch - processPackages [nbdev]: Remove: archive file [/home/abi/fetcher/tmp/nbdev-2.3.8.tar.gz]
+[2024-06-02 06:42:09] INFO root fetch - processPackages [nbdev]: Remove: archive file [/home/abi/fetcher/tmp/nbdev-2.3.9.tar.gz]
+[2024-06-02 06:42:09] INFO root fetch - main [MainThread]: End processing [nbdev]: success
+[2024-06-02 06:42:09] INFO root fetch - main [MainThread]: Store serial: [23486188]
