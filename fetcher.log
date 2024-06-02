@@ -4926,3 +4926,45 @@
 [2024-06-02 08:28:27] INFO root fetch - processPackages [sopel]: Remove: archive file [/home/abi/fetcher/tmp/sopel-8.0.0.tar.gz]
 [2024-06-02 08:28:27] INFO root fetch - main [MainThread]: End processing [sopel]: success
 [2024-06-02 08:28:27] INFO root fetch - main [MainThread]: Store serial: [23486722]
+[2024-06-02 08:30:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23486722]
+[2024-06-02 08:30:36] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-06-02 08:30:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: docker-ready-cli
+[2024-06-02 08:30:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mlrun-pipelines-kfp-common
+[2024-06-02 08:30:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mlrun-pipelines-kfp-v2
+[2024-06-02 08:30:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mlrun-pipelines-kfp-v1-8
+[2024-06-02 08:30:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: PyDistances
+[2024-06-02 08:30:36] WARNING root fetch - processPackages [docker-ready-cli]: Skipping, unable to determine old version
+[2024-06-02 08:30:36] INFO root fetch - main [MainThread]: End processing [docker-ready-cli] error
+[2024-06-02 08:30:36] INFO root fetch - processPackages [mlrun-pipelines-kfp-common]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-06-02 08:30:36] INFO root fetch - processPackages [mlrun-pipelines-kfp-v1-8]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-06-02 08:30:36] INFO root fetch - processPackages [mlrun-pipelines-kfp-v2]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-06-02 08:30:36] INFO root fetch - processPackages [PyDistances]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-06-02 08:30:36] INFO root fetch - processPackages [mlrun-pipelines-kfp-v1-8]: Downloading https://files.pythonhosted.org/packages/27/25/46d68bd905b6b51c0f5c9e6b578242f0aabcca13612ebacdb45c70b0947a/mlrun_pipelines_kfp_v1_8-0.1.0.tar.gz
+[2024-06-02 08:30:36] INFO root fetch - processPackages [mlrun-pipelines-kfp-common]: Downloading https://files.pythonhosted.org/packages/1c/73/812b3ab7cb8fce7382dd57811ab58d6a8347abd9afe9417e8a717b8b969d/mlrun_pipelines_kfp_common-0.1.0.tar.gz
+[2024-06-02 08:30:36] INFO root fetch - processPackages [mlrun-pipelines-kfp-v2]: Downloading https://files.pythonhosted.org/packages/db/f4/b26a35594bf9f824e3d015c8bbb8cc0ad9374bc2229fea57f8a8b8c03b57/mlrun_pipelines_kfp_v2-0.1.0.tar.gz
+[2024-06-02 08:30:36] INFO root fetch - processPackages [PyDistances]: Downloading https://files.pythonhosted.org/packages/a3/30/a231ff87f3f81a5d7f6305419c222c113d8d61ac4033b2cb42a08346ff2c/PyDistances-0.0.8.tar.gz
+[2024-06-02 08:30:37] INFO root fetch - processPackages [mlrun-pipelines-kfp-v1-8]: Downloading https://files.pythonhosted.org/packages/d0/4d/9e87aaa300425c5c6c97b75a617664aab2c6ce96380c18e55923668ddff5/mlrun_pipelines_kfp_v1_8-0.1.1.tar.gz
+[2024-06-02 08:30:37] INFO root fetch - processPackages [mlrun-pipelines-kfp-v2]: Downloading https://files.pythonhosted.org/packages/ca/16/24f8957006c4ac21fc195cfc0e40d48ad06001feaf0ffcafae59760ab33c/mlrun_pipelines_kfp_v2-0.1.1.tar.gz
+[2024-06-02 08:30:37] INFO root fetch - processPackages [mlrun-pipelines-kfp-common]: Downloading https://files.pythonhosted.org/packages/f2/62/d35dbde628b748ed6a9459ab33ba9b66c941ec2cd73f7e9ba25f2497c5fc/mlrun_pipelines_kfp_common-0.1.1.tar.gz
+[2024-06-02 08:30:37] INFO root fetch - processPackages [mlrun-pipelines-kfp-v1-8]: executing diffoscope
+[2024-06-02 08:30:37] INFO root fetch - processPackages [mlrun-pipelines-kfp-v1-8]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlrun_pipelines_kfp_v1_8-0.1.0.tar.gz tmp/mlrun_pipelines_kfp_v1_8-0.1.1.tar.gz --markdown 20240602/m/mlrun-pipelines-kfp-v1-8/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-06-02 08:30:37] INFO root fetch - processPackages [mlrun-pipelines-kfp-v2]: executing diffoscope
+[2024-06-02 08:30:37] INFO root fetch - processPackages [mlrun-pipelines-kfp-v2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlrun_pipelines_kfp_v2-0.1.0.tar.gz tmp/mlrun_pipelines_kfp_v2-0.1.1.tar.gz --markdown 20240602/m/mlrun-pipelines-kfp-v2/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-06-02 08:30:37] INFO root fetch - processPackages [mlrun-pipelines-kfp-common]: executing diffoscope
+[2024-06-02 08:30:37] INFO root fetch - processPackages [mlrun-pipelines-kfp-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlrun_pipelines_kfp_common-0.1.0.tar.gz tmp/mlrun_pipelines_kfp_common-0.1.1.tar.gz --markdown 20240602/m/mlrun-pipelines-kfp-common/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-06-02 08:30:37] INFO root fetch - processPackages [PyDistances]: Downloading https://files.pythonhosted.org/packages/22/f4/ca04b65abf85cbdbe00c6c8a14db69dc1579cd2f50a1fd890a2e0d0764d1/PyDistances-0.0.9.tar.gz
+[2024-06-02 08:30:37] INFO root fetch - processPackages [PyDistances]: executing diffoscope
+[2024-06-02 08:30:37] INFO root fetch - processPackages [PyDistances]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyDistances-0.0.8.tar.gz tmp/PyDistances-0.0.9.tar.gz --markdown 20240602/P/PyDistances/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-06-02 08:30:37] INFO root fetch - processPackages [mlrun-pipelines-kfp-common]: Remove: archive file [/home/abi/fetcher/tmp/mlrun_pipelines_kfp_common-0.1.0.tar.gz]
+[2024-06-02 08:30:37] INFO root fetch - processPackages [mlrun-pipelines-kfp-common]: Remove: archive file [/home/abi/fetcher/tmp/mlrun_pipelines_kfp_common-0.1.1.tar.gz]
+[2024-06-02 08:30:37] INFO root fetch - main [MainThread]: End processing [mlrun-pipelines-kfp-common]: success
+[2024-06-02 08:30:37] INFO root fetch - processPackages [mlrun-pipelines-kfp-v1-8]: Remove: archive file [/home/abi/fetcher/tmp/mlrun_pipelines_kfp_v1_8-0.1.0.tar.gz]
+[2024-06-02 08:30:37] INFO root fetch - processPackages [mlrun-pipelines-kfp-v1-8]: Remove: archive file [/home/abi/fetcher/tmp/mlrun_pipelines_kfp_v1_8-0.1.1.tar.gz]
+[2024-06-02 08:30:37] INFO root fetch - main [MainThread]: End processing [mlrun-pipelines-kfp-v1-8]: success
+[2024-06-02 08:30:37] INFO root fetch - processPackages [mlrun-pipelines-kfp-v2]: Remove: archive file [/home/abi/fetcher/tmp/mlrun_pipelines_kfp_v2-0.1.0.tar.gz]
+[2024-06-02 08:30:37] INFO root fetch - processPackages [mlrun-pipelines-kfp-v2]: Remove: archive file [/home/abi/fetcher/tmp/mlrun_pipelines_kfp_v2-0.1.1.tar.gz]
+[2024-06-02 08:30:37] INFO root fetch - main [MainThread]: End processing [mlrun-pipelines-kfp-v2]: success
+[2024-06-02 08:30:38] INFO root fetch - processPackages [PyDistances]: Remove: archive file [/home/abi/fetcher/tmp/PyDistances-0.0.8.tar.gz]
+[2024-06-02 08:30:38] INFO root fetch - processPackages [PyDistances]: Remove: archive file [/home/abi/fetcher/tmp/PyDistances-0.0.9.tar.gz]
+[2024-06-02 08:30:38] INFO root fetch - main [MainThread]: End processing [PyDistances]: success
+[2024-06-02 08:30:38] INFO root fetch - main [MainThread]: Store serial: [23486741]
