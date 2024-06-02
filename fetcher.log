@@ -4357,3 +4357,15 @@
 [2024-06-02 07:14:39] INFO root fetch - processPackages [ofscraper]: Remove: archive file [/home/abi/fetcher/tmp/ofscraper-3.9.9.tar.gz]
 [2024-06-02 07:14:39] INFO root fetch - main [MainThread]: End processing [ofscraper]: success
 [2024-06-02 07:14:39] INFO root fetch - main [MainThread]: Store serial: [23486374]
+[2024-06-02 07:16:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23486374]
+[2024-06-02 07:16:48] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-02 07:16:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: naludaq
+[2024-06-02 07:16:48] INFO root fetch - processPackages [naludaq]: New version: [0.27.0] Old Version: [0.26.5]
+[2024-06-02 07:16:48] INFO root fetch - processPackages [naludaq]: Downloading https://files.pythonhosted.org/packages/c7/f3/e4de9506d02f3c549fcf8d0dcea3502b5bff66f5773ab11e8fb2eafd0f1f/naludaq-0.26.5.tar.gz
+[2024-06-02 07:16:48] INFO root fetch - processPackages [naludaq]: Downloading https://files.pythonhosted.org/packages/94/90/d27866b4937a7e02bcddef91e6ec2633b907252e9e38c79596e845acc95d/naludaq-0.27.0.tar.gz
+[2024-06-02 07:16:48] INFO root fetch - processPackages [naludaq]: executing diffoscope
+[2024-06-02 07:16:48] INFO root fetch - processPackages [naludaq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/naludaq-0.26.5.tar.gz tmp/naludaq-0.27.0.tar.gz --markdown 20240602/n/naludaq/0.26.5-0.27.0/README.md --exclude *.pyd
+[2024-06-02 07:16:50] INFO root fetch - processPackages [naludaq]: Remove: archive file [/home/abi/fetcher/tmp/naludaq-0.26.5.tar.gz]
+[2024-06-02 07:16:50] INFO root fetch - processPackages [naludaq]: Remove: archive file [/home/abi/fetcher/tmp/naludaq-0.27.0.tar.gz]
+[2024-06-02 07:16:50] INFO root fetch - main [MainThread]: End processing [naludaq]: success
+[2024-06-02 07:16:50] INFO root fetch - main [MainThread]: Store serial: [23486379]
