@@ -9353,3 +9353,34 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-02 14:18:25] INFO root fetch - processPackages [mlrun]: Remove: archive file [/home/abi/fetcher/tmp/mlrun-1.7.0rc9-py3-none-any.whl.zip]
 [2024-06-02 14:18:25] INFO root fetch - main [MainThread]: End processing [mlrun]: success
 [2024-06-02 14:18:25] INFO root fetch - main [MainThread]: Store serial: [23488801]
+[2024-06-02 14:20:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23488801]
+[2024-06-02 14:20:34] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-02 14:20:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: protoc-polyglot
+[2024-06-02 14:20:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: MzhFunc
+[2024-06-02 14:20:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: simpleworkspace
+[2024-06-02 14:20:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: protoc-polyglot
+[2024-06-02 14:20:34] INFO root fetch - processPackages [protoc-polyglot]: New version: [0.0.1.post9] Old Version: [0.0.1.post8]
+[2024-06-02 14:20:34] INFO root fetch - processPackages [protoc-polyglot]: New version: [0.0.1.post9] Old Version: [0.0.1.post8]
+[2024-06-02 14:20:34] INFO root fetch - processPackages [simpleworkspace]: New version: [1.2.212] Old Version: [1.2.210]
+[2024-06-02 14:20:34] WARNING root fetch - processPackages [MzhFunc]: Skipping, unable to determine old version
+[2024-06-02 14:20:34] INFO root fetch - main [MainThread]: End processing [MzhFunc] error
+[2024-06-02 14:20:34] INFO root fetch - processPackages [protoc-polyglot]: Downloading https://files.pythonhosted.org/packages/e9/7b/373a68a962cdfb85f4bd76f6f4ea13ad3f2cfaca73bf0a9f70d0e7d34380/protoc_polyglot-0.0.1.post8.tar.gz
+[2024-06-02 14:20:34] INFO root fetch - processPackages [simpleworkspace]: Downloading https://files.pythonhosted.org/packages/83/92/77420582bb5b2483f0dad46af69d8796039e0a90cf0674cc82c652bd2a58/simpleworkspace-1.2.210.tar.gz
+[2024-06-02 14:20:34] INFO root fetch - processPackages [protoc-polyglot]: Downloading https://files.pythonhosted.org/packages/e9/7b/373a68a962cdfb85f4bd76f6f4ea13ad3f2cfaca73bf0a9f70d0e7d34380/protoc_polyglot-0.0.1.post8.tar.gz
+[2024-06-02 14:20:34] INFO root fetch - processPackages [protoc-polyglot]: Downloading https://files.pythonhosted.org/packages/01/80/bdadb218d1c3271c3a258316c3d5991f2676b54e6f358ac689f9495990f5/protoc_polyglot-0.0.1.post9.tar.gz
+[2024-06-02 14:20:34] INFO root fetch - processPackages [protoc-polyglot]: Downloading https://files.pythonhosted.org/packages/01/80/bdadb218d1c3271c3a258316c3d5991f2676b54e6f358ac689f9495990f5/protoc_polyglot-0.0.1.post9.tar.gz
+[2024-06-02 14:20:34] INFO root fetch - processPackages [simpleworkspace]: Downloading https://files.pythonhosted.org/packages/67/a2/78ed5dceccbfc4e49def14733cf6a25950a85c879380261cafa55aaef677/simpleworkspace-1.2.212.tar.gz
+[2024-06-02 14:20:34] INFO root fetch - processPackages [protoc-polyglot]: executing diffoscope
+[2024-06-02 14:20:34] INFO root fetch - processPackages [protoc-polyglot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/protoc_polyglot-0.0.1.post8.tar.gz tmp/protoc_polyglot-0.0.1.post9.tar.gz --markdown 20240602/p/protoc-polyglot/0.0.1.post8-0.0.1.post9/README.md --exclude *.pyd
+[2024-06-02 14:20:34] INFO root fetch - processPackages [protoc-polyglot]: executing diffoscope
+[2024-06-02 14:20:34] INFO root fetch - processPackages [protoc-polyglot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/protoc_polyglot-0.0.1.post8.tar.gz tmp/protoc_polyglot-0.0.1.post9.tar.gz --markdown 20240602/p/protoc-polyglot/0.0.1.post8-0.0.1.post9/README.md --exclude *.pyd
+[2024-06-02 14:20:34] INFO root fetch - processPackages [simpleworkspace]: executing diffoscope
+[2024-06-02 14:20:34] INFO root fetch - processPackages [simpleworkspace]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simpleworkspace-1.2.210.tar.gz tmp/simpleworkspace-1.2.212.tar.gz --markdown 20240602/s/simpleworkspace/1.2.210-1.2.212/README.md --exclude *.pyd
+[2024-06-02 14:20:35] INFO root fetch - processPackages [protoc-polyglot]: Remove: archive file [/home/abi/fetcher/tmp/protoc_polyglot-0.0.1.post8.tar.gz]
+[2024-06-02 14:20:35] INFO root fetch - processPackages [protoc-polyglot]: Remove: archive file [/home/abi/fetcher/tmp/protoc_polyglot-0.0.1.post9.tar.gz]
+[2024-06-02 14:20:35] INFO root fetch - main [MainThread]: End processing [protoc-polyglot]: success
+[2024-06-02 14:20:35] INFO root fetch - main [MainThread]: End processing [protoc-polyglot]: success
+[2024-06-02 14:20:35] INFO root fetch - processPackages [simpleworkspace]: Remove: archive file [/home/abi/fetcher/tmp/simpleworkspace-1.2.210.tar.gz]
+[2024-06-02 14:20:35] INFO root fetch - processPackages [simpleworkspace]: Remove: archive file [/home/abi/fetcher/tmp/simpleworkspace-1.2.212.tar.gz]
+[2024-06-02 14:20:35] INFO root fetch - main [MainThread]: End processing [simpleworkspace]: success
+[2024-06-02 14:20:35] INFO root fetch - main [MainThread]: Store serial: [23488822]
