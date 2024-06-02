@@ -2469,3 +2469,26 @@
 [2024-06-02 03:13:03] INFO root fetch - processPackages [typeshed-stats]: Remove: archive file [/home/abi/fetcher/tmp/typeshed_stats-24.6.2.tar.gz]
 [2024-06-02 03:13:03] INFO root fetch - main [MainThread]: End processing [typeshed-stats]: success
 [2024-06-02 03:13:03] INFO root fetch - main [MainThread]: Store serial: [23485282]
+[2024-06-02 03:15:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23485282]
+[2024-06-02 03:15:11] INFO root fetch - main [MainThread]: No changed packages found
+[2024-06-02 03:17:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23485282]
+[2024-06-02 03:17:17] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-02 03:17:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: api-pipe
+[2024-06-02 03:17:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cdk-lambda-layer-curl
+[2024-06-02 03:17:17] INFO root fetch - processPackages [cdk-lambda-layer-curl]: New version: [2.0.99] Old Version: [2.0.98]
+[2024-06-02 03:17:17] INFO root fetch - processPackages [api-pipe]: New version: [2.0.24] Old Version: [2.0.23]
+[2024-06-02 03:17:17] INFO root fetch - processPackages [cdk-lambda-layer-curl]: Downloading https://files.pythonhosted.org/packages/c8/e2/39c88cfa63f418383f3a383b2b62dfe801cbfd5c53de4d005804c19d76dc/cdk-lambda-layer-curl-2.0.98.tar.gz
+[2024-06-02 03:17:17] INFO root fetch - processPackages [api-pipe]: Downloading https://files.pythonhosted.org/packages/6a/82/f996cc0f4e42e7755bc2409f1d17265be77d78b6160162231cfd606db5b3/api_pipe-2.0.23.tar.gz
+[2024-06-02 03:17:17] INFO root fetch - processPackages [cdk-lambda-layer-curl]: Downloading https://files.pythonhosted.org/packages/2e/02/9e7ab6bc6191e2cbe6705c1530f695ed00527096133668b731e72d6a6445/cdk-lambda-layer-curl-2.0.99.tar.gz
+[2024-06-02 03:17:18] INFO root fetch - processPackages [api-pipe]: Downloading https://files.pythonhosted.org/packages/97/e5/e3f996ad96afdc9516c2968e20faac1717244dfde8f4ade41b49f5df5a30/api_pipe-2.0.24.tar.gz
+[2024-06-02 03:17:18] INFO root fetch - processPackages [cdk-lambda-layer-curl]: executing diffoscope
+[2024-06-02 03:17:18] INFO root fetch - processPackages [cdk-lambda-layer-curl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-lambda-layer-curl-2.0.98.tar.gz tmp/cdk-lambda-layer-curl-2.0.99.tar.gz --markdown 20240602/c/cdk-lambda-layer-curl/2.0.98-2.0.99/README.md --exclude *.pyd
+[2024-06-02 03:17:18] INFO root fetch - processPackages [api-pipe]: executing diffoscope
+[2024-06-02 03:17:18] INFO root fetch - processPackages [api-pipe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/api_pipe-2.0.23.tar.gz tmp/api_pipe-2.0.24.tar.gz --markdown 20240602/a/api-pipe/2.0.23-2.0.24/README.md --exclude *.pyd
+[2024-06-02 03:17:18] INFO root fetch - processPackages [api-pipe]: Remove: archive file [/home/abi/fetcher/tmp/api_pipe-2.0.23.tar.gz]
+[2024-06-02 03:17:18] INFO root fetch - processPackages [api-pipe]: Remove: archive file [/home/abi/fetcher/tmp/api_pipe-2.0.24.tar.gz]
+[2024-06-02 03:17:18] INFO root fetch - main [MainThread]: End processing [api-pipe]: success
+[2024-06-02 03:17:18] INFO root fetch - processPackages [cdk-lambda-layer-curl]: Remove: archive file [/home/abi/fetcher/tmp/cdk-lambda-layer-curl-2.0.98.tar.gz]
+[2024-06-02 03:17:18] INFO root fetch - processPackages [cdk-lambda-layer-curl]: Remove: archive file [/home/abi/fetcher/tmp/cdk-lambda-layer-curl-2.0.99.tar.gz]
+[2024-06-02 03:17:18] INFO root fetch - main [MainThread]: End processing [cdk-lambda-layer-curl]: success
+[2024-06-02 03:17:18] INFO root fetch - main [MainThread]: Store serial: [23485288]
