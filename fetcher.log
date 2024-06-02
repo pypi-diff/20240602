@@ -16941,3 +16941,51 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 21:17:55] INFO root fetch - processPackages [llm-structured-output]: Remove: archive file [/home/abi/fetcher/tmp/llm_structured_output-0.0.9.tar.gz]
 [2024-06-02 21:17:55] INFO root fetch - main [MainThread]: End processing [llm-structured-output]: success
 [2024-06-02 21:17:55] INFO root fetch - main [MainThread]: Store serial: [23492327]
+[2024-06-02 21:19:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23492327]
+[2024-06-02 21:20:03] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-06-02 21:20:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: maitai-python
+[2024-06-02 21:20:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mdtidy
+[2024-06-02 21:20:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gammarers.aws-secure-flow-log-bucket
+[2024-06-02 21:20:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: fastclip
+[2024-06-02 21:20:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: gitlab-ci-docs
+[2024-06-02 21:20:04] INFO root fetch - processPackages [gammarers.aws-secure-flow-log-bucket]: New version: [1.5.1] Old Version: [1.5.0]
+[2024-06-02 21:20:04] INFO root fetch - processPackages [mdtidy]: New version: [0.3.0] Old Version: [0.2.2]
+[2024-06-02 21:20:04] INFO root fetch - processPackages [maitai-python]: New version: [1.0.3] Old Version: [1.0.2]
+[2024-06-02 21:20:04] INFO root fetch - processPackages [fastclip]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-06-02 21:20:04] INFO root fetch - processPackages [gitlab-ci-docs]: New version: [0.1.0b3] Old Version: [0.1.0b2]
+[2024-06-02 21:20:04] INFO root fetch - processPackages [maitai-python]: Downloading https://files.pythonhosted.org/packages/1f/1c/d4a9aa5e112b59b088e35d23ef178ba98fe54915126d820f524211020eef/maitai_python-1.0.2.tar.gz
+[2024-06-02 21:20:04] INFO root fetch - processPackages [mdtidy]: Downloading https://files.pythonhosted.org/packages/b5/e0/fa6403ed88ea4d60388bdaa79a883d6a90ddaff99e21a7526ae5c2d0ab29/mdtidy-0.2.2.tar.gz
+[2024-06-02 21:20:04] INFO root fetch - processPackages [fastclip]: Downloading https://files.pythonhosted.org/packages/c1/bd/57b35376ba802aab693a0628a3c7796f63f4fcd862fd343cf2bc34263a70/fastclip-0.0.8.tar.gz
+[2024-06-02 21:20:04] INFO root fetch - processPackages [gammarers.aws-secure-flow-log-bucket]: Downloading https://files.pythonhosted.org/packages/c0/d0/cb906bfb9e44b98c18ac8216ff9b332cb4fa548195cd433203a392baed3d/gammarers.aws-secure-flow-log-bucket-1.5.0.tar.gz
+[2024-06-02 21:20:04] INFO root fetch - processPackages [gitlab-ci-docs]: Downloading https://files.pythonhosted.org/packages/46/a5/15408e94b1e3501771434fbd92cdaf20e0aaed43318a78df4d92845ee55c/gitlab_ci_docs-0.1.0b2.tar.gz
+[2024-06-02 21:20:04] INFO root fetch - processPackages [mdtidy]: Downloading https://files.pythonhosted.org/packages/32/27/10334211697f07687eaad34ed4de309b6a5be87bbeccbeb41de425ad1138/mdtidy-0.3.0-py3-none-any.whl
+[2024-06-02 21:20:04] INFO root fetch - processPackages [maitai-python]: Downloading https://files.pythonhosted.org/packages/7d/49/46ecaf753601256086df8a1cb60c91a18a5c33a062ddc1e7d2b2749c74d4/maitai_python-1.0.3.tar.gz
+[2024-06-02 21:20:04] INFO root fetch - processPackages [gammarers.aws-secure-flow-log-bucket]: Downloading https://files.pythonhosted.org/packages/bd/f2/353469a5d011cc058125cbc92cc52bcc163eb7fba4d78cea03da40c80dff/gammarers.aws-secure-flow-log-bucket-1.5.1.tar.gz
+[2024-06-02 21:20:04] INFO root fetch - processPackages [gitlab-ci-docs]: Downloading https://files.pythonhosted.org/packages/cb/4e/fa6ee71b818ae3fa857a8e088caed19acd175655afebfa58f7897805e612/gitlab_ci_docs-0.1.0b3.tar.gz
+[2024-06-02 21:20:04] INFO root fetch - processPackages [mdtidy]: executing diffoscope
+[2024-06-02 21:20:04] INFO root fetch - processPackages [mdtidy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mdtidy-0.2.2.tar.gz tmp/mdtidy-0.3.0-py3-none-any.whl.zip --markdown 20240602/m/mdtidy/0.2.2-0.3.0/README.md --exclude *.pyd
+[2024-06-02 21:20:04] INFO root fetch - processPackages [maitai-python]: executing diffoscope
+[2024-06-02 21:20:04] INFO root fetch - processPackages [maitai-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/maitai_python-1.0.2.tar.gz tmp/maitai_python-1.0.3.tar.gz --markdown 20240602/m/maitai-python/1.0.2-1.0.3/README.md --exclude *.pyd
+[2024-06-02 21:20:04] INFO root fetch - processPackages [fastclip]: Downloading https://files.pythonhosted.org/packages/18/9c/061ce3445064bc994cf3482d28124bc0314cbaf7ab4a269cea85e083fbc1/fastclip-0.0.9.tar.gz
+[2024-06-02 21:20:04] INFO root fetch - processPackages [gammarers.aws-secure-flow-log-bucket]: executing diffoscope
+[2024-06-02 21:20:04] INFO root fetch - processPackages [gammarers.aws-secure-flow-log-bucket]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gammarers.aws-secure-flow-log-bucket-1.5.0.tar.gz tmp/gammarers.aws-secure-flow-log-bucket-1.5.1.tar.gz --markdown 20240602/g/gammarers.aws-secure-flow-log-bucket/1.5.0-1.5.1/README.md --exclude *.pyd
+[2024-06-02 21:20:04] INFO root fetch - processPackages [gitlab-ci-docs]: executing diffoscope
+[2024-06-02 21:20:04] INFO root fetch - processPackages [gitlab-ci-docs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gitlab_ci_docs-0.1.0b2.tar.gz tmp/gitlab_ci_docs-0.1.0b3.tar.gz --markdown 20240602/g/gitlab-ci-docs/0.1.0b2-0.1.0b3/README.md --exclude *.pyd
+[2024-06-02 21:20:04] INFO root fetch - processPackages [fastclip]: executing diffoscope
+[2024-06-02 21:20:04] INFO root fetch - processPackages [fastclip]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastclip-0.0.8.tar.gz tmp/fastclip-0.0.9.tar.gz --markdown 20240602/f/fastclip/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-06-02 21:20:05] INFO root fetch - processPackages [mdtidy]: Remove: archive file [/home/abi/fetcher/tmp/mdtidy-0.2.2.tar.gz]
+[2024-06-02 21:20:05] INFO root fetch - processPackages [mdtidy]: Remove: archive file [/home/abi/fetcher/tmp/mdtidy-0.3.0-py3-none-any.whl.zip]
+[2024-06-02 21:20:05] INFO root fetch - main [MainThread]: End processing [mdtidy]: success
+[2024-06-02 21:20:05] INFO root fetch - processPackages [maitai-python]: Remove: archive file [/home/abi/fetcher/tmp/maitai_python-1.0.2.tar.gz]
+[2024-06-02 21:20:05] INFO root fetch - processPackages [maitai-python]: Remove: archive file [/home/abi/fetcher/tmp/maitai_python-1.0.3.tar.gz]
+[2024-06-02 21:20:05] INFO root fetch - main [MainThread]: End processing [maitai-python]: success
+[2024-06-02 21:20:05] INFO root fetch - processPackages [gammarers.aws-secure-flow-log-bucket]: Remove: archive file [/home/abi/fetcher/tmp/gammarers.aws-secure-flow-log-bucket-1.5.0.tar.gz]
+[2024-06-02 21:20:05] INFO root fetch - processPackages [gammarers.aws-secure-flow-log-bucket]: Remove: archive file [/home/abi/fetcher/tmp/gammarers.aws-secure-flow-log-bucket-1.5.1.tar.gz]
+[2024-06-02 21:20:05] INFO root fetch - main [MainThread]: End processing [gammarers.aws-secure-flow-log-bucket]: success
+[2024-06-02 21:20:05] INFO root fetch - processPackages [fastclip]: Remove: archive file [/home/abi/fetcher/tmp/fastclip-0.0.8.tar.gz]
+[2024-06-02 21:20:05] INFO root fetch - processPackages [fastclip]: Remove: archive file [/home/abi/fetcher/tmp/fastclip-0.0.9.tar.gz]
+[2024-06-02 21:20:05] INFO root fetch - main [MainThread]: End processing [fastclip]: success
+[2024-06-02 21:20:05] INFO root fetch - processPackages [gitlab-ci-docs]: Remove: archive file [/home/abi/fetcher/tmp/gitlab_ci_docs-0.1.0b2.tar.gz]
+[2024-06-02 21:20:05] INFO root fetch - processPackages [gitlab-ci-docs]: Remove: archive file [/home/abi/fetcher/tmp/gitlab_ci_docs-0.1.0b3.tar.gz]
+[2024-06-02 21:20:05] INFO root fetch - main [MainThread]: End processing [gitlab-ci-docs]: success
+[2024-06-02 21:20:05] INFO root fetch - main [MainThread]: Store serial: [23492344]
