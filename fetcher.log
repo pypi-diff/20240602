@@ -16704,3 +16704,42 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 21:04:50] INFO root fetch - processPackages [pyerualjetwork]: Remove: archive file [/home/abi/fetcher/tmp/pyerualjetwork-2.0.1.tar.gz]
 [2024-06-02 21:04:50] INFO root fetch - main [MainThread]: End processing [pyerualjetwork]: success
 [2024-06-02 21:04:50] INFO root fetch - main [MainThread]: Store serial: [23492244]
+[2024-06-02 21:06:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23492244]
+[2024-06-02 21:06:59] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-02 21:06:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: yet-another-io-channels-library
+[2024-06-02 21:06:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: numpngw
+[2024-06-02 21:06:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PipBERT
+[2024-06-02 21:06:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: django-codenerix-email
+[2024-06-02 21:06:59] INFO root fetch - processPackages [django-codenerix-email]: New version: [4.0.9] Old Version: [4.0.8]
+[2024-06-02 21:06:59] INFO root fetch - processPackages [yet-another-io-channels-library]: New version: [0.2.4.post1] Old Version: [0.2.4]
+[2024-06-02 21:06:59] INFO root fetch - processPackages [PipBERT]: New version: [6.1.0] Old Version: [4.1.0]
+[2024-06-02 21:06:59] INFO root fetch - processPackages [numpngw]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-06-02 21:07:00] INFO root fetch - processPackages [django-codenerix-email]: Downloading https://files.pythonhosted.org/packages/f3/2a/ee36f3fd9b47b5476f0f6b4e22be07c82f11abfe7278faddf3ddb8687132/django-codenerix-email-4.0.8.tar.gz
+[2024-06-02 21:07:00] INFO root fetch - processPackages [yet-another-io-channels-library]: Downloading https://files.pythonhosted.org/packages/24/c8/58e4d1ca6d3ad7791b52b9878d6acd7f397ef3a322c16165cbd84f7c3125/yet_another_io_channels_library-0.2.4.tar.gz
+[2024-06-02 21:07:00] INFO root fetch - processPackages [PipBERT]: Downloading https://files.pythonhosted.org/packages/8a/7d/2f92fd0c75c5817a25378936a7b83461b01c7eb72465126a07c60dd36fd2/PipBERT-4.1.0.tar.gz
+[2024-06-02 21:07:00] INFO root fetch - processPackages [numpngw]: Downloading https://files.pythonhosted.org/packages/56/cb/f9d11096476a6be47305f14f9e9354549fd5af04c57d0346693789745270/numpngw-0.1.3.tar.gz
+[2024-06-02 21:07:00] INFO root fetch - processPackages [yet-another-io-channels-library]: Downloading https://files.pythonhosted.org/packages/96/95/5595d7f48d3a386cd13b79b88b487d23f57e28a652325d1afbdbab7e38a7/yet_another_io_channels_library-0.2.4.post1.tar.gz
+[2024-06-02 21:07:00] INFO root fetch - processPackages [django-codenerix-email]: Downloading https://files.pythonhosted.org/packages/18/fb/bb80003c981fc6c9ff5f3ee400bc35fe9954bd030a63fbf29bf6447b5a4b/django-codenerix-email-4.0.9.tar.gz
+[2024-06-02 21:07:00] INFO root fetch - processPackages [numpngw]: Downloading https://files.pythonhosted.org/packages/bf/e2/f74bc6c0161d164840f899d16c60059f58f8af97a79333f5ff5f2d757345/numpngw-0.1.4.tar.gz
+[2024-06-02 21:07:00] INFO root fetch - processPackages [yet-another-io-channels-library]: executing diffoscope
+[2024-06-02 21:07:00] INFO root fetch - processPackages [yet-another-io-channels-library]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yet_another_io_channels_library-0.2.4.tar.gz tmp/yet_another_io_channels_library-0.2.4.post1.tar.gz --markdown 20240602/y/yet-another-io-channels-library/0.2.4-0.2.4.post1/README.md --exclude *.pyd
+[2024-06-02 21:07:00] INFO root fetch - processPackages [PipBERT]: Downloading https://files.pythonhosted.org/packages/46/a8/c609fba70dc29f33bbfc0a6eecf30d1b82e6ba6e47ef05c2ff228fe077ae/pipbert-6.1.0.tar.gz
+[2024-06-02 21:07:00] INFO root fetch - processPackages [numpngw]: executing diffoscope
+[2024-06-02 21:07:00] INFO root fetch - processPackages [numpngw]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/numpngw-0.1.3.tar.gz tmp/numpngw-0.1.4.tar.gz --markdown 20240602/n/numpngw/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-06-02 21:07:00] INFO root fetch - processPackages [django-codenerix-email]: executing diffoscope
+[2024-06-02 21:07:00] INFO root fetch - processPackages [django-codenerix-email]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-codenerix-email-4.0.8.tar.gz tmp/django-codenerix-email-4.0.9.tar.gz --markdown 20240602/d/django-codenerix-email/4.0.8-4.0.9/README.md --exclude *.pyd
+[2024-06-02 21:07:00] INFO root fetch - processPackages [PipBERT]: executing diffoscope
+[2024-06-02 21:07:00] INFO root fetch - processPackages [PipBERT]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PipBERT-4.1.0.tar.gz tmp/pipbert-6.1.0.tar.gz --markdown 20240602/P/PipBERT/4.1.0-6.1.0/README.md --exclude *.pyd
+[2024-06-02 21:07:00] INFO root fetch - processPackages [yet-another-io-channels-library]: Remove: archive file [/home/abi/fetcher/tmp/yet_another_io_channels_library-0.2.4.tar.gz]
+[2024-06-02 21:07:00] INFO root fetch - processPackages [yet-another-io-channels-library]: Remove: archive file [/home/abi/fetcher/tmp/yet_another_io_channels_library-0.2.4.post1.tar.gz]
+[2024-06-02 21:07:00] INFO root fetch - main [MainThread]: End processing [yet-another-io-channels-library]: success
+[2024-06-02 21:07:01] INFO root fetch - processPackages [numpngw]: Remove: archive file [/home/abi/fetcher/tmp/numpngw-0.1.3.tar.gz]
+[2024-06-02 21:07:01] INFO root fetch - processPackages [numpngw]: Remove: archive file [/home/abi/fetcher/tmp/numpngw-0.1.4.tar.gz]
+[2024-06-02 21:07:01] INFO root fetch - main [MainThread]: End processing [numpngw]: success
+[2024-06-02 21:07:01] INFO root fetch - processPackages [django-codenerix-email]: Remove: archive file [/home/abi/fetcher/tmp/django-codenerix-email-4.0.8.tar.gz]
+[2024-06-02 21:07:01] INFO root fetch - processPackages [django-codenerix-email]: Remove: archive file [/home/abi/fetcher/tmp/django-codenerix-email-4.0.9.tar.gz]
+[2024-06-02 21:07:01] INFO root fetch - main [MainThread]: End processing [django-codenerix-email]: success
+[2024-06-02 21:07:01] INFO root fetch - processPackages [PipBERT]: Remove: archive file [/home/abi/fetcher/tmp/PipBERT-4.1.0.tar.gz]
+[2024-06-02 21:07:01] INFO root fetch - processPackages [PipBERT]: Remove: archive file [/home/abi/fetcher/tmp/pipbert-6.1.0.tar.gz]
+[2024-06-02 21:07:01] INFO root fetch - main [MainThread]: End processing [PipBERT]: success
+[2024-06-02 21:07:01] INFO root fetch - main [MainThread]: Store serial: [23492257]
