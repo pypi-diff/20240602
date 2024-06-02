@@ -3532,3 +3532,15 @@
 [2024-06-02 05:29:08] INFO root fetch - processPackages [fastcore]: Remove: archive file [/home/abi/fetcher/tmp/fastcore-1.5.9.tar.gz]
 [2024-06-02 05:29:08] INFO root fetch - main [MainThread]: End processing [fastcore]: success
 [2024-06-02 05:29:08] INFO root fetch - main [MainThread]: Store serial: [23485844]
+[2024-06-02 05:31:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23485844]
+[2024-06-02 05:31:16] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-02 05:31:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nessvec
+[2024-06-02 05:31:16] INFO root fetch - processPackages [nessvec]: New version: [0.1.16] Old Version: [0.1.14]
+[2024-06-02 05:31:16] INFO root fetch - processPackages [nessvec]: Downloading https://files.pythonhosted.org/packages/16/57/0576b2b71d036bd2c13680199a74a775df56569aac2bc41208860ec8f16c/nessvec-0.1.14.tar.gz
+[2024-06-02 05:31:16] INFO root fetch - processPackages [nessvec]: Downloading https://files.pythonhosted.org/packages/59/d3/054c905eb1404311a8f23022e5c1df209fa48b6b97a40c2a378164b57448/nessvec-0.1.16.tar.gz
+[2024-06-02 05:31:17] INFO root fetch - processPackages [nessvec]: executing diffoscope
+[2024-06-02 05:31:17] INFO root fetch - processPackages [nessvec]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nessvec-0.1.14.tar.gz tmp/nessvec-0.1.16.tar.gz --markdown 20240602/n/nessvec/0.1.14-0.1.16/README.md --exclude *.pyd
+[2024-06-02 05:31:17] INFO root fetch - processPackages [nessvec]: Remove: archive file [/home/abi/fetcher/tmp/nessvec-0.1.14.tar.gz]
+[2024-06-02 05:31:17] INFO root fetch - processPackages [nessvec]: Remove: archive file [/home/abi/fetcher/tmp/nessvec-0.1.16.tar.gz]
+[2024-06-02 05:31:17] INFO root fetch - main [MainThread]: End processing [nessvec]: success
+[2024-06-02 05:31:17] INFO root fetch - main [MainThread]: Store serial: [23485864]
