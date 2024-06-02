@@ -9834,3 +9834,60 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-02 14:57:34] INFO root fetch - processPackages [dragons96-tools]: Remove: archive file [/home/abi/fetcher/tmp/dragons96_tools-0.0.9.tar.gz]
 [2024-06-02 14:57:34] INFO root fetch - main [MainThread]: End processing [dragons96-tools]: success
 [2024-06-02 14:57:34] INFO root fetch - main [MainThread]: Store serial: [23489078]
+[2024-06-02 14:59:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23489078]
+[2024-06-02 14:59:43] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-06-02 14:59:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: puepy
+[2024-06-02 14:59:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: stashconnect
+[2024-06-02 14:59:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: Geode-Background
+[2024-06-02 14:59:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: clonellm
+[2024-06-02 14:59:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ccxt
+[2024-06-02 14:59:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: item-matching
+[2024-06-02 14:59:43] INFO root fetch - processPackages [stashconnect]: New version: [0.8.8] Old Version: [0.8.7]
+[2024-06-02 14:59:43] INFO root fetch - processPackages [item-matching]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-06-02 14:59:43] INFO root fetch - processPackages [puepy]: New version: [0.2.0] Old Version: [0.1.2]
+[2024-06-02 14:59:43] INFO root fetch - processPackages [ccxt]: New version: [4.3.9] Old Version: [4.3.8]
+[2024-06-02 14:59:43] INFO root fetch - processPackages [stashconnect]: Downloading https://files.pythonhosted.org/packages/67/8d/e3192e4816047fdb23eb170fbaffa9cac3414dfcbd8cb7bcf0507cecd132/stashconnect-0.8.7.tar.gz
+[2024-06-02 14:59:43] INFO root fetch - processPackages [clonellm]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-06-02 14:59:43] INFO root fetch - processPackages [item-matching]: Downloading https://files.pythonhosted.org/packages/c1/eb/6af9341e91340108c6bd813fdbaf99df20b024ef720ba95fd98f5f9b1e67/item_matching-0.0.8.tar.gz
+[2024-06-02 14:59:43] INFO root fetch - processPackages [Geode-Background]: New version: [7.9.9rc1] Old Version: [7.9.8rc1]
+[2024-06-02 14:59:43] INFO root fetch - processPackages [puepy]: Downloading https://files.pythonhosted.org/packages/07/b6/05183ca7c86935e673433b27980c12ec372d5901fb79bfd4a4d12c31ec06/puepy-0.1.2.tar.gz
+[2024-06-02 14:59:43] INFO root fetch - processPackages [clonellm]: Downloading https://files.pythonhosted.org/packages/8c/9b/f12c1fa08b79e79d64d58489bd072bed25116268e839f7c127a40e34d06e/clonellm-0.0.3.tar.gz
+[2024-06-02 14:59:43] INFO root fetch - processPackages [item-matching]: Downloading https://files.pythonhosted.org/packages/d6/27/06995957de9e3e2dc832d765e63268da03fc82c05f5e99df1fad645a8853/item_matching-0.0.9.tar.gz
+[2024-06-02 14:59:43] INFO root fetch - processPackages [Geode-Background]: Downloading https://files.pythonhosted.org/packages/5a/bf/e3b335021e2827df1ff360ae972cac70607b2685fe93041a505c3564eb03/Geode_Background-7.9.8rc1-cp39-cp39-win_amd64.whl
+[2024-06-02 14:59:43] INFO root fetch - processPackages [ccxt]: Downloading https://files.pythonhosted.org/packages/1c/a1/3a1a3f9672e43a2620d2ab195c398183c3594751d3a306bd022e7ceccbb7/ccxt-4.3.8.tar.gz
+[2024-06-02 14:59:43] INFO root fetch - processPackages [stashconnect]: Downloading https://files.pythonhosted.org/packages/77/b0/a8156ef25046dc01da974ff3239e2ce5ce3aa5f2933ebdc8c69e6680ba26/stashconnect-0.8.8.tar.gz
+[2024-06-02 14:59:43] INFO root fetch - processPackages [item-matching]: executing diffoscope
+[2024-06-02 14:59:43] INFO root fetch - processPackages [item-matching]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/item_matching-0.0.8.tar.gz tmp/item_matching-0.0.9.tar.gz --markdown 20240602/i/item-matching/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-06-02 14:59:43] INFO root fetch - processPackages [stashconnect]: executing diffoscope
+[2024-06-02 14:59:43] INFO root fetch - processPackages [stashconnect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stashconnect-0.8.7.tar.gz tmp/stashconnect-0.8.8.tar.gz --markdown 20240602/s/stashconnect/0.8.7-0.8.8/README.md --exclude *.pyd
+[2024-06-02 14:59:43] INFO root fetch - processPackages [puepy]: Downloading https://files.pythonhosted.org/packages/2d/93/6bf19e82adea346ea5d89c2e0fa9998256fd832b94d602aed83a5dfff19e/puepy-0.2.0.tar.gz
+[2024-06-02 14:59:43] INFO root fetch - processPackages [clonellm]: Downloading https://files.pythonhosted.org/packages/a4/5f/d432419ccc682fde8df5e0b0f2ee14e63bb774e9db39c82a6aa22ac780aa/clonellm-0.0.4.tar.gz
+[2024-06-02 14:59:44] INFO root fetch - processPackages [puepy]: executing diffoscope
+[2024-06-02 14:59:44] INFO root fetch - processPackages [puepy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/puepy-0.1.2.tar.gz tmp/puepy-0.2.0.tar.gz --markdown 20240602/p/puepy/0.1.2-0.2.0/README.md --exclude *.pyd
+[2024-06-02 14:59:44] INFO root fetch - processPackages [clonellm]: executing diffoscope
+[2024-06-02 14:59:44] INFO root fetch - processPackages [clonellm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clonellm-0.0.3.tar.gz tmp/clonellm-0.0.4.tar.gz --markdown 20240602/c/clonellm/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-06-02 14:59:44] INFO root fetch - processPackages [ccxt]: Downloading https://files.pythonhosted.org/packages/f0/34/c7c38c5c0bec0a22183d7eed68184bef3efe315a8570460824012267cbac/ccxt-4.3.9.tar.gz
+[2024-06-02 14:59:44] INFO root fetch - processPackages [item-matching]: Remove: archive file [/home/abi/fetcher/tmp/item_matching-0.0.8.tar.gz]
+[2024-06-02 14:59:44] INFO root fetch - processPackages [item-matching]: Remove: archive file [/home/abi/fetcher/tmp/item_matching-0.0.9.tar.gz]
+[2024-06-02 14:59:44] INFO root fetch - main [MainThread]: End processing [item-matching]: success
+[2024-06-02 14:59:44] INFO root fetch - processPackages [Geode-Background]: Downloading https://files.pythonhosted.org/packages/cf/5a/71fe8268103445cceb35cb6b1d4e80192437af076b7718587c869ebbd24a/Geode_Background-7.9.9rc1-cp39-cp39-win_amd64.whl
+[2024-06-02 14:59:44] INFO root fetch - processPackages [stashconnect]: Remove: archive file [/home/abi/fetcher/tmp/stashconnect-0.8.7.tar.gz]
+[2024-06-02 14:59:44] INFO root fetch - processPackages [stashconnect]: Remove: archive file [/home/abi/fetcher/tmp/stashconnect-0.8.8.tar.gz]
+[2024-06-02 14:59:44] INFO root fetch - main [MainThread]: End processing [stashconnect]: success
+[2024-06-02 14:59:44] INFO root fetch - processPackages [puepy]: Remove: archive file [/home/abi/fetcher/tmp/puepy-0.1.2.tar.gz]
+[2024-06-02 14:59:44] INFO root fetch - processPackages [puepy]: Remove: archive file [/home/abi/fetcher/tmp/puepy-0.2.0.tar.gz]
+[2024-06-02 14:59:44] INFO root fetch - main [MainThread]: End processing [puepy]: success
+[2024-06-02 14:59:44] INFO root fetch - processPackages [clonellm]: Remove: archive file [/home/abi/fetcher/tmp/clonellm-0.0.3.tar.gz]
+[2024-06-02 14:59:44] INFO root fetch - processPackages [clonellm]: Remove: archive file [/home/abi/fetcher/tmp/clonellm-0.0.4.tar.gz]
+[2024-06-02 14:59:44] INFO root fetch - main [MainThread]: End processing [clonellm]: success
+[2024-06-02 14:59:44] INFO root fetch - processPackages [ccxt]: executing diffoscope
+[2024-06-02 14:59:44] INFO root fetch - processPackages [ccxt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ccxt-4.3.8.tar.gz tmp/ccxt-4.3.9.tar.gz --markdown 20240602/c/ccxt/4.3.8-4.3.9/README.md --exclude *.pyd
+[2024-06-02 14:59:44] INFO root fetch - processPackages [Geode-Background]: executing diffoscope
+[2024-06-02 14:59:44] INFO root fetch - processPackages [Geode-Background]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Geode_Background-7.9.8rc1-cp39-cp39-win_amd64.whl.zip tmp/Geode_Background-7.9.9rc1-cp39-cp39-win_amd64.whl.zip --markdown 20240602/G/Geode-Background/7.9.8rc1-7.9.9rc1/README.md --exclude *.pyd
+[2024-06-02 14:59:48] INFO root fetch - processPackages [ccxt]: Remove: archive file [/home/abi/fetcher/tmp/ccxt-4.3.8.tar.gz]
+[2024-06-02 14:59:48] INFO root fetch - processPackages [ccxt]: Remove: archive file [/home/abi/fetcher/tmp/ccxt-4.3.9.tar.gz]
+[2024-06-02 14:59:48] INFO root fetch - main [MainThread]: End processing [ccxt]: success
+[2024-06-02 15:00:21] INFO root fetch - processPackages [Geode-Background]: Remove: archive file [/home/abi/fetcher/tmp/Geode_Background-7.9.8rc1-cp39-cp39-win_amd64.whl.zip]
+[2024-06-02 15:00:21] INFO root fetch - processPackages [Geode-Background]: Remove: archive file [/home/abi/fetcher/tmp/Geode_Background-7.9.9rc1-cp39-cp39-win_amd64.whl.zip]
+[2024-06-02 15:00:21] INFO root fetch - main [MainThread]: End processing [Geode-Background]: success
+[2024-06-02 15:00:21] INFO root fetch - main [MainThread]: Store serial: [23489100]
