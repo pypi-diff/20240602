@@ -20653,3 +20653,24 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 23:08:06] INFO root fetch - processPackages [tencentcloud-sdk-python-yunsou]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-yunsou-3.0.999.tar.gz]
 [2024-06-02 23:08:06] INFO root fetch - main [MainThread]: End processing [tencentcloud-sdk-python-yunsou]: success
 [2024-06-02 23:08:06] INFO root fetch - main [MainThread]: Store serial: [23493826]
+[2024-06-02 23:10:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23493826]
+[2024-06-02 23:10:15] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-02 23:10:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: foo-et-al-2
+[2024-06-02 23:10:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: siren-dsl
+[2024-06-02 23:10:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: meghana-hello-world
+[2024-06-02 23:10:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ipy-agent
+[2024-06-02 23:10:15] WARNING root fetch - processPackages [foo-et-al-2]: Skipping, unable to determine old version
+[2024-06-02 23:10:15] INFO root fetch - main [MainThread]: End processing [foo-et-al-2] error
+[2024-06-02 23:10:15] INFO root fetch - processPackages [ipy-agent]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-06-02 23:10:15] INFO root fetch - processPackages [ipy-agent]: Downloading https://files.pythonhosted.org/packages/c4/c5/5cda334423e0d60b38b44bbe135f306005aa7cfb777869fe7cbb00afc75e/ipy_agent-0.0.2.tar.gz
+[2024-06-02 23:10:15] WARNING root fetch - processPackages [siren-dsl]: Skipping, unable to determine old version
+[2024-06-02 23:10:15] INFO root fetch - main [MainThread]: End processing [siren-dsl] error
+[2024-06-02 23:10:15] WARNING root fetch - processPackages [meghana-hello-world]: Skipping, unable to determine old version
+[2024-06-02 23:10:15] INFO root fetch - main [MainThread]: End processing [meghana-hello-world] error
+[2024-06-02 23:10:15] INFO root fetch - processPackages [ipy-agent]: Downloading https://files.pythonhosted.org/packages/d8/95/4658fea2a17ddcadb2585523bbf3a0429150f145be6fb14c594139efcfab/ipy_agent-0.0.3.tar.gz
+[2024-06-02 23:10:15] INFO root fetch - processPackages [ipy-agent]: executing diffoscope
+[2024-06-02 23:10:15] INFO root fetch - processPackages [ipy-agent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ipy_agent-0.0.2.tar.gz tmp/ipy_agent-0.0.3.tar.gz --markdown 20240602/i/ipy-agent/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-06-02 23:10:16] INFO root fetch - processPackages [ipy-agent]: Remove: archive file [/home/abi/fetcher/tmp/ipy_agent-0.0.2.tar.gz]
+[2024-06-02 23:10:16] INFO root fetch - processPackages [ipy-agent]: Remove: archive file [/home/abi/fetcher/tmp/ipy_agent-0.0.3.tar.gz]
+[2024-06-02 23:10:16] INFO root fetch - main [MainThread]: End processing [ipy-agent]: success
+[2024-06-02 23:10:16] INFO root fetch - main [MainThread]: Store serial: [23493838]
