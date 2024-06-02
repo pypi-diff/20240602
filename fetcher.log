@@ -6724,3 +6724,55 @@
 [2024-06-02 11:15:44] INFO root fetch - main [MainThread]: End processing [python-115]: success
 [2024-06-02 11:15:44] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
 [2024-06-02 11:15:44] INFO root fetch - main [MainThread]: Store serial: [23487624]
+[2024-06-02 11:17:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23487624]
+[2024-06-02 11:17:52] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-06-02 11:17:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PyQt6-WebEngine-Qt6
+[2024-06-02 11:17:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: numixery
+[2024-06-02 11:17:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ervdetective
+[2024-06-02 11:17:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PyQt6-Qt6
+[2024-06-02 11:17:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tuyul-sdk
+[2024-06-02 11:17:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: retell-sdk
+[2024-06-02 11:17:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: PyQt6-3D-Qt6
+[2024-06-02 11:17:52] INFO root fetch - processPackages [PyQt6-3D-Qt6]: New version: [6.7.0] Old Version: [6.6.3]
+[2024-06-02 11:17:52] INFO root fetch - processPackages [PyQt6-Qt6]: New version: [6.7.0] Old Version: [6.6.3]
+[2024-06-02 11:17:52] WARNING root fetch - processPackages [numixery]: Skipping, unable to determine old version
+[2024-06-02 11:17:52] INFO root fetch - main [MainThread]: End processing [numixery] error
+[2024-06-02 11:17:52] INFO root fetch - processPackages [ervdetective]: New version: [1.0.7] Old Version: [1.0.6]
+[2024-06-02 11:17:52] INFO root fetch - processPackages [tuyul-sdk]: New version: [0.1.0rc3] Old Version: [0.1.0rc2]
+[2024-06-02 11:17:52] INFO root fetch - processPackages [PyQt6-WebEngine-Qt6]: New version: [6.7.1] Old Version: [6.7.0]
+[2024-06-02 11:17:52] INFO root fetch - processPackages [retell-sdk]: New version: [3.9.0] Old Version: [3.8.0]
+[2024-06-02 11:17:53] INFO root fetch - processPackages [PyQt6-3D-Qt6]: Downloading https://files.pythonhosted.org/packages/c8/fa/7017ae1ebb12a1f38f1f891924c22968e7ac997fa6bccba7d718ce09eea9/PyQt6_3D_Qt6-6.6.3-py3-none-win_amd64.whl
+[2024-06-02 11:17:53] INFO root fetch - processPackages [PyQt6-Qt6]: Downloading https://files.pythonhosted.org/packages/a9/6b/720e5ee18d2f06812ebee8a5c6d9f656397c29d5d790fae2861d0c1edb01/PyQt6_Qt6-6.6.3-py3-none-win_amd64.whl
+[2024-06-02 11:17:53] INFO root fetch - processPackages [PyQt6-WebEngine-Qt6]: Downloading https://files.pythonhosted.org/packages/21/2b/1d2ba70ebc2c8dea484c24a7afc354a753dbef23c937db2307f39f26ac44/PyQt6_WebEngine_Qt6-6.7.0-py3-none-win_amd64.whl
+[2024-06-02 11:17:53] INFO root fetch - processPackages [retell-sdk]: Downloading https://files.pythonhosted.org/packages/e1/53/f375ee017875b3c24fc03d377dc5f55fc4f3759c3ecd37e3c7fcb29192ff/retell_sdk-3.8.0.tar.gz
+[2024-06-02 11:17:53] INFO root fetch - processPackages [tuyul-sdk]: Downloading https://files.pythonhosted.org/packages/84/08/fc10d40d5136fef015b7b221a76b3b7c55ef33129f7e08822043868196f7/tuyul_sdk-0.1.0rc2.tar.gz
+[2024-06-02 11:17:53] INFO root fetch - processPackages [ervdetective]: Downloading https://files.pythonhosted.org/packages/f7/25/923e03544ac6b87eb0586c84b128e90a522a3c2e7eb568dbfeccbf196706/ervdetective-1.0.6.tar.gz
+[2024-06-02 11:17:53] WARNING root fetch - processPackages [PyQt6-WebEngine-Qt6]: Skipping package: exceeds size limit 93106547>=10485760
+[2024-06-02 11:17:53] INFO root fetch - main [MainThread]: End processing [PyQt6-WebEngine-Qt6] error
+[2024-06-02 11:17:53] INFO root fetch - processPackages [tuyul-sdk]: Downloading https://files.pythonhosted.org/packages/53/5e/f67179d51ec957120d70cd4bf10a615dcab8c427b40273ad20a03634fde8/tuyul_sdk-0.1.0rc3.tar.gz
+[2024-06-02 11:17:53] WARNING root fetch - processPackages [PyQt6-Qt6]: Skipping package: exceeds size limit 52356061>=10485760
+[2024-06-02 11:17:53] INFO root fetch - main [MainThread]: End processing [PyQt6-Qt6] error
+[2024-06-02 11:17:53] INFO root fetch - processPackages [retell-sdk]: Downloading https://files.pythonhosted.org/packages/75/b5/15a8ee4ce52c9f786d1bcf55ee0681a2f4e137e3c72085347dd5733e6ff0/retell_sdk-3.9.0.tar.gz
+[2024-06-02 11:17:53] INFO root fetch - processPackages [ervdetective]: Downloading https://files.pythonhosted.org/packages/f5/d0/5f12291dcaf908d2e448819d1ff93063015fdbb307f88d708dc681b632cf/ervdetective-1.0.7.tar.gz
+[2024-06-02 11:17:53] INFO root fetch - processPackages [retell-sdk]: executing diffoscope
+[2024-06-02 11:17:53] INFO root fetch - processPackages [retell-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/retell_sdk-3.8.0.tar.gz tmp/retell_sdk-3.9.0.tar.gz --markdown 20240602/r/retell-sdk/3.8.0-3.9.0/README.md --exclude *.pyd
+[2024-06-02 11:17:53] INFO root fetch - processPackages [PyQt6-3D-Qt6]: Downloading https://files.pythonhosted.org/packages/ff/76/c4564402be7bb99f39a14c1984fd8c65e0e54c0b4aa802ff7cca9e3227a8/PyQt6_3D_Qt6-6.7.0-py3-none-win_amd64.whl
+[2024-06-02 11:17:53] INFO root fetch - processPackages [tuyul-sdk]: executing diffoscope
+[2024-06-02 11:17:53] INFO root fetch - processPackages [tuyul-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tuyul_sdk-0.1.0rc2.tar.gz tmp/tuyul_sdk-0.1.0rc3.tar.gz --markdown 20240602/t/tuyul-sdk/0.1.0rc2-0.1.0rc3/README.md --exclude *.pyd
+[2024-06-02 11:17:53] INFO root fetch - processPackages [ervdetective]: executing diffoscope
+[2024-06-02 11:17:53] INFO root fetch - processPackages [ervdetective]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ervdetective-1.0.6.tar.gz tmp/ervdetective-1.0.7.tar.gz --markdown 20240602/e/ervdetective/1.0.6-1.0.7/README.md --exclude *.pyd
+[2024-06-02 11:17:53] INFO root fetch - processPackages [PyQt6-3D-Qt6]: executing diffoscope
+[2024-06-02 11:17:53] INFO root fetch - processPackages [PyQt6-3D-Qt6]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyQt6_3D_Qt6-6.6.3-py3-none-win_amd64.whl.zip tmp/PyQt6_3D_Qt6-6.7.0-py3-none-win_amd64.whl.zip --markdown 20240602/P/PyQt6-3D-Qt6/6.6.3-6.7.0/README.md --exclude *.pyd
+[2024-06-02 11:17:54] INFO root fetch - processPackages [tuyul-sdk]: Remove: archive file [/home/abi/fetcher/tmp/tuyul_sdk-0.1.0rc2.tar.gz]
+[2024-06-02 11:17:54] INFO root fetch - processPackages [tuyul-sdk]: Remove: archive file [/home/abi/fetcher/tmp/tuyul_sdk-0.1.0rc3.tar.gz]
+[2024-06-02 11:17:54] INFO root fetch - main [MainThread]: End processing [tuyul-sdk]: success
+[2024-06-02 11:17:54] INFO root fetch - processPackages [retell-sdk]: Remove: archive file [/home/abi/fetcher/tmp/retell_sdk-3.8.0.tar.gz]
+[2024-06-02 11:17:54] INFO root fetch - processPackages [retell-sdk]: Remove: archive file [/home/abi/fetcher/tmp/retell_sdk-3.9.0.tar.gz]
+[2024-06-02 11:17:54] INFO root fetch - main [MainThread]: End processing [retell-sdk]: success
+[2024-06-02 11:17:54] INFO root fetch - processPackages [ervdetective]: Remove: archive file [/home/abi/fetcher/tmp/ervdetective-1.0.6.tar.gz]
+[2024-06-02 11:17:54] INFO root fetch - processPackages [ervdetective]: Remove: archive file [/home/abi/fetcher/tmp/ervdetective-1.0.7.tar.gz]
+[2024-06-02 11:17:54] INFO root fetch - main [MainThread]: End processing [ervdetective]: success
+[2024-06-02 11:18:18] INFO root fetch - processPackages [PyQt6-3D-Qt6]: Remove: archive file [/home/abi/fetcher/tmp/PyQt6_3D_Qt6-6.6.3-py3-none-win_amd64.whl.zip]
+[2024-06-02 11:18:18] INFO root fetch - processPackages [PyQt6-3D-Qt6]: Remove: archive file [/home/abi/fetcher/tmp/PyQt6_3D_Qt6-6.7.0-py3-none-win_amd64.whl.zip]
+[2024-06-02 11:18:18] INFO root fetch - main [MainThread]: End processing [PyQt6-3D-Qt6]: success
+[2024-06-02 11:18:18] INFO root fetch - main [MainThread]: Store serial: [23487650]
