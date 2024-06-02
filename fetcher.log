@@ -6648,3 +6648,20 @@
 [2024-06-02 11:08:57] INFO root fetch - processPackages [minishell]: Remove: archive file [/home/abi/fetcher/tmp/minishell-0.0.2.tar.gz]
 [2024-06-02 11:08:57] INFO root fetch - main [MainThread]: End processing [minishell]: success
 [2024-06-02 11:08:57] INFO root fetch - main [MainThread]: Store serial: [23487597]
+[2024-06-02 11:11:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23487597]
+[2024-06-02 11:11:05] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-02 11:11:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: flake8-typing-collections
+[2024-06-02 11:11:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PySimultan
+[2024-06-02 11:11:05] INFO root fetch - processPackages [flake8-typing-collections]: New version: [2.1] Old Version: [2.0]
+[2024-06-02 11:11:05] INFO root fetch - processPackages [PySimultan]: New version: [0.3.0] Old Version: [0.2.9]
+[2024-06-02 11:11:06] INFO root fetch - processPackages [flake8-typing-collections]: Downloading https://files.pythonhosted.org/packages/20/c2/79a2b45f8321a2ca48fca355c41c07ddacbe78108703b82e0e30f709bb20/flake8-typing-collections-2.0.tar.gz
+[2024-06-02 11:11:06] INFO root fetch - processPackages [PySimultan]: Downloading https://files.pythonhosted.org/packages/41/88/d6481ec920e202f6e7d24c4141dc1c0bb3362f32c50e88b1e145aee1e35d/pysimultan-0.2.9.tar.gz
+[2024-06-02 11:11:06] WARNING root fetch - processPackages [PySimultan]: Skipping package: exceeds size limit 12483936>=10485760
+[2024-06-02 11:11:06] INFO root fetch - main [MainThread]: End processing [PySimultan] error
+[2024-06-02 11:11:06] INFO root fetch - processPackages [flake8-typing-collections]: Downloading https://files.pythonhosted.org/packages/88/4c/a836d1f3ac4c6116a7587af0cec914d1980c84950e7a3a6346cf8318296b/flake8_typing_collections-2.1.tar.gz
+[2024-06-02 11:11:06] INFO root fetch - processPackages [flake8-typing-collections]: executing diffoscope
+[2024-06-02 11:11:06] INFO root fetch - processPackages [flake8-typing-collections]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flake8-typing-collections-2.0.tar.gz tmp/flake8_typing_collections-2.1.tar.gz --markdown 20240602/f/flake8-typing-collections/2.0-2.1/README.md --exclude *.pyd
+[2024-06-02 11:11:07] INFO root fetch - processPackages [flake8-typing-collections]: Remove: archive file [/home/abi/fetcher/tmp/flake8-typing-collections-2.0.tar.gz]
+[2024-06-02 11:11:07] INFO root fetch - processPackages [flake8-typing-collections]: Remove: archive file [/home/abi/fetcher/tmp/flake8_typing_collections-2.1.tar.gz]
+[2024-06-02 11:11:07] INFO root fetch - main [MainThread]: End processing [flake8-typing-collections]: success
+[2024-06-02 11:11:07] INFO root fetch - main [MainThread]: Store serial: [23487603]
