@@ -5406,3 +5406,42 @@
 [2024-06-02 09:21:08] INFO root fetch - processPackages [pydal]: Remove: archive file [/home/abi/fetcher/tmp/pydal-20240601.2.tar.gz]
 [2024-06-02 09:21:08] INFO root fetch - main [MainThread]: End processing [pydal]: success
 [2024-06-02 09:21:08] INFO root fetch - main [MainThread]: Store serial: [23486999]
+[2024-06-02 09:23:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23486999]
+[2024-06-02 09:23:16] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-02 09:23:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bttc
+[2024-06-02 09:23:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hj-proj-module
+[2024-06-02 09:23:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: CI-CloudConnector
+[2024-06-02 09:23:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: scores
+[2024-06-02 09:23:17] INFO root fetch - processPackages [CI-CloudConnector]: New version: [2.3] Old Version: [2.2]
+[2024-06-02 09:23:17] INFO root fetch - processPackages [hj-proj-module]: New version: [0.1.9] Old Version: [0.1.7]
+[2024-06-02 09:23:17] INFO root fetch - processPackages [CI-CloudConnector]: Downloading https://files.pythonhosted.org/packages/dc/db/48dd7b5f37e45702f3a63b2c31e10bce1894d151e7ff39c485f5d0db78fc/ci_cloudconnector-2.2.tar.gz
+[2024-06-02 09:23:17] INFO root fetch - processPackages [hj-proj-module]: Downloading https://files.pythonhosted.org/packages/db/12/7bb0e640457f3bbbbc0b77439e6b03839642728f5b9676f3a6cdbf41672e/hj_proj_module-0.1.7.tar.gz
+[2024-06-02 09:23:17] INFO root fetch - processPackages [bttc]: New version: [0.0.81] Old Version: [0.0.80]
+[2024-06-02 09:23:17] INFO root fetch - processPackages [scores]: New version: [0.8.3] Old Version: [0.8.2]
+[2024-06-02 09:23:17] INFO root fetch - processPackages [bttc]: Downloading https://files.pythonhosted.org/packages/a9/aa/5cbd1f4c9b2d6ee83ef438b89c41063ffff6ccf64f027c292432fe6df974/bttc-0.0.80.tar.gz
+[2024-06-02 09:23:17] INFO root fetch - processPackages [hj-proj-module]: Downloading https://files.pythonhosted.org/packages/94/49/69693d7a64f73d84255649b427048581401581af1b2733dd7b132cd4a620/hj_proj_module-0.1.9.tar.gz
+[2024-06-02 09:23:17] INFO root fetch - processPackages [scores]: Downloading https://files.pythonhosted.org/packages/9c/3c/34cc14620e5e9e912df1390d6bfc563616e3c026581aa19b4062e9fbec5e/scores-0.8.2.tar.gz
+[2024-06-02 09:23:17] INFO root fetch - processPackages [CI-CloudConnector]: Downloading https://files.pythonhosted.org/packages/c7/d3/f11c8477b4a0c4b049d48783adfda06c5cd73275d7543f225905c396862e/ci_cloudconnector-2.3.tar.gz
+[2024-06-02 09:23:17] INFO root fetch - processPackages [hj-proj-module]: executing diffoscope
+[2024-06-02 09:23:17] INFO root fetch - processPackages [hj-proj-module]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hj_proj_module-0.1.7.tar.gz tmp/hj_proj_module-0.1.9.tar.gz --markdown 20240602/h/hj-proj-module/0.1.7-0.1.9/README.md --exclude *.pyd
+[2024-06-02 09:23:17] INFO root fetch - processPackages [CI-CloudConnector]: executing diffoscope
+[2024-06-02 09:23:17] INFO root fetch - processPackages [CI-CloudConnector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ci_cloudconnector-2.2.tar.gz tmp/ci_cloudconnector-2.3.tar.gz --markdown 20240602/C/CI-CloudConnector/2.2-2.3/README.md --exclude *.pyd
+[2024-06-02 09:23:17] INFO root fetch - processPackages [bttc]: Downloading https://files.pythonhosted.org/packages/fb/e3/a900bfb4684f43fed05b7da452b0819bacab3d20116993daf1e139b185a9/bttc-0.0.81.tar.gz
+[2024-06-02 09:23:17] INFO root fetch - processPackages [scores]: Downloading https://files.pythonhosted.org/packages/eb/8d/5ef67bd6a438035819344b1767b2d4be24f6e38c6a3c18d9d4b02c300ecb/scores-0.8.3.tar.gz
+[2024-06-02 09:23:17] INFO root fetch - processPackages [bttc]: executing diffoscope
+[2024-06-02 09:23:17] INFO root fetch - processPackages [bttc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bttc-0.0.80.tar.gz tmp/bttc-0.0.81.tar.gz --markdown 20240602/b/bttc/0.0.80-0.0.81/README.md --exclude *.pyd
+[2024-06-02 09:23:17] INFO root fetch - processPackages [scores]: executing diffoscope
+[2024-06-02 09:23:17] INFO root fetch - processPackages [scores]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scores-0.8.2.tar.gz tmp/scores-0.8.3.tar.gz --markdown 20240602/s/scores/0.8.2-0.8.3/README.md --exclude *.pyd
+[2024-06-02 09:23:18] INFO root fetch - processPackages [hj-proj-module]: Remove: archive file [/home/abi/fetcher/tmp/hj_proj_module-0.1.7.tar.gz]
+[2024-06-02 09:23:18] INFO root fetch - processPackages [hj-proj-module]: Remove: archive file [/home/abi/fetcher/tmp/hj_proj_module-0.1.9.tar.gz]
+[2024-06-02 09:23:18] INFO root fetch - main [MainThread]: End processing [hj-proj-module]: success
+[2024-06-02 09:23:18] INFO root fetch - processPackages [CI-CloudConnector]: Remove: archive file [/home/abi/fetcher/tmp/ci_cloudconnector-2.2.tar.gz]
+[2024-06-02 09:23:18] INFO root fetch - processPackages [CI-CloudConnector]: Remove: archive file [/home/abi/fetcher/tmp/ci_cloudconnector-2.3.tar.gz]
+[2024-06-02 09:23:18] INFO root fetch - main [MainThread]: End processing [CI-CloudConnector]: success
+[2024-06-02 09:23:18] INFO root fetch - processPackages [scores]: Remove: archive file [/home/abi/fetcher/tmp/scores-0.8.2.tar.gz]
+[2024-06-02 09:23:18] INFO root fetch - processPackages [scores]: Remove: archive file [/home/abi/fetcher/tmp/scores-0.8.3.tar.gz]
+[2024-06-02 09:23:18] INFO root fetch - main [MainThread]: End processing [scores]: success
+[2024-06-02 09:23:18] INFO root fetch - processPackages [bttc]: Remove: archive file [/home/abi/fetcher/tmp/bttc-0.0.80.tar.gz]
+[2024-06-02 09:23:18] INFO root fetch - processPackages [bttc]: Remove: archive file [/home/abi/fetcher/tmp/bttc-0.0.81.tar.gz]
+[2024-06-02 09:23:18] INFO root fetch - main [MainThread]: End processing [bttc]: success
+[2024-06-02 09:23:18] INFO root fetch - main [MainThread]: Store serial: [23487013]
