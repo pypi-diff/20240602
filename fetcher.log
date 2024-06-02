@@ -11596,3 +11596,33 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 16:57:57] INFO root fetch - processPackages [ml4co-kit]: Remove: archive file [/home/abi/fetcher/tmp/ml4co_kit-0.0.6.tar.gz]
 [2024-06-02 16:57:57] INFO root fetch - main [MainThread]: End processing [ml4co-kit]: success
 [2024-06-02 16:57:57] INFO root fetch - main [MainThread]: Store serial: [23489832]
+[2024-06-02 17:00:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23489832]
+[2024-06-02 17:00:06] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-02 17:00:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: variable-local
+[2024-06-02 17:00:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyrevolut
+[2024-06-02 17:00:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mteb
+[2024-06-02 17:00:06] INFO root fetch - processPackages [variable-local]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-06-02 17:00:06] INFO root fetch - processPackages [mteb]: New version: [1.9.3] Old Version: [1.9.2]
+[2024-06-02 17:00:06] INFO root fetch - processPackages [variable-local]: Downloading https://files.pythonhosted.org/packages/70/d7/8f1cedc8864b64b1a14b0babb14012e1b55d36ce7f7d4131efd3a144ba8d/variable_local-0.0.98.tar.gz
+[2024-06-02 17:00:06] INFO root fetch - processPackages [pyrevolut]: New version: [0.7.1] Old Version: [0.7.0]
+[2024-06-02 17:00:06] INFO root fetch - processPackages [mteb]: Downloading https://files.pythonhosted.org/packages/aa/99/be58df74a89833b5d44fbd8f00e5c99b4ca82aa67a9c1487fd782328d3b5/mteb-1.9.2.tar.gz
+[2024-06-02 17:00:06] INFO root fetch - processPackages [pyrevolut]: Downloading https://files.pythonhosted.org/packages/92/70/dc0947bf4bff020b716e2e9cf86c0f0054cac4edaa35fc1d747ec4bc2dc2/pyrevolut-0.7.0.tar.gz
+[2024-06-02 17:00:06] INFO root fetch - processPackages [variable-local]: Downloading https://files.pythonhosted.org/packages/20/8b/ee9947a8caefb731b30941901e0fe4a1c3ea3ec0e2f19a88de6dbd7bc499/variable_local-0.0.99.tar.gz
+[2024-06-02 17:00:06] INFO root fetch - processPackages [mteb]: Downloading https://files.pythonhosted.org/packages/1a/05/483a4778dcfb42b672c3c28ac435e64d386b1df507d3c0059e5da9194653/mteb-1.9.3.tar.gz
+[2024-06-02 17:00:06] INFO root fetch - processPackages [variable-local]: executing diffoscope
+[2024-06-02 17:00:06] INFO root fetch - processPackages [variable-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/variable_local-0.0.98.tar.gz tmp/variable_local-0.0.99.tar.gz --markdown 20240602/v/variable-local/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-06-02 17:00:07] INFO root fetch - processPackages [mteb]: executing diffoscope
+[2024-06-02 17:00:07] INFO root fetch - processPackages [mteb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mteb-1.9.2.tar.gz tmp/mteb-1.9.3.tar.gz --markdown 20240602/m/mteb/1.9.2-1.9.3/README.md --exclude *.pyd
+[2024-06-02 17:00:07] INFO root fetch - processPackages [pyrevolut]: Downloading https://files.pythonhosted.org/packages/fe/a1/8c6a85c3a2630e9ddd0278675bc877ab1dda092acf875489596fac0af8e1/pyrevolut-0.7.1.tar.gz
+[2024-06-02 17:00:07] INFO root fetch - processPackages [pyrevolut]: executing diffoscope
+[2024-06-02 17:00:07] INFO root fetch - processPackages [pyrevolut]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyrevolut-0.7.0.tar.gz tmp/pyrevolut-0.7.1.tar.gz --markdown 20240602/p/pyrevolut/0.7.0-0.7.1/README.md --exclude *.pyd
+[2024-06-02 17:00:07] INFO root fetch - processPackages [variable-local]: Remove: archive file [/home/abi/fetcher/tmp/variable_local-0.0.98.tar.gz]
+[2024-06-02 17:00:07] INFO root fetch - processPackages [variable-local]: Remove: archive file [/home/abi/fetcher/tmp/variable_local-0.0.99.tar.gz]
+[2024-06-02 17:00:07] INFO root fetch - main [MainThread]: End processing [variable-local]: success
+[2024-06-02 17:00:08] INFO root fetch - processPackages [pyrevolut]: Remove: archive file [/home/abi/fetcher/tmp/pyrevolut-0.7.0.tar.gz]
+[2024-06-02 17:00:08] INFO root fetch - processPackages [pyrevolut]: Remove: archive file [/home/abi/fetcher/tmp/pyrevolut-0.7.1.tar.gz]
+[2024-06-02 17:00:08] INFO root fetch - main [MainThread]: End processing [pyrevolut]: success
+[2024-06-02 17:00:09] INFO root fetch - processPackages [mteb]: Remove: archive file [/home/abi/fetcher/tmp/mteb-1.9.2.tar.gz]
+[2024-06-02 17:00:09] INFO root fetch - processPackages [mteb]: Remove: archive file [/home/abi/fetcher/tmp/mteb-1.9.3.tar.gz]
+[2024-06-02 17:00:09] INFO root fetch - main [MainThread]: End processing [mteb]: success
+[2024-06-02 17:00:09] INFO root fetch - main [MainThread]: Store serial: [23489844]
