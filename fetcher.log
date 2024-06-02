@@ -10895,3 +10895,37 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-02 16:18:35] INFO root fetch - processPackages [xrayvisim]: Remove: archive file [/home/abi/fetcher/tmp/xrayvisim-0.2.0rc1.tar.gz]
 [2024-06-02 16:18:35] INFO root fetch - main [MainThread]: End processing [xrayvisim]: success
 [2024-06-02 16:18:35] INFO root fetch - main [MainThread]: Store serial: [23489565]
+[2024-06-02 16:20:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23489565]
+[2024-06-02 16:20:44] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-06-02 16:20:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sc3dg
+[2024-06-02 16:20:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: oc_ocdm
+[2024-06-02 16:20:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: qtmetabolabpy
+[2024-06-02 16:20:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tdrpa.tdworker
+[2024-06-02 16:20:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: metabolabpy
+[2024-06-02 16:20:44] INFO root fetch - processPackages [qtmetabolabpy]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-06-02 16:20:44] WARNING root fetch - processPackages [tdrpa.tdworker]: Skipping, unable to determine old version
+[2024-06-02 16:20:44] INFO root fetch - main [MainThread]: End processing [tdrpa.tdworker] error
+[2024-06-02 16:20:44] INFO root fetch - processPackages [metabolabpy]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-06-02 16:20:44] INFO root fetch - processPackages [qtmetabolabpy]: Downloading https://files.pythonhosted.org/packages/fc/e2/f856056b07aa55a8d8a82bf8703c4191622708083a75f14b4916e6937e97/qtmetabolabpy-0.9.8.tar.gz
+[2024-06-02 16:20:44] INFO root fetch - processPackages [sc3dg]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-06-02 16:20:44] INFO root fetch - processPackages [oc_ocdm]: New version: [8.1.1] Old Version: [8.1.0]
+[2024-06-02 16:20:44] INFO root fetch - processPackages [metabolabpy]: Downloading https://files.pythonhosted.org/packages/25/6b/78b78d5958823abcc755c49b830b5b3694bdfc0e0714f49c48e570d5d15a/metabolabpy-0.9.8.tar.gz
+[2024-06-02 16:20:44] WARNING root fetch - processPackages [qtmetabolabpy]: Skipping package: exceeds size limit 59150248>=10485760
+[2024-06-02 16:20:44] INFO root fetch - main [MainThread]: End processing [qtmetabolabpy] error
+[2024-06-02 16:20:44] WARNING root fetch - processPackages [metabolabpy]: Skipping package: exceeds size limit 11267341>=10485760
+[2024-06-02 16:20:44] INFO root fetch - main [MainThread]: End processing [metabolabpy] error
+[2024-06-02 16:20:44] INFO root fetch - processPackages [sc3dg]: Downloading https://files.pythonhosted.org/packages/97/65/1394420940d9bdc212860a3842baed2ba84016ee1556fa9c66bfb0fa3d07/sc3dg-0.0.8.tar.gz
+[2024-06-02 16:20:44] INFO root fetch - processPackages [oc_ocdm]: Downloading https://files.pythonhosted.org/packages/cc/d6/9456308192bc86e856e052781484fdeeb0ecc9df899bceaea34728639b01/oc_ocdm-8.1.0.tar.gz
+[2024-06-02 16:20:45] INFO root fetch - processPackages [sc3dg]: Downloading https://files.pythonhosted.org/packages/36/99/5a97c5b877e089a11d7fcbc1d935f5e5301bcc0f77867bda7d000fc1eb58/sc3dg-0.0.9.tar.gz
+[2024-06-02 16:20:45] INFO root fetch - processPackages [oc_ocdm]: Downloading https://files.pythonhosted.org/packages/aa/d6/aff6aa807f9f12bd54c89ac4460e24ba7d76c2103cf569746cefd732b39a/oc_ocdm-8.1.1.tar.gz
+[2024-06-02 16:20:45] INFO root fetch - processPackages [sc3dg]: executing diffoscope
+[2024-06-02 16:20:45] INFO root fetch - processPackages [sc3dg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sc3dg-0.0.8.tar.gz tmp/sc3dg-0.0.9.tar.gz --markdown 20240602/s/sc3dg/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-06-02 16:20:45] INFO root fetch - processPackages [oc_ocdm]: executing diffoscope
+[2024-06-02 16:20:45] INFO root fetch - processPackages [oc_ocdm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oc_ocdm-8.1.0.tar.gz tmp/oc_ocdm-8.1.1.tar.gz --markdown 20240602/o/oc_ocdm/8.1.0-8.1.1/README.md --exclude *.pyd
+[2024-06-02 16:20:45] INFO root fetch - processPackages [sc3dg]: Remove: archive file [/home/abi/fetcher/tmp/sc3dg-0.0.8.tar.gz]
+[2024-06-02 16:20:45] INFO root fetch - processPackages [sc3dg]: Remove: archive file [/home/abi/fetcher/tmp/sc3dg-0.0.9.tar.gz]
+[2024-06-02 16:20:45] INFO root fetch - main [MainThread]: End processing [sc3dg]: success
+[2024-06-02 16:20:46] INFO root fetch - processPackages [oc_ocdm]: Remove: archive file [/home/abi/fetcher/tmp/oc_ocdm-8.1.0.tar.gz]
+[2024-06-02 16:20:46] INFO root fetch - processPackages [oc_ocdm]: Remove: archive file [/home/abi/fetcher/tmp/oc_ocdm-8.1.1.tar.gz]
+[2024-06-02 16:20:46] INFO root fetch - main [MainThread]: End processing [oc_ocdm]: success
+[2024-06-02 16:20:46] INFO root fetch - main [MainThread]: Store serial: [23489579]
