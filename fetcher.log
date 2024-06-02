@@ -11049,3 +11049,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-02 16:27:12] INFO root fetch - processPackages [glide-for-redis]: Remove: archive file [/home/abi/fetcher/tmp/glide_for_redis-0.4.1rc3-cp39-cp39-manylinux_2_28_aarch64.whl.zip]
 [2024-06-02 16:27:12] INFO root fetch - main [MainThread]: End processing [glide-for-redis]: success
 [2024-06-02 16:27:12] INFO root fetch - main [MainThread]: Store serial: [23489645]
+[2024-06-02 16:29:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23489645]
+[2024-06-02 16:29:25] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-06-02 16:29:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: text-block-local
+[2024-06-02 16:29:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: simpleworkspace
+[2024-06-02 16:29:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nonebot-plugin-nai3-bot
+[2024-06-02 16:29:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dbt-command-center
+[2024-06-02 16:29:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: gliclass
+[2024-06-02 16:29:25] INFO root fetch - processPackages [simpleworkspace]: New version: [1.2.214] Old Version: [1.2.213]
+[2024-06-02 16:29:25] INFO root fetch - processPackages [nonebot-plugin-nai3-bot]: New version: [1.1.0] Old Version: [1.0.1]
+[2024-06-02 16:29:25] INFO root fetch - processPackages [simpleworkspace]: Downloading https://files.pythonhosted.org/packages/b5/58/b1a0b34ec63dc43cb54fbd390d091e657932250c928da0792e7cf1471908/simpleworkspace-1.2.213.tar.gz
+[2024-06-02 16:29:25] INFO root fetch - processPackages [text-block-local]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-06-02 16:29:25] WARNING root fetch - processPackages [gliclass]: Skipping, unable to determine old version
+[2024-06-02 16:29:25] INFO root fetch - main [MainThread]: End processing [gliclass] error
+[2024-06-02 16:29:25] INFO root fetch - processPackages [nonebot-plugin-nai3-bot]: Downloading https://files.pythonhosted.org/packages/82/a6/445dbb6648db802aae379bebdbcdb1dbae1e692b8fd2d68e60208ffb49b7/nonebot_plugin_nai3_bot-1.0.1.tar.gz
+[2024-06-02 16:29:25] INFO root fetch - processPackages [dbt-command-center]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-06-02 16:29:25] INFO root fetch - processPackages [text-block-local]: Downloading https://files.pythonhosted.org/packages/70/2c/1e2d2d092952d9578a3bd66ea8d19829b2cdcb307254112a3b482d4403bd/text-block-local-0.0.8.tar.gz
+[2024-06-02 16:29:25] INFO root fetch - processPackages [nonebot-plugin-nai3-bot]: Downloading https://files.pythonhosted.org/packages/f6/31/979c8c9eff2ef542ac5d6107128578b2e424598c0970f8427e55da1f865a/nonebot_plugin_nai3_bot-1.1.0.tar.gz
+[2024-06-02 16:29:25] INFO root fetch - processPackages [dbt-command-center]: Downloading https://files.pythonhosted.org/packages/be/f2/bd7bb6ed02db3abf4be3dbd9bec4ac6ec28c78772395c4c048c5d2e7ab67/dbt_command_center-0.1.8.tar.gz
+[2024-06-02 16:29:25] INFO root fetch - processPackages [nonebot-plugin-nai3-bot]: executing diffoscope
+[2024-06-02 16:29:25] INFO root fetch - processPackages [nonebot-plugin-nai3-bot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_nai3_bot-1.0.1.tar.gz tmp/nonebot_plugin_nai3_bot-1.1.0.tar.gz --markdown 20240602/n/nonebot-plugin-nai3-bot/1.0.1-1.1.0/README.md --exclude *.pyd
+[2024-06-02 16:29:25] INFO root fetch - processPackages [simpleworkspace]: Downloading https://files.pythonhosted.org/packages/2d/da/fbc60248474be5cf6b8fa2b55daae9d3eb3bd6c9c7340ac89d9f264172a7/simpleworkspace-1.2.214.tar.gz
+[2024-06-02 16:29:26] INFO root fetch - processPackages [text-block-local]: Downloading https://files.pythonhosted.org/packages/71/bc/24522c5007f2452a7e32a445163d898233d9b0cc266aed587c5f36dc2bc9/text-block-local-0.0.9.tar.gz
+[2024-06-02 16:29:26] INFO root fetch - processPackages [simpleworkspace]: executing diffoscope
+[2024-06-02 16:29:26] INFO root fetch - processPackages [simpleworkspace]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simpleworkspace-1.2.213.tar.gz tmp/simpleworkspace-1.2.214.tar.gz --markdown 20240602/s/simpleworkspace/1.2.213-1.2.214/README.md --exclude *.pyd
+[2024-06-02 16:29:26] INFO root fetch - processPackages [text-block-local]: executing diffoscope
+[2024-06-02 16:29:26] INFO root fetch - processPackages [text-block-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/text-block-local-0.0.8.tar.gz tmp/text-block-local-0.0.9.tar.gz --markdown 20240602/t/text-block-local/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-06-02 16:29:26] INFO root fetch - processPackages [dbt-command-center]: Downloading https://files.pythonhosted.org/packages/66/5f/5fedd28b2272fdf006ed8bb414d5fad18369ccd87f8092e9f90a626017b7/dbt_command_center-0.1.9.tar.gz
+[2024-06-02 16:29:26] INFO root fetch - processPackages [dbt-command-center]: executing diffoscope
+[2024-06-02 16:29:26] INFO root fetch - processPackages [dbt-command-center]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbt_command_center-0.1.8.tar.gz tmp/dbt_command_center-0.1.9.tar.gz --markdown 20240602/d/dbt-command-center/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-06-02 16:29:26] INFO root fetch - processPackages [nonebot-plugin-nai3-bot]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_nai3_bot-1.0.1.tar.gz]
+[2024-06-02 16:29:26] INFO root fetch - processPackages [nonebot-plugin-nai3-bot]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_nai3_bot-1.1.0.tar.gz]
+[2024-06-02 16:29:26] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-nai3-bot]: success
+[2024-06-02 16:29:26] INFO root fetch - processPackages [text-block-local]: Remove: archive file [/home/abi/fetcher/tmp/text-block-local-0.0.8.tar.gz]
+[2024-06-02 16:29:26] INFO root fetch - processPackages [text-block-local]: Remove: archive file [/home/abi/fetcher/tmp/text-block-local-0.0.9.tar.gz]
+[2024-06-02 16:29:26] INFO root fetch - main [MainThread]: End processing [text-block-local]: success
+[2024-06-02 16:29:26] INFO root fetch - processPackages [simpleworkspace]: Remove: archive file [/home/abi/fetcher/tmp/simpleworkspace-1.2.213.tar.gz]
+[2024-06-02 16:29:26] INFO root fetch - processPackages [simpleworkspace]: Remove: archive file [/home/abi/fetcher/tmp/simpleworkspace-1.2.214.tar.gz]
+[2024-06-02 16:29:26] INFO root fetch - main [MainThread]: End processing [simpleworkspace]: success
+[2024-06-02 16:29:29] INFO root fetch - processPackages [dbt-command-center]: Remove: archive file [/home/abi/fetcher/tmp/dbt_command_center-0.1.8.tar.gz]
+[2024-06-02 16:29:29] INFO root fetch - processPackages [dbt-command-center]: Remove: archive file [/home/abi/fetcher/tmp/dbt_command_center-0.1.9.tar.gz]
+[2024-06-02 16:29:29] INFO root fetch - main [MainThread]: End processing [dbt-command-center]: success
+[2024-06-02 16:29:29] INFO root fetch - main [MainThread]: Store serial: [23489663]
