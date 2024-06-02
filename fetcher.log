@@ -8993,3 +8993,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-02 14:02:56] INFO root fetch - processPackages [khoj-assistant]: Remove: archive file [/home/abi/fetcher/tmp/khoj_assistant-1.9.1.dev8.tar.gz]
 [2024-06-02 14:02:56] INFO root fetch - main [MainThread]: End processing [khoj-assistant]: success
 [2024-06-02 14:02:56] INFO root fetch - main [MainThread]: Store serial: [23488617]
+[2024-06-02 14:05:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23488617]
+[2024-06-02 14:05:05] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-02 14:05:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: defi-state-querier
+[2024-06-02 14:05:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: AdroitFisherman
+[2024-06-02 14:05:05] INFO root fetch - processPackages [defi-state-querier]: New version: [0.4.9] Old Version: [0.4.8]
+[2024-06-02 14:05:05] INFO root fetch - processPackages [AdroitFisherman]: New version: [0.0.30] Old Version: [0.0.29]
+[2024-06-02 14:05:05] INFO root fetch - processPackages [defi-state-querier]: Downloading https://files.pythonhosted.org/packages/27/ac/69e6e64d375a18e5e93c977d67f78276ccbe94433414d36e404d2fc84478/defi-state-querier-0.4.8.tar.gz
+[2024-06-02 14:05:05] INFO root fetch - processPackages [AdroitFisherman]: Downloading https://files.pythonhosted.org/packages/32/49/a41f0df5967db6d401e9b9cb42adc300b5f3434cba1e4645a6cfdcbb3f6f/AdroitFisherman-0.0.29.tar.gz
+[2024-06-02 14:05:06] INFO root fetch - processPackages [AdroitFisherman]: Downloading https://files.pythonhosted.org/packages/88/98/9cb7d83e5767b54584e588eea16f01fd72c0fb89d500f2e0f400af7fda47/AdroitFisherman-0.0.30.tar.gz
+[2024-06-02 14:05:06] INFO root fetch - processPackages [defi-state-querier]: Downloading https://files.pythonhosted.org/packages/af/32/1df414ae15b110c03fd3a9dd7a211637e59ea969e39591711b5f005c962e/defi-state-querier-0.4.9.tar.gz
+[2024-06-02 14:05:06] INFO root fetch - processPackages [defi-state-querier]: executing diffoscope
+[2024-06-02 14:05:06] INFO root fetch - processPackages [defi-state-querier]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/defi-state-querier-0.4.8.tar.gz tmp/defi-state-querier-0.4.9.tar.gz --markdown 20240602/d/defi-state-querier/0.4.8-0.4.9/README.md --exclude *.pyd
+[2024-06-02 14:05:06] INFO root fetch - processPackages [AdroitFisherman]: executing diffoscope
+[2024-06-02 14:05:06] INFO root fetch - processPackages [AdroitFisherman]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/AdroitFisherman-0.0.29.tar.gz tmp/AdroitFisherman-0.0.30.tar.gz --markdown 20240602/A/AdroitFisherman/0.0.29-0.0.30/README.md --exclude *.pyd
+[2024-06-02 14:05:07] INFO root fetch - processPackages [AdroitFisherman]: Remove: archive file [/home/abi/fetcher/tmp/AdroitFisherman-0.0.29.tar.gz]
+[2024-06-02 14:05:07] INFO root fetch - processPackages [AdroitFisherman]: Remove: archive file [/home/abi/fetcher/tmp/AdroitFisherman-0.0.30.tar.gz]
+[2024-06-02 14:05:07] INFO root fetch - main [MainThread]: End processing [AdroitFisherman]: success
+[2024-06-02 14:05:08] INFO root fetch - processPackages [defi-state-querier]: Remove: archive file [/home/abi/fetcher/tmp/defi-state-querier-0.4.8.tar.gz]
+[2024-06-02 14:05:08] INFO root fetch - processPackages [defi-state-querier]: Remove: archive file [/home/abi/fetcher/tmp/defi-state-querier-0.4.9.tar.gz]
+[2024-06-02 14:05:08] INFO root fetch - main [MainThread]: End processing [defi-state-querier]: success
+[2024-06-02 14:05:08] INFO root fetch - main [MainThread]: Store serial: [23488628]
