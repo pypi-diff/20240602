@@ -6665,3 +6665,24 @@
 [2024-06-02 11:11:07] INFO root fetch - processPackages [flake8-typing-collections]: Remove: archive file [/home/abi/fetcher/tmp/flake8_typing_collections-2.1.tar.gz]
 [2024-06-02 11:11:07] INFO root fetch - main [MainThread]: End processing [flake8-typing-collections]: success
 [2024-06-02 11:11:07] INFO root fetch - main [MainThread]: Store serial: [23487603]
+[2024-06-02 11:13:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23487603]
+[2024-06-02 11:13:15] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-02 11:13:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: unparallel
+[2024-06-02 11:13:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: scisuit
+[2024-06-02 11:13:15] INFO root fetch - processPackages [unparallel]: New version: [0.3.0] Old Version: [0.2.0]
+[2024-06-02 11:13:15] INFO root fetch - processPackages [scisuit]: New version: [1.3.2] Old Version: [1.3.1]
+[2024-06-02 11:13:15] INFO root fetch - processPackages [unparallel]: Downloading https://files.pythonhosted.org/packages/62/13/05cdb5c5d796305e8fdd7353170fc87760c16351e48dc2d04370a68e1b02/unparallel-0.2.0.tar.gz
+[2024-06-02 11:13:15] INFO root fetch - processPackages [scisuit]: Downloading https://files.pythonhosted.org/packages/5a/3d/7515967019ac5936d86dcec298842fc823dc886237babb0b418aabba9110/scisuit-1.3.1.tar.gz
+[2024-06-02 11:13:15] INFO root fetch - processPackages [unparallel]: Downloading https://files.pythonhosted.org/packages/d9/93/152375ea9c80cbaa3f4f33e75f071fbeb3076e9205e45170040172a4c708/unparallel-0.3.0.tar.gz
+[2024-06-02 11:13:15] INFO root fetch - processPackages [unparallel]: executing diffoscope
+[2024-06-02 11:13:15] INFO root fetch - processPackages [unparallel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unparallel-0.2.0.tar.gz tmp/unparallel-0.3.0.tar.gz --markdown 20240602/u/unparallel/0.2.0-0.3.0/README.md --exclude *.pyd
+[2024-06-02 11:13:16] INFO root fetch - processPackages [scisuit]: Downloading https://files.pythonhosted.org/packages/0c/b9/37dc821aed3c1ff95f7a12aa8a6753d94585062e9e131b777666bd206cf3/scisuit-1.3.2.tar.gz
+[2024-06-02 11:13:16] INFO root fetch - processPackages [unparallel]: Remove: archive file [/home/abi/fetcher/tmp/unparallel-0.2.0.tar.gz]
+[2024-06-02 11:13:16] INFO root fetch - processPackages [unparallel]: Remove: archive file [/home/abi/fetcher/tmp/unparallel-0.3.0.tar.gz]
+[2024-06-02 11:13:16] INFO root fetch - main [MainThread]: End processing [unparallel]: success
+[2024-06-02 11:13:17] INFO root fetch - processPackages [scisuit]: executing diffoscope
+[2024-06-02 11:13:17] INFO root fetch - processPackages [scisuit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scisuit-1.3.1.tar.gz tmp/scisuit-1.3.2.tar.gz --markdown 20240602/s/scisuit/1.3.1-1.3.2/README.md --exclude *.pyd
+[2024-06-02 11:13:29] INFO root fetch - processPackages [scisuit]: Remove: archive file [/home/abi/fetcher/tmp/scisuit-1.3.1.tar.gz]
+[2024-06-02 11:13:29] INFO root fetch - processPackages [scisuit]: Remove: archive file [/home/abi/fetcher/tmp/scisuit-1.3.2.tar.gz]
+[2024-06-02 11:13:29] INFO root fetch - main [MainThread]: End processing [scisuit]: success
+[2024-06-02 11:13:29] INFO root fetch - main [MainThread]: Store serial: [23487610]
