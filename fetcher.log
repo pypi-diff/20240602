@@ -6938,3 +6938,15 @@
 [2024-06-02 11:36:14] INFO root fetch - processPackages [bain-wizard-interpreter]: Remove: archive file [/home/abi/fetcher/tmp/bain_wizard_interpreter-1.0.4.tar.gz]
 [2024-06-02 11:36:14] INFO root fetch - main [MainThread]: End processing [bain-wizard-interpreter]: success
 [2024-06-02 11:36:14] INFO root fetch - main [MainThread]: Store serial: [23487825]
+[2024-06-02 11:38:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23487825]
+[2024-06-02 11:38:24] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-02 11:38:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pytfvars
+[2024-06-02 11:38:25] INFO root fetch - processPackages [pytfvars]: New version: [1.0.3] Old Version: [1.0.2]
+[2024-06-02 11:38:25] INFO root fetch - processPackages [pytfvars]: Downloading https://files.pythonhosted.org/packages/13/77/46ad7ff5a9a9b2024e3b37641094bba7de6af039591ab074185697ad2300/pytfvars-1.0.2.tar.gz
+[2024-06-02 11:38:25] INFO root fetch - processPackages [pytfvars]: Downloading https://files.pythonhosted.org/packages/e5/d8/4ec8eff28b7c8ce185fd204db36076e313aa955bbb43ccdf62705371f513/pytfvars-1.0.3.tar.gz
+[2024-06-02 11:38:25] INFO root fetch - processPackages [pytfvars]: executing diffoscope
+[2024-06-02 11:38:25] INFO root fetch - processPackages [pytfvars]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytfvars-1.0.2.tar.gz tmp/pytfvars-1.0.3.tar.gz --markdown 20240602/p/pytfvars/1.0.2-1.0.3/README.md --exclude *.pyd
+[2024-06-02 11:38:26] INFO root fetch - processPackages [pytfvars]: Remove: archive file [/home/abi/fetcher/tmp/pytfvars-1.0.2.tar.gz]
+[2024-06-02 11:38:26] INFO root fetch - processPackages [pytfvars]: Remove: archive file [/home/abi/fetcher/tmp/pytfvars-1.0.3.tar.gz]
+[2024-06-02 11:38:26] INFO root fetch - main [MainThread]: End processing [pytfvars]: success
+[2024-06-02 11:38:26] INFO root fetch - main [MainThread]: Store serial: [23487830]
