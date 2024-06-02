@@ -2115,3 +2115,24 @@
 [2024-06-02 02:35:45] INFO root fetch - processPackages [aeppl-nightly]: Remove: archive file [/home/abi/fetcher/tmp/aeppl_nightly-0.1.5.dev20240601.tar.gz]
 [2024-06-02 02:35:45] INFO root fetch - main [MainThread]: End processing [aeppl-nightly]: success
 [2024-06-02 02:35:45] INFO root fetch - main [MainThread]: Store serial: [23485002]
+[2024-06-02 02:37:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23485002]
+[2024-06-02 02:37:53] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-02 02:37:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: id-card-recognition
+[2024-06-02 02:37:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyro-ppl
+[2024-06-02 02:37:53] INFO root fetch - processPackages [id-card-recognition]: New version: [0.3.8] Old Version: [0.3.6]
+[2024-06-02 02:37:53] INFO root fetch - processPackages [pyro-ppl]: New version: [1.9.0] Old Version: [1.8.6]
+[2024-06-02 02:37:53] INFO root fetch - processPackages [id-card-recognition]: Downloading https://files.pythonhosted.org/packages/e8/5a/6b1b639ec64e77a881c27e4e40206653c78468c1b2d376566eb24cdf00cb/id_card_recognition-0.3.6.tar.gz
+[2024-06-02 02:37:53] INFO root fetch - processPackages [pyro-ppl]: Downloading https://files.pythonhosted.org/packages/01/b7/fb6003a66d94e9454da7d7ee6615d8cb98ba745b857be496ab375580d842/pyro-ppl-1.8.6.tar.gz
+[2024-06-02 02:37:53] INFO root fetch - processPackages [id-card-recognition]: Downloading https://files.pythonhosted.org/packages/80/b3/b9ced90397277d454eb7378652d3de6850cf50d263ff49b3dac3a76226e3/id_card_recognition-0.3.8.tar.gz
+[2024-06-02 02:37:54] INFO root fetch - processPackages [id-card-recognition]: executing diffoscope
+[2024-06-02 02:37:54] INFO root fetch - processPackages [id-card-recognition]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/id_card_recognition-0.3.6.tar.gz tmp/id_card_recognition-0.3.8.tar.gz --markdown 20240602/i/id-card-recognition/0.3.6-0.3.8/README.md --exclude *.pyd
+[2024-06-02 02:37:54] INFO root fetch - processPackages [pyro-ppl]: Downloading https://files.pythonhosted.org/packages/95/2d/a498ef1a292935c35a7b3c83971975974a39900fac4cc43f5398212181aa/pyro-ppl-1.9.0.tar.gz
+[2024-06-02 02:37:54] INFO root fetch - processPackages [pyro-ppl]: executing diffoscope
+[2024-06-02 02:37:54] INFO root fetch - processPackages [pyro-ppl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyro-ppl-1.8.6.tar.gz tmp/pyro-ppl-1.9.0.tar.gz --markdown 20240602/p/pyro-ppl/1.8.6-1.9.0/README.md --exclude *.pyd
+[2024-06-02 02:37:54] INFO root fetch - processPackages [id-card-recognition]: Remove: archive file [/home/abi/fetcher/tmp/id_card_recognition-0.3.6.tar.gz]
+[2024-06-02 02:37:54] INFO root fetch - processPackages [id-card-recognition]: Remove: archive file [/home/abi/fetcher/tmp/id_card_recognition-0.3.8.tar.gz]
+[2024-06-02 02:37:54] INFO root fetch - main [MainThread]: End processing [id-card-recognition]: success
+[2024-06-02 02:37:56] INFO root fetch - processPackages [pyro-ppl]: Remove: archive file [/home/abi/fetcher/tmp/pyro-ppl-1.8.6.tar.gz]
+[2024-06-02 02:37:56] INFO root fetch - processPackages [pyro-ppl]: Remove: archive file [/home/abi/fetcher/tmp/pyro-ppl-1.9.0.tar.gz]
+[2024-06-02 02:37:56] INFO root fetch - main [MainThread]: End processing [pyro-ppl]: success
+[2024-06-02 02:37:56] INFO root fetch - main [MainThread]: Store serial: [23485011]
