@@ -11632,3 +11632,21 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 17:02:18] WARNING root fetch - processPackages [squel]: Skipping, unable to determine old version
 [2024-06-02 17:02:18] INFO root fetch - main [MainThread]: End processing [squel] error
 [2024-06-02 17:02:18] INFO root fetch - main [MainThread]: Store serial: [23489850]
+[2024-06-02 17:04:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23489850]
+[2024-06-02 17:04:26] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-02 17:04:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyftms
+[2024-06-02 17:04:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: minisklearn
+[2024-06-02 17:04:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: voyage-agents
+[2024-06-02 17:04:26] INFO root fetch - processPackages [pyftms]: New version: [0.2.3] Old Version: [0.2.2]
+[2024-06-02 17:04:26] WARNING root fetch - processPackages [voyage-agents]: Skipping, unable to determine old version
+[2024-06-02 17:04:26] INFO root fetch - main [MainThread]: End processing [voyage-agents] error
+[2024-06-02 17:04:26] INFO root fetch - processPackages [pyftms]: Downloading https://files.pythonhosted.org/packages/f8/a3/afb3677defba3dbbc16c9c1e99a82f7c155f895f712326bfdeb512bc951b/pyftms-0.2.2.tar.gz
+[2024-06-02 17:04:26] WARNING root fetch - processPackages [minisklearn]: Skipping, unable to determine old version
+[2024-06-02 17:04:26] INFO root fetch - main [MainThread]: End processing [minisklearn] error
+[2024-06-02 17:04:27] INFO root fetch - processPackages [pyftms]: Downloading https://files.pythonhosted.org/packages/5d/fd/9639ed046110fa197012248943dd54228355d9c244f0e52205820634d0e0/pyftms-0.2.3.tar.gz
+[2024-06-02 17:04:27] INFO root fetch - processPackages [pyftms]: executing diffoscope
+[2024-06-02 17:04:27] INFO root fetch - processPackages [pyftms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyftms-0.2.2.tar.gz tmp/pyftms-0.2.3.tar.gz --markdown 20240602/p/pyftms/0.2.2-0.2.3/README.md --exclude *.pyd
+[2024-06-02 17:04:27] INFO root fetch - processPackages [pyftms]: Remove: archive file [/home/abi/fetcher/tmp/pyftms-0.2.2.tar.gz]
+[2024-06-02 17:04:27] INFO root fetch - processPackages [pyftms]: Remove: archive file [/home/abi/fetcher/tmp/pyftms-0.2.3.tar.gz]
+[2024-06-02 17:04:27] INFO root fetch - main [MainThread]: End processing [pyftms]: success
+[2024-06-02 17:04:27] INFO root fetch - main [MainThread]: Store serial: [23489858]
