@@ -15290,3 +15290,50 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 19:54:32] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.5.9.tar.gz]
 [2024-06-02 19:54:32] INFO root fetch - main [MainThread]: End processing [mimllearning]: success
 [2024-06-02 19:54:32] INFO root fetch - main [MainThread]: Store serial: [23491514]
+[2024-06-02 19:56:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23491514]
+[2024-06-02 19:56:40] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-06-02 19:56:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: informal-detector
+[2024-06-02 19:56:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ytdl-sub
+[2024-06-02 19:56:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: browserxt
+[2024-06-02 19:56:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: feincms3
+[2024-06-02 19:56:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: schemafunc
+[2024-06-02 19:56:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: kfish
+[2024-06-02 19:56:40] INFO root fetch - processPackages [browserxt]: New version: [0.2.0] Old Version: [0.1.5]
+[2024-06-02 19:56:40] INFO root fetch - processPackages [kfish]: New version: [99.0.202406021634] Old Version: [99.0.202406021553]
+[2024-06-02 19:56:40] INFO root fetch - processPackages [schemafunc]: New version: [0.3.8] Old Version: [0.3.7]
+[2024-06-02 19:56:40] WARNING root fetch - processPackages [informal-detector]: Skipping, unable to determine old version
+[2024-06-02 19:56:40] INFO root fetch - main [MainThread]: End processing [informal-detector] error
+[2024-06-02 19:56:40] INFO root fetch - processPackages [browserxt]: Downloading https://files.pythonhosted.org/packages/3f/67/091a3da192e7aae8dce504890a664a216150f536c781b42318d58321a052/browserxt-0.1.5.tar.gz
+[2024-06-02 19:56:40] INFO root fetch - processPackages [schemafunc]: Downloading https://files.pythonhosted.org/packages/b9/a9/434e5b23a6a5b4f291475a8ac0e0c46ff31f463e4966823643f25d78a3e8/schemafunc-0.3.7.tar.gz
+[2024-06-02 19:56:40] INFO root fetch - processPackages [ytdl-sub]: New version: [2024.6.2.post1] Old Version: [2024.5.29]
+[2024-06-02 19:56:40] INFO root fetch - processPackages [feincms3]: New version: [5.0a1] Old Version: [4.6.1]
+[2024-06-02 19:56:40] INFO root fetch - processPackages [kfish]: Downloading https://files.pythonhosted.org/packages/7c/b1/e58c37e633723bc41d69a80f6694b8ef7398ddeaf090819e4e690b27d923/kfish-99.0.202406021553.tar.gz
+[2024-06-02 19:56:40] WARNING root fetch - processPackages [kfish]: Skipping package: exceeds size limit 17007025>=10485760
+[2024-06-02 19:56:40] INFO root fetch - main [MainThread]: End processing [kfish] error
+[2024-06-02 19:56:41] INFO root fetch - processPackages [browserxt]: Downloading https://files.pythonhosted.org/packages/1a/f1/52672de5036a99cd8f67658b1576fe4e2f44fd06e731ca9ba68e9e25540c/browserxt-0.2.0.tar.gz
+[2024-06-02 19:56:41] INFO root fetch - processPackages [schemafunc]: Downloading https://files.pythonhosted.org/packages/cd/bc/6c0846adbfd797317a55d765d4e7fd5e71ee46c9fb52390e422a57565de7/schemafunc-0.3.8.tar.gz
+[2024-06-02 19:56:41] INFO root fetch - processPackages [ytdl-sub]: Downloading https://files.pythonhosted.org/packages/e1/20/05417a02d027c76db0b85ed0663cc05b3fad211684c0fbf8aa8fe74b1a59/ytdl_sub-2024.5.29.tar.gz
+[2024-06-02 19:56:41] INFO root fetch - processPackages [feincms3]: Downloading https://files.pythonhosted.org/packages/56/4a/9b877377f9efe843041969731927cb5a00457fdbc3f75ff19bf01d750a6b/feincms3-4.6.1.tar.gz
+[2024-06-02 19:56:41] INFO root fetch - processPackages [browserxt]: executing diffoscope
+[2024-06-02 19:56:41] INFO root fetch - processPackages [browserxt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/browserxt-0.1.5.tar.gz tmp/browserxt-0.2.0.tar.gz --markdown 20240602/b/browserxt/0.1.5-0.2.0/README.md --exclude *.pyd
+[2024-06-02 19:56:41] INFO root fetch - processPackages [schemafunc]: executing diffoscope
+[2024-06-02 19:56:41] INFO root fetch - processPackages [schemafunc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/schemafunc-0.3.7.tar.gz tmp/schemafunc-0.3.8.tar.gz --markdown 20240602/s/schemafunc/0.3.7-0.3.8/README.md --exclude *.pyd
+[2024-06-02 19:56:41] INFO root fetch - processPackages [feincms3]: Downloading https://files.pythonhosted.org/packages/97/20/2dd4d78fff3ad8bfb4f18715b13ca0d26d82e7d9480d0ce9d90e53810d5b/feincms3-5.0a1.tar.gz
+[2024-06-02 19:56:41] INFO root fetch - processPackages [ytdl-sub]: Downloading https://files.pythonhosted.org/packages/59/94/621a00307fec4f0ab8015a6ddd528a994e661485224e137d57585698adf5/ytdl_sub-2024.6.2.post1.tar.gz
+[2024-06-02 19:56:41] INFO root fetch - processPackages [feincms3]: executing diffoscope
+[2024-06-02 19:56:41] INFO root fetch - processPackages [feincms3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/feincms3-4.6.1.tar.gz tmp/feincms3-5.0a1.tar.gz --markdown 20240602/f/feincms3/4.6.1-5.0a1/README.md --exclude *.pyd
+[2024-06-02 19:56:41] INFO root fetch - processPackages [ytdl-sub]: executing diffoscope
+[2024-06-02 19:56:41] INFO root fetch - processPackages [ytdl-sub]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ytdl_sub-2024.5.29.tar.gz tmp/ytdl_sub-2024.6.2.post1.tar.gz --markdown 20240602/y/ytdl-sub/2024.5.29-2024.6.2.post1/README.md --exclude *.pyd
+[2024-06-02 19:56:41] INFO root fetch - processPackages [browserxt]: Remove: archive file [/home/abi/fetcher/tmp/browserxt-0.1.5.tar.gz]
+[2024-06-02 19:56:41] INFO root fetch - processPackages [browserxt]: Remove: archive file [/home/abi/fetcher/tmp/browserxt-0.2.0.tar.gz]
+[2024-06-02 19:56:41] INFO root fetch - main [MainThread]: End processing [browserxt]: success
+[2024-06-02 19:56:41] INFO root fetch - processPackages [schemafunc]: Remove: archive file [/home/abi/fetcher/tmp/schemafunc-0.3.7.tar.gz]
+[2024-06-02 19:56:41] INFO root fetch - processPackages [schemafunc]: Remove: archive file [/home/abi/fetcher/tmp/schemafunc-0.3.8.tar.gz]
+[2024-06-02 19:56:41] INFO root fetch - main [MainThread]: End processing [schemafunc]: success
+[2024-06-02 19:56:42] INFO root fetch - processPackages [feincms3]: Remove: archive file [/home/abi/fetcher/tmp/feincms3-4.6.1.tar.gz]
+[2024-06-02 19:56:42] INFO root fetch - processPackages [feincms3]: Remove: archive file [/home/abi/fetcher/tmp/feincms3-5.0a1.tar.gz]
+[2024-06-02 19:56:42] INFO root fetch - main [MainThread]: End processing [feincms3]: success
+[2024-06-02 19:56:42] INFO root fetch - processPackages [ytdl-sub]: Remove: archive file [/home/abi/fetcher/tmp/ytdl_sub-2024.5.29.tar.gz]
+[2024-06-02 19:56:42] INFO root fetch - processPackages [ytdl-sub]: Remove: archive file [/home/abi/fetcher/tmp/ytdl_sub-2024.6.2.post1.tar.gz]
+[2024-06-02 19:56:42] INFO root fetch - main [MainThread]: End processing [ytdl-sub]: success
+[2024-06-02 19:56:42] INFO root fetch - main [MainThread]: Store serial: [23491530]
