@@ -10582,3 +10582,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-02 16:01:10] INFO root fetch - processPackages [mentabotix]: Remove: archive file [/home/abi/fetcher/tmp/mentabotix-0.1.5.9.tar.gz]
 [2024-06-02 16:01:10] INFO root fetch - main [MainThread]: End processing [mentabotix]: success
 [2024-06-02 16:01:10] INFO root fetch - main [MainThread]: Store serial: [23489385]
+[2024-06-02 16:03:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23489385]
+[2024-06-02 16:03:19] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-02 16:03:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: patternlib
+[2024-06-02 16:03:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: htmlExtractor
+[2024-06-02 16:03:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: steelseries-sonar-py
+[2024-06-02 16:03:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: rssfeed
+[2024-06-02 16:03:19] WARNING root fetch - processPackages [patternlib]: Skipping, unable to determine old version
+[2024-06-02 16:03:19] INFO root fetch - main [MainThread]: End processing [patternlib] error
+[2024-06-02 16:03:19] INFO root fetch - processPackages [steelseries-sonar-py]: New version: [1.2.0] Old Version: [1.1.1]
+[2024-06-02 16:03:19] WARNING root fetch - processPackages [htmlExtractor]: Skipping, unable to determine old version
+[2024-06-02 16:03:19] INFO root fetch - main [MainThread]: End processing [htmlExtractor] error
+[2024-06-02 16:03:19] WARNING root fetch - processPackages [rssfeed]: Skipping, unable to determine old version
+[2024-06-02 16:03:19] INFO root fetch - main [MainThread]: End processing [rssfeed] error
+[2024-06-02 16:03:19] INFO root fetch - processPackages [steelseries-sonar-py]: Downloading https://files.pythonhosted.org/packages/87/66/8aecc10800cec54fb52ba0d4d01059928070d830d049abba82cac9338864/steelseries_sonar_py-1.1.1.tar.gz
+[2024-06-02 16:03:20] INFO root fetch - processPackages [steelseries-sonar-py]: Downloading https://files.pythonhosted.org/packages/9e/02/c8f3cc09189e554429805a0f75505758c39f89eb581dc737c951bffc5024/steelseries_sonar_py-1.2.0.tar.gz
+[2024-06-02 16:03:20] INFO root fetch - processPackages [steelseries-sonar-py]: executing diffoscope
+[2024-06-02 16:03:20] INFO root fetch - processPackages [steelseries-sonar-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/steelseries_sonar_py-1.1.1.tar.gz tmp/steelseries_sonar_py-1.2.0.tar.gz --markdown 20240602/s/steelseries-sonar-py/1.1.1-1.2.0/README.md --exclude *.pyd
+[2024-06-02 16:03:20] INFO root fetch - processPackages [steelseries-sonar-py]: Remove: archive file [/home/abi/fetcher/tmp/steelseries_sonar_py-1.1.1.tar.gz]
+[2024-06-02 16:03:20] INFO root fetch - processPackages [steelseries-sonar-py]: Remove: archive file [/home/abi/fetcher/tmp/steelseries_sonar_py-1.2.0.tar.gz]
+[2024-06-02 16:03:20] INFO root fetch - main [MainThread]: End processing [steelseries-sonar-py]: success
+[2024-06-02 16:03:20] INFO root fetch - main [MainThread]: Store serial: [23489402]
