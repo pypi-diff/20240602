@@ -7033,3 +7033,56 @@
 [2024-06-02 11:44:58] INFO root fetch - processPackages [pyrofork]: Remove: archive file [/home/abi/fetcher/tmp/pyrofork-2.4.0rc1.tar.gz]
 [2024-06-02 11:44:58] INFO root fetch - main [MainThread]: End processing [pyrofork]: success
 [2024-06-02 11:44:58] INFO root fetch - main [MainThread]: Store serial: [23487862]
+[2024-06-02 11:47:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23487862]
+[2024-06-02 11:47:07] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-06-02 11:47:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mobase-stubs
+[2024-06-02 11:47:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: asknews
+[2024-06-02 11:47:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hikari-core
+[2024-06-02 11:47:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: RealTimeSTT
+[2024-06-02 11:47:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: kfish
+[2024-06-02 11:47:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pyroblack
+[2024-06-02 11:47:07] INFO root fetch - processPackages [mobase-stubs]: New version: [2.5.0.dev9] Old Version: [2.5.0.dev8]
+[2024-06-02 11:47:07] INFO root fetch - processPackages [pyroblack]: New version: [2.3.70] Old Version: [2.3.69]
+[2024-06-02 11:47:07] INFO root fetch - processPackages [hikari-core]: New version: [1.1.0] Old Version: [1.0.9.1]
+[2024-06-02 11:47:07] INFO root fetch - processPackages [mobase-stubs]: Downloading https://files.pythonhosted.org/packages/e9/77/1d8137167d161bc57c4dc5a12071c5a572209b2bd43f81021bed894326a2/mobase-stubs-2.5.0.dev8.tar.gz
+[2024-06-02 11:47:07] INFO root fetch - processPackages [RealTimeSTT]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-06-02 11:47:07] INFO root fetch - processPackages [kfish]: New version: [99.0.202406020946] Old Version: [99.0.202405311901]
+[2024-06-02 11:47:07] INFO root fetch - processPackages [asknews]: New version: [0.6.9] Old Version: [0.6.8]
+[2024-06-02 11:47:07] INFO root fetch - processPackages [hikari-core]: Downloading https://files.pythonhosted.org/packages/b4/3f/e32afe742f7047f2cdd242454085725e86dd16cb06ec9ee44d0e3b69f7e5/hikari_core-1.0.9.1.tar.gz
+[2024-06-02 11:47:07] INFO root fetch - processPackages [pyroblack]: Downloading https://files.pythonhosted.org/packages/ad/16/1455d41c0c9a0004a97136f8ee2088f4ad54618997bdf3bc7e859d65c930/pyroblack-2.3.69.tar.gz
+[2024-06-02 11:47:07] INFO root fetch - processPackages [mobase-stubs]: Downloading https://files.pythonhosted.org/packages/18/f8/9a8e13b0a39262f956af7e800b79a0660f9492a7ee3e2b39af2ca856bb35/mobase-stubs-2.5.0.dev9.tar.gz
+[2024-06-02 11:47:07] INFO root fetch - processPackages [RealTimeSTT]: Downloading https://files.pythonhosted.org/packages/86/7f/e9b09e818815b3cf24a9389f12c43d46f7b197d44cd3c8cea0688c582477/RealTimeSTT-0.1.8.tar.gz
+[2024-06-02 11:47:07] INFO root fetch - processPackages [kfish]: Downloading https://files.pythonhosted.org/packages/44/df/eafe50ddc4d2941b35430a7e0a1475aac05aef15367a2d868060d7a5e6b5/kfish-99.0.202405311901.tar.gz
+[2024-06-02 11:47:07] INFO root fetch - processPackages [asknews]: Downloading https://files.pythonhosted.org/packages/62/90/a135382401fb0a7e211747cfe19578438ea55f71d7e2b2683b3e5a9bdf49/asknews-0.6.8-py3-none-any.whl
+[2024-06-02 11:47:07] INFO root fetch - processPackages [hikari-core]: Downloading https://files.pythonhosted.org/packages/c9/e8/02dade8eb5837e3833a7b6629b9a31d688745285b26c77ee86c16703b8a0/hikari_core-1.1.0.tar.gz
+[2024-06-02 11:47:07] WARNING root fetch - processPackages [kfish]: Skipping package: exceeds size limit 17007229>=10485760
+[2024-06-02 11:47:07] INFO root fetch - main [MainThread]: End processing [kfish] error
+[2024-06-02 11:47:07] INFO root fetch - processPackages [mobase-stubs]: executing diffoscope
+[2024-06-02 11:47:07] INFO root fetch - processPackages [mobase-stubs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mobase-stubs-2.5.0.dev8.tar.gz tmp/mobase-stubs-2.5.0.dev9.tar.gz --markdown 20240602/m/mobase-stubs/2.5.0.dev8-2.5.0.dev9/README.md --exclude *.pyd
+[2024-06-02 11:47:07] INFO root fetch - processPackages [hikari-core]: executing diffoscope
+[2024-06-02 11:47:07] INFO root fetch - processPackages [hikari-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hikari_core-1.0.9.1.tar.gz tmp/hikari_core-1.1.0.tar.gz --markdown 20240602/h/hikari-core/1.0.9.1-1.1.0/README.md --exclude *.pyd
+[2024-06-02 11:47:07] INFO root fetch - processPackages [pyroblack]: Downloading https://files.pythonhosted.org/packages/b1/10/005f63294ef621025d72916882968424df01aa48baef460060bb71b03009/pyroblack-2.3.70.tar.gz
+[2024-06-02 11:47:08] INFO root fetch - processPackages [pyroblack]: executing diffoscope
+[2024-06-02 11:47:08] INFO root fetch - processPackages [pyroblack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyroblack-2.3.69.tar.gz tmp/pyroblack-2.3.70.tar.gz --markdown 20240602/p/pyroblack/2.3.69-2.3.70/README.md --exclude *.pyd
+[2024-06-02 11:47:08] INFO root fetch - processPackages [asknews]: Downloading https://files.pythonhosted.org/packages/08/92/4136d289084f58643723aadba1f40a9514a6b49894ee101f3d478b62578d/asknews-0.6.9-py3-none-any.whl
+[2024-06-02 11:47:08] INFO root fetch - processPackages [RealTimeSTT]: Downloading https://files.pythonhosted.org/packages/c4/95/dfcf994fe29346a0616d6eff388fd23f13d773e39fd24426cf856ee20584/RealTimeSTT-0.1.9.tar.gz
+[2024-06-02 11:47:08] INFO root fetch - processPackages [asknews]: executing diffoscope
+[2024-06-02 11:47:08] INFO root fetch - processPackages [asknews]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/asknews-0.6.8-py3-none-any.whl.zip tmp/asknews-0.6.9-py3-none-any.whl.zip --markdown 20240602/a/asknews/0.6.8-0.6.9/README.md --exclude *.pyd
+[2024-06-02 11:47:08] INFO root fetch - processPackages [RealTimeSTT]: executing diffoscope
+[2024-06-02 11:47:08] INFO root fetch - processPackages [RealTimeSTT]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/RealTimeSTT-0.1.8.tar.gz tmp/RealTimeSTT-0.1.9.tar.gz --markdown 20240602/R/RealTimeSTT/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-06-02 11:47:08] INFO root fetch - processPackages [mobase-stubs]: Remove: archive file [/home/abi/fetcher/tmp/mobase-stubs-2.5.0.dev8.tar.gz]
+[2024-06-02 11:47:08] INFO root fetch - processPackages [mobase-stubs]: Remove: archive file [/home/abi/fetcher/tmp/mobase-stubs-2.5.0.dev9.tar.gz]
+[2024-06-02 11:47:08] INFO root fetch - main [MainThread]: End processing [mobase-stubs]: success
+[2024-06-02 11:47:08] INFO root fetch - processPackages [hikari-core]: Remove: archive file [/home/abi/fetcher/tmp/hikari_core-1.0.9.1.tar.gz]
+[2024-06-02 11:47:08] INFO root fetch - processPackages [hikari-core]: Remove: archive file [/home/abi/fetcher/tmp/hikari_core-1.1.0.tar.gz]
+[2024-06-02 11:47:08] INFO root fetch - main [MainThread]: End processing [hikari-core]: success
+[2024-06-02 11:47:08] INFO root fetch - processPackages [asknews]: Remove: archive file [/home/abi/fetcher/tmp/asknews-0.6.8-py3-none-any.whl.zip]
+[2024-06-02 11:47:08] INFO root fetch - processPackages [asknews]: Remove: archive file [/home/abi/fetcher/tmp/asknews-0.6.9-py3-none-any.whl.zip]
+[2024-06-02 11:47:08] INFO root fetch - main [MainThread]: End processing [asknews]: success
+[2024-06-02 11:47:08] INFO root fetch - processPackages [RealTimeSTT]: Remove: archive file [/home/abi/fetcher/tmp/RealTimeSTT-0.1.8.tar.gz]
+[2024-06-02 11:47:08] INFO root fetch - processPackages [RealTimeSTT]: Remove: archive file [/home/abi/fetcher/tmp/RealTimeSTT-0.1.9.tar.gz]
+[2024-06-02 11:47:08] INFO root fetch - main [MainThread]: End processing [RealTimeSTT]: success
+[2024-06-02 11:47:10] INFO root fetch - processPackages [pyroblack]: Remove: archive file [/home/abi/fetcher/tmp/pyroblack-2.3.69.tar.gz]
+[2024-06-02 11:47:10] INFO root fetch - processPackages [pyroblack]: Remove: archive file [/home/abi/fetcher/tmp/pyroblack-2.3.70.tar.gz]
+[2024-06-02 11:47:10] INFO root fetch - main [MainThread]: End processing [pyroblack]: success
+[2024-06-02 11:47:10] INFO root fetch - main [MainThread]: Store serial: [23487891]
