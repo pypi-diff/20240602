@@ -7134,3 +7134,20 @@
 [2024-06-02 11:49:22] INFO root fetch - processPackages [kcli]: Remove: archive file [/home/abi/fetcher/tmp/kcli-99.0.202406020942.tar.gz]
 [2024-06-02 11:49:22] INFO root fetch - main [MainThread]: End processing [kcli]: success
 [2024-06-02 11:49:22] INFO root fetch - main [MainThread]: Store serial: [23487929]
+[2024-06-02 11:51:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23487929]
+[2024-06-02 11:51:31] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-02 11:51:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kfish
+[2024-06-02 11:51:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: extract-emails
+[2024-06-02 11:51:31] INFO root fetch - processPackages [kfish]: New version: [99.0.202406020946] Old Version: [99.0.202405311901]
+[2024-06-02 11:51:31] INFO root fetch - processPackages [extract-emails]: New version: [5.3.4] Old Version: [5.3.3]
+[2024-06-02 11:51:31] INFO root fetch - processPackages [kfish]: Downloading https://files.pythonhosted.org/packages/44/df/eafe50ddc4d2941b35430a7e0a1475aac05aef15367a2d868060d7a5e6b5/kfish-99.0.202405311901.tar.gz
+[2024-06-02 11:51:31] WARNING root fetch - processPackages [kfish]: Skipping package: exceeds size limit 17007229>=10485760
+[2024-06-02 11:51:31] INFO root fetch - main [MainThread]: End processing [kfish] error
+[2024-06-02 11:51:31] INFO root fetch - processPackages [extract-emails]: Downloading https://files.pythonhosted.org/packages/fc/81/e20d24cbab1b8c8a49e53fbe4718d6559faca53c5fb02d89c7142970535f/extract_emails-5.3.3.tar.gz
+[2024-06-02 11:51:31] INFO root fetch - processPackages [extract-emails]: Downloading https://files.pythonhosted.org/packages/0f/5e/0e23c79df27780dc516bad14fb6b8378780e7601dab1192638c77bab6c78/extract_emails-5.3.4.tar.gz
+[2024-06-02 11:51:31] INFO root fetch - processPackages [extract-emails]: executing diffoscope
+[2024-06-02 11:51:31] INFO root fetch - processPackages [extract-emails]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/extract_emails-5.3.3.tar.gz tmp/extract_emails-5.3.4.tar.gz --markdown 20240602/e/extract-emails/5.3.3-5.3.4/README.md --exclude *.pyd
+[2024-06-02 11:51:32] INFO root fetch - processPackages [extract-emails]: Remove: archive file [/home/abi/fetcher/tmp/extract_emails-5.3.3.tar.gz]
+[2024-06-02 11:51:32] INFO root fetch - processPackages [extract-emails]: Remove: archive file [/home/abi/fetcher/tmp/extract_emails-5.3.4.tar.gz]
+[2024-06-02 11:51:32] INFO root fetch - main [MainThread]: End processing [extract-emails]: success
+[2024-06-02 11:51:32] INFO root fetch - main [MainThread]: Store serial: [23487949]
