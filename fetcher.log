@@ -3613,3 +3613,19 @@
 [2024-06-02 05:44:07] INFO root fetch - processPackages [aita]: Remove: archive file [/home/abi/fetcher/tmp/aita-0.1.1.tar.gz]
 [2024-06-02 05:44:07] INFO root fetch - main [MainThread]: End processing [aita]: success
 [2024-06-02 05:44:07] INFO root fetch - main [MainThread]: Store serial: [23485962]
+[2024-06-02 05:46:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23485962]
+[2024-06-02 05:46:16] INFO root fetch - main [MainThread]: No changed packages found
+[2024-06-02 05:48:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23485963]
+[2024-06-02 05:48:21] INFO root fetch - main [MainThread]: No changed packages found
+[2024-06-02 05:50:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23485963]
+[2024-06-02 05:50:27] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-02 05:50:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: torrey
+[2024-06-02 05:50:27] INFO root fetch - processPackages [torrey]: New version: [3.2.2.dev20240602025526] Old Version: [3.2.2.dev20240602022838]
+[2024-06-02 05:50:27] INFO root fetch - processPackages [torrey]: Downloading https://files.pythonhosted.org/packages/77/53/a5a8f89ed288c357b7c49aae82273bd6584fc3c558a7673134ad491bca08/torrey-3.2.2.dev20240602022838.tar.gz
+[2024-06-02 05:50:27] INFO root fetch - processPackages [torrey]: Downloading https://files.pythonhosted.org/packages/fe/24/9ffaedc4ecaff7fd8bc8ea520d79ea58a411694868690e0db8f2b90a5b19/torrey-3.2.2.dev20240602025526.tar.gz
+[2024-06-02 05:50:27] INFO root fetch - processPackages [torrey]: executing diffoscope
+[2024-06-02 05:50:27] INFO root fetch - processPackages [torrey]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torrey-3.2.2.dev20240602022838.tar.gz tmp/torrey-3.2.2.dev20240602025526.tar.gz --markdown 20240602/t/torrey/3.2.2.dev20240602022838-3.2.2.dev20240602025526/README.md --exclude *.pyd
+[2024-06-02 05:50:28] INFO root fetch - processPackages [torrey]: Remove: archive file [/home/abi/fetcher/tmp/torrey-3.2.2.dev20240602022838.tar.gz]
+[2024-06-02 05:50:28] INFO root fetch - processPackages [torrey]: Remove: archive file [/home/abi/fetcher/tmp/torrey-3.2.2.dev20240602025526.tar.gz]
+[2024-06-02 05:50:28] INFO root fetch - main [MainThread]: End processing [torrey]: success
+[2024-06-02 05:50:28] INFO root fetch - main [MainThread]: Store serial: [23485966]
