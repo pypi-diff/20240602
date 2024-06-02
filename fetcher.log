@@ -7431,3 +7431,24 @@
 [2024-06-02 12:15:37] INFO root fetch - processPackages [libresvip]: Remove: archive file [/home/abi/fetcher/tmp/libresvip-1.1.5.tar.gz]
 [2024-06-02 12:15:37] INFO root fetch - main [MainThread]: End processing [libresvip]: success
 [2024-06-02 12:15:37] INFO root fetch - main [MainThread]: Store serial: [23488064]
+[2024-06-02 12:17:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23488064]
+[2024-06-02 12:17:45] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-02 12:17:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mnistvit
+[2024-06-02 12:17:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: blockchain-data-subnet-shared-libs
+[2024-06-02 12:17:45] INFO root fetch - processPackages [blockchain-data-subnet-shared-libs]: New version: [1.0.0] Old Version: [0.0.8]
+[2024-06-02 12:17:45] INFO root fetch - processPackages [mnistvit]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-06-02 12:17:45] INFO root fetch - processPackages [blockchain-data-subnet-shared-libs]: Downloading https://files.pythonhosted.org/packages/af/0a/0f083b0ef62f31203ad2bf5484b1ad6d0969427a630cb9c4c07b10e523aa/blockchain_data_subnet_shared_libs-0.0.8.tar.gz
+[2024-06-02 12:17:45] INFO root fetch - processPackages [mnistvit]: Downloading https://files.pythonhosted.org/packages/43/0a/301113d3dc402e0c4b649890a9cb1e0af974893494f816115d77ac15b2a5/mnistvit-1.0.1.tar.gz
+[2024-06-02 12:17:45] INFO root fetch - processPackages [blockchain-data-subnet-shared-libs]: Downloading https://files.pythonhosted.org/packages/03/c9/86bc6e13af1d5f56a5bfb1e36182ee3e6fd4a0caae01abf35f710817c2ff/blockchain_data_subnet_shared_libs-1.0.0.tar.gz
+[2024-06-02 12:17:45] INFO root fetch - processPackages [blockchain-data-subnet-shared-libs]: executing diffoscope
+[2024-06-02 12:17:45] INFO root fetch - processPackages [blockchain-data-subnet-shared-libs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blockchain_data_subnet_shared_libs-0.0.8.tar.gz tmp/blockchain_data_subnet_shared_libs-1.0.0.tar.gz --markdown 20240602/b/blockchain-data-subnet-shared-libs/0.0.8-1.0.0/README.md --exclude *.pyd
+[2024-06-02 12:17:45] INFO root fetch - processPackages [mnistvit]: Downloading https://files.pythonhosted.org/packages/e9/59/146b4989869990c46482505673fcfb32635bf25fdb99d2ecd1568bc8ba4b/mnistvit-1.0.2.tar.gz
+[2024-06-02 12:17:46] INFO root fetch - processPackages [mnistvit]: executing diffoscope
+[2024-06-02 12:17:46] INFO root fetch - processPackages [mnistvit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mnistvit-1.0.1.tar.gz tmp/mnistvit-1.0.2.tar.gz --markdown 20240602/m/mnistvit/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-06-02 12:17:46] INFO root fetch - processPackages [blockchain-data-subnet-shared-libs]: Remove: archive file [/home/abi/fetcher/tmp/blockchain_data_subnet_shared_libs-0.0.8.tar.gz]
+[2024-06-02 12:17:46] INFO root fetch - processPackages [blockchain-data-subnet-shared-libs]: Remove: archive file [/home/abi/fetcher/tmp/blockchain_data_subnet_shared_libs-1.0.0.tar.gz]
+[2024-06-02 12:17:46] INFO root fetch - main [MainThread]: End processing [blockchain-data-subnet-shared-libs]: success
+[2024-06-02 12:17:46] INFO root fetch - processPackages [mnistvit]: Remove: archive file [/home/abi/fetcher/tmp/mnistvit-1.0.1.tar.gz]
+[2024-06-02 12:17:46] INFO root fetch - processPackages [mnistvit]: Remove: archive file [/home/abi/fetcher/tmp/mnistvit-1.0.2.tar.gz]
+[2024-06-02 12:17:46] INFO root fetch - main [MainThread]: End processing [mnistvit]: success
+[2024-06-02 12:17:46] INFO root fetch - main [MainThread]: Store serial: [23488071]
