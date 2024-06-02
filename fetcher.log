@@ -10181,3 +10181,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-02 15:24:24] INFO root fetch - processPackages [dimwit]: Remove: archive file [/home/abi/fetcher/tmp/dimwit-0.2.9.tar.gz]
 [2024-06-02 15:24:24] INFO root fetch - main [MainThread]: End processing [dimwit]: success
 [2024-06-02 15:24:24] INFO root fetch - main [MainThread]: Store serial: [23489216]
+[2024-06-02 15:26:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23489216]
+[2024-06-02 15:26:33] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-02 15:26:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dbTelematelAPI
+[2024-06-02 15:26:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: python-datapack
+[2024-06-02 15:26:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyiwe
+[2024-06-02 15:26:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: iitmbsvideosdownloader
+[2024-06-02 15:26:33] INFO root fetch - processPackages [python-datapack]: New version: [0.2.3] Old Version: [0.2.2]
+[2024-06-02 15:26:33] INFO root fetch - processPackages [python-datapack]: Downloading https://files.pythonhosted.org/packages/c8/d6/045bce8cdcd8305855972e56da66e50750c7ffb0541dee3f5e53744df502/python_datapack-0.2.2.tar.gz
+[2024-06-02 15:26:33] INFO root fetch - processPackages [iitmbsvideosdownloader]: New version: [3.1.2] Old Version: [3.1.1]
+[2024-06-02 15:26:33] WARNING root fetch - processPackages [dbTelematelAPI]: Skipping, unable to determine old version
+[2024-06-02 15:26:33] INFO root fetch - main [MainThread]: End processing [dbTelematelAPI] error
+[2024-06-02 15:26:33] INFO root fetch - processPackages [pyiwe]: New version: [0.0.8.post1] Old Version: [0.0.7]
+[2024-06-02 15:26:33] INFO root fetch - processPackages [iitmbsvideosdownloader]: Downloading https://files.pythonhosted.org/packages/50/81/3ddcf0420acf842d1f39df7421c41a9c53cc2df80df03f70b3485b7cd7b9/iitmbsvideosdownloader-3.1.1.tar.gz
+[2024-06-02 15:26:33] INFO root fetch - processPackages [pyiwe]: Downloading https://files.pythonhosted.org/packages/82/b4/897b24d46dafb1331a40c09dd25f674ef2ca39ee0e37c9f899c43eaeeb80/pyiwe-0.0.7-py3-none-any.whl
+[2024-06-02 15:26:33] INFO root fetch - processPackages [python-datapack]: Downloading https://files.pythonhosted.org/packages/65/c1/caaf2ae9e805790eccc7a6c2acae170662562e85f799e89a2ce3d2521e1a/python_datapack-0.2.3.tar.gz
+[2024-06-02 15:26:33] INFO root fetch - processPackages [python-datapack]: executing diffoscope
+[2024-06-02 15:26:33] INFO root fetch - processPackages [python-datapack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_datapack-0.2.2.tar.gz tmp/python_datapack-0.2.3.tar.gz --markdown 20240602/p/python-datapack/0.2.2-0.2.3/README.md --exclude *.pyd
+[2024-06-02 15:26:34] INFO root fetch - processPackages [iitmbsvideosdownloader]: Downloading https://files.pythonhosted.org/packages/c3/61/0433f16171eb12f9bd48f9d0970de640689483a5c4bed908fc3951c153fa/iitmbsvideosdownloader-3.1.2.tar.gz
+[2024-06-02 15:26:34] INFO root fetch - processPackages [pyiwe]: Downloading https://files.pythonhosted.org/packages/d6/d0/b202ef13c3bcd897d6ccf0c5e007feaa0bea5c265b9ead80f69d338efb96/pyiwe-0.0.8.post1-py3-none-any.whl
+[2024-06-02 15:26:34] INFO root fetch - processPackages [iitmbsvideosdownloader]: executing diffoscope
+[2024-06-02 15:26:34] INFO root fetch - processPackages [iitmbsvideosdownloader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iitmbsvideosdownloader-3.1.1.tar.gz tmp/iitmbsvideosdownloader-3.1.2.tar.gz --markdown 20240602/i/iitmbsvideosdownloader/3.1.1-3.1.2/README.md --exclude *.pyd
+[2024-06-02 15:26:34] INFO root fetch - processPackages [pyiwe]: executing diffoscope
+[2024-06-02 15:26:34] INFO root fetch - processPackages [pyiwe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyiwe-0.0.7-py3-none-any.whl.zip tmp/pyiwe-0.0.8.post1-py3-none-any.whl.zip --markdown 20240602/p/pyiwe/0.0.7-0.0.8.post1/README.md --exclude *.pyd
+[2024-06-02 15:26:34] INFO root fetch - processPackages [python-datapack]: Remove: archive file [/home/abi/fetcher/tmp/python_datapack-0.2.2.tar.gz]
+[2024-06-02 15:26:34] INFO root fetch - processPackages [python-datapack]: Remove: archive file [/home/abi/fetcher/tmp/python_datapack-0.2.3.tar.gz]
+[2024-06-02 15:26:34] INFO root fetch - main [MainThread]: End processing [python-datapack]: success
+[2024-06-02 15:26:34] INFO root fetch - processPackages [iitmbsvideosdownloader]: Remove: archive file [/home/abi/fetcher/tmp/iitmbsvideosdownloader-3.1.1.tar.gz]
+[2024-06-02 15:26:34] INFO root fetch - processPackages [iitmbsvideosdownloader]: Remove: archive file [/home/abi/fetcher/tmp/iitmbsvideosdownloader-3.1.2.tar.gz]
+[2024-06-02 15:26:34] INFO root fetch - main [MainThread]: End processing [iitmbsvideosdownloader]: success
+[2024-06-02 15:26:34] INFO root fetch - processPackages [pyiwe]: Remove: archive file [/home/abi/fetcher/tmp/pyiwe-0.0.7-py3-none-any.whl.zip]
+[2024-06-02 15:26:34] INFO root fetch - processPackages [pyiwe]: Remove: archive file [/home/abi/fetcher/tmp/pyiwe-0.0.8.post1-py3-none-any.whl.zip]
+[2024-06-02 15:26:34] INFO root fetch - main [MainThread]: End processing [pyiwe]: success
+[2024-06-02 15:26:34] INFO root fetch - main [MainThread]: Store serial: [23489230]
