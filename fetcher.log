@@ -9302,3 +9302,54 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-02 14:16:12] INFO root fetch - processPackages [numbsql]: Remove: archive file [/home/abi/fetcher/tmp/numbsql-7.1.0.tar.gz]
 [2024-06-02 14:16:12] INFO root fetch - main [MainThread]: End processing [numbsql]: success
 [2024-06-02 14:16:12] INFO root fetch - main [MainThread]: Store serial: [23488779]
+[2024-06-02 14:18:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23488779]
+[2024-06-02 14:18:21] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-06-02 14:18:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mlrun
+[2024-06-02 14:18:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: autoCal
+[2024-06-02 14:18:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: autoCal
+[2024-06-02 14:18:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: autoCal
+[2024-06-02 14:18:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: autoCal
+[2024-06-02 14:18:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: Baseball-Info
+[2024-06-02 14:18:21] INFO root fetch - processPackages [Baseball-Info]: New version: [0.0.0.6] Old Version: [0.0.0.5]
+[2024-06-02 14:18:21] INFO root fetch - processPackages [autoCal]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-06-02 14:18:21] INFO root fetch - processPackages [autoCal]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-06-02 14:18:21] INFO root fetch - processPackages [autoCal]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-06-02 14:18:21] INFO root fetch - processPackages [autoCal]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-06-02 14:18:21] INFO root fetch - processPackages [Baseball-Info]: Downloading https://files.pythonhosted.org/packages/dc/fc/4c15f847e72987288f65ea4294b6d4c5ba6e36aec3a9556a461e92ed063b/Baseball-Info-0.0.0.5.tar.gz
+[2024-06-02 14:18:21] INFO root fetch - processPackages [mlrun]: New version: [1.7.0rc9] Old Version: [1.7.0rc8]
+[2024-06-02 14:18:22] INFO root fetch - processPackages [autoCal]: Downloading https://files.pythonhosted.org/packages/2e/be/c7f2c3830318680a0d9011f083f800158d0505abc83271bd57414aa9f56b/autocal-0.0.3.tar.gz
+[2024-06-02 14:18:22] INFO root fetch - processPackages [autoCal]: Downloading https://files.pythonhosted.org/packages/2e/be/c7f2c3830318680a0d9011f083f800158d0505abc83271bd57414aa9f56b/autocal-0.0.3.tar.gz
+[2024-06-02 14:18:22] INFO root fetch - processPackages [autoCal]: Downloading https://files.pythonhosted.org/packages/2e/be/c7f2c3830318680a0d9011f083f800158d0505abc83271bd57414aa9f56b/autocal-0.0.3.tar.gz
+[2024-06-02 14:18:22] INFO root fetch - processPackages [autoCal]: Downloading https://files.pythonhosted.org/packages/2e/be/c7f2c3830318680a0d9011f083f800158d0505abc83271bd57414aa9f56b/autocal-0.0.3.tar.gz
+[2024-06-02 14:18:22] INFO root fetch - processPackages [mlrun]: Downloading https://files.pythonhosted.org/packages/3e/de/bbc90293e3757cb8179dc320aa3df99845445ecfbc16972510c5e80415c3/mlrun-1.7.0rc8-py3-none-any.whl
+[2024-06-02 14:18:22] INFO root fetch - processPackages [Baseball-Info]: Downloading https://files.pythonhosted.org/packages/37/19/c247a16d82647ba873077ad933d15130a4f97592e0f41e48f5cb4bb1ec4f/Baseball-Info-0.0.0.6.tar.gz
+[2024-06-02 14:18:22] INFO root fetch - processPackages [autoCal]: Downloading https://files.pythonhosted.org/packages/f8/c9/3c57bbca44890dde7fcfa8d90f0e78642a30605159e2e2cf47d18ad2e045/autocal-0.0.4.tar.gz
+[2024-06-02 14:18:22] INFO root fetch - processPackages [autoCal]: Downloading https://files.pythonhosted.org/packages/f8/c9/3c57bbca44890dde7fcfa8d90f0e78642a30605159e2e2cf47d18ad2e045/autocal-0.0.4.tar.gz
+[2024-06-02 14:18:22] INFO root fetch - processPackages [autoCal]: Downloading https://files.pythonhosted.org/packages/f8/c9/3c57bbca44890dde7fcfa8d90f0e78642a30605159e2e2cf47d18ad2e045/autocal-0.0.4.tar.gz
+[2024-06-02 14:18:22] INFO root fetch - processPackages [autoCal]: Downloading https://files.pythonhosted.org/packages/f8/c9/3c57bbca44890dde7fcfa8d90f0e78642a30605159e2e2cf47d18ad2e045/autocal-0.0.4.tar.gz
+[2024-06-02 14:18:22] INFO root fetch - processPackages [Baseball-Info]: executing diffoscope
+[2024-06-02 14:18:22] INFO root fetch - processPackages [Baseball-Info]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Baseball-Info-0.0.0.5.tar.gz tmp/Baseball-Info-0.0.0.6.tar.gz --markdown 20240602/B/Baseball-Info/0.0.0.5-0.0.0.6/README.md --exclude *.pyd
+[2024-06-02 14:18:22] INFO root fetch - processPackages [autoCal]: executing diffoscope
+[2024-06-02 14:18:22] INFO root fetch - processPackages [autoCal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autocal-0.0.3.tar.gz tmp/autocal-0.0.4.tar.gz --markdown 20240602/a/autoCal/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-06-02 14:18:22] INFO root fetch - processPackages [autoCal]: executing diffoscope
+[2024-06-02 14:18:22] INFO root fetch - processPackages [autoCal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autocal-0.0.3.tar.gz tmp/autocal-0.0.4.tar.gz --markdown 20240602/a/autoCal/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-06-02 14:18:22] INFO root fetch - processPackages [autoCal]: executing diffoscope
+[2024-06-02 14:18:22] INFO root fetch - processPackages [autoCal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autocal-0.0.3.tar.gz tmp/autocal-0.0.4.tar.gz --markdown 20240602/a/autoCal/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-06-02 14:18:22] INFO root fetch - processPackages [autoCal]: executing diffoscope
+[2024-06-02 14:18:22] INFO root fetch - processPackages [autoCal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autocal-0.0.3.tar.gz tmp/autocal-0.0.4.tar.gz --markdown 20240602/a/autoCal/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-06-02 14:18:22] INFO root fetch - processPackages [mlrun]: Downloading https://files.pythonhosted.org/packages/05/f2/d80ba0edb70be9434bf5fb1badcfad0aef24823e8363d78fc935429023ad/mlrun-1.7.0rc9-py3-none-any.whl
+[2024-06-02 14:18:23] INFO root fetch - processPackages [Baseball-Info]: Remove: archive file [/home/abi/fetcher/tmp/Baseball-Info-0.0.0.5.tar.gz]
+[2024-06-02 14:18:23] INFO root fetch - processPackages [Baseball-Info]: Remove: archive file [/home/abi/fetcher/tmp/Baseball-Info-0.0.0.6.tar.gz]
+[2024-06-02 14:18:23] INFO root fetch - main [MainThread]: End processing [Baseball-Info]: success
+[2024-06-02 14:18:23] INFO root fetch - processPackages [mlrun]: executing diffoscope
+[2024-06-02 14:18:23] INFO root fetch - processPackages [mlrun]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlrun-1.7.0rc8-py3-none-any.whl.zip tmp/mlrun-1.7.0rc9-py3-none-any.whl.zip --markdown 20240602/m/mlrun/1.7.0rc8-1.7.0rc9/README.md --exclude *.pyd
+[2024-06-02 14:18:23] INFO root fetch - processPackages [autoCal]: Remove: archive file [/home/abi/fetcher/tmp/autocal-0.0.3.tar.gz]
+[2024-06-02 14:18:23] INFO root fetch - processPackages [autoCal]: Remove: archive file [/home/abi/fetcher/tmp/autocal-0.0.4.tar.gz]
+[2024-06-02 14:18:23] INFO root fetch - main [MainThread]: End processing [autoCal]: success
+[2024-06-02 14:18:23] INFO root fetch - main [MainThread]: End processing [autoCal]: success
+[2024-06-02 14:18:23] INFO root fetch - main [MainThread]: End processing [autoCal]: success
+[2024-06-02 14:18:23] INFO root fetch - main [MainThread]: End processing [autoCal]: success
+[2024-06-02 14:18:25] INFO root fetch - processPackages [mlrun]: Remove: archive file [/home/abi/fetcher/tmp/mlrun-1.7.0rc8-py3-none-any.whl.zip]
+[2024-06-02 14:18:25] INFO root fetch - processPackages [mlrun]: Remove: archive file [/home/abi/fetcher/tmp/mlrun-1.7.0rc9-py3-none-any.whl.zip]
+[2024-06-02 14:18:25] INFO root fetch - main [MainThread]: End processing [mlrun]: success
+[2024-06-02 14:18:25] INFO root fetch - main [MainThread]: Store serial: [23488801]
