@@ -1641,3 +1641,42 @@
 [2024-06-02 02:07:28] INFO root fetch - processPackages [pyExploitDb]: Remove: archive file [/home/abi/fetcher/tmp/pyExploitDb-0.2.9.tar.gz]
 [2024-06-02 02:07:28] INFO root fetch - main [MainThread]: End processing [pyExploitDb]: success
 [2024-06-02 02:07:28] INFO root fetch - main [MainThread]: Store serial: [23484818]
+[2024-06-02 02:09:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23484818]
+[2024-06-02 02:09:36] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-02 02:09:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: graphmemory
+[2024-06-02 02:09:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pp-weight-estimation
+[2024-06-02 02:09:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cdk-common
+[2024-06-02 02:09:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: style-bert-vits2
+[2024-06-02 02:09:36] INFO root fetch - processPackages [pp-weight-estimation]: New version: [1.1.42] Old Version: [1.1.41]
+[2024-06-02 02:09:36] INFO root fetch - processPackages [cdk-common]: New version: [2.0.99] Old Version: [2.0.98]
+[2024-06-02 02:09:36] INFO root fetch - processPackages [style-bert-vits2]: New version: [2.5.0] Old Version: [2.4.dev0]
+[2024-06-02 02:09:36] INFO root fetch - processPackages [graphmemory]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-06-02 02:09:36] INFO root fetch - processPackages [pp-weight-estimation]: Downloading https://files.pythonhosted.org/packages/2c/b5/ecd7bfc52ad45f324fdec7f9567ed6b35890f2913abc601f4a1bb3219b47/pp_weight_estimation-1.1.41.tar.gz
+[2024-06-02 02:09:37] INFO root fetch - processPackages [cdk-common]: Downloading https://files.pythonhosted.org/packages/f3/30/796e7080e9a9b293ccf386b0d95f40dde8e214e0415d2c59be9c661105a9/cdk-common-2.0.98.tar.gz
+[2024-06-02 02:09:37] INFO root fetch - processPackages [graphmemory]: Downloading https://files.pythonhosted.org/packages/6e/4f/02a7863540d4f31e1ac103ced5324931e8ba318c700fcb65f0dfa99ce7a7/graphmemory-0.1.1.tar.gz
+[2024-06-02 02:09:37] INFO root fetch - processPackages [style-bert-vits2]: Downloading https://files.pythonhosted.org/packages/e1/8a/0da081aee7858a5baaa3d8718369072f9c8c177a22cb24bbd754ee10d85c/style_bert_vits2-2.4.dev0.tar.gz
+[2024-06-02 02:09:37] INFO root fetch - processPackages [pp-weight-estimation]: Downloading https://files.pythonhosted.org/packages/fc/5b/1d3309f2813c38b0d0f793f6337c94dde5bfb64e576eb0c87f5878530ed9/pp_weight_estimation-1.1.42.tar.gz
+[2024-06-02 02:09:37] INFO root fetch - processPackages [pp-weight-estimation]: executing diffoscope
+[2024-06-02 02:09:37] INFO root fetch - processPackages [pp-weight-estimation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pp_weight_estimation-1.1.41.tar.gz tmp/pp_weight_estimation-1.1.42.tar.gz --markdown 20240602/p/pp-weight-estimation/1.1.41-1.1.42/README.md --exclude *.pyd
+[2024-06-02 02:09:37] INFO root fetch - processPackages [cdk-common]: Downloading https://files.pythonhosted.org/packages/11/10/ca183f281275ec945ede082d9491c0bb5bfb9152c437124c86e37cba7079/cdk-common-2.0.99.tar.gz
+[2024-06-02 02:09:37] INFO root fetch - processPackages [graphmemory]: Downloading https://files.pythonhosted.org/packages/57/d4/214a73603d432072fe556c2409c54316789193e6014a006236430f2ca559/graphmemory-0.1.2.tar.gz
+[2024-06-02 02:09:37] INFO root fetch - processPackages [graphmemory]: executing diffoscope
+[2024-06-02 02:09:37] INFO root fetch - processPackages [graphmemory]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/graphmemory-0.1.1.tar.gz tmp/graphmemory-0.1.2.tar.gz --markdown 20240602/g/graphmemory/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-06-02 02:09:37] INFO root fetch - processPackages [style-bert-vits2]: Downloading https://files.pythonhosted.org/packages/bb/cd/e959189f932874aec151c7698fcb654a39fcfb399e4208fa2396cbb553e3/style_bert_vits2-2.5.0.tar.gz
+[2024-06-02 02:09:37] INFO root fetch - processPackages [pp-weight-estimation]: Remove: archive file [/home/abi/fetcher/tmp/pp_weight_estimation-1.1.41.tar.gz]
+[2024-06-02 02:09:37] INFO root fetch - processPackages [pp-weight-estimation]: Remove: archive file [/home/abi/fetcher/tmp/pp_weight_estimation-1.1.42.tar.gz]
+[2024-06-02 02:09:37] INFO root fetch - main [MainThread]: End processing [pp-weight-estimation]: success
+[2024-06-02 02:09:38] INFO root fetch - processPackages [graphmemory]: Remove: archive file [/home/abi/fetcher/tmp/graphmemory-0.1.1.tar.gz]
+[2024-06-02 02:09:38] INFO root fetch - processPackages [graphmemory]: Remove: archive file [/home/abi/fetcher/tmp/graphmemory-0.1.2.tar.gz]
+[2024-06-02 02:09:38] INFO root fetch - main [MainThread]: End processing [graphmemory]: success
+[2024-06-02 02:09:38] INFO root fetch - processPackages [style-bert-vits2]: executing diffoscope
+[2024-06-02 02:09:38] INFO root fetch - processPackages [style-bert-vits2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/style_bert_vits2-2.4.dev0.tar.gz tmp/style_bert_vits2-2.5.0.tar.gz --markdown 20240602/s/style-bert-vits2/2.4.dev0-2.5.0/README.md --exclude *.pyd
+[2024-06-02 02:09:38] INFO root fetch - processPackages [cdk-common]: executing diffoscope
+[2024-06-02 02:09:38] INFO root fetch - processPackages [cdk-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-common-2.0.98.tar.gz tmp/cdk-common-2.0.99.tar.gz --markdown 20240602/c/cdk-common/2.0.98-2.0.99/README.md --exclude *.pyd
+[2024-06-02 02:09:39] INFO root fetch - processPackages [cdk-common]: Remove: archive file [/home/abi/fetcher/tmp/cdk-common-2.0.98.tar.gz]
+[2024-06-02 02:09:39] INFO root fetch - processPackages [cdk-common]: Remove: archive file [/home/abi/fetcher/tmp/cdk-common-2.0.99.tar.gz]
+[2024-06-02 02:09:39] INFO root fetch - main [MainThread]: End processing [cdk-common]: success
+[2024-06-02 02:09:39] INFO root fetch - processPackages [style-bert-vits2]: Remove: archive file [/home/abi/fetcher/tmp/style_bert_vits2-2.4.dev0.tar.gz]
+[2024-06-02 02:09:39] INFO root fetch - processPackages [style-bert-vits2]: Remove: archive file [/home/abi/fetcher/tmp/style_bert_vits2-2.5.0.tar.gz]
+[2024-06-02 02:09:39] INFO root fetch - main [MainThread]: End processing [style-bert-vits2]: success
+[2024-06-02 02:09:39] INFO root fetch - main [MainThread]: Store serial: [23484831]
