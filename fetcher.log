@@ -2187,3 +2187,11 @@
 [2024-06-02 02:42:18] INFO root fetch - processPackages [pyslsqp]: Remove: archive file [/home/abi/fetcher/tmp/pyslsqp-0.1.0a0.tar.gz]
 [2024-06-02 02:42:18] INFO root fetch - main [MainThread]: End processing [pyslsqp]: success
 [2024-06-02 02:42:18] INFO root fetch - main [MainThread]: Store serial: [23485031]
+[2024-06-02 02:44:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23485031]
+[2024-06-02 02:44:28] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-02 02:44:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: airbyte-source-vantage
+[2024-06-02 02:44:28] INFO root fetch - processPackages [airbyte-source-vantage]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-06-02 02:44:28] INFO root fetch - processPackages [airbyte-source-vantage]: Downloading https://files.pythonhosted.org/packages/2b/01/ba1d1d42fd103ebdfaa80b80f9a7e9a120898c4dac112296d02b4b0ae352/airbyte_source_vantage-0.1.1.tar.gz
+[2024-06-02 02:44:28] ERROR root fetch - processPackages [airbyte-source-vantage]: Unable to fetch info: No such project/version 'airbyte-source-vantage' 0.1.2
+[2024-06-02 02:44:28] INFO root fetch - main [MainThread]: End processing [airbyte-source-vantage] error
+[2024-06-02 02:44:28] INFO root fetch - main [MainThread]: Store serial: [23485036]
