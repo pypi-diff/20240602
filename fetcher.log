@@ -4712,3 +4712,14 @@
 [2024-06-02 08:06:38] INFO root fetch - processPackages [dash-spread-grid]: Remove: archive file [/home/abi/fetcher/tmp/dash_spread_grid-0.1.7.tar.gz]
 [2024-06-02 08:06:38] INFO root fetch - main [MainThread]: End processing [dash-spread-grid]: success
 [2024-06-02 08:06:38] INFO root fetch - main [MainThread]: Store serial: [23486574]
+[2024-06-02 08:08:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23486574]
+[2024-06-02 08:08:48] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-02 08:08:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: certora-cli-alpha-master
+[2024-06-02 08:08:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: parampl
+[2024-06-02 08:08:48] WARNING root fetch - processPackages [parampl]: Skipping, unable to determine old version
+[2024-06-02 08:08:48] INFO root fetch - main [MainThread]: End processing [parampl] error
+[2024-06-02 08:08:48] INFO root fetch - processPackages [certora-cli-alpha-master]: New version: [20240601.13.45.443207] Old Version: [20240531.16.26.119005]
+[2024-06-02 08:08:48] INFO root fetch - processPackages [certora-cli-alpha-master]: Downloading https://files.pythonhosted.org/packages/5a/1f/792f8f37f237febba5ba07af1b666bc676e8771ca94cb00fa0cad85a00ba/certora-cli-alpha-master-20240531.16.26.119005.tar.gz
+[2024-06-02 08:08:48] WARNING root fetch - processPackages [certora-cli-alpha-master]: Skipping package: exceeds size limit 14611830>=10485760
+[2024-06-02 08:08:48] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-master] error
+[2024-06-02 08:08:48] INFO root fetch - main [MainThread]: Store serial: [23486582]
