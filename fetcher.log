@@ -10124,3 +10124,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-02 15:17:55] INFO root fetch - processPackages [xingpyc]: Remove: archive file [/home/abi/fetcher/tmp/xingpyc-0.3.1.tar.gz]
 [2024-06-02 15:17:55] INFO root fetch - main [MainThread]: End processing [xingpyc]: success
 [2024-06-02 15:17:55] INFO root fetch - main [MainThread]: Store serial: [23489195]
+[2024-06-02 15:19:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23489195]
+[2024-06-02 15:20:04] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-02 15:20:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: alita-sdk
+[2024-06-02 15:20:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gpt-all-star
+[2024-06-02 15:20:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: drf-user-activity-tracker-mongodb
+[2024-06-02 15:20:04] INFO root fetch - processPackages [drf-user-activity-tracker-mongodb]: New version: [1.4.2] Old Version: [1.4.1]
+[2024-06-02 15:20:04] INFO root fetch - processPackages [alita-sdk]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-06-02 15:20:04] INFO root fetch - processPackages [drf-user-activity-tracker-mongodb]: Downloading https://files.pythonhosted.org/packages/8b/21/f57309f5d1b58d138c53eac4b512bebc2a5979734dc364b50f73da2256ba/drf-user-activity-tracker-mongodb-1.4.1.tar.gz
+[2024-06-02 15:20:04] INFO root fetch - processPackages [alita-sdk]: Downloading https://files.pythonhosted.org/packages/58/77/699a43c7f5d3229ed63ff8d8eaba7999323921fbe9a94d3dd2d8b0f9b7a6/alita_sdk-0.1.8.tar.gz
+[2024-06-02 15:20:04] INFO root fetch - processPackages [gpt-all-star]: New version: [0.0.9] Old Version: [0.0.7]
+[2024-06-02 15:20:04] INFO root fetch - processPackages [gpt-all-star]: Downloading https://files.pythonhosted.org/packages/95/00/47f2780dce549d1ce8aad7cb17a7c758209c4539c6f75dcdbe0e9322ce0e/gpt_all_star-0.0.7.tar.gz
+[2024-06-02 15:20:04] INFO root fetch - processPackages [alita-sdk]: Downloading https://files.pythonhosted.org/packages/6d/5f/08f7caedc136fde13091ef88ae35349e7285ef4b9c181b34fb1c4dffd4ba/alita_sdk-0.1.9.tar.gz
+[2024-06-02 15:20:04] INFO root fetch - processPackages [alita-sdk]: executing diffoscope
+[2024-06-02 15:20:04] INFO root fetch - processPackages [alita-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alita_sdk-0.1.8.tar.gz tmp/alita_sdk-0.1.9.tar.gz --markdown 20240602/a/alita-sdk/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-06-02 15:20:04] INFO root fetch - processPackages [drf-user-activity-tracker-mongodb]: Downloading https://files.pythonhosted.org/packages/87/62/e157d190160e329006ab17ed3e4d6734db5eefc3149557af50a5ed55fc8a/drf-user-activity-tracker-mongodb-1.4.2.tar.gz
+[2024-06-02 15:20:04] INFO root fetch - processPackages [gpt-all-star]: Downloading https://files.pythonhosted.org/packages/96/40/c6f6b9dc146ffbf8c97d68b1ad200a51bb0f5a239c5e4d11725f1fff5f45/gpt_all_star-0.0.9.tar.gz
+[2024-06-02 15:20:04] INFO root fetch - processPackages [gpt-all-star]: executing diffoscope
+[2024-06-02 15:20:04] INFO root fetch - processPackages [gpt-all-star]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gpt_all_star-0.0.7.tar.gz tmp/gpt_all_star-0.0.9.tar.gz --markdown 20240602/g/gpt-all-star/0.0.7-0.0.9/README.md --exclude *.pyd
+[2024-06-02 15:20:04] INFO root fetch - processPackages [drf-user-activity-tracker-mongodb]: executing diffoscope
+[2024-06-02 15:20:04] INFO root fetch - processPackages [drf-user-activity-tracker-mongodb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/drf-user-activity-tracker-mongodb-1.4.1.tar.gz tmp/drf-user-activity-tracker-mongodb-1.4.2.tar.gz --markdown 20240602/d/drf-user-activity-tracker-mongodb/1.4.1-1.4.2/README.md --exclude *.pyd
+[2024-06-02 15:20:05] INFO root fetch - processPackages [alita-sdk]: Remove: archive file [/home/abi/fetcher/tmp/alita_sdk-0.1.8.tar.gz]
+[2024-06-02 15:20:05] INFO root fetch - processPackages [alita-sdk]: Remove: archive file [/home/abi/fetcher/tmp/alita_sdk-0.1.9.tar.gz]
+[2024-06-02 15:20:05] INFO root fetch - main [MainThread]: End processing [alita-sdk]: success
+[2024-06-02 15:20:05] INFO root fetch - processPackages [gpt-all-star]: Remove: archive file [/home/abi/fetcher/tmp/gpt_all_star-0.0.7.tar.gz]
+[2024-06-02 15:20:05] INFO root fetch - processPackages [gpt-all-star]: Remove: archive file [/home/abi/fetcher/tmp/gpt_all_star-0.0.9.tar.gz]
+[2024-06-02 15:20:05] INFO root fetch - main [MainThread]: End processing [gpt-all-star]: success
+[2024-06-02 15:20:05] INFO root fetch - processPackages [drf-user-activity-tracker-mongodb]: Remove: archive file [/home/abi/fetcher/tmp/drf-user-activity-tracker-mongodb-1.4.1.tar.gz]
+[2024-06-02 15:20:05] INFO root fetch - processPackages [drf-user-activity-tracker-mongodb]: Remove: archive file [/home/abi/fetcher/tmp/drf-user-activity-tracker-mongodb-1.4.2.tar.gz]
+[2024-06-02 15:20:05] INFO root fetch - main [MainThread]: End processing [drf-user-activity-tracker-mongodb]: success
+[2024-06-02 15:20:05] INFO root fetch - main [MainThread]: Store serial: [23489207]
