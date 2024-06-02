@@ -12968,3 +12968,60 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 18:00:52] INFO root fetch - processPackages [platypush]: Remove: archive file [/home/abi/fetcher/tmp/platypush-1.0.7.tar.gz]
 [2024-06-02 18:00:52] INFO root fetch - main [MainThread]: End processing [platypush]: success
 [2024-06-02 18:00:52] INFO root fetch - main [MainThread]: Store serial: [23490504]
+[2024-06-02 18:02:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23490504]
+[2024-06-02 18:03:01] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-06-02 18:03:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: drf-cookie-jwtauth
+[2024-06-02 18:03:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: trytond-sale-blanket-agreement
+[2024-06-02 18:03:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dj-shop-cart
+[2024-06-02 18:03:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: a9x-webstatistics
+[2024-06-02 18:03:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: stackview
+[2024-06-02 18:03:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: trytond-sale
+[2024-06-02 18:03:01] INFO root fetch - processPackages [drf-cookie-jwtauth]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-06-02 18:03:01] INFO root fetch - processPackages [a9x-webstatistics]: New version: [0.2.2] Old Version: [0.2.1]
+[2024-06-02 18:03:01] INFO root fetch - processPackages [trytond-sale-blanket-agreement]: New version: [7.2.2] Old Version: [7.2.1]
+[2024-06-02 18:03:01] INFO root fetch - processPackages [dj-shop-cart]: New version: [8.0.0a0] Old Version: [7.1.0]
+[2024-06-02 18:03:01] INFO root fetch - processPackages [stackview]: New version: [0.7.9] Old Version: [0.7.8]
+[2024-06-02 18:03:01] INFO root fetch - processPackages [drf-cookie-jwtauth]: Downloading https://files.pythonhosted.org/packages/8a/1d/49da8bdbe541310ad8b46b560be0cf002a51bbf208c27e13451075fd8b33/drf_cookie_jwtauth-0.0.4.tar.gz
+[2024-06-02 18:03:01] INFO root fetch - processPackages [a9x-webstatistics]: Downloading https://files.pythonhosted.org/packages/34/3f/49de46c16e5c3539e11181dd6c0953f374c9a4d72058a111586c77437a3b/a9x_webstatistics-0.2.1.tar.gz
+[2024-06-02 18:03:01] INFO root fetch - processPackages [stackview]: Downloading https://files.pythonhosted.org/packages/50/b7/4995b7db6f492c44210d2bd1b4ba130ae7e97ff185674dce2c86a5a107ca/stackview-0.7.8.tar.gz
+[2024-06-02 18:03:01] INFO root fetch - processPackages [trytond-sale-blanket-agreement]: Downloading https://files.pythonhosted.org/packages/9e/a1/451b1fcbcee81931eb23a9463c1eba37fa3f7eedbd87713b00435b15bfa2/trytond_sale_blanket_agreement-7.2.1.tar.gz
+[2024-06-02 18:03:01] INFO root fetch - processPackages [dj-shop-cart]: Downloading https://files.pythonhosted.org/packages/2d/0d/d644627fd41e05c1c31d490da130fde46ba8f0b5ea561a0f46d96140a431/dj_shop_cart-7.1.0.tar.gz
+[2024-06-02 18:03:01] INFO root fetch - processPackages [trytond-sale]: New version: [7.2.2] Old Version: [7.2.1]
+[2024-06-02 18:03:02] INFO root fetch - processPackages [a9x-webstatistics]: Downloading https://files.pythonhosted.org/packages/e8/bd/288ee837e061932ca4f9f97ff5107a2e3d49c0e1ee7a6e77534f673a4a26/a9x_webstatistics-0.2.2.tar.gz
+[2024-06-02 18:03:02] INFO root fetch - processPackages [dj-shop-cart]: Downloading https://files.pythonhosted.org/packages/8d/f4/90e0ea4b267dea8a4140b5209fcdee97e16081adc4e256700598aac295e7/dj_shop_cart-8.0.0a0.tar.gz
+[2024-06-02 18:03:02] INFO root fetch - processPackages [trytond-sale-blanket-agreement]: Downloading https://files.pythonhosted.org/packages/87/f7/6b5aed895994529ca0a7f61fa5074d6a3bc770973617f83d4b939c3e0ecf/trytond_sale_blanket_agreement-7.2.2.tar.gz
+[2024-06-02 18:03:02] INFO root fetch - processPackages [drf-cookie-jwtauth]: Downloading https://files.pythonhosted.org/packages/9f/0a/d63fde2cab1f2828c27cf53efb0d76cce30e0bda68a916ed0107acb3b22c/drf_cookie_jwtauth-0.0.5.tar.gz
+[2024-06-02 18:03:02] INFO root fetch - processPackages [a9x-webstatistics]: executing diffoscope
+[2024-06-02 18:03:02] INFO root fetch - processPackages [a9x-webstatistics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/a9x_webstatistics-0.2.1.tar.gz tmp/a9x_webstatistics-0.2.2.tar.gz --markdown 20240602/a/a9x-webstatistics/0.2.1-0.2.2/README.md --exclude *.pyd
+[2024-06-02 18:03:02] INFO root fetch - processPackages [stackview]: Downloading https://files.pythonhosted.org/packages/2e/17/ea8b3e011bc1c5569b06741a794c5a265f1c02e89f8bbf2db75ce42986d7/stackview-0.7.9.tar.gz
+[2024-06-02 18:03:02] INFO root fetch - processPackages [trytond-sale]: Downloading https://files.pythonhosted.org/packages/c9/f3/8fa44dd71e5f686ab58361f8c97486e2b8ff4b7b3e8f0f3122f112fa3f2f/trytond_sale-7.2.1.tar.gz
+[2024-06-02 18:03:02] INFO root fetch - processPackages [dj-shop-cart]: executing diffoscope
+[2024-06-02 18:03:02] INFO root fetch - processPackages [dj-shop-cart]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dj_shop_cart-7.1.0.tar.gz tmp/dj_shop_cart-8.0.0a0.tar.gz --markdown 20240602/d/dj-shop-cart/7.1.0-8.0.0a0/README.md --exclude *.pyd
+[2024-06-02 18:03:02] INFO root fetch - processPackages [drf-cookie-jwtauth]: executing diffoscope
+[2024-06-02 18:03:02] INFO root fetch - processPackages [drf-cookie-jwtauth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/drf_cookie_jwtauth-0.0.4.tar.gz tmp/drf_cookie_jwtauth-0.0.5.tar.gz --markdown 20240602/d/drf-cookie-jwtauth/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-06-02 18:03:02] INFO root fetch - processPackages [trytond-sale-blanket-agreement]: executing diffoscope
+[2024-06-02 18:03:02] INFO root fetch - processPackages [trytond-sale-blanket-agreement]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trytond_sale_blanket_agreement-7.2.1.tar.gz tmp/trytond_sale_blanket_agreement-7.2.2.tar.gz --markdown 20240602/t/trytond-sale-blanket-agreement/7.2.1-7.2.2/README.md --exclude *.pyd
+[2024-06-02 18:03:02] INFO root fetch - processPackages [stackview]: executing diffoscope
+[2024-06-02 18:03:02] INFO root fetch - processPackages [stackview]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stackview-0.7.8.tar.gz tmp/stackview-0.7.9.tar.gz --markdown 20240602/s/stackview/0.7.8-0.7.9/README.md --exclude *.pyd
+[2024-06-02 18:03:02] INFO root fetch - processPackages [trytond-sale]: Downloading https://files.pythonhosted.org/packages/66/24/558af03ffc1270b86ecdbdb8b454b2ade426df7624f4adab28baf3e581c2/trytond_sale-7.2.2-py3-none-any.whl
+[2024-06-02 18:03:02] INFO root fetch - processPackages [a9x-webstatistics]: Remove: archive file [/home/abi/fetcher/tmp/a9x_webstatistics-0.2.1.tar.gz]
+[2024-06-02 18:03:02] INFO root fetch - processPackages [a9x-webstatistics]: Remove: archive file [/home/abi/fetcher/tmp/a9x_webstatistics-0.2.2.tar.gz]
+[2024-06-02 18:03:02] INFO root fetch - main [MainThread]: End processing [a9x-webstatistics]: success
+[2024-06-02 18:03:02] INFO root fetch - processPackages [drf-cookie-jwtauth]: Remove: archive file [/home/abi/fetcher/tmp/drf_cookie_jwtauth-0.0.4.tar.gz]
+[2024-06-02 18:03:02] INFO root fetch - processPackages [drf-cookie-jwtauth]: Remove: archive file [/home/abi/fetcher/tmp/drf_cookie_jwtauth-0.0.5.tar.gz]
+[2024-06-02 18:03:02] INFO root fetch - main [MainThread]: End processing [drf-cookie-jwtauth]: success
+[2024-06-02 18:03:02] INFO root fetch - processPackages [trytond-sale-blanket-agreement]: Remove: archive file [/home/abi/fetcher/tmp/trytond_sale_blanket_agreement-7.2.1.tar.gz]
+[2024-06-02 18:03:02] INFO root fetch - processPackages [trytond-sale-blanket-agreement]: Remove: archive file [/home/abi/fetcher/tmp/trytond_sale_blanket_agreement-7.2.2.tar.gz]
+[2024-06-02 18:03:02] INFO root fetch - main [MainThread]: End processing [trytond-sale-blanket-agreement]: success
+[2024-06-02 18:03:02] INFO root fetch - processPackages [dj-shop-cart]: Remove: archive file [/home/abi/fetcher/tmp/dj_shop_cart-7.1.0.tar.gz]
+[2024-06-02 18:03:02] INFO root fetch - processPackages [dj-shop-cart]: Remove: archive file [/home/abi/fetcher/tmp/dj_shop_cart-8.0.0a0.tar.gz]
+[2024-06-02 18:03:02] INFO root fetch - main [MainThread]: End processing [dj-shop-cart]: success
+[2024-06-02 18:03:03] INFO root fetch - processPackages [stackview]: Remove: archive file [/home/abi/fetcher/tmp/stackview-0.7.8.tar.gz]
+[2024-06-02 18:03:03] INFO root fetch - processPackages [stackview]: Remove: archive file [/home/abi/fetcher/tmp/stackview-0.7.9.tar.gz]
+[2024-06-02 18:03:03] INFO root fetch - main [MainThread]: End processing [stackview]: success
+[2024-06-02 18:03:03] INFO root fetch - processPackages [trytond-sale]: executing diffoscope
+[2024-06-02 18:03:03] INFO root fetch - processPackages [trytond-sale]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trytond_sale-7.2.1.tar.gz tmp/trytond_sale-7.2.2-py3-none-any.whl.zip --markdown 20240602/t/trytond-sale/7.2.1-7.2.2/README.md --exclude *.pyd
+[2024-06-02 18:03:03] INFO root fetch - processPackages [trytond-sale]: Remove: archive file [/home/abi/fetcher/tmp/trytond_sale-7.2.1.tar.gz]
+[2024-06-02 18:03:03] INFO root fetch - processPackages [trytond-sale]: Remove: archive file [/home/abi/fetcher/tmp/trytond_sale-7.2.2-py3-none-any.whl.zip]
+[2024-06-02 18:03:03] INFO root fetch - main [MainThread]: End processing [trytond-sale]: success
+[2024-06-02 18:03:03] INFO root fetch - main [MainThread]: Store serial: [23490520]
