@@ -11650,3 +11650,60 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 17:04:27] INFO root fetch - processPackages [pyftms]: Remove: archive file [/home/abi/fetcher/tmp/pyftms-0.2.3.tar.gz]
 [2024-06-02 17:04:27] INFO root fetch - main [MainThread]: End processing [pyftms]: success
 [2024-06-02 17:04:27] INFO root fetch - main [MainThread]: Store serial: [23489858]
+[2024-06-02 17:06:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23489858]
+[2024-06-02 17:06:36] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-06-02 17:06:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: voyage-agents
+[2024-06-02 17:06:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dj-shop-cart
+[2024-06-02 17:06:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: SpheroidAnalyzer
+[2024-06-02 17:06:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sc3dg
+[2024-06-02 17:06:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: easy-db-lib
+[2024-06-02 17:06:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ipex-llm
+[2024-06-02 17:06:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: ipy-agent
+[2024-06-02 17:06:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: port-ocean
+[2024-06-02 17:06:36] INFO root fetch - processPackages [sc3dg]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-06-02 17:06:36] INFO root fetch - processPackages [voyage-agents]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-06-02 17:06:36] INFO root fetch - processPackages [ipex-llm]: New version: [2.1.0b20240601] Old Version: [2.1.0b20240531]
+[2024-06-02 17:06:36] WARNING root fetch - processPackages [ipy-agent]: Skipping, unable to determine old version
+[2024-06-02 17:06:36] INFO root fetch - main [MainThread]: End processing [ipy-agent] error
+[2024-06-02 17:06:36] INFO root fetch - processPackages [sc3dg]: Downloading https://files.pythonhosted.org/packages/97/65/1394420940d9bdc212860a3842baed2ba84016ee1556fa9c66bfb0fa3d07/sc3dg-0.0.8.tar.gz
+[2024-06-02 17:06:36] INFO root fetch - processPackages [port-ocean]: New version: [0.5.9] Old Version: [0.5.8]
+[2024-06-02 17:06:36] WARNING root fetch - processPackages [easy-db-lib]: Skipping, unable to determine old version
+[2024-06-02 17:06:36] INFO root fetch - main [MainThread]: End processing [easy-db-lib] error
+[2024-06-02 17:06:36] WARNING root fetch - processPackages [SpheroidAnalyzer]: Skipping, unable to determine old version
+[2024-06-02 17:06:36] INFO root fetch - main [MainThread]: End processing [SpheroidAnalyzer] error
+[2024-06-02 17:06:36] INFO root fetch - processPackages [dj-shop-cart]: New version: [8.0.0a0] Old Version: [7.1.0]
+[2024-06-02 17:06:36] INFO root fetch - processPackages [ipex-llm]: Downloading https://files.pythonhosted.org/packages/d0/b2/9d4cdd2a3ecf7b64f9d701d7b6ca597bb100a661aabd6810e38fa6b054fc/ipex_llm-2.1.0b20240531-py3-none-win_amd64.whl
+[2024-06-02 17:06:36] INFO root fetch - processPackages [voyage-agents]: Downloading https://files.pythonhosted.org/packages/b2/7a/99ab51cb5c57153f4fb397796dc5aa95b602eb42937208cc6fff95ba947b/voyage_agents-0.0.1.tar.gz
+[2024-06-02 17:06:36] INFO root fetch - processPackages [dj-shop-cart]: Downloading https://files.pythonhosted.org/packages/2d/0d/d644627fd41e05c1c31d490da130fde46ba8f0b5ea561a0f46d96140a431/dj_shop_cart-7.1.0.tar.gz
+[2024-06-02 17:06:36] INFO root fetch - processPackages [sc3dg]: Downloading https://files.pythonhosted.org/packages/36/99/5a97c5b877e089a11d7fcbc1d935f5e5301bcc0f77867bda7d000fc1eb58/sc3dg-0.0.9.tar.gz
+[2024-06-02 17:06:36] INFO root fetch - processPackages [port-ocean]: Downloading https://files.pythonhosted.org/packages/78/bc/7cc9e8e2e79075a3c79c00273aaeb13f895d17585c027c53b61f77bdaba4/port_ocean-0.5.8.tar.gz
+[2024-06-02 17:06:36] INFO root fetch - processPackages [sc3dg]: executing diffoscope
+[2024-06-02 17:06:36] INFO root fetch - processPackages [sc3dg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sc3dg-0.0.8.tar.gz tmp/sc3dg-0.0.9.tar.gz --markdown 20240602/s/sc3dg/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-06-02 17:06:37] INFO root fetch - processPackages [voyage-agents]: Downloading https://files.pythonhosted.org/packages/dc/19/7c6bc2512ade30576375b6627584d47101b9f659a2aecc399143288182f4/voyage_agents-0.0.2.tar.gz
+[2024-06-02 17:06:37] INFO root fetch - processPackages [dj-shop-cart]: Downloading https://files.pythonhosted.org/packages/8d/f4/90e0ea4b267dea8a4140b5209fcdee97e16081adc4e256700598aac295e7/dj_shop_cart-8.0.0a0.tar.gz
+[2024-06-02 17:06:37] INFO root fetch - processPackages [voyage-agents]: executing diffoscope
+[2024-06-02 17:06:37] INFO root fetch - processPackages [voyage-agents]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/voyage_agents-0.0.1.tar.gz tmp/voyage_agents-0.0.2.tar.gz --markdown 20240602/v/voyage-agents/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-06-02 17:06:37] INFO root fetch - processPackages [ipex-llm]: Downloading https://files.pythonhosted.org/packages/77/40/65a6c6db2572caf1a7cfe1a6f00a14927346e9de5d7b28506ca6bbc8f77f/ipex_llm-2.1.0b20240601-py3-none-win_amd64.whl
+[2024-06-02 17:06:37] INFO root fetch - processPackages [port-ocean]: Downloading https://files.pythonhosted.org/packages/9a/b8/b4b21f5c3d509271ff988cb9644c8429ce3f2eb23c44e309e16fc3f2c3d6/port_ocean-0.5.9.tar.gz
+[2024-06-02 17:06:37] INFO root fetch - processPackages [dj-shop-cart]: executing diffoscope
+[2024-06-02 17:06:37] INFO root fetch - processPackages [dj-shop-cart]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dj_shop_cart-7.1.0.tar.gz tmp/dj_shop_cart-8.0.0a0.tar.gz --markdown 20240602/d/dj-shop-cart/7.1.0-8.0.0a0/README.md --exclude *.pyd
+[2024-06-02 17:06:37] INFO root fetch - processPackages [port-ocean]: executing diffoscope
+[2024-06-02 17:06:37] INFO root fetch - processPackages [port-ocean]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/port_ocean-0.5.8.tar.gz tmp/port_ocean-0.5.9.tar.gz --markdown 20240602/p/port-ocean/0.5.8-0.5.9/README.md --exclude *.pyd
+[2024-06-02 17:06:37] INFO root fetch - processPackages [ipex-llm]: executing diffoscope
+[2024-06-02 17:06:37] INFO root fetch - processPackages [ipex-llm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ipex_llm-2.1.0b20240531-py3-none-win_amd64.whl.zip tmp/ipex_llm-2.1.0b20240601-py3-none-win_amd64.whl.zip --markdown 20240602/i/ipex-llm/2.1.0b20240531-2.1.0b20240601/README.md --exclude *.pyd
+[2024-06-02 17:06:37] INFO root fetch - processPackages [sc3dg]: Remove: archive file [/home/abi/fetcher/tmp/sc3dg-0.0.8.tar.gz]
+[2024-06-02 17:06:37] INFO root fetch - processPackages [sc3dg]: Remove: archive file [/home/abi/fetcher/tmp/sc3dg-0.0.9.tar.gz]
+[2024-06-02 17:06:37] INFO root fetch - main [MainThread]: End processing [sc3dg]: success
+[2024-06-02 17:06:37] INFO root fetch - processPackages [dj-shop-cart]: Remove: archive file [/home/abi/fetcher/tmp/dj_shop_cart-7.1.0.tar.gz]
+[2024-06-02 17:06:37] INFO root fetch - processPackages [dj-shop-cart]: Remove: archive file [/home/abi/fetcher/tmp/dj_shop_cart-8.0.0a0.tar.gz]
+[2024-06-02 17:06:37] INFO root fetch - main [MainThread]: End processing [dj-shop-cart]: success
+[2024-06-02 17:06:37] INFO root fetch - processPackages [voyage-agents]: Remove: archive file [/home/abi/fetcher/tmp/voyage_agents-0.0.1.tar.gz]
+[2024-06-02 17:06:37] INFO root fetch - processPackages [voyage-agents]: Remove: archive file [/home/abi/fetcher/tmp/voyage_agents-0.0.2.tar.gz]
+[2024-06-02 17:06:37] INFO root fetch - main [MainThread]: End processing [voyage-agents]: success
+[2024-06-02 17:06:38] INFO root fetch - processPackages [port-ocean]: Remove: archive file [/home/abi/fetcher/tmp/port_ocean-0.5.8.tar.gz]
+[2024-06-02 17:06:38] INFO root fetch - processPackages [port-ocean]: Remove: archive file [/home/abi/fetcher/tmp/port_ocean-0.5.9.tar.gz]
+[2024-06-02 17:06:38] INFO root fetch - main [MainThread]: End processing [port-ocean]: success
+[2024-06-02 17:07:02] INFO root fetch - processPackages [ipex-llm]: Remove: archive file [/home/abi/fetcher/tmp/ipex_llm-2.1.0b20240531-py3-none-win_amd64.whl.zip]
+[2024-06-02 17:07:02] INFO root fetch - processPackages [ipex-llm]: Remove: archive file [/home/abi/fetcher/tmp/ipex_llm-2.1.0b20240601-py3-none-win_amd64.whl.zip]
+[2024-06-02 17:07:02] INFO root fetch - main [MainThread]: End processing [ipex-llm]: success
+[2024-06-02 17:07:02] INFO root fetch - main [MainThread]: Store serial: [23489888]
