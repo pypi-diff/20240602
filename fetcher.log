@@ -8458,3 +8458,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-02 13:27:17] INFO root fetch - processPackages [torchrl-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torchrl_nightly-2024.6.2-cp39-cp39-manylinux1_x86_64.whl.zip]
 [2024-06-02 13:27:17] INFO root fetch - main [MainThread]: End processing [torchrl-nightly]: success
 [2024-06-02 13:27:17] INFO root fetch - main [MainThread]: Store serial: [23488410]
+[2024-06-02 13:29:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23488410]
+[2024-06-02 13:29:27] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-02 13:29:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bdmc
+[2024-06-02 13:29:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ruqia
+[2024-06-02 13:29:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: advanced-automapper
+[2024-06-02 13:29:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: robusta-cli
+[2024-06-02 13:29:27] INFO root fetch - processPackages [advanced-automapper]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-06-02 13:29:27] INFO root fetch - processPackages [bdmc]: New version: [0.1.5.9] Old Version: [0.1.5.8]
+[2024-06-02 13:29:27] INFO root fetch - processPackages [ruqia]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-06-02 13:29:27] INFO root fetch - processPackages [robusta-cli]: New version: [1.0a0] Old Version: [0.9.9]
+[2024-06-02 13:29:27] INFO root fetch - processPackages [bdmc]: Downloading https://files.pythonhosted.org/packages/7b/a4/6d673f004389618881a3a5641b084f02f3e3c9606bea3e6b2a5fb9f265d6/bdmc-0.1.5.8.tar.gz
+[2024-06-02 13:29:27] INFO root fetch - processPackages [advanced-automapper]: Downloading https://files.pythonhosted.org/packages/a8/c3/c2b2553a7fda0de5b4f348e4e617ad1de68af22d0bf2cd3b75f07c82e6e9/advanced_automapper-0.1.4.tar.gz
+[2024-06-02 13:29:27] INFO root fetch - processPackages [robusta-cli]: Downloading https://files.pythonhosted.org/packages/9f/ff/a70074935ded21551e9900241be83e06dcddd697498c8fa3eeab30d0105c/robusta-cli-0.9.9.tar.gz
+[2024-06-02 13:29:27] INFO root fetch - processPackages [ruqia]: Downloading https://files.pythonhosted.org/packages/00/6e/947f842f446dc3c06f4c72f25f4faf2f40d7ee8d535636e379f541a68606/ruqia-0.0.8.tar.gz
+[2024-06-02 13:29:28] INFO root fetch - processPackages [bdmc]: Downloading https://files.pythonhosted.org/packages/0b/9d/0fd87f38893641236ff55f80f919c108ccfbe16165193350adcd472d5b64/bdmc-0.1.5.9.tar.gz
+[2024-06-02 13:29:28] INFO root fetch - processPackages [robusta-cli]: Downloading https://files.pythonhosted.org/packages/b3/a0/5edc74f691805bac1629b30fc4b6698a6f66a4099635a05d10c9d839a1de/robusta_cli-1.0a0.tar.gz
+[2024-06-02 13:29:28] INFO root fetch - processPackages [ruqia]: Downloading https://files.pythonhosted.org/packages/04/7e/91a622c32fde873979352ba2f81b9e503bcc5368785872602ed8d9e9a394/ruqia-0.0.9.tar.gz
+[2024-06-02 13:29:28] INFO root fetch - processPackages [advanced-automapper]: Downloading https://files.pythonhosted.org/packages/e3/1e/b1b091ee3131034034f8969382d88f98c80e88e2cd68188cd818dc9274c1/advanced_automapper-0.1.5.tar.gz
+[2024-06-02 13:29:28] INFO root fetch - processPackages [bdmc]: executing diffoscope
+[2024-06-02 13:29:28] INFO root fetch - processPackages [bdmc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bdmc-0.1.5.8.tar.gz tmp/bdmc-0.1.5.9.tar.gz --markdown 20240602/b/bdmc/0.1.5.8-0.1.5.9/README.md --exclude *.pyd
+[2024-06-02 13:29:28] INFO root fetch - processPackages [robusta-cli]: executing diffoscope
+[2024-06-02 13:29:28] INFO root fetch - processPackages [robusta-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/robusta-cli-0.9.9.tar.gz tmp/robusta_cli-1.0a0.tar.gz --markdown 20240602/r/robusta-cli/0.9.9-1.0a0/README.md --exclude *.pyd
+[2024-06-02 13:29:28] INFO root fetch - processPackages [ruqia]: executing diffoscope
+[2024-06-02 13:29:28] INFO root fetch - processPackages [ruqia]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ruqia-0.0.8.tar.gz tmp/ruqia-0.0.9.tar.gz --markdown 20240602/r/ruqia/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-06-02 13:29:28] INFO root fetch - processPackages [advanced-automapper]: executing diffoscope
+[2024-06-02 13:29:28] INFO root fetch - processPackages [advanced-automapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/advanced_automapper-0.1.4.tar.gz tmp/advanced_automapper-0.1.5.tar.gz --markdown 20240602/a/advanced-automapper/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-06-02 13:29:28] INFO root fetch - processPackages [bdmc]: Remove: archive file [/home/abi/fetcher/tmp/bdmc-0.1.5.8.tar.gz]
+[2024-06-02 13:29:28] INFO root fetch - processPackages [bdmc]: Remove: archive file [/home/abi/fetcher/tmp/bdmc-0.1.5.9.tar.gz]
+[2024-06-02 13:29:28] INFO root fetch - main [MainThread]: End processing [bdmc]: success
+[2024-06-02 13:29:28] INFO root fetch - processPackages [advanced-automapper]: Remove: archive file [/home/abi/fetcher/tmp/advanced_automapper-0.1.4.tar.gz]
+[2024-06-02 13:29:28] INFO root fetch - processPackages [advanced-automapper]: Remove: archive file [/home/abi/fetcher/tmp/advanced_automapper-0.1.5.tar.gz]
+[2024-06-02 13:29:28] INFO root fetch - main [MainThread]: End processing [advanced-automapper]: success
+[2024-06-02 13:29:29] INFO root fetch - processPackages [ruqia]: Remove: archive file [/home/abi/fetcher/tmp/ruqia-0.0.8.tar.gz]
+[2024-06-02 13:29:29] INFO root fetch - processPackages [ruqia]: Remove: archive file [/home/abi/fetcher/tmp/ruqia-0.0.9.tar.gz]
+[2024-06-02 13:29:29] INFO root fetch - main [MainThread]: End processing [ruqia]: success
+[2024-06-02 13:29:29] INFO root fetch - processPackages [robusta-cli]: Remove: archive file [/home/abi/fetcher/tmp/robusta-cli-0.9.9.tar.gz]
+[2024-06-02 13:29:29] INFO root fetch - processPackages [robusta-cli]: Remove: archive file [/home/abi/fetcher/tmp/robusta_cli-1.0a0.tar.gz]
+[2024-06-02 13:29:29] INFO root fetch - main [MainThread]: End processing [robusta-cli]: success
+[2024-06-02 13:29:29] INFO root fetch - main [MainThread]: Store serial: [23488424]
