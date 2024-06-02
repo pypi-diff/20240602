@@ -9414,3 +9414,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-02 14:22:49] INFO root fetch - processPackages [syncloud-lib]: Remove: archive file [/home/abi/fetcher/tmp/syncloud-lib-99.tar.gz]
 [2024-06-02 14:22:49] INFO root fetch - main [MainThread]: End processing [syncloud-lib]: success
 [2024-06-02 14:22:49] INFO root fetch - main [MainThread]: Store serial: [23488831]
+[2024-06-02 14:24:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23488831]
+[2024-06-02 14:24:59] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-02 14:24:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo-addon-stock-available-to-promise-release
+[2024-06-02 14:24:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-oscarbot
+[2024-06-02 14:24:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: txt2ebook
+[2024-06-02 14:24:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: hddm-s
+[2024-06-02 14:24:59] INFO root fetch - processPackages [hddm-s]: New version: [1.1.1] Old Version: [1.1.0]
+[2024-06-02 14:24:59] INFO root fetch - processPackages [hddm-s]: Downloading https://files.pythonhosted.org/packages/e3/92/06fcc0b58cd99786731fe242d377522e0abcf034f8bcf72889deba90d145/hddm_s-1.1.0.tar.gz
+[2024-06-02 14:24:59] INFO root fetch - processPackages [odoo-addon-stock-available-to-promise-release]: New version: [16.0.3.2.0] Old Version: [16.0.3.1.1]
+[2024-06-02 14:24:59] INFO root fetch - processPackages [django-oscarbot]: New version: [0.9] Old Version: [0.8]
+[2024-06-02 14:24:59] INFO root fetch - processPackages [txt2ebook]: New version: [0.1.90] Old Version: [0.1.9]
+[2024-06-02 14:24:59] INFO root fetch - processPackages [odoo-addon-stock-available-to-promise-release]: Downloading https://files.pythonhosted.org/packages/e3/f2/e71362af74ca4158b21c794bf6ceb27be46a6e49693bedfe57fb274628e8/odoo_addon_stock_available_to_promise_release-16.0.3.1.1-py3-none-any.whl
+[2024-06-02 14:24:59] INFO root fetch - processPackages [django-oscarbot]: Downloading https://files.pythonhosted.org/packages/66/60/55dca842d844f992f166b6041a9e2bcf01cdb4ec256aa0a184f2d88b7dc4/django-oscarbot-0.8.tar.gz
+[2024-06-02 14:24:59] INFO root fetch - processPackages [txt2ebook]: Downloading https://files.pythonhosted.org/packages/2a/b8/8ad395f87b8f7685da9b3f389de9870183f09446c9f0624dfed431e3b9b8/txt2ebook-0.1.9.tar.gz
+[2024-06-02 14:24:59] INFO root fetch - processPackages [hddm-s]: Downloading https://files.pythonhosted.org/packages/72/ad/42b9b1d25c52979bf47c978022a9664eda88bb72cb993608d1f1d3224b1c/hddm_s-1.1.1.tar.gz
+[2024-06-02 14:24:59] INFO root fetch - processPackages [hddm-s]: executing diffoscope
+[2024-06-02 14:24:59] INFO root fetch - processPackages [hddm-s]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hddm_s-1.1.0.tar.gz tmp/hddm_s-1.1.1.tar.gz --markdown 20240602/h/hddm-s/1.1.0-1.1.1/README.md --exclude *.pyd
+[2024-06-02 14:24:59] INFO root fetch - processPackages [django-oscarbot]: Downloading https://files.pythonhosted.org/packages/27/0e/11bce9aad03924b01f6cbdcd1ec3d9d21ce62ce8f3d3ed63bf039ef1e454/django-oscarbot-0.9.tar.gz
+[2024-06-02 14:24:59] INFO root fetch - processPackages [odoo-addon-stock-available-to-promise-release]: Downloading https://files.pythonhosted.org/packages/4b/4d/c2fc87cac7850d10867db7ca850cac85d63ea5bbd86a0ab62f68baa4cdbe/odoo_addon_stock_available_to_promise_release-16.0.3.2.0-py3-none-any.whl
+[2024-06-02 14:25:00] INFO root fetch - processPackages [django-oscarbot]: executing diffoscope
+[2024-06-02 14:25:00] INFO root fetch - processPackages [django-oscarbot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-oscarbot-0.8.tar.gz tmp/django-oscarbot-0.9.tar.gz --markdown 20240602/d/django-oscarbot/0.8-0.9/README.md --exclude *.pyd
+[2024-06-02 14:25:00] INFO root fetch - processPackages [odoo-addon-stock-available-to-promise-release]: executing diffoscope
+[2024-06-02 14:25:00] INFO root fetch - processPackages [odoo-addon-stock-available-to-promise-release]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_stock_available_to_promise_release-16.0.3.1.1-py3-none-any.whl.zip tmp/odoo_addon_stock_available_to_promise_release-16.0.3.2.0-py3-none-any.whl.zip --markdown 20240602/o/odoo-addon-stock-available-to-promise-release/16.0.3.1.1-16.0.3.2.0/README.md --exclude *.pyd
+[2024-06-02 14:25:00] INFO root fetch - processPackages [txt2ebook]: Downloading https://files.pythonhosted.org/packages/59/4b/8c6d32862e5368760160d80189cceae7789fddde6246073efb7a0bdb6b22/txt2ebook-0.1.90.tar.gz
+[2024-06-02 14:25:00] INFO root fetch - processPackages [txt2ebook]: executing diffoscope
+[2024-06-02 14:25:00] INFO root fetch - processPackages [txt2ebook]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/txt2ebook-0.1.9.tar.gz tmp/txt2ebook-0.1.90.tar.gz --markdown 20240602/t/txt2ebook/0.1.9-0.1.90/README.md --exclude *.pyd
+[2024-06-02 14:25:00] INFO root fetch - processPackages [hddm-s]: Remove: archive file [/home/abi/fetcher/tmp/hddm_s-1.1.0.tar.gz]
+[2024-06-02 14:25:00] INFO root fetch - processPackages [hddm-s]: Remove: archive file [/home/abi/fetcher/tmp/hddm_s-1.1.1.tar.gz]
+[2024-06-02 14:25:00] INFO root fetch - main [MainThread]: End processing [hddm-s]: success
+[2024-06-02 14:25:00] INFO root fetch - processPackages [django-oscarbot]: Remove: archive file [/home/abi/fetcher/tmp/django-oscarbot-0.8.tar.gz]
+[2024-06-02 14:25:00] INFO root fetch - processPackages [django-oscarbot]: Remove: archive file [/home/abi/fetcher/tmp/django-oscarbot-0.9.tar.gz]
+[2024-06-02 14:25:00] INFO root fetch - main [MainThread]: End processing [django-oscarbot]: success
+[2024-06-02 14:25:00] INFO root fetch - processPackages [odoo-addon-stock-available-to-promise-release]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_stock_available_to_promise_release-16.0.3.1.1-py3-none-any.whl.zip]
+[2024-06-02 14:25:00] INFO root fetch - processPackages [odoo-addon-stock-available-to-promise-release]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_stock_available_to_promise_release-16.0.3.2.0-py3-none-any.whl.zip]
+[2024-06-02 14:25:00] INFO root fetch - main [MainThread]: End processing [odoo-addon-stock-available-to-promise-release]: success
+[2024-06-02 14:25:00] INFO root fetch - processPackages [txt2ebook]: Remove: archive file [/home/abi/fetcher/tmp/txt2ebook-0.1.9.tar.gz]
+[2024-06-02 14:25:00] INFO root fetch - processPackages [txt2ebook]: Remove: archive file [/home/abi/fetcher/tmp/txt2ebook-0.1.90.tar.gz]
+[2024-06-02 14:25:00] INFO root fetch - main [MainThread]: End processing [txt2ebook]: success
+[2024-06-02 14:25:00] INFO root fetch - main [MainThread]: Store serial: [23488843]
