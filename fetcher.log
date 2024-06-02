@@ -5863,3 +5863,24 @@
 [2024-06-02 10:00:03] INFO root fetch - processPackages [buildz]: Remove: archive file [/home/abi/fetcher/tmp/buildz-0.5.9.tar.gz]
 [2024-06-02 10:00:03] INFO root fetch - main [MainThread]: End processing [buildz]: success
 [2024-06-02 10:00:03] INFO root fetch - main [MainThread]: Store serial: [23487244]
+[2024-06-02 10:02:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23487244]
+[2024-06-02 10:02:12] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-02 10:02:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyrofork
+[2024-06-02 10:02:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: LLMEasyTools
+[2024-06-02 10:02:12] INFO root fetch - processPackages [pyrofork]: New version: [2.4.0rc1] Old Version: [2.3.9.post2]
+[2024-06-02 10:02:12] INFO root fetch - processPackages [LLMEasyTools]: New version: [0.9] Old Version: [0.8]
+[2024-06-02 10:02:12] INFO root fetch - processPackages [pyrofork]: Downloading https://files.pythonhosted.org/packages/76/4c/a811f786af1f4693948bf3c1ed0f138b9a0cddfccfa812e2a009d2ce8dbc/PyroFork-2.3.9.post2.tar.gz
+[2024-06-02 10:02:12] INFO root fetch - processPackages [LLMEasyTools]: Downloading https://files.pythonhosted.org/packages/82/92/3b67230d7ddb3b80cc3c61e5bd7678372c21db75cd4249fc296e1e48663c/LLMEasyTools-0.8.tar.gz
+[2024-06-02 10:02:13] INFO root fetch - processPackages [pyrofork]: Downloading https://files.pythonhosted.org/packages/e1/ab/1633ebf424a12d38d11ab1dce941cacbc4f3e4873df00c9d742c79852917/pyrofork-2.4.0rc1.tar.gz
+[2024-06-02 10:02:13] INFO root fetch - processPackages [pyrofork]: executing diffoscope
+[2024-06-02 10:02:13] INFO root fetch - processPackages [pyrofork]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyroFork-2.3.9.post2.tar.gz tmp/pyrofork-2.4.0rc1.tar.gz --markdown 20240602/p/pyrofork/2.3.9.post2-2.4.0rc1/README.md --exclude *.pyd
+[2024-06-02 10:02:13] INFO root fetch - processPackages [LLMEasyTools]: Downloading https://files.pythonhosted.org/packages/72/a3/c49ac0fb7ddf156d6a831d2b908fcf1ca4c36f2081aec1178176f19d3958/LLMEasyTools-0.9.tar.gz
+[2024-06-02 10:02:13] INFO root fetch - processPackages [LLMEasyTools]: executing diffoscope
+[2024-06-02 10:02:13] INFO root fetch - processPackages [LLMEasyTools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/LLMEasyTools-0.8.tar.gz tmp/LLMEasyTools-0.9.tar.gz --markdown 20240602/L/LLMEasyTools/0.8-0.9/README.md --exclude *.pyd
+[2024-06-02 10:02:13] INFO root fetch - processPackages [LLMEasyTools]: Remove: archive file [/home/abi/fetcher/tmp/LLMEasyTools-0.8.tar.gz]
+[2024-06-02 10:02:13] INFO root fetch - processPackages [LLMEasyTools]: Remove: archive file [/home/abi/fetcher/tmp/LLMEasyTools-0.9.tar.gz]
+[2024-06-02 10:02:13] INFO root fetch - main [MainThread]: End processing [LLMEasyTools]: success
+[2024-06-02 10:02:17] INFO root fetch - processPackages [pyrofork]: Remove: archive file [/home/abi/fetcher/tmp/PyroFork-2.3.9.post2.tar.gz]
+[2024-06-02 10:02:17] INFO root fetch - processPackages [pyrofork]: Remove: archive file [/home/abi/fetcher/tmp/pyrofork-2.4.0rc1.tar.gz]
+[2024-06-02 10:02:17] INFO root fetch - main [MainThread]: End processing [pyrofork]: success
+[2024-06-02 10:02:17] INFO root fetch - main [MainThread]: Store serial: [23487247]
