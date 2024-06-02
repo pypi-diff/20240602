@@ -12553,3 +12553,24 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 17:45:20] INFO root fetch - processPackages [twikit]: Remove: archive file [/home/abi/fetcher/tmp/twikit-1.7.0.tar.gz]
 [2024-06-02 17:45:20] INFO root fetch - main [MainThread]: End processing [twikit]: success
 [2024-06-02 17:45:20] INFO root fetch - main [MainThread]: Store serial: [23490306]
+[2024-06-02 17:47:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23490306]
+[2024-06-02 17:47:29] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-02 17:47:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: leetcode-study-tool
+[2024-06-02 17:47:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ngptbot
+[2024-06-02 17:47:29] INFO root fetch - processPackages [leetcode-study-tool]: New version: [1.3.1] Old Version: [1.3]
+[2024-06-02 17:47:29] INFO root fetch - processPackages [leetcode-study-tool]: Downloading https://files.pythonhosted.org/packages/21/ac/61a67641aa4e02a27b32cf03af8742f29b8619bce45cdb423aa8b570f6fe/leetcode-study-tool-1.3.tar.gz
+[2024-06-02 17:47:29] INFO root fetch - processPackages [ngptbot]: New version: [0.3.5] Old Version: [0.3.4]
+[2024-06-02 17:47:29] INFO root fetch - processPackages [ngptbot]: Downloading https://files.pythonhosted.org/packages/ea/13/372b916753361662ee92d2abb2f733f11e16209fb22c08a4b32431bac898/ngptbot-0.3.4.tar.gz
+[2024-06-02 17:47:29] INFO root fetch - processPackages [leetcode-study-tool]: Downloading https://files.pythonhosted.org/packages/7d/78/4a92132d61d81896d2020911e2dfd32b1c1192e42f7be86ac6695c7a3a9f/leetcode_study_tool-1.3.1.tar.gz
+[2024-06-02 17:47:29] INFO root fetch - processPackages [leetcode-study-tool]: executing diffoscope
+[2024-06-02 17:47:29] INFO root fetch - processPackages [leetcode-study-tool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/leetcode-study-tool-1.3.tar.gz tmp/leetcode_study_tool-1.3.1.tar.gz --markdown 20240602/l/leetcode-study-tool/1.3-1.3.1/README.md --exclude *.pyd
+[2024-06-02 17:47:29] INFO root fetch - processPackages [ngptbot]: Downloading https://files.pythonhosted.org/packages/1f/f1/80d6f4059132776474d882e7a50bd66f5747e98b4b0cf577aecbe5aa4a82/ngptbot-0.3.5.tar.gz
+[2024-06-02 17:47:29] INFO root fetch - processPackages [ngptbot]: executing diffoscope
+[2024-06-02 17:47:29] INFO root fetch - processPackages [ngptbot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ngptbot-0.3.4.tar.gz tmp/ngptbot-0.3.5.tar.gz --markdown 20240602/n/ngptbot/0.3.4-0.3.5/README.md --exclude *.pyd
+[2024-06-02 17:47:30] INFO root fetch - processPackages [leetcode-study-tool]: Remove: archive file [/home/abi/fetcher/tmp/leetcode-study-tool-1.3.tar.gz]
+[2024-06-02 17:47:30] INFO root fetch - processPackages [leetcode-study-tool]: Remove: archive file [/home/abi/fetcher/tmp/leetcode_study_tool-1.3.1.tar.gz]
+[2024-06-02 17:47:30] INFO root fetch - main [MainThread]: End processing [leetcode-study-tool]: success
+[2024-06-02 17:47:30] INFO root fetch - processPackages [ngptbot]: Remove: archive file [/home/abi/fetcher/tmp/ngptbot-0.3.4.tar.gz]
+[2024-06-02 17:47:30] INFO root fetch - processPackages [ngptbot]: Remove: archive file [/home/abi/fetcher/tmp/ngptbot-0.3.5.tar.gz]
+[2024-06-02 17:47:30] INFO root fetch - main [MainThread]: End processing [ngptbot]: success
+[2024-06-02 17:47:30] INFO root fetch - main [MainThread]: Store serial: [23490312]
