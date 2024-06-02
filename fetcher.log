@@ -12741,3 +12741,117 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 17:54:10] INFO root fetch - processPackages [coincurve]: Remove: archive file [/home/abi/fetcher/tmp/coincurve-9.0.0.tar.gz]
 [2024-06-02 17:54:10] INFO root fetch - main [MainThread]: End processing [coincurve]: success
 [2024-06-02 17:54:10] INFO root fetch - main [MainThread]: Store serial: [23490428]
+[2024-06-02 17:56:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23490428]
+[2024-06-02 17:56:19] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2024-06-02 17:56:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Agently
+[2024-06-02 17:56:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: trytond
+[2024-06-02 17:56:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rl-test-common
+[2024-06-02 17:56:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: rl-test-task-1
+[2024-06-02 17:56:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: rl-test-task-2
+[2024-06-02 17:56:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: rl-test-task-3
+[2024-06-02 17:56:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: rl-tasks
+[2024-06-02 17:56:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: rl-test-storage-handlers
+[2024-06-02 17:56:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: trytond
+[2024-06-02 17:56:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: btc-embedded
+[2024-06-02 17:56:20] INFO root fetch - processPackages [rl-test-task-2]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-06-02 17:56:20] INFO root fetch - processPackages [rl-tasks]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-06-02 17:56:20] INFO root fetch - processPackages [trytond]: New version: [7.2.3] Old Version: [7.2.2]
+[2024-06-02 17:56:20] INFO root fetch - processPackages [rl-test-storage-handlers]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-06-02 17:56:20] INFO root fetch - processPackages [rl-test-task-1]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-06-02 17:56:20] INFO root fetch - processPackages [rl-test-common]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-06-02 17:56:20] INFO root fetch - processPackages [trytond]: New version: [7.2.3] Old Version: [7.2.2]
+[2024-06-02 17:56:20] INFO root fetch - processPackages [rl-test-task-3]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-06-02 17:56:20] INFO root fetch - processPackages [Agently]: New version: [3.2.2.9a1] Old Version: [3.2.2.9]
+[2024-06-02 17:56:20] INFO root fetch - processPackages [trytond]: Downloading https://files.pythonhosted.org/packages/90/5a/b6f4d30c6b9cd3849cb9b0440e1ee5120395bb53bc080c5ed6ba812565a8/trytond-7.2.2.tar.gz
+[2024-06-02 17:56:20] INFO root fetch - processPackages [rl-test-task-2]: Downloading https://files.pythonhosted.org/packages/ed/1a/68cbdaed91dec91f626c7bd0eba5402c78b678f918013e35d95fa56181e1/rl_test_task_2-0.1.3.tar.gz
+[2024-06-02 17:56:20] INFO root fetch - processPackages [btc-embedded]: New version: [24.1.6] Old Version: [24.1.5]
+[2024-06-02 17:56:20] INFO root fetch - processPackages [rl-test-task-3]: Downloading https://files.pythonhosted.org/packages/29/1e/c36844255365431ba3b3f2ebc694320849d5097f22c50c3e5ec6bd8a4376/rl_test_task_3-0.1.4.tar.gz
+[2024-06-02 17:56:20] INFO root fetch - processPackages [rl-test-task-1]: Downloading https://files.pythonhosted.org/packages/8a/a6/423a340dba5f22a30fee163d7f99ac995640c21ead4749bbeda68bf8c595/rl_test_task_1-0.1.3.tar.gz
+[2024-06-02 17:56:20] INFO root fetch - processPackages [trytond]: Downloading https://files.pythonhosted.org/packages/90/5a/b6f4d30c6b9cd3849cb9b0440e1ee5120395bb53bc080c5ed6ba812565a8/trytond-7.2.2.tar.gz
+[2024-06-02 17:56:20] INFO root fetch - processPackages [rl-tasks]: Downloading https://files.pythonhosted.org/packages/c2/52/168b0d01ae7f5e61acdad7ca768cbda53f1b68704103d54ea07145bdb839/rl_tasks-0.1.3.tar.gz
+[2024-06-02 17:56:20] INFO root fetch - processPackages [rl-test-storage-handlers]: Downloading https://files.pythonhosted.org/packages/61/20/c90a3317752dfdbbb0225113a2a6260d2bfaa999570c3be58a3959eed987/rl_test_storage_handlers-0.1.0.tar.gz
+[2024-06-02 17:56:20] INFO root fetch - processPackages [rl-test-common]: Downloading https://files.pythonhosted.org/packages/59/7d/b93c5f1eb4edb3ba3ef77a168cd193096519366f6e4be2f7997622660b93/rl_test_common-0.1.0.tar.gz
+[2024-06-02 17:56:20] INFO root fetch - processPackages [Agently]: Downloading https://files.pythonhosted.org/packages/36/cc/61767147a6afaafe275c4394b0cfc64594f626bc40095ed69fd8afa418f3/Agently-3.2.2.9.tar.gz
+[2024-06-02 17:56:20] INFO root fetch - processPackages [btc-embedded]: Downloading https://files.pythonhosted.org/packages/8b/e8/9e00e79b018e905f39d99897ba81460a4b885356f929a725f6e9351948bc/btc_embedded-24.1.5.tar.gz
+[2024-06-02 17:56:20] INFO root fetch - processPackages [rl-test-task-3]: Downloading https://files.pythonhosted.org/packages/98/01/b5d052757f952b68a70dc679913d8bada27440ea93d8efa6a8aefd1a4d8f/rl_test_task_3-0.1.5.tar.gz
+[2024-06-02 17:56:20] INFO root fetch - processPackages [trytond]: Downloading https://files.pythonhosted.org/packages/f6/c2/6234e5c14f25d07af58c7b12392a8c7a0d54e7f345502d974ba8955dea3b/trytond-7.2.3.tar.gz
+[2024-06-02 17:56:20] INFO root fetch - processPackages [rl-test-task-2]: Downloading https://files.pythonhosted.org/packages/66/4f/81a82347eb7e3f8516c4b5fff7f159825e9e55cfe4578645252994f953ea/rl_test_task_2-0.1.4.tar.gz
+[2024-06-02 17:56:20] INFO root fetch - processPackages [rl-test-task-1]: Downloading https://files.pythonhosted.org/packages/80/eb/a5dd600696375bde4c95012556b76acda0c86dc63b89f8128bd5eca05b5b/rl_test_task_1-0.1.4.tar.gz
+[2024-06-02 17:56:20] INFO root fetch - processPackages [rl-test-task-3]: executing diffoscope
+[2024-06-02 17:56:20] INFO root fetch - processPackages [rl-test-task-3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rl_test_task_3-0.1.4.tar.gz tmp/rl_test_task_3-0.1.5.tar.gz --markdown 20240602/r/rl-test-task-3/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-06-02 17:56:20] INFO root fetch - processPackages [rl-test-common]: Downloading https://files.pythonhosted.org/packages/dd/33/19ee76537cf5d7d74630bdcc84cb518d842dbce2056070f61b8e061a9a46/rl_test_common-0.1.1.tar.gz
+[2024-06-02 17:56:20] INFO root fetch - processPackages [trytond]: Downloading https://files.pythonhosted.org/packages/f6/c2/6234e5c14f25d07af58c7b12392a8c7a0d54e7f345502d974ba8955dea3b/trytond-7.2.3.tar.gz
+[2024-06-02 17:56:20] INFO root fetch - processPackages [rl-test-task-2]: executing diffoscope
+[2024-06-02 17:56:20] INFO root fetch - processPackages [rl-test-task-2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rl_test_task_2-0.1.3.tar.gz tmp/rl_test_task_2-0.1.4.tar.gz --markdown 20240602/r/rl-test-task-2/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-06-02 17:56:20] INFO root fetch - processPackages [rl-test-storage-handlers]: Downloading https://files.pythonhosted.org/packages/ad/20/969136ab0d4672deeee675cf55497978ae76402a47eda77c3c2ab2554c25/rl_test_storage_handlers-0.1.1.tar.gz
+[2024-06-02 17:56:20] INFO root fetch - processPackages [Agently]: Downloading https://files.pythonhosted.org/packages/48/2a/9e7f5196148206372e9d91b9cd950b1e36d8719ae24d0c228359ce2470b4/Agently-3.2.2.9a1.tar.gz
+[2024-06-02 17:56:20] INFO root fetch - processPackages [rl-tasks]: Downloading https://files.pythonhosted.org/packages/7b/35/6465d7a6319d052b49ffa3cbf3fc6529d0eb7314bf9834b1c6afadfd0327/rl_tasks-0.1.4.tar.gz
+[2024-06-02 17:56:20] INFO root fetch - processPackages [rl-test-task-1]: executing diffoscope
+[2024-06-02 17:56:20] INFO root fetch - processPackages [rl-test-task-1]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rl_test_task_1-0.1.3.tar.gz tmp/rl_test_task_1-0.1.4.tar.gz --markdown 20240602/r/rl-test-task-1/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-06-02 17:56:20] INFO root fetch - processPackages [btc-embedded]: Downloading https://files.pythonhosted.org/packages/7d/f3/c09aeec981a27733f8eca6f0e54fe554a2f03f0611fc1a4bf8e0ddb889ac/btc_embedded-24.1.6.tar.gz
+[2024-06-02 17:56:20] INFO root fetch - processPackages [rl-test-common]: executing diffoscope
+[2024-06-02 17:56:20] INFO root fetch - processPackages [rl-test-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rl_test_common-0.1.0.tar.gz tmp/rl_test_common-0.1.1.tar.gz --markdown 20240602/r/rl-test-common/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-06-02 17:56:20] INFO root fetch - processPackages [rl-tasks]: executing diffoscope
+[2024-06-02 17:56:20] INFO root fetch - processPackages [rl-tasks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rl_tasks-0.1.3.tar.gz tmp/rl_tasks-0.1.4.tar.gz --markdown 20240602/r/rl-tasks/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-06-02 17:56:20] INFO root fetch - processPackages [rl-test-storage-handlers]: executing diffoscope
+[2024-06-02 17:56:20] INFO root fetch - processPackages [rl-test-storage-handlers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rl_test_storage_handlers-0.1.0.tar.gz tmp/rl_test_storage_handlers-0.1.1.tar.gz --markdown 20240602/r/rl-test-storage-handlers/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-06-02 17:56:20] INFO root fetch - processPackages [Agently]: executing diffoscope
+[2024-06-02 17:56:20] INFO root fetch - processPackages [Agently]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Agently-3.2.2.9.tar.gz tmp/Agently-3.2.2.9a1.tar.gz --markdown 20240602/A/Agently/3.2.2.9-3.2.2.9a1/README.md --exclude *.pyd
+[2024-06-02 17:56:21] INFO root fetch - processPackages [trytond]: executing diffoscope
+[2024-06-02 17:56:21] INFO root fetch - processPackages [trytond]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trytond-7.2.2.tar.gz tmp/trytond-7.2.3.tar.gz --markdown 20240602/t/trytond/7.2.2-7.2.3/README.md --exclude *.pyd
+[2024-06-02 17:56:21] INFO root fetch - processPackages [trytond]: executing diffoscope
+[2024-06-02 17:56:21] INFO root fetch - processPackages [trytond]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trytond-7.2.2.tar.gz tmp/trytond-7.2.3.tar.gz --markdown 20240602/t/trytond/7.2.2-7.2.3/README.md --exclude *.pyd
+[2024-06-02 17:56:21] INFO root fetch - processPackages [btc-embedded]: executing diffoscope
+[2024-06-02 17:56:21] INFO root fetch - processPackages [btc-embedded]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/btc_embedded-24.1.5.tar.gz tmp/btc_embedded-24.1.6.tar.gz --markdown 20240602/b/btc-embedded/24.1.5-24.1.6/README.md --exclude *.pyd
+[2024-06-02 17:56:21] INFO root fetch - processPackages [rl-test-task-3]: Remove: archive file [/home/abi/fetcher/tmp/rl_test_task_3-0.1.4.tar.gz]
+[2024-06-02 17:56:21] INFO root fetch - processPackages [rl-test-task-3]: Remove: archive file [/home/abi/fetcher/tmp/rl_test_task_3-0.1.5.tar.gz]
+[2024-06-02 17:56:21] INFO root fetch - processPackages [rl-test-task-3]: Start processing: trytond
+[2024-06-02 17:56:21] INFO root fetch - main [MainThread]: End processing [rl-test-task-3]: success
+[2024-06-02 17:56:21] INFO root fetch - processPackages [rl-test-task-2]: Remove: archive file [/home/abi/fetcher/tmp/rl_test_task_2-0.1.3.tar.gz]
+[2024-06-02 17:56:21] INFO root fetch - processPackages [rl-test-task-2]: Remove: archive file [/home/abi/fetcher/tmp/rl_test_task_2-0.1.4.tar.gz]
+[2024-06-02 17:56:21] INFO root fetch - processPackages [rl-test-task-2]: Start processing: trytond-web-shop-product-data-feed
+[2024-06-02 17:56:21] INFO root fetch - main [MainThread]: End processing [rl-test-task-2]: success
+[2024-06-02 17:56:21] INFO root fetch - processPackages [trytond]: New version: [7.2.3] Old Version: [7.2.2]
+[2024-06-02 17:56:21] INFO root fetch - processPackages [rl-test-task-1]: Remove: archive file [/home/abi/fetcher/tmp/rl_test_task_1-0.1.3.tar.gz]
+[2024-06-02 17:56:21] INFO root fetch - processPackages [rl-test-task-1]: Remove: archive file [/home/abi/fetcher/tmp/rl_test_task_1-0.1.4.tar.gz]
+[2024-06-02 17:56:21] INFO root fetch - processPackages [rl-test-task-1]: Start processing: anydi
+[2024-06-02 17:56:21] INFO root fetch - main [MainThread]: End processing [rl-test-task-1]: success
+[2024-06-02 17:56:21] INFO root fetch - processPackages [trytond-web-shop-product-data-feed]: New version: [7.2.2] Old Version: [7.2.1]
+[2024-06-02 17:56:21] INFO root fetch - processPackages [rl-test-common]: Remove: archive file [/home/abi/fetcher/tmp/rl_test_common-0.1.0.tar.gz]
+[2024-06-02 17:56:21] INFO root fetch - processPackages [rl-test-common]: Remove: archive file [/home/abi/fetcher/tmp/rl_test_common-0.1.1.tar.gz]
+[2024-06-02 17:56:21] INFO root fetch - main [MainThread]: End processing [rl-test-common]: success
+[2024-06-02 17:56:21] INFO root fetch - processPackages [anydi]: New version: [0.27.0a4] Old Version: [0.27.0a3]
+[2024-06-02 17:56:21] INFO root fetch - processPackages [trytond]: executing diffoscope
+[2024-06-02 17:56:21] INFO root fetch - processPackages [trytond]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trytond-7.2.2.tar.gz tmp/trytond-7.2.3.tar.gz --markdown 20240602/t/trytond/7.2.2-7.2.3/README.md --exclude *.pyd
+[2024-06-02 17:56:21] INFO root fetch - processPackages [anydi]: Downloading https://files.pythonhosted.org/packages/e5/87/0301cb0d0ebe08c1a738f4fd2c60c397443f6bad3486e0d5b35a71198950/anydi-0.27.0a3.tar.gz
+[2024-06-02 17:56:21] INFO root fetch - processPackages [rl-test-storage-handlers]: Remove: archive file [/home/abi/fetcher/tmp/rl_test_storage_handlers-0.1.0.tar.gz]
+[2024-06-02 17:56:21] INFO root fetch - processPackages [rl-test-storage-handlers]: Remove: archive file [/home/abi/fetcher/tmp/rl_test_storage_handlers-0.1.1.tar.gz]
+[2024-06-02 17:56:21] INFO root fetch - main [MainThread]: End processing [rl-test-storage-handlers]: success
+[2024-06-02 17:56:22] INFO root fetch - processPackages [trytond-web-shop-product-data-feed]: Downloading https://files.pythonhosted.org/packages/15/c6/9febf49fefef93a5f0e14c5eb83d1bb4ec1ad52358e369f583d2dbb07164/trytond_web_shop_product_data_feed-7.2.1.tar.gz
+[2024-06-02 17:56:22] INFO root fetch - processPackages [btc-embedded]: Remove: archive file [/home/abi/fetcher/tmp/btc_embedded-24.1.5.tar.gz]
+[2024-06-02 17:56:22] INFO root fetch - processPackages [rl-tasks]: Remove: archive file [/home/abi/fetcher/tmp/rl_tasks-0.1.3.tar.gz]
+[2024-06-02 17:56:22] INFO root fetch - processPackages [btc-embedded]: Remove: archive file [/home/abi/fetcher/tmp/btc_embedded-24.1.6.tar.gz]
+[2024-06-02 17:56:22] INFO root fetch - processPackages [rl-tasks]: Remove: archive file [/home/abi/fetcher/tmp/rl_tasks-0.1.4.tar.gz]
+[2024-06-02 17:56:22] INFO root fetch - main [MainThread]: End processing [btc-embedded]: success
+[2024-06-02 17:56:22] INFO root fetch - main [MainThread]: End processing [rl-tasks]: success
+[2024-06-02 17:56:22] INFO root fetch - processPackages [Agently]: Remove: archive file [/home/abi/fetcher/tmp/Agently-3.2.2.9.tar.gz]
+[2024-06-02 17:56:22] INFO root fetch - processPackages [Agently]: Remove: archive file [/home/abi/fetcher/tmp/Agently-3.2.2.9a1.tar.gz]
+[2024-06-02 17:56:22] INFO root fetch - main [MainThread]: End processing [Agently]: success
+[2024-06-02 17:56:22] INFO root fetch - processPackages [anydi]: Downloading https://files.pythonhosted.org/packages/b9/a0/25cfac70973afad736b1aa5eb5a5b77abdc2f3a0111d6c3df4f813fec422/anydi-0.27.0a4.tar.gz
+[2024-06-02 17:56:22] INFO root fetch - processPackages [trytond-web-shop-product-data-feed]: Downloading https://files.pythonhosted.org/packages/9a/a2/92c0e8420ef6c996d6670fe5ce9058ecbfd545e2df4fd3b0c43132797c86/trytond_web_shop_product_data_feed-7.2.2.tar.gz
+[2024-06-02 17:56:22] INFO root fetch - processPackages [anydi]: executing diffoscope
+[2024-06-02 17:56:22] INFO root fetch - processPackages [anydi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anydi-0.27.0a3.tar.gz tmp/anydi-0.27.0a4.tar.gz --markdown 20240602/a/anydi/0.27.0a3-0.27.0a4/README.md --exclude *.pyd
+[2024-06-02 17:56:22] INFO root fetch - processPackages [trytond-web-shop-product-data-feed]: executing diffoscope
+[2024-06-02 17:56:22] INFO root fetch - processPackages [trytond-web-shop-product-data-feed]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trytond_web_shop_product_data_feed-7.2.1.tar.gz tmp/trytond_web_shop_product_data_feed-7.2.2.tar.gz --markdown 20240602/t/trytond-web-shop-product-data-feed/7.2.1-7.2.2/README.md --exclude *.pyd
+[2024-06-02 17:56:23] INFO root fetch - processPackages [anydi]: Remove: archive file [/home/abi/fetcher/tmp/anydi-0.27.0a3.tar.gz]
+[2024-06-02 17:56:23] INFO root fetch - processPackages [anydi]: Remove: archive file [/home/abi/fetcher/tmp/anydi-0.27.0a4.tar.gz]
+[2024-06-02 17:56:23] INFO root fetch - main [MainThread]: End processing [anydi]: success
+[2024-06-02 17:56:23] INFO root fetch - processPackages [trytond-web-shop-product-data-feed]: Remove: archive file [/home/abi/fetcher/tmp/trytond_web_shop_product_data_feed-7.2.1.tar.gz]
+[2024-06-02 17:56:23] INFO root fetch - processPackages [trytond-web-shop-product-data-feed]: Remove: archive file [/home/abi/fetcher/tmp/trytond_web_shop_product_data_feed-7.2.2.tar.gz]
+[2024-06-02 17:56:23] INFO root fetch - main [MainThread]: End processing [trytond-web-shop-product-data-feed]: success
+[2024-06-02 17:56:23] INFO root fetch - processPackages [trytond]: Remove: archive file [/home/abi/fetcher/tmp/trytond-7.2.2.tar.gz]
+[2024-06-02 17:56:23] INFO root fetch - processPackages [trytond]: Remove: archive file [/home/abi/fetcher/tmp/trytond-7.2.3.tar.gz]
+[2024-06-02 17:56:23] INFO root fetch - main [MainThread]: End processing [trytond]: success
+[2024-06-02 17:56:24] INFO root fetch - main [MainThread]: End processing [trytond]: success
+[2024-06-02 17:56:24] INFO root fetch - main [MainThread]: End processing [trytond]: success
+[2024-06-02 17:56:24] INFO root fetch - main [MainThread]: Store serial: [23490464]
