@@ -12053,3 +12053,66 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 17:20:13] INFO root fetch - processPackages [kcli]: Remove: archive file [/home/abi/fetcher/tmp/kcli-99.0.202406021519-py3-none-any.whl.zip]
 [2024-06-02 17:20:13] INFO root fetch - main [MainThread]: End processing [kcli]: success
 [2024-06-02 17:20:13] INFO root fetch - main [MainThread]: Store serial: [23490036]
+[2024-06-02 17:22:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23490036]
+[2024-06-02 17:22:21] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-06-02 17:22:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: few-shot-priming
+[2024-06-02 17:22:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pymimir
+[2024-06-02 17:22:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: En-transformer
+[2024-06-02 17:22:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pkscreener
+[2024-06-02 17:22:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: llama-index-postprocessor-rankgpt-rerank
+[2024-06-02 17:22:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: vtacML
+[2024-06-02 17:22:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: voyage-agents
+[2024-06-02 17:22:21] INFO root fetch - processPackages [voyage-agents]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-06-02 17:22:21] INFO root fetch - processPackages [vtacML]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-06-02 17:22:21] INFO root fetch - processPackages [few-shot-priming]: New version: [0.3.99] Old Version: [0.3.98]
+[2024-06-02 17:22:21] INFO root fetch - processPackages [voyage-agents]: Downloading https://files.pythonhosted.org/packages/dc/19/7c6bc2512ade30576375b6627584d47101b9f659a2aecc399143288182f4/voyage_agents-0.0.2.tar.gz
+[2024-06-02 17:22:21] INFO root fetch - processPackages [vtacML]: Downloading https://files.pythonhosted.org/packages/79/aa/91a4175a186d9ca9d5b8e22458f3df05fe189ee3d78243f47aa5e986d67a/vtacML-0.1.6.tar.gz
+[2024-06-02 17:22:21] INFO root fetch - processPackages [pymimir]: New version: [0.9.9] Old Version: [0.9.10]
+[2024-06-02 17:22:21] INFO root fetch - processPackages [llama-index-postprocessor-rankgpt-rerank]: New version: [0.1.6] Old Version: [0.1.4]
+[2024-06-02 17:22:21] INFO root fetch - processPackages [few-shot-priming]: Downloading https://files.pythonhosted.org/packages/eb/67/d15b11d0bfb57369fa16ba7f8c97cd3ddec8f771e6da8f11a3d819004b69/few_shot_priming-0.3.98-py3-none-any.whl
+[2024-06-02 17:22:21] INFO root fetch - processPackages [pkscreener]: New version: [0.45.20240602.428] Old Version: [0.45.20240602.427]
+[2024-06-02 17:22:21] INFO root fetch - processPackages [En-transformer]: New version: [1.6.6] Old Version: [1.6.5]
+[2024-06-02 17:22:21] INFO root fetch - processPackages [pymimir]: Downloading https://files.pythonhosted.org/packages/39/66/3e55ed905e9d1e11a99e5be0d833cf73f801f108334dd88f8911b1c3dbf0/pymimir-0.9.10.tar.gz
+[2024-06-02 17:22:21] INFO root fetch - processPackages [pkscreener]: Downloading https://files.pythonhosted.org/packages/a1/e5/5dc9644bf5873109194532c11192934290ed1a962b48635e25f2f77075fa/pkscreener-0.45.20240602.427.tar.gz
+[2024-06-02 17:22:21] INFO root fetch - processPackages [llama-index-postprocessor-rankgpt-rerank]: Downloading https://files.pythonhosted.org/packages/f7/f3/0b238c6236a66f1d0125cf6256a6d0f4d04522051898f9b21524a7906430/llama_index_postprocessor_rankgpt_rerank-0.1.4.tar.gz
+[2024-06-02 17:22:22] INFO root fetch - processPackages [En-transformer]: Downloading https://files.pythonhosted.org/packages/c4/c7/d49aba1dc1e4efc14027e29b193558ea1ee56be53f79c072b8aec4c98176/En-transformer-1.6.5.tar.gz
+[2024-06-02 17:22:22] INFO root fetch - processPackages [voyage-agents]: Downloading https://files.pythonhosted.org/packages/dc/46/4eab17b2625e44b240262a42338743d717ca6781ee2286f906ab89993d02/voyage_agents-0.0.3.tar.gz
+[2024-06-02 17:22:22] INFO root fetch - processPackages [vtacML]: Downloading https://files.pythonhosted.org/packages/64/66/ec535000b09b3219255280a24b7a8d79995dcd4863129ac031f06d7f1b16/vtacML-0.1.7.tar.gz
+[2024-06-02 17:22:22] WARNING root fetch - processPackages [vtacML]: Skipping package: exceeds size limit 37262345>=10485760
+[2024-06-02 17:22:22] INFO root fetch - main [MainThread]: End processing [vtacML] error
+[2024-06-02 17:22:22] INFO root fetch - processPackages [voyage-agents]: executing diffoscope
+[2024-06-02 17:22:22] INFO root fetch - processPackages [voyage-agents]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/voyage_agents-0.0.2.tar.gz tmp/voyage_agents-0.0.3.tar.gz --markdown 20240602/v/voyage-agents/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-06-02 17:22:22] INFO root fetch - processPackages [few-shot-priming]: Downloading https://files.pythonhosted.org/packages/ff/11/548f6e96803602e6431dc610d736d401b20fde986f85c35c8ad19a6d0958/few_shot_priming-0.3.99-py3-none-any.whl
+[2024-06-02 17:22:22] INFO root fetch - processPackages [pymimir]: Downloading https://files.pythonhosted.org/packages/17/24/0cbc735c2f249b207c785050c9d09a31e22ba83acc8ea4066d273134201c/pymimir-0.9.9.tar.gz
+[2024-06-02 17:22:22] INFO root fetch - processPackages [llama-index-postprocessor-rankgpt-rerank]: Downloading https://files.pythonhosted.org/packages/59/4d/0efa8c301453f0ad7ff2731a79a4369c6979912560f29b50accaabdc01df/llama_index_postprocessor_rankgpt_rerank-0.1.6.tar.gz
+[2024-06-02 17:22:22] INFO root fetch - processPackages [En-transformer]: Downloading https://files.pythonhosted.org/packages/96/90/6c041b340e3ff85437839e7fc4848a368e4ce468206117a95f9d6972b983/en_transformer-1.6.6.tar.gz
+[2024-06-02 17:22:22] INFO root fetch - processPackages [pkscreener]: Downloading https://files.pythonhosted.org/packages/0e/f4/39d95c8f043f90a8bf5f6beae51ce835ea68c20b9b8ef5bae119982ec72a/pkscreener-0.45.20240602.428.tar.gz
+[2024-06-02 17:22:22] INFO root fetch - processPackages [pymimir]: executing diffoscope
+[2024-06-02 17:22:22] INFO root fetch - processPackages [pymimir]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymimir-0.9.10.tar.gz tmp/pymimir-0.9.9.tar.gz --markdown 20240602/p/pymimir/0.9.10-0.9.9/README.md --exclude *.pyd
+[2024-06-02 17:22:22] INFO root fetch - processPackages [En-transformer]: executing diffoscope
+[2024-06-02 17:22:22] INFO root fetch - processPackages [En-transformer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/En-transformer-1.6.5.tar.gz tmp/en_transformer-1.6.6.tar.gz --markdown 20240602/E/En-transformer/1.6.5-1.6.6/README.md --exclude *.pyd
+[2024-06-02 17:22:22] INFO root fetch - processPackages [llama-index-postprocessor-rankgpt-rerank]: executing diffoscope
+[2024-06-02 17:22:22] INFO root fetch - processPackages [llama-index-postprocessor-rankgpt-rerank]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llama_index_postprocessor_rankgpt_rerank-0.1.4.tar.gz tmp/llama_index_postprocessor_rankgpt_rerank-0.1.6.tar.gz --markdown 20240602/l/llama-index-postprocessor-rankgpt-rerank/0.1.4-0.1.6/README.md --exclude *.pyd
+[2024-06-02 17:22:22] INFO root fetch - processPackages [few-shot-priming]: executing diffoscope
+[2024-06-02 17:22:22] INFO root fetch - processPackages [few-shot-priming]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/few_shot_priming-0.3.98-py3-none-any.whl.zip tmp/few_shot_priming-0.3.99-py3-none-any.whl.zip --markdown 20240602/f/few-shot-priming/0.3.98-0.3.99/README.md --exclude *.pyd
+[2024-06-02 17:22:22] INFO root fetch - processPackages [pkscreener]: executing diffoscope
+[2024-06-02 17:22:22] INFO root fetch - processPackages [pkscreener]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pkscreener-0.45.20240602.427.tar.gz tmp/pkscreener-0.45.20240602.428.tar.gz --markdown 20240602/p/pkscreener/0.45.20240602.427-0.45.20240602.428/README.md --exclude *.pyd
+[2024-06-02 17:22:22] INFO root fetch - processPackages [voyage-agents]: Remove: archive file [/home/abi/fetcher/tmp/voyage_agents-0.0.2.tar.gz]
+[2024-06-02 17:22:22] INFO root fetch - processPackages [voyage-agents]: Remove: archive file [/home/abi/fetcher/tmp/voyage_agents-0.0.3.tar.gz]
+[2024-06-02 17:22:22] INFO root fetch - main [MainThread]: End processing [voyage-agents]: success
+[2024-06-02 17:22:23] INFO root fetch - processPackages [llama-index-postprocessor-rankgpt-rerank]: Remove: archive file [/home/abi/fetcher/tmp/llama_index_postprocessor_rankgpt_rerank-0.1.4.tar.gz]
+[2024-06-02 17:22:23] INFO root fetch - processPackages [llama-index-postprocessor-rankgpt-rerank]: Remove: archive file [/home/abi/fetcher/tmp/llama_index_postprocessor_rankgpt_rerank-0.1.6.tar.gz]
+[2024-06-02 17:22:23] INFO root fetch - main [MainThread]: End processing [llama-index-postprocessor-rankgpt-rerank]: success
+[2024-06-02 17:22:23] INFO root fetch - processPackages [En-transformer]: Remove: archive file [/home/abi/fetcher/tmp/En-transformer-1.6.5.tar.gz]
+[2024-06-02 17:22:23] INFO root fetch - processPackages [En-transformer]: Remove: archive file [/home/abi/fetcher/tmp/en_transformer-1.6.6.tar.gz]
+[2024-06-02 17:22:23] INFO root fetch - main [MainThread]: End processing [En-transformer]: success
+[2024-06-02 17:22:23] INFO root fetch - processPackages [few-shot-priming]: Remove: archive file [/home/abi/fetcher/tmp/few_shot_priming-0.3.98-py3-none-any.whl.zip]
+[2024-06-02 17:22:23] INFO root fetch - processPackages [few-shot-priming]: Remove: archive file [/home/abi/fetcher/tmp/few_shot_priming-0.3.99-py3-none-any.whl.zip]
+[2024-06-02 17:22:23] INFO root fetch - main [MainThread]: End processing [few-shot-priming]: success
+[2024-06-02 17:22:23] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.45.20240602.427.tar.gz]
+[2024-06-02 17:22:23] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.45.20240602.428.tar.gz]
+[2024-06-02 17:22:23] INFO root fetch - main [MainThread]: End processing [pkscreener]: success
+[2024-06-02 17:22:23] INFO root fetch - processPackages [pymimir]: Remove: archive file [/home/abi/fetcher/tmp/pymimir-0.9.10.tar.gz]
+[2024-06-02 17:22:23] INFO root fetch - processPackages [pymimir]: Remove: archive file [/home/abi/fetcher/tmp/pymimir-0.9.9.tar.gz]
+[2024-06-02 17:22:23] INFO root fetch - main [MainThread]: End processing [pymimir]: success
+[2024-06-02 17:22:23] INFO root fetch - main [MainThread]: Store serial: [23490059]
