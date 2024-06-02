@@ -9970,3 +9970,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-02 15:07:04] INFO root fetch - processPackages [Geode-Simplex]: Remove: archive file [/home/abi/fetcher/tmp/Geode_Simplex-6.8.3rc1-cp39-cp39-manylinux2014_x86_64.whl.zip]
 [2024-06-02 15:07:04] INFO root fetch - main [MainThread]: End processing [Geode-Simplex]: success
 [2024-06-02 15:07:04] INFO root fetch - main [MainThread]: Store serial: [23489130]
+[2024-06-02 15:09:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23489130]
+[2024-06-02 15:09:12] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-02 15:09:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: reka-api
+[2024-06-02 15:09:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: xmz
+[2024-06-02 15:09:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nonebot-plugin-chatgpt-turbo
+[2024-06-02 15:09:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: efax
+[2024-06-02 15:09:12] INFO root fetch - processPackages [reka-api]: New version: [3.0.6] Old Version: [3.0.5]
+[2024-06-02 15:09:12] INFO root fetch - processPackages [reka-api]: Downloading https://files.pythonhosted.org/packages/a0/b4/7a9e8e5e114e5c6d2f6366fb842eafa8aedbc0b34d84e003996d18b8e64e/reka_api-3.0.5.tar.gz
+[2024-06-02 15:09:12] WARNING root fetch - processPackages [xmz]: Skipping, unable to determine old version
+[2024-06-02 15:09:12] INFO root fetch - main [MainThread]: End processing [xmz] error
+[2024-06-02 15:09:12] INFO root fetch - processPackages [nonebot-plugin-chatgpt-turbo]: New version: [1.0.0] Old Version: [0.3.0]
+[2024-06-02 15:09:12] INFO root fetch - processPackages [efax]: New version: [1.9.1] Old Version: [1.9.0]
+[2024-06-02 15:09:13] INFO root fetch - processPackages [nonebot-plugin-chatgpt-turbo]: Downloading https://files.pythonhosted.org/packages/4e/3d/844484209853658b3f031528c4977aee12c6510bbf9fedd45b97d971e8ef/nonebot_plugin_chatgpt_turbo-0.3.0.tar.gz
+[2024-06-02 15:09:13] INFO root fetch - processPackages [efax]: Downloading https://files.pythonhosted.org/packages/b0/d3/88cf57bd21b97ce0af97e91d814a97737f5278b22981e6339b869ec2b35a/efax-1.9.0.tar.gz
+[2024-06-02 15:09:13] INFO root fetch - processPackages [reka-api]: Downloading https://files.pythonhosted.org/packages/8f/60/52d0e7d1afca8b014f6f59699d2e16c52b9e375bd161b8dafe5ac49b1c86/reka_api-3.0.6.tar.gz
+[2024-06-02 15:09:13] INFO root fetch - processPackages [reka-api]: executing diffoscope
+[2024-06-02 15:09:13] INFO root fetch - processPackages [reka-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/reka_api-3.0.5.tar.gz tmp/reka_api-3.0.6.tar.gz --markdown 20240602/r/reka-api/3.0.5-3.0.6/README.md --exclude *.pyd
+[2024-06-02 15:09:13] INFO root fetch - processPackages [nonebot-plugin-chatgpt-turbo]: Downloading https://files.pythonhosted.org/packages/28/ca/1d8bbbe803bcabe9c38cc31b02a262a27047fbd865dd4eccbc1156a3c99d/nonebot_plugin_chatgpt_turbo-1.0.0.tar.gz
+[2024-06-02 15:09:13] INFO root fetch - processPackages [efax]: Downloading https://files.pythonhosted.org/packages/45/ae/9fd314ec092ce76a4044da94da01a98a1ff79c6ede08742ef86a83aea5be/efax-1.9.1.tar.gz
+[2024-06-02 15:09:13] INFO root fetch - processPackages [nonebot-plugin-chatgpt-turbo]: executing diffoscope
+[2024-06-02 15:09:13] INFO root fetch - processPackages [nonebot-plugin-chatgpt-turbo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_chatgpt_turbo-0.3.0.tar.gz tmp/nonebot_plugin_chatgpt_turbo-1.0.0.tar.gz --markdown 20240602/n/nonebot-plugin-chatgpt-turbo/0.3.0-1.0.0/README.md --exclude *.pyd
+[2024-06-02 15:09:13] INFO root fetch - processPackages [efax]: executing diffoscope
+[2024-06-02 15:09:13] INFO root fetch - processPackages [efax]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/efax-1.9.0.tar.gz tmp/efax-1.9.1.tar.gz --markdown 20240602/e/efax/1.9.0-1.9.1/README.md --exclude *.pyd
+[2024-06-02 15:09:13] INFO root fetch - processPackages [reka-api]: Remove: archive file [/home/abi/fetcher/tmp/reka_api-3.0.5.tar.gz]
+[2024-06-02 15:09:13] INFO root fetch - processPackages [reka-api]: Remove: archive file [/home/abi/fetcher/tmp/reka_api-3.0.6.tar.gz]
+[2024-06-02 15:09:13] INFO root fetch - main [MainThread]: End processing [reka-api]: success
+[2024-06-02 15:09:14] INFO root fetch - processPackages [nonebot-plugin-chatgpt-turbo]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_chatgpt_turbo-0.3.0.tar.gz]
+[2024-06-02 15:09:14] INFO root fetch - processPackages [nonebot-plugin-chatgpt-turbo]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_chatgpt_turbo-1.0.0.tar.gz]
+[2024-06-02 15:09:14] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-chatgpt-turbo]: success
+[2024-06-02 15:09:14] INFO root fetch - processPackages [efax]: Remove: archive file [/home/abi/fetcher/tmp/efax-1.9.0.tar.gz]
+[2024-06-02 15:09:14] INFO root fetch - processPackages [efax]: Remove: archive file [/home/abi/fetcher/tmp/efax-1.9.1.tar.gz]
+[2024-06-02 15:09:14] INFO root fetch - main [MainThread]: End processing [efax]: success
+[2024-06-02 15:09:14] INFO root fetch - main [MainThread]: Store serial: [23489150]
