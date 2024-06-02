@@ -15569,3 +15569,42 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 20:07:43] INFO root fetch - processPackages [piperider-nightly]: Remove: archive file [/home/abi/fetcher/tmp/piperider-nightly-0.9.0.20220921.tar.gz]
 [2024-06-02 20:07:43] INFO root fetch - main [MainThread]: End processing [piperider-nightly]: success
 [2024-06-02 20:07:43] INFO root fetch - main [MainThread]: Store serial: [23491619]
+[2024-06-02 20:09:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23491619]
+[2024-06-02 20:09:51] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-02 20:09:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: syndot
+[2024-06-02 20:09:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pypi-cicd
+[2024-06-02 20:09:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gswidgetkit
+[2024-06-02 20:09:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: Pseudovisium
+[2024-06-02 20:09:52] INFO root fetch - processPackages [pypi-cicd]: New version: [0.8] Old Version: [0.7]
+[2024-06-02 20:09:52] INFO root fetch - processPackages [gswidgetkit]: New version: [0.3.3] Old Version: [0.3.2]
+[2024-06-02 20:09:52] INFO root fetch - processPackages [pypi-cicd]: Downloading https://files.pythonhosted.org/packages/4d/65/669b03c86e9b2ebffd7be61dfdaa004618f03abb822a778bd325e0d565c4/pypi_cicd-0.7.tar.gz
+[2024-06-02 20:09:52] INFO root fetch - processPackages [syndot]: New version: [0.1.0] Old Version: [0.0.0]
+[2024-06-02 20:09:52] INFO root fetch - processPackages [Pseudovisium]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-06-02 20:09:52] INFO root fetch - processPackages [gswidgetkit]: Downloading https://files.pythonhosted.org/packages/7c/40/2402850ab7d944b3866ed5b12d24e8219416186bc3c0462ca4b4a6059209/gswidgetkit-0.3.2.tar.gz
+[2024-06-02 20:09:52] INFO root fetch - processPackages [syndot]: Downloading https://files.pythonhosted.org/packages/e7/e0/00e2e8ba3f4e6a7da57bb13e803ed5e306de11dd607cfee14d9f42b9424b/syndot-0.0.0.tar.gz
+[2024-06-02 20:09:52] INFO root fetch - processPackages [pypi-cicd]: Downloading https://files.pythonhosted.org/packages/86/7c/1f3a018bb7b9a5f2a998a34b1f34ed82f392167979956b42bd09bd1bca2a/pypi_cicd-0.8.tar.gz
+[2024-06-02 20:09:52] INFO root fetch - processPackages [Pseudovisium]: Downloading https://files.pythonhosted.org/packages/ec/02/4f0ff6ebfecb2857195a25c3ca342a7a1af99e21acd71f8a0f89061491f0/Pseudovisium-0.0.8.tar.gz
+[2024-06-02 20:09:52] INFO root fetch - processPackages [pypi-cicd]: executing diffoscope
+[2024-06-02 20:09:52] INFO root fetch - processPackages [pypi-cicd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypi_cicd-0.7.tar.gz tmp/pypi_cicd-0.8.tar.gz --markdown 20240602/p/pypi-cicd/0.7-0.8/README.md --exclude *.pyd
+[2024-06-02 20:09:52] INFO root fetch - processPackages [gswidgetkit]: Downloading https://files.pythonhosted.org/packages/20/6a/f48f477cd32c1fc77c1e002dbda9780dd5c9cc735da4e8b0d871b9c5f9da/gswidgetkit-0.3.3.tar.gz
+[2024-06-02 20:09:52] INFO root fetch - processPackages [syndot]: Downloading https://files.pythonhosted.org/packages/49/db/428fb171d20352310fac063a3884f5189bcae570b70b06fd2a94420f87b7/syndot-0.1.0.tar.gz
+[2024-06-02 20:09:52] INFO root fetch - processPackages [Pseudovisium]: Downloading https://files.pythonhosted.org/packages/6a/7f/032756880a4d5dbead5465d90e6d9ef1046690f858021036f62dfcda246a/Pseudovisium-0.0.9.tar.gz
+[2024-06-02 20:09:52] INFO root fetch - processPackages [gswidgetkit]: executing diffoscope
+[2024-06-02 20:09:52] INFO root fetch - processPackages [gswidgetkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gswidgetkit-0.3.2.tar.gz tmp/gswidgetkit-0.3.3.tar.gz --markdown 20240602/g/gswidgetkit/0.3.2-0.3.3/README.md --exclude *.pyd
+[2024-06-02 20:09:52] INFO root fetch - processPackages [Pseudovisium]: executing diffoscope
+[2024-06-02 20:09:52] INFO root fetch - processPackages [Pseudovisium]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Pseudovisium-0.0.8.tar.gz tmp/Pseudovisium-0.0.9.tar.gz --markdown 20240602/P/Pseudovisium/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-06-02 20:09:52] INFO root fetch - processPackages [syndot]: executing diffoscope
+[2024-06-02 20:09:52] INFO root fetch - processPackages [syndot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/syndot-0.0.0.tar.gz tmp/syndot-0.1.0.tar.gz --markdown 20240602/s/syndot/0.0.0-0.1.0/README.md --exclude *.pyd
+[2024-06-02 20:09:53] INFO root fetch - processPackages [pypi-cicd]: Remove: archive file [/home/abi/fetcher/tmp/pypi_cicd-0.7.tar.gz]
+[2024-06-02 20:09:53] INFO root fetch - processPackages [pypi-cicd]: Remove: archive file [/home/abi/fetcher/tmp/pypi_cicd-0.8.tar.gz]
+[2024-06-02 20:09:53] INFO root fetch - main [MainThread]: End processing [pypi-cicd]: success
+[2024-06-02 20:09:53] INFO root fetch - processPackages [Pseudovisium]: Remove: archive file [/home/abi/fetcher/tmp/Pseudovisium-0.0.8.tar.gz]
+[2024-06-02 20:09:53] INFO root fetch - processPackages [Pseudovisium]: Remove: archive file [/home/abi/fetcher/tmp/Pseudovisium-0.0.9.tar.gz]
+[2024-06-02 20:09:53] INFO root fetch - main [MainThread]: End processing [Pseudovisium]: success
+[2024-06-02 20:09:53] INFO root fetch - processPackages [syndot]: Remove: archive file [/home/abi/fetcher/tmp/syndot-0.0.0.tar.gz]
+[2024-06-02 20:09:53] INFO root fetch - processPackages [syndot]: Remove: archive file [/home/abi/fetcher/tmp/syndot-0.1.0.tar.gz]
+[2024-06-02 20:09:53] INFO root fetch - main [MainThread]: End processing [syndot]: success
+[2024-06-02 20:09:53] INFO root fetch - processPackages [gswidgetkit]: Remove: archive file [/home/abi/fetcher/tmp/gswidgetkit-0.3.2.tar.gz]
+[2024-06-02 20:09:53] INFO root fetch - processPackages [gswidgetkit]: Remove: archive file [/home/abi/fetcher/tmp/gswidgetkit-0.3.3.tar.gz]
+[2024-06-02 20:09:53] INFO root fetch - main [MainThread]: End processing [gswidgetkit]: success
+[2024-06-02 20:09:53] INFO root fetch - main [MainThread]: Store serial: [23491645]
