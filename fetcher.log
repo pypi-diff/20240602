@@ -10561,3 +10561,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-02 15:59:01] INFO root fetch - processPackages [vtacML]: Remove: archive file [/home/abi/fetcher/tmp/vtacML-0.1.4.tar.gz]
 [2024-06-02 15:59:01] INFO root fetch - main [MainThread]: End processing [vtacML]: success
 [2024-06-02 15:59:01] INFO root fetch - main [MainThread]: Store serial: [23489378]
+[2024-06-02 16:01:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23489378]
+[2024-06-02 16:01:09] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-02 16:01:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: DCMake
+[2024-06-02 16:01:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mentabotix
+[2024-06-02 16:01:09] INFO root fetch - processPackages [DCMake]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-06-02 16:01:09] INFO root fetch - processPackages [mentabotix]: New version: [0.1.5.9] Old Version: [0.1.5.8]
+[2024-06-02 16:01:09] INFO root fetch - processPackages [DCMake]: Downloading https://files.pythonhosted.org/packages/51/6e/c95341c006c7b081e33164417ef4130bf51db16d5b82734fe90853a2cf9c/DCMake-0.0.5.tar.gz
+[2024-06-02 16:01:09] INFO root fetch - processPackages [mentabotix]: Downloading https://files.pythonhosted.org/packages/82/e7/21cabf951d8e05066058a2c6fafc9a623e4e5939ded05ac5d6cd02cc3c5b/mentabotix-0.1.5.8.tar.gz
+[2024-06-02 16:01:09] INFO root fetch - processPackages [mentabotix]: Downloading https://files.pythonhosted.org/packages/0c/8c/e0aadaf3177b0936c6e2c6784b1ce6ff8d5f0548b2dd38f045005795a3e1/mentabotix-0.1.5.9.tar.gz
+[2024-06-02 16:01:09] INFO root fetch - processPackages [mentabotix]: executing diffoscope
+[2024-06-02 16:01:09] INFO root fetch - processPackages [mentabotix]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mentabotix-0.1.5.8.tar.gz tmp/mentabotix-0.1.5.9.tar.gz --markdown 20240602/m/mentabotix/0.1.5.8-0.1.5.9/README.md --exclude *.pyd
+[2024-06-02 16:01:09] INFO root fetch - processPackages [DCMake]: Downloading https://files.pythonhosted.org/packages/93/97/f812ee6f9e479ae46024730d256e28939d166605ebc2535b572ed651b6d8/DCMake-0.0.6.tar.gz
+[2024-06-02 16:01:10] INFO root fetch - processPackages [DCMake]: executing diffoscope
+[2024-06-02 16:01:10] INFO root fetch - processPackages [DCMake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/DCMake-0.0.5.tar.gz tmp/DCMake-0.0.6.tar.gz --markdown 20240602/D/DCMake/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-06-02 16:01:10] INFO root fetch - processPackages [DCMake]: Remove: archive file [/home/abi/fetcher/tmp/DCMake-0.0.5.tar.gz]
+[2024-06-02 16:01:10] INFO root fetch - processPackages [DCMake]: Remove: archive file [/home/abi/fetcher/tmp/DCMake-0.0.6.tar.gz]
+[2024-06-02 16:01:10] INFO root fetch - main [MainThread]: End processing [DCMake]: success
+[2024-06-02 16:01:10] INFO root fetch - processPackages [mentabotix]: Remove: archive file [/home/abi/fetcher/tmp/mentabotix-0.1.5.8.tar.gz]
+[2024-06-02 16:01:10] INFO root fetch - processPackages [mentabotix]: Remove: archive file [/home/abi/fetcher/tmp/mentabotix-0.1.5.9.tar.gz]
+[2024-06-02 16:01:10] INFO root fetch - main [MainThread]: End processing [mentabotix]: success
+[2024-06-02 16:01:10] INFO root fetch - main [MainThread]: Store serial: [23489385]
