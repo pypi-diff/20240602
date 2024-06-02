@@ -2266,3 +2266,15 @@
 [2024-06-02 02:51:10] INFO root fetch - processPackages [cdk-databrew-cicd]: Remove: archive file [/home/abi/fetcher/tmp/cdk_databrew_cicd-2.0.99.tar.gz]
 [2024-06-02 02:51:10] INFO root fetch - main [MainThread]: End processing [cdk-databrew-cicd]: success
 [2024-06-02 02:51:10] INFO root fetch - main [MainThread]: Store serial: [23485138]
+[2024-06-02 02:53:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23485138]
+[2024-06-02 02:53:20] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-02 02:53:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bussinwebx-get
+[2024-06-02 02:53:20] INFO root fetch - processPackages [bussinwebx-get]: New version: [1.0.4] Old Version: [1.0.3]
+[2024-06-02 02:53:20] INFO root fetch - processPackages [bussinwebx-get]: Downloading https://files.pythonhosted.org/packages/24/13/360b8f111118c81f3c27016e38088784c8090f114393298f368fa37129b5/bussinwebx_get-1.0.3.tar.gz
+[2024-06-02 02:53:20] INFO root fetch - processPackages [bussinwebx-get]: Downloading https://files.pythonhosted.org/packages/83/b7/55f510fe711ca4645d4bc3863327ba0e6edd097386eb786a126520ff7102/bussinwebx_get-1.0.4.tar.gz
+[2024-06-02 02:53:20] INFO root fetch - processPackages [bussinwebx-get]: executing diffoscope
+[2024-06-02 02:53:20] INFO root fetch - processPackages [bussinwebx-get]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bussinwebx_get-1.0.3.tar.gz tmp/bussinwebx_get-1.0.4.tar.gz --markdown 20240602/b/bussinwebx-get/1.0.3-1.0.4/README.md --exclude *.pyd
+[2024-06-02 02:53:21] INFO root fetch - processPackages [bussinwebx-get]: Remove: archive file [/home/abi/fetcher/tmp/bussinwebx_get-1.0.3.tar.gz]
+[2024-06-02 02:53:21] INFO root fetch - processPackages [bussinwebx-get]: Remove: archive file [/home/abi/fetcher/tmp/bussinwebx_get-1.0.4.tar.gz]
+[2024-06-02 02:53:21] INFO root fetch - main [MainThread]: End processing [bussinwebx-get]: success
+[2024-06-02 02:53:21] INFO root fetch - main [MainThread]: Store serial: [23485141]
