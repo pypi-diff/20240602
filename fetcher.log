@@ -5773,3 +5773,27 @@
 [2024-06-02 09:51:28] INFO root fetch - processPackages [CI-CloudConnector]: Remove: archive file [/home/abi/fetcher/tmp/ci_cloudconnector-2.6.tar.gz]
 [2024-06-02 09:51:28] INFO root fetch - main [MainThread]: End processing [CI-CloudConnector]: success
 [2024-06-02 09:51:28] INFO root fetch - main [MainThread]: Store serial: [23487198]
+[2024-06-02 09:53:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23487198]
+[2024-06-02 09:53:36] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-02 09:53:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: federated-learn
+[2024-06-02 09:53:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: plugin-jm-server
+[2024-06-02 09:53:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: x12306
+[2024-06-02 09:53:36] WARNING root fetch - processPackages [federated-learn]: Skipping, unable to determine old version
+[2024-06-02 09:53:36] INFO root fetch - main [MainThread]: End processing [federated-learn] error
+[2024-06-02 09:53:36] INFO root fetch - processPackages [plugin-jm-server]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-06-02 09:53:36] INFO root fetch - processPackages [plugin-jm-server]: Downloading https://files.pythonhosted.org/packages/04/9f/b59383373b3ccd8257040dbfbfcb13f1fac0ae7127238507810b677d5575/plugin_jm_server-0.1.8.tar.gz
+[2024-06-02 09:53:36] INFO root fetch - processPackages [x12306]: New version: [0.3.2] Old Version: [0.3.0]
+[2024-06-02 09:53:36] INFO root fetch - processPackages [plugin-jm-server]: Downloading https://files.pythonhosted.org/packages/9c/b9/c9a974f8f51902d7b33984ab3d9af4cde4da2a59b3b1950e316be3fb3345/plugin_jm_server-0.1.9.tar.gz
+[2024-06-02 09:53:36] INFO root fetch - processPackages [x12306]: Downloading https://files.pythonhosted.org/packages/c7/53/ccbf822d6939962e85dc6dba44610870eb46d28496166c664fb84bc7b37f/x12306-0.3.0.tar.gz
+[2024-06-02 09:53:36] INFO root fetch - processPackages [plugin-jm-server]: executing diffoscope
+[2024-06-02 09:53:36] INFO root fetch - processPackages [plugin-jm-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plugin_jm_server-0.1.8.tar.gz tmp/plugin_jm_server-0.1.9.tar.gz --markdown 20240602/p/plugin-jm-server/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-06-02 09:53:37] INFO root fetch - processPackages [x12306]: Downloading https://files.pythonhosted.org/packages/53/d3/4a3945a31ef9c8842d0cbd9fa7fcf626de0192a9f5bb71e0b1fab798f03b/x12306-0.3.2.tar.gz
+[2024-06-02 09:53:37] INFO root fetch - processPackages [x12306]: executing diffoscope
+[2024-06-02 09:53:37] INFO root fetch - processPackages [x12306]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/x12306-0.3.0.tar.gz tmp/x12306-0.3.2.tar.gz --markdown 20240602/x/x12306/0.3.0-0.3.2/README.md --exclude *.pyd
+[2024-06-02 09:53:37] INFO root fetch - processPackages [plugin-jm-server]: Remove: archive file [/home/abi/fetcher/tmp/plugin_jm_server-0.1.8.tar.gz]
+[2024-06-02 09:53:37] INFO root fetch - processPackages [plugin-jm-server]: Remove: archive file [/home/abi/fetcher/tmp/plugin_jm_server-0.1.9.tar.gz]
+[2024-06-02 09:53:37] INFO root fetch - main [MainThread]: End processing [plugin-jm-server]: success
+[2024-06-02 09:53:37] INFO root fetch - processPackages [x12306]: Remove: archive file [/home/abi/fetcher/tmp/x12306-0.3.0.tar.gz]
+[2024-06-02 09:53:37] INFO root fetch - processPackages [x12306]: Remove: archive file [/home/abi/fetcher/tmp/x12306-0.3.2.tar.gz]
+[2024-06-02 09:53:37] INFO root fetch - main [MainThread]: End processing [x12306]: success
+[2024-06-02 09:53:37] INFO root fetch - main [MainThread]: Store serial: [23487208]
