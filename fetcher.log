@@ -11293,3 +11293,36 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 16:40:33] INFO root fetch - processPackages [epyt-flow]: Remove: archive file [/home/abi/fetcher/tmp/epyt_flow-0.2.0.tar.gz]
 [2024-06-02 16:40:33] INFO root fetch - main [MainThread]: End processing [epyt-flow]: success
 [2024-06-02 16:40:33] INFO root fetch - main [MainThread]: Store serial: [23489721]
+[2024-06-02 16:42:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23489721]
+[2024-06-02 16:42:41] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-02 16:42:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: homebase-calendar-sync
+[2024-06-02 16:42:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Starco
+[2024-06-02 16:42:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: upicvision
+[2024-06-02 16:42:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pythreadserver
+[2024-06-02 16:42:41] INFO root fetch - processPackages [Starco]: New version: [3.3.2] Old Version: [3.3.1]
+[2024-06-02 16:42:41] INFO root fetch - processPackages [Starco]: Downloading https://files.pythonhosted.org/packages/74/9f/f58c1893a11907e817ddb44ef5f13ae3ede691c937a9a74de2eae98cbb9f/Starco-3.3.1.tar.gz
+[2024-06-02 16:42:41] WARNING root fetch - processPackages [homebase-calendar-sync]: Skipping, unable to determine old version
+[2024-06-02 16:42:41] INFO root fetch - main [MainThread]: End processing [homebase-calendar-sync] error
+[2024-06-02 16:42:41] INFO root fetch - processPackages [upicvision]: New version: [0.1.0.3] Old Version: [0.1.0.2]
+[2024-06-02 16:42:41] INFO root fetch - processPackages [pythreadserver]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-06-02 16:42:42] INFO root fetch - processPackages [upicvision]: Downloading https://files.pythonhosted.org/packages/ef/cb/ff4904f33bda33f69a49003e0072257ddecb9f45164b743db8f37e04d54e/upicvision-0.1.0.2.tar.gz
+[2024-06-02 16:42:42] INFO root fetch - processPackages [Starco]: Downloading https://files.pythonhosted.org/packages/04/fb/545c230d310f6dc6922ad765672456d84c1bb902b34cb1c44f5d3c617008/Starco-3.3.2.tar.gz
+[2024-06-02 16:42:42] INFO root fetch - processPackages [pythreadserver]: Downloading https://files.pythonhosted.org/packages/42/d0/95d32f6a9d3da6dbf55891c8146a7c9ace49eec3cb73cdf868a947a63569/pythreadserver-0.1.6.tar.gz
+[2024-06-02 16:42:42] INFO root fetch - processPackages [Starco]: executing diffoscope
+[2024-06-02 16:42:42] INFO root fetch - processPackages [Starco]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Starco-3.3.1.tar.gz tmp/Starco-3.3.2.tar.gz --markdown 20240602/S/Starco/3.3.1-3.3.2/README.md --exclude *.pyd
+[2024-06-02 16:42:42] INFO root fetch - processPackages [upicvision]: Downloading https://files.pythonhosted.org/packages/4d/c0/138ad67825ed106253fe6d0f0a12ae33a7e0666f7030bc58dfd21a1af74d/upicvision-0.1.0.3.tar.gz
+[2024-06-02 16:42:42] INFO root fetch - processPackages [pythreadserver]: Downloading https://files.pythonhosted.org/packages/e9/7f/562346537e00371a60bfbd4e778d2787c29add0c7833ae692209cb8665ed/pythreadserver-0.1.7.tar.gz
+[2024-06-02 16:42:42] INFO root fetch - processPackages [upicvision]: executing diffoscope
+[2024-06-02 16:42:42] INFO root fetch - processPackages [upicvision]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/upicvision-0.1.0.2.tar.gz tmp/upicvision-0.1.0.3.tar.gz --markdown 20240602/u/upicvision/0.1.0.2-0.1.0.3/README.md --exclude *.pyd
+[2024-06-02 16:42:42] INFO root fetch - processPackages [pythreadserver]: executing diffoscope
+[2024-06-02 16:42:42] INFO root fetch - processPackages [pythreadserver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pythreadserver-0.1.6.tar.gz tmp/pythreadserver-0.1.7.tar.gz --markdown 20240602/p/pythreadserver/0.1.6-0.1.7/README.md --exclude *.pyd
+[2024-06-02 16:42:42] INFO root fetch - processPackages [Starco]: Remove: archive file [/home/abi/fetcher/tmp/Starco-3.3.1.tar.gz]
+[2024-06-02 16:42:42] INFO root fetch - processPackages [Starco]: Remove: archive file [/home/abi/fetcher/tmp/Starco-3.3.2.tar.gz]
+[2024-06-02 16:42:42] INFO root fetch - main [MainThread]: End processing [Starco]: success
+[2024-06-02 16:42:42] INFO root fetch - processPackages [upicvision]: Remove: archive file [/home/abi/fetcher/tmp/upicvision-0.1.0.2.tar.gz]
+[2024-06-02 16:42:42] INFO root fetch - processPackages [upicvision]: Remove: archive file [/home/abi/fetcher/tmp/upicvision-0.1.0.3.tar.gz]
+[2024-06-02 16:42:42] INFO root fetch - main [MainThread]: End processing [upicvision]: success
+[2024-06-02 16:42:43] INFO root fetch - processPackages [pythreadserver]: Remove: archive file [/home/abi/fetcher/tmp/pythreadserver-0.1.6.tar.gz]
+[2024-06-02 16:42:43] INFO root fetch - processPackages [pythreadserver]: Remove: archive file [/home/abi/fetcher/tmp/pythreadserver-0.1.7.tar.gz]
+[2024-06-02 16:42:43] INFO root fetch - main [MainThread]: End processing [pythreadserver]: success
+[2024-06-02 16:42:43] INFO root fetch - main [MainThread]: Store serial: [23489735]
