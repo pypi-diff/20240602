@@ -4142,3 +4142,24 @@
 [2024-06-02 06:55:08] INFO root fetch - processPackages [simple-disk-queue]: Remove: archive file [/home/abi/fetcher/tmp/simple_disk_queue-0.0.3.tar.gz]
 [2024-06-02 06:55:08] INFO root fetch - main [MainThread]: End processing [simple-disk-queue]: success
 [2024-06-02 06:55:08] INFO root fetch - main [MainThread]: Store serial: [23486300]
+[2024-06-02 06:57:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23486300]
+[2024-06-02 06:57:16] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-02 06:57:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: location-local
+[2024-06-02 06:57:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: khoj-assistant
+[2024-06-02 06:57:17] INFO root fetch - processPackages [location-local]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-06-02 06:57:17] INFO root fetch - processPackages [khoj-assistant]: New version: [1.9.1.dev8] Old Version: [1.9.1.dev74]
+[2024-06-02 06:57:17] INFO root fetch - processPackages [location-local]: Downloading https://files.pythonhosted.org/packages/9c/f2/fcc760989d48c5e33cbe7c435b39b0a9e8eba895ccbf5832a8b83178d5ab/location_local-0.0.98.tar.gz
+[2024-06-02 06:57:17] INFO root fetch - processPackages [khoj-assistant]: Downloading https://files.pythonhosted.org/packages/fc/89/bbf1c812c39a0f341fea130ae430c11fcdd5fdcc5ca61fbaed2682cc4df7/khoj_assistant-1.9.1.dev74.tar.gz
+[2024-06-02 06:57:17] INFO root fetch - processPackages [location-local]: Downloading https://files.pythonhosted.org/packages/2e/1e/2a1e6264292214bc558e1230d4660d51bbe681d2921a250cb4f94052fc9e/location_local-0.0.99.tar.gz
+[2024-06-02 06:57:17] INFO root fetch - processPackages [location-local]: executing diffoscope
+[2024-06-02 06:57:17] INFO root fetch - processPackages [location-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/location_local-0.0.98.tar.gz tmp/location_local-0.0.99.tar.gz --markdown 20240602/l/location-local/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-06-02 06:57:17] INFO root fetch - processPackages [khoj-assistant]: Downloading https://files.pythonhosted.org/packages/47/ae/446626ff585bb336b70b59402ea6a46bf52326a51b81fd9ead920cde4c8a/khoj_assistant-1.9.1.dev8.tar.gz
+[2024-06-02 06:57:17] INFO root fetch - processPackages [khoj-assistant]: executing diffoscope
+[2024-06-02 06:57:17] INFO root fetch - processPackages [khoj-assistant]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/khoj_assistant-1.9.1.dev74.tar.gz tmp/khoj_assistant-1.9.1.dev8.tar.gz --markdown 20240602/k/khoj-assistant/1.9.1.dev74-1.9.1.dev8/README.md --exclude *.pyd
+[2024-06-02 06:57:18] INFO root fetch - processPackages [location-local]: Remove: archive file [/home/abi/fetcher/tmp/location_local-0.0.98.tar.gz]
+[2024-06-02 06:57:18] INFO root fetch - processPackages [location-local]: Remove: archive file [/home/abi/fetcher/tmp/location_local-0.0.99.tar.gz]
+[2024-06-02 06:57:18] INFO root fetch - main [MainThread]: End processing [location-local]: success
+[2024-06-02 06:57:19] INFO root fetch - processPackages [khoj-assistant]: Remove: archive file [/home/abi/fetcher/tmp/khoj_assistant-1.9.1.dev74.tar.gz]
+[2024-06-02 06:57:19] INFO root fetch - processPackages [khoj-assistant]: Remove: archive file [/home/abi/fetcher/tmp/khoj_assistant-1.9.1.dev8.tar.gz]
+[2024-06-02 06:57:19] INFO root fetch - main [MainThread]: End processing [khoj-assistant]: success
+[2024-06-02 06:57:19] INFO root fetch - main [MainThread]: Store serial: [23486306]
