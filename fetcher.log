@@ -3839,3 +3839,33 @@
 [2024-06-02 06:29:08] INFO root fetch - processPackages [openctp-ctp]: Remove: archive file [/home/abi/fetcher/tmp/openctp_ctp-6.7.2.6-cp39-cp39-win_amd64.whl.zip]
 [2024-06-02 06:29:08] INFO root fetch - main [MainThread]: End processing [openctp-ctp]: success
 [2024-06-02 06:29:08] INFO root fetch - main [MainThread]: Store serial: [23486050]
+[2024-06-02 06:31:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23486050]
+[2024-06-02 06:31:16] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-02 06:31:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: benchmark-runner
+[2024-06-02 06:31:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pydal
+[2024-06-02 06:31:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mentabotix
+[2024-06-02 06:31:16] INFO root fetch - processPackages [mentabotix]: New version: [0.1.5.9] Old Version: [0.1.5.8]
+[2024-06-02 06:31:16] INFO root fetch - processPackages [pydal]: New version: [20240601.1] Old Version: [20240529.1]
+[2024-06-02 06:31:16] INFO root fetch - processPackages [benchmark-runner]: New version: [1.0.99] Old Version: [1.0.98]
+[2024-06-02 06:31:17] INFO root fetch - processPackages [mentabotix]: Downloading https://files.pythonhosted.org/packages/82/e7/21cabf951d8e05066058a2c6fafc9a623e4e5939ded05ac5d6cd02cc3c5b/mentabotix-0.1.5.8.tar.gz
+[2024-06-02 06:31:17] INFO root fetch - processPackages [pydal]: Downloading https://files.pythonhosted.org/packages/76/1f/0979fd968881ba348db3b4d2b159300fdd7893dbcd51315e7a66e79da24f/pydal-20240529.1.tar.gz
+[2024-06-02 06:31:17] INFO root fetch - processPackages [benchmark-runner]: Downloading https://files.pythonhosted.org/packages/68/c2/3af8e8485f9abfd8f28512408ea35af542ce46eaf6c71c9da44e966b20f2/benchmark-runner-1.0.98.tar.gz
+[2024-06-02 06:31:17] INFO root fetch - processPackages [mentabotix]: Downloading https://files.pythonhosted.org/packages/0c/8c/e0aadaf3177b0936c6e2c6784b1ce6ff8d5f0548b2dd38f045005795a3e1/mentabotix-0.1.5.9.tar.gz
+[2024-06-02 06:31:17] INFO root fetch - processPackages [pydal]: Downloading https://files.pythonhosted.org/packages/4f/79/8f4a15ff8a74009c5614e041dd323bb1b292035f95574f841b253cb7bd65/pydal-20240601.1.tar.gz
+[2024-06-02 06:31:17] INFO root fetch - processPackages [benchmark-runner]: Downloading https://files.pythonhosted.org/packages/aa/74/0b502ae8dc7d1ab19876f92da2d177323637092c1bc4f54ae1beac2c2f18/benchmark-runner-1.0.99.tar.gz
+[2024-06-02 06:31:17] INFO root fetch - processPackages [mentabotix]: executing diffoscope
+[2024-06-02 06:31:17] INFO root fetch - processPackages [mentabotix]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mentabotix-0.1.5.8.tar.gz tmp/mentabotix-0.1.5.9.tar.gz --markdown 20240602/m/mentabotix/0.1.5.8-0.1.5.9/README.md --exclude *.pyd
+[2024-06-02 06:31:17] INFO root fetch - processPackages [benchmark-runner]: executing diffoscope
+[2024-06-02 06:31:17] INFO root fetch - processPackages [benchmark-runner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/benchmark-runner-1.0.98.tar.gz tmp/benchmark-runner-1.0.99.tar.gz --markdown 20240602/b/benchmark-runner/1.0.98-1.0.99/README.md --exclude *.pyd
+[2024-06-02 06:31:17] INFO root fetch - processPackages [pydal]: executing diffoscope
+[2024-06-02 06:31:17] INFO root fetch - processPackages [pydal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydal-20240529.1.tar.gz tmp/pydal-20240601.1.tar.gz --markdown 20240602/p/pydal/20240529.1-20240601.1/README.md --exclude *.pyd
+[2024-06-02 06:31:18] INFO root fetch - processPackages [mentabotix]: Remove: archive file [/home/abi/fetcher/tmp/mentabotix-0.1.5.8.tar.gz]
+[2024-06-02 06:31:18] INFO root fetch - processPackages [mentabotix]: Remove: archive file [/home/abi/fetcher/tmp/mentabotix-0.1.5.9.tar.gz]
+[2024-06-02 06:31:18] INFO root fetch - main [MainThread]: End processing [mentabotix]: success
+[2024-06-02 06:31:18] INFO root fetch - processPackages [benchmark-runner]: Remove: archive file [/home/abi/fetcher/tmp/benchmark-runner-1.0.98.tar.gz]
+[2024-06-02 06:31:18] INFO root fetch - processPackages [benchmark-runner]: Remove: archive file [/home/abi/fetcher/tmp/benchmark-runner-1.0.99.tar.gz]
+[2024-06-02 06:31:18] INFO root fetch - main [MainThread]: End processing [benchmark-runner]: success
+[2024-06-02 06:31:18] INFO root fetch - processPackages [pydal]: Remove: archive file [/home/abi/fetcher/tmp/pydal-20240529.1.tar.gz]
+[2024-06-02 06:31:18] INFO root fetch - processPackages [pydal]: Remove: archive file [/home/abi/fetcher/tmp/pydal-20240601.1.tar.gz]
+[2024-06-02 06:31:18] INFO root fetch - main [MainThread]: End processing [pydal]: success
+[2024-06-02 06:31:18] INFO root fetch - main [MainThread]: Store serial: [23486065]
