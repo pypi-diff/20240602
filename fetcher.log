@@ -5558,3 +5558,24 @@
 [2024-06-02 09:29:48] INFO root fetch - processPackages [papers-dl]: Remove: archive file [/home/abi/fetcher/tmp/papers_dl-0.0.9.tar.gz]
 [2024-06-02 09:29:48] INFO root fetch - main [MainThread]: End processing [papers-dl]: success
 [2024-06-02 09:29:48] INFO root fetch - main [MainThread]: Store serial: [23487047]
+[2024-06-02 09:31:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23487047]
+[2024-06-02 09:31:56] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-02 09:31:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: flatpack
+[2024-06-02 09:31:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: teomim
+[2024-06-02 09:31:57] INFO root fetch - processPackages [teomim]: New version: [0.0.165] Old Version: [0.0.164]
+[2024-06-02 09:31:57] INFO root fetch - processPackages [flatpack]: New version: [3.5.9] Old Version: [3.5.8]
+[2024-06-02 09:31:57] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/0d/a9/8502480e2c2eb0cf1d5c96124b696b315ecaac8fbeabcea4683232791237/flatpack-3.5.8.tar.gz
+[2024-06-02 09:31:57] INFO root fetch - processPackages [teomim]: Downloading https://files.pythonhosted.org/packages/ef/c0/b521554921d60a51049f27b90eb290a46a1551b4ad51c11270c21872ce54/teomim-0.0.164.tar.gz
+[2024-06-02 09:31:57] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/d8/91/c9da419dc0b7492b44a9d95f36b27829ce600621fa73894b210c81dadbcd/flatpack-3.5.9.tar.gz
+[2024-06-02 09:31:57] INFO root fetch - processPackages [flatpack]: executing diffoscope
+[2024-06-02 09:31:57] INFO root fetch - processPackages [flatpack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flatpack-3.5.8.tar.gz tmp/flatpack-3.5.9.tar.gz --markdown 20240602/f/flatpack/3.5.8-3.5.9/README.md --exclude *.pyd
+[2024-06-02 09:31:57] INFO root fetch - processPackages [teomim]: Downloading https://files.pythonhosted.org/packages/b2/9a/38a08e150d2bded710047d268f0702ed077993e93092ed692f1194d71a5b/teomim-0.0.165.tar.gz
+[2024-06-02 09:31:58] INFO root fetch - processPackages [teomim]: executing diffoscope
+[2024-06-02 09:31:58] INFO root fetch - processPackages [teomim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/teomim-0.0.164.tar.gz tmp/teomim-0.0.165.tar.gz --markdown 20240602/t/teomim/0.0.164-0.0.165/README.md --exclude *.pyd
+[2024-06-02 09:31:58] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.5.8.tar.gz]
+[2024-06-02 09:31:58] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.5.9.tar.gz]
+[2024-06-02 09:31:58] INFO root fetch - main [MainThread]: End processing [flatpack]: success
+[2024-06-02 09:31:58] INFO root fetch - processPackages [teomim]: Remove: archive file [/home/abi/fetcher/tmp/teomim-0.0.164.tar.gz]
+[2024-06-02 09:31:58] INFO root fetch - processPackages [teomim]: Remove: archive file [/home/abi/fetcher/tmp/teomim-0.0.165.tar.gz]
+[2024-06-02 09:31:58] INFO root fetch - main [MainThread]: End processing [teomim]: success
+[2024-06-02 09:31:58] INFO root fetch - main [MainThread]: Store serial: [23487053]
