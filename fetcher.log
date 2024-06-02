@@ -8113,3 +8113,24 @@
 [2024-06-02 13:07:41] WARNING root fetch - processPackages [halftone-converter]: Skipping package: exceeds size limit 19404888>=10485760
 [2024-06-02 13:07:41] INFO root fetch - main [MainThread]: End processing [halftone-converter] error
 [2024-06-02 13:07:41] INFO root fetch - main [MainThread]: Store serial: [23488318]
+[2024-06-02 13:09:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23488318]
+[2024-06-02 13:09:49] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-02 13:09:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pytrydan
+[2024-06-02 13:09:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-relations-iterator
+[2024-06-02 13:09:50] INFO root fetch - processPackages [django-relations-iterator]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-06-02 13:09:50] INFO root fetch - processPackages [pytrydan]: New version: [0.7.0] Old Version: [0.6.1]
+[2024-06-02 13:09:50] INFO root fetch - processPackages [django-relations-iterator]: Downloading https://files.pythonhosted.org/packages/57/9c/3ba202ab0d30aedfb4b5237e959ccaeb60972a2bb13c32f027b7723361af/django-relations-iterator-0.0.4.tar.gz
+[2024-06-02 13:09:50] INFO root fetch - processPackages [pytrydan]: Downloading https://files.pythonhosted.org/packages/2f/22/3d52428bb8ebd4b41c1c67dc900333e28e30165721b441da4c6d358ce9af/pytrydan-0.6.1.tar.gz
+[2024-06-02 13:09:50] INFO root fetch - processPackages [pytrydan]: Downloading https://files.pythonhosted.org/packages/4d/6c/0b27b284b82a0501ad4bdea6bf129628c2db97a314fce8392a4710e2da9b/pytrydan-0.7.0.tar.gz
+[2024-06-02 13:09:50] INFO root fetch - processPackages [django-relations-iterator]: Downloading https://files.pythonhosted.org/packages/0f/8d/bcfed82be149531167506a2d5f5365c8eec8b06020baed255d4de7f83039/django_relations_iterator-0.0.5.tar.gz
+[2024-06-02 13:09:50] INFO root fetch - processPackages [pytrydan]: executing diffoscope
+[2024-06-02 13:09:50] INFO root fetch - processPackages [pytrydan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytrydan-0.6.1.tar.gz tmp/pytrydan-0.7.0.tar.gz --markdown 20240602/p/pytrydan/0.6.1-0.7.0/README.md --exclude *.pyd
+[2024-06-02 13:09:50] INFO root fetch - processPackages [django-relations-iterator]: executing diffoscope
+[2024-06-02 13:09:50] INFO root fetch - processPackages [django-relations-iterator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-relations-iterator-0.0.4.tar.gz tmp/django_relations_iterator-0.0.5.tar.gz --markdown 20240602/d/django-relations-iterator/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-06-02 13:09:51] INFO root fetch - processPackages [pytrydan]: Remove: archive file [/home/abi/fetcher/tmp/pytrydan-0.6.1.tar.gz]
+[2024-06-02 13:09:51] INFO root fetch - processPackages [pytrydan]: Remove: archive file [/home/abi/fetcher/tmp/pytrydan-0.7.0.tar.gz]
+[2024-06-02 13:09:51] INFO root fetch - main [MainThread]: End processing [pytrydan]: success
+[2024-06-02 13:09:51] INFO root fetch - processPackages [django-relations-iterator]: Remove: archive file [/home/abi/fetcher/tmp/django-relations-iterator-0.0.4.tar.gz]
+[2024-06-02 13:09:51] INFO root fetch - processPackages [django-relations-iterator]: Remove: archive file [/home/abi/fetcher/tmp/django_relations_iterator-0.0.5.tar.gz]
+[2024-06-02 13:09:51] INFO root fetch - main [MainThread]: End processing [django-relations-iterator]: success
+[2024-06-02 13:09:51] INFO root fetch - main [MainThread]: Store serial: [23488324]
