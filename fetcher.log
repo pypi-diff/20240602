@@ -14464,3 +14464,27 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 19:04:22] INFO root fetch - processPackages [trytond-account-invoice]: Remove: archive file [/home/abi/fetcher/tmp/trytond_account_invoice-7.2.2.tar.gz]
 [2024-06-02 19:04:22] INFO root fetch - main [MainThread]: End processing [trytond-account-invoice]: success
 [2024-06-02 19:04:22] INFO root fetch - main [MainThread]: Store serial: [23491189]
+[2024-06-02 19:06:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23491189]
+[2024-06-02 19:06:31] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-02 19:06:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: trytond-account-invoice
+[2024-06-02 19:06:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sqlalchemy-tx-context
+[2024-06-02 19:06:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: qsv-duct
+[2024-06-02 19:06:31] WARNING root fetch - processPackages [qsv-duct]: Skipping, unable to determine old version
+[2024-06-02 19:06:31] INFO root fetch - main [MainThread]: End processing [qsv-duct] error
+[2024-06-02 19:06:31] INFO root fetch - processPackages [trytond-account-invoice]: New version: [7.2.2] Old Version: [7.2.1]
+[2024-06-02 19:06:31] INFO root fetch - processPackages [sqlalchemy-tx-context]: New version: [0.3.1] Old Version: [0.3.0]
+[2024-06-02 19:06:31] INFO root fetch - processPackages [trytond-account-invoice]: Downloading https://files.pythonhosted.org/packages/aa/f2/0aee19dd79d3be8c7fdd6ba221a9a2109f9420ad254a53d29e1cd8da0de8/trytond_account_invoice-7.2.1.tar.gz
+[2024-06-02 19:06:31] INFO root fetch - processPackages [sqlalchemy-tx-context]: Downloading https://files.pythonhosted.org/packages/57/28/4f166cf9df5974412441ae0918dc40b0fd121bb0b4c406d724d811c3a775/sqlalchemy_tx_context-0.3.0.tar.gz
+[2024-06-02 19:06:31] INFO root fetch - processPackages [trytond-account-invoice]: Downloading https://files.pythonhosted.org/packages/3a/98/9b06ecd3bf378d27e83dbee7685f8d7b0294eecd5f95115607b3966af76b/trytond_account_invoice-7.2.2.tar.gz
+[2024-06-02 19:06:31] INFO root fetch - processPackages [trytond-account-invoice]: executing diffoscope
+[2024-06-02 19:06:31] INFO root fetch - processPackages [trytond-account-invoice]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trytond_account_invoice-7.2.1.tar.gz tmp/trytond_account_invoice-7.2.2.tar.gz --markdown 20240602/t/trytond-account-invoice/7.2.1-7.2.2/README.md --exclude *.pyd
+[2024-06-02 19:06:31] INFO root fetch - processPackages [sqlalchemy-tx-context]: Downloading https://files.pythonhosted.org/packages/37/61/f6b71627520a51c7defaff7b3f7551c29da60c466c4ca928c7e79969b44f/sqlalchemy_tx_context-0.3.1.tar.gz
+[2024-06-02 19:06:31] INFO root fetch - processPackages [sqlalchemy-tx-context]: executing diffoscope
+[2024-06-02 19:06:31] INFO root fetch - processPackages [sqlalchemy-tx-context]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sqlalchemy_tx_context-0.3.0.tar.gz tmp/sqlalchemy_tx_context-0.3.1.tar.gz --markdown 20240602/s/sqlalchemy-tx-context/0.3.0-0.3.1/README.md --exclude *.pyd
+[2024-06-02 19:06:32] INFO root fetch - processPackages [sqlalchemy-tx-context]: Remove: archive file [/home/abi/fetcher/tmp/sqlalchemy_tx_context-0.3.0.tar.gz]
+[2024-06-02 19:06:32] INFO root fetch - processPackages [sqlalchemy-tx-context]: Remove: archive file [/home/abi/fetcher/tmp/sqlalchemy_tx_context-0.3.1.tar.gz]
+[2024-06-02 19:06:32] INFO root fetch - main [MainThread]: End processing [sqlalchemy-tx-context]: success
+[2024-06-02 19:06:32] INFO root fetch - processPackages [trytond-account-invoice]: Remove: archive file [/home/abi/fetcher/tmp/trytond_account_invoice-7.2.1.tar.gz]
+[2024-06-02 19:06:32] INFO root fetch - processPackages [trytond-account-invoice]: Remove: archive file [/home/abi/fetcher/tmp/trytond_account_invoice-7.2.2.tar.gz]
+[2024-06-02 19:06:32] INFO root fetch - main [MainThread]: End processing [trytond-account-invoice]: success
+[2024-06-02 19:06:32] INFO root fetch - main [MainThread]: Store serial: [23491198]
