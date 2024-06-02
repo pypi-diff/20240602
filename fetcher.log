@@ -13956,3 +13956,58 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 18:44:43] INFO root fetch - processPackages [trytond-account-stock-continental]: Remove: archive file [/home/abi/fetcher/tmp/trytond_account_stock_continental-7.2.1.tar.gz]
 [2024-06-02 18:44:43] INFO root fetch - main [MainThread]: End processing [trytond-account-stock-continental]: success
 [2024-06-02 18:44:43] INFO root fetch - main [MainThread]: Store serial: [23490854]
+[2024-06-02 18:46:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23490854]
+[2024-06-02 18:46:51] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-06-02 18:46:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aimodelshare
+[2024-06-02 18:46:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: trytond-account-stock-continental
+[2024-06-02 18:46:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: diti
+[2024-06-02 18:46:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: otsuwinAPI
+[2024-06-02 18:46:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: trytond-account-stock-continental
+[2024-06-02 18:46:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: mltoolkit-laht
+[2024-06-02 18:46:51] INFO root fetch - processPackages [mltoolkit-laht]: New version: [0.2.1] Old Version: [0.2.0]
+[2024-06-02 18:46:51] INFO root fetch - processPackages [trytond-account-stock-continental]: New version: [7.2.1] Old Version: [7.2.0]
+[2024-06-02 18:46:51] INFO root fetch - processPackages [trytond-account-stock-continental]: New version: [7.2.1] Old Version: [7.2.0]
+[2024-06-02 18:46:51] INFO root fetch - processPackages [aimodelshare]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-06-02 18:46:52] INFO root fetch - processPackages [diti]: New version: [0.0.6] Old Version: [0.0.4]
+[2024-06-02 18:46:52] INFO root fetch - processPackages [otsuwinAPI]: New version: [2022.11.30] Old Version: [2022.11.23.1]
+[2024-06-02 18:46:52] INFO root fetch - processPackages [trytond-account-stock-continental]: Downloading https://files.pythonhosted.org/packages/a2/26/40655b006ffab73faec57edd4f8aa7e94bc2a9381c59060adb6a85009cd7/trytond_account_stock_continental-7.2.0.tar.gz
+[2024-06-02 18:46:52] INFO root fetch - processPackages [trytond-account-stock-continental]: Downloading https://files.pythonhosted.org/packages/a2/26/40655b006ffab73faec57edd4f8aa7e94bc2a9381c59060adb6a85009cd7/trytond_account_stock_continental-7.2.0.tar.gz
+[2024-06-02 18:46:52] INFO root fetch - processPackages [mltoolkit-laht]: Downloading https://files.pythonhosted.org/packages/73/fe/c95b23953ccbe1505d0e5e72248477eafb0ed81bf90bcb51146e352a15b9/mltoolkit-laht-0.2.0.tar.gz
+[2024-06-02 18:46:52] INFO root fetch - processPackages [aimodelshare]: Downloading https://files.pythonhosted.org/packages/c0/89/8d5c1ec1f29fb33b0fe43c98e3f08f65c921359d526635068eef7a186e2c/aimodelshare-0.1.8.tar.gz
+[2024-06-02 18:46:52] INFO root fetch - processPackages [otsuwinAPI]: Downloading https://files.pythonhosted.org/packages/f3/35/87aa81f59696133704673a49897325407e0337222ecb37e539a4ca89c74b/otsuwinAPI-2022.11.23.1.tar.gz
+[2024-06-02 18:46:52] INFO root fetch - processPackages [diti]: Downloading https://files.pythonhosted.org/packages/27/ae/ebd3f78db0a1b74f451d2e667b771849bf559def895fe89846b92cfc5744/diti-0.0.4.tar.gz
+[2024-06-02 18:46:52] INFO root fetch - processPackages [trytond-account-stock-continental]: Downloading https://files.pythonhosted.org/packages/55/ab/90ab699ecb671f83cf3011d36638e62ea5bc9a06ad5c28ce90b682026a7d/trytond_account_stock_continental-7.2.1.tar.gz
+[2024-06-02 18:46:52] INFO root fetch - processPackages [trytond-account-stock-continental]: Downloading https://files.pythonhosted.org/packages/55/ab/90ab699ecb671f83cf3011d36638e62ea5bc9a06ad5c28ce90b682026a7d/trytond_account_stock_continental-7.2.1.tar.gz
+[2024-06-02 18:46:52] INFO root fetch - processPackages [trytond-account-stock-continental]: executing diffoscope
+[2024-06-02 18:46:52] INFO root fetch - processPackages [trytond-account-stock-continental]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trytond_account_stock_continental-7.2.0.tar.gz tmp/trytond_account_stock_continental-7.2.1.tar.gz --markdown 20240602/t/trytond-account-stock-continental/7.2.0-7.2.1/README.md --exclude *.pyd
+[2024-06-02 18:46:52] INFO root fetch - processPackages [mltoolkit-laht]: Downloading https://files.pythonhosted.org/packages/77/e5/e4a9d95cb9b5a02488aa6e37bba86c4cd0097df93bbece6ec86e189dfea3/mltoolkit-laht-0.2.1.tar.gz
+[2024-06-02 18:46:52] INFO root fetch - processPackages [trytond-account-stock-continental]: executing diffoscope
+[2024-06-02 18:46:52] INFO root fetch - processPackages [trytond-account-stock-continental]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trytond_account_stock_continental-7.2.0.tar.gz tmp/trytond_account_stock_continental-7.2.1.tar.gz --markdown 20240602/t/trytond-account-stock-continental/7.2.0-7.2.1/README.md --exclude *.pyd
+[2024-06-02 18:46:52] INFO root fetch - processPackages [aimodelshare]: Downloading https://files.pythonhosted.org/packages/92/1b/5990f7c62044a2ad0776737091765068646eecee14dd251c5ea3732caeb0/aimodelshare-0.1.9.tar.gz
+[2024-06-02 18:46:52] INFO root fetch - processPackages [otsuwinAPI]: Downloading https://files.pythonhosted.org/packages/b0/8d/b0a8fd4ab1da597520c0ed4ccf6d38bad15b3772297c1efa1ecdefd2eca4/otsuwinAPI-2022.11.30.tar.gz
+[2024-06-02 18:46:52] INFO root fetch - processPackages [diti]: Downloading https://files.pythonhosted.org/packages/e4/03/e3797a942b301cce64834909bccdb5c49f71a6f2bb40f187aef80e92b619/diti-0.0.6.tar.gz
+[2024-06-02 18:46:52] INFO root fetch - processPackages [mltoolkit-laht]: executing diffoscope
+[2024-06-02 18:46:52] INFO root fetch - processPackages [mltoolkit-laht]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mltoolkit-laht-0.2.0.tar.gz tmp/mltoolkit-laht-0.2.1.tar.gz --markdown 20240602/m/mltoolkit-laht/0.2.0-0.2.1/README.md --exclude *.pyd
+[2024-06-02 18:46:52] INFO root fetch - processPackages [otsuwinAPI]: executing diffoscope
+[2024-06-02 18:46:52] INFO root fetch - processPackages [otsuwinAPI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/otsuwinAPI-2022.11.23.1.tar.gz tmp/otsuwinAPI-2022.11.30.tar.gz --markdown 20240602/o/otsuwinAPI/2022.11.23.1-2022.11.30/README.md --exclude *.pyd
+[2024-06-02 18:46:52] INFO root fetch - processPackages [diti]: executing diffoscope
+[2024-06-02 18:46:52] INFO root fetch - processPackages [diti]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/diti-0.0.4.tar.gz tmp/diti-0.0.6.tar.gz --markdown 20240602/d/diti/0.0.4-0.0.6/README.md --exclude *.pyd
+[2024-06-02 18:46:52] INFO root fetch - processPackages [aimodelshare]: executing diffoscope
+[2024-06-02 18:46:52] INFO root fetch - processPackages [aimodelshare]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aimodelshare-0.1.8.tar.gz tmp/aimodelshare-0.1.9.tar.gz --markdown 20240602/a/aimodelshare/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-06-02 18:46:53] INFO root fetch - processPackages [otsuwinAPI]: Remove: archive file [/home/abi/fetcher/tmp/otsuwinAPI-2022.11.23.1.tar.gz]
+[2024-06-02 18:46:53] INFO root fetch - processPackages [otsuwinAPI]: Remove: archive file [/home/abi/fetcher/tmp/otsuwinAPI-2022.11.30.tar.gz]
+[2024-06-02 18:46:53] INFO root fetch - main [MainThread]: End processing [otsuwinAPI]: success
+[2024-06-02 18:46:53] INFO root fetch - processPackages [trytond-account-stock-continental]: Remove: archive file [/home/abi/fetcher/tmp/trytond_account_stock_continental-7.2.0.tar.gz]
+[2024-06-02 18:46:53] INFO root fetch - processPackages [trytond-account-stock-continental]: Remove: archive file [/home/abi/fetcher/tmp/trytond_account_stock_continental-7.2.1.tar.gz]
+[2024-06-02 18:46:53] INFO root fetch - main [MainThread]: End processing [trytond-account-stock-continental]: success
+[2024-06-02 18:46:53] INFO root fetch - processPackages [mltoolkit-laht]: Remove: archive file [/home/abi/fetcher/tmp/mltoolkit-laht-0.2.0.tar.gz]
+[2024-06-02 18:46:53] INFO root fetch - processPackages [mltoolkit-laht]: Remove: archive file [/home/abi/fetcher/tmp/mltoolkit-laht-0.2.1.tar.gz]
+[2024-06-02 18:46:53] INFO root fetch - main [MainThread]: End processing [mltoolkit-laht]: success
+[2024-06-02 18:46:53] INFO root fetch - main [MainThread]: End processing [trytond-account-stock-continental]: success
+[2024-06-02 18:46:53] INFO root fetch - processPackages [diti]: Remove: archive file [/home/abi/fetcher/tmp/diti-0.0.4.tar.gz]
+[2024-06-02 18:46:53] INFO root fetch - processPackages [diti]: Remove: archive file [/home/abi/fetcher/tmp/diti-0.0.6.tar.gz]
+[2024-06-02 18:46:53] INFO root fetch - main [MainThread]: End processing [diti]: success
+[2024-06-02 18:46:53] INFO root fetch - processPackages [aimodelshare]: Remove: archive file [/home/abi/fetcher/tmp/aimodelshare-0.1.8.tar.gz]
+[2024-06-02 18:46:53] INFO root fetch - processPackages [aimodelshare]: Remove: archive file [/home/abi/fetcher/tmp/aimodelshare-0.1.9.tar.gz]
+[2024-06-02 18:46:53] INFO root fetch - main [MainThread]: End processing [aimodelshare]: success
+[2024-06-02 18:46:53] INFO root fetch - main [MainThread]: Store serial: [23490870]
