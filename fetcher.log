@@ -8551,3 +8551,70 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-02 13:33:50] INFO root fetch - processPackages [SimpleDomControl]: Remove: archive file [/home/abi/fetcher/tmp/simpledomcontrol-0.5.0.tar.gz]
 [2024-06-02 13:33:50] INFO root fetch - main [MainThread]: End processing [SimpleDomControl]: success
 [2024-06-02 13:33:50] INFO root fetch - main [MainThread]: Store serial: [23488444]
+[2024-06-02 13:35:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23488444]
+[2024-06-02 13:35:59] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-06-02 13:35:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: stashconnect
+[2024-06-02 13:35:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: torchserve-nightly
+[2024-06-02 13:35:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: torch-model-archiver-nightly
+[2024-06-02 13:35:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: torch-workflow-archiver-nightly
+[2024-06-02 13:36:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: moogli-erp
+[2024-06-02 13:36:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: contact-email-address-local
+[2024-06-02 13:36:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: torchsnapshot-nightly
+[2024-06-02 13:36:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: network-diffusion
+[2024-06-02 13:36:00] INFO root fetch - processPackages [stashconnect]: New version: [0.8.5] Old Version: [0.8.4]
+[2024-06-02 13:36:00] INFO root fetch - processPackages [torchserve-nightly]: New version: [2024.6.1] Old Version: [2024.5.9]
+[2024-06-02 13:36:00] INFO root fetch - processPackages [network-diffusion]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-06-02 13:36:00] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: New version: [2024.6.1] Old Version: [2024.5.9]
+[2024-06-02 13:36:00] INFO root fetch - processPackages [torch-model-archiver-nightly]: New version: [2024.6.1] Old Version: [2024.5.9]
+[2024-06-02 13:36:00] INFO root fetch - processPackages [torchsnapshot-nightly]: New version: [2024.6.1] Old Version: [2024.5.31]
+[2024-06-02 13:36:00] INFO root fetch - processPackages [stashconnect]: Downloading https://files.pythonhosted.org/packages/bf/ee/af44ccd105f3efd8ff505151ed3342d61fc3e94f9e626010b67aed66ab55/stashconnect-0.8.4.tar.gz
+[2024-06-02 13:36:00] INFO root fetch - processPackages [moogli-erp]: New version: [2024.2.5] Old Version: [2024.2.4]
+[2024-06-02 13:36:00] INFO root fetch - processPackages [network-diffusion]: Downloading https://files.pythonhosted.org/packages/31/07/8b415bbd0cce5d8c54f10ca2e9441fdbff6d9e3ce91e58f44843f41d2335/network_diffusion-0.8.0.tar.gz
+[2024-06-02 13:36:00] INFO root fetch - processPackages [torchsnapshot-nightly]: Downloading https://files.pythonhosted.org/packages/52/61/824e19f38974982e03859cc1d7a238ab5533e0cdd8faa52561fd42e4ec82/torchsnapshot_nightly-2024.5.31.tar.gz
+[2024-06-02 13:36:00] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: Downloading https://files.pythonhosted.org/packages/55/73/d6cac6137d8889445aa6a2fbae4644d9528d66859fb2e8149098c685de95/torch_workflow_archiver_nightly-2024.5.9-py3-none-any.whl
+[2024-06-02 13:36:00] INFO root fetch - processPackages [torch-model-archiver-nightly]: Downloading https://files.pythonhosted.org/packages/5c/3d/7e9f420b3d052022aab0ce6e49d396d1d147acccfc51748d2cfa54ae3390/torch_model_archiver_nightly-2024.5.9-py3-none-any.whl
+[2024-06-02 13:36:00] INFO root fetch - processPackages [torchserve-nightly]: Downloading https://files.pythonhosted.org/packages/75/eb/2e3e9c2ed6f97282b00720a52d84a7a5dd9ff1da144867d50d0e4945e712/torchserve_nightly-2024.5.9-py3-none-any.whl
+[2024-06-02 13:36:00] INFO root fetch - processPackages [contact-email-address-local]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-06-02 13:36:00] WARNING root fetch - processPackages [torchserve-nightly]: Skipping package: exceeds size limit 24333021>=10485760
+[2024-06-02 13:36:00] INFO root fetch - main [MainThread]: End processing [torchserve-nightly] error
+[2024-06-02 13:36:00] INFO root fetch - processPackages [moogli-erp]: Downloading https://files.pythonhosted.org/packages/eb/c1/067a4ec5e3b54495749d11a56c8ee1ca659bca412d5b1f676dfb576e5801/moogli-erp-2024.2.4.tar.gz
+[2024-06-02 13:36:00] WARNING root fetch - processPackages [moogli-erp]: Skipping package: exceeds size limit 12476394>=10485760
+[2024-06-02 13:36:00] INFO root fetch - main [MainThread]: End processing [moogli-erp] error
+[2024-06-02 13:36:00] INFO root fetch - processPackages [network-diffusion]: Downloading https://files.pythonhosted.org/packages/81/1a/b6692ce2d9c366a1672e75b7adbd512df91035714fadccd1a9f35515bd8e/network_diffusion-0.9.0.tar.gz
+[2024-06-02 13:36:00] INFO root fetch - processPackages [stashconnect]: Downloading https://files.pythonhosted.org/packages/9b/c7/94a2f07a37e48607ed2bf9ee8d666ca2c71415cb8ce1a13ef35a2d801115/stashconnect-0.8.5.tar.gz
+[2024-06-02 13:36:00] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: Downloading https://files.pythonhosted.org/packages/b4/47/8893b3d0a3f2d6fadf845568260ee095b798b58532216f3b2f751333ae86/torch_workflow_archiver_nightly-2024.6.1-py3-none-any.whl
+[2024-06-02 13:36:00] INFO root fetch - processPackages [contact-email-address-local]: Downloading https://files.pythonhosted.org/packages/45/e5/8c05c5cc1f7122ebe442383a5ad976af6991ffade381619160f614b030cf/contact_email_address_local-0.0.8.tar.gz
+[2024-06-02 13:36:00] INFO root fetch - processPackages [torch-model-archiver-nightly]: Downloading https://files.pythonhosted.org/packages/fb/e1/aea19a8b35300041c93c1b8d9a56076d5bcf0d4396451fbf1d157a9279b1/torch_model_archiver_nightly-2024.6.1-py3-none-any.whl
+[2024-06-02 13:36:00] INFO root fetch - processPackages [network-diffusion]: executing diffoscope
+[2024-06-02 13:36:00] INFO root fetch - processPackages [network-diffusion]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/network_diffusion-0.8.0.tar.gz tmp/network_diffusion-0.9.0.tar.gz --markdown 20240602/n/network-diffusion/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-06-02 13:36:00] INFO root fetch - processPackages [torchsnapshot-nightly]: Downloading https://files.pythonhosted.org/packages/fa/30/65f1d61a19066da292ae77f89d9adb863fcb078e0e60e556265b6b7b1c25/torchsnapshot_nightly-2024.6.1.tar.gz
+[2024-06-02 13:36:00] INFO root fetch - processPackages [stashconnect]: executing diffoscope
+[2024-06-02 13:36:00] INFO root fetch - processPackages [stashconnect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stashconnect-0.8.4.tar.gz tmp/stashconnect-0.8.5.tar.gz --markdown 20240602/s/stashconnect/0.8.4-0.8.5/README.md --exclude *.pyd
+[2024-06-02 13:36:00] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: executing diffoscope
+[2024-06-02 13:36:00] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torch_workflow_archiver_nightly-2024.5.9-py3-none-any.whl.zip tmp/torch_workflow_archiver_nightly-2024.6.1-py3-none-any.whl.zip --markdown 20240602/t/torch-workflow-archiver-nightly/2024.5.9-2024.6.1/README.md --exclude *.pyd
+[2024-06-02 13:36:00] INFO root fetch - processPackages [torch-model-archiver-nightly]: executing diffoscope
+[2024-06-02 13:36:00] INFO root fetch - processPackages [torch-model-archiver-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torch_model_archiver_nightly-2024.5.9-py3-none-any.whl.zip tmp/torch_model_archiver_nightly-2024.6.1-py3-none-any.whl.zip --markdown 20240602/t/torch-model-archiver-nightly/2024.5.9-2024.6.1/README.md --exclude *.pyd
+[2024-06-02 13:36:00] INFO root fetch - processPackages [torchsnapshot-nightly]: executing diffoscope
+[2024-06-02 13:36:00] INFO root fetch - processPackages [torchsnapshot-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchsnapshot_nightly-2024.5.31.tar.gz tmp/torchsnapshot_nightly-2024.6.1.tar.gz --markdown 20240602/t/torchsnapshot-nightly/2024.5.31-2024.6.1/README.md --exclude *.pyd
+[2024-06-02 13:36:01] INFO root fetch - processPackages [contact-email-address-local]: Downloading https://files.pythonhosted.org/packages/b0/76/1d966bca88d8d64a3d93fa1704b27864994febe1a9d7d4d97fde54eb590b/contact_email_address_local-0.0.9.tar.gz
+[2024-06-02 13:36:01] INFO root fetch - processPackages [contact-email-address-local]: executing diffoscope
+[2024-06-02 13:36:01] INFO root fetch - processPackages [contact-email-address-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/contact_email_address_local-0.0.8.tar.gz tmp/contact_email_address_local-0.0.9.tar.gz --markdown 20240602/c/contact-email-address-local/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-06-02 13:36:01] INFO root fetch - processPackages [network-diffusion]: Remove: archive file [/home/abi/fetcher/tmp/network_diffusion-0.8.0.tar.gz]
+[2024-06-02 13:36:01] INFO root fetch - processPackages [network-diffusion]: Remove: archive file [/home/abi/fetcher/tmp/network_diffusion-0.9.0.tar.gz]
+[2024-06-02 13:36:01] INFO root fetch - main [MainThread]: End processing [network-diffusion]: success
+[2024-06-02 13:36:01] INFO root fetch - processPackages [torch-model-archiver-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torch_model_archiver_nightly-2024.5.9-py3-none-any.whl.zip]
+[2024-06-02 13:36:01] INFO root fetch - processPackages [stashconnect]: Remove: archive file [/home/abi/fetcher/tmp/stashconnect-0.8.4.tar.gz]
+[2024-06-02 13:36:01] INFO root fetch - processPackages [torch-model-archiver-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torch_model_archiver_nightly-2024.6.1-py3-none-any.whl.zip]
+[2024-06-02 13:36:01] INFO root fetch - processPackages [stashconnect]: Remove: archive file [/home/abi/fetcher/tmp/stashconnect-0.8.5.tar.gz]
+[2024-06-02 13:36:01] INFO root fetch - main [MainThread]: End processing [torch-model-archiver-nightly]: success
+[2024-06-02 13:36:01] INFO root fetch - main [MainThread]: End processing [stashconnect]: success
+[2024-06-02 13:36:01] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torch_workflow_archiver_nightly-2024.5.9-py3-none-any.whl.zip]
+[2024-06-02 13:36:01] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torch_workflow_archiver_nightly-2024.6.1-py3-none-any.whl.zip]
+[2024-06-02 13:36:01] INFO root fetch - main [MainThread]: End processing [torch-workflow-archiver-nightly]: success
+[2024-06-02 13:36:01] INFO root fetch - processPackages [torchsnapshot-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torchsnapshot_nightly-2024.5.31.tar.gz]
+[2024-06-02 13:36:01] INFO root fetch - processPackages [torchsnapshot-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torchsnapshot_nightly-2024.6.1.tar.gz]
+[2024-06-02 13:36:01] INFO root fetch - main [MainThread]: End processing [torchsnapshot-nightly]: success
+[2024-06-02 13:36:01] INFO root fetch - processPackages [contact-email-address-local]: Remove: archive file [/home/abi/fetcher/tmp/contact_email_address_local-0.0.8.tar.gz]
+[2024-06-02 13:36:01] INFO root fetch - processPackages [contact-email-address-local]: Remove: archive file [/home/abi/fetcher/tmp/contact_email_address_local-0.0.9.tar.gz]
+[2024-06-02 13:36:01] INFO root fetch - main [MainThread]: End processing [contact-email-address-local]: success
+[2024-06-02 13:36:01] INFO root fetch - main [MainThread]: Store serial: [23488466]
