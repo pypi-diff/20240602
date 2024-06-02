@@ -4004,3 +4004,36 @@
 [2024-06-02 06:42:09] INFO root fetch - processPackages [nbdev]: Remove: archive file [/home/abi/fetcher/tmp/nbdev-2.3.9.tar.gz]
 [2024-06-02 06:42:09] INFO root fetch - main [MainThread]: End processing [nbdev]: success
 [2024-06-02 06:42:09] INFO root fetch - main [MainThread]: Store serial: [23486188]
+[2024-06-02 06:44:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23486188]
+[2024-06-02 06:44:17] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-02 06:44:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: shuttleai
+[2024-06-02 06:44:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: openctp-ctp
+[2024-06-02 06:44:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: canaddress
+[2024-06-02 06:44:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: aixhello
+[2024-06-02 06:44:17] INFO root fetch - processPackages [aixhello]: New version: [3.7] Old Version: [3.5]
+[2024-06-02 06:44:17] INFO root fetch - processPackages [shuttleai]: New version: [4.0.1] Old Version: [4.0.0]
+[2024-06-02 06:44:17] INFO root fetch - processPackages [openctp-ctp]: New version: [6.7.2.6] Old Version: [6.7.2.5]
+[2024-06-02 06:44:17] WARNING root fetch - processPackages [canaddress]: Skipping, unable to determine old version
+[2024-06-02 06:44:17] INFO root fetch - main [MainThread]: End processing [canaddress] error
+[2024-06-02 06:44:17] INFO root fetch - processPackages [aixhello]: Downloading https://files.pythonhosted.org/packages/dd/a9/9c722d06071db45b0f117c340697439d27ca24a3ceb638cf5110422dd8a8/aixhello-3.5.tar.gz
+[2024-06-02 06:44:17] INFO root fetch - processPackages [shuttleai]: Downloading https://files.pythonhosted.org/packages/3d/33/bc02b0761468937988d0649711969ac4fcdc6a2d2b8cc67fd6b000be64e0/shuttleai-4.0.0.tar.gz
+[2024-06-02 06:44:17] INFO root fetch - processPackages [openctp-ctp]: Downloading https://files.pythonhosted.org/packages/b8/5b/55216866b439f1def4957d8af137cb241904d679c85834403f05136a73c9/openctp_ctp-6.7.2.5-cp39-cp39-win_amd64.whl
+[2024-06-02 06:44:18] INFO root fetch - processPackages [shuttleai]: Downloading https://files.pythonhosted.org/packages/8e/69/5a9bba060bc9e76dd846c48a370e648c7b742a7d3e42dbbd4937a205508b/shuttleai-4.0.1.tar.gz
+[2024-06-02 06:44:18] INFO root fetch - processPackages [aixhello]: Downloading https://files.pythonhosted.org/packages/b9/e0/199c502a585c1624e05fe0648bd56b97f302978d17ea1a62bab3c4ec5aae/aixhello-3.7.tar.gz
+[2024-06-02 06:44:18] INFO root fetch - processPackages [shuttleai]: executing diffoscope
+[2024-06-02 06:44:18] INFO root fetch - processPackages [shuttleai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shuttleai-4.0.0.tar.gz tmp/shuttleai-4.0.1.tar.gz --markdown 20240602/s/shuttleai/4.0.0-4.0.1/README.md --exclude *.pyd
+[2024-06-02 06:44:18] INFO root fetch - processPackages [aixhello]: executing diffoscope
+[2024-06-02 06:44:18] INFO root fetch - processPackages [aixhello]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aixhello-3.5.tar.gz tmp/aixhello-3.7.tar.gz --markdown 20240602/a/aixhello/3.5-3.7/README.md --exclude *.pyd
+[2024-06-02 06:44:18] INFO root fetch - processPackages [openctp-ctp]: Downloading https://files.pythonhosted.org/packages/7a/f5/56a4437572c797bdb3c05323ab79671b27a5bf2ba350efc7b2a258abc4d5/openctp_ctp-6.7.2.6-cp39-cp39-win_amd64.whl
+[2024-06-02 06:44:18] INFO root fetch - processPackages [shuttleai]: Remove: archive file [/home/abi/fetcher/tmp/shuttleai-4.0.0.tar.gz]
+[2024-06-02 06:44:18] INFO root fetch - processPackages [openctp-ctp]: executing diffoscope
+[2024-06-02 06:44:18] INFO root fetch - processPackages [openctp-ctp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openctp_ctp-6.7.2.5-cp39-cp39-win_amd64.whl.zip tmp/openctp_ctp-6.7.2.6-cp39-cp39-win_amd64.whl.zip --markdown 20240602/o/openctp-ctp/6.7.2.5-6.7.2.6/README.md --exclude *.pyd
+[2024-06-02 06:44:18] INFO root fetch - processPackages [shuttleai]: Remove: archive file [/home/abi/fetcher/tmp/shuttleai-4.0.1.tar.gz]
+[2024-06-02 06:44:18] INFO root fetch - main [MainThread]: End processing [shuttleai]: success
+[2024-06-02 06:44:19] INFO root fetch - processPackages [aixhello]: Remove: archive file [/home/abi/fetcher/tmp/aixhello-3.5.tar.gz]
+[2024-06-02 06:44:19] INFO root fetch - processPackages [aixhello]: Remove: archive file [/home/abi/fetcher/tmp/aixhello-3.7.tar.gz]
+[2024-06-02 06:44:19] INFO root fetch - main [MainThread]: End processing [aixhello]: success
+[2024-06-02 06:44:19] INFO root fetch - processPackages [openctp-ctp]: Remove: archive file [/home/abi/fetcher/tmp/openctp_ctp-6.7.2.5-cp39-cp39-win_amd64.whl.zip]
+[2024-06-02 06:44:19] INFO root fetch - processPackages [openctp-ctp]: Remove: archive file [/home/abi/fetcher/tmp/openctp_ctp-6.7.2.6-cp39-cp39-win_amd64.whl.zip]
+[2024-06-02 06:44:19] INFO root fetch - main [MainThread]: End processing [openctp-ctp]: success
+[2024-06-02 06:44:19] INFO root fetch - main [MainThread]: Store serial: [23486224]
