@@ -16551,3 +16551,60 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 20:56:09] INFO root fetch - processPackages [omop2survey]: Remove: archive file [/home/abi/fetcher/tmp/omop2survey-0.0.6.tar.gz]
 [2024-06-02 20:56:09] INFO root fetch - main [MainThread]: End processing [omop2survey]: success
 [2024-06-02 20:56:09] INFO root fetch - main [MainThread]: Store serial: [23492186]
+[2024-06-02 20:58:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23492186]
+[2024-06-02 20:58:18] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-06-02 20:58:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: omop2survey
+[2024-06-02 20:58:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: domolibrary-extensions
+[2024-06-02 20:58:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: smbclientng
+[2024-06-02 20:58:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: wordcel
+[2024-06-02 20:58:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: seamm-datastore
+[2024-06-02 20:58:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: VoiceProcessingToolkit
+[2024-06-02 20:58:18] INFO root fetch - processPackages [VoiceProcessingToolkit]: New version: [0.1.8.2] Old Version: [0.1.8.1]
+[2024-06-02 20:58:18] INFO root fetch - processPackages [omop2survey]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-06-02 20:58:18] INFO root fetch - processPackages [wordcel]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-06-02 20:58:18] INFO root fetch - processPackages [VoiceProcessingToolkit]: Downloading https://files.pythonhosted.org/packages/ce/9c/424bd67cc542916f25d1b0013fec49db10aa3758b9ca9942c616e4580032/VoiceProcessingToolkit-0.1.8.1.tar.gz
+[2024-06-02 20:58:18] INFO root fetch - processPackages [omop2survey]: Downloading https://files.pythonhosted.org/packages/d0/3d/a88573a96f559d123cb3e1d168e45f905a3a99a738efb65bb74f949ea018/omop2survey-0.0.5.tar.gz
+[2024-06-02 20:58:18] INFO root fetch - processPackages [seamm-datastore]: New version: [2024.6.2] Old Version: [2024.3.13]
+[2024-06-02 20:58:18] INFO root fetch - processPackages [smbclientng]: New version: [1.2] Old Version: [1.1]
+[2024-06-02 20:58:18] INFO root fetch - processPackages [domolibrary-extensions]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-06-02 20:58:19] INFO root fetch - processPackages [wordcel]: Downloading https://files.pythonhosted.org/packages/de/6a/e20de61c60d2f9d0be02b7b6a3e81f596583bf03b6334188bec22828fe06/wordcel-0.0.8.tar.gz
+[2024-06-02 20:58:19] INFO root fetch - processPackages [smbclientng]: Downloading https://files.pythonhosted.org/packages/ef/bb/2ff7878a6988825d5f62853617482f553666bad21b142497e3e51da167cf/smbclientng-1.1-py3-none-any.whl
+[2024-06-02 20:58:19] INFO root fetch - processPackages [domolibrary-extensions]: Downloading https://files.pythonhosted.org/packages/c5/f4/5838a5baf88ee97be5790576b69b25bea9c52b2c6bb57e10f8349a0ac178/domolibrary_extensions-0.0.8.tar.gz
+[2024-06-02 20:58:19] INFO root fetch - processPackages [seamm-datastore]: Downloading https://files.pythonhosted.org/packages/3e/3d/a758ac9fc1dfde59b6db6e83b4d116f9337501b15e4533fd31513c445c90/seamm_datastore-2024.3.13.tar.gz
+[2024-06-02 20:58:19] INFO root fetch - processPackages [omop2survey]: Downloading https://files.pythonhosted.org/packages/40/8e/00f2e64641121c524dd7d6d01bb95ccf064bfb020b83cf52d2517311dae9/omop2survey-0.0.6.tar.gz
+[2024-06-02 20:58:19] INFO root fetch - processPackages [VoiceProcessingToolkit]: Downloading https://files.pythonhosted.org/packages/cc/39/70681d7c3170fe5be9c44c356fa31197f1e6110d20938e39564b4975333c/voiceprocessingtoolkit-0.1.8.2.tar.gz
+[2024-06-02 20:58:19] INFO root fetch - processPackages [omop2survey]: executing diffoscope
+[2024-06-02 20:58:19] INFO root fetch - processPackages [omop2survey]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/omop2survey-0.0.5.tar.gz tmp/omop2survey-0.0.6.tar.gz --markdown 20240602/o/omop2survey/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-06-02 20:58:19] INFO root fetch - processPackages [smbclientng]: Downloading https://files.pythonhosted.org/packages/e5/a0/15e922c7cd79aa3e4d6ae090517f9d8909015cdbcec5cfba13a904733903/smbclientng-1.2-py3-none-any.whl
+[2024-06-02 20:58:19] INFO root fetch - processPackages [wordcel]: Downloading https://files.pythonhosted.org/packages/37/1b/efd0defcf1365657dd7be37fbd0f2c7a68355263d8b1d3f65b1ecf9e001c/wordcel-0.0.9.tar.gz
+[2024-06-02 20:58:19] INFO root fetch - processPackages [domolibrary-extensions]: Downloading https://files.pythonhosted.org/packages/41/10/6e957b13beda7ab0f29eb3dd8dbb4c5f64d6ae6468cc6103b7d387a516c1/domolibrary_extensions-0.0.9.tar.gz
+[2024-06-02 20:58:19] INFO root fetch - processPackages [VoiceProcessingToolkit]: executing diffoscope
+[2024-06-02 20:58:19] INFO root fetch - processPackages [VoiceProcessingToolkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/VoiceProcessingToolkit-0.1.8.1.tar.gz tmp/voiceprocessingtoolkit-0.1.8.2.tar.gz --markdown 20240602/V/VoiceProcessingToolkit/0.1.8.1-0.1.8.2/README.md --exclude *.pyd
+[2024-06-02 20:58:19] INFO root fetch - processPackages [seamm-datastore]: Downloading https://files.pythonhosted.org/packages/3f/af/e11e20876aba446e81b60872ba9214fc4990a4a63b915c40c4691ed5ab5e/seamm_datastore-2024.6.2.tar.gz
+[2024-06-02 20:58:19] INFO root fetch - processPackages [smbclientng]: executing diffoscope
+[2024-06-02 20:58:19] INFO root fetch - processPackages [smbclientng]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smbclientng-1.1-py3-none-any.whl.zip tmp/smbclientng-1.2-py3-none-any.whl.zip --markdown 20240602/s/smbclientng/1.1-1.2/README.md --exclude *.pyd
+[2024-06-02 20:58:19] INFO root fetch - processPackages [seamm-datastore]: executing diffoscope
+[2024-06-02 20:58:19] INFO root fetch - processPackages [seamm-datastore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/seamm_datastore-2024.3.13.tar.gz tmp/seamm_datastore-2024.6.2.tar.gz --markdown 20240602/s/seamm-datastore/2024.3.13-2024.6.2/README.md --exclude *.pyd
+[2024-06-02 20:58:19] INFO root fetch - processPackages [domolibrary-extensions]: executing diffoscope
+[2024-06-02 20:58:19] INFO root fetch - processPackages [domolibrary-extensions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/domolibrary_extensions-0.0.8.tar.gz tmp/domolibrary_extensions-0.0.9.tar.gz --markdown 20240602/d/domolibrary-extensions/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-06-02 20:58:19] INFO root fetch - processPackages [wordcel]: executing diffoscope
+[2024-06-02 20:58:19] INFO root fetch - processPackages [wordcel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wordcel-0.0.8.tar.gz tmp/wordcel-0.0.9.tar.gz --markdown 20240602/w/wordcel/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-06-02 20:58:20] INFO root fetch - processPackages [omop2survey]: Remove: archive file [/home/abi/fetcher/tmp/omop2survey-0.0.5.tar.gz]
+[2024-06-02 20:58:20] INFO root fetch - processPackages [omop2survey]: Remove: archive file [/home/abi/fetcher/tmp/omop2survey-0.0.6.tar.gz]
+[2024-06-02 20:58:20] INFO root fetch - main [MainThread]: End processing [omop2survey]: success
+[2024-06-02 20:58:20] INFO root fetch - processPackages [VoiceProcessingToolkit]: Remove: archive file [/home/abi/fetcher/tmp/VoiceProcessingToolkit-0.1.8.1.tar.gz]
+[2024-06-02 20:58:20] INFO root fetch - processPackages [VoiceProcessingToolkit]: Remove: archive file [/home/abi/fetcher/tmp/voiceprocessingtoolkit-0.1.8.2.tar.gz]
+[2024-06-02 20:58:20] INFO root fetch - main [MainThread]: End processing [VoiceProcessingToolkit]: success
+[2024-06-02 20:58:20] INFO root fetch - processPackages [smbclientng]: Remove: archive file [/home/abi/fetcher/tmp/smbclientng-1.1-py3-none-any.whl.zip]
+[2024-06-02 20:58:20] INFO root fetch - processPackages [smbclientng]: Remove: archive file [/home/abi/fetcher/tmp/smbclientng-1.2-py3-none-any.whl.zip]
+[2024-06-02 20:58:20] INFO root fetch - main [MainThread]: End processing [smbclientng]: success
+[2024-06-02 20:58:20] INFO root fetch - processPackages [domolibrary-extensions]: Remove: archive file [/home/abi/fetcher/tmp/domolibrary_extensions-0.0.8.tar.gz]
+[2024-06-02 20:58:20] INFO root fetch - processPackages [domolibrary-extensions]: Remove: archive file [/home/abi/fetcher/tmp/domolibrary_extensions-0.0.9.tar.gz]
+[2024-06-02 20:58:20] INFO root fetch - main [MainThread]: End processing [domolibrary-extensions]: success
+[2024-06-02 20:58:20] INFO root fetch - processPackages [wordcel]: Remove: archive file [/home/abi/fetcher/tmp/wordcel-0.0.8.tar.gz]
+[2024-06-02 20:58:20] INFO root fetch - processPackages [wordcel]: Remove: archive file [/home/abi/fetcher/tmp/wordcel-0.0.9.tar.gz]
+[2024-06-02 20:58:20] INFO root fetch - main [MainThread]: End processing [wordcel]: success
+[2024-06-02 20:58:20] INFO root fetch - processPackages [seamm-datastore]: Remove: archive file [/home/abi/fetcher/tmp/seamm_datastore-2024.3.13.tar.gz]
+[2024-06-02 20:58:20] INFO root fetch - processPackages [seamm-datastore]: Remove: archive file [/home/abi/fetcher/tmp/seamm_datastore-2024.6.2.tar.gz]
+[2024-06-02 20:58:20] INFO root fetch - main [MainThread]: End processing [seamm-datastore]: success
+[2024-06-02 20:58:20] INFO root fetch - main [MainThread]: Store serial: [23492206]
