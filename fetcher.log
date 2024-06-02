@@ -2570,3 +2570,42 @@
 [2024-06-02 03:25:59] INFO root fetch - processPackages [pyOpenTTDAdmin]: Remove: archive file [/home/abi/fetcher/tmp/pyopenttdadmin-1.0.0.tar.gz]
 [2024-06-02 03:25:59] INFO root fetch - main [MainThread]: End processing [pyOpenTTDAdmin]: success
 [2024-06-02 03:25:59] INFO root fetch - main [MainThread]: Store serial: [23485456]
+[2024-06-02 03:28:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23485456]
+[2024-06-02 03:28:07] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-02 03:28:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: api-pipe
+[2024-06-02 03:28:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lbt-honeybee
+[2024-06-02 03:28:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: vizrecurse
+[2024-06-02 03:28:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cdk-wordpress
+[2024-06-02 03:28:07] INFO root fetch - processPackages [api-pipe]: New version: [2.0.24] Old Version: [2.0.23]
+[2024-06-02 03:28:07] INFO root fetch - processPackages [vizrecurse]: New version: [1.1.2] Old Version: [1.1.1a1]
+[2024-06-02 03:28:07] INFO root fetch - processPackages [cdk-wordpress]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-06-02 03:28:07] INFO root fetch - processPackages [lbt-honeybee]: New version: [0.8.99] Old Version: [0.8.98]
+[2024-06-02 03:28:07] INFO root fetch - processPackages [api-pipe]: Downloading https://files.pythonhosted.org/packages/6a/82/f996cc0f4e42e7755bc2409f1d17265be77d78b6160162231cfd606db5b3/api_pipe-2.0.23.tar.gz
+[2024-06-02 03:28:07] INFO root fetch - processPackages [vizrecurse]: Downloading https://files.pythonhosted.org/packages/69/0b/7c1ea5c54e464251f3a2859cb5e5776ba7407eea6ef82f937eda596c646f/vizrecurse-1.1.1a1.tar.gz
+[2024-06-02 03:28:07] INFO root fetch - processPackages [cdk-wordpress]: Downloading https://files.pythonhosted.org/packages/95/5a/46730445b7c8db7cad33c0b319cbd75004ba42b6cbe2f00628d2191c5516/cdk-wordpress-0.0.98.tar.gz
+[2024-06-02 03:28:07] INFO root fetch - processPackages [lbt-honeybee]: Downloading https://files.pythonhosted.org/packages/b5/a0/c6742c4b1a93565a552f073a8cad3689b9e2edcf401d45bd9fddf0485a8d/lbt-honeybee-0.8.98.tar.gz
+[2024-06-02 03:28:08] INFO root fetch - processPackages [api-pipe]: Downloading https://files.pythonhosted.org/packages/97/e5/e3f996ad96afdc9516c2968e20faac1717244dfde8f4ade41b49f5df5a30/api_pipe-2.0.24.tar.gz
+[2024-06-02 03:28:08] INFO root fetch - processPackages [cdk-wordpress]: Downloading https://files.pythonhosted.org/packages/f5/33/8bc435266e926cea52eb7df452e54c2c0657beef07580a86eae44236d88b/cdk-wordpress-0.0.99.tar.gz
+[2024-06-02 03:28:08] INFO root fetch - processPackages [vizrecurse]: Downloading https://files.pythonhosted.org/packages/6c/29/99033ea445ab8fdf9abe604cb6f962de134207c7581a742339cc04fca3ab/vizrecurse-1.1.2.tar.gz
+[2024-06-02 03:28:08] INFO root fetch - processPackages [lbt-honeybee]: Downloading https://files.pythonhosted.org/packages/f1/61/4f36e668d3e1767b0f4d921481ad087bec472a2afc14ea20f916e083c690/lbt-honeybee-0.8.99.tar.gz
+[2024-06-02 03:28:08] INFO root fetch - processPackages [api-pipe]: executing diffoscope
+[2024-06-02 03:28:08] INFO root fetch - processPackages [api-pipe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/api_pipe-2.0.23.tar.gz tmp/api_pipe-2.0.24.tar.gz --markdown 20240602/a/api-pipe/2.0.23-2.0.24/README.md --exclude *.pyd
+[2024-06-02 03:28:08] INFO root fetch - processPackages [cdk-wordpress]: executing diffoscope
+[2024-06-02 03:28:08] INFO root fetch - processPackages [cdk-wordpress]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-wordpress-0.0.98.tar.gz tmp/cdk-wordpress-0.0.99.tar.gz --markdown 20240602/c/cdk-wordpress/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-06-02 03:28:08] INFO root fetch - processPackages [vizrecurse]: executing diffoscope
+[2024-06-02 03:28:08] INFO root fetch - processPackages [vizrecurse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vizrecurse-1.1.1a1.tar.gz tmp/vizrecurse-1.1.2.tar.gz --markdown 20240602/v/vizrecurse/1.1.1a1-1.1.2/README.md --exclude *.pyd
+[2024-06-02 03:28:08] INFO root fetch - processPackages [lbt-honeybee]: executing diffoscope
+[2024-06-02 03:28:08] INFO root fetch - processPackages [lbt-honeybee]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lbt-honeybee-0.8.98.tar.gz tmp/lbt-honeybee-0.8.99.tar.gz --markdown 20240602/l/lbt-honeybee/0.8.98-0.8.99/README.md --exclude *.pyd
+[2024-06-02 03:28:08] INFO root fetch - processPackages [api-pipe]: Remove: archive file [/home/abi/fetcher/tmp/api_pipe-2.0.23.tar.gz]
+[2024-06-02 03:28:08] INFO root fetch - processPackages [api-pipe]: Remove: archive file [/home/abi/fetcher/tmp/api_pipe-2.0.24.tar.gz]
+[2024-06-02 03:28:08] INFO root fetch - main [MainThread]: End processing [api-pipe]: success
+[2024-06-02 03:28:09] INFO root fetch - processPackages [lbt-honeybee]: Remove: archive file [/home/abi/fetcher/tmp/lbt-honeybee-0.8.98.tar.gz]
+[2024-06-02 03:28:09] INFO root fetch - processPackages [lbt-honeybee]: Remove: archive file [/home/abi/fetcher/tmp/lbt-honeybee-0.8.99.tar.gz]
+[2024-06-02 03:28:09] INFO root fetch - main [MainThread]: End processing [lbt-honeybee]: success
+[2024-06-02 03:28:09] INFO root fetch - processPackages [cdk-wordpress]: Remove: archive file [/home/abi/fetcher/tmp/cdk-wordpress-0.0.98.tar.gz]
+[2024-06-02 03:28:09] INFO root fetch - processPackages [cdk-wordpress]: Remove: archive file [/home/abi/fetcher/tmp/cdk-wordpress-0.0.99.tar.gz]
+[2024-06-02 03:28:09] INFO root fetch - main [MainThread]: End processing [cdk-wordpress]: success
+[2024-06-02 03:28:09] INFO root fetch - processPackages [vizrecurse]: Remove: archive file [/home/abi/fetcher/tmp/vizrecurse-1.1.1a1.tar.gz]
+[2024-06-02 03:28:09] INFO root fetch - processPackages [vizrecurse]: Remove: archive file [/home/abi/fetcher/tmp/vizrecurse-1.1.2.tar.gz]
+[2024-06-02 03:28:09] INFO root fetch - main [MainThread]: End processing [vizrecurse]: success
+[2024-06-02 03:28:09] INFO root fetch - main [MainThread]: Store serial: [23485468]
