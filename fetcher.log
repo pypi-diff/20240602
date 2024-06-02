@@ -5035,3 +5035,33 @@
 [2024-06-02 08:39:10] INFO root fetch - processPackages [aligo]: Remove: archive file [/home/abi/fetcher/tmp/aligo-6.2.4.tar.gz]
 [2024-06-02 08:39:10] INFO root fetch - main [MainThread]: End processing [aligo]: success
 [2024-06-02 08:39:10] INFO root fetch - main [MainThread]: Store serial: [23486765]
+[2024-06-02 08:41:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23486765]
+[2024-06-02 08:41:18] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-02 08:41:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: FastKmedoids
+[2024-06-02 08:41:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cdps
+[2024-06-02 08:41:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fastapi-mongo
+[2024-06-02 08:41:18] INFO root fetch - processPackages [cdps]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-06-02 08:41:18] INFO root fetch - processPackages [FastKmedoids]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-06-02 08:41:18] INFO root fetch - processPackages [fastapi-mongo]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-06-02 08:41:18] INFO root fetch - processPackages [FastKmedoids]: Downloading https://files.pythonhosted.org/packages/a5/c8/ff0794c913d103cc6cec917625fe657c3bdf40e5ad4d9dfb2e9003d12a78/FastKmedoids-0.0.7.tar.gz
+[2024-06-02 08:41:18] INFO root fetch - processPackages [cdps]: Downloading https://files.pythonhosted.org/packages/22/73/8fd2176ba089f5ae55a93146109d271db9f9a6bdbd4b2fdf1eb3dccb5764/cdps-1.0.8.tar.gz
+[2024-06-02 08:41:18] INFO root fetch - processPackages [fastapi-mongo]: Downloading https://files.pythonhosted.org/packages/10/ed/569f978b3cf3cf2e647daaafb12c055ed3f76f09cc80d51d42d65b49e019/fastapi-mongo-0.0.3.tar.gz
+[2024-06-02 08:41:18] INFO root fetch - processPackages [cdps]: Downloading https://files.pythonhosted.org/packages/ca/0b/37cc4575f3f5f399fed1223fd57adb24c1f4d98d7b88c48aed9f872abc0c/cdps-1.0.9.tar.gz
+[2024-06-02 08:41:18] INFO root fetch - processPackages [FastKmedoids]: Downloading https://files.pythonhosted.org/packages/64/fb/bea816a125dac01731efe648a30e2bb057efe18e609a349907e6cc03c774/fastkmedoids-0.0.8.tar.gz
+[2024-06-02 08:41:18] INFO root fetch - processPackages [FastKmedoids]: executing diffoscope
+[2024-06-02 08:41:18] INFO root fetch - processPackages [FastKmedoids]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/FastKmedoids-0.0.7.tar.gz tmp/fastkmedoids-0.0.8.tar.gz --markdown 20240602/F/FastKmedoids/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-06-02 08:41:18] INFO root fetch - processPackages [cdps]: executing diffoscope
+[2024-06-02 08:41:18] INFO root fetch - processPackages [cdps]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdps-1.0.8.tar.gz tmp/cdps-1.0.9.tar.gz --markdown 20240602/c/cdps/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-06-02 08:41:19] INFO root fetch - processPackages [fastapi-mongo]: Downloading https://files.pythonhosted.org/packages/bc/1c/88cc1cc8e8a2892f1f925925580197314bd5a3a5c76b212310f0571be962/fastapi-mongo-0.0.4.tar.gz
+[2024-06-02 08:41:19] INFO root fetch - processPackages [fastapi-mongo]: executing diffoscope
+[2024-06-02 08:41:19] INFO root fetch - processPackages [fastapi-mongo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastapi-mongo-0.0.3.tar.gz tmp/fastapi-mongo-0.0.4.tar.gz --markdown 20240602/f/fastapi-mongo/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-06-02 08:41:19] INFO root fetch - processPackages [FastKmedoids]: Remove: archive file [/home/abi/fetcher/tmp/FastKmedoids-0.0.7.tar.gz]
+[2024-06-02 08:41:19] INFO root fetch - processPackages [FastKmedoids]: Remove: archive file [/home/abi/fetcher/tmp/fastkmedoids-0.0.8.tar.gz]
+[2024-06-02 08:41:19] INFO root fetch - main [MainThread]: End processing [FastKmedoids]: success
+[2024-06-02 08:41:19] INFO root fetch - processPackages [cdps]: Remove: archive file [/home/abi/fetcher/tmp/cdps-1.0.8.tar.gz]
+[2024-06-02 08:41:19] INFO root fetch - processPackages [cdps]: Remove: archive file [/home/abi/fetcher/tmp/cdps-1.0.9.tar.gz]
+[2024-06-02 08:41:19] INFO root fetch - main [MainThread]: End processing [cdps]: success
+[2024-06-02 08:41:19] INFO root fetch - processPackages [fastapi-mongo]: Remove: archive file [/home/abi/fetcher/tmp/fastapi-mongo-0.0.3.tar.gz]
+[2024-06-02 08:41:19] INFO root fetch - processPackages [fastapi-mongo]: Remove: archive file [/home/abi/fetcher/tmp/fastapi-mongo-0.0.4.tar.gz]
+[2024-06-02 08:41:19] INFO root fetch - main [MainThread]: End processing [fastapi-mongo]: success
+[2024-06-02 08:41:19] INFO root fetch - main [MainThread]: Store serial: [23486783]
