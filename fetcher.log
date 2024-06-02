@@ -13875,3 +13875,49 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 18:40:22] INFO root fetch - processPackages [result]: Remove: archive file [/home/abi/fetcher/tmp/result-0.9.0.tar.gz]
 [2024-06-02 18:40:22] INFO root fetch - main [MainThread]: End processing [result]: success
 [2024-06-02 18:40:22] INFO root fetch - main [MainThread]: Store serial: [23490829]
+[2024-06-02 18:42:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23490829]
+[2024-06-02 18:42:31] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-06-02 18:42:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: trytond-analytic-account
+[2024-06-02 18:42:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: py-optional
+[2024-06-02 18:42:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: satnogs-decoders
+[2024-06-02 18:42:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: fremu
+[2024-06-02 18:42:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: trytond-analytic-account
+[2024-06-02 18:42:31] INFO root fetch - processPackages [trytond-analytic-account]: New version: [7.2.2] Old Version: [7.2.1]
+[2024-06-02 18:42:31] INFO root fetch - processPackages [trytond-analytic-account]: New version: [7.2.2] Old Version: [7.2.1]
+[2024-06-02 18:42:31] INFO root fetch - processPackages [fremu]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-06-02 18:42:31] INFO root fetch - processPackages [py-optional]: New version: [1.3.0] Old Version: [1.2.1]
+[2024-06-02 18:42:31] INFO root fetch - processPackages [trytond-analytic-account]: Downloading https://files.pythonhosted.org/packages/ba/d9/46bd139c7ae6d6ec6acdbb8732043b97bf8373515c693e62fee001b1a30e/trytond_analytic_account-7.2.1.tar.gz
+[2024-06-02 18:42:31] INFO root fetch - processPackages [trytond-analytic-account]: Downloading https://files.pythonhosted.org/packages/ba/d9/46bd139c7ae6d6ec6acdbb8732043b97bf8373515c693e62fee001b1a30e/trytond_analytic_account-7.2.1.tar.gz
+[2024-06-02 18:42:31] INFO root fetch - processPackages [satnogs-decoders]: New version: [1.9.1] Old Version: [1.9.0]
+[2024-06-02 18:42:31] INFO root fetch - processPackages [py-optional]: Downloading https://files.pythonhosted.org/packages/7c/ee/27e4b86c3f95f519f563ae28669c3bbf56167ceedec7eeb039872e56f756/py_optional-1.2.1.tar.gz
+[2024-06-02 18:42:31] INFO root fetch - processPackages [fremu]: Downloading https://files.pythonhosted.org/packages/0f/39/83838beed30870226c00704bdb8a1a4dbf1e0b505e411060e62d23733a30/fremu-0.0.7.tar.gz
+[2024-06-02 18:42:31] INFO root fetch - processPackages [trytond-analytic-account]: Downloading https://files.pythonhosted.org/packages/2a/01/9161836e5b769378a4da52e45cbc7b89ed5a8f276c5a0aba94780e21cc48/trytond_analytic_account-7.2.2.tar.gz
+[2024-06-02 18:42:31] INFO root fetch - processPackages [trytond-analytic-account]: Downloading https://files.pythonhosted.org/packages/2a/01/9161836e5b769378a4da52e45cbc7b89ed5a8f276c5a0aba94780e21cc48/trytond_analytic_account-7.2.2.tar.gz
+[2024-06-02 18:42:31] INFO root fetch - processPackages [satnogs-decoders]: Downloading https://files.pythonhosted.org/packages/98/5b/a884740e2c9b5b5cae0ad2eb064a67c19ebac207e460da6dc21f9d4f5ae7/satnogs_decoders-1.9.0-py3-none-any.whl
+[2024-06-02 18:42:31] INFO root fetch - processPackages [trytond-analytic-account]: executing diffoscope
+[2024-06-02 18:42:31] INFO root fetch - processPackages [trytond-analytic-account]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trytond_analytic_account-7.2.1.tar.gz tmp/trytond_analytic_account-7.2.2.tar.gz --markdown 20240602/t/trytond-analytic-account/7.2.1-7.2.2/README.md --exclude *.pyd
+[2024-06-02 18:42:31] INFO root fetch - processPackages [trytond-analytic-account]: executing diffoscope
+[2024-06-02 18:42:31] INFO root fetch - processPackages [trytond-analytic-account]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trytond_analytic_account-7.2.1.tar.gz tmp/trytond_analytic_account-7.2.2.tar.gz --markdown 20240602/t/trytond-analytic-account/7.2.1-7.2.2/README.md --exclude *.pyd
+[2024-06-02 18:42:31] INFO root fetch - processPackages [py-optional]: Downloading https://files.pythonhosted.org/packages/c6/c5/41502a9a6c31c32c0c37f0e58dce5a3cafcfc22ae49542491b014f496196/py_optional-1.3.0.tar.gz
+[2024-06-02 18:42:32] INFO root fetch - processPackages [py-optional]: executing diffoscope
+[2024-06-02 18:42:32] INFO root fetch - processPackages [py-optional]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_optional-1.2.1.tar.gz tmp/py_optional-1.3.0.tar.gz --markdown 20240602/p/py-optional/1.2.1-1.3.0/README.md --exclude *.pyd
+[2024-06-02 18:42:32] INFO root fetch - processPackages [fremu]: Downloading https://files.pythonhosted.org/packages/82/6b/f4b17628b66a05b9e93dd53de0350353b78299877a8f6da27faa45bb660b/fremu-0.0.8-py3-none-any.whl
+[2024-06-02 18:42:32] INFO root fetch - processPackages [satnogs-decoders]: Downloading https://files.pythonhosted.org/packages/fc/ea/57d202b93cb74969dd8d51533ef8813c3fe3ec463ed1aa1d6175a2213633/satnogs_decoders-1.9.1-py3-none-any.whl
+[2024-06-02 18:42:32] INFO root fetch - processPackages [fremu]: executing diffoscope
+[2024-06-02 18:42:32] INFO root fetch - processPackages [fremu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fremu-0.0.7.tar.gz tmp/fremu-0.0.8-py3-none-any.whl.zip --markdown 20240602/f/fremu/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-06-02 18:42:32] INFO root fetch - processPackages [satnogs-decoders]: executing diffoscope
+[2024-06-02 18:42:32] INFO root fetch - processPackages [satnogs-decoders]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/satnogs_decoders-1.9.0-py3-none-any.whl.zip tmp/satnogs_decoders-1.9.1-py3-none-any.whl.zip --markdown 20240602/s/satnogs-decoders/1.9.0-1.9.1/README.md --exclude *.pyd
+[2024-06-02 18:42:32] INFO root fetch - processPackages [trytond-analytic-account]: Remove: archive file [/home/abi/fetcher/tmp/trytond_analytic_account-7.2.1.tar.gz]
+[2024-06-02 18:42:32] INFO root fetch - processPackages [trytond-analytic-account]: Remove: archive file [/home/abi/fetcher/tmp/trytond_analytic_account-7.2.2.tar.gz]
+[2024-06-02 18:42:32] INFO root fetch - main [MainThread]: End processing [trytond-analytic-account]: success
+[2024-06-02 18:42:32] INFO root fetch - main [MainThread]: End processing [trytond-analytic-account]: success
+[2024-06-02 18:42:32] INFO root fetch - processPackages [py-optional]: Remove: archive file [/home/abi/fetcher/tmp/py_optional-1.2.1.tar.gz]
+[2024-06-02 18:42:32] INFO root fetch - processPackages [py-optional]: Remove: archive file [/home/abi/fetcher/tmp/py_optional-1.3.0.tar.gz]
+[2024-06-02 18:42:32] INFO root fetch - main [MainThread]: End processing [py-optional]: success
+[2024-06-02 18:42:32] INFO root fetch - processPackages [fremu]: Remove: archive file [/home/abi/fetcher/tmp/fremu-0.0.7.tar.gz]
+[2024-06-02 18:42:32] INFO root fetch - processPackages [fremu]: Remove: archive file [/home/abi/fetcher/tmp/fremu-0.0.8-py3-none-any.whl.zip]
+[2024-06-02 18:42:32] INFO root fetch - main [MainThread]: End processing [fremu]: success
+[2024-06-02 18:42:33] INFO root fetch - processPackages [satnogs-decoders]: Remove: archive file [/home/abi/fetcher/tmp/satnogs_decoders-1.9.0-py3-none-any.whl.zip]
+[2024-06-02 18:42:33] INFO root fetch - processPackages [satnogs-decoders]: Remove: archive file [/home/abi/fetcher/tmp/satnogs_decoders-1.9.1-py3-none-any.whl.zip]
+[2024-06-02 18:42:33] INFO root fetch - main [MainThread]: End processing [satnogs-decoders]: success
+[2024-06-02 18:42:33] INFO root fetch - main [MainThread]: Store serial: [23490842]
