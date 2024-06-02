@@ -5964,3 +5964,51 @@
 [2024-06-02 10:08:46] INFO root fetch - processPackages [pyglove]: Remove: archive file [/home/abi/fetcher/tmp/pyglove-0.4.5.dev20240601.tar.gz]
 [2024-06-02 10:08:46] INFO root fetch - main [MainThread]: End processing [pyglove]: success
 [2024-06-02 10:08:46] INFO root fetch - main [MainThread]: Store serial: [23487288]
+[2024-06-02 10:10:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23487288]
+[2024-06-02 10:10:55] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-06-02 10:10:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pytest-zcc
+[2024-06-02 10:10:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: vpx-rtp-py
+[2024-06-02 10:10:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: anydi
+[2024-06-02 10:10:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: joker-mongodb
+[2024-06-02 10:10:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: hstrader
+[2024-06-02 10:10:56] INFO root fetch - processPackages [vpx-rtp-py]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-06-02 10:10:56] INFO root fetch - processPackages [pytest-zcc]: New version: [1.1] Old Version: [1.0]
+[2024-06-02 10:10:56] INFO root fetch - processPackages [hstrader]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-06-02 10:10:56] INFO root fetch - processPackages [anydi]: New version: [0.27.0a0] Old Version: [0.26.1]
+[2024-06-02 10:10:56] INFO root fetch - processPackages [vpx-rtp-py]: Downloading https://files.pythonhosted.org/packages/b8/17/5fe64d453d28fc2417452d7e72b7ffeb1cdedeabf6ddce5c1a907b39187d/vpx_rtp_py-0.1.2.tar.gz
+[2024-06-02 10:10:56] INFO root fetch - processPackages [joker-mongodb]: New version: [0.3.1] Old Version: [0.3.0]
+[2024-06-02 10:10:56] INFO root fetch - processPackages [anydi]: Downloading https://files.pythonhosted.org/packages/4c/66/cfe49a176ed7ce87d91d77ca283ade56446f08b0ad504e3a8ddc98ec01c0/anydi-0.26.1.tar.gz
+[2024-06-02 10:10:56] INFO root fetch - processPackages [hstrader]: Downloading https://files.pythonhosted.org/packages/02/41/1f2ca7c03973dff4e10b61f49b6b0e2de5a271fd970d5868f1c1bb2685c9/hstrader-1.0.0.tar.gz
+[2024-06-02 10:10:56] INFO root fetch - processPackages [pytest-zcc]: Downloading https://files.pythonhosted.org/packages/fd/95/f465b56c6a24bf3fdaf953eee8facd0b8c84431572cf45efd58b56c02f75/pytest_zcc-1.0.tar.gz
+[2024-06-02 10:10:56] INFO root fetch - processPackages [joker-mongodb]: Downloading https://files.pythonhosted.org/packages/85/fd/fdf3ddc3f4819fbf44bd9dd19d4469f0d3c4df7f45bd55e4e6a9a29b20cc/joker-mongodb-0.3.0.tar.gz
+[2024-06-02 10:10:56] INFO root fetch - processPackages [anydi]: Downloading https://files.pythonhosted.org/packages/fc/76/2c036fb9463fd91799470293bf9caeb9fb3b353728492ccde1a6d912ca15/anydi-0.27.0a0.tar.gz
+[2024-06-02 10:10:56] INFO root fetch - processPackages [hstrader]: Downloading https://files.pythonhosted.org/packages/dd/52/88ba809be495042cf76ac55642b8c9f0c8f6894e37651a657e982034ed7b/hstrader-1.0.1.tar.gz
+[2024-06-02 10:10:56] INFO root fetch - processPackages [vpx-rtp-py]: Downloading https://files.pythonhosted.org/packages/4d/3d/2420c879b9a6f14729c858a39b19ebde86092e59ece74b047354e9095f49/vpx_rtp_py-0.1.3.tar.gz
+[2024-06-02 10:10:56] INFO root fetch - processPackages [anydi]: executing diffoscope
+[2024-06-02 10:10:56] INFO root fetch - processPackages [anydi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anydi-0.26.1.tar.gz tmp/anydi-0.27.0a0.tar.gz --markdown 20240602/a/anydi/0.26.1-0.27.0a0/README.md --exclude *.pyd
+[2024-06-02 10:10:56] INFO root fetch - processPackages [hstrader]: executing diffoscope
+[2024-06-02 10:10:56] INFO root fetch - processPackages [hstrader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hstrader-1.0.0.tar.gz tmp/hstrader-1.0.1.tar.gz --markdown 20240602/h/hstrader/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-06-02 10:10:56] INFO root fetch - processPackages [pytest-zcc]: Downloading https://files.pythonhosted.org/packages/78/f9/e20b0a47701c21b5b95b6ca82fba9c224591e1091ac403a2bf8c399d62c3/pytest_zcc-1.1.tar.gz
+[2024-06-02 10:10:56] INFO root fetch - processPackages [vpx-rtp-py]: executing diffoscope
+[2024-06-02 10:10:56] INFO root fetch - processPackages [vpx-rtp-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vpx_rtp_py-0.1.2.tar.gz tmp/vpx_rtp_py-0.1.3.tar.gz --markdown 20240602/v/vpx-rtp-py/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-06-02 10:10:56] INFO root fetch - processPackages [joker-mongodb]: Downloading https://files.pythonhosted.org/packages/32/be/b69ee21f6143fe41f154b9ad8b478f94dd6ab354a610d8e6581e7782e80d/joker-mongodb-0.3.1.tar.gz
+[2024-06-02 10:10:56] INFO root fetch - processPackages [pytest-zcc]: executing diffoscope
+[2024-06-02 10:10:56] INFO root fetch - processPackages [pytest-zcc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytest_zcc-1.0.tar.gz tmp/pytest_zcc-1.1.tar.gz --markdown 20240602/p/pytest-zcc/1.0-1.1/README.md --exclude *.pyd
+[2024-06-02 10:10:56] INFO root fetch - processPackages [joker-mongodb]: executing diffoscope
+[2024-06-02 10:10:56] INFO root fetch - processPackages [joker-mongodb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/joker-mongodb-0.3.0.tar.gz tmp/joker-mongodb-0.3.1.tar.gz --markdown 20240602/j/joker-mongodb/0.3.0-0.3.1/README.md --exclude *.pyd
+[2024-06-02 10:10:57] INFO root fetch - processPackages [anydi]: Remove: archive file [/home/abi/fetcher/tmp/anydi-0.26.1.tar.gz]
+[2024-06-02 10:10:57] INFO root fetch - processPackages [anydi]: Remove: archive file [/home/abi/fetcher/tmp/anydi-0.27.0a0.tar.gz]
+[2024-06-02 10:10:57] INFO root fetch - main [MainThread]: End processing [anydi]: success
+[2024-06-02 10:10:57] INFO root fetch - processPackages [vpx-rtp-py]: Remove: archive file [/home/abi/fetcher/tmp/vpx_rtp_py-0.1.2.tar.gz]
+[2024-06-02 10:10:57] INFO root fetch - processPackages [vpx-rtp-py]: Remove: archive file [/home/abi/fetcher/tmp/vpx_rtp_py-0.1.3.tar.gz]
+[2024-06-02 10:10:57] INFO root fetch - main [MainThread]: End processing [vpx-rtp-py]: success
+[2024-06-02 10:10:57] INFO root fetch - processPackages [hstrader]: Remove: archive file [/home/abi/fetcher/tmp/hstrader-1.0.0.tar.gz]
+[2024-06-02 10:10:57] INFO root fetch - processPackages [hstrader]: Remove: archive file [/home/abi/fetcher/tmp/hstrader-1.0.1.tar.gz]
+[2024-06-02 10:10:57] INFO root fetch - main [MainThread]: End processing [hstrader]: success
+[2024-06-02 10:10:57] INFO root fetch - processPackages [pytest-zcc]: Remove: archive file [/home/abi/fetcher/tmp/pytest_zcc-1.0.tar.gz]
+[2024-06-02 10:10:57] INFO root fetch - processPackages [pytest-zcc]: Remove: archive file [/home/abi/fetcher/tmp/pytest_zcc-1.1.tar.gz]
+[2024-06-02 10:10:57] INFO root fetch - main [MainThread]: End processing [pytest-zcc]: success
+[2024-06-02 10:10:57] INFO root fetch - processPackages [joker-mongodb]: Remove: archive file [/home/abi/fetcher/tmp/joker-mongodb-0.3.0.tar.gz]
+[2024-06-02 10:10:57] INFO root fetch - processPackages [joker-mongodb]: Remove: archive file [/home/abi/fetcher/tmp/joker-mongodb-0.3.1.tar.gz]
+[2024-06-02 10:10:57] INFO root fetch - main [MainThread]: End processing [joker-mongodb]: success
+[2024-06-02 10:10:57] INFO root fetch - main [MainThread]: Store serial: [23487312]
