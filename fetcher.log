@@ -5235,3 +5235,33 @@
 [2024-06-02 09:01:28] INFO root fetch - processPackages [UnionCalLib]: Remove: archive file [/home/abi/fetcher/tmp/unioncallib-0.11.tar.gz]
 [2024-06-02 09:01:28] INFO root fetch - main [MainThread]: End processing [UnionCalLib]: success
 [2024-06-02 09:01:28] INFO root fetch - main [MainThread]: Store serial: [23486841]
+[2024-06-02 09:03:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23486841]
+[2024-06-02 09:03:38] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-02 09:03:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: seqio-nightly
+[2024-06-02 09:03:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: UnionCalLib
+[2024-06-02 09:03:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: CI-CloudConnector
+[2024-06-02 09:03:38] INFO root fetch - processPackages [CI-CloudConnector]: New version: [2.2] Old Version: [2.0]
+[2024-06-02 09:03:38] INFO root fetch - processPackages [UnionCalLib]: New version: [0.12] Old Version: [0.11]
+[2024-06-02 09:03:38] INFO root fetch - processPackages [seqio-nightly]: New version: [0.0.8.dev20220907] Old Version: [0.0.8.dev20220906]
+[2024-06-02 09:03:38] INFO root fetch - processPackages [CI-CloudConnector]: Downloading https://files.pythonhosted.org/packages/4b/c4/d72fab567ae615ec45e6a59433627b3d998cec2276434eabd4c291676cc8/ci_cloudconnector-2.0.tar.gz
+[2024-06-02 09:03:38] INFO root fetch - processPackages [UnionCalLib]: Downloading https://files.pythonhosted.org/packages/af/d4/bb08482dbe3b06aaf85d8e014cbb9a20cb6c9dfce1f8166971dcc5da8d1a/unioncallib-0.11.tar.gz
+[2024-06-02 09:03:38] INFO root fetch - processPackages [seqio-nightly]: Downloading https://files.pythonhosted.org/packages/43/a0/f60ad514b6f8534fa5ba8cc5fcc2a8f2e32e7d06d2dbfd43b12c2cb29931/seqio-nightly-0.0.8.dev20220906.tar.gz
+[2024-06-02 09:03:38] INFO root fetch - processPackages [CI-CloudConnector]: Downloading https://files.pythonhosted.org/packages/dc/db/48dd7b5f37e45702f3a63b2c31e10bce1894d151e7ff39c485f5d0db78fc/ci_cloudconnector-2.2.tar.gz
+[2024-06-02 09:03:38] INFO root fetch - processPackages [seqio-nightly]: Downloading https://files.pythonhosted.org/packages/2a/76/25f4c7602cdd724deac948a914e454756abfad2119a525c06d9ce341b918/seqio-nightly-0.0.8.dev20220907.tar.gz
+[2024-06-02 09:03:38] INFO root fetch - processPackages [UnionCalLib]: Downloading https://files.pythonhosted.org/packages/3d/bb/6c37561bb20eecdf8e90ed823e518ff518ce4501936a3bb54c27d074c4ed/unioncallib-0.12.tar.gz
+[2024-06-02 09:03:38] INFO root fetch - processPackages [CI-CloudConnector]: executing diffoscope
+[2024-06-02 09:03:38] INFO root fetch - processPackages [CI-CloudConnector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ci_cloudconnector-2.0.tar.gz tmp/ci_cloudconnector-2.2.tar.gz --markdown 20240602/C/CI-CloudConnector/2.0-2.2/README.md --exclude *.pyd
+[2024-06-02 09:03:39] INFO root fetch - processPackages [seqio-nightly]: executing diffoscope
+[2024-06-02 09:03:39] INFO root fetch - processPackages [seqio-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/seqio-nightly-0.0.8.dev20220906.tar.gz tmp/seqio-nightly-0.0.8.dev20220907.tar.gz --markdown 20240602/s/seqio-nightly/0.0.8.dev20220906-0.0.8.dev20220907/README.md --exclude *.pyd
+[2024-06-02 09:03:39] INFO root fetch - processPackages [UnionCalLib]: executing diffoscope
+[2024-06-02 09:03:39] INFO root fetch - processPackages [UnionCalLib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unioncallib-0.11.tar.gz tmp/unioncallib-0.12.tar.gz --markdown 20240602/U/UnionCalLib/0.11-0.12/README.md --exclude *.pyd
+[2024-06-02 09:03:39] INFO root fetch - processPackages [CI-CloudConnector]: Remove: archive file [/home/abi/fetcher/tmp/ci_cloudconnector-2.0.tar.gz]
+[2024-06-02 09:03:39] INFO root fetch - processPackages [CI-CloudConnector]: Remove: archive file [/home/abi/fetcher/tmp/ci_cloudconnector-2.2.tar.gz]
+[2024-06-02 09:03:39] INFO root fetch - main [MainThread]: End processing [CI-CloudConnector]: success
+[2024-06-02 09:03:39] INFO root fetch - processPackages [UnionCalLib]: Remove: archive file [/home/abi/fetcher/tmp/unioncallib-0.11.tar.gz]
+[2024-06-02 09:03:39] INFO root fetch - processPackages [UnionCalLib]: Remove: archive file [/home/abi/fetcher/tmp/unioncallib-0.12.tar.gz]
+[2024-06-02 09:03:39] INFO root fetch - main [MainThread]: End processing [UnionCalLib]: success
+[2024-06-02 09:03:39] INFO root fetch - processPackages [seqio-nightly]: Remove: archive file [/home/abi/fetcher/tmp/seqio-nightly-0.0.8.dev20220906.tar.gz]
+[2024-06-02 09:03:39] INFO root fetch - processPackages [seqio-nightly]: Remove: archive file [/home/abi/fetcher/tmp/seqio-nightly-0.0.8.dev20220907.tar.gz]
+[2024-06-02 09:03:39] INFO root fetch - main [MainThread]: End processing [seqio-nightly]: success
+[2024-06-02 09:03:39] INFO root fetch - main [MainThread]: Store serial: [23486855]
