@@ -13025,3 +13025,29 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 18:03:03] INFO root fetch - processPackages [trytond-sale]: Remove: archive file [/home/abi/fetcher/tmp/trytond_sale-7.2.2-py3-none-any.whl.zip]
 [2024-06-02 18:03:03] INFO root fetch - main [MainThread]: End processing [trytond-sale]: success
 [2024-06-02 18:03:03] INFO root fetch - main [MainThread]: Store serial: [23490520]
+[2024-06-02 18:05:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23490520]
+[2024-06-02 18:05:12] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-02 18:05:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: trytond-sale
+[2024-06-02 18:05:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: trytond-sale
+[2024-06-02 18:05:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: trytond-sale
+[2024-06-02 18:05:12] INFO root fetch - processPackages [trytond-sale]: New version: [7.2.2] Old Version: [7.2.1]
+[2024-06-02 18:05:12] INFO root fetch - processPackages [trytond-sale]: New version: [7.2.2] Old Version: [7.2.1]
+[2024-06-02 18:05:12] INFO root fetch - processPackages [trytond-sale]: Downloading https://files.pythonhosted.org/packages/c9/f3/8fa44dd71e5f686ab58361f8c97486e2b8ff4b7b3e8f0f3122f112fa3f2f/trytond_sale-7.2.1.tar.gz
+[2024-06-02 18:05:12] INFO root fetch - processPackages [trytond-sale]: Downloading https://files.pythonhosted.org/packages/c9/f3/8fa44dd71e5f686ab58361f8c97486e2b8ff4b7b3e8f0f3122f112fa3f2f/trytond_sale-7.2.1.tar.gz
+[2024-06-02 18:05:12] INFO root fetch - processPackages [trytond-sale]: New version: [7.2.2] Old Version: [7.2.1]
+[2024-06-02 18:05:12] INFO root fetch - processPackages [trytond-sale]: Downloading https://files.pythonhosted.org/packages/c9/f3/8fa44dd71e5f686ab58361f8c97486e2b8ff4b7b3e8f0f3122f112fa3f2f/trytond_sale-7.2.1.tar.gz
+[2024-06-02 18:05:12] INFO root fetch - processPackages [trytond-sale]: Downloading https://files.pythonhosted.org/packages/66/24/558af03ffc1270b86ecdbdb8b454b2ade426df7624f4adab28baf3e581c2/trytond_sale-7.2.2-py3-none-any.whl
+[2024-06-02 18:05:12] INFO root fetch - processPackages [trytond-sale]: Downloading https://files.pythonhosted.org/packages/66/24/558af03ffc1270b86ecdbdb8b454b2ade426df7624f4adab28baf3e581c2/trytond_sale-7.2.2-py3-none-any.whl
+[2024-06-02 18:05:12] INFO root fetch - processPackages [trytond-sale]: Downloading https://files.pythonhosted.org/packages/66/24/558af03ffc1270b86ecdbdb8b454b2ade426df7624f4adab28baf3e581c2/trytond_sale-7.2.2-py3-none-any.whl
+[2024-06-02 18:05:12] INFO root fetch - processPackages [trytond-sale]: executing diffoscope
+[2024-06-02 18:05:12] INFO root fetch - processPackages [trytond-sale]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trytond_sale-7.2.1.tar.gz tmp/trytond_sale-7.2.2-py3-none-any.whl.zip --markdown 20240602/t/trytond-sale/7.2.1-7.2.2/README.md --exclude *.pyd
+[2024-06-02 18:05:12] INFO root fetch - processPackages [trytond-sale]: executing diffoscope
+[2024-06-02 18:05:12] INFO root fetch - processPackages [trytond-sale]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trytond_sale-7.2.1.tar.gz tmp/trytond_sale-7.2.2-py3-none-any.whl.zip --markdown 20240602/t/trytond-sale/7.2.1-7.2.2/README.md --exclude *.pyd
+[2024-06-02 18:05:13] INFO root fetch - processPackages [trytond-sale]: executing diffoscope
+[2024-06-02 18:05:13] INFO root fetch - processPackages [trytond-sale]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trytond_sale-7.2.1.tar.gz tmp/trytond_sale-7.2.2-py3-none-any.whl.zip --markdown 20240602/t/trytond-sale/7.2.1-7.2.2/README.md --exclude *.pyd
+[2024-06-02 18:05:13] INFO root fetch - processPackages [trytond-sale]: Remove: archive file [/home/abi/fetcher/tmp/trytond_sale-7.2.1.tar.gz]
+[2024-06-02 18:05:13] INFO root fetch - processPackages [trytond-sale]: Remove: archive file [/home/abi/fetcher/tmp/trytond_sale-7.2.2-py3-none-any.whl.zip]
+[2024-06-02 18:05:13] INFO root fetch - main [MainThread]: End processing [trytond-sale]: success
+[2024-06-02 18:05:13] INFO root fetch - main [MainThread]: End processing [trytond-sale]: success
+[2024-06-02 18:05:13] INFO root fetch - main [MainThread]: End processing [trytond-sale]: success
+[2024-06-02 18:05:13] INFO root fetch - main [MainThread]: Store serial: [23490529]
