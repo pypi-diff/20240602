@@ -10214,3 +10214,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-02 15:26:34] INFO root fetch - processPackages [pyiwe]: Remove: archive file [/home/abi/fetcher/tmp/pyiwe-0.0.8.post1-py3-none-any.whl.zip]
 [2024-06-02 15:26:34] INFO root fetch - main [MainThread]: End processing [pyiwe]: success
 [2024-06-02 15:26:34] INFO root fetch - main [MainThread]: Store serial: [23489230]
+[2024-06-02 15:28:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23489230]
+[2024-06-02 15:28:44] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-02 15:28:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: GraphSpy
+[2024-06-02 15:28:44] INFO root fetch - processPackages [GraphSpy]: New version: [1.2.1] Old Version: [1.2.0]
+[2024-06-02 15:28:44] INFO root fetch - processPackages [GraphSpy]: Downloading https://files.pythonhosted.org/packages/63/1c/b5b68822fdb681b232a6ca656016249fe3bdb5c177564e9bb9b90bcbc5c8/GraphSpy-1.2.0.tar.gz
+[2024-06-02 15:28:45] INFO root fetch - processPackages [GraphSpy]: Downloading https://files.pythonhosted.org/packages/8b/fd/a2012e9dd702dee7779dfd0f372ecace6ff9e7e720095f048f687d2f1ee1/GraphSpy-1.2.1.tar.gz
+[2024-06-02 15:28:45] INFO root fetch - processPackages [GraphSpy]: executing diffoscope
+[2024-06-02 15:28:45] INFO root fetch - processPackages [GraphSpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/GraphSpy-1.2.0.tar.gz tmp/GraphSpy-1.2.1.tar.gz --markdown 20240602/G/GraphSpy/1.2.0-1.2.1/README.md --exclude *.pyd
+[2024-06-02 15:28:46] INFO root fetch - processPackages [GraphSpy]: Remove: archive file [/home/abi/fetcher/tmp/GraphSpy-1.2.0.tar.gz]
+[2024-06-02 15:28:46] INFO root fetch - processPackages [GraphSpy]: Remove: archive file [/home/abi/fetcher/tmp/GraphSpy-1.2.1.tar.gz]
+[2024-06-02 15:28:46] INFO root fetch - main [MainThread]: End processing [GraphSpy]: success
+[2024-06-02 15:28:46] INFO root fetch - main [MainThread]: Store serial: [23489232]
