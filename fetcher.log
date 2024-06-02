@@ -11707,3 +11707,91 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 17:07:02] INFO root fetch - processPackages [ipex-llm]: Remove: archive file [/home/abi/fetcher/tmp/ipex_llm-2.1.0b20240601-py3-none-win_amd64.whl.zip]
 [2024-06-02 17:07:02] INFO root fetch - main [MainThread]: End processing [ipex-llm]: success
 [2024-06-02 17:07:02] INFO root fetch - main [MainThread]: Store serial: [23489888]
+[2024-06-02 17:09:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23489888]
+[2024-06-02 17:09:11] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2024-06-02 17:09:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kcli
+[2024-06-02 17:09:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aliad
+[2024-06-02 17:09:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyproject-patcher
+[2024-06-02 17:09:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pydrawise
+[2024-06-02 17:09:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: MzhFunc
+[2024-06-02 17:09:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: rl-test-task-1
+[2024-06-02 17:09:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: rl-test-task-2
+[2024-06-02 17:09:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: volkanic
+[2024-06-02 17:09:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: rl-test-task-3
+[2024-06-02 17:09:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: rl-tasks
+[2024-06-02 17:09:12] INFO root fetch - processPackages [rl-test-task-2]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-06-02 17:09:12] WARNING root fetch - processPackages [pyproject-patcher]: Skipping, unable to determine old version
+[2024-06-02 17:09:12] INFO root fetch - processPackages [pyproject-patcher]: Start processing: kcli
+[2024-06-02 17:09:12] INFO root fetch - main [MainThread]: End processing [pyproject-patcher] error
+[2024-06-02 17:09:12] INFO root fetch - processPackages [rl-tasks]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-06-02 17:09:12] INFO root fetch - processPackages [MzhFunc]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-06-02 17:09:12] INFO root fetch - processPackages [rl-test-task-3]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-06-02 17:09:12] WARNING root fetch - processPackages [rl-test-task-1]: Skipping, unable to determine old version
+[2024-06-02 17:09:12] INFO root fetch - main [MainThread]: End processing [rl-test-task-1] error
+[2024-06-02 17:09:12] INFO root fetch - processPackages [volkanic]: New version: [0.5.2] Old Version: [0.5.1]
+[2024-06-02 17:09:12] INFO root fetch - processPackages [kcli]: New version: [99.0.202406020946] Old Version: [99.0.202406020942]
+[2024-06-02 17:09:12] INFO root fetch - processPackages [aliad]: New version: [0.1.0] Old Version: [0.0.3]
+[2024-06-02 17:09:12] INFO root fetch - processPackages [kcli]: New version: [99.0.202406020946] Old Version: [99.0.202406020942]
+[2024-06-02 17:09:12] INFO root fetch - processPackages [pydrawise]: New version: [2024.6.2] Old Version: [2024.6.1]
+[2024-06-02 17:09:12] INFO root fetch - processPackages [volkanic]: Downloading https://files.pythonhosted.org/packages/13/e9/babef4ec05f0913a88cebb9e90b82f21e8e3e7def22d485432b6d8ae0e67/volkanic-0.5.1.tar.gz
+[2024-06-02 17:09:12] INFO root fetch - processPackages [kcli]: Downloading https://files.pythonhosted.org/packages/5e/74/01e64e1e3799a8223f612ed1b7111122063d5ee96eac558c8b14a67bec69/kcli-99.0.202406020942.tar.gz
+[2024-06-02 17:09:12] INFO root fetch - processPackages [MzhFunc]: Downloading https://files.pythonhosted.org/packages/b9/25/0967e39d18ae6a08a0d584682643d0b24f4b4e79a51b59d4d81ce5a32259/MzhFunc-0.0.1.tar.gz
+[2024-06-02 17:09:12] INFO root fetch - processPackages [rl-tasks]: Downloading https://files.pythonhosted.org/packages/ee/cb/74e1f75a16abd20b088bc2c3a5d360deb6b3386a3717650f91af600044af/rl_tasks-0.1.0.tar.gz
+[2024-06-02 17:09:12] INFO root fetch - processPackages [kcli]: Downloading https://files.pythonhosted.org/packages/5e/74/01e64e1e3799a8223f612ed1b7111122063d5ee96eac558c8b14a67bec69/kcli-99.0.202406020942.tar.gz
+[2024-06-02 17:09:12] INFO root fetch - processPackages [rl-test-task-2]: Downloading https://files.pythonhosted.org/packages/d0/40/4e16a5298c2454736bb901600e48b6cc2cfdb3907152d7f0a3e31d997991/rl_test_task_2-0.1.0-py3-none-any.whl
+[2024-06-02 17:09:12] INFO root fetch - processPackages [rl-test-task-3]: Downloading https://files.pythonhosted.org/packages/2e/b3/92b86c1320a4b7971586127105f1bc3f25f1e98a116e8853fca4927fd7cf/rl_test_task_3-0.1.0.tar.gz
+[2024-06-02 17:09:12] INFO root fetch - processPackages [aliad]: Downloading https://files.pythonhosted.org/packages/a6/34/fb941cfa3195992b22a64b8e5b1b3ffef4b1bd840230ccd6afcaa6fc5051/aliad-0.0.3.tar.gz
+[2024-06-02 17:09:12] INFO root fetch - processPackages [pydrawise]: Downloading https://files.pythonhosted.org/packages/3a/65/dfef62fcd13a32339e64a717dbe424a2e4f1246f617bcba8216ae1108a7b/pydrawise-2024.6.1.tar.gz
+[2024-06-02 17:09:12] INFO root fetch - processPackages [volkanic]: Downloading https://files.pythonhosted.org/packages/9c/dd/afc342b04ede5c108f1a065e4d6bf2667b072f0ef3d15291f9b6a4ab2aef/volkanic-0.5.2.tar.gz
+[2024-06-02 17:09:12] INFO root fetch - processPackages [volkanic]: executing diffoscope
+[2024-06-02 17:09:12] INFO root fetch - processPackages [volkanic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/volkanic-0.5.1.tar.gz tmp/volkanic-0.5.2.tar.gz --markdown 20240602/v/volkanic/0.5.1-0.5.2/README.md --exclude *.pyd
+[2024-06-02 17:09:12] INFO root fetch - processPackages [rl-tasks]: Downloading https://files.pythonhosted.org/packages/c6/1b/003116301384075409f50a6fc1a83510c3b9763bb7b9f13264ca5c0a590d/rl_tasks-0.1.1.tar.gz
+[2024-06-02 17:09:12] INFO root fetch - processPackages [rl-test-task-2]: Downloading https://files.pythonhosted.org/packages/90/94/fdd4b8220ea1e6605caff3e731a74dff5e637b3f2d0c599919493dfa954d/rl_test_task_2-0.1.1.tar.gz
+[2024-06-02 17:09:12] INFO root fetch - processPackages [aliad]: Downloading https://files.pythonhosted.org/packages/9b/3b/3430a7ff57ebb097935c631d3274addb20624f5c7dc827adc3b9b2505107/aliad-0.1.0.tar.gz
+[2024-06-02 17:09:12] INFO root fetch - processPackages [rl-tasks]: executing diffoscope
+[2024-06-02 17:09:12] INFO root fetch - processPackages [rl-tasks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rl_tasks-0.1.0.tar.gz tmp/rl_tasks-0.1.1.tar.gz --markdown 20240602/r/rl-tasks/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-06-02 17:09:12] INFO root fetch - processPackages [rl-test-task-3]: Downloading https://files.pythonhosted.org/packages/b5/4b/ea8e5a025b60bb233c84aa4de6a8b6e92a11ad7a6cf09533d37dfeb6cfc5/rl_test_task_3-0.1.1.tar.gz
+[2024-06-02 17:09:12] INFO root fetch - processPackages [kcli]: Downloading https://files.pythonhosted.org/packages/31/6d/4926fd37aa56f8526093ec43ce77b6023873c01d85d1dc9493b2f9d46650/kcli-99.0.202406020946.tar.gz
+[2024-06-02 17:09:12] INFO root fetch - processPackages [kcli]: Downloading https://files.pythonhosted.org/packages/31/6d/4926fd37aa56f8526093ec43ce77b6023873c01d85d1dc9493b2f9d46650/kcli-99.0.202406020946.tar.gz
+[2024-06-02 17:09:12] INFO root fetch - processPackages [pydrawise]: Downloading https://files.pythonhosted.org/packages/22/cc/57808992036acdc04f9e29623e22c5f2090ab7f978d86ad1fb994125f34f/pydrawise-2024.6.2.tar.gz
+[2024-06-02 17:09:12] INFO root fetch - processPackages [rl-test-task-2]: executing diffoscope
+[2024-06-02 17:09:12] INFO root fetch - processPackages [rl-test-task-2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rl_test_task_2-0.1.0-py3-none-any.whl.zip tmp/rl_test_task_2-0.1.1.tar.gz --markdown 20240602/r/rl-test-task-2/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-06-02 17:09:13] INFO root fetch - processPackages [aliad]: executing diffoscope
+[2024-06-02 17:09:13] INFO root fetch - processPackages [aliad]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aliad-0.0.3.tar.gz tmp/aliad-0.1.0.tar.gz --markdown 20240602/a/aliad/0.0.3-0.1.0/README.md --exclude *.pyd
+[2024-06-02 17:09:13] INFO root fetch - processPackages [MzhFunc]: Downloading https://files.pythonhosted.org/packages/b9/5b/ee7065f9f74cbcd4dde63acf7ec6f5df21ef054ff4a08e96660c78826f02/MzhFunc-0.0.2.tar.gz
+[2024-06-02 17:09:13] INFO root fetch - processPackages [rl-test-task-3]: executing diffoscope
+[2024-06-02 17:09:13] INFO root fetch - processPackages [rl-test-task-3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rl_test_task_3-0.1.0.tar.gz tmp/rl_test_task_3-0.1.1.tar.gz --markdown 20240602/r/rl-test-task-3/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-06-02 17:09:13] INFO root fetch - processPackages [pydrawise]: executing diffoscope
+[2024-06-02 17:09:13] INFO root fetch - processPackages [pydrawise]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydrawise-2024.6.1.tar.gz tmp/pydrawise-2024.6.2.tar.gz --markdown 20240602/p/pydrawise/2024.6.1-2024.6.2/README.md --exclude *.pyd
+[2024-06-02 17:09:13] INFO root fetch - processPackages [MzhFunc]: executing diffoscope
+[2024-06-02 17:09:13] INFO root fetch - processPackages [MzhFunc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MzhFunc-0.0.1.tar.gz tmp/MzhFunc-0.0.2.tar.gz --markdown 20240602/M/MzhFunc/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-06-02 17:09:13] INFO root fetch - processPackages [kcli]: executing diffoscope
+[2024-06-02 17:09:13] INFO root fetch - processPackages [kcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kcli-99.0.202406020942.tar.gz tmp/kcli-99.0.202406020946.tar.gz --markdown 20240602/k/kcli/99.0.202406020942-99.0.202406020946/README.md --exclude *.pyd
+[2024-06-02 17:09:13] INFO root fetch - processPackages [kcli]: executing diffoscope
+[2024-06-02 17:09:13] INFO root fetch - processPackages [kcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kcli-99.0.202406020942.tar.gz tmp/kcli-99.0.202406020946.tar.gz --markdown 20240602/k/kcli/99.0.202406020942-99.0.202406020946/README.md --exclude *.pyd
+[2024-06-02 17:09:13] INFO root fetch - processPackages [volkanic]: Remove: archive file [/home/abi/fetcher/tmp/volkanic-0.5.1.tar.gz]
+[2024-06-02 17:09:13] INFO root fetch - processPackages [volkanic]: Remove: archive file [/home/abi/fetcher/tmp/volkanic-0.5.2.tar.gz]
+[2024-06-02 17:09:13] INFO root fetch - main [MainThread]: End processing [volkanic]: success
+[2024-06-02 17:09:13] INFO root fetch - processPackages [rl-tasks]: Remove: archive file [/home/abi/fetcher/tmp/rl_tasks-0.1.0.tar.gz]
+[2024-06-02 17:09:13] INFO root fetch - processPackages [rl-tasks]: Remove: archive file [/home/abi/fetcher/tmp/rl_tasks-0.1.1.tar.gz]
+[2024-06-02 17:09:13] INFO root fetch - main [MainThread]: End processing [rl-tasks]: success
+[2024-06-02 17:09:13] INFO root fetch - processPackages [rl-test-task-2]: Remove: archive file [/home/abi/fetcher/tmp/rl_test_task_2-0.1.0-py3-none-any.whl.zip]
+[2024-06-02 17:09:13] INFO root fetch - processPackages [rl-test-task-2]: Remove: archive file [/home/abi/fetcher/tmp/rl_test_task_2-0.1.1.tar.gz]
+[2024-06-02 17:09:13] INFO root fetch - main [MainThread]: End processing [rl-test-task-2]: success
+[2024-06-02 17:09:13] INFO root fetch - processPackages [rl-test-task-3]: Remove: archive file [/home/abi/fetcher/tmp/rl_test_task_3-0.1.0.tar.gz]
+[2024-06-02 17:09:13] INFO root fetch - processPackages [rl-test-task-3]: Remove: archive file [/home/abi/fetcher/tmp/rl_test_task_3-0.1.1.tar.gz]
+[2024-06-02 17:09:13] INFO root fetch - main [MainThread]: End processing [rl-test-task-3]: success
+[2024-06-02 17:09:13] INFO root fetch - processPackages [MzhFunc]: Remove: archive file [/home/abi/fetcher/tmp/MzhFunc-0.0.1.tar.gz]
+[2024-06-02 17:09:13] INFO root fetch - processPackages [MzhFunc]: Remove: archive file [/home/abi/fetcher/tmp/MzhFunc-0.0.2.tar.gz]
+[2024-06-02 17:09:13] INFO root fetch - main [MainThread]: End processing [MzhFunc]: success
+[2024-06-02 17:09:13] INFO root fetch - processPackages [pydrawise]: Remove: archive file [/home/abi/fetcher/tmp/pydrawise-2024.6.1.tar.gz]
+[2024-06-02 17:09:13] INFO root fetch - processPackages [pydrawise]: Remove: archive file [/home/abi/fetcher/tmp/pydrawise-2024.6.2.tar.gz]
+[2024-06-02 17:09:13] INFO root fetch - main [MainThread]: End processing [pydrawise]: success
+[2024-06-02 17:09:14] INFO root fetch - processPackages [aliad]: Remove: archive file [/home/abi/fetcher/tmp/aliad-0.0.3.tar.gz]
+[2024-06-02 17:09:14] INFO root fetch - processPackages [aliad]: Remove: archive file [/home/abi/fetcher/tmp/aliad-0.1.0.tar.gz]
+[2024-06-02 17:09:14] INFO root fetch - main [MainThread]: End processing [aliad]: success
+[2024-06-02 17:09:15] INFO root fetch - processPackages [kcli]: Remove: archive file [/home/abi/fetcher/tmp/kcli-99.0.202406020942.tar.gz]
+[2024-06-02 17:09:15] INFO root fetch - processPackages [kcli]: Remove: archive file [/home/abi/fetcher/tmp/kcli-99.0.202406020946.tar.gz]
+[2024-06-02 17:09:15] INFO root fetch - main [MainThread]: End processing [kcli]: success
+[2024-06-02 17:09:15] INFO root fetch - main [MainThread]: End processing [kcli]: success
+[2024-06-02 17:09:15] INFO root fetch - main [MainThread]: Store serial: [23489919]
