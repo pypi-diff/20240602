@@ -8864,3 +8864,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-02 13:53:24] INFO root fetch - processPackages [stockdatamanager]: Remove: archive file [/home/abi/fetcher/tmp/stockdatamanager-1.1.tar.gz]
 [2024-06-02 13:53:24] INFO root fetch - main [MainThread]: End processing [stockdatamanager]: success
 [2024-06-02 13:53:24] INFO root fetch - main [MainThread]: Store serial: [23488532]
+[2024-06-02 13:55:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23488532]
+[2024-06-02 13:55:33] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-02 13:55:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: appthreat-vulnerability-db
+[2024-06-02 13:55:34] INFO root fetch - processPackages [appthreat-vulnerability-db]: New version: [6.0.4] Old Version: [6.0.3]
+[2024-06-02 13:55:34] INFO root fetch - processPackages [appthreat-vulnerability-db]: Downloading https://files.pythonhosted.org/packages/2b/b3/9ceccaa536bb3e76d585b15bac91aa3ca53495252e46fd4d7b953fc2caff/appthreat_vulnerability_db-6.0.3.tar.gz
+[2024-06-02 13:55:34] INFO root fetch - processPackages [appthreat-vulnerability-db]: Downloading https://files.pythonhosted.org/packages/a4/7a/1b82c34802eeeff3b46d1265f3e6246d577d3eb054e6c38b5e095126b4e5/appthreat_vulnerability_db-6.0.4.tar.gz
+[2024-06-02 13:55:34] INFO root fetch - processPackages [appthreat-vulnerability-db]: executing diffoscope
+[2024-06-02 13:55:34] INFO root fetch - processPackages [appthreat-vulnerability-db]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/appthreat_vulnerability_db-6.0.3.tar.gz tmp/appthreat_vulnerability_db-6.0.4.tar.gz --markdown 20240602/a/appthreat-vulnerability-db/6.0.3-6.0.4/README.md --exclude *.pyd
+[2024-06-02 13:55:35] INFO root fetch - processPackages [appthreat-vulnerability-db]: Remove: archive file [/home/abi/fetcher/tmp/appthreat_vulnerability_db-6.0.3.tar.gz]
+[2024-06-02 13:55:35] INFO root fetch - processPackages [appthreat-vulnerability-db]: Remove: archive file [/home/abi/fetcher/tmp/appthreat_vulnerability_db-6.0.4.tar.gz]
+[2024-06-02 13:55:35] INFO root fetch - main [MainThread]: End processing [appthreat-vulnerability-db]: success
+[2024-06-02 13:55:35] INFO root fetch - main [MainThread]: Store serial: [23488535]
