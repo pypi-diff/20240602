@@ -9631,3 +9631,30 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-02 14:38:02] INFO root fetch - processPackages [uk_bin_collection]: Remove: archive file [/home/abi/fetcher/tmp/uk_bin_collection-0.9.0.tar.gz]
 [2024-06-02 14:38:02] INFO root fetch - main [MainThread]: End processing [uk_bin_collection]: success
 [2024-06-02 14:38:02] INFO root fetch - main [MainThread]: Store serial: [23488919]
+[2024-06-02 14:40:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23488919]
+[2024-06-02 14:40:12] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-02 14:40:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: distlibstat
+[2024-06-02 14:40:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tensorcircuit-nightly
+[2024-06-02 14:40:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bd-sig-filter
+[2024-06-02 14:40:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: smol_k8s_lab
+[2024-06-02 14:40:12] WARNING root fetch - processPackages [distlibstat]: Skipping, unable to determine old version
+[2024-06-02 14:40:12] INFO root fetch - main [MainThread]: End processing [distlibstat] error
+[2024-06-02 14:40:12] INFO root fetch - processPackages [smol_k8s_lab]: New version: [5.3.2] Old Version: [5.3.1]
+[2024-06-02 14:40:12] INFO root fetch - processPackages [tensorcircuit-nightly]: New version: [0.9.1.dev20230608] Old Version: [0.9.1.dev20230607]
+[2024-06-02 14:40:12] WARNING root fetch - processPackages [bd-sig-filter]: Skipping, unable to determine old version
+[2024-06-02 14:40:12] INFO root fetch - main [MainThread]: End processing [bd-sig-filter] error
+[2024-06-02 14:40:12] INFO root fetch - processPackages [smol_k8s_lab]: Downloading https://files.pythonhosted.org/packages/01/11/920a1b8a4e7958611eeee03c4eefd4b37b940295ba402b3c1bb187032ad5/smol_k8s_lab-5.3.1.tar.gz
+[2024-06-02 14:40:12] INFO root fetch - processPackages [tensorcircuit-nightly]: Downloading https://files.pythonhosted.org/packages/79/2a/50740b6f8b7e1d0c4223c72c789f41baca7a4e77f32e8f52bd91e7ebff20/tensorcircuit-nightly-0.9.1.dev20230607.tar.gz
+[2024-06-02 14:40:12] INFO root fetch - processPackages [tensorcircuit-nightly]: Downloading https://files.pythonhosted.org/packages/2f/cc/671276320457670987d1eb503de15ee19924e63c7ec9c99b14c240d5aa18/tensorcircuit-nightly-0.9.1.dev20230608.tar.gz
+[2024-06-02 14:40:12] INFO root fetch - processPackages [smol_k8s_lab]: Downloading https://files.pythonhosted.org/packages/06/e2/eece1207125bc94f02e8aef50daef46e5ea601f7dee6849e40bb5a500a20/smol_k8s_lab-5.3.2.tar.gz
+[2024-06-02 14:40:13] INFO root fetch - processPackages [tensorcircuit-nightly]: executing diffoscope
+[2024-06-02 14:40:13] INFO root fetch - processPackages [tensorcircuit-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tensorcircuit-nightly-0.9.1.dev20230607.tar.gz tmp/tensorcircuit-nightly-0.9.1.dev20230608.tar.gz --markdown 20240602/t/tensorcircuit-nightly/0.9.1.dev20230607-0.9.1.dev20230608/README.md --exclude *.pyd
+[2024-06-02 14:40:13] INFO root fetch - processPackages [smol_k8s_lab]: executing diffoscope
+[2024-06-02 14:40:13] INFO root fetch - processPackages [smol_k8s_lab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smol_k8s_lab-5.3.1.tar.gz tmp/smol_k8s_lab-5.3.2.tar.gz --markdown 20240602/s/smol_k8s_lab/5.3.1-5.3.2/README.md --exclude *.pyd
+[2024-06-02 14:40:13] INFO root fetch - processPackages [tensorcircuit-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tensorcircuit-nightly-0.9.1.dev20230607.tar.gz]
+[2024-06-02 14:40:13] INFO root fetch - processPackages [tensorcircuit-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tensorcircuit-nightly-0.9.1.dev20230608.tar.gz]
+[2024-06-02 14:40:13] INFO root fetch - main [MainThread]: End processing [tensorcircuit-nightly]: success
+[2024-06-02 14:40:14] INFO root fetch - processPackages [smol_k8s_lab]: Remove: archive file [/home/abi/fetcher/tmp/smol_k8s_lab-5.3.1.tar.gz]
+[2024-06-02 14:40:14] INFO root fetch - processPackages [smol_k8s_lab]: Remove: archive file [/home/abi/fetcher/tmp/smol_k8s_lab-5.3.2.tar.gz]
+[2024-06-02 14:40:14] INFO root fetch - main [MainThread]: End processing [smol_k8s_lab]: success
+[2024-06-02 14:40:14] INFO root fetch - main [MainThread]: Store serial: [23488932]
