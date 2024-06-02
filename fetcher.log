@@ -14488,3 +14488,42 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 19:06:32] INFO root fetch - processPackages [trytond-account-invoice]: Remove: archive file [/home/abi/fetcher/tmp/trytond_account_invoice-7.2.2.tar.gz]
 [2024-06-02 19:06:32] INFO root fetch - main [MainThread]: End processing [trytond-account-invoice]: success
 [2024-06-02 19:06:32] INFO root fetch - main [MainThread]: Store serial: [23491198]
+[2024-06-02 19:08:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23491198]
+[2024-06-02 19:08:41] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-06-02 19:08:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: trytond-account-invoice
+[2024-06-02 19:08:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: eba-xbridge
+[2024-06-02 19:08:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: evillimiter
+[2024-06-02 19:08:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: trytond-account-es
+[2024-06-02 19:08:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: MzhFunc
+[2024-06-02 19:08:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: grambot
+[2024-06-02 19:08:41] WARNING root fetch - processPackages [eba-xbridge]: Skipping, unable to determine old version
+[2024-06-02 19:08:41] INFO root fetch - main [MainThread]: End processing [eba-xbridge] error
+[2024-06-02 19:08:41] WARNING root fetch - processPackages [grambot]: Skipping, unable to determine old version
+[2024-06-02 19:08:41] INFO root fetch - main [MainThread]: End processing [grambot] error
+[2024-06-02 19:08:41] INFO root fetch - processPackages [MzhFunc]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-06-02 19:08:41] WARNING root fetch - processPackages [evillimiter]: Skipping, unable to determine old version
+[2024-06-02 19:08:41] INFO root fetch - main [MainThread]: End processing [evillimiter] error
+[2024-06-02 19:08:41] INFO root fetch - processPackages [trytond-account-invoice]: New version: [7.2.2] Old Version: [7.2.1]
+[2024-06-02 19:08:41] INFO root fetch - processPackages [MzhFunc]: Downloading https://files.pythonhosted.org/packages/c9/6e/c2ad8e648122eb7854ee00b45f958f106495ee7538ee1a2f50fbdbcdb525/mzhfunc-0.0.8.tar.gz
+[2024-06-02 19:08:41] INFO root fetch - processPackages [trytond-account-es]: New version: [7.2.1] Old Version: [7.2.0]
+[2024-06-02 19:08:41] INFO root fetch - processPackages [trytond-account-invoice]: Downloading https://files.pythonhosted.org/packages/aa/f2/0aee19dd79d3be8c7fdd6ba221a9a2109f9420ad254a53d29e1cd8da0de8/trytond_account_invoice-7.2.1.tar.gz
+[2024-06-02 19:08:41] INFO root fetch - processPackages [trytond-account-es]: Downloading https://files.pythonhosted.org/packages/71/ce/d7b9acb3213d086dcaded1843e62d60eab2f00689b3387f899ff1f6522a5/trytond_account_es-7.2.0.tar.gz
+[2024-06-02 19:08:41] INFO root fetch - processPackages [trytond-account-invoice]: Downloading https://files.pythonhosted.org/packages/3a/98/9b06ecd3bf378d27e83dbee7685f8d7b0294eecd5f95115607b3966af76b/trytond_account_invoice-7.2.2.tar.gz
+[2024-06-02 19:08:41] INFO root fetch - processPackages [MzhFunc]: Downloading https://files.pythonhosted.org/packages/cc/37/fbe7bc417fac46137860a2c76a1a9d773bc557a0ac2cd43f53125d88facb/mzhfunc-0.0.9.tar.gz
+[2024-06-02 19:08:42] INFO root fetch - processPackages [trytond-account-invoice]: executing diffoscope
+[2024-06-02 19:08:42] INFO root fetch - processPackages [trytond-account-invoice]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trytond_account_invoice-7.2.1.tar.gz tmp/trytond_account_invoice-7.2.2.tar.gz --markdown 20240602/t/trytond-account-invoice/7.2.1-7.2.2/README.md --exclude *.pyd
+[2024-06-02 19:08:42] INFO root fetch - processPackages [MzhFunc]: executing diffoscope
+[2024-06-02 19:08:42] INFO root fetch - processPackages [MzhFunc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mzhfunc-0.0.8.tar.gz tmp/mzhfunc-0.0.9.tar.gz --markdown 20240602/M/MzhFunc/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-06-02 19:08:42] INFO root fetch - processPackages [trytond-account-es]: Downloading https://files.pythonhosted.org/packages/dd/dd/16769089a862ef81e916ab8165eb757205e8ae20c0183685c29c0d7d5d56/trytond_account_es-7.2.1.tar.gz
+[2024-06-02 19:08:42] INFO root fetch - processPackages [trytond-account-es]: executing diffoscope
+[2024-06-02 19:08:42] INFO root fetch - processPackages [trytond-account-es]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trytond_account_es-7.2.0.tar.gz tmp/trytond_account_es-7.2.1.tar.gz --markdown 20240602/t/trytond-account-es/7.2.0-7.2.1/README.md --exclude *.pyd
+[2024-06-02 19:08:42] INFO root fetch - processPackages [MzhFunc]: Remove: archive file [/home/abi/fetcher/tmp/mzhfunc-0.0.8.tar.gz]
+[2024-06-02 19:08:42] INFO root fetch - processPackages [MzhFunc]: Remove: archive file [/home/abi/fetcher/tmp/mzhfunc-0.0.9.tar.gz]
+[2024-06-02 19:08:42] INFO root fetch - main [MainThread]: End processing [MzhFunc]: success
+[2024-06-02 19:08:43] INFO root fetch - processPackages [trytond-account-invoice]: Remove: archive file [/home/abi/fetcher/tmp/trytond_account_invoice-7.2.1.tar.gz]
+[2024-06-02 19:08:43] INFO root fetch - processPackages [trytond-account-invoice]: Remove: archive file [/home/abi/fetcher/tmp/trytond_account_invoice-7.2.2.tar.gz]
+[2024-06-02 19:08:43] INFO root fetch - main [MainThread]: End processing [trytond-account-invoice]: success
+[2024-06-02 19:08:43] INFO root fetch - processPackages [trytond-account-es]: Remove: archive file [/home/abi/fetcher/tmp/trytond_account_es-7.2.0.tar.gz]
+[2024-06-02 19:08:43] INFO root fetch - processPackages [trytond-account-es]: Remove: archive file [/home/abi/fetcher/tmp/trytond_account_es-7.2.1.tar.gz]
+[2024-06-02 19:08:43] INFO root fetch - main [MainThread]: End processing [trytond-account-es]: success
+[2024-06-02 19:08:43] INFO root fetch - main [MainThread]: Store serial: [23491214]
