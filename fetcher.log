@@ -5088,3 +5088,42 @@
 [2024-06-02 08:45:37] WARNING root fetch - processPackages [thedoppler]: Skipping package: exceeds size limit 46033344>=10485760
 [2024-06-02 08:45:37] INFO root fetch - main [MainThread]: End processing [thedoppler] error
 [2024-06-02 08:45:37] INFO root fetch - main [MainThread]: Store serial: [23486792]
+[2024-06-02 08:47:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23486792]
+[2024-06-02 08:47:45] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-02 08:47:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: geochemistrypi
+[2024-06-02 08:47:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bitcoinwatcher
+[2024-06-02 08:47:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PyDNARepeatFinder
+[2024-06-02 08:47:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: flatpack
+[2024-06-02 08:47:45] INFO root fetch - processPackages [PyDNARepeatFinder]: New version: [0.2.4] Old Version: [0.2.3]
+[2024-06-02 08:47:45] INFO root fetch - processPackages [bitcoinwatcher]: New version: [2.1] Old Version: [1.2.0]
+[2024-06-02 08:47:45] INFO root fetch - processPackages [geochemistrypi]: New version: [0.6.0] Old Version: [0.5.0]
+[2024-06-02 08:47:45] INFO root fetch - processPackages [flatpack]: New version: [3.5.9] Old Version: [3.5.8]
+[2024-06-02 08:47:46] INFO root fetch - processPackages [PyDNARepeatFinder]: Downloading https://files.pythonhosted.org/packages/af/72/25e4bb0ce4cd6baa5e196e06fa64befbc1c20c98a5c0ca89830e75522e40/pydnarepeatfinder-0.2.3.tar.gz
+[2024-06-02 08:47:46] INFO root fetch - processPackages [bitcoinwatcher]: Downloading https://files.pythonhosted.org/packages/11/cf/fc1def6c897a30f9d7841ec9b0276d4865aea8d826f70f0dd5b028851d33/bitcoinwatcher-1.2.0.tar.gz
+[2024-06-02 08:47:46] INFO root fetch - processPackages [geochemistrypi]: Downloading https://files.pythonhosted.org/packages/cb/31/a91a6f498930e2ab45bc4d502bac387fbb801ae7fff4e3e13dcdb4fe6866/geochemistrypi-0.5.0.tar.gz
+[2024-06-02 08:47:46] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/0d/a9/8502480e2c2eb0cf1d5c96124b696b315ecaac8fbeabcea4683232791237/flatpack-3.5.8.tar.gz
+[2024-06-02 08:47:46] INFO root fetch - processPackages [bitcoinwatcher]: Downloading https://files.pythonhosted.org/packages/ea/7b/1f04fc262b0d7ff2a934b52c7ed7b2e647d587bc036a25338c0a0f2c35fe/bitcoinwatcher-2.1.tar.gz
+[2024-06-02 08:47:46] INFO root fetch - processPackages [PyDNARepeatFinder]: Downloading https://files.pythonhosted.org/packages/01/aa/d05fffdc20b408655089a53c3e3c034c4b880e187e243a76977bd9371a15/pydnarepeatfinder-0.2.4.tar.gz
+[2024-06-02 08:47:46] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/d8/91/c9da419dc0b7492b44a9d95f36b27829ce600621fa73894b210c81dadbcd/flatpack-3.5.9.tar.gz
+[2024-06-02 08:47:46] INFO root fetch - processPackages [PyDNARepeatFinder]: executing diffoscope
+[2024-06-02 08:47:46] INFO root fetch - processPackages [PyDNARepeatFinder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydnarepeatfinder-0.2.3.tar.gz tmp/pydnarepeatfinder-0.2.4.tar.gz --markdown 20240602/P/PyDNARepeatFinder/0.2.3-0.2.4/README.md --exclude *.pyd
+[2024-06-02 08:47:46] INFO root fetch - processPackages [bitcoinwatcher]: executing diffoscope
+[2024-06-02 08:47:46] INFO root fetch - processPackages [bitcoinwatcher]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bitcoinwatcher-1.2.0.tar.gz tmp/bitcoinwatcher-2.1.tar.gz --markdown 20240602/b/bitcoinwatcher/1.2.0-2.1/README.md --exclude *.pyd
+[2024-06-02 08:47:46] INFO root fetch - processPackages [geochemistrypi]: Downloading https://files.pythonhosted.org/packages/d7/69/0cead91ee14bbf3fab642d0dd0102c23840f022485da6b75656ba603f688/geochemistrypi-0.6.0.tar.gz
+[2024-06-02 08:47:46] INFO root fetch - processPackages [flatpack]: executing diffoscope
+[2024-06-02 08:47:46] INFO root fetch - processPackages [flatpack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flatpack-3.5.8.tar.gz tmp/flatpack-3.5.9.tar.gz --markdown 20240602/f/flatpack/3.5.8-3.5.9/README.md --exclude *.pyd
+[2024-06-02 08:47:46] INFO root fetch - processPackages [geochemistrypi]: executing diffoscope
+[2024-06-02 08:47:46] INFO root fetch - processPackages [geochemistrypi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/geochemistrypi-0.5.0.tar.gz tmp/geochemistrypi-0.6.0.tar.gz --markdown 20240602/g/geochemistrypi/0.5.0-0.6.0/README.md --exclude *.pyd
+[2024-06-02 08:47:47] INFO root fetch - processPackages [bitcoinwatcher]: Remove: archive file [/home/abi/fetcher/tmp/bitcoinwatcher-1.2.0.tar.gz]
+[2024-06-02 08:47:47] INFO root fetch - processPackages [bitcoinwatcher]: Remove: archive file [/home/abi/fetcher/tmp/bitcoinwatcher-2.1.tar.gz]
+[2024-06-02 08:47:47] INFO root fetch - main [MainThread]: End processing [bitcoinwatcher]: success
+[2024-06-02 08:47:47] INFO root fetch - processPackages [PyDNARepeatFinder]: Remove: archive file [/home/abi/fetcher/tmp/pydnarepeatfinder-0.2.3.tar.gz]
+[2024-06-02 08:47:47] INFO root fetch - processPackages [PyDNARepeatFinder]: Remove: archive file [/home/abi/fetcher/tmp/pydnarepeatfinder-0.2.4.tar.gz]
+[2024-06-02 08:47:47] INFO root fetch - main [MainThread]: End processing [PyDNARepeatFinder]: success
+[2024-06-02 08:47:47] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.5.8.tar.gz]
+[2024-06-02 08:47:47] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.5.9.tar.gz]
+[2024-06-02 08:47:47] INFO root fetch - main [MainThread]: End processing [flatpack]: success
+[2024-06-02 08:47:48] INFO root fetch - processPackages [geochemistrypi]: Remove: archive file [/home/abi/fetcher/tmp/geochemistrypi-0.5.0.tar.gz]
+[2024-06-02 08:47:48] INFO root fetch - processPackages [geochemistrypi]: Remove: archive file [/home/abi/fetcher/tmp/geochemistrypi-0.6.0.tar.gz]
+[2024-06-02 08:47:48] INFO root fetch - main [MainThread]: End processing [geochemistrypi]: success
+[2024-06-02 08:47:48] INFO root fetch - main [MainThread]: Store serial: [23486803]
