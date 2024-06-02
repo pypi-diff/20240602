@@ -5337,3 +5337,29 @@
 [2024-06-02 09:14:34] INFO root fetch - processPackages [LinkExpander]: Remove: archive file [/home/abi/fetcher/tmp/linkexpander-1.1.0.tar.gz]
 [2024-06-02 09:14:34] INFO root fetch - main [MainThread]: End processing [LinkExpander]: success
 [2024-06-02 09:14:34] INFO root fetch - main [MainThread]: Store serial: [23486927]
+[2024-06-02 09:16:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23486927]
+[2024-06-02 09:16:44] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-02 09:16:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fretbursts
+[2024-06-02 09:16:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: UnionCalLib
+[2024-06-02 09:16:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: arknights-toolkit
+[2024-06-02 09:16:44] INFO root fetch - processPackages [UnionCalLib]: New version: [0.122] Old Version: [0.121]
+[2024-06-02 09:16:44] INFO root fetch - processPackages [arknights-toolkit]: New version: [0.7.4] Old Version: [0.7.3]
+[2024-06-02 09:16:44] INFO root fetch - processPackages [fretbursts]: New version: [0.8.2] Old Version: [0.8.1]
+[2024-06-02 09:16:44] INFO root fetch - processPackages [UnionCalLib]: Downloading https://files.pythonhosted.org/packages/96/fa/d51f554a656d4710ce370db294713c886cb01fd284899c5643b9f6e992b8/unioncallib-0.121.tar.gz
+[2024-06-02 09:16:44] INFO root fetch - processPackages [arknights-toolkit]: Downloading https://files.pythonhosted.org/packages/69/9e/487aaf3a50083a41759b54e452fe1bd5586ed803e0899dd2775fe9028027/arknights_toolkit-0.7.3.tar.gz
+[2024-06-02 09:16:44] WARNING root fetch - processPackages [arknights-toolkit]: Skipping package: exceeds size limit 17448172>=10485760
+[2024-06-02 09:16:44] INFO root fetch - main [MainThread]: End processing [arknights-toolkit] error
+[2024-06-02 09:16:44] INFO root fetch - processPackages [fretbursts]: Downloading https://files.pythonhosted.org/packages/bc/47/98caf3d6198c5bdc494c4668a6ae6619355beeb51ee321845b26e80ade65/fretbursts-0.8.1.tar.gz
+[2024-06-02 09:16:44] INFO root fetch - processPackages [UnionCalLib]: Downloading https://files.pythonhosted.org/packages/08/cf/0b7bd4009b76c238be3efcb988b8cc23c459fe1b99a2916ade81f2612f4a/unioncallib-0.122.tar.gz
+[2024-06-02 09:16:44] INFO root fetch - processPackages [UnionCalLib]: executing diffoscope
+[2024-06-02 09:16:44] INFO root fetch - processPackages [UnionCalLib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unioncallib-0.121.tar.gz tmp/unioncallib-0.122.tar.gz --markdown 20240602/U/UnionCalLib/0.121-0.122/README.md --exclude *.pyd
+[2024-06-02 09:16:45] INFO root fetch - processPackages [fretbursts]: Downloading https://files.pythonhosted.org/packages/58/21/0afa77acb1e9be3155bc2f8024d8273e20c8a7a609893c6f4befe1512083/fretbursts-0.8.2-cp37-cp37m-macosx_10_9_x86_64.whl
+[2024-06-02 09:16:45] INFO root fetch - processPackages [UnionCalLib]: Remove: archive file [/home/abi/fetcher/tmp/unioncallib-0.121.tar.gz]
+[2024-06-02 09:16:45] INFO root fetch - processPackages [UnionCalLib]: Remove: archive file [/home/abi/fetcher/tmp/unioncallib-0.122.tar.gz]
+[2024-06-02 09:16:45] INFO root fetch - main [MainThread]: End processing [UnionCalLib]: success
+[2024-06-02 09:16:45] INFO root fetch - processPackages [fretbursts]: executing diffoscope
+[2024-06-02 09:16:45] INFO root fetch - processPackages [fretbursts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fretbursts-0.8.1.tar.gz tmp/fretbursts-0.8.2-cp37-cp37m-macosx_10_9_x86_64.whl.zip --markdown 20240602/f/fretbursts/0.8.1-0.8.2/README.md --exclude *.pyd
+[2024-06-02 09:16:46] INFO root fetch - processPackages [fretbursts]: Remove: archive file [/home/abi/fetcher/tmp/fretbursts-0.8.1.tar.gz]
+[2024-06-02 09:16:46] INFO root fetch - processPackages [fretbursts]: Remove: archive file [/home/abi/fetcher/tmp/fretbursts-0.8.2-cp37-cp37m-macosx_10_9_x86_64.whl.zip]
+[2024-06-02 09:16:46] INFO root fetch - main [MainThread]: End processing [fretbursts]: success
+[2024-06-02 09:16:46] INFO root fetch - main [MainThread]: Store serial: [23486958]
