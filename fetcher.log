@@ -12855,3 +12855,58 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 17:56:24] INFO root fetch - main [MainThread]: End processing [trytond]: success
 [2024-06-02 17:56:24] INFO root fetch - main [MainThread]: End processing [trytond]: success
 [2024-06-02 17:56:24] INFO root fetch - main [MainThread]: Store serial: [23490464]
+[2024-06-02 17:58:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23490464]
+[2024-06-02 17:58:33] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-06-02 17:58:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: anydi
+[2024-06-02 17:58:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: atomistics
+[2024-06-02 17:58:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: trytond-web-shop
+[2024-06-02 17:58:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: trytond-web-shop
+[2024-06-02 17:58:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mama
+[2024-06-02 17:58:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: toyai
+[2024-06-02 17:58:33] INFO root fetch - processPackages [toyai]: New version: [0.2] Old Version: [0.1.4]
+[2024-06-02 17:58:33] INFO root fetch - processPackages [anydi]: New version: [0.27.0a5] Old Version: [0.27.0a4]
+[2024-06-02 17:58:33] INFO root fetch - processPackages [trytond-web-shop]: New version: [7.2.2] Old Version: [7.2.1]
+[2024-06-02 17:58:33] INFO root fetch - processPackages [trytond-web-shop]: New version: [7.2.2] Old Version: [7.2.1]
+[2024-06-02 17:58:33] INFO root fetch - processPackages [anydi]: Downloading https://files.pythonhosted.org/packages/b9/a0/25cfac70973afad736b1aa5eb5a5b77abdc2f3a0111d6c3df4f813fec422/anydi-0.27.0a4.tar.gz
+[2024-06-02 17:58:33] INFO root fetch - processPackages [atomistics]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-06-02 17:58:33] INFO root fetch - processPackages [mama]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-06-02 17:58:33] INFO root fetch - processPackages [toyai]: Downloading https://files.pythonhosted.org/packages/bf/05/c2f607f345df4c67c846ac2815b9544f3b3b2b5261f7450304e7061f2876/toyai-0.1.4-py3-none-any.whl
+[2024-06-02 17:58:33] INFO root fetch - processPackages [atomistics]: Downloading https://files.pythonhosted.org/packages/ef/eb/7ed97c71b5e1922e9188019b440e4792045c3db3b1f387b27c022b709cb6/atomistics-0.1.8.tar.gz
+[2024-06-02 17:58:33] INFO root fetch - processPackages [trytond-web-shop]: Downloading https://files.pythonhosted.org/packages/a7/13/938213211e83a8ecc37eff88fc60b3ae377d4096a19b4d0ceb8694966d52/trytond_web_shop-7.2.1.tar.gz
+[2024-06-02 17:58:33] INFO root fetch - processPackages [trytond-web-shop]: Downloading https://files.pythonhosted.org/packages/a7/13/938213211e83a8ecc37eff88fc60b3ae377d4096a19b4d0ceb8694966d52/trytond_web_shop-7.2.1.tar.gz
+[2024-06-02 17:58:33] INFO root fetch - processPackages [toyai]: Downloading https://files.pythonhosted.org/packages/d8/76/14ea5a41222e4908226cf7603c97b8b57ef0ce6364586e0488f93a7e62e3/toyai-0.2.tar.gz
+[2024-06-02 17:58:33] INFO root fetch - processPackages [anydi]: Downloading https://files.pythonhosted.org/packages/10/04/3e7f95c7abb5a2ca009a4b41ed4c655a97e498082e4865e09a60f1e1a29a/anydi-0.27.0a5.tar.gz
+[2024-06-02 17:58:33] INFO root fetch - processPackages [mama]: Downloading https://files.pythonhosted.org/packages/28/8e/a6448aa2453ff0c920722fd590265a781e734455280c4f0aa9739911de7b/mama-0.9.8.tar.gz
+[2024-06-02 17:58:33] INFO root fetch - processPackages [anydi]: executing diffoscope
+[2024-06-02 17:58:33] INFO root fetch - processPackages [anydi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anydi-0.27.0a4.tar.gz tmp/anydi-0.27.0a5.tar.gz --markdown 20240602/a/anydi/0.27.0a4-0.27.0a5/README.md --exclude *.pyd
+[2024-06-02 17:58:33] INFO root fetch - processPackages [trytond-web-shop]: Downloading https://files.pythonhosted.org/packages/5b/81/c96827aa371969be8440627c6253d3017aac96e6bc3d6c42bbff28bbdc94/trytond_web_shop-7.2.2.tar.gz
+[2024-06-02 17:58:33] INFO root fetch - processPackages [trytond-web-shop]: Downloading https://files.pythonhosted.org/packages/5b/81/c96827aa371969be8440627c6253d3017aac96e6bc3d6c42bbff28bbdc94/trytond_web_shop-7.2.2.tar.gz
+[2024-06-02 17:58:33] INFO root fetch - processPackages [toyai]: executing diffoscope
+[2024-06-02 17:58:33] INFO root fetch - processPackages [toyai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/toyai-0.1.4-py3-none-any.whl.zip tmp/toyai-0.2.tar.gz --markdown 20240602/t/toyai/0.1.4-0.2/README.md --exclude *.pyd
+[2024-06-02 17:58:34] INFO root fetch - processPackages [mama]: Downloading https://files.pythonhosted.org/packages/de/84/3f7efde8744b6798afdee3d7c9f782527d4ffbbecb1e0ba794feada217d5/mama-0.9.9.tar.gz
+[2024-06-02 17:58:34] INFO root fetch - processPackages [trytond-web-shop]: executing diffoscope
+[2024-06-02 17:58:34] INFO root fetch - processPackages [trytond-web-shop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trytond_web_shop-7.2.1.tar.gz tmp/trytond_web_shop-7.2.2.tar.gz --markdown 20240602/t/trytond-web-shop/7.2.1-7.2.2/README.md --exclude *.pyd
+[2024-06-02 17:58:34] INFO root fetch - processPackages [trytond-web-shop]: executing diffoscope
+[2024-06-02 17:58:34] INFO root fetch - processPackages [trytond-web-shop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trytond_web_shop-7.2.1.tar.gz tmp/trytond_web_shop-7.2.2.tar.gz --markdown 20240602/t/trytond-web-shop/7.2.1-7.2.2/README.md --exclude *.pyd
+[2024-06-02 17:58:34] INFO root fetch - processPackages [atomistics]: Downloading https://files.pythonhosted.org/packages/fa/7c/ef931c24f972258e913c2b89f0c1a0ae6372ba9744c50da047240cebf50e/atomistics-0.1.9.tar.gz
+[2024-06-02 17:58:34] INFO root fetch - processPackages [atomistics]: executing diffoscope
+[2024-06-02 17:58:34] INFO root fetch - processPackages [atomistics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/atomistics-0.1.8.tar.gz tmp/atomistics-0.1.9.tar.gz --markdown 20240602/a/atomistics/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-06-02 17:58:34] INFO root fetch - processPackages [mama]: executing diffoscope
+[2024-06-02 17:58:34] INFO root fetch - processPackages [mama]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mama-0.9.8.tar.gz tmp/mama-0.9.9.tar.gz --markdown 20240602/m/mama/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-06-02 17:58:34] INFO root fetch - processPackages [toyai]: Remove: archive file [/home/abi/fetcher/tmp/toyai-0.1.4-py3-none-any.whl.zip]
+[2024-06-02 17:58:34] INFO root fetch - processPackages [toyai]: Remove: archive file [/home/abi/fetcher/tmp/toyai-0.2.tar.gz]
+[2024-06-02 17:58:34] INFO root fetch - main [MainThread]: End processing [toyai]: success
+[2024-06-02 17:58:34] INFO root fetch - processPackages [anydi]: Remove: archive file [/home/abi/fetcher/tmp/anydi-0.27.0a4.tar.gz]
+[2024-06-02 17:58:34] INFO root fetch - processPackages [anydi]: Remove: archive file [/home/abi/fetcher/tmp/anydi-0.27.0a5.tar.gz]
+[2024-06-02 17:58:34] INFO root fetch - main [MainThread]: End processing [anydi]: success
+[2024-06-02 17:58:34] INFO root fetch - processPackages [trytond-web-shop]: Remove: archive file [/home/abi/fetcher/tmp/trytond_web_shop-7.2.1.tar.gz]
+[2024-06-02 17:58:34] INFO root fetch - processPackages [trytond-web-shop]: Remove: archive file [/home/abi/fetcher/tmp/trytond_web_shop-7.2.2.tar.gz]
+[2024-06-02 17:58:34] INFO root fetch - main [MainThread]: End processing [trytond-web-shop]: success
+[2024-06-02 17:58:34] INFO root fetch - main [MainThread]: End processing [trytond-web-shop]: success
+[2024-06-02 17:58:34] INFO root fetch - processPackages [atomistics]: Remove: archive file [/home/abi/fetcher/tmp/atomistics-0.1.8.tar.gz]
+[2024-06-02 17:58:34] INFO root fetch - processPackages [atomistics]: Remove: archive file [/home/abi/fetcher/tmp/atomistics-0.1.9.tar.gz]
+[2024-06-02 17:58:34] INFO root fetch - main [MainThread]: End processing [atomistics]: success
+[2024-06-02 17:58:35] INFO root fetch - processPackages [mama]: Remove: archive file [/home/abi/fetcher/tmp/mama-0.9.8.tar.gz]
+[2024-06-02 17:58:35] INFO root fetch - processPackages [mama]: Remove: archive file [/home/abi/fetcher/tmp/mama-0.9.9.tar.gz]
+[2024-06-02 17:58:35] INFO root fetch - main [MainThread]: End processing [mama]: success
+[2024-06-02 17:58:35] INFO root fetch - main [MainThread]: Store serial: [23490484]
