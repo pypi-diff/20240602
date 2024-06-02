@@ -5519,3 +5519,42 @@
 [2024-06-02 09:27:38] INFO root fetch - processPackages [pipx]: Remove: archive file [/home/abi/fetcher/tmp/pipx-1.5.0.tar.gz]
 [2024-06-02 09:27:38] INFO root fetch - main [MainThread]: End processing [pipx]: success
 [2024-06-02 09:27:38] INFO root fetch - main [MainThread]: Store serial: [23487035]
+[2024-06-02 09:29:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23487035]
+[2024-06-02 09:29:47] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-02 09:29:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lesscode-charts
+[2024-06-02 09:29:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: flatpack
+[2024-06-02 09:29:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: telometer
+[2024-06-02 09:29:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: papers-dl
+[2024-06-02 09:29:47] INFO root fetch - processPackages [telometer]: New version: [0.78] Old Version: [0.76]
+[2024-06-02 09:29:47] INFO root fetch - processPackages [telometer]: Downloading https://files.pythonhosted.org/packages/69/7d/a84dd9a4388910ce8dfac654cb021880221d329baddfac7f4676d4c11dbe/telometer-0.76.tar.gz
+[2024-06-02 09:29:47] INFO root fetch - processPackages [lesscode-charts]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-06-02 09:29:47] INFO root fetch - processPackages [papers-dl]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-06-02 09:29:47] INFO root fetch - processPackages [flatpack]: New version: [3.5.9] Old Version: [3.5.8]
+[2024-06-02 09:29:47] INFO root fetch - processPackages [lesscode-charts]: Downloading https://files.pythonhosted.org/packages/0d/fc/69648b9790c6554e684d024a799b16231e4eb4aa70bdc980a6838d5d44b7/lesscode_charts-0.0.8.tar.gz
+[2024-06-02 09:29:47] INFO root fetch - processPackages [telometer]: Downloading https://files.pythonhosted.org/packages/9c/c9/53650e4d29327c4089c85df3d4b8573b60cf62e4fcfcb20ed0d0923fbf5e/telometer-0.78.tar.gz
+[2024-06-02 09:29:47] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/0d/a9/8502480e2c2eb0cf1d5c96124b696b315ecaac8fbeabcea4683232791237/flatpack-3.5.8.tar.gz
+[2024-06-02 09:29:47] INFO root fetch - processPackages [papers-dl]: Downloading https://files.pythonhosted.org/packages/7c/0c/f8f333d6bacf1885363b21f1712a19a5a546c3282bba391947250e2a03bc/papers_dl-0.0.8.tar.gz
+[2024-06-02 09:29:47] INFO root fetch - processPackages [telometer]: executing diffoscope
+[2024-06-02 09:29:47] INFO root fetch - processPackages [telometer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/telometer-0.76.tar.gz tmp/telometer-0.78.tar.gz --markdown 20240602/t/telometer/0.76-0.78/README.md --exclude *.pyd
+[2024-06-02 09:29:47] INFO root fetch - processPackages [lesscode-charts]: Downloading https://files.pythonhosted.org/packages/3c/ff/b8a73ae58bfe99faa84533f9c7e3cfb41c4c60bb9992eedfdfd8fcb76ba5/lesscode_charts-0.0.9.tar.gz
+[2024-06-02 09:29:48] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/d8/91/c9da419dc0b7492b44a9d95f36b27829ce600621fa73894b210c81dadbcd/flatpack-3.5.9.tar.gz
+[2024-06-02 09:29:48] INFO root fetch - processPackages [papers-dl]: Downloading https://files.pythonhosted.org/packages/50/51/60e4a76d719ba25a5c98eeff3bc44d54c4b72fa301c99cfb62c02f89672d/papers_dl-0.0.9.tar.gz
+[2024-06-02 09:29:48] INFO root fetch - processPackages [lesscode-charts]: executing diffoscope
+[2024-06-02 09:29:48] INFO root fetch - processPackages [lesscode-charts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lesscode_charts-0.0.8.tar.gz tmp/lesscode_charts-0.0.9.tar.gz --markdown 20240602/l/lesscode-charts/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-06-02 09:29:48] INFO root fetch - processPackages [flatpack]: executing diffoscope
+[2024-06-02 09:29:48] INFO root fetch - processPackages [flatpack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flatpack-3.5.8.tar.gz tmp/flatpack-3.5.9.tar.gz --markdown 20240602/f/flatpack/3.5.8-3.5.9/README.md --exclude *.pyd
+[2024-06-02 09:29:48] INFO root fetch - processPackages [papers-dl]: executing diffoscope
+[2024-06-02 09:29:48] INFO root fetch - processPackages [papers-dl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/papers_dl-0.0.8.tar.gz tmp/papers_dl-0.0.9.tar.gz --markdown 20240602/p/papers-dl/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-06-02 09:29:48] INFO root fetch - processPackages [telometer]: Remove: archive file [/home/abi/fetcher/tmp/telometer-0.76.tar.gz]
+[2024-06-02 09:29:48] INFO root fetch - processPackages [telometer]: Remove: archive file [/home/abi/fetcher/tmp/telometer-0.78.tar.gz]
+[2024-06-02 09:29:48] INFO root fetch - main [MainThread]: End processing [telometer]: success
+[2024-06-02 09:29:48] INFO root fetch - processPackages [lesscode-charts]: Remove: archive file [/home/abi/fetcher/tmp/lesscode_charts-0.0.8.tar.gz]
+[2024-06-02 09:29:48] INFO root fetch - processPackages [lesscode-charts]: Remove: archive file [/home/abi/fetcher/tmp/lesscode_charts-0.0.9.tar.gz]
+[2024-06-02 09:29:48] INFO root fetch - main [MainThread]: End processing [lesscode-charts]: success
+[2024-06-02 09:29:48] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.5.8.tar.gz]
+[2024-06-02 09:29:48] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.5.9.tar.gz]
+[2024-06-02 09:29:48] INFO root fetch - main [MainThread]: End processing [flatpack]: success
+[2024-06-02 09:29:48] INFO root fetch - processPackages [papers-dl]: Remove: archive file [/home/abi/fetcher/tmp/papers_dl-0.0.8.tar.gz]
+[2024-06-02 09:29:48] INFO root fetch - processPackages [papers-dl]: Remove: archive file [/home/abi/fetcher/tmp/papers_dl-0.0.9.tar.gz]
+[2024-06-02 09:29:48] INFO root fetch - main [MainThread]: End processing [papers-dl]: success
+[2024-06-02 09:29:48] INFO root fetch - main [MainThread]: Store serial: [23487047]
