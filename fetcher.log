@@ -2076,3 +2076,25 @@
 [2024-06-02 02:31:25] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: Remove: archive file [/home/abi/fetcher/tmp/cdk-aurora-globaldatabase-2.3.99.tar.gz]
 [2024-06-02 02:31:25] INFO root fetch - main [MainThread]: End processing [cdk-aurora-globaldatabase]: success
 [2024-06-02 02:31:25] INFO root fetch - main [MainThread]: Store serial: [23484983]
+[2024-06-02 02:33:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23484983]
+[2024-06-02 02:33:34] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-02 02:33:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: id-card-recognition
+[2024-06-02 02:33:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bussinwebx-get
+[2024-06-02 02:33:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: id-card-recognition
+[2024-06-02 02:33:34] INFO root fetch - processPackages [id-card-recognition]: New version: [0.3.6] Old Version: [0.3.5]
+[2024-06-02 02:33:34] INFO root fetch - processPackages [id-card-recognition]: New version: [0.3.6] Old Version: [0.3.5]
+[2024-06-02 02:33:34] WARNING root fetch - processPackages [bussinwebx-get]: Skipping, unable to determine old version
+[2024-06-02 02:33:34] INFO root fetch - main [MainThread]: End processing [bussinwebx-get] error
+[2024-06-02 02:33:34] INFO root fetch - processPackages [id-card-recognition]: Downloading https://files.pythonhosted.org/packages/a2/dc/72a3ba3493a0ce07c0d098e33c66af1d5b2d0d3260ce53a27ab77604f80a/id_card_recognition-0.3.5.tar.gz
+[2024-06-02 02:33:34] INFO root fetch - processPackages [id-card-recognition]: Downloading https://files.pythonhosted.org/packages/a2/dc/72a3ba3493a0ce07c0d098e33c66af1d5b2d0d3260ce53a27ab77604f80a/id_card_recognition-0.3.5.tar.gz
+[2024-06-02 02:33:35] INFO root fetch - processPackages [id-card-recognition]: Downloading https://files.pythonhosted.org/packages/e8/5a/6b1b639ec64e77a881c27e4e40206653c78468c1b2d376566eb24cdf00cb/id_card_recognition-0.3.6.tar.gz
+[2024-06-02 02:33:35] INFO root fetch - processPackages [id-card-recognition]: Downloading https://files.pythonhosted.org/packages/e8/5a/6b1b639ec64e77a881c27e4e40206653c78468c1b2d376566eb24cdf00cb/id_card_recognition-0.3.6.tar.gz
+[2024-06-02 02:33:35] INFO root fetch - processPackages [id-card-recognition]: executing diffoscope
+[2024-06-02 02:33:35] INFO root fetch - processPackages [id-card-recognition]: executing diffoscope
+[2024-06-02 02:33:35] INFO root fetch - processPackages [id-card-recognition]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/id_card_recognition-0.3.5.tar.gz tmp/id_card_recognition-0.3.6.tar.gz --markdown 20240602/i/id-card-recognition/0.3.5-0.3.6/README.md --exclude *.pyd
+[2024-06-02 02:33:35] INFO root fetch - processPackages [id-card-recognition]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/id_card_recognition-0.3.5.tar.gz tmp/id_card_recognition-0.3.6.tar.gz --markdown 20240602/i/id-card-recognition/0.3.5-0.3.6/README.md --exclude *.pyd
+[2024-06-02 02:33:35] INFO root fetch - processPackages [id-card-recognition]: Remove: archive file [/home/abi/fetcher/tmp/id_card_recognition-0.3.5.tar.gz]
+[2024-06-02 02:33:35] INFO root fetch - processPackages [id-card-recognition]: Remove: archive file [/home/abi/fetcher/tmp/id_card_recognition-0.3.6.tar.gz]
+[2024-06-02 02:33:35] INFO root fetch - main [MainThread]: End processing [id-card-recognition]: success
+[2024-06-02 02:33:35] INFO root fetch - main [MainThread]: End processing [id-card-recognition]: success
+[2024-06-02 02:33:35] INFO root fetch - main [MainThread]: Store serial: [23484997]
