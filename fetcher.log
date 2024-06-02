@@ -7198,3 +7198,51 @@
 [2024-06-02 11:57:56] INFO root fetch - processPackages [network-diffusion]: Remove: archive file [/home/abi/fetcher/tmp/network_diffusion-0.9.0.tar.gz]
 [2024-06-02 11:57:56] INFO root fetch - main [MainThread]: End processing [network-diffusion]: success
 [2024-06-02 11:57:56] INFO root fetch - main [MainThread]: Store serial: [23487966]
+[2024-06-02 11:59:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23487966]
+[2024-06-02 12:00:04] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-06-02 12:00:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: moto
+[2024-06-02 12:00:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: protoc-polyglot
+[2024-06-02 12:00:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ruqia
+[2024-06-02 12:00:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tf-keras-nightly
+[2024-06-02 12:00:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ervdetective
+[2024-06-02 12:00:05] INFO root fetch - processPackages [protoc-polyglot]: New version: [0.0.1.post9] Old Version: [0.0.1.post8]
+[2024-06-02 12:00:05] INFO root fetch - processPackages [ervdetective]: New version: [1.0.7] Old Version: [1.0.6]
+[2024-06-02 12:00:05] INFO root fetch - processPackages [ruqia]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-06-02 12:00:05] INFO root fetch - processPackages [tf-keras-nightly]: New version: [2.17.0.dev2024060109] Old Version: [2.17.0.dev2024053109]
+[2024-06-02 12:00:05] INFO root fetch - processPackages [protoc-polyglot]: Downloading https://files.pythonhosted.org/packages/e9/7b/373a68a962cdfb85f4bd76f6f4ea13ad3f2cfaca73bf0a9f70d0e7d34380/protoc_polyglot-0.0.1.post8.tar.gz
+[2024-06-02 12:00:05] INFO root fetch - processPackages [ervdetective]: Downloading https://files.pythonhosted.org/packages/f7/25/923e03544ac6b87eb0586c84b128e90a522a3c2e7eb568dbfeccbf196706/ervdetective-1.0.6.tar.gz
+[2024-06-02 12:00:05] INFO root fetch - processPackages [ruqia]: Downloading https://files.pythonhosted.org/packages/00/6e/947f842f446dc3c06f4c72f25f4faf2f40d7ee8d535636e379f541a68606/ruqia-0.0.8.tar.gz
+[2024-06-02 12:00:05] INFO root fetch - processPackages [tf-keras-nightly]: Downloading https://files.pythonhosted.org/packages/8c/d0/d74977e6fcaa02645fffdd4ed5e26fa436cb99f01963fcb0a716acc5e022/tf_keras_nightly-2.17.0.dev2024053109-py3-none-any.whl
+[2024-06-02 12:00:05] INFO root fetch - processPackages [moto]: New version: [5.0.9.dev9] Old Version: [5.0.9.dev8]
+[2024-06-02 12:00:05] INFO root fetch - processPackages [protoc-polyglot]: Downloading https://files.pythonhosted.org/packages/01/80/bdadb218d1c3271c3a258316c3d5991f2676b54e6f358ac689f9495990f5/protoc_polyglot-0.0.1.post9.tar.gz
+[2024-06-02 12:00:05] INFO root fetch - processPackages [ruqia]: Downloading https://files.pythonhosted.org/packages/04/7e/91a622c32fde873979352ba2f81b9e503bcc5368785872602ed8d9e9a394/ruqia-0.0.9.tar.gz
+[2024-06-02 12:00:05] INFO root fetch - processPackages [moto]: Downloading https://files.pythonhosted.org/packages/74/6a/691f8117aba58f45da36de57406430d2a7ff0822cbc28ea6de3f53414044/moto-5.0.9.dev8.tar.gz
+[2024-06-02 12:00:05] INFO root fetch - processPackages [ervdetective]: Downloading https://files.pythonhosted.org/packages/f5/d0/5f12291dcaf908d2e448819d1ff93063015fdbb307f88d708dc681b632cf/ervdetective-1.0.7.tar.gz
+[2024-06-02 12:00:05] INFO root fetch - processPackages [protoc-polyglot]: executing diffoscope
+[2024-06-02 12:00:05] INFO root fetch - processPackages [protoc-polyglot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/protoc_polyglot-0.0.1.post8.tar.gz tmp/protoc_polyglot-0.0.1.post9.tar.gz --markdown 20240602/p/protoc-polyglot/0.0.1.post8-0.0.1.post9/README.md --exclude *.pyd
+[2024-06-02 12:00:05] INFO root fetch - processPackages [ruqia]: executing diffoscope
+[2024-06-02 12:00:05] INFO root fetch - processPackages [ruqia]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ruqia-0.0.8.tar.gz tmp/ruqia-0.0.9.tar.gz --markdown 20240602/r/ruqia/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-06-02 12:00:05] INFO root fetch - processPackages [ervdetective]: executing diffoscope
+[2024-06-02 12:00:05] INFO root fetch - processPackages [ervdetective]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ervdetective-1.0.6.tar.gz tmp/ervdetective-1.0.7.tar.gz --markdown 20240602/e/ervdetective/1.0.6-1.0.7/README.md --exclude *.pyd
+[2024-06-02 12:00:05] INFO root fetch - processPackages [tf-keras-nightly]: Downloading https://files.pythonhosted.org/packages/75/c8/f116873af2f9a31b3df5e6a7ff3db6a7407fbe6df140c12dac6e66b4171b/tf_keras_nightly-2.17.0.dev2024060109.tar.gz
+[2024-06-02 12:00:05] INFO root fetch - processPackages [tf-keras-nightly]: executing diffoscope
+[2024-06-02 12:00:05] INFO root fetch - processPackages [tf-keras-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_keras_nightly-2.17.0.dev2024053109-py3-none-any.whl.zip tmp/tf_keras_nightly-2.17.0.dev2024060109.tar.gz --markdown 20240602/t/tf-keras-nightly/2.17.0.dev2024053109-2.17.0.dev2024060109/README.md --exclude *.pyd
+[2024-06-02 12:00:06] INFO root fetch - processPackages [protoc-polyglot]: Remove: archive file [/home/abi/fetcher/tmp/protoc_polyglot-0.0.1.post8.tar.gz]
+[2024-06-02 12:00:06] INFO root fetch - processPackages [protoc-polyglot]: Remove: archive file [/home/abi/fetcher/tmp/protoc_polyglot-0.0.1.post9.tar.gz]
+[2024-06-02 12:00:06] INFO root fetch - main [MainThread]: End processing [protoc-polyglot]: success
+[2024-06-02 12:00:06] INFO root fetch - processPackages [moto]: Downloading https://files.pythonhosted.org/packages/2e/60/914a17a286d989ccb6e05208527b55d03dac0daa620f3c050f3b6cc92a9e/moto-5.0.9.dev9.tar.gz
+[2024-06-02 12:00:06] INFO root fetch - processPackages [ruqia]: Remove: archive file [/home/abi/fetcher/tmp/ruqia-0.0.8.tar.gz]
+[2024-06-02 12:00:06] INFO root fetch - processPackages [ruqia]: Remove: archive file [/home/abi/fetcher/tmp/ruqia-0.0.9.tar.gz]
+[2024-06-02 12:00:06] INFO root fetch - main [MainThread]: End processing [ruqia]: success
+[2024-06-02 12:00:06] INFO root fetch - processPackages [ervdetective]: Remove: archive file [/home/abi/fetcher/tmp/ervdetective-1.0.6.tar.gz]
+[2024-06-02 12:00:06] INFO root fetch - processPackages [ervdetective]: Remove: archive file [/home/abi/fetcher/tmp/ervdetective-1.0.7.tar.gz]
+[2024-06-02 12:00:06] INFO root fetch - main [MainThread]: End processing [ervdetective]: success
+[2024-06-02 12:00:06] INFO root fetch - processPackages [moto]: executing diffoscope
+[2024-06-02 12:00:06] INFO root fetch - processPackages [moto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moto-5.0.9.dev8.tar.gz tmp/moto-5.0.9.dev9.tar.gz --markdown 20240602/m/moto/5.0.9.dev8-5.0.9.dev9/README.md --exclude *.pyd
+[2024-06-02 12:00:08] INFO root fetch - processPackages [tf-keras-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_keras_nightly-2.17.0.dev2024053109-py3-none-any.whl.zip]
+[2024-06-02 12:00:08] INFO root fetch - processPackages [tf-keras-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_keras_nightly-2.17.0.dev2024060109.tar.gz]
+[2024-06-02 12:00:08] INFO root fetch - main [MainThread]: End processing [tf-keras-nightly]: success
+[2024-06-02 12:00:17] INFO root fetch - processPackages [moto]: Remove: archive file [/home/abi/fetcher/tmp/moto-5.0.9.dev8.tar.gz]
+[2024-06-02 12:00:17] INFO root fetch - processPackages [moto]: Remove: archive file [/home/abi/fetcher/tmp/moto-5.0.9.dev9.tar.gz]
+[2024-06-02 12:00:17] INFO root fetch - main [MainThread]: End processing [moto]: success
+[2024-06-02 12:00:17] INFO root fetch - main [MainThread]: Store serial: [23487979]
