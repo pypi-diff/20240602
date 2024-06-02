@@ -8497,3 +8497,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-02 13:29:29] INFO root fetch - processPackages [robusta-cli]: Remove: archive file [/home/abi/fetcher/tmp/robusta_cli-1.0a0.tar.gz]
 [2024-06-02 13:29:29] INFO root fetch - main [MainThread]: End processing [robusta-cli]: success
 [2024-06-02 13:29:29] INFO root fetch - main [MainThread]: Store serial: [23488424]
+[2024-06-02 13:31:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23488424]
+[2024-06-02 13:31:37] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-02 13:31:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fastapi_errors
+[2024-06-02 13:31:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: socket.d
+[2024-06-02 13:31:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: Baseball-Info
+[2024-06-02 13:31:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bdmc
+[2024-06-02 13:31:37] WARNING root fetch - processPackages [fastapi_errors]: Skipping, unable to determine old version
+[2024-06-02 13:31:37] INFO root fetch - main [MainThread]: End processing [fastapi_errors] error
+[2024-06-02 13:31:37] INFO root fetch - processPackages [bdmc]: New version: [0.1.5.9] Old Version: [0.1.5.8]
+[2024-06-02 13:31:37] INFO root fetch - processPackages [bdmc]: Downloading https://files.pythonhosted.org/packages/7b/a4/6d673f004389618881a3a5641b084f02f3e3c9606bea3e6b2a5fb9f265d6/bdmc-0.1.5.8.tar.gz
+[2024-06-02 13:31:37] INFO root fetch - processPackages [Baseball-Info]: New version: [0.0.0.4] Old Version: [0.0.0.3]
+[2024-06-02 13:31:37] INFO root fetch - processPackages [socket.d]: New version: [2.5.2] Old Version: [2.5.1]
+[2024-06-02 13:31:37] INFO root fetch - processPackages [Baseball-Info]: Downloading https://files.pythonhosted.org/packages/b7/1e/8f01f8201b56af8d04a7b1df23dbcf614d43533b518a7385f597432a5e8e/Baseball-Info-0.0.0.3.tar.gz
+[2024-06-02 13:31:37] INFO root fetch - processPackages [bdmc]: Downloading https://files.pythonhosted.org/packages/0b/9d/0fd87f38893641236ff55f80f919c108ccfbe16165193350adcd472d5b64/bdmc-0.1.5.9.tar.gz
+[2024-06-02 13:31:37] INFO root fetch - processPackages [socket.d]: Downloading https://files.pythonhosted.org/packages/9a/86/c9b4c27587eb419b6d2b0295c497a204532d1f564ec3a5fd41f55de428ae/socket.d-2.5.1.tar.gz
+[2024-06-02 13:31:38] INFO root fetch - processPackages [bdmc]: executing diffoscope
+[2024-06-02 13:31:38] INFO root fetch - processPackages [bdmc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bdmc-0.1.5.8.tar.gz tmp/bdmc-0.1.5.9.tar.gz --markdown 20240602/b/bdmc/0.1.5.8-0.1.5.9/README.md --exclude *.pyd
+[2024-06-02 13:31:38] INFO root fetch - processPackages [Baseball-Info]: Downloading https://files.pythonhosted.org/packages/d0/5a/e67c69ce1f27fca25a8ed48dd32575af6284bb38abcd3c5a582df06cd0c1/Baseball-Info-0.0.0.4.tar.gz
+[2024-06-02 13:31:38] INFO root fetch - processPackages [socket.d]: Downloading https://files.pythonhosted.org/packages/f2/9e/112a1c956587fbd9aadcc6cb40fbcaa3b68793a8e8811d97d2ed86c71cc1/socket.d-2.5.2.tar.gz
+[2024-06-02 13:31:38] INFO root fetch - processPackages [socket.d]: executing diffoscope
+[2024-06-02 13:31:38] INFO root fetch - processPackages [socket.d]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/socket.d-2.5.1.tar.gz tmp/socket.d-2.5.2.tar.gz --markdown 20240602/s/socket.d/2.5.1-2.5.2/README.md --exclude *.pyd
+[2024-06-02 13:31:38] INFO root fetch - processPackages [Baseball-Info]: executing diffoscope
+[2024-06-02 13:31:38] INFO root fetch - processPackages [Baseball-Info]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Baseball-Info-0.0.0.3.tar.gz tmp/Baseball-Info-0.0.0.4.tar.gz --markdown 20240602/B/Baseball-Info/0.0.0.3-0.0.0.4/README.md --exclude *.pyd
+[2024-06-02 13:31:38] INFO root fetch - processPackages [bdmc]: Remove: archive file [/home/abi/fetcher/tmp/bdmc-0.1.5.8.tar.gz]
+[2024-06-02 13:31:38] INFO root fetch - processPackages [bdmc]: Remove: archive file [/home/abi/fetcher/tmp/bdmc-0.1.5.9.tar.gz]
+[2024-06-02 13:31:38] INFO root fetch - main [MainThread]: End processing [bdmc]: success
+[2024-06-02 13:31:38] INFO root fetch - processPackages [Baseball-Info]: Remove: archive file [/home/abi/fetcher/tmp/Baseball-Info-0.0.0.3.tar.gz]
+[2024-06-02 13:31:38] INFO root fetch - processPackages [Baseball-Info]: Remove: archive file [/home/abi/fetcher/tmp/Baseball-Info-0.0.0.4.tar.gz]
+[2024-06-02 13:31:38] INFO root fetch - main [MainThread]: End processing [Baseball-Info]: success
+[2024-06-02 13:31:39] INFO root fetch - processPackages [socket.d]: Remove: archive file [/home/abi/fetcher/tmp/socket.d-2.5.1.tar.gz]
+[2024-06-02 13:31:39] INFO root fetch - processPackages [socket.d]: Remove: archive file [/home/abi/fetcher/tmp/socket.d-2.5.2.tar.gz]
+[2024-06-02 13:31:39] INFO root fetch - main [MainThread]: End processing [socket.d]: success
+[2024-06-02 13:31:39] INFO root fetch - main [MainThread]: Store serial: [23488438]
