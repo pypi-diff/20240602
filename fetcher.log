@@ -4076,3 +4076,24 @@
 [2024-06-02 06:46:29] INFO root fetch - processPackages [openctp-ctp]: Remove: archive file [/home/abi/fetcher/tmp/openctp_ctp-6.7.2.6-cp39-cp39-win_amd64.whl.zip]
 [2024-06-02 06:46:29] INFO root fetch - main [MainThread]: End processing [openctp-ctp]: success
 [2024-06-02 06:46:29] INFO root fetch - main [MainThread]: Store serial: [23486251]
+[2024-06-02 06:48:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23486251]
+[2024-06-02 06:48:37] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-02 06:48:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: openctp-ctp
+[2024-06-02 06:48:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rocketflightsim
+[2024-06-02 06:48:37] INFO root fetch - processPackages [openctp-ctp]: New version: [6.7.2.6] Old Version: [6.7.2.5]
+[2024-06-02 06:48:37] INFO root fetch - processPackages [openctp-ctp]: Downloading https://files.pythonhosted.org/packages/b8/5b/55216866b439f1def4957d8af137cb241904d679c85834403f05136a73c9/openctp_ctp-6.7.2.5-cp39-cp39-win_amd64.whl
+[2024-06-02 06:48:37] INFO root fetch - processPackages [rocketflightsim]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-06-02 06:48:38] INFO root fetch - processPackages [rocketflightsim]: Downloading https://files.pythonhosted.org/packages/0c/8c/3af0cb486789e7808094be9c6c122aa3489d491e8096d83e7fa345bfe921/rocketflightsim-0.1.2.tar.gz
+[2024-06-02 06:48:38] INFO root fetch - processPackages [rocketflightsim]: Downloading https://files.pythonhosted.org/packages/95/77/dc6d26ca5a30613a43b43a36de626b95f26186ca1298fadd0d9921cd4819/rocketflightsim-0.1.3.tar.gz
+[2024-06-02 06:48:38] INFO root fetch - processPackages [openctp-ctp]: Downloading https://files.pythonhosted.org/packages/7a/f5/56a4437572c797bdb3c05323ab79671b27a5bf2ba350efc7b2a258abc4d5/openctp_ctp-6.7.2.6-cp39-cp39-win_amd64.whl
+[2024-06-02 06:48:38] INFO root fetch - processPackages [rocketflightsim]: executing diffoscope
+[2024-06-02 06:48:38] INFO root fetch - processPackages [rocketflightsim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rocketflightsim-0.1.2.tar.gz tmp/rocketflightsim-0.1.3.tar.gz --markdown 20240602/r/rocketflightsim/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-06-02 06:48:38] INFO root fetch - processPackages [openctp-ctp]: executing diffoscope
+[2024-06-02 06:48:38] INFO root fetch - processPackages [openctp-ctp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openctp_ctp-6.7.2.5-cp39-cp39-win_amd64.whl.zip tmp/openctp_ctp-6.7.2.6-cp39-cp39-win_amd64.whl.zip --markdown 20240602/o/openctp-ctp/6.7.2.5-6.7.2.6/README.md --exclude *.pyd
+[2024-06-02 06:48:39] INFO root fetch - processPackages [rocketflightsim]: Remove: archive file [/home/abi/fetcher/tmp/rocketflightsim-0.1.2.tar.gz]
+[2024-06-02 06:48:39] INFO root fetch - processPackages [rocketflightsim]: Remove: archive file [/home/abi/fetcher/tmp/rocketflightsim-0.1.3.tar.gz]
+[2024-06-02 06:48:39] INFO root fetch - main [MainThread]: End processing [rocketflightsim]: success
+[2024-06-02 06:48:39] INFO root fetch - processPackages [openctp-ctp]: Remove: archive file [/home/abi/fetcher/tmp/openctp_ctp-6.7.2.5-cp39-cp39-win_amd64.whl.zip]
+[2024-06-02 06:48:39] INFO root fetch - processPackages [openctp-ctp]: Remove: archive file [/home/abi/fetcher/tmp/openctp_ctp-6.7.2.6-cp39-cp39-win_amd64.whl.zip]
+[2024-06-02 06:48:39] INFO root fetch - main [MainThread]: End processing [openctp-ctp]: success
+[2024-06-02 06:48:39] INFO root fetch - main [MainThread]: Store serial: [23486264]
