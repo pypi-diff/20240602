@@ -8368,3 +8368,18 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 
 [2024-06-02 13:18:34] INFO root fetch - main [MainThread]: End processing [bigdl-core-xe-addons-21] error
 [2024-06-02 13:18:34] INFO root fetch - main [MainThread]: Store serial: [23488372]
+[2024-06-02 13:20:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23488372]
+[2024-06-02 13:20:42] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-02 13:20:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: intellipandora
+[2024-06-02 13:20:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: directedit
+[2024-06-02 13:20:42] WARNING root fetch - processPackages [directedit]: Skipping, unable to determine old version
+[2024-06-02 13:20:42] INFO root fetch - main [MainThread]: End processing [directedit] error
+[2024-06-02 13:20:42] INFO root fetch - processPackages [intellipandora]: New version: [1.0.8] Old Version: [1.0.7]
+[2024-06-02 13:20:42] INFO root fetch - processPackages [intellipandora]: Downloading https://files.pythonhosted.org/packages/ab/04/e78a5ad284d56531f16b386672be490781e61f94e2105c7771d1720509a0/intellipandora-1.0.7-py3-none-any.whl
+[2024-06-02 13:20:43] INFO root fetch - processPackages [intellipandora]: Downloading https://files.pythonhosted.org/packages/2d/1d/5757cda09ccea0b473325d9b83b54ce51215f0afe2f637c1953d8198b2db/intellipandora-1.0.8-py3-none-any.whl
+[2024-06-02 13:20:43] INFO root fetch - processPackages [intellipandora]: executing diffoscope
+[2024-06-02 13:20:43] INFO root fetch - processPackages [intellipandora]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/intellipandora-1.0.7-py3-none-any.whl.zip tmp/intellipandora-1.0.8-py3-none-any.whl.zip --markdown 20240602/i/intellipandora/1.0.7-1.0.8/README.md --exclude *.pyd
+[2024-06-02 13:20:44] INFO root fetch - processPackages [intellipandora]: Remove: archive file [/home/abi/fetcher/tmp/intellipandora-1.0.7-py3-none-any.whl.zip]
+[2024-06-02 13:20:44] INFO root fetch - processPackages [intellipandora]: Remove: archive file [/home/abi/fetcher/tmp/intellipandora-1.0.8-py3-none-any.whl.zip]
+[2024-06-02 13:20:44] INFO root fetch - main [MainThread]: End processing [intellipandora]: success
+[2024-06-02 13:20:44] INFO root fetch - main [MainThread]: Store serial: [23488378]
