@@ -4968,3 +4968,28 @@
 [2024-06-02 08:30:38] INFO root fetch - processPackages [PyDistances]: Remove: archive file [/home/abi/fetcher/tmp/PyDistances-0.0.9.tar.gz]
 [2024-06-02 08:30:38] INFO root fetch - main [MainThread]: End processing [PyDistances]: success
 [2024-06-02 08:30:38] INFO root fetch - main [MainThread]: Store serial: [23486741]
+[2024-06-02 08:32:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23486741]
+[2024-06-02 08:32:46] INFO root fetch - main [MainThread]: No changed packages found
+[2024-06-02 08:34:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23486743]
+[2024-06-02 08:34:51] INFO root fetch - main [MainThread]: No changed packages found
+[2024-06-02 08:36:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23486743]
+[2024-06-02 08:36:57] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-02 08:36:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dash-spread-grid
+[2024-06-02 08:36:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: yutto
+[2024-06-02 08:36:57] INFO root fetch - processPackages [yutto]: New version: [2.0.0b9] Old Version: [2.0.0b8]
+[2024-06-02 08:36:57] INFO root fetch - processPackages [dash-spread-grid]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-06-02 08:36:57] INFO root fetch - processPackages [dash-spread-grid]: Downloading https://files.pythonhosted.org/packages/ef/9f/ad7d15ac280015e4065103eaa548f79cd584cf601957bbeef74fbac248d9/dash_spread_grid-0.1.6.tar.gz
+[2024-06-02 08:36:57] INFO root fetch - processPackages [yutto]: Downloading https://files.pythonhosted.org/packages/d4/82/afc8ceecddf536999aae2b829c18ee41e41e7f2ca51c51e1f0435f005ea2/yutto-2.0.0b8.tar.gz
+[2024-06-02 08:36:57] INFO root fetch - processPackages [dash-spread-grid]: Downloading https://files.pythonhosted.org/packages/76/17/3188aa3d693ffb9db5714126c6b6f637625ead5a6330e20d292b7f09846e/dash_spread_grid-0.1.7.tar.gz
+[2024-06-02 08:36:57] INFO root fetch - processPackages [dash-spread-grid]: executing diffoscope
+[2024-06-02 08:36:57] INFO root fetch - processPackages [dash-spread-grid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dash_spread_grid-0.1.6.tar.gz tmp/dash_spread_grid-0.1.7.tar.gz --markdown 20240602/d/dash-spread-grid/0.1.6-0.1.7/README.md --exclude *.pyd
+[2024-06-02 08:36:58] INFO root fetch - processPackages [yutto]: Downloading https://files.pythonhosted.org/packages/cf/2d/5f85c6e137c3e526cd1fd5e829320295112a8a5dde8e96c21333e0666f73/yutto-2.0.0b9.tar.gz
+[2024-06-02 08:36:59] INFO root fetch - processPackages [yutto]: executing diffoscope
+[2024-06-02 08:36:59] INFO root fetch - processPackages [yutto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yutto-2.0.0b8.tar.gz tmp/yutto-2.0.0b9.tar.gz --markdown 20240602/y/yutto/2.0.0b8-2.0.0b9/README.md --exclude *.pyd
+[2024-06-02 08:36:59] INFO root fetch - processPackages [dash-spread-grid]: Remove: archive file [/home/abi/fetcher/tmp/dash_spread_grid-0.1.6.tar.gz]
+[2024-06-02 08:36:59] INFO root fetch - processPackages [dash-spread-grid]: Remove: archive file [/home/abi/fetcher/tmp/dash_spread_grid-0.1.7.tar.gz]
+[2024-06-02 08:36:59] INFO root fetch - main [MainThread]: End processing [dash-spread-grid]: success
+[2024-06-02 08:36:59] INFO root fetch - processPackages [yutto]: Remove: archive file [/home/abi/fetcher/tmp/yutto-2.0.0b8.tar.gz]
+[2024-06-02 08:36:59] INFO root fetch - processPackages [yutto]: Remove: archive file [/home/abi/fetcher/tmp/yutto-2.0.0b9.tar.gz]
+[2024-06-02 08:36:59] INFO root fetch - main [MainThread]: End processing [yutto]: success
+[2024-06-02 08:36:59] INFO root fetch - main [MainThread]: Store serial: [23486748]
