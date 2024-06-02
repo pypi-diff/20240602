@@ -10052,3 +10052,54 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-02 15:13:35] INFO root fetch - processPackages [mteb]: Remove: archive file [/home/abi/fetcher/tmp/mteb-1.9.3.tar.gz]
 [2024-06-02 15:13:35] INFO root fetch - main [MainThread]: End processing [mteb]: success
 [2024-06-02 15:13:35] INFO root fetch - main [MainThread]: Store serial: [23489166]
+[2024-06-02 15:15:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23489166]
+[2024-06-02 15:15:43] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-06-02 15:15:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: htmlExtractor
+[2024-06-02 15:15:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nonebot-plugin-chatgpt-turbo
+[2024-06-02 15:15:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: poetry-plugin-dynamic-override-sources
+[2024-06-02 15:15:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: omero-tagsearch
+[2024-06-02 15:15:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: protoc-polyglot
+[2024-06-02 15:15:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: naluconfigs
+[2024-06-02 15:15:44] INFO root fetch - processPackages [nonebot-plugin-chatgpt-turbo]: New version: [1.0.0] Old Version: [0.3.0]
+[2024-06-02 15:15:44] INFO root fetch - processPackages [poetry-plugin-dynamic-override-sources]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-06-02 15:15:44] INFO root fetch - processPackages [protoc-polyglot]: New version: [0.0.1.post9] Old Version: [0.0.1.post8]
+[2024-06-02 15:15:44] INFO root fetch - processPackages [omero-tagsearch]: New version: [4.2.0] Old Version: [4.1.1]
+[2024-06-02 15:15:44] INFO root fetch - processPackages [naluconfigs]: New version: [13.8.4] Old Version: [13.8.3]
+[2024-06-02 15:15:44] INFO root fetch - processPackages [nonebot-plugin-chatgpt-turbo]: Downloading https://files.pythonhosted.org/packages/4e/3d/844484209853658b3f031528c4977aee12c6510bbf9fedd45b97d971e8ef/nonebot_plugin_chatgpt_turbo-0.3.0.tar.gz
+[2024-06-02 15:15:44] WARNING root fetch - processPackages [htmlExtractor]: Skipping, unable to determine old version
+[2024-06-02 15:15:44] INFO root fetch - main [MainThread]: End processing [htmlExtractor] error
+[2024-06-02 15:15:44] INFO root fetch - processPackages [poetry-plugin-dynamic-override-sources]: Downloading https://files.pythonhosted.org/packages/55/39/3f4f0fc8fd34cf1bd9e35f22dc7e1a8702c88c815feab00ef59dc1bd671e/poetry_plugin_dynamic_override_sources-0.0.4.tar.gz
+[2024-06-02 15:15:44] INFO root fetch - processPackages [protoc-polyglot]: Downloading https://files.pythonhosted.org/packages/e9/7b/373a68a962cdfb85f4bd76f6f4ea13ad3f2cfaca73bf0a9f70d0e7d34380/protoc_polyglot-0.0.1.post8.tar.gz
+[2024-06-02 15:15:44] INFO root fetch - processPackages [omero-tagsearch]: Downloading https://files.pythonhosted.org/packages/a7/e9/6e23dc8ff087228663a12c9d02bcd6a556bb4dd66c296203f27c2e36da66/omero-tagsearch-4.1.1.tar.gz
+[2024-06-02 15:15:44] INFO root fetch - processPackages [naluconfigs]: Downloading https://files.pythonhosted.org/packages/1a/cd/f3aa3d1bbd0b8d36070b9a5d098b69a8538154413dea0bcef2c1ea5772c8/naluconfigs-13.8.3.tar.gz
+[2024-06-02 15:15:44] INFO root fetch - processPackages [protoc-polyglot]: Downloading https://files.pythonhosted.org/packages/01/80/bdadb218d1c3271c3a258316c3d5991f2676b54e6f358ac689f9495990f5/protoc_polyglot-0.0.1.post9.tar.gz
+[2024-06-02 15:15:44] INFO root fetch - processPackages [nonebot-plugin-chatgpt-turbo]: Downloading https://files.pythonhosted.org/packages/28/ca/1d8bbbe803bcabe9c38cc31b02a262a27047fbd865dd4eccbc1156a3c99d/nonebot_plugin_chatgpt_turbo-1.0.0.tar.gz
+[2024-06-02 15:15:44] INFO root fetch - processPackages [poetry-plugin-dynamic-override-sources]: Downloading https://files.pythonhosted.org/packages/f6/6d/5c3ad0c5d481c857b570d0558757e0352f0404b31c6b46087eaaf3e95409/poetry_plugin_dynamic_override_sources-0.0.5.tar.gz
+[2024-06-02 15:15:44] INFO root fetch - processPackages [nonebot-plugin-chatgpt-turbo]: executing diffoscope
+[2024-06-02 15:15:44] INFO root fetch - processPackages [nonebot-plugin-chatgpt-turbo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_chatgpt_turbo-0.3.0.tar.gz tmp/nonebot_plugin_chatgpt_turbo-1.0.0.tar.gz --markdown 20240602/n/nonebot-plugin-chatgpt-turbo/0.3.0-1.0.0/README.md --exclude *.pyd
+[2024-06-02 15:15:44] INFO root fetch - processPackages [protoc-polyglot]: executing diffoscope
+[2024-06-02 15:15:44] INFO root fetch - processPackages [protoc-polyglot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/protoc_polyglot-0.0.1.post8.tar.gz tmp/protoc_polyglot-0.0.1.post9.tar.gz --markdown 20240602/p/protoc-polyglot/0.0.1.post8-0.0.1.post9/README.md --exclude *.pyd
+[2024-06-02 15:15:44] INFO root fetch - processPackages [poetry-plugin-dynamic-override-sources]: executing diffoscope
+[2024-06-02 15:15:44] INFO root fetch - processPackages [poetry-plugin-dynamic-override-sources]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/poetry_plugin_dynamic_override_sources-0.0.4.tar.gz tmp/poetry_plugin_dynamic_override_sources-0.0.5.tar.gz --markdown 20240602/p/poetry-plugin-dynamic-override-sources/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-06-02 15:15:44] INFO root fetch - processPackages [omero-tagsearch]: Downloading https://files.pythonhosted.org/packages/e9/c4/1d12399317a18ebc6b72a768bf41ed960933403ae27bb9603798d4a60180/omero-tagsearch-4.2.0.tar.gz
+[2024-06-02 15:15:44] INFO root fetch - processPackages [naluconfigs]: Downloading https://files.pythonhosted.org/packages/2d/3d/03c1f3d466696ab06a080c27191b72f30c11dcc272e3a750ddc7389af67d/naluconfigs-13.8.4.tar.gz
+[2024-06-02 15:15:44] INFO root fetch - processPackages [omero-tagsearch]: executing diffoscope
+[2024-06-02 15:15:44] INFO root fetch - processPackages [omero-tagsearch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/omero-tagsearch-4.1.1.tar.gz tmp/omero-tagsearch-4.2.0.tar.gz --markdown 20240602/o/omero-tagsearch/4.1.1-4.2.0/README.md --exclude *.pyd
+[2024-06-02 15:15:44] INFO root fetch - processPackages [naluconfigs]: executing diffoscope
+[2024-06-02 15:15:44] INFO root fetch - processPackages [naluconfigs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/naluconfigs-13.8.3.tar.gz tmp/naluconfigs-13.8.4.tar.gz --markdown 20240602/n/naluconfigs/13.8.3-13.8.4/README.md --exclude *.pyd
+[2024-06-02 15:15:45] INFO root fetch - processPackages [protoc-polyglot]: Remove: archive file [/home/abi/fetcher/tmp/protoc_polyglot-0.0.1.post8.tar.gz]
+[2024-06-02 15:15:45] INFO root fetch - processPackages [protoc-polyglot]: Remove: archive file [/home/abi/fetcher/tmp/protoc_polyglot-0.0.1.post9.tar.gz]
+[2024-06-02 15:15:45] INFO root fetch - main [MainThread]: End processing [protoc-polyglot]: success
+[2024-06-02 15:15:45] INFO root fetch - processPackages [poetry-plugin-dynamic-override-sources]: Remove: archive file [/home/abi/fetcher/tmp/poetry_plugin_dynamic_override_sources-0.0.4.tar.gz]
+[2024-06-02 15:15:45] INFO root fetch - processPackages [poetry-plugin-dynamic-override-sources]: Remove: archive file [/home/abi/fetcher/tmp/poetry_plugin_dynamic_override_sources-0.0.5.tar.gz]
+[2024-06-02 15:15:45] INFO root fetch - main [MainThread]: End processing [poetry-plugin-dynamic-override-sources]: success
+[2024-06-02 15:15:45] INFO root fetch - processPackages [nonebot-plugin-chatgpt-turbo]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_chatgpt_turbo-0.3.0.tar.gz]
+[2024-06-02 15:15:45] INFO root fetch - processPackages [nonebot-plugin-chatgpt-turbo]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_chatgpt_turbo-1.0.0.tar.gz]
+[2024-06-02 15:15:45] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-chatgpt-turbo]: success
+[2024-06-02 15:15:45] INFO root fetch - processPackages [omero-tagsearch]: Remove: archive file [/home/abi/fetcher/tmp/omero-tagsearch-4.1.1.tar.gz]
+[2024-06-02 15:15:45] INFO root fetch - processPackages [omero-tagsearch]: Remove: archive file [/home/abi/fetcher/tmp/omero-tagsearch-4.2.0.tar.gz]
+[2024-06-02 15:15:45] INFO root fetch - main [MainThread]: End processing [omero-tagsearch]: success
+[2024-06-02 15:15:45] INFO root fetch - processPackages [naluconfigs]: Remove: archive file [/home/abi/fetcher/tmp/naluconfigs-13.8.3.tar.gz]
+[2024-06-02 15:15:45] INFO root fetch - processPackages [naluconfigs]: Remove: archive file [/home/abi/fetcher/tmp/naluconfigs-13.8.4.tar.gz]
+[2024-06-02 15:15:45] INFO root fetch - main [MainThread]: End processing [naluconfigs]: success
+[2024-06-02 15:15:45] INFO root fetch - main [MainThread]: Store serial: [23489188]
