@@ -12116,3 +12116,47 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 17:22:23] INFO root fetch - processPackages [pymimir]: Remove: archive file [/home/abi/fetcher/tmp/pymimir-0.9.9.tar.gz]
 [2024-06-02 17:22:23] INFO root fetch - main [MainThread]: End processing [pymimir]: success
 [2024-06-02 17:22:23] INFO root fetch - main [MainThread]: Store serial: [23490059]
+[2024-06-02 17:24:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23490059]
+[2024-06-02 17:24:32] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-06-02 17:24:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: glide-for-redis
+[2024-06-02 17:24:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-tmmis
+[2024-06-02 17:24:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: kfish
+[2024-06-02 17:24:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: MedatechUK.Landlord
+[2024-06-02 17:24:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: spaceone-api
+[2024-06-02 17:24:32] INFO root fetch - processPackages [spaceone-api]: New version: [2.0.dev89] Old Version: [2.0.dev78]
+[2024-06-02 17:24:32] INFO root fetch - processPackages [kfish]: New version: [99.0.202406021511] Old Version: [99.0.202406021510]
+[2024-06-02 17:24:32] INFO root fetch - processPackages [spaceone-api]: Downloading https://files.pythonhosted.org/packages/63/38/896ca815cd9f0d4be5040377b88a5b629fee8eedad29b468c7a50e063060/spaceone-api-2.0.dev78.tar.gz
+[2024-06-02 17:24:32] INFO root fetch - processPackages [MedatechUK.Landlord]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-06-02 17:24:32] INFO root fetch - processPackages [django-tmmis]: New version: [0.3.6] Old Version: [0.3.5]
+[2024-06-02 17:24:32] INFO root fetch - processPackages [glide-for-redis]: New version: [0.4.1rc5] Old Version: [0.4.1rc4]
+[2024-06-02 17:24:32] INFO root fetch - processPackages [kfish]: Downloading https://files.pythonhosted.org/packages/56/ba/e58703d081a4080876ae92bf300e496f40a275dfd8ef5f5a1f12dde60907/kfish-99.0.202406021510.tar.gz
+[2024-06-02 17:24:32] WARNING root fetch - processPackages [kfish]: Skipping package: exceeds size limit 17007144>=10485760
+[2024-06-02 17:24:32] INFO root fetch - main [MainThread]: End processing [kfish] error
+[2024-06-02 17:24:32] INFO root fetch - processPackages [django-tmmis]: Downloading https://files.pythonhosted.org/packages/7d/5f/020c90acf94a7a622f9977afa7263643dc4cc8111a33824545af99818de4/django-tmmis-0.3.5.tar.gz
+[2024-06-02 17:24:33] INFO root fetch - processPackages [glide-for-redis]: Downloading https://files.pythonhosted.org/packages/96/bd/fe0c9453857cd6da6e0a7e881bd4551d33019091897822b4dfcd14989641/glide_for_redis-0.4.1rc4-cp39-cp39-manylinux_2_28_aarch64.whl
+[2024-06-02 17:24:33] INFO root fetch - processPackages [MedatechUK.Landlord]: Downloading https://files.pythonhosted.org/packages/dc/5c/36e6ca4793ea572014180040b971a51ad452029374fd8e6ef166a48bbf19/medatechuk_landlord-0.0.8.tar.gz
+[2024-06-02 17:24:33] INFO root fetch - processPackages [spaceone-api]: Downloading https://files.pythonhosted.org/packages/c0/ea/4a6c8347250e808ffcceef19de666ffee1c045761343985127f39a05bc13/spaceone-api-2.0.dev89.tar.gz
+[2024-06-02 17:24:33] INFO root fetch - processPackages [spaceone-api]: executing diffoscope
+[2024-06-02 17:24:33] INFO root fetch - processPackages [spaceone-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spaceone-api-2.0.dev78.tar.gz tmp/spaceone-api-2.0.dev89.tar.gz --markdown 20240602/s/spaceone-api/2.0.dev78-2.0.dev89/README.md --exclude *.pyd
+[2024-06-02 17:24:33] INFO root fetch - processPackages [django-tmmis]: Downloading https://files.pythonhosted.org/packages/99/b6/4ab9388b27613ab9abb8637b112d663f03199cf6e56ca581ad712f236c23/django-tmmis-0.3.6.tar.gz
+[2024-06-02 17:24:33] INFO root fetch - processPackages [MedatechUK.Landlord]: Downloading https://files.pythonhosted.org/packages/29/0e/be877fac307a67c9adc24e24a2a86c0e7f3cf85f7f972bd92d87099e22a2/medatechuk_landlord-0.0.9.tar.gz
+[2024-06-02 17:24:33] INFO root fetch - processPackages [django-tmmis]: executing diffoscope
+[2024-06-02 17:24:33] INFO root fetch - processPackages [django-tmmis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-tmmis-0.3.5.tar.gz tmp/django-tmmis-0.3.6.tar.gz --markdown 20240602/d/django-tmmis/0.3.5-0.3.6/README.md --exclude *.pyd
+[2024-06-02 17:24:33] INFO root fetch - processPackages [glide-for-redis]: Downloading https://files.pythonhosted.org/packages/0c/7c/dcdeb945380ea6d168bb3a50aa131bbb28926bf86362d4966387419822cf/glide_for_redis-0.4.1rc5-cp39-cp39-manylinux_2_28_aarch64.whl
+[2024-06-02 17:24:33] INFO root fetch - processPackages [MedatechUK.Landlord]: executing diffoscope
+[2024-06-02 17:24:33] INFO root fetch - processPackages [MedatechUK.Landlord]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/medatechuk_landlord-0.0.8.tar.gz tmp/medatechuk_landlord-0.0.9.tar.gz --markdown 20240602/M/MedatechUK.Landlord/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-06-02 17:24:33] INFO root fetch - processPackages [glide-for-redis]: executing diffoscope
+[2024-06-02 17:24:33] INFO root fetch - processPackages [glide-for-redis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/glide_for_redis-0.4.1rc4-cp39-cp39-manylinux_2_28_aarch64.whl.zip tmp/glide_for_redis-0.4.1rc5-cp39-cp39-manylinux_2_28_aarch64.whl.zip --markdown 20240602/g/glide-for-redis/0.4.1rc4-0.4.1rc5/README.md --exclude *.pyd
+[2024-06-02 17:24:34] INFO root fetch - processPackages [MedatechUK.Landlord]: Remove: archive file [/home/abi/fetcher/tmp/medatechuk_landlord-0.0.8.tar.gz]
+[2024-06-02 17:24:34] INFO root fetch - processPackages [MedatechUK.Landlord]: Remove: archive file [/home/abi/fetcher/tmp/medatechuk_landlord-0.0.9.tar.gz]
+[2024-06-02 17:24:34] INFO root fetch - main [MainThread]: End processing [MedatechUK.Landlord]: success
+[2024-06-02 17:24:34] INFO root fetch - processPackages [django-tmmis]: Remove: archive file [/home/abi/fetcher/tmp/django-tmmis-0.3.5.tar.gz]
+[2024-06-02 17:24:34] INFO root fetch - processPackages [django-tmmis]: Remove: archive file [/home/abi/fetcher/tmp/django-tmmis-0.3.6.tar.gz]
+[2024-06-02 17:24:34] INFO root fetch - main [MainThread]: End processing [django-tmmis]: success
+[2024-06-02 17:24:34] INFO root fetch - processPackages [spaceone-api]: Remove: archive file [/home/abi/fetcher/tmp/spaceone-api-2.0.dev78.tar.gz]
+[2024-06-02 17:24:34] INFO root fetch - processPackages [spaceone-api]: Remove: archive file [/home/abi/fetcher/tmp/spaceone-api-2.0.dev89.tar.gz]
+[2024-06-02 17:24:34] INFO root fetch - main [MainThread]: End processing [spaceone-api]: success
+[2024-06-02 17:24:46] INFO root fetch - processPackages [glide-for-redis]: Remove: archive file [/home/abi/fetcher/tmp/glide_for_redis-0.4.1rc4-cp39-cp39-manylinux_2_28_aarch64.whl.zip]
+[2024-06-02 17:24:46] INFO root fetch - processPackages [glide-for-redis]: Remove: archive file [/home/abi/fetcher/tmp/glide_for_redis-0.4.1rc5-cp39-cp39-manylinux_2_28_aarch64.whl.zip]
+[2024-06-02 17:24:46] INFO root fetch - main [MainThread]: End processing [glide-for-redis]: success
+[2024-06-02 17:24:46] INFO root fetch - main [MainThread]: Store serial: [23490092]
