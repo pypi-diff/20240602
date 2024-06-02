@@ -5630,3 +5630,26 @@
 [2024-06-02 09:36:19] INFO root fetch - processPackages [dash-spread-grid]: Remove: archive file [/home/abi/fetcher/tmp/dash_spread_grid-0.1.9.tar.gz]
 [2024-06-02 09:36:19] INFO root fetch - main [MainThread]: End processing [dash-spread-grid]: success
 [2024-06-02 09:36:19] INFO root fetch - main [MainThread]: Store serial: [23487087]
+[2024-06-02 09:38:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23487087]
+[2024-06-02 09:38:28] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-02 09:38:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pkg-vers
+[2024-06-02 09:38:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: SCDB-ML-app
+[2024-06-02 09:38:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rocat
+[2024-06-02 09:38:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lalsuite
+[2024-06-02 09:38:28] INFO root fetch - processPackages [rocat]: New version: [0.2.0] Old Version: [0.1.14]
+[2024-06-02 09:38:28] WARNING root fetch - processPackages [pkg-vers]: Skipping, unable to determine old version
+[2024-06-02 09:38:28] INFO root fetch - main [MainThread]: End processing [pkg-vers] error
+[2024-06-02 09:38:28] INFO root fetch - processPackages [lalsuite]: New version: [7.9] Old Version: [7.8]
+[2024-06-02 09:38:28] WARNING root fetch - processPackages [SCDB-ML-app]: Skipping, unable to determine old version
+[2024-06-02 09:38:28] INFO root fetch - main [MainThread]: End processing [SCDB-ML-app] error
+[2024-06-02 09:38:28] INFO root fetch - processPackages [rocat]: Downloading https://files.pythonhosted.org/packages/a7/b8/77fc6d999963263568dbcf97f9d7de5ea4afba238b0db1537af6e36878c8/rocat-0.1.14.tar.gz
+[2024-06-02 09:38:28] INFO root fetch - processPackages [lalsuite]: Downloading https://files.pythonhosted.org/packages/53/92/fc43211ca56b7c5532fc1b47c701a564c7ddcaf866c62ae45acbfdc34f23/lalsuite-7.8-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-06-02 09:38:28] INFO root fetch - processPackages [rocat]: Downloading https://files.pythonhosted.org/packages/ff/4e/ed6d80caae7d042a4573d2a62b02607de9f414ad2358b1b9bd4aae01fe39/rocat-0.2.0.tar.gz
+[2024-06-02 09:38:28] WARNING root fetch - processPackages [lalsuite]: Skipping package: exceeds size limit 48394251>=10485760
+[2024-06-02 09:38:29] INFO root fetch - main [MainThread]: End processing [lalsuite] error
+[2024-06-02 09:38:29] INFO root fetch - processPackages [rocat]: executing diffoscope
+[2024-06-02 09:38:29] INFO root fetch - processPackages [rocat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rocat-0.1.14.tar.gz tmp/rocat-0.2.0.tar.gz --markdown 20240602/r/rocat/0.1.14-0.2.0/README.md --exclude *.pyd
+[2024-06-02 09:38:29] INFO root fetch - processPackages [rocat]: Remove: archive file [/home/abi/fetcher/tmp/rocat-0.1.14.tar.gz]
+[2024-06-02 09:38:29] INFO root fetch - processPackages [rocat]: Remove: archive file [/home/abi/fetcher/tmp/rocat-0.2.0.tar.gz]
+[2024-06-02 09:38:29] INFO root fetch - main [MainThread]: End processing [rocat]: success
+[2024-06-02 09:38:29] INFO root fetch - main [MainThread]: Store serial: [23487121]
