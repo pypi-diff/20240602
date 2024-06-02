@@ -16875,3 +16875,30 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 21:13:34] INFO root fetch - processPackages [outline-python-api]: Remove: archive file [/home/abi/fetcher/tmp/outline_python_api-0.1.0a0.tar.gz]
 [2024-06-02 21:13:34] INFO root fetch - main [MainThread]: End processing [outline-python-api]: success
 [2024-06-02 21:13:34] INFO root fetch - main [MainThread]: Store serial: [23492302]
+[2024-06-02 21:15:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23492302]
+[2024-06-02 21:15:43] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-02 21:15:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pymodins
+[2024-06-02 21:15:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: jcgutier-logger
+[2024-06-02 21:15:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: test-pkg-zteinck
+[2024-06-02 21:15:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: django-tmmis
+[2024-06-02 21:15:43] INFO root fetch - processPackages [pymodins]: New version: [2.0.6] Old Version: [2.0.5]
+[2024-06-02 21:15:43] WARNING root fetch - processPackages [test-pkg-zteinck]: Skipping, unable to determine old version
+[2024-06-02 21:15:43] INFO root fetch - main [MainThread]: End processing [test-pkg-zteinck] error
+[2024-06-02 21:15:43] WARNING root fetch - processPackages [jcgutier-logger]: Skipping, unable to determine old version
+[2024-06-02 21:15:43] INFO root fetch - main [MainThread]: End processing [jcgutier-logger] error
+[2024-06-02 21:15:43] INFO root fetch - processPackages [pymodins]: Downloading https://files.pythonhosted.org/packages/c5/0e/5250a6f700c4ed7bf2f7530eb5b92fb902e1b7cc4cdd187862ce93863c74/pymodins-2.0.5.tar.gz
+[2024-06-02 21:15:43] INFO root fetch - processPackages [django-tmmis]: New version: [24.6.1] Old Version: [0.3.6]
+[2024-06-02 21:15:43] INFO root fetch - processPackages [django-tmmis]: Downloading https://files.pythonhosted.org/packages/99/b6/4ab9388b27613ab9abb8637b112d663f03199cf6e56ca581ad712f236c23/django-tmmis-0.3.6.tar.gz
+[2024-06-02 21:15:43] INFO root fetch - processPackages [pymodins]: Downloading https://files.pythonhosted.org/packages/18/5c/8d43bc3c461090aaad93e4b69a25d1c734762c289266e786c0ff706f7f6f/pymodins-2.0.6.tar.gz
+[2024-06-02 21:15:43] INFO root fetch - processPackages [pymodins]: executing diffoscope
+[2024-06-02 21:15:43] INFO root fetch - processPackages [pymodins]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymodins-2.0.5.tar.gz tmp/pymodins-2.0.6.tar.gz --markdown 20240602/p/pymodins/2.0.5-2.0.6/README.md --exclude *.pyd
+[2024-06-02 21:15:44] INFO root fetch - processPackages [django-tmmis]: Downloading https://files.pythonhosted.org/packages/b1/44/97abb6ef3b740ece46ac9abc54dfd0b7d7e50e376fdda6a04af4fae1b3df/django_tmmis-24.6.1.tar.gz
+[2024-06-02 21:15:44] INFO root fetch - processPackages [django-tmmis]: executing diffoscope
+[2024-06-02 21:15:44] INFO root fetch - processPackages [django-tmmis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-tmmis-0.3.6.tar.gz tmp/django_tmmis-24.6.1.tar.gz --markdown 20240602/d/django-tmmis/0.3.6-24.6.1/README.md --exclude *.pyd
+[2024-06-02 21:15:44] INFO root fetch - processPackages [pymodins]: Remove: archive file [/home/abi/fetcher/tmp/pymodins-2.0.5.tar.gz]
+[2024-06-02 21:15:44] INFO root fetch - processPackages [pymodins]: Remove: archive file [/home/abi/fetcher/tmp/pymodins-2.0.6.tar.gz]
+[2024-06-02 21:15:44] INFO root fetch - main [MainThread]: End processing [pymodins]: success
+[2024-06-02 21:15:45] INFO root fetch - processPackages [django-tmmis]: Remove: archive file [/home/abi/fetcher/tmp/django-tmmis-0.3.6.tar.gz]
+[2024-06-02 21:15:45] INFO root fetch - processPackages [django-tmmis]: Remove: archive file [/home/abi/fetcher/tmp/django_tmmis-24.6.1.tar.gz]
+[2024-06-02 21:15:45] INFO root fetch - main [MainThread]: End processing [django-tmmis]: success
+[2024-06-02 21:15:45] INFO root fetch - main [MainThread]: Store serial: [23492314]
