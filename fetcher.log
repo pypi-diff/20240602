@@ -17804,3 +17804,11 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 22:16:37] INFO root fetch - processPackages [moto]: Remove: archive file [/home/abi/fetcher/tmp/moto-5.0.9.dev9.tar.gz]
 [2024-06-02 22:16:37] INFO root fetch - main [MainThread]: End processing [moto]: success
 [2024-06-02 22:16:37] INFO root fetch - main [MainThread]: Store serial: [23492806]
+[2024-06-02 22:18:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23492806]
+[2024-06-02 22:18:45] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-02 22:18:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rfmix-reader
+[2024-06-02 22:18:45] INFO root fetch - processPackages [rfmix-reader]: New version: [0.1.2] Old Version: [0.1.0]
+[2024-06-02 22:18:45] INFO root fetch - processPackages [rfmix-reader]: Downloading https://files.pythonhosted.org/packages/e6/f6/230368bbf19487f03e91f1a91f534abe32d4d4dafe63bd87f3965ad62dcf/rfmix_reader-0.1.0.tar.gz
+[2024-06-02 22:18:46] WARNING root fetch - processPackages [rfmix-reader]: Skipping package: exceeds size limit 32072517>=10485760
+[2024-06-02 22:18:46] INFO root fetch - main [MainThread]: End processing [rfmix-reader] error
+[2024-06-02 22:18:46] INFO root fetch - main [MainThread]: Store serial: [23492811]
