@@ -20935,3 +20935,38 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 23:27:46] INFO root fetch - processPackages [py4web]: Remove: archive file [/home/abi/fetcher/tmp/py4web-1.20240602.1.tar.gz]
 [2024-06-02 23:27:46] INFO root fetch - main [MainThread]: End processing [py4web]: success
 [2024-06-02 23:27:46] INFO root fetch - main [MainThread]: Store serial: [23493947]
+[2024-06-02 23:29:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23493947]
+[2024-06-02 23:29:56] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-02 23:29:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: redditharbor
+[2024-06-02 23:29:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: silvermirror
+[2024-06-02 23:29:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: vital-ai-haley-kg
+[2024-06-02 23:29:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ScopeSim
+[2024-06-02 23:29:56] INFO root fetch - processPackages [silvermirror]: New version: [0.5.1] Old Version: [0.5]
+[2024-06-02 23:29:56] INFO root fetch - processPackages [silvermirror]: Downloading https://files.pythonhosted.org/packages/a0/c2/4870c158c9ea0e12625fe81310fa53ffe8ef413a000c8f828b38b2dc5607/silvermirror-0.5.tar.gz
+[2024-06-02 23:29:56] INFO root fetch - processPackages [vital-ai-haley-kg]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-06-02 23:29:56] INFO root fetch - processPackages [redditharbor]: New version: [0.2.4] Old Version: [0.2.3]
+[2024-06-02 23:29:56] INFO root fetch - processPackages [ScopeSim]: New version: [0.8.3] Old Version: [0.8.2]
+[2024-06-02 23:29:56] INFO root fetch - processPackages [vital-ai-haley-kg]: Downloading https://files.pythonhosted.org/packages/8c/a6/7d26ed15ae5701d0bd0ebbcf80deb1225c8d25622ded8e3b7c6a8b74e6e4/vital-ai-haley-kg-0.1.8.tar.gz
+[2024-06-02 23:29:56] INFO root fetch - processPackages [redditharbor]: Downloading https://files.pythonhosted.org/packages/0b/c9/4ae85658e7ada8393b588137bb4eebdde3d87ff0c2af5471f66a7ae638c0/redditharbor-0.2.3.tar.gz
+[2024-06-02 23:29:56] INFO root fetch - processPackages [ScopeSim]: Downloading https://files.pythonhosted.org/packages/12/54/c3ba150eb6b944e36ece0c88e896ebfd090389261bc61cb11256c621a356/scopesim-0.8.2.tar.gz
+[2024-06-02 23:29:56] INFO root fetch - processPackages [silvermirror]: Downloading https://files.pythonhosted.org/packages/4e/20/fd10ddeb94b2fb1803d741a0067d0fb4010597aa542d620dfcd50831fa53/silvermirror-0.5.1.tar.gz
+[2024-06-02 23:29:57] INFO root fetch - processPackages [silvermirror]: executing diffoscope
+[2024-06-02 23:29:57] INFO root fetch - processPackages [silvermirror]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/silvermirror-0.5.tar.gz tmp/silvermirror-0.5.1.tar.gz --markdown 20240602/s/silvermirror/0.5-0.5.1/README.md --exclude *.pyd
+[2024-06-02 23:29:57] INFO root fetch - processPackages [redditharbor]: Downloading https://files.pythonhosted.org/packages/95/e8/6eb84264413a656e3518c99af7eac0b016030886d9261321c2aa720d43b3/redditharbor-0.2.4.tar.gz
+[2024-06-02 23:29:57] INFO root fetch - processPackages [vital-ai-haley-kg]: Downloading https://files.pythonhosted.org/packages/2a/6b/7ad615bf18070df07b5327a0b41b5dfbf326b34e13545ec02bec5e6b2760/vital-ai-haley-kg-0.1.9.tar.gz
+[2024-06-02 23:29:57] INFO root fetch - processPackages [redditharbor]: executing diffoscope
+[2024-06-02 23:29:57] INFO root fetch - processPackages [redditharbor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/redditharbor-0.2.3.tar.gz tmp/redditharbor-0.2.4.tar.gz --markdown 20240602/r/redditharbor/0.2.3-0.2.4/README.md --exclude *.pyd
+[2024-06-02 23:29:57] INFO root fetch - processPackages [vital-ai-haley-kg]: executing diffoscope
+[2024-06-02 23:29:57] INFO root fetch - processPackages [vital-ai-haley-kg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vital-ai-haley-kg-0.1.8.tar.gz tmp/vital-ai-haley-kg-0.1.9.tar.gz --markdown 20240602/v/vital-ai-haley-kg/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-06-02 23:29:57] WARNING root fetch - processPackages [ScopeSim]: Skipping package: exceeds size limit 17555797>=10485760
+[2024-06-02 23:29:57] INFO root fetch - main [MainThread]: End processing [ScopeSim] error
+[2024-06-02 23:29:57] INFO root fetch - processPackages [silvermirror]: Remove: archive file [/home/abi/fetcher/tmp/silvermirror-0.5.tar.gz]
+[2024-06-02 23:29:57] INFO root fetch - processPackages [silvermirror]: Remove: archive file [/home/abi/fetcher/tmp/silvermirror-0.5.1.tar.gz]
+[2024-06-02 23:29:57] INFO root fetch - main [MainThread]: End processing [silvermirror]: success
+[2024-06-02 23:29:57] INFO root fetch - processPackages [redditharbor]: Remove: archive file [/home/abi/fetcher/tmp/redditharbor-0.2.3.tar.gz]
+[2024-06-02 23:29:57] INFO root fetch - processPackages [redditharbor]: Remove: archive file [/home/abi/fetcher/tmp/redditharbor-0.2.4.tar.gz]
+[2024-06-02 23:29:57] INFO root fetch - main [MainThread]: End processing [redditharbor]: success
+[2024-06-02 23:29:58] INFO root fetch - processPackages [vital-ai-haley-kg]: Remove: archive file [/home/abi/fetcher/tmp/vital-ai-haley-kg-0.1.8.tar.gz]
+[2024-06-02 23:29:58] INFO root fetch - processPackages [vital-ai-haley-kg]: Remove: archive file [/home/abi/fetcher/tmp/vital-ai-haley-kg-0.1.9.tar.gz]
+[2024-06-02 23:29:58] INFO root fetch - main [MainThread]: End processing [vital-ai-haley-kg]: success
+[2024-06-02 23:29:58] INFO root fetch - main [MainThread]: Store serial: [23493956]
