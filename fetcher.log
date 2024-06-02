@@ -4533,3 +4533,15 @@
 [2024-06-02 07:40:38] INFO root fetch - processPackages [pycardano]: Remove: archive file [/home/abi/fetcher/tmp/pycardano-0.9.0.tar.gz]
 [2024-06-02 07:40:38] INFO root fetch - main [MainThread]: End processing [pycardano]: success
 [2024-06-02 07:40:38] INFO root fetch - main [MainThread]: Store serial: [23486491]
+[2024-06-02 07:42:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23486491]
+[2024-06-02 07:42:47] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-02 07:42:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: shgpt
+[2024-06-02 07:42:47] INFO root fetch - processPackages [shgpt]: New version: [0.3.1] Old Version: [0.3.0]
+[2024-06-02 07:42:48] INFO root fetch - processPackages [shgpt]: Downloading https://files.pythonhosted.org/packages/e9/5b/6ccafa300a4ed38807a699acf5a91a84ed8d8aa3f72b504ad974bafe0776/shgpt-0.3.0.tar.gz
+[2024-06-02 07:42:48] INFO root fetch - processPackages [shgpt]: Downloading https://files.pythonhosted.org/packages/50/d5/7fe09f718c63f683bd4ac740b60db916300e95ed4f23ee7a89e5c3f98617/shgpt-0.3.1.tar.gz
+[2024-06-02 07:42:48] INFO root fetch - processPackages [shgpt]: executing diffoscope
+[2024-06-02 07:42:48] INFO root fetch - processPackages [shgpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shgpt-0.3.0.tar.gz tmp/shgpt-0.3.1.tar.gz --markdown 20240602/s/shgpt/0.3.0-0.3.1/README.md --exclude *.pyd
+[2024-06-02 07:42:49] INFO root fetch - processPackages [shgpt]: Remove: archive file [/home/abi/fetcher/tmp/shgpt-0.3.0.tar.gz]
+[2024-06-02 07:42:49] INFO root fetch - processPackages [shgpt]: Remove: archive file [/home/abi/fetcher/tmp/shgpt-0.3.1.tar.gz]
+[2024-06-02 07:42:49] INFO root fetch - main [MainThread]: End processing [shgpt]: success
+[2024-06-02 07:42:49] INFO root fetch - main [MainThread]: Store serial: [23486496]
