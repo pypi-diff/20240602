@@ -8699,3 +8699,20 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-02 13:44:44] INFO root fetch - processPackages [semchunk]: Remove: archive file [/home/abi/fetcher/tmp/semchunk-1.0.0.tar.gz]
 [2024-06-02 13:44:44] INFO root fetch - main [MainThread]: End processing [semchunk]: success
 [2024-06-02 13:44:44] INFO root fetch - main [MainThread]: Store serial: [23488498]
+[2024-06-02 13:46:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23488498]
+[2024-06-02 13:46:52] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-02 13:46:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: endi
+[2024-06-02 13:46:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: network-diffusion
+[2024-06-02 13:46:52] INFO root fetch - processPackages [endi]: New version: [2024.2.5] Old Version: [2024.2.4]
+[2024-06-02 13:46:52] INFO root fetch - processPackages [network-diffusion]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-06-02 13:46:52] INFO root fetch - processPackages [endi]: Downloading https://files.pythonhosted.org/packages/99/dc/1c4dca49050aaaf1aa57738b032414ccd4e8003fd658eae9065c5ed7e3c0/endi-2024.2.4.tar.gz
+[2024-06-02 13:46:52] INFO root fetch - processPackages [network-diffusion]: Downloading https://files.pythonhosted.org/packages/31/07/8b415bbd0cce5d8c54f10ca2e9441fdbff6d9e3ce91e58f44843f41d2335/network_diffusion-0.8.0.tar.gz
+[2024-06-02 13:46:53] WARNING root fetch - processPackages [endi]: Skipping package: exceeds size limit 12473873>=10485760
+[2024-06-02 13:46:53] INFO root fetch - main [MainThread]: End processing [endi] error
+[2024-06-02 13:46:53] INFO root fetch - processPackages [network-diffusion]: Downloading https://files.pythonhosted.org/packages/81/1a/b6692ce2d9c366a1672e75b7adbd512df91035714fadccd1a9f35515bd8e/network_diffusion-0.9.0.tar.gz
+[2024-06-02 13:46:53] INFO root fetch - processPackages [network-diffusion]: executing diffoscope
+[2024-06-02 13:46:53] INFO root fetch - processPackages [network-diffusion]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/network_diffusion-0.8.0.tar.gz tmp/network_diffusion-0.9.0.tar.gz --markdown 20240602/n/network-diffusion/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-06-02 13:46:54] INFO root fetch - processPackages [network-diffusion]: Remove: archive file [/home/abi/fetcher/tmp/network_diffusion-0.8.0.tar.gz]
+[2024-06-02 13:46:54] INFO root fetch - processPackages [network-diffusion]: Remove: archive file [/home/abi/fetcher/tmp/network_diffusion-0.9.0.tar.gz]
+[2024-06-02 13:46:54] INFO root fetch - main [MainThread]: End processing [network-diffusion]: success
+[2024-06-02 13:46:54] INFO root fetch - main [MainThread]: Store serial: [23488504]
