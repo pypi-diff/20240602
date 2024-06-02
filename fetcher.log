@@ -2774,3 +2774,20 @@
 [2024-06-02 03:47:33] INFO root fetch - processPackages [certifi]: Remove: archive file [/home/abi/fetcher/tmp/certifi-2024.2.2.tar.gz]
 [2024-06-02 03:47:33] INFO root fetch - main [MainThread]: End processing [certifi]: success
 [2024-06-02 03:47:33] INFO root fetch - main [MainThread]: Store serial: [23485550]
+[2024-06-02 03:49:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23485550]
+[2024-06-02 03:49:42] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-02 03:49:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ovos-core
+[2024-06-02 03:49:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kvalchemy
+[2024-06-02 03:49:42] INFO root fetch - processPackages [kvalchemy]: New version: [0.2.2] Old Version: [0.2.1]
+[2024-06-02 03:49:43] INFO root fetch - processPackages [ovos-core]: New version: [0.0.8a99] Old Version: [0.0.8a98]
+[2024-06-02 03:49:43] INFO root fetch - processPackages [kvalchemy]: Downloading https://files.pythonhosted.org/packages/50/aa/4c1d4f48cbc7a7f3d5d805c75e177c47c22162a9033e8bda2a971adb03f0/kvalchemy-0.2.1.tar.gz
+[2024-06-02 03:49:43] INFO root fetch - processPackages [ovos-core]: Downloading https://files.pythonhosted.org/packages/43/09/2b998a2fbb4c473f88a1adb0b7d511b133aff775b19c15441b76d479f339/ovos_core-0.0.8a98-py3-none-any.whl
+[2024-06-02 03:49:43] WARNING root fetch - processPackages [ovos-core]: Skipping package: exceeds size limit 18555543>=10485760
+[2024-06-02 03:49:43] INFO root fetch - main [MainThread]: End processing [ovos-core] error
+[2024-06-02 03:49:43] INFO root fetch - processPackages [kvalchemy]: Downloading https://files.pythonhosted.org/packages/18/d9/7c1a97767bb15954e7e9f27bd1335c5d48a43777df51f34761ee3b08699f/kvalchemy-0.2.2.tar.gz
+[2024-06-02 03:49:43] INFO root fetch - processPackages [kvalchemy]: executing diffoscope
+[2024-06-02 03:49:43] INFO root fetch - processPackages [kvalchemy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kvalchemy-0.2.1.tar.gz tmp/kvalchemy-0.2.2.tar.gz --markdown 20240602/k/kvalchemy/0.2.1-0.2.2/README.md --exclude *.pyd
+[2024-06-02 03:49:44] INFO root fetch - processPackages [kvalchemy]: Remove: archive file [/home/abi/fetcher/tmp/kvalchemy-0.2.1.tar.gz]
+[2024-06-02 03:49:44] INFO root fetch - processPackages [kvalchemy]: Remove: archive file [/home/abi/fetcher/tmp/kvalchemy-0.2.2.tar.gz]
+[2024-06-02 03:49:44] INFO root fetch - main [MainThread]: End processing [kvalchemy]: success
+[2024-06-02 03:49:44] INFO root fetch - main [MainThread]: Store serial: [23485555]
