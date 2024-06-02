@@ -1620,3 +1620,24 @@
 [2024-06-02 02:05:17] INFO root fetch - processPackages [mct-nightly]: Remove: archive file [/home/abi/fetcher/tmp/mct-nightly-2.1.0.20240601.434.tar.gz]
 [2024-06-02 02:05:17] INFO root fetch - main [MainThread]: End processing [mct-nightly]: success
 [2024-06-02 02:05:17] INFO root fetch - main [MainThread]: Store serial: [23484804]
+[2024-06-02 02:07:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23484804]
+[2024-06-02 02:07:25] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-02 02:07:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyExploitDb
+[2024-06-02 02:07:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: jaxutils-nightly
+[2024-06-02 02:07:26] INFO root fetch - processPackages [jaxutils-nightly]: New version: [0.0.8.dev20240601] Old Version: [0.0.8.dev20240531]
+[2024-06-02 02:07:26] INFO root fetch - processPackages [pyExploitDb]: New version: [0.2.9] Old Version: [0.2.6]
+[2024-06-02 02:07:26] INFO root fetch - processPackages [jaxutils-nightly]: Downloading https://files.pythonhosted.org/packages/6d/1d/23d369b20f7116a4cca16cf11d416348c792643e68e2cd966761436b2226/jaxutils-nightly-0.0.8.dev20240531.tar.gz
+[2024-06-02 02:07:26] INFO root fetch - processPackages [pyExploitDb]: Downloading https://files.pythonhosted.org/packages/db/f7/0a8a973ebf516134ee9f275887bb4bb1e53a0c4bfe9d08ef50c8a91f5685/pyExploitDb-0.2.6.tar.gz
+[2024-06-02 02:07:26] INFO root fetch - processPackages [jaxutils-nightly]: Downloading https://files.pythonhosted.org/packages/53/f3/6400c550891a6b85ab1c5a62d79ea09f580269edb271ef09b4d23530a3ac/jaxutils-nightly-0.0.8.dev20240601.tar.gz
+[2024-06-02 02:07:26] INFO root fetch - processPackages [jaxutils-nightly]: executing diffoscope
+[2024-06-02 02:07:26] INFO root fetch - processPackages [jaxutils-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jaxutils-nightly-0.0.8.dev20240531.tar.gz tmp/jaxutils-nightly-0.0.8.dev20240601.tar.gz --markdown 20240602/j/jaxutils-nightly/0.0.8.dev20240531-0.0.8.dev20240601/README.md --exclude *.pyd
+[2024-06-02 02:07:26] INFO root fetch - processPackages [pyExploitDb]: Downloading https://files.pythonhosted.org/packages/9c/eb/b8dfdf3b6b5313c0c99c1d10134a1ec6bf2af38cc490c82550e859fba37f/pyExploitDb-0.2.9.tar.gz
+[2024-06-02 02:07:26] INFO root fetch - processPackages [pyExploitDb]: executing diffoscope
+[2024-06-02 02:07:26] INFO root fetch - processPackages [pyExploitDb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyExploitDb-0.2.6.tar.gz tmp/pyExploitDb-0.2.9.tar.gz --markdown 20240602/p/pyExploitDb/0.2.6-0.2.9/README.md --exclude *.pyd
+[2024-06-02 02:07:27] INFO root fetch - processPackages [jaxutils-nightly]: Remove: archive file [/home/abi/fetcher/tmp/jaxutils-nightly-0.0.8.dev20240531.tar.gz]
+[2024-06-02 02:07:27] INFO root fetch - processPackages [jaxutils-nightly]: Remove: archive file [/home/abi/fetcher/tmp/jaxutils-nightly-0.0.8.dev20240601.tar.gz]
+[2024-06-02 02:07:27] INFO root fetch - main [MainThread]: End processing [jaxutils-nightly]: success
+[2024-06-02 02:07:28] INFO root fetch - processPackages [pyExploitDb]: Remove: archive file [/home/abi/fetcher/tmp/pyExploitDb-0.2.6.tar.gz]
+[2024-06-02 02:07:28] INFO root fetch - processPackages [pyExploitDb]: Remove: archive file [/home/abi/fetcher/tmp/pyExploitDb-0.2.9.tar.gz]
+[2024-06-02 02:07:28] INFO root fetch - main [MainThread]: End processing [pyExploitDb]: success
+[2024-06-02 02:07:28] INFO root fetch - main [MainThread]: Store serial: [23484818]
