@@ -9891,3 +9891,31 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-02 15:00:21] INFO root fetch - processPackages [Geode-Background]: Remove: archive file [/home/abi/fetcher/tmp/Geode_Background-7.9.9rc1-cp39-cp39-win_amd64.whl.zip]
 [2024-06-02 15:00:21] INFO root fetch - main [MainThread]: End processing [Geode-Background]: success
 [2024-06-02 15:00:21] INFO root fetch - main [MainThread]: Store serial: [23489100]
+[2024-06-02 15:02:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23489100]
+[2024-06-02 15:02:36] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-02 15:02:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mteb
+[2024-06-02 15:02:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fastapi_errors
+[2024-06-02 15:02:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fastapi_errors
+[2024-06-02 15:02:37] INFO root fetch - processPackages [fastapi_errors]: New version: [0.0.4] Old Version: [0.0.2]
+[2024-06-02 15:02:37] INFO root fetch - processPackages [fastapi_errors]: New version: [0.0.4] Old Version: [0.0.2]
+[2024-06-02 15:02:37] INFO root fetch - processPackages [fastapi_errors]: Downloading https://files.pythonhosted.org/packages/74/9c/d988f66b968a48a0537395e77d8b8fe7937aa4fc0c66c1eeb3faa13c2a8d/fastapi_errors-0.0.2.tar.gz
+[2024-06-02 15:02:37] INFO root fetch - processPackages [fastapi_errors]: Downloading https://files.pythonhosted.org/packages/74/9c/d988f66b968a48a0537395e77d8b8fe7937aa4fc0c66c1eeb3faa13c2a8d/fastapi_errors-0.0.2.tar.gz
+[2024-06-02 15:02:37] INFO root fetch - processPackages [mteb]: New version: [1.9.3] Old Version: [1.9.2]
+[2024-06-02 15:02:37] INFO root fetch - processPackages [mteb]: Downloading https://files.pythonhosted.org/packages/aa/99/be58df74a89833b5d44fbd8f00e5c99b4ca82aa67a9c1487fd782328d3b5/mteb-1.9.2.tar.gz
+[2024-06-02 15:02:37] INFO root fetch - processPackages [fastapi_errors]: Downloading https://files.pythonhosted.org/packages/58/c8/45b00a605a0d67a5ad9b68c443c1ab9536b2f6c186357ad1542b45a27058/fastapi_errors-0.0.4.tar.gz
+[2024-06-02 15:02:37] INFO root fetch - processPackages [fastapi_errors]: Downloading https://files.pythonhosted.org/packages/58/c8/45b00a605a0d67a5ad9b68c443c1ab9536b2f6c186357ad1542b45a27058/fastapi_errors-0.0.4.tar.gz
+[2024-06-02 15:02:37] INFO root fetch - processPackages [mteb]: Downloading https://files.pythonhosted.org/packages/1a/05/483a4778dcfb42b672c3c28ac435e64d386b1df507d3c0059e5da9194653/mteb-1.9.3.tar.gz
+[2024-06-02 15:02:37] INFO root fetch - processPackages [fastapi_errors]: executing diffoscope
+[2024-06-02 15:02:37] INFO root fetch - processPackages [fastapi_errors]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastapi_errors-0.0.2.tar.gz tmp/fastapi_errors-0.0.4.tar.gz --markdown 20240602/f/fastapi_errors/0.0.2-0.0.4/README.md --exclude *.pyd
+[2024-06-02 15:02:37] INFO root fetch - processPackages [fastapi_errors]: executing diffoscope
+[2024-06-02 15:02:37] INFO root fetch - processPackages [fastapi_errors]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastapi_errors-0.0.2.tar.gz tmp/fastapi_errors-0.0.4.tar.gz --markdown 20240602/f/fastapi_errors/0.0.2-0.0.4/README.md --exclude *.pyd
+[2024-06-02 15:02:37] INFO root fetch - processPackages [mteb]: executing diffoscope
+[2024-06-02 15:02:37] INFO root fetch - processPackages [mteb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mteb-1.9.2.tar.gz tmp/mteb-1.9.3.tar.gz --markdown 20240602/m/mteb/1.9.2-1.9.3/README.md --exclude *.pyd
+[2024-06-02 15:02:38] INFO root fetch - processPackages [fastapi_errors]: Remove: archive file [/home/abi/fetcher/tmp/fastapi_errors-0.0.2.tar.gz]
+[2024-06-02 15:02:38] INFO root fetch - processPackages [fastapi_errors]: Remove: archive file [/home/abi/fetcher/tmp/fastapi_errors-0.0.4.tar.gz]
+[2024-06-02 15:02:38] INFO root fetch - main [MainThread]: End processing [fastapi_errors]: success
+[2024-06-02 15:02:38] INFO root fetch - main [MainThread]: End processing [fastapi_errors]: success
+[2024-06-02 15:02:40] INFO root fetch - processPackages [mteb]: Remove: archive file [/home/abi/fetcher/tmp/mteb-1.9.2.tar.gz]
+[2024-06-02 15:02:40] INFO root fetch - processPackages [mteb]: Remove: archive file [/home/abi/fetcher/tmp/mteb-1.9.3.tar.gz]
+[2024-06-02 15:02:40] INFO root fetch - main [MainThread]: End processing [mteb]: success
+[2024-06-02 15:02:40] INFO root fetch - main [MainThread]: Store serial: [23489113]
