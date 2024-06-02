@@ -3760,3 +3760,9 @@
 [2024-06-02 06:14:10] INFO root fetch - processPackages [codal-tsetmc]: Remove: archive file [/home/abi/fetcher/tmp/codal_tsetmc-0.0.9.tar.gz]
 [2024-06-02 06:14:10] INFO root fetch - main [MainThread]: End processing [codal-tsetmc]: success
 [2024-06-02 06:14:10] INFO root fetch - main [MainThread]: Store serial: [23486014]
+[2024-06-02 06:16:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23486014]
+[2024-06-02 06:16:18] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-02 06:16:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: DigiKala
+[2024-06-02 06:16:18] WARNING root fetch - processPackages [DigiKala]: Skipping, unable to determine old version
+[2024-06-02 06:16:18] INFO root fetch - main [MainThread]: End processing [DigiKala] error
+[2024-06-02 06:16:18] INFO root fetch - main [MainThread]: Store serial: [23486019]
