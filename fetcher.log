@@ -3303,3 +3303,24 @@
 [2024-06-02 04:56:47] INFO root fetch - processPackages [torrey]: Remove: archive file [/home/abi/fetcher/tmp/torrey-3.2.2.dev20240602022838.tar.gz]
 [2024-06-02 04:56:47] INFO root fetch - main [MainThread]: End processing [torrey]: success
 [2024-06-02 04:56:47] INFO root fetch - main [MainThread]: Store serial: [23485765]
+[2024-06-02 04:58:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23485765]
+[2024-06-02 04:58:55] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-02 04:58:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: np-config
+[2024-06-02 04:58:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: joyrl
+[2024-06-02 04:58:55] INFO root fetch - processPackages [joyrl]: New version: [0.6.1.2] Old Version: [0.6.1.1]
+[2024-06-02 04:58:55] INFO root fetch - processPackages [joyrl]: Downloading https://files.pythonhosted.org/packages/f8/d0/1cbf994e773e086bd0b7d85b767211e94db63d9ea74b78ef8df7fa8bdebd/joyrl-0.6.1.1.tar.gz
+[2024-06-02 04:58:55] INFO root fetch - processPackages [np-config]: New version: [0.4.9] Old Version: [0.4.8]
+[2024-06-02 04:58:56] INFO root fetch - processPackages [np-config]: Downloading https://files.pythonhosted.org/packages/cd/1a/5ff99b43b8944c29cb529150ef6045ff9a638cc6180695973aa31e292527/np_config-0.4.8.tar.gz
+[2024-06-02 04:58:56] INFO root fetch - processPackages [joyrl]: Downloading https://files.pythonhosted.org/packages/31/7c/5f5ed5959b12bc8a91dc5600d49d79992d8928d1f4231f3b2a89d5802050/joyrl-0.6.1.2.tar.gz
+[2024-06-02 04:58:56] INFO root fetch - processPackages [joyrl]: executing diffoscope
+[2024-06-02 04:58:56] INFO root fetch - processPackages [joyrl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/joyrl-0.6.1.1.tar.gz tmp/joyrl-0.6.1.2.tar.gz --markdown 20240602/j/joyrl/0.6.1.1-0.6.1.2/README.md --exclude *.pyd
+[2024-06-02 04:58:56] INFO root fetch - processPackages [np-config]: Downloading https://files.pythonhosted.org/packages/81/10/77d3e96f9107386cc98f38ae1785c9ddf708cff40eb0b588bda92d83af9d/np_config-0.4.9.tar.gz
+[2024-06-02 04:58:56] INFO root fetch - processPackages [np-config]: executing diffoscope
+[2024-06-02 04:58:56] INFO root fetch - processPackages [np-config]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/np_config-0.4.8.tar.gz tmp/np_config-0.4.9.tar.gz --markdown 20240602/n/np-config/0.4.8-0.4.9/README.md --exclude *.pyd
+[2024-06-02 04:58:56] INFO root fetch - processPackages [np-config]: Remove: archive file [/home/abi/fetcher/tmp/np_config-0.4.8.tar.gz]
+[2024-06-02 04:58:56] INFO root fetch - processPackages [np-config]: Remove: archive file [/home/abi/fetcher/tmp/np_config-0.4.9.tar.gz]
+[2024-06-02 04:58:56] INFO root fetch - main [MainThread]: End processing [np-config]: success
+[2024-06-02 04:58:57] INFO root fetch - processPackages [joyrl]: Remove: archive file [/home/abi/fetcher/tmp/joyrl-0.6.1.1.tar.gz]
+[2024-06-02 04:58:57] INFO root fetch - processPackages [joyrl]: Remove: archive file [/home/abi/fetcher/tmp/joyrl-0.6.1.2.tar.gz]
+[2024-06-02 04:58:57] INFO root fetch - main [MainThread]: End processing [joyrl]: success
+[2024-06-02 04:58:57] INFO root fetch - main [MainThread]: Store serial: [23485772]
