@@ -17610,3 +17610,44 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 22:06:20] INFO root fetch - processPackages [neural-cherche]: Remove: archive file [/home/abi/fetcher/tmp/neural_cherche-1.4.1.tar.gz]
 [2024-06-02 22:06:20] INFO root fetch - main [MainThread]: End processing [neural-cherche]: success
 [2024-06-02 22:06:20] INFO root fetch - main [MainThread]: Store serial: [23492723]
+[2024-06-02 22:08:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23492723]
+[2024-06-02 22:08:29] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-06-02 22:08:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: medicraft
+[2024-06-02 22:08:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gmx-python-sdk
+[2024-06-02 22:08:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aim-ui
+[2024-06-02 22:08:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: harsha-hello-world
+[2024-06-02 22:08:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: copilothistoryexporter
+[2024-06-02 22:08:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: foo-et-al-parameterization
+[2024-06-02 22:08:29] WARNING root fetch - processPackages [medicraft]: Skipping, unable to determine old version
+[2024-06-02 22:08:29] INFO root fetch - main [MainThread]: End processing [medicraft] error
+[2024-06-02 22:08:29] INFO root fetch - processPackages [copilothistoryexporter]: New version: [1.0.3.2] Old Version: [1.0.3.1]
+[2024-06-02 22:08:29] INFO root fetch - processPackages [foo-et-al-parameterization]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-06-02 22:08:29] INFO root fetch - processPackages [aim-ui]: New version: [4.1.0.dev20230930] Old Version: [4.1.0.dev20230929]
+[2024-06-02 22:08:29] INFO root fetch - processPackages [foo-et-al-parameterization]: Downloading https://files.pythonhosted.org/packages/06/66/1f3e5c5bd96aec691985fa87b8a7ea71386845d34bc26585681b466b610c/foo_et_al_parameterization-0.0.5.tar.gz
+[2024-06-02 22:08:29] INFO root fetch - processPackages [copilothistoryexporter]: Downloading https://files.pythonhosted.org/packages/a9/c7/f4a748945e70470352040a3cb692a6f9450fcc1845840aed3c7de6e1de23/copilothistoryexporter-1.0.3.1.tar.gz
+[2024-06-02 22:08:29] INFO root fetch - processPackages [gmx-python-sdk]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-06-02 22:08:29] WARNING root fetch - processPackages [harsha-hello-world]: Skipping, unable to determine old version
+[2024-06-02 22:08:29] INFO root fetch - main [MainThread]: End processing [harsha-hello-world] error
+[2024-06-02 22:08:29] INFO root fetch - processPackages [aim-ui]: Downloading https://files.pythonhosted.org/packages/2a/05/f8c2e155a815903b692d80c9a1647ba25d4a1f119791eaeb671026bcfa33/aim-ui-4.1.0.dev20230929.tar.gz
+[2024-06-02 22:08:29] WARNING root fetch - processPackages [aim-ui]: Skipping package: exceeds size limit 19246573>=10485760
+[2024-06-02 22:08:29] INFO root fetch - main [MainThread]: End processing [aim-ui] error
+[2024-06-02 22:08:29] INFO root fetch - processPackages [gmx-python-sdk]: Downloading https://files.pythonhosted.org/packages/0b/ce/3cecb7eba519ba742b0c78919f407854f787ac4f8eb034c4ba7e6b534760/gmx_python_sdk-0.0.4.tar.gz
+[2024-06-02 22:08:29] INFO root fetch - processPackages [copilothistoryexporter]: Downloading https://files.pythonhosted.org/packages/a0/af/b57cea43d5e485dafa2e8f9722b2a0ba4e9fbab64c2850dcd39e1c6fcd33/copilothistoryexporter-1.0.3.2.tar.gz
+[2024-06-02 22:08:29] INFO root fetch - processPackages [foo-et-al-parameterization]: Downloading https://files.pythonhosted.org/packages/fb/a6/73ed87e98ba9ea86c616fe2c41c8e9ed78f14469c56ce4ae540b0fdff7c9/foo_et_al_parameterization-0.0.6.tar.gz
+[2024-06-02 22:08:29] INFO root fetch - processPackages [copilothistoryexporter]: executing diffoscope
+[2024-06-02 22:08:29] INFO root fetch - processPackages [copilothistoryexporter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/copilothistoryexporter-1.0.3.1.tar.gz tmp/copilothistoryexporter-1.0.3.2.tar.gz --markdown 20240602/c/copilothistoryexporter/1.0.3.1-1.0.3.2/README.md --exclude *.pyd
+[2024-06-02 22:08:30] INFO root fetch - processPackages [foo-et-al-parameterization]: executing diffoscope
+[2024-06-02 22:08:30] INFO root fetch - processPackages [foo-et-al-parameterization]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/foo_et_al_parameterization-0.0.5.tar.gz tmp/foo_et_al_parameterization-0.0.6.tar.gz --markdown 20240602/f/foo-et-al-parameterization/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-06-02 22:08:30] INFO root fetch - processPackages [gmx-python-sdk]: Downloading https://files.pythonhosted.org/packages/3a/da/a30c931fa8b296d1abe2f10a87958f11fc53615236bb56a2a4cf53e8c3bf/gmx_python_sdk-0.0.5.tar.gz
+[2024-06-02 22:08:30] INFO root fetch - processPackages [gmx-python-sdk]: executing diffoscope
+[2024-06-02 22:08:30] INFO root fetch - processPackages [gmx-python-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gmx_python_sdk-0.0.4.tar.gz tmp/gmx_python_sdk-0.0.5.tar.gz --markdown 20240602/g/gmx-python-sdk/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-06-02 22:08:30] INFO root fetch - processPackages [copilothistoryexporter]: Remove: archive file [/home/abi/fetcher/tmp/copilothistoryexporter-1.0.3.1.tar.gz]
+[2024-06-02 22:08:30] INFO root fetch - processPackages [copilothistoryexporter]: Remove: archive file [/home/abi/fetcher/tmp/copilothistoryexporter-1.0.3.2.tar.gz]
+[2024-06-02 22:08:30] INFO root fetch - main [MainThread]: End processing [copilothistoryexporter]: success
+[2024-06-02 22:08:30] INFO root fetch - processPackages [foo-et-al-parameterization]: Remove: archive file [/home/abi/fetcher/tmp/foo_et_al_parameterization-0.0.5.tar.gz]
+[2024-06-02 22:08:30] INFO root fetch - processPackages [foo-et-al-parameterization]: Remove: archive file [/home/abi/fetcher/tmp/foo_et_al_parameterization-0.0.6.tar.gz]
+[2024-06-02 22:08:30] INFO root fetch - main [MainThread]: End processing [foo-et-al-parameterization]: success
+[2024-06-02 22:08:30] INFO root fetch - processPackages [gmx-python-sdk]: Remove: archive file [/home/abi/fetcher/tmp/gmx_python_sdk-0.0.4.tar.gz]
+[2024-06-02 22:08:30] INFO root fetch - processPackages [gmx-python-sdk]: Remove: archive file [/home/abi/fetcher/tmp/gmx_python_sdk-0.0.5.tar.gz]
+[2024-06-02 22:08:30] INFO root fetch - main [MainThread]: End processing [gmx-python-sdk]: success
+[2024-06-02 22:08:30] INFO root fetch - main [MainThread]: Store serial: [23492742]
