@@ -10796,3 +10796,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-02 16:14:15] INFO root fetch - processPackages [spanishconjugator]: Remove: archive file [/home/abi/fetcher/tmp/spanishconjugator-2.3.999.tar.gz]
 [2024-06-02 16:14:15] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
 [2024-06-02 16:14:15] INFO root fetch - main [MainThread]: Store serial: [23489532]
+[2024-06-02 16:16:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23489532]
+[2024-06-02 16:16:23] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-06-02 16:16:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: spanishconjugator
+[2024-06-02 16:16:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: protoc-polyglot
+[2024-06-02 16:16:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: boldigger2
+[2024-06-02 16:16:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: streamlit-avater
+[2024-06-02 16:16:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: novelai-api
+[2024-06-02 16:16:23] WARNING root fetch - processPackages [streamlit-avater]: Skipping, unable to determine old version
+[2024-06-02 16:16:23] INFO root fetch - main [MainThread]: End processing [streamlit-avater] error
+[2024-06-02 16:16:23] INFO root fetch - processPackages [protoc-polyglot]: New version: [0.0.1.post9] Old Version: [0.0.1.post8]
+[2024-06-02 16:16:23] INFO root fetch - processPackages [novelai-api]: New version: [0.9] Old Version: [0.8]
+[2024-06-02 16:16:23] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2024-06-02 16:16:24] INFO root fetch - processPackages [boldigger2]: New version: [1.0.3] Old Version: [1.0.2]
+[2024-06-02 16:16:24] INFO root fetch - processPackages [novelai-api]: Downloading https://files.pythonhosted.org/packages/fc/5f/4521adcc080f088c499ad70d5ea4d991b23f72661d4aa68a9112d0b3283e/novelai-api-0.8.tar.gz
+[2024-06-02 16:16:24] INFO root fetch - processPackages [protoc-polyglot]: Downloading https://files.pythonhosted.org/packages/e9/7b/373a68a962cdfb85f4bd76f6f4ea13ad3f2cfaca73bf0a9f70d0e7d34380/protoc_polyglot-0.0.1.post8.tar.gz
+[2024-06-02 16:16:24] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/1c/a2/a7226dfd48c2c6d3e52091175146891f40a2c1c7d20943e8e0560192be85/spanishconjugator-2.3.998.tar.gz
+[2024-06-02 16:16:24] INFO root fetch - processPackages [boldigger2]: Downloading https://files.pythonhosted.org/packages/3d/50/bf1f3f09f1f7294d68e4bcb78222af82e0284b4d87485089946a3c9a1c25/boldigger2-1.0.2.tar.gz
+[2024-06-02 16:16:24] INFO root fetch - processPackages [novelai-api]: Downloading https://files.pythonhosted.org/packages/69/ed/74960ad9154e8dc49c4d6c47cbc174dc97461bb9e5e113a548c167b72455/novelai-api-0.9.tar.gz
+[2024-06-02 16:16:24] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/38/b5/7c4b33d552653d08874337c2258ccc985f5f1bc589073e61d6e1ccff130e/spanishconjugator-2.3.999.tar.gz
+[2024-06-02 16:16:24] INFO root fetch - processPackages [protoc-polyglot]: Downloading https://files.pythonhosted.org/packages/01/80/bdadb218d1c3271c3a258316c3d5991f2676b54e6f358ac689f9495990f5/protoc_polyglot-0.0.1.post9.tar.gz
+[2024-06-02 16:16:24] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2024-06-02 16:16:24] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20240602/s/spanishconjugator/2.3.998-2.3.999/README.md --exclude *.pyd
+[2024-06-02 16:16:24] INFO root fetch - processPackages [protoc-polyglot]: executing diffoscope
+[2024-06-02 16:16:24] INFO root fetch - processPackages [protoc-polyglot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/protoc_polyglot-0.0.1.post8.tar.gz tmp/protoc_polyglot-0.0.1.post9.tar.gz --markdown 20240602/p/protoc-polyglot/0.0.1.post8-0.0.1.post9/README.md --exclude *.pyd
+[2024-06-02 16:16:24] INFO root fetch - processPackages [novelai-api]: executing diffoscope
+[2024-06-02 16:16:24] INFO root fetch - processPackages [novelai-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/novelai-api-0.8.tar.gz tmp/novelai-api-0.9.tar.gz --markdown 20240602/n/novelai-api/0.8-0.9/README.md --exclude *.pyd
+[2024-06-02 16:16:24] INFO root fetch - processPackages [boldigger2]: Downloading https://files.pythonhosted.org/packages/e9/34/8c3c881d36f5d41bed056623c3387c4efed1b51f50d76495de55de7b1134/boldigger2-1.0.3.tar.gz
+[2024-06-02 16:16:24] INFO root fetch - processPackages [boldigger2]: executing diffoscope
+[2024-06-02 16:16:24] INFO root fetch - processPackages [boldigger2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/boldigger2-1.0.2.tar.gz tmp/boldigger2-1.0.3.tar.gz --markdown 20240602/b/boldigger2/1.0.2-1.0.3/README.md --exclude *.pyd
+[2024-06-02 16:16:25] INFO root fetch - processPackages [protoc-polyglot]: Remove: archive file [/home/abi/fetcher/tmp/protoc_polyglot-0.0.1.post8.tar.gz]
+[2024-06-02 16:16:25] INFO root fetch - processPackages [protoc-polyglot]: Remove: archive file [/home/abi/fetcher/tmp/protoc_polyglot-0.0.1.post9.tar.gz]
+[2024-06-02 16:16:25] INFO root fetch - main [MainThread]: End processing [protoc-polyglot]: success
+[2024-06-02 16:16:25] INFO root fetch - processPackages [spanishconjugator]: Remove: archive file [/home/abi/fetcher/tmp/spanishconjugator-2.3.998.tar.gz]
+[2024-06-02 16:16:25] INFO root fetch - processPackages [spanishconjugator]: Remove: archive file [/home/abi/fetcher/tmp/spanishconjugator-2.3.999.tar.gz]
+[2024-06-02 16:16:25] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2024-06-02 16:16:25] INFO root fetch - processPackages [novelai-api]: Remove: archive file [/home/abi/fetcher/tmp/novelai-api-0.8.tar.gz]
+[2024-06-02 16:16:25] INFO root fetch - processPackages [novelai-api]: Remove: archive file [/home/abi/fetcher/tmp/novelai-api-0.9.tar.gz]
+[2024-06-02 16:16:25] INFO root fetch - main [MainThread]: End processing [novelai-api]: success
+[2024-06-02 16:16:25] INFO root fetch - processPackages [boldigger2]: Remove: archive file [/home/abi/fetcher/tmp/boldigger2-1.0.2.tar.gz]
+[2024-06-02 16:16:25] INFO root fetch - processPackages [boldigger2]: Remove: archive file [/home/abi/fetcher/tmp/boldigger2-1.0.3.tar.gz]
+[2024-06-02 16:16:25] INFO root fetch - main [MainThread]: End processing [boldigger2]: success
+[2024-06-02 16:16:25] INFO root fetch - main [MainThread]: Store serial: [23489548]
