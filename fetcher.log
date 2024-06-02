@@ -11497,3 +11497,42 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 16:53:34] INFO root fetch - processPackages [aimodelshare]: Remove: archive file [/home/abi/fetcher/tmp/aimodelshare-0.1.9.tar.gz]
 [2024-06-02 16:53:34] INFO root fetch - main [MainThread]: End processing [aimodelshare]: success
 [2024-06-02 16:53:34] INFO root fetch - main [MainThread]: Store serial: [23489791]
+[2024-06-02 16:55:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23489791]
+[2024-06-02 16:55:43] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-02 16:55:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: drf-cookie-jwtauth
+[2024-06-02 16:55:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: message-local
+[2024-06-02 16:55:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: diaspora-event-sdk
+[2024-06-02 16:55:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: Flask-QRcode
+[2024-06-02 16:55:43] INFO root fetch - processPackages [drf-cookie-jwtauth]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-06-02 16:55:43] INFO root fetch - processPackages [diaspora-event-sdk]: New version: [0.3.1] Old Version: [0.3.0]
+[2024-06-02 16:55:43] INFO root fetch - processPackages [drf-cookie-jwtauth]: Downloading https://files.pythonhosted.org/packages/da/3e/36de223a9127a7264608b54807281476af9baf431081a829fae75d3590b7/drf_cookie_jwtauth-0.0.3.tar.gz
+[2024-06-02 16:55:43] INFO root fetch - processPackages [Flask-QRcode]: New version: [3.2.0] Old Version: [3.1.0]
+[2024-06-02 16:55:43] INFO root fetch - processPackages [message-local]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-06-02 16:55:43] INFO root fetch - processPackages [diaspora-event-sdk]: Downloading https://files.pythonhosted.org/packages/a6/94/5a64ebbb782f5b21183ebc7226fce506e35193f4cec444139fdcec8c510c/diaspora-event-sdk-0.3.0.tar.gz
+[2024-06-02 16:55:43] INFO root fetch - processPackages [Flask-QRcode]: Downloading https://files.pythonhosted.org/packages/6f/2a/69e9ec20a6215ec5ea0c8346f65cd249537e3e72ce34414be61d39f9b83c/Flask-QRcode-3.1.0.tar.gz
+[2024-06-02 16:55:43] INFO root fetch - processPackages [message-local]: Downloading https://files.pythonhosted.org/packages/58/98/6002a91d9f0eb23b635ecf892333a787e13c1e810b92090bc53584aa2f18/message-local-0.0.98.tar.gz
+[2024-06-02 16:55:43] INFO root fetch - processPackages [drf-cookie-jwtauth]: Downloading https://files.pythonhosted.org/packages/8a/1d/49da8bdbe541310ad8b46b560be0cf002a51bbf208c27e13451075fd8b33/drf_cookie_jwtauth-0.0.4.tar.gz
+[2024-06-02 16:55:44] INFO root fetch - processPackages [drf-cookie-jwtauth]: executing diffoscope
+[2024-06-02 16:55:44] INFO root fetch - processPackages [drf-cookie-jwtauth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/drf_cookie_jwtauth-0.0.3.tar.gz tmp/drf_cookie_jwtauth-0.0.4.tar.gz --markdown 20240602/d/drf-cookie-jwtauth/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-06-02 16:55:44] INFO root fetch - processPackages [diaspora-event-sdk]: Downloading https://files.pythonhosted.org/packages/45/5d/a288842969a8426e5b6c9c5f6cfa70adc9a9c4e6a9c51493b693e488a085/diaspora-event-sdk-0.3.1.tar.gz
+[2024-06-02 16:55:44] INFO root fetch - processPackages [message-local]: Downloading https://files.pythonhosted.org/packages/78/17/d149670c7821186afe25a7b74020f68bd8db48497b170965d75952fbe2d8/message-local-0.0.99.tar.gz
+[2024-06-02 16:55:44] INFO root fetch - processPackages [diaspora-event-sdk]: executing diffoscope
+[2024-06-02 16:55:44] INFO root fetch - processPackages [diaspora-event-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/diaspora-event-sdk-0.3.0.tar.gz tmp/diaspora-event-sdk-0.3.1.tar.gz --markdown 20240602/d/diaspora-event-sdk/0.3.0-0.3.1/README.md --exclude *.pyd
+[2024-06-02 16:55:44] INFO root fetch - processPackages [Flask-QRcode]: Downloading https://files.pythonhosted.org/packages/06/6f/abfeb033c1d47bc10a56272f307388ddd93b5ffe147285b1b7dccc81af81/flask_qrcode-3.2.0.tar.gz
+[2024-06-02 16:55:44] INFO root fetch - processPackages [message-local]: executing diffoscope
+[2024-06-02 16:55:44] INFO root fetch - processPackages [message-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/message-local-0.0.98.tar.gz tmp/message-local-0.0.99.tar.gz --markdown 20240602/m/message-local/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-06-02 16:55:44] INFO root fetch - processPackages [Flask-QRcode]: executing diffoscope
+[2024-06-02 16:55:44] INFO root fetch - processPackages [Flask-QRcode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Flask-QRcode-3.1.0.tar.gz tmp/flask_qrcode-3.2.0.tar.gz --markdown 20240602/F/Flask-QRcode/3.1.0-3.2.0/README.md --exclude *.pyd
+[2024-06-02 16:55:44] INFO root fetch - processPackages [drf-cookie-jwtauth]: Remove: archive file [/home/abi/fetcher/tmp/drf_cookie_jwtauth-0.0.3.tar.gz]
+[2024-06-02 16:55:44] INFO root fetch - processPackages [drf-cookie-jwtauth]: Remove: archive file [/home/abi/fetcher/tmp/drf_cookie_jwtauth-0.0.4.tar.gz]
+[2024-06-02 16:55:44] INFO root fetch - main [MainThread]: End processing [drf-cookie-jwtauth]: success
+[2024-06-02 16:55:44] INFO root fetch - processPackages [message-local]: Remove: archive file [/home/abi/fetcher/tmp/message-local-0.0.98.tar.gz]
+[2024-06-02 16:55:44] INFO root fetch - processPackages [message-local]: Remove: archive file [/home/abi/fetcher/tmp/message-local-0.0.99.tar.gz]
+[2024-06-02 16:55:44] INFO root fetch - main [MainThread]: End processing [message-local]: success
+[2024-06-02 16:55:44] INFO root fetch - processPackages [diaspora-event-sdk]: Remove: archive file [/home/abi/fetcher/tmp/diaspora-event-sdk-0.3.0.tar.gz]
+[2024-06-02 16:55:44] INFO root fetch - processPackages [diaspora-event-sdk]: Remove: archive file [/home/abi/fetcher/tmp/diaspora-event-sdk-0.3.1.tar.gz]
+[2024-06-02 16:55:44] INFO root fetch - main [MainThread]: End processing [diaspora-event-sdk]: success
+[2024-06-02 16:55:45] INFO root fetch - processPackages [Flask-QRcode]: Remove: archive file [/home/abi/fetcher/tmp/Flask-QRcode-3.1.0.tar.gz]
+[2024-06-02 16:55:45] INFO root fetch - processPackages [Flask-QRcode]: Remove: archive file [/home/abi/fetcher/tmp/flask_qrcode-3.2.0.tar.gz]
+[2024-06-02 16:55:45] INFO root fetch - main [MainThread]: End processing [Flask-QRcode]: success
+[2024-06-02 16:55:45] INFO root fetch - main [MainThread]: Store serial: [23489805]
