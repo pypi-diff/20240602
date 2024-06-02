@@ -11795,3 +11795,70 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 17:09:15] INFO root fetch - main [MainThread]: End processing [kcli]: success
 [2024-06-02 17:09:15] INFO root fetch - main [MainThread]: End processing [kcli]: success
 [2024-06-02 17:09:15] INFO root fetch - main [MainThread]: Store serial: [23489919]
+[2024-06-02 17:11:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23489919]
+[2024-06-02 17:11:24] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2024-06-02 17:11:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ipy-agent
+[2024-06-02 17:11:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mdformat_mkdocs
+[2024-06-02 17:11:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: halting
+[2024-06-02 17:11:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: llama-index-agent-openai-legacy
+[2024-06-02 17:11:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: kfish
+[2024-06-02 17:11:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: few-shot-priming
+[2024-06-02 17:11:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: backends
+[2024-06-02 17:11:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: llama-index-agent-openai
+[2024-06-02 17:11:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: rfmix-reader
+[2024-06-02 17:11:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: dbTelematelAPI
+[2024-06-02 17:11:25] INFO root fetch - processPackages [few-shot-priming]: New version: [0.3.99] Old Version: [0.3.98]
+[2024-06-02 17:11:25] WARNING root fetch - processPackages [ipy-agent]: Skipping, unable to determine old version
+[2024-06-02 17:11:25] INFO root fetch - main [MainThread]: End processing [ipy-agent] error
+[2024-06-02 17:11:25] INFO root fetch - processPackages [kfish]: New version: [99.0.202406020949] Old Version: [99.0.202406020946]
+[2024-06-02 17:11:25] INFO root fetch - processPackages [few-shot-priming]: Downloading https://files.pythonhosted.org/packages/eb/67/d15b11d0bfb57369fa16ba7f8c97cd3ddec8f771e6da8f11a3d819004b69/few_shot_priming-0.3.98-py3-none-any.whl
+[2024-06-02 17:11:25] INFO root fetch - processPackages [llama-index-agent-openai-legacy]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-06-02 17:11:25] WARNING root fetch - processPackages [halting]: Skipping, unable to determine old version
+[2024-06-02 17:11:25] INFO root fetch - main [MainThread]: End processing [halting] error
+[2024-06-02 17:11:25] INFO root fetch - processPackages [mdformat_mkdocs]: New version: [2.1.0] Old Version: [2.0.9]
+[2024-06-02 17:11:25] WARNING root fetch - processPackages [dbTelematelAPI]: Skipping, unable to determine old version
+[2024-06-02 17:11:25] INFO root fetch - main [MainThread]: End processing [dbTelematelAPI] error
+[2024-06-02 17:11:25] INFO root fetch - processPackages [rfmix-reader]: New version: [0.1.2] Old Version: [0.1.0]
+[2024-06-02 17:11:25] INFO root fetch - processPackages [llama-index-agent-openai]: New version: [0.2.7] Old Version: [0.2.6]
+[2024-06-02 17:11:25] INFO root fetch - processPackages [backends]: New version: [1.6.4] Old Version: [1.6.3]
+[2024-06-02 17:11:25] INFO root fetch - processPackages [kfish]: Downloading https://files.pythonhosted.org/packages/f7/26/f6cb08b861fa5b434d29037d33003752fa7fea81a1f2e02580977407fee7/kfish-99.0.202406020946.tar.gz
+[2024-06-02 17:11:25] INFO root fetch - processPackages [llama-index-agent-openai-legacy]: Downloading https://files.pythonhosted.org/packages/1a/62/13c5a04e4c935c6bf31587ee754bfd71fddfcd24b4f1b2df921654b7e95c/llama_index_agent_openai_legacy-0.1.5.tar.gz
+[2024-06-02 17:11:25] INFO root fetch - processPackages [mdformat_mkdocs]: Downloading https://files.pythonhosted.org/packages/13/7f/3f9650602e1814d092e1a92da3c8d98d875094e13f2be73a26b145b22bc9/mdformat_mkdocs-2.0.9.tar.gz
+[2024-06-02 17:11:25] INFO root fetch - processPackages [backends]: Downloading https://files.pythonhosted.org/packages/76/d9/a662ed71e4f7c441e900c93580f2fd764dbdc4584c631647a07f549a6960/backends-1.6.3.tar.gz
+[2024-06-02 17:11:25] WARNING root fetch - processPackages [kfish]: Skipping package: exceeds size limit 17007142>=10485760
+[2024-06-02 17:11:25] INFO root fetch - main [MainThread]: End processing [kfish] error
+[2024-06-02 17:11:25] INFO root fetch - processPackages [rfmix-reader]: Downloading https://files.pythonhosted.org/packages/e6/f6/230368bbf19487f03e91f1a91f534abe32d4d4dafe63bd87f3965ad62dcf/rfmix_reader-0.1.0.tar.gz
+[2024-06-02 17:11:25] INFO root fetch - processPackages [llama-index-agent-openai]: Downloading https://files.pythonhosted.org/packages/c8/71/6f9951f320d8285d0fdcea29efee21c90fba62ad7a659e0443e7ef3d00a5/llama_index_agent_openai-0.2.6.tar.gz
+[2024-06-02 17:11:25] WARNING root fetch - processPackages [rfmix-reader]: Skipping package: exceeds size limit 32072517>=10485760
+[2024-06-02 17:11:25] INFO root fetch - main [MainThread]: End processing [rfmix-reader] error
+[2024-06-02 17:11:25] INFO root fetch - processPackages [llama-index-agent-openai-legacy]: Downloading https://files.pythonhosted.org/packages/7e/38/4007c61425006b4e534f149d4b82600301de1130d59a6c6e02daa33acc01/llama_index_agent_openai_legacy-0.1.6.tar.gz
+[2024-06-02 17:11:25] INFO root fetch - processPackages [mdformat_mkdocs]: Downloading https://files.pythonhosted.org/packages/45/b4/d119bda1b80f202465259cdc991bece9ef4e47175c38935456c782205a65/mdformat_mkdocs-2.1.0.tar.gz
+[2024-06-02 17:11:25] INFO root fetch - processPackages [llama-index-agent-openai]: Downloading https://files.pythonhosted.org/packages/ff/79/fbbe7ea4a39e8e2ac58fff1201d8715976b6bd0b3db2bcfd709aef71bd86/llama_index_agent_openai-0.2.7.tar.gz
+[2024-06-02 17:11:25] INFO root fetch - processPackages [backends]: Downloading https://files.pythonhosted.org/packages/9c/6c/75172401e6e15be32371d5af13d4963b18745d66dc01d305ace05abc6e9f/backends-1.6.4.tar.gz
+[2024-06-02 17:11:25] INFO root fetch - processPackages [llama-index-agent-openai-legacy]: executing diffoscope
+[2024-06-02 17:11:25] INFO root fetch - processPackages [llama-index-agent-openai-legacy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llama_index_agent_openai_legacy-0.1.5.tar.gz tmp/llama_index_agent_openai_legacy-0.1.6.tar.gz --markdown 20240602/l/llama-index-agent-openai-legacy/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-06-02 17:11:25] INFO root fetch - processPackages [mdformat_mkdocs]: executing diffoscope
+[2024-06-02 17:11:25] INFO root fetch - processPackages [mdformat_mkdocs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mdformat_mkdocs-2.0.9.tar.gz tmp/mdformat_mkdocs-2.1.0.tar.gz --markdown 20240602/m/mdformat_mkdocs/2.0.9-2.1.0/README.md --exclude *.pyd
+[2024-06-02 17:11:25] INFO root fetch - processPackages [backends]: executing diffoscope
+[2024-06-02 17:11:25] INFO root fetch - processPackages [backends]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/backends-1.6.3.tar.gz tmp/backends-1.6.4.tar.gz --markdown 20240602/b/backends/1.6.3-1.6.4/README.md --exclude *.pyd
+[2024-06-02 17:11:26] INFO root fetch - processPackages [llama-index-agent-openai]: executing diffoscope
+[2024-06-02 17:11:26] INFO root fetch - processPackages [llama-index-agent-openai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llama_index_agent_openai-0.2.6.tar.gz tmp/llama_index_agent_openai-0.2.7.tar.gz --markdown 20240602/l/llama-index-agent-openai/0.2.6-0.2.7/README.md --exclude *.pyd
+[2024-06-02 17:11:26] INFO root fetch - processPackages [llama-index-agent-openai]: Remove: archive file [/home/abi/fetcher/tmp/llama_index_agent_openai-0.2.6.tar.gz]
+[2024-06-02 17:11:26] INFO root fetch - processPackages [llama-index-agent-openai]: Remove: archive file [/home/abi/fetcher/tmp/llama_index_agent_openai-0.2.7.tar.gz]
+[2024-06-02 17:11:26] INFO root fetch - main [MainThread]: End processing [llama-index-agent-openai]: success
+[2024-06-02 17:11:26] INFO root fetch - processPackages [llama-index-agent-openai-legacy]: Remove: archive file [/home/abi/fetcher/tmp/llama_index_agent_openai_legacy-0.1.5.tar.gz]
+[2024-06-02 17:11:26] INFO root fetch - processPackages [llama-index-agent-openai-legacy]: Remove: archive file [/home/abi/fetcher/tmp/llama_index_agent_openai_legacy-0.1.6.tar.gz]
+[2024-06-02 17:11:26] INFO root fetch - main [MainThread]: End processing [llama-index-agent-openai-legacy]: success
+[2024-06-02 17:11:26] INFO root fetch - processPackages [mdformat_mkdocs]: Remove: archive file [/home/abi/fetcher/tmp/mdformat_mkdocs-2.0.9.tar.gz]
+[2024-06-02 17:11:26] INFO root fetch - processPackages [mdformat_mkdocs]: Remove: archive file [/home/abi/fetcher/tmp/mdformat_mkdocs-2.1.0.tar.gz]
+[2024-06-02 17:11:26] INFO root fetch - main [MainThread]: End processing [mdformat_mkdocs]: success
+[2024-06-02 17:11:26] INFO root fetch - processPackages [backends]: Remove: archive file [/home/abi/fetcher/tmp/backends-1.6.3.tar.gz]
+[2024-06-02 17:11:26] INFO root fetch - processPackages [backends]: Remove: archive file [/home/abi/fetcher/tmp/backends-1.6.4.tar.gz]
+[2024-06-02 17:11:26] INFO root fetch - main [MainThread]: End processing [backends]: success
+[2024-06-02 17:11:27] INFO root fetch - processPackages [few-shot-priming]: Downloading https://files.pythonhosted.org/packages/ff/11/548f6e96803602e6431dc610d736d401b20fde986f85c35c8ad19a6d0958/few_shot_priming-0.3.99-py3-none-any.whl
+[2024-06-02 17:11:27] INFO root fetch - processPackages [few-shot-priming]: executing diffoscope
+[2024-06-02 17:11:27] INFO root fetch - processPackages [few-shot-priming]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/few_shot_priming-0.3.98-py3-none-any.whl.zip tmp/few_shot_priming-0.3.99-py3-none-any.whl.zip --markdown 20240602/f/few-shot-priming/0.3.98-0.3.99/README.md --exclude *.pyd
+[2024-06-02 17:11:28] INFO root fetch - processPackages [few-shot-priming]: Remove: archive file [/home/abi/fetcher/tmp/few_shot_priming-0.3.98-py3-none-any.whl.zip]
+[2024-06-02 17:11:28] INFO root fetch - processPackages [few-shot-priming]: Remove: archive file [/home/abi/fetcher/tmp/few_shot_priming-0.3.99-py3-none-any.whl.zip]
+[2024-06-02 17:11:28] INFO root fetch - main [MainThread]: End processing [few-shot-priming]: success
+[2024-06-02 17:11:28] INFO root fetch - main [MainThread]: Store serial: [23489952]
