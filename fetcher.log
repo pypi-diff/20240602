@@ -4256,3 +4256,38 @@
 [2024-06-02 07:03:49] INFO root fetch - processPackages [NsparkleLog]: Remove: archive file [/home/abi/fetcher/tmp/NsparkleLog-1.0.4.tar.gz]
 [2024-06-02 07:03:49] INFO root fetch - main [MainThread]: End processing [NsparkleLog]: success
 [2024-06-02 07:03:49] INFO root fetch - main [MainThread]: Store serial: [23486341]
+[2024-06-02 07:05:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23486341]
+[2024-06-02 07:05:58] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-02 07:05:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyoauth2-util
+[2024-06-02 07:05:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: database-mysql-local
+[2024-06-02 07:05:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rapid-pe
+[2024-06-02 07:05:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: open-webui
+[2024-06-02 07:05:58] INFO root fetch - processPackages [pyoauth2-util]: New version: [1.0.8] Old Version: [1.0.7]
+[2024-06-02 07:05:58] INFO root fetch - processPackages [rapid-pe]: New version: [0.1.2.dev20240601] Old Version: [0.1.2.dev20240531]
+[2024-06-02 07:05:58] INFO root fetch - processPackages [pyoauth2-util]: Downloading https://files.pythonhosted.org/packages/d0/14/0258a65487300e1986efeaa7fd71bfe3104ff1ead05f070d0465eb3a077d/pyoauth2_util-1.0.7.tar.gz
+[2024-06-02 07:05:58] INFO root fetch - processPackages [rapid-pe]: Downloading https://files.pythonhosted.org/packages/44/9e/3a4c43b13adf0fc4ca75f1a56a58d06bf6a86832a471ec5dc3a5420c52dc/rapid_pe-0.1.2.dev20240531.tar.gz
+[2024-06-02 07:05:58] INFO root fetch - processPackages [database-mysql-local]: New version: [0.0.351] Old Version: [0.0.350]
+[2024-06-02 07:05:58] INFO root fetch - processPackages [open-webui]: New version: [0.2.0.dev4] Old Version: [0.2.0.dev3]
+[2024-06-02 07:05:58] INFO root fetch - processPackages [database-mysql-local]: Downloading https://files.pythonhosted.org/packages/2c/b9/be903f74e780340e98635218a3bbf260ed1965a3320bb841bbf945f4b826/database_mysql_local-0.0.350.tar.gz
+[2024-06-02 07:05:58] INFO root fetch - processPackages [open-webui]: Downloading https://files.pythonhosted.org/packages/27/ff/7fd29b79454185a100a6eb70cde7dfbcdea0b60fd72be27f7dffe12a91e2/open_webui-0.2.0.dev3.tar.gz
+[2024-06-02 07:05:58] INFO root fetch - processPackages [pyoauth2-util]: Downloading https://files.pythonhosted.org/packages/9b/58/a62de3d2b68db9d51120818376fc9dc5de58e90cb42c483f87ed1efeed82/pyoauth2_util-1.0.8.tar.gz
+[2024-06-02 07:05:59] WARNING root fetch - processPackages [open-webui]: Skipping package: exceeds size limit 13631760>=10485760
+[2024-06-02 07:05:59] INFO root fetch - main [MainThread]: End processing [open-webui] error
+[2024-06-02 07:05:59] INFO root fetch - processPackages [rapid-pe]: Downloading https://files.pythonhosted.org/packages/19/34/b937ae69295eed73f731b0c9617484a372bc2333e430ce2117cf3d2075d5/rapid_pe-0.1.2.dev20240601.tar.gz
+[2024-06-02 07:05:59] INFO root fetch - processPackages [pyoauth2-util]: executing diffoscope
+[2024-06-02 07:05:59] INFO root fetch - processPackages [pyoauth2-util]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyoauth2_util-1.0.7.tar.gz tmp/pyoauth2_util-1.0.8.tar.gz --markdown 20240602/p/pyoauth2-util/1.0.7-1.0.8/README.md --exclude *.pyd
+[2024-06-02 07:05:59] INFO root fetch - processPackages [rapid-pe]: executing diffoscope
+[2024-06-02 07:05:59] INFO root fetch - processPackages [rapid-pe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rapid_pe-0.1.2.dev20240531.tar.gz tmp/rapid_pe-0.1.2.dev20240601.tar.gz --markdown 20240602/r/rapid-pe/0.1.2.dev20240531-0.1.2.dev20240601/README.md --exclude *.pyd
+[2024-06-02 07:05:59] INFO root fetch - processPackages [database-mysql-local]: Downloading https://files.pythonhosted.org/packages/2d/69/efe4093628168b485f354a58a7c78e7ce0117b2b4e704e0acf0762b9ee04/database_mysql_local-0.0.351.tar.gz
+[2024-06-02 07:05:59] INFO root fetch - processPackages [database-mysql-local]: executing diffoscope
+[2024-06-02 07:05:59] INFO root fetch - processPackages [database-mysql-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/database_mysql_local-0.0.350.tar.gz tmp/database_mysql_local-0.0.351.tar.gz --markdown 20240602/d/database-mysql-local/0.0.350-0.0.351/README.md --exclude *.pyd
+[2024-06-02 07:05:59] INFO root fetch - processPackages [pyoauth2-util]: Remove: archive file [/home/abi/fetcher/tmp/pyoauth2_util-1.0.7.tar.gz]
+[2024-06-02 07:05:59] INFO root fetch - processPackages [pyoauth2-util]: Remove: archive file [/home/abi/fetcher/tmp/pyoauth2_util-1.0.8.tar.gz]
+[2024-06-02 07:05:59] INFO root fetch - main [MainThread]: End processing [pyoauth2-util]: success
+[2024-06-02 07:05:59] INFO root fetch - processPackages [rapid-pe]: Remove: archive file [/home/abi/fetcher/tmp/rapid_pe-0.1.2.dev20240531.tar.gz]
+[2024-06-02 07:05:59] INFO root fetch - processPackages [rapid-pe]: Remove: archive file [/home/abi/fetcher/tmp/rapid_pe-0.1.2.dev20240601.tar.gz]
+[2024-06-02 07:05:59] INFO root fetch - main [MainThread]: End processing [rapid-pe]: success
+[2024-06-02 07:06:00] INFO root fetch - processPackages [database-mysql-local]: Remove: archive file [/home/abi/fetcher/tmp/database_mysql_local-0.0.350.tar.gz]
+[2024-06-02 07:06:00] INFO root fetch - processPackages [database-mysql-local]: Remove: archive file [/home/abi/fetcher/tmp/database_mysql_local-0.0.351.tar.gz]
+[2024-06-02 07:06:00] INFO root fetch - main [MainThread]: End processing [database-mysql-local]: success
+[2024-06-02 07:06:00] INFO root fetch - main [MainThread]: Store serial: [23486353]
