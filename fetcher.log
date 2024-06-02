@@ -4187,3 +4187,51 @@
 [2024-06-02 06:59:29] INFO root fetch - processPackages [carbon-registry-indexer]: Remove: archive file [/home/abi/fetcher/tmp/carbon-registry-indexer-0.1.9.tar.gz]
 [2024-06-02 06:59:29] INFO root fetch - main [MainThread]: End processing [carbon-registry-indexer]: success
 [2024-06-02 06:59:29] INFO root fetch - main [MainThread]: Store serial: [23486317]
+[2024-06-02 07:01:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23486317]
+[2024-06-02 07:01:37] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-06-02 07:01:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: persist-to-disk
+[2024-06-02 07:01:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fastlite
+[2024-06-02 07:01:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: Sanatio
+[2024-06-02 07:01:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: python-fasthtml
+[2024-06-02 07:01:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyRealtor
+[2024-06-02 07:01:37] INFO root fetch - processPackages [pyRealtor]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-06-02 07:01:37] INFO root fetch - processPackages [fastlite]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-06-02 07:01:37] INFO root fetch - processPackages [persist-to-disk]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-06-02 07:01:38] INFO root fetch - processPackages [Sanatio]: New version: [1.1.0] Old Version: [1.0.0]
+[2024-06-02 07:01:38] INFO root fetch - processPackages [python-fasthtml]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-06-02 07:01:38] INFO root fetch - processPackages [pyRealtor]: Downloading https://files.pythonhosted.org/packages/7a/93/48511ebb85b7cbe40abd3a67dbc4bd46b50d4c2ed204e0d477bf9f68afac/pyRealtor-0.1.4-py3-none-any.whl
+[2024-06-02 07:01:38] INFO root fetch - processPackages [fastlite]: Downloading https://files.pythonhosted.org/packages/c6/75/75c7c7efe752bdf8f07e46f75dc60d253a24bfba914e686b2197b413b8d8/fastlite-0.0.1.tar.gz
+[2024-06-02 07:01:38] INFO root fetch - processPackages [persist-to-disk]: Downloading https://files.pythonhosted.org/packages/4b/e8/9f31885d32f163802959c55451b0aaf9c8e0a0c6d7d92ffd6c2a78a46a69/persist_to_disk-0.0.6-py2.py3-none-any.whl
+[2024-06-02 07:01:38] INFO root fetch - processPackages [Sanatio]: Downloading https://files.pythonhosted.org/packages/59/2a/61995f7b02b2b0701e236e6cf54c46da51be807e9bbcc565dcd7cdff7957/Sanatio-1.0.0.tar.gz
+[2024-06-02 07:01:38] INFO root fetch - processPackages [python-fasthtml]: Downloading https://files.pythonhosted.org/packages/92/b7/15790287ac5394f918b603351914155b436884311210b47faf757b094db9/python-fasthtml-0.0.2.tar.gz
+[2024-06-02 07:01:38] INFO root fetch - processPackages [fastlite]: Downloading https://files.pythonhosted.org/packages/63/ef/776cced095ecad81d90cc62797f3ed95f89516931f317b8f7ee23b8bdd62/fastlite-0.0.2.tar.gz
+[2024-06-02 07:01:38] INFO root fetch - processPackages [persist-to-disk]: Downloading https://files.pythonhosted.org/packages/fa/5d/f2c92a996833fd9b9d257eb51c239a41ca5793da1185f1cbe1abfd0c4466/persist_to_disk-0.0.7.tar.gz
+[2024-06-02 07:01:38] INFO root fetch - processPackages [Sanatio]: Downloading https://files.pythonhosted.org/packages/3f/ec/046666c29a4159df5f3ddb9d03021134b9ab8e7902a4a9bb76ffd985e3ca/Sanatio-1.1.0.tar.gz
+[2024-06-02 07:01:38] INFO root fetch - processPackages [python-fasthtml]: Downloading https://files.pythonhosted.org/packages/2d/e5/22bf242e5ea49260eca1b60c38de66fe6ddaa832a6f18ab95672c2324871/python-fasthtml-0.0.3.tar.gz
+[2024-06-02 07:01:38] INFO root fetch - processPackages [fastlite]: executing diffoscope
+[2024-06-02 07:01:38] INFO root fetch - processPackages [fastlite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastlite-0.0.1.tar.gz tmp/fastlite-0.0.2.tar.gz --markdown 20240602/f/fastlite/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-06-02 07:01:38] INFO root fetch - processPackages [persist-to-disk]: executing diffoscope
+[2024-06-02 07:01:38] INFO root fetch - processPackages [persist-to-disk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/persist_to_disk-0.0.6-py2.py3-none-any.whl.zip tmp/persist_to_disk-0.0.7.tar.gz --markdown 20240602/p/persist-to-disk/0.0.6-0.0.7/README.md --exclude *.pyd
+[2024-06-02 07:01:38] INFO root fetch - processPackages [Sanatio]: executing diffoscope
+[2024-06-02 07:01:38] INFO root fetch - processPackages [Sanatio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Sanatio-1.0.0.tar.gz tmp/Sanatio-1.1.0.tar.gz --markdown 20240602/S/Sanatio/1.0.0-1.1.0/README.md --exclude *.pyd
+[2024-06-02 07:01:38] INFO root fetch - processPackages [python-fasthtml]: executing diffoscope
+[2024-06-02 07:01:38] INFO root fetch - processPackages [python-fasthtml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-fasthtml-0.0.2.tar.gz tmp/python-fasthtml-0.0.3.tar.gz --markdown 20240602/p/python-fasthtml/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-06-02 07:01:38] INFO root fetch - processPackages [pyRealtor]: Downloading https://files.pythonhosted.org/packages/64/00/c77cb9b48f4ab0c059b0c9537240035b0c68ddecd5cc5a943c7ab15f2649/pyRealtor-0.1.5-py3-none-any.whl
+[2024-06-02 07:01:38] INFO root fetch - processPackages [pyRealtor]: executing diffoscope
+[2024-06-02 07:01:38] INFO root fetch - processPackages [pyRealtor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyRealtor-0.1.4-py3-none-any.whl.zip tmp/pyRealtor-0.1.5-py3-none-any.whl.zip --markdown 20240602/p/pyRealtor/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-06-02 07:01:39] INFO root fetch - processPackages [fastlite]: Remove: archive file [/home/abi/fetcher/tmp/fastlite-0.0.1.tar.gz]
+[2024-06-02 07:01:39] INFO root fetch - processPackages [fastlite]: Remove: archive file [/home/abi/fetcher/tmp/fastlite-0.0.2.tar.gz]
+[2024-06-02 07:01:39] INFO root fetch - main [MainThread]: End processing [fastlite]: success
+[2024-06-02 07:01:39] INFO root fetch - processPackages [persist-to-disk]: Remove: archive file [/home/abi/fetcher/tmp/persist_to_disk-0.0.6-py2.py3-none-any.whl.zip]
+[2024-06-02 07:01:39] INFO root fetch - processPackages [persist-to-disk]: Remove: archive file [/home/abi/fetcher/tmp/persist_to_disk-0.0.7.tar.gz]
+[2024-06-02 07:01:39] INFO root fetch - main [MainThread]: End processing [persist-to-disk]: success
+[2024-06-02 07:01:39] INFO root fetch - processPackages [Sanatio]: Remove: archive file [/home/abi/fetcher/tmp/Sanatio-1.0.0.tar.gz]
+[2024-06-02 07:01:39] INFO root fetch - processPackages [Sanatio]: Remove: archive file [/home/abi/fetcher/tmp/Sanatio-1.1.0.tar.gz]
+[2024-06-02 07:01:39] INFO root fetch - main [MainThread]: End processing [Sanatio]: success
+[2024-06-02 07:01:39] INFO root fetch - processPackages [python-fasthtml]: Remove: archive file [/home/abi/fetcher/tmp/python-fasthtml-0.0.2.tar.gz]
+[2024-06-02 07:01:39] INFO root fetch - processPackages [python-fasthtml]: Remove: archive file [/home/abi/fetcher/tmp/python-fasthtml-0.0.3.tar.gz]
+[2024-06-02 07:01:39] INFO root fetch - main [MainThread]: End processing [python-fasthtml]: success
+[2024-06-02 07:01:39] INFO root fetch - processPackages [pyRealtor]: Remove: archive file [/home/abi/fetcher/tmp/pyRealtor-0.1.4-py3-none-any.whl.zip]
+[2024-06-02 07:01:39] INFO root fetch - processPackages [pyRealtor]: Remove: archive file [/home/abi/fetcher/tmp/pyRealtor-0.1.5-py3-none-any.whl.zip]
+[2024-06-02 07:01:39] INFO root fetch - main [MainThread]: End processing [pyRealtor]: success
+[2024-06-02 07:01:39] INFO root fetch - main [MainThread]: Store serial: [23486334]
