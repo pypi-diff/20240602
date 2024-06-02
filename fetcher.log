@@ -10411,3 +10411,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-02 15:46:15] INFO root fetch - processPackages [biliup]: Remove: archive file [/home/abi/fetcher/tmp/biliup-0.4.9.tar.gz]
 [2024-06-02 15:46:15] INFO root fetch - main [MainThread]: End processing [biliup]: success
 [2024-06-02 15:46:15] INFO root fetch - main [MainThread]: Store serial: [23489307]
+[2024-06-02 15:48:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23489307]
+[2024-06-02 15:48:23] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-02 15:48:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: abstra
+[2024-06-02 15:48:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyLemur
+[2024-06-02 15:48:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dbTelematelAPI
+[2024-06-02 15:48:23] INFO root fetch - processPackages [dbTelematelAPI]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-06-02 15:48:23] INFO root fetch - processPackages [pyLemur]: New version: [0.2.2] Old Version: [0.2.1]
+[2024-06-02 15:48:23] INFO root fetch - processPackages [abstra]: New version: [2.9.0] Old Version: [2.8.0]
+[2024-06-02 15:48:23] INFO root fetch - processPackages [dbTelematelAPI]: Downloading https://files.pythonhosted.org/packages/87/1a/beee4dceee52bb789b36613f891a0ff14cbcfed9977829aba947426103f5/dbTelematelAPI-0.0.2.tar.gz
+[2024-06-02 15:48:24] INFO root fetch - processPackages [abstra]: Downloading https://files.pythonhosted.org/packages/94/4b/7c4e2731365d7c5a6305413596fc49a8d9a7ac8dc7791085a79c04204a43/abstra-2.8.0.tar.gz
+[2024-06-02 15:48:24] INFO root fetch - processPackages [pyLemur]: Downloading https://files.pythonhosted.org/packages/3b/8c/82c03745e6d06c83449b2d5865602158d90b24ec997dd71a24b002a52b36/pylemur-0.2.1.tar.gz
+[2024-06-02 15:48:24] INFO root fetch - processPackages [dbTelematelAPI]: Downloading https://files.pythonhosted.org/packages/6a/1e/7f0d41bb88292fbbba81929cac6b885d586465786e369820e4cad66c95a1/dbTelematelAPI-0.0.3.tar.gz
+[2024-06-02 15:48:24] INFO root fetch - processPackages [pyLemur]: Downloading https://files.pythonhosted.org/packages/98/e6/8040afed4eef66b2278d3226d24a62af8b1da4a577608df4b138a635642d/pylemur-0.2.2.tar.gz
+[2024-06-02 15:48:24] INFO root fetch - processPackages [dbTelematelAPI]: executing diffoscope
+[2024-06-02 15:48:24] INFO root fetch - processPackages [dbTelematelAPI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbTelematelAPI-0.0.2.tar.gz tmp/dbTelematelAPI-0.0.3.tar.gz --markdown 20240602/d/dbTelematelAPI/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-06-02 15:48:24] INFO root fetch - processPackages [pyLemur]: executing diffoscope
+[2024-06-02 15:48:24] INFO root fetch - processPackages [pyLemur]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pylemur-0.2.1.tar.gz tmp/pylemur-0.2.2.tar.gz --markdown 20240602/p/pyLemur/0.2.1-0.2.2/README.md --exclude *.pyd
+[2024-06-02 15:48:24] INFO root fetch - processPackages [dbTelematelAPI]: Remove: archive file [/home/abi/fetcher/tmp/dbTelematelAPI-0.0.2.tar.gz]
+[2024-06-02 15:48:24] INFO root fetch - processPackages [dbTelematelAPI]: Remove: archive file [/home/abi/fetcher/tmp/dbTelematelAPI-0.0.3.tar.gz]
+[2024-06-02 15:48:24] INFO root fetch - main [MainThread]: End processing [dbTelematelAPI]: success
+[2024-06-02 15:48:25] INFO root fetch - processPackages [pyLemur]: Remove: archive file [/home/abi/fetcher/tmp/pylemur-0.2.1.tar.gz]
+[2024-06-02 15:48:25] INFO root fetch - processPackages [pyLemur]: Remove: archive file [/home/abi/fetcher/tmp/pylemur-0.2.2.tar.gz]
+[2024-06-02 15:48:25] INFO root fetch - main [MainThread]: End processing [pyLemur]: success
+[2024-06-02 15:48:25] INFO root fetch - processPackages [abstra]: Downloading https://files.pythonhosted.org/packages/1e/35/eb7405e3736295269e9520bd7c81f554658b0e8eb3e3265a067211dc18e3/abstra-2.9.0.tar.gz
+[2024-06-02 15:48:26] INFO root fetch - processPackages [abstra]: executing diffoscope
+[2024-06-02 15:48:26] INFO root fetch - processPackages [abstra]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abstra-2.8.0.tar.gz tmp/abstra-2.9.0.tar.gz --markdown 20240602/a/abstra/2.8.0-2.9.0/README.md --exclude *.pyd
+[2024-06-02 15:50:15] INFO root fetch - processPackages [abstra]: Remove: archive file [/home/abi/fetcher/tmp/abstra-2.8.0.tar.gz]
+[2024-06-02 15:50:15] INFO root fetch - processPackages [abstra]: Remove: archive file [/home/abi/fetcher/tmp/abstra-2.9.0.tar.gz]
+[2024-06-02 15:50:15] INFO root fetch - main [MainThread]: End processing [abstra]: success
+[2024-06-02 15:50:15] INFO root fetch - main [MainThread]: Store serial: [23489315]
