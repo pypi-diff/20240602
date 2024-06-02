@@ -21218,3 +21218,24 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 23:47:24] INFO root fetch - processPackages [protoc-polyglot]: Remove: archive file [/home/abi/fetcher/tmp/protoc_polyglot-0.0.1.post9.tar.gz]
 [2024-06-02 23:47:24] INFO root fetch - main [MainThread]: End processing [protoc-polyglot]: success
 [2024-06-02 23:47:24] INFO root fetch - main [MainThread]: Store serial: [23494065]
+[2024-06-02 23:49:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23494065]
+[2024-06-02 23:49:33] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-02 23:49:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: batchalign
+[2024-06-02 23:49:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: selenium2
+[2024-06-02 23:49:33] INFO root fetch - processPackages [batchalign]: New version: [0.7.1b9] Old Version: [0.7.1b8]
+[2024-06-02 23:49:33] INFO root fetch - processPackages [selenium2]: New version: [0.1.1] Old Version: [0.1]
+[2024-06-02 23:49:34] INFO root fetch - processPackages [batchalign]: Downloading https://files.pythonhosted.org/packages/5e/69/fffb9b55ff008fb99719939ef95803ed3d3e1242efd310a7ea0f58e9f0dc/batchalign-0.7.1b8.tar.gz
+[2024-06-02 23:49:34] INFO root fetch - processPackages [selenium2]: Downloading https://files.pythonhosted.org/packages/05/39/5fbd7dda3564f9ccb5336ae4a434e288440bb0974c4cdfbb451649be1190/selenium2-0.1.tar.gz
+[2024-06-02 23:49:34] INFO root fetch - processPackages [selenium2]: Downloading https://files.pythonhosted.org/packages/3b/03/6544fc680e872bdb93c277ab6cc3fd56bb971cf59dd15aa4033a9964c1f8/selenium2-0.1.1.tar.gz
+[2024-06-02 23:49:34] INFO root fetch - processPackages [batchalign]: Downloading https://files.pythonhosted.org/packages/7a/33/7eb30dfc9d41b546abf384d7f28e0db1c8909bb1f1dae1e8e495c14bf2ea/batchalign-0.7.1b9.tar.gz
+[2024-06-02 23:49:34] INFO root fetch - processPackages [batchalign]: executing diffoscope
+[2024-06-02 23:49:34] INFO root fetch - processPackages [batchalign]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/batchalign-0.7.1b8.tar.gz tmp/batchalign-0.7.1b9.tar.gz --markdown 20240602/b/batchalign/0.7.1b8-0.7.1b9/README.md --exclude *.pyd
+[2024-06-02 23:49:34] INFO root fetch - processPackages [selenium2]: executing diffoscope
+[2024-06-02 23:49:34] INFO root fetch - processPackages [selenium2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/selenium2-0.1.tar.gz tmp/selenium2-0.1.1.tar.gz --markdown 20240602/s/selenium2/0.1-0.1.1/README.md --exclude *.pyd
+[2024-06-02 23:49:35] INFO root fetch - processPackages [selenium2]: Remove: archive file [/home/abi/fetcher/tmp/selenium2-0.1.tar.gz]
+[2024-06-02 23:49:35] INFO root fetch - processPackages [selenium2]: Remove: archive file [/home/abi/fetcher/tmp/selenium2-0.1.1.tar.gz]
+[2024-06-02 23:49:35] INFO root fetch - main [MainThread]: End processing [selenium2]: success
+[2024-06-02 23:49:35] INFO root fetch - processPackages [batchalign]: Remove: archive file [/home/abi/fetcher/tmp/batchalign-0.7.1b8.tar.gz]
+[2024-06-02 23:49:35] INFO root fetch - processPackages [batchalign]: Remove: archive file [/home/abi/fetcher/tmp/batchalign-0.7.1b9.tar.gz]
+[2024-06-02 23:49:35] INFO root fetch - main [MainThread]: End processing [batchalign]: success
+[2024-06-02 23:49:35] INFO root fetch - main [MainThread]: Store serial: [23494070]
