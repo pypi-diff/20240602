@@ -13826,3 +13826,52 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 18:38:11] INFO root fetch - processPackages [gumbi]: Remove: archive file [/home/abi/fetcher/tmp/gumbi-0.2.2.tar.gz]
 [2024-06-02 18:38:11] INFO root fetch - main [MainThread]: End processing [gumbi]: success
 [2024-06-02 18:38:11] INFO root fetch - main [MainThread]: Store serial: [23490810]
+[2024-06-02 18:40:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23490810]
+[2024-06-02 18:40:19] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-06-02 18:40:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: trytond-analytic-account
+[2024-06-02 18:40:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: vicodepy
+[2024-06-02 18:40:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: jeff-api-common
+[2024-06-02 18:40:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: trytond-analytic-account
+[2024-06-02 18:40:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: result
+[2024-06-02 18:40:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: RepoAuditor
+[2024-06-02 18:40:20] INFO root fetch - processPackages [result]: New version: [0.9.0] Old Version: [0.8.0b1]
+[2024-06-02 18:40:20] INFO root fetch - processPackages [vicodepy]: New version: [0.4.3] Old Version: [0.4.2]
+[2024-06-02 18:40:20] WARNING root fetch - processPackages [jeff-api-common]: Skipping, unable to determine old version
+[2024-06-02 18:40:20] INFO root fetch - main [MainThread]: End processing [jeff-api-common] error
+[2024-06-02 18:40:20] INFO root fetch - processPackages [trytond-analytic-account]: New version: [7.2.2] Old Version: [7.2.1]
+[2024-06-02 18:40:20] INFO root fetch - processPackages [trytond-analytic-account]: New version: [7.2.2] Old Version: [7.2.1]
+[2024-06-02 18:40:20] INFO root fetch - processPackages [RepoAuditor]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-06-02 18:40:20] INFO root fetch - processPackages [vicodepy]: Downloading https://files.pythonhosted.org/packages/a1/87/b0a2da857a895634c42cf8c4b41ca9cb70e96eb0ee82e4bb8d904fdc7cc1/vicodepy-0.4.2.tar.gz
+[2024-06-02 18:40:20] INFO root fetch - processPackages [result]: Downloading https://files.pythonhosted.org/packages/7d/82/86e2b39e6c16e534e4f904f54e5f86c160ad29d6fc9a8a32bc3f5f4bb835/result-0.8.0b1.tar.gz
+[2024-06-02 18:40:20] INFO root fetch - processPackages [trytond-analytic-account]: Downloading https://files.pythonhosted.org/packages/ba/d9/46bd139c7ae6d6ec6acdbb8732043b97bf8373515c693e62fee001b1a30e/trytond_analytic_account-7.2.1.tar.gz
+[2024-06-02 18:40:20] INFO root fetch - processPackages [trytond-analytic-account]: Downloading https://files.pythonhosted.org/packages/ba/d9/46bd139c7ae6d6ec6acdbb8732043b97bf8373515c693e62fee001b1a30e/trytond_analytic_account-7.2.1.tar.gz
+[2024-06-02 18:40:20] INFO root fetch - processPackages [RepoAuditor]: Downloading https://files.pythonhosted.org/packages/cd/46/e1b103418300e48ba7be2a65cf1ac6e735e0b3fae724514c18f5fc6490c9/RepoAuditor-0.1.8-py3-none-any.whl
+[2024-06-02 18:40:20] INFO root fetch - processPackages [vicodepy]: Downloading https://files.pythonhosted.org/packages/e7/2a/cd485fa658906250f0952530e18d31dcc3498a2cc2b5a03667571660b6eb/vicodepy-0.4.3.tar.gz
+[2024-06-02 18:40:20] INFO root fetch - processPackages [trytond-analytic-account]: Downloading https://files.pythonhosted.org/packages/2a/01/9161836e5b769378a4da52e45cbc7b89ed5a8f276c5a0aba94780e21cc48/trytond_analytic_account-7.2.2.tar.gz
+[2024-06-02 18:40:20] INFO root fetch - processPackages [trytond-analytic-account]: Downloading https://files.pythonhosted.org/packages/2a/01/9161836e5b769378a4da52e45cbc7b89ed5a8f276c5a0aba94780e21cc48/trytond_analytic_account-7.2.2.tar.gz
+[2024-06-02 18:40:20] INFO root fetch - processPackages [result]: Downloading https://files.pythonhosted.org/packages/e1/d2/a6ac37982c8e314f71acd5d4a509dfde718f0c0fc8590b35b7d64101097e/result-0.9.0.tar.gz
+[2024-06-02 18:40:20] INFO root fetch - processPackages [trytond-analytic-account]: executing diffoscope
+[2024-06-02 18:40:20] INFO root fetch - processPackages [trytond-analytic-account]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trytond_analytic_account-7.2.1.tar.gz tmp/trytond_analytic_account-7.2.2.tar.gz --markdown 20240602/t/trytond-analytic-account/7.2.1-7.2.2/README.md --exclude *.pyd
+[2024-06-02 18:40:20] INFO root fetch - processPackages [RepoAuditor]: Downloading https://files.pythonhosted.org/packages/e6/dc/58e7fdb0c9244fa005a4351ea9876c7af5dc90c5dcb847e9b642157b3ce8/RepoAuditor-0.1.9-py3-none-any.whl
+[2024-06-02 18:40:20] INFO root fetch - processPackages [vicodepy]: executing diffoscope
+[2024-06-02 18:40:20] INFO root fetch - processPackages [vicodepy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vicodepy-0.4.2.tar.gz tmp/vicodepy-0.4.3.tar.gz --markdown 20240602/v/vicodepy/0.4.2-0.4.3/README.md --exclude *.pyd
+[2024-06-02 18:40:20] INFO root fetch - processPackages [trytond-analytic-account]: executing diffoscope
+[2024-06-02 18:40:20] INFO root fetch - processPackages [trytond-analytic-account]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trytond_analytic_account-7.2.1.tar.gz tmp/trytond_analytic_account-7.2.2.tar.gz --markdown 20240602/t/trytond-analytic-account/7.2.1-7.2.2/README.md --exclude *.pyd
+[2024-06-02 18:40:21] INFO root fetch - processPackages [RepoAuditor]: executing diffoscope
+[2024-06-02 18:40:21] INFO root fetch - processPackages [RepoAuditor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/RepoAuditor-0.1.8-py3-none-any.whl.zip tmp/RepoAuditor-0.1.9-py3-none-any.whl.zip --markdown 20240602/R/RepoAuditor/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-06-02 18:40:21] INFO root fetch - processPackages [vicodepy]: Remove: archive file [/home/abi/fetcher/tmp/vicodepy-0.4.2.tar.gz]
+[2024-06-02 18:40:21] INFO root fetch - processPackages [vicodepy]: Remove: archive file [/home/abi/fetcher/tmp/vicodepy-0.4.3.tar.gz]
+[2024-06-02 18:40:21] INFO root fetch - main [MainThread]: End processing [vicodepy]: success
+[2024-06-02 18:40:21] INFO root fetch - processPackages [RepoAuditor]: Remove: archive file [/home/abi/fetcher/tmp/RepoAuditor-0.1.8-py3-none-any.whl.zip]
+[2024-06-02 18:40:21] INFO root fetch - processPackages [RepoAuditor]: Remove: archive file [/home/abi/fetcher/tmp/RepoAuditor-0.1.9-py3-none-any.whl.zip]
+[2024-06-02 18:40:21] INFO root fetch - main [MainThread]: End processing [RepoAuditor]: success
+[2024-06-02 18:40:21] INFO root fetch - processPackages [trytond-analytic-account]: Remove: archive file [/home/abi/fetcher/tmp/trytond_analytic_account-7.2.1.tar.gz]
+[2024-06-02 18:40:21] INFO root fetch - processPackages [trytond-analytic-account]: Remove: archive file [/home/abi/fetcher/tmp/trytond_analytic_account-7.2.2.tar.gz]
+[2024-06-02 18:40:21] INFO root fetch - main [MainThread]: End processing [trytond-analytic-account]: success
+[2024-06-02 18:40:21] INFO root fetch - main [MainThread]: End processing [trytond-analytic-account]: success
+[2024-06-02 18:40:21] INFO root fetch - processPackages [result]: executing diffoscope
+[2024-06-02 18:40:21] INFO root fetch - processPackages [result]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/result-0.8.0b1.tar.gz tmp/result-0.9.0.tar.gz --markdown 20240602/r/result/0.8.0b1-0.9.0/README.md --exclude *.pyd
+[2024-06-02 18:40:22] INFO root fetch - processPackages [result]: Remove: archive file [/home/abi/fetcher/tmp/result-0.8.0b1.tar.gz]
+[2024-06-02 18:40:22] INFO root fetch - processPackages [result]: Remove: archive file [/home/abi/fetcher/tmp/result-0.9.0.tar.gz]
+[2024-06-02 18:40:22] INFO root fetch - main [MainThread]: End processing [result]: success
+[2024-06-02 18:40:22] INFO root fetch - main [MainThread]: Store serial: [23490829]
