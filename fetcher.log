@@ -4163,3 +4163,27 @@
 [2024-06-02 06:57:19] INFO root fetch - processPackages [khoj-assistant]: Remove: archive file [/home/abi/fetcher/tmp/khoj_assistant-1.9.1.dev8.tar.gz]
 [2024-06-02 06:57:19] INFO root fetch - main [MainThread]: End processing [khoj-assistant]: success
 [2024-06-02 06:57:19] INFO root fetch - main [MainThread]: Store serial: [23486306]
+[2024-06-02 06:59:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23486306]
+[2024-06-02 06:59:28] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-02 06:59:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: shuttleai
+[2024-06-02 06:59:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: carbon-registry-indexer
+[2024-06-02 06:59:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: vpx-rtp-py
+[2024-06-02 06:59:28] INFO root fetch - processPackages [shuttleai]: New version: [4.0.3] Old Version: [4.0.2]
+[2024-06-02 06:59:28] INFO root fetch - processPackages [shuttleai]: Downloading https://files.pythonhosted.org/packages/3f/95/1b7eb3dea70c9fe8e0d1e4f7ad1060b27f056901427e90efd0b2404bf069/shuttleai-4.0.2.tar.gz
+[2024-06-02 06:59:28] INFO root fetch - processPackages [carbon-registry-indexer]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-06-02 06:59:28] WARNING root fetch - processPackages [vpx-rtp-py]: Skipping, unable to determine old version
+[2024-06-02 06:59:28] INFO root fetch - main [MainThread]: End processing [vpx-rtp-py] error
+[2024-06-02 06:59:28] INFO root fetch - processPackages [carbon-registry-indexer]: Downloading https://files.pythonhosted.org/packages/6a/ea/27f744d6e0e724c6e0575edb2c67737c6a70147e7ebcd97674a2959d66dd/carbon-registry-indexer-0.1.8.tar.gz
+[2024-06-02 06:59:28] INFO root fetch - processPackages [shuttleai]: Downloading https://files.pythonhosted.org/packages/82/1c/bed7b036b5f66328b1298953848fa03f9dc32928dab41a81ddde54ae624f/shuttleai-4.0.3.tar.gz
+[2024-06-02 06:59:28] INFO root fetch - processPackages [shuttleai]: executing diffoscope
+[2024-06-02 06:59:28] INFO root fetch - processPackages [shuttleai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shuttleai-4.0.2.tar.gz tmp/shuttleai-4.0.3.tar.gz --markdown 20240602/s/shuttleai/4.0.2-4.0.3/README.md --exclude *.pyd
+[2024-06-02 06:59:28] INFO root fetch - processPackages [carbon-registry-indexer]: Downloading https://files.pythonhosted.org/packages/e5/cd/1e1e95e6852f521936093508bcf7bbf278df34c6892a3bcd86aa33caf947/carbon-registry-indexer-0.1.9.tar.gz
+[2024-06-02 06:59:28] INFO root fetch - processPackages [carbon-registry-indexer]: executing diffoscope
+[2024-06-02 06:59:28] INFO root fetch - processPackages [carbon-registry-indexer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/carbon-registry-indexer-0.1.8.tar.gz tmp/carbon-registry-indexer-0.1.9.tar.gz --markdown 20240602/c/carbon-registry-indexer/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-06-02 06:59:29] INFO root fetch - processPackages [shuttleai]: Remove: archive file [/home/abi/fetcher/tmp/shuttleai-4.0.2.tar.gz]
+[2024-06-02 06:59:29] INFO root fetch - processPackages [shuttleai]: Remove: archive file [/home/abi/fetcher/tmp/shuttleai-4.0.3.tar.gz]
+[2024-06-02 06:59:29] INFO root fetch - main [MainThread]: End processing [shuttleai]: success
+[2024-06-02 06:59:29] INFO root fetch - processPackages [carbon-registry-indexer]: Remove: archive file [/home/abi/fetcher/tmp/carbon-registry-indexer-0.1.8.tar.gz]
+[2024-06-02 06:59:29] INFO root fetch - processPackages [carbon-registry-indexer]: Remove: archive file [/home/abi/fetcher/tmp/carbon-registry-indexer-0.1.9.tar.gz]
+[2024-06-02 06:59:29] INFO root fetch - main [MainThread]: End processing [carbon-registry-indexer]: success
+[2024-06-02 06:59:29] INFO root fetch - main [MainThread]: Store serial: [23486317]
