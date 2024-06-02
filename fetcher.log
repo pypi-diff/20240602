@@ -20742,3 +20742,24 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 23:14:38] INFO root fetch - processPackages [ovos-plugin-common-play]: Remove: archive file [/home/abi/fetcher/tmp/ovos_plugin_common_play-0.0.7a7.tar.gz]
 [2024-06-02 23:14:38] INFO root fetch - main [MainThread]: End processing [ovos-plugin-common-play]: success
 [2024-06-02 23:14:38] INFO root fetch - main [MainThread]: Store serial: [23493863]
+[2024-06-02 23:16:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23493863]
+[2024-06-02 23:16:46] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-02 23:16:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cwstorm
+[2024-06-02 23:16:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: csm-ai
+[2024-06-02 23:16:47] INFO root fetch - processPackages [cwstorm]: New version: [0.2.3] Old Version: [0.2.2]
+[2024-06-02 23:16:47] INFO root fetch - processPackages [csm-ai]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-06-02 23:16:47] INFO root fetch - processPackages [cwstorm]: Downloading https://files.pythonhosted.org/packages/5a/a0/8d7dff48cc8ea84bb68c008866d9a64c9312bf84c7745b8127e43c6b1331/cwstorm-0.2.2-py2.py3-none-any.whl
+[2024-06-02 23:16:47] INFO root fetch - processPackages [csm-ai]: Downloading https://files.pythonhosted.org/packages/49/a7/edcb5b42b924360da93207941300618cc7a3e4a52d0e6a28961d55185953/csm_ai-0.1.1.tar.gz
+[2024-06-02 23:16:47] INFO root fetch - processPackages [csm-ai]: Downloading https://files.pythonhosted.org/packages/9d/01/e846f63a21d224a6e0fcd1427fd8d0c741636c50664137ed44ca931a4d7d/csm_ai-0.1.2.tar.gz
+[2024-06-02 23:16:47] INFO root fetch - processPackages [cwstorm]: Downloading https://files.pythonhosted.org/packages/79/47/7b0b4f4549d110fbd2f0f732f924672580e57a2a7ad04fe42ee948e9e30a/cwstorm-0.2.3-py2.py3-none-any.whl
+[2024-06-02 23:16:47] INFO root fetch - processPackages [csm-ai]: executing diffoscope
+[2024-06-02 23:16:47] INFO root fetch - processPackages [csm-ai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/csm_ai-0.1.1.tar.gz tmp/csm_ai-0.1.2.tar.gz --markdown 20240602/c/csm-ai/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-06-02 23:16:47] INFO root fetch - processPackages [cwstorm]: executing diffoscope
+[2024-06-02 23:16:47] INFO root fetch - processPackages [cwstorm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cwstorm-0.2.2-py2.py3-none-any.whl.zip tmp/cwstorm-0.2.3-py2.py3-none-any.whl.zip --markdown 20240602/c/cwstorm/0.2.2-0.2.3/README.md --exclude *.pyd
+[2024-06-02 23:16:48] INFO root fetch - processPackages [csm-ai]: Remove: archive file [/home/abi/fetcher/tmp/csm_ai-0.1.1.tar.gz]
+[2024-06-02 23:16:48] INFO root fetch - processPackages [csm-ai]: Remove: archive file [/home/abi/fetcher/tmp/csm_ai-0.1.2.tar.gz]
+[2024-06-02 23:16:48] INFO root fetch - main [MainThread]: End processing [csm-ai]: success
+[2024-06-02 23:16:48] INFO root fetch - processPackages [cwstorm]: Remove: archive file [/home/abi/fetcher/tmp/cwstorm-0.2.2-py2.py3-none-any.whl.zip]
+[2024-06-02 23:16:48] INFO root fetch - processPackages [cwstorm]: Remove: archive file [/home/abi/fetcher/tmp/cwstorm-0.2.3-py2.py3-none-any.whl.zip]
+[2024-06-02 23:16:48] INFO root fetch - main [MainThread]: End processing [cwstorm]: success
+[2024-06-02 23:16:48] INFO root fetch - main [MainThread]: Store serial: [23493868]
