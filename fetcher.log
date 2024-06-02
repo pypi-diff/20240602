@@ -2993,3 +2993,42 @@
 [2024-06-02 04:17:48] INFO root fetch - processPackages [pyrotgfork]: Remove: archive file [/home/abi/fetcher/tmp/pyrotgfork-2.1.32.4.tar.gz]
 [2024-06-02 04:17:48] INFO root fetch - main [MainThread]: End processing [pyrotgfork]: success
 [2024-06-02 04:17:48] INFO root fetch - main [MainThread]: Store serial: [23485668]
+[2024-06-02 04:19:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23485668]
+[2024-06-02 04:19:58] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-02 04:19:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: monai-weekly
+[2024-06-02 04:19:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sweetrpg-catalog-objects
+[2024-06-02 04:19:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gpt-computer-assistant
+[2024-06-02 04:19:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sweetrpg-web-core
+[2024-06-02 04:19:58] INFO root fetch - processPackages [sweetrpg-catalog-objects]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-06-02 04:19:58] INFO root fetch - processPackages [sweetrpg-web-core]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-06-02 04:19:58] INFO root fetch - processPackages [gpt-computer-assistant]: New version: [0.6.1] Old Version: [0.6.0]
+[2024-06-02 04:19:58] INFO root fetch - processPackages [sweetrpg-catalog-objects]: Downloading https://files.pythonhosted.org/packages/c7/08/22353b21dedaf21fa4ba31badec3ae264096dcca99184d3065611459ba0b/sweetrpg-catalog-objects-0.0.98.tar.gz
+[2024-06-02 04:19:58] INFO root fetch - processPackages [monai-weekly]: New version: [1.4.dev2422] Old Version: [1.4.dev2421]
+[2024-06-02 04:19:58] INFO root fetch - processPackages [sweetrpg-web-core]: Downloading https://files.pythonhosted.org/packages/10/78/7e4ec24c92190fa564c9ba8a1797ccda0c7472064d109da37e0d283f94d2/sweetrpg-web-core-0.0.98.tar.gz
+[2024-06-02 04:19:58] INFO root fetch - processPackages [gpt-computer-assistant]: Downloading https://files.pythonhosted.org/packages/c7/f5/4a3a1fbd555e5170fa0da5926aa7cfe8815f98c5e5d09d93e63c5765b74f/gpt_computer_assistant-0.6.0.tar.gz
+[2024-06-02 04:19:58] INFO root fetch - processPackages [sweetrpg-catalog-objects]: Downloading https://files.pythonhosted.org/packages/5b/02/0f5a8851235d4c7dc21b809889ce391c0c4ff873689aa324ede8d6d29d7a/sweetrpg-catalog-objects-0.0.99.tar.gz
+[2024-06-02 04:19:58] INFO root fetch - processPackages [sweetrpg-web-core]: Downloading https://files.pythonhosted.org/packages/bd/15/72a761101e501277066578a42896229ae4a254ecf7602e2e15f38b35310d/sweetrpg-web-core-0.0.99.tar.gz
+[2024-06-02 04:19:58] INFO root fetch - processPackages [monai-weekly]: Downloading https://files.pythonhosted.org/packages/5c/54/cf99c442891fb66bdc2643141bebc359141445b0b199f58f159b6301754c/monai_weekly-1.4.dev2421.tar.gz
+[2024-06-02 04:19:59] INFO root fetch - processPackages [sweetrpg-catalog-objects]: executing diffoscope
+[2024-06-02 04:19:59] INFO root fetch - processPackages [sweetrpg-web-core]: executing diffoscope
+[2024-06-02 04:19:59] INFO root fetch - processPackages [sweetrpg-web-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sweetrpg-web-core-0.0.98.tar.gz tmp/sweetrpg-web-core-0.0.99.tar.gz --markdown 20240602/s/sweetrpg-web-core/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-06-02 04:19:59] INFO root fetch - processPackages [sweetrpg-catalog-objects]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sweetrpg-catalog-objects-0.0.98.tar.gz tmp/sweetrpg-catalog-objects-0.0.99.tar.gz --markdown 20240602/s/sweetrpg-catalog-objects/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-06-02 04:19:59] INFO root fetch - processPackages [gpt-computer-assistant]: Downloading https://files.pythonhosted.org/packages/07/bf/cb4d490b14a95d52303d5e9bfff77974860331d952180a9684a944ec84c1/gpt_computer_assistant-0.6.1.tar.gz
+[2024-06-02 04:19:59] INFO root fetch - processPackages [gpt-computer-assistant]: executing diffoscope
+[2024-06-02 04:19:59] INFO root fetch - processPackages [gpt-computer-assistant]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gpt_computer_assistant-0.6.0.tar.gz tmp/gpt_computer_assistant-0.6.1.tar.gz --markdown 20240602/g/gpt-computer-assistant/0.6.0-0.6.1/README.md --exclude *.pyd
+[2024-06-02 04:19:59] INFO root fetch - processPackages [monai-weekly]: Downloading https://files.pythonhosted.org/packages/a8/6b/9092083fc5479ac1c1010246e34e2c166085ec6cebee71f3408dc4a0075f/monai_weekly-1.4.dev2422.tar.gz
+[2024-06-02 04:19:59] INFO root fetch - processPackages [monai-weekly]: executing diffoscope
+[2024-06-02 04:19:59] INFO root fetch - processPackages [monai-weekly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/monai_weekly-1.4.dev2421.tar.gz tmp/monai_weekly-1.4.dev2422.tar.gz --markdown 20240602/m/monai-weekly/1.4.dev2421-1.4.dev2422/README.md --exclude *.pyd
+[2024-06-02 04:19:59] INFO root fetch - processPackages [sweetrpg-web-core]: Remove: archive file [/home/abi/fetcher/tmp/sweetrpg-web-core-0.0.98.tar.gz]
+[2024-06-02 04:19:59] INFO root fetch - processPackages [sweetrpg-web-core]: Remove: archive file [/home/abi/fetcher/tmp/sweetrpg-web-core-0.0.99.tar.gz]
+[2024-06-02 04:19:59] INFO root fetch - main [MainThread]: End processing [sweetrpg-web-core]: success
+[2024-06-02 04:19:59] INFO root fetch - processPackages [sweetrpg-catalog-objects]: Remove: archive file [/home/abi/fetcher/tmp/sweetrpg-catalog-objects-0.0.98.tar.gz]
+[2024-06-02 04:19:59] INFO root fetch - processPackages [sweetrpg-catalog-objects]: Remove: archive file [/home/abi/fetcher/tmp/sweetrpg-catalog-objects-0.0.99.tar.gz]
+[2024-06-02 04:19:59] INFO root fetch - main [MainThread]: End processing [sweetrpg-catalog-objects]: success
+[2024-06-02 04:20:00] INFO root fetch - processPackages [gpt-computer-assistant]: Remove: archive file [/home/abi/fetcher/tmp/gpt_computer_assistant-0.6.0.tar.gz]
+[2024-06-02 04:20:00] INFO root fetch - processPackages [gpt-computer-assistant]: Remove: archive file [/home/abi/fetcher/tmp/gpt_computer_assistant-0.6.1.tar.gz]
+[2024-06-02 04:20:00] INFO root fetch - main [MainThread]: End processing [gpt-computer-assistant]: success
+[2024-06-02 04:20:04] INFO root fetch - processPackages [monai-weekly]: Remove: archive file [/home/abi/fetcher/tmp/monai_weekly-1.4.dev2421.tar.gz]
+[2024-06-02 04:20:04] INFO root fetch - processPackages [monai-weekly]: Remove: archive file [/home/abi/fetcher/tmp/monai_weekly-1.4.dev2422.tar.gz]
+[2024-06-02 04:20:04] INFO root fetch - main [MainThread]: End processing [monai-weekly]: success
+[2024-06-02 04:20:04] INFO root fetch - main [MainThread]: Store serial: [23485679]
