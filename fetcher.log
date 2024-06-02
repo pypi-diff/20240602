@@ -12607,3 +12607,78 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 17:49:41] INFO root fetch - processPackages [spaceone-api]: Remove: archive file [/home/abi/fetcher/tmp/spaceone-api-2.0.dev89.tar.gz]
 [2024-06-02 17:49:41] INFO root fetch - main [MainThread]: End processing [spaceone-api]: success
 [2024-06-02 17:49:41] INFO root fetch - main [MainThread]: Store serial: [23490326]
+[2024-06-02 17:51:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23490326]
+[2024-06-02 17:51:49] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-06-02 17:51:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kcli
+[2024-06-02 17:51:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hugo
+[2024-06-02 17:51:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: a9x-webstatistics
+[2024-06-02 17:51:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: NJUlogin
+[2024-06-02 17:51:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sc3dg
+[2024-06-02 17:51:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: MzhFunc
+[2024-06-02 17:51:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: dash-express-components
+[2024-06-02 17:51:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pypi-cicd
+[2024-06-02 17:51:50] INFO root fetch - processPackages [sc3dg]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-06-02 17:51:50] INFO root fetch - processPackages [MzhFunc]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-06-02 17:51:50] INFO root fetch - processPackages [dash-express-components]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-06-02 17:51:50] INFO root fetch - processPackages [NJUlogin]: New version: [3.1.2] Old Version: [3.1.1]
+[2024-06-02 17:51:50] INFO root fetch - processPackages [a9x-webstatistics]: New version: [0.2.2] Old Version: [0.2.1]
+[2024-06-02 17:51:50] INFO root fetch - processPackages [sc3dg]: Downloading https://files.pythonhosted.org/packages/97/65/1394420940d9bdc212860a3842baed2ba84016ee1556fa9c66bfb0fa3d07/sc3dg-0.0.8.tar.gz
+[2024-06-02 17:51:50] INFO root fetch - processPackages [MzhFunc]: Downloading https://files.pythonhosted.org/packages/0c/54/964b42fb130ae93616f50d17e2cb1e02cf20d0487b0e2c171cf1748c0258/MzhFunc-0.0.3.tar.gz
+[2024-06-02 17:51:50] INFO root fetch - processPackages [hugo]: New version: [0.126.3] Old Version: [0.126.2]
+[2024-06-02 17:51:50] INFO root fetch - processPackages [pypi-cicd]: New version: [0.2] Old Version: [0.1]
+[2024-06-02 17:51:50] INFO root fetch - processPackages [dash-express-components]: Downloading https://files.pythonhosted.org/packages/4e/b3/c3e8c4c5ce0728cc183f583d30f62816b7a3c3c638dd1272588349dd0d28/dash_express_components-0.0.98.tar.gz
+[2024-06-02 17:51:50] INFO root fetch - processPackages [a9x-webstatistics]: Downloading https://files.pythonhosted.org/packages/34/3f/49de46c16e5c3539e11181dd6c0953f374c9a4d72058a111586c77437a3b/a9x_webstatistics-0.2.1.tar.gz
+[2024-06-02 17:51:50] INFO root fetch - processPackages [kcli]: New version: [99.0.202406021549] Old Version: [99.0.202406021519]
+[2024-06-02 17:51:50] INFO root fetch - processPackages [NJUlogin]: Downloading https://files.pythonhosted.org/packages/9f/77/4c3d58210681af2e0e8179d414670211b733a3461d4cd2c455ede2b830fb/NJUlogin-3.1.1.tar.gz
+[2024-06-02 17:51:50] INFO root fetch - processPackages [sc3dg]: Downloading https://files.pythonhosted.org/packages/36/99/5a97c5b877e089a11d7fcbc1d935f5e5301bcc0f77867bda7d000fc1eb58/sc3dg-0.0.9.tar.gz
+[2024-06-02 17:51:50] INFO root fetch - processPackages [pypi-cicd]: Downloading https://files.pythonhosted.org/packages/a6/1a/224e3ea1eaf472e86866edac712ac1bad133e0de0d483be68a84594b1770/pypi_cicd-0.1.tar.gz
+[2024-06-02 17:51:50] INFO root fetch - processPackages [hugo]: Downloading https://files.pythonhosted.org/packages/6f/f6/a4a63b20f2321d16dec4cbffa90810e053360aed8dc86a825105effdd903/hugo-0.126.2.tar.gz
+[2024-06-02 17:51:50] INFO root fetch - processPackages [MzhFunc]: Downloading https://files.pythonhosted.org/packages/91/a8/2ab35eaed3cce97533fb3d64695cffe1418c940c22c7cbbe4a5da88d8743/MzhFunc-0.0.4.tar.gz
+[2024-06-02 17:51:50] INFO root fetch - processPackages [dash-express-components]: Downloading https://files.pythonhosted.org/packages/0c/7f/05cda1bca10b2978c33b14d0a7201a355c92df7e5493dddda332ce1c9204/dash_express_components-0.0.99.tar.gz
+[2024-06-02 17:51:50] INFO root fetch - processPackages [sc3dg]: executing diffoscope
+[2024-06-02 17:51:50] INFO root fetch - processPackages [sc3dg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sc3dg-0.0.8.tar.gz tmp/sc3dg-0.0.9.tar.gz --markdown 20240602/s/sc3dg/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-06-02 17:51:50] INFO root fetch - processPackages [MzhFunc]: executing diffoscope
+[2024-06-02 17:51:50] INFO root fetch - processPackages [MzhFunc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MzhFunc-0.0.3.tar.gz tmp/MzhFunc-0.0.4.tar.gz --markdown 20240602/M/MzhFunc/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-06-02 17:51:50] INFO root fetch - processPackages [kcli]: Downloading https://files.pythonhosted.org/packages/a1/d4/b3b78486667171c8c46766d9dad544a2bf9c7da7dec705b4b30d752a1be0/kcli-99.0.202406021519.tar.gz
+[2024-06-02 17:51:50] INFO root fetch - processPackages [a9x-webstatistics]: Downloading https://files.pythonhosted.org/packages/e8/bd/288ee837e061932ca4f9f97ff5107a2e3d49c0e1ee7a6e77534f673a4a26/a9x_webstatistics-0.2.2.tar.gz
+[2024-06-02 17:51:50] INFO root fetch - processPackages [dash-express-components]: executing diffoscope
+[2024-06-02 17:51:50] INFO root fetch - processPackages [dash-express-components]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dash_express_components-0.0.98.tar.gz tmp/dash_express_components-0.0.99.tar.gz --markdown 20240602/d/dash-express-components/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-06-02 17:51:50] INFO root fetch - processPackages [pypi-cicd]: Downloading https://files.pythonhosted.org/packages/f9/71/3ffee084e5d4bf39a729f8ea4f58200fadbfe00f5be0ef0e43ae8083e264/pypi_cicd-0.2.tar.gz
+[2024-06-02 17:51:50] INFO root fetch - processPackages [hugo]: Downloading https://files.pythonhosted.org/packages/a4/b2/a78e32312b4d984e595dd3406df1e5f6be801045943c9d7413d8c90cfc00/hugo-0.126.3.tar.gz
+[2024-06-02 17:51:51] INFO root fetch - processPackages [a9x-webstatistics]: executing diffoscope
+[2024-06-02 17:51:51] INFO root fetch - processPackages [a9x-webstatistics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/a9x_webstatistics-0.2.1.tar.gz tmp/a9x_webstatistics-0.2.2.tar.gz --markdown 20240602/a/a9x-webstatistics/0.2.1-0.2.2/README.md --exclude *.pyd
+[2024-06-02 17:51:51] INFO root fetch - processPackages [kcli]: Downloading https://files.pythonhosted.org/packages/7d/f3/7f42c3b42c955e078da271c3e0f153a6bfb12dcdce7de049b0294ccce5ba/kcli-99.0.202406021549.tar.gz
+[2024-06-02 17:51:51] INFO root fetch - processPackages [pypi-cicd]: executing diffoscope
+[2024-06-02 17:51:51] INFO root fetch - processPackages [pypi-cicd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypi_cicd-0.1.tar.gz tmp/pypi_cicd-0.2.tar.gz --markdown 20240602/p/pypi-cicd/0.1-0.2/README.md --exclude *.pyd
+[2024-06-02 17:51:51] INFO root fetch - processPackages [hugo]: executing diffoscope
+[2024-06-02 17:51:51] INFO root fetch - processPackages [hugo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hugo-0.126.2.tar.gz tmp/hugo-0.126.3.tar.gz --markdown 20240602/h/hugo/0.126.2-0.126.3/README.md --exclude *.pyd
+[2024-06-02 17:51:51] INFO root fetch - processPackages [MzhFunc]: Remove: archive file [/home/abi/fetcher/tmp/MzhFunc-0.0.3.tar.gz]
+[2024-06-02 17:51:51] INFO root fetch - processPackages [MzhFunc]: Remove: archive file [/home/abi/fetcher/tmp/MzhFunc-0.0.4.tar.gz]
+[2024-06-02 17:51:51] INFO root fetch - main [MainThread]: End processing [MzhFunc]: success
+[2024-06-02 17:51:51] INFO root fetch - processPackages [sc3dg]: Remove: archive file [/home/abi/fetcher/tmp/sc3dg-0.0.8.tar.gz]
+[2024-06-02 17:51:51] INFO root fetch - processPackages [sc3dg]: Remove: archive file [/home/abi/fetcher/tmp/sc3dg-0.0.9.tar.gz]
+[2024-06-02 17:51:51] INFO root fetch - main [MainThread]: End processing [sc3dg]: success
+[2024-06-02 17:51:51] INFO root fetch - processPackages [NJUlogin]: Downloading https://files.pythonhosted.org/packages/d6/2d/f4dbe03ca8354893a435c970b66e4d9f495fda13c10271b928bd2edd5e7b/NJUlogin-3.1.2.tar.gz
+[2024-06-02 17:51:51] INFO root fetch - processPackages [kcli]: executing diffoscope
+[2024-06-02 17:51:51] INFO root fetch - processPackages [kcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kcli-99.0.202406021519.tar.gz tmp/kcli-99.0.202406021549.tar.gz --markdown 20240602/k/kcli/99.0.202406021519-99.0.202406021549/README.md --exclude *.pyd
+[2024-06-02 17:51:51] INFO root fetch - processPackages [a9x-webstatistics]: Remove: archive file [/home/abi/fetcher/tmp/a9x_webstatistics-0.2.1.tar.gz]
+[2024-06-02 17:51:51] INFO root fetch - processPackages [a9x-webstatistics]: Remove: archive file [/home/abi/fetcher/tmp/a9x_webstatistics-0.2.2.tar.gz]
+[2024-06-02 17:51:51] INFO root fetch - main [MainThread]: End processing [a9x-webstatistics]: success
+[2024-06-02 17:51:51] INFO root fetch - processPackages [pypi-cicd]: Remove: archive file [/home/abi/fetcher/tmp/pypi_cicd-0.1.tar.gz]
+[2024-06-02 17:51:51] INFO root fetch - processPackages [pypi-cicd]: Remove: archive file [/home/abi/fetcher/tmp/pypi_cicd-0.2.tar.gz]
+[2024-06-02 17:51:51] INFO root fetch - main [MainThread]: End processing [pypi-cicd]: success
+[2024-06-02 17:51:51] INFO root fetch - processPackages [hugo]: Remove: archive file [/home/abi/fetcher/tmp/hugo-0.126.2.tar.gz]
+[2024-06-02 17:51:51] INFO root fetch - processPackages [hugo]: Remove: archive file [/home/abi/fetcher/tmp/hugo-0.126.3.tar.gz]
+[2024-06-02 17:51:51] INFO root fetch - main [MainThread]: End processing [hugo]: success
+[2024-06-02 17:51:52] INFO root fetch - processPackages [NJUlogin]: executing diffoscope
+[2024-06-02 17:51:52] INFO root fetch - processPackages [NJUlogin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/NJUlogin-3.1.1.tar.gz tmp/NJUlogin-3.1.2.tar.gz --markdown 20240602/N/NJUlogin/3.1.1-3.1.2/README.md --exclude *.pyd
+[2024-06-02 17:51:53] INFO root fetch - processPackages [NJUlogin]: Remove: archive file [/home/abi/fetcher/tmp/NJUlogin-3.1.1.tar.gz]
+[2024-06-02 17:51:53] INFO root fetch - processPackages [NJUlogin]: Remove: archive file [/home/abi/fetcher/tmp/NJUlogin-3.1.2.tar.gz]
+[2024-06-02 17:51:53] INFO root fetch - main [MainThread]: End processing [NJUlogin]: success
+[2024-06-02 17:51:53] INFO root fetch - processPackages [kcli]: Remove: archive file [/home/abi/fetcher/tmp/kcli-99.0.202406021519.tar.gz]
+[2024-06-02 17:51:53] INFO root fetch - processPackages [kcli]: Remove: archive file [/home/abi/fetcher/tmp/kcli-99.0.202406021549.tar.gz]
+[2024-06-02 17:51:53] INFO root fetch - main [MainThread]: End processing [kcli]: success
+[2024-06-02 17:51:57] INFO root fetch - processPackages [dash-express-components]: Remove: archive file [/home/abi/fetcher/tmp/dash_express_components-0.0.98.tar.gz]
+[2024-06-02 17:51:57] INFO root fetch - processPackages [dash-express-components]: Remove: archive file [/home/abi/fetcher/tmp/dash_express_components-0.0.99.tar.gz]
+[2024-06-02 17:51:57] INFO root fetch - main [MainThread]: End processing [dash-express-components]: success
+[2024-06-02 17:51:57] INFO root fetch - main [MainThread]: Store serial: [23490354]
