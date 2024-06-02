@@ -7086,3 +7086,51 @@
 [2024-06-02 11:47:10] INFO root fetch - processPackages [pyroblack]: Remove: archive file [/home/abi/fetcher/tmp/pyroblack-2.3.70.tar.gz]
 [2024-06-02 11:47:10] INFO root fetch - main [MainThread]: End processing [pyroblack]: success
 [2024-06-02 11:47:10] INFO root fetch - main [MainThread]: Store serial: [23487891]
+[2024-06-02 11:49:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23487891]
+[2024-06-02 11:49:19] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-06-02 11:49:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kcli
+[2024-06-02 11:49:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sage-lib
+[2024-06-02 11:49:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: json-repair
+[2024-06-02 11:49:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: fonemas
+[2024-06-02 11:49:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: markup-parser
+[2024-06-02 11:49:19] INFO root fetch - processPackages [kcli]: New version: [99.0.202406020942] Old Version: [99.0.202405311857]
+[2024-06-02 11:49:19] INFO root fetch - processPackages [fonemas]: New version: [2.0.9] Old Version: [2.0.7]
+[2024-06-02 11:49:19] INFO root fetch - processPackages [json-repair]: New version: [0.9.0] Old Version: [0.8.1]
+[2024-06-02 11:49:19] INFO root fetch - processPackages [markup-parser]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-06-02 11:49:19] INFO root fetch - processPackages [sage-lib]: New version: [0.1.5.6] Old Version: [0.1.5.5]
+[2024-06-02 11:49:19] INFO root fetch - processPackages [kcli]: Downloading https://files.pythonhosted.org/packages/df/91/d6b05f2e2698dd7d6fa6963fde52c4f0344dce33d5736f17d73b098c2034/kcli-99.0.202405311857.tar.gz
+[2024-06-02 11:49:19] INFO root fetch - processPackages [json-repair]: Downloading https://files.pythonhosted.org/packages/30/98/8e5e70109f1541aeeeccf67fa2876d53b95f4dbf67deb476eaa6931ff9b5/json_repair-0.8.1.tar.gz
+[2024-06-02 11:49:19] INFO root fetch - processPackages [fonemas]: Downloading https://files.pythonhosted.org/packages/e3/4e/ea0554f2a671ef07143c200631e67304fe523ad714c6f8962f2fa316a6ba/fonemas-2.0.7.tar.gz
+[2024-06-02 11:49:20] INFO root fetch - processPackages [markup-parser]: Downloading https://files.pythonhosted.org/packages/21/56/eb33b855807305ccb66ca297ab9d02195bd11922e9a4f2662f1a3588928a/markup-parser-0.1.2.tar.gz
+[2024-06-02 11:49:20] INFO root fetch - processPackages [sage-lib]: Downloading https://files.pythonhosted.org/packages/ea/0c/8b019e4a3ab9d83f611d40e26331dfe2fa2c2bba8db2edbb3b8fd567c8a5/sage_lib-0.1.5.5.tar.gz
+[2024-06-02 11:49:20] INFO root fetch - processPackages [kcli]: Downloading https://files.pythonhosted.org/packages/5e/74/01e64e1e3799a8223f612ed1b7111122063d5ee96eac558c8b14a67bec69/kcli-99.0.202406020942.tar.gz
+[2024-06-02 11:49:20] INFO root fetch - processPackages [markup-parser]: Downloading https://files.pythonhosted.org/packages/b6/4b/e66b2d6efc8127ae6ab7c9d17b7916e5f5149ce5ae0b130c39848debdda2/markup_parser-0.1.3.tar.gz
+[2024-06-02 11:49:20] INFO root fetch - processPackages [kcli]: executing diffoscope
+[2024-06-02 11:49:20] INFO root fetch - processPackages [kcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kcli-99.0.202405311857.tar.gz tmp/kcli-99.0.202406020942.tar.gz --markdown 20240602/k/kcli/99.0.202405311857-99.0.202406020942/README.md --exclude *.pyd
+[2024-06-02 11:49:20] INFO root fetch - processPackages [json-repair]: Downloading https://files.pythonhosted.org/packages/a3/6d/f3cff9a4b72bae984511e3b5e198dc886ea044b979e7d59ebd53d0583a10/json_repair-0.9.0.tar.gz
+[2024-06-02 11:49:20] INFO root fetch - processPackages [sage-lib]: Downloading https://files.pythonhosted.org/packages/01/6d/e1a1788e0eb83967bdf3a043f6398b21aecf95a3b39ddb63726b157237f5/sage_lib-0.1.5.6.tar.gz
+[2024-06-02 11:49:20] INFO root fetch - processPackages [fonemas]: Downloading https://files.pythonhosted.org/packages/1d/5b/80c6cdb7d0dfb4b3063593d97ec4c80c3a8c48a6b004922e6400b701147f/fonemas-2.0.9.tar.gz
+[2024-06-02 11:49:20] INFO root fetch - processPackages [markup-parser]: executing diffoscope
+[2024-06-02 11:49:20] INFO root fetch - processPackages [markup-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/markup-parser-0.1.2.tar.gz tmp/markup_parser-0.1.3.tar.gz --markdown 20240602/m/markup-parser/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-06-02 11:49:20] INFO root fetch - processPackages [json-repair]: executing diffoscope
+[2024-06-02 11:49:20] INFO root fetch - processPackages [json-repair]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/json_repair-0.8.1.tar.gz tmp/json_repair-0.9.0.tar.gz --markdown 20240602/j/json-repair/0.8.1-0.9.0/README.md --exclude *.pyd
+[2024-06-02 11:49:20] INFO root fetch - processPackages [fonemas]: executing diffoscope
+[2024-06-02 11:49:20] INFO root fetch - processPackages [fonemas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fonemas-2.0.7.tar.gz tmp/fonemas-2.0.9.tar.gz --markdown 20240602/f/fonemas/2.0.7-2.0.9/README.md --exclude *.pyd
+[2024-06-02 11:49:20] INFO root fetch - processPackages [sage-lib]: executing diffoscope
+[2024-06-02 11:49:20] INFO root fetch - processPackages [sage-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sage_lib-0.1.5.5.tar.gz tmp/sage_lib-0.1.5.6.tar.gz --markdown 20240602/s/sage-lib/0.1.5.5-0.1.5.6/README.md --exclude *.pyd
+[2024-06-02 11:49:21] INFO root fetch - processPackages [markup-parser]: Remove: archive file [/home/abi/fetcher/tmp/markup-parser-0.1.2.tar.gz]
+[2024-06-02 11:49:21] INFO root fetch - processPackages [markup-parser]: Remove: archive file [/home/abi/fetcher/tmp/markup_parser-0.1.3.tar.gz]
+[2024-06-02 11:49:21] INFO root fetch - main [MainThread]: End processing [markup-parser]: success
+[2024-06-02 11:49:21] INFO root fetch - processPackages [fonemas]: Remove: archive file [/home/abi/fetcher/tmp/fonemas-2.0.7.tar.gz]
+[2024-06-02 11:49:21] INFO root fetch - processPackages [fonemas]: Remove: archive file [/home/abi/fetcher/tmp/fonemas-2.0.9.tar.gz]
+[2024-06-02 11:49:21] INFO root fetch - main [MainThread]: End processing [fonemas]: success
+[2024-06-02 11:49:21] INFO root fetch - processPackages [json-repair]: Remove: archive file [/home/abi/fetcher/tmp/json_repair-0.8.1.tar.gz]
+[2024-06-02 11:49:21] INFO root fetch - processPackages [json-repair]: Remove: archive file [/home/abi/fetcher/tmp/json_repair-0.9.0.tar.gz]
+[2024-06-02 11:49:21] INFO root fetch - main [MainThread]: End processing [json-repair]: success
+[2024-06-02 11:49:21] INFO root fetch - processPackages [sage-lib]: Remove: archive file [/home/abi/fetcher/tmp/sage_lib-0.1.5.5.tar.gz]
+[2024-06-02 11:49:21] INFO root fetch - processPackages [sage-lib]: Remove: archive file [/home/abi/fetcher/tmp/sage_lib-0.1.5.6.tar.gz]
+[2024-06-02 11:49:21] INFO root fetch - main [MainThread]: End processing [sage-lib]: success
+[2024-06-02 11:49:22] INFO root fetch - processPackages [kcli]: Remove: archive file [/home/abi/fetcher/tmp/kcli-99.0.202405311857.tar.gz]
+[2024-06-02 11:49:22] INFO root fetch - processPackages [kcli]: Remove: archive file [/home/abi/fetcher/tmp/kcli-99.0.202406020942.tar.gz]
+[2024-06-02 11:49:22] INFO root fetch - main [MainThread]: End processing [kcli]: success
+[2024-06-02 11:49:22] INFO root fetch - main [MainThread]: Store serial: [23487929]
