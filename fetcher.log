@@ -2759,3 +2759,18 @@
 [2024-06-02 03:45:24] INFO root fetch - processPackages [pih-plb-db]: Remove: archive file [/home/abi/fetcher/tmp/pih-plb_db-0.22.1.tar.gz]
 [2024-06-02 03:45:24] INFO root fetch - main [MainThread]: End processing [pih-plb-db]: success
 [2024-06-02 03:45:24] INFO root fetch - main [MainThread]: Store serial: [23485543]
+[2024-06-02 03:47:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23485543]
+[2024-06-02 03:47:32] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-02 03:47:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: certifi
+[2024-06-02 03:47:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bribrimapper
+[2024-06-02 03:47:32] INFO root fetch - processPackages [certifi]: New version: [2024.2.2] Old Version: [2023.7.22]
+[2024-06-02 03:47:32] WARNING root fetch - processPackages [bribrimapper]: Skipping, unable to determine old version
+[2024-06-02 03:47:32] INFO root fetch - main [MainThread]: End processing [bribrimapper] error
+[2024-06-02 03:47:32] INFO root fetch - processPackages [certifi]: Downloading https://files.pythonhosted.org/packages/98/98/c2ff18671db109c9f10ed27f5ef610ae05b73bd876664139cf95bd1429aa/certifi-2023.7.22.tar.gz
+[2024-06-02 03:47:32] INFO root fetch - processPackages [certifi]: Downloading https://files.pythonhosted.org/packages/71/da/e94e26401b62acd6d91df2b52954aceb7f561743aa5ccc32152886c76c96/certifi-2024.2.2.tar.gz
+[2024-06-02 03:47:32] INFO root fetch - processPackages [certifi]: executing diffoscope
+[2024-06-02 03:47:32] INFO root fetch - processPackages [certifi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/certifi-2023.7.22.tar.gz tmp/certifi-2024.2.2.tar.gz --markdown 20240602/c/certifi/2023.7.22-2024.2.2/README.md --exclude *.pyd
+[2024-06-02 03:47:33] INFO root fetch - processPackages [certifi]: Remove: archive file [/home/abi/fetcher/tmp/certifi-2023.7.22.tar.gz]
+[2024-06-02 03:47:33] INFO root fetch - processPackages [certifi]: Remove: archive file [/home/abi/fetcher/tmp/certifi-2024.2.2.tar.gz]
+[2024-06-02 03:47:33] INFO root fetch - main [MainThread]: End processing [certifi]: success
+[2024-06-02 03:47:33] INFO root fetch - main [MainThread]: Store serial: [23485550]
