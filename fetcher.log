@@ -12289,3 +12289,48 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 17:32:08] INFO root fetch - processPackages [mayan-edms]: Remove: archive file [/home/abi/fetcher/tmp/mayan-edms-4.7.tar.gz]
 [2024-06-02 17:32:08] INFO root fetch - main [MainThread]: End processing [mayan-edms]: success
 [2024-06-02 17:32:08] INFO root fetch - main [MainThread]: Store serial: [23490133]
+[2024-06-02 17:34:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23490133]
+[2024-06-02 17:34:16] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-06-02 17:34:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: MzhFunc
+[2024-06-02 17:34:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: spotify-utils
+[2024-06-02 17:34:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aimodelshare
+[2024-06-02 17:34:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pkg-vers
+[2024-06-02 17:34:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: felicien
+[2024-06-02 17:34:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: rl-test-common
+[2024-06-02 17:34:16] WARNING root fetch - processPackages [pkg-vers]: Skipping, unable to determine old version
+[2024-06-02 17:34:16] INFO root fetch - main [MainThread]: End processing [pkg-vers] error
+[2024-06-02 17:34:16] INFO root fetch - processPackages [MzhFunc]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-06-02 17:34:16] WARNING root fetch - processPackages [rl-test-common]: Skipping, unable to determine old version
+[2024-06-02 17:34:16] INFO root fetch - main [MainThread]: End processing [rl-test-common] error
+[2024-06-02 17:34:16] INFO root fetch - processPackages [aimodelshare]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-06-02 17:34:16] INFO root fetch - processPackages [spotify-utils]: New version: [1.0.6] Old Version: [1.0.5]
+[2024-06-02 17:34:16] INFO root fetch - processPackages [MzhFunc]: Downloading https://files.pythonhosted.org/packages/b9/5b/ee7065f9f74cbcd4dde63acf7ec6f5df21ef054ff4a08e96660c78826f02/MzhFunc-0.0.2.tar.gz
+[2024-06-02 17:34:16] INFO root fetch - processPackages [felicien]: New version: [0.8.0] Old Version: [0.7.0]
+[2024-06-02 17:34:16] INFO root fetch - processPackages [aimodelshare]: Downloading https://files.pythonhosted.org/packages/c0/89/8d5c1ec1f29fb33b0fe43c98e3f08f65c921359d526635068eef7a186e2c/aimodelshare-0.1.8.tar.gz
+[2024-06-02 17:34:16] INFO root fetch - processPackages [spotify-utils]: Downloading https://files.pythonhosted.org/packages/b3/a9/0c248c5898c39bb5aff2d22dd94158e12cc939a316477804608c86b1b730/spotify_utils-1.0.5.tar.gz
+[2024-06-02 17:34:16] INFO root fetch - processPackages [felicien]: Downloading https://files.pythonhosted.org/packages/9f/d7/25e76319490bf571f0ed790edcc57055799e371cee78c506abea67359d82/felicien-0.7.0.tar.gz
+[2024-06-02 17:34:16] INFO root fetch - processPackages [MzhFunc]: Downloading https://files.pythonhosted.org/packages/0c/54/964b42fb130ae93616f50d17e2cb1e02cf20d0487b0e2c171cf1748c0258/MzhFunc-0.0.3.tar.gz
+[2024-06-02 17:34:17] INFO root fetch - processPackages [aimodelshare]: Downloading https://files.pythonhosted.org/packages/92/1b/5990f7c62044a2ad0776737091765068646eecee14dd251c5ea3732caeb0/aimodelshare-0.1.9.tar.gz
+[2024-06-02 17:34:17] INFO root fetch - processPackages [MzhFunc]: executing diffoscope
+[2024-06-02 17:34:17] INFO root fetch - processPackages [MzhFunc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MzhFunc-0.0.2.tar.gz tmp/MzhFunc-0.0.3.tar.gz --markdown 20240602/M/MzhFunc/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-06-02 17:34:17] INFO root fetch - processPackages [spotify-utils]: Downloading https://files.pythonhosted.org/packages/24/17/b08d6c931895463be6fc3fde8153d46b45e97cd34824eb3c1d9fb5632111/spotify_utils-1.0.6.tar.gz
+[2024-06-02 17:34:17] INFO root fetch - processPackages [aimodelshare]: executing diffoscope
+[2024-06-02 17:34:17] INFO root fetch - processPackages [aimodelshare]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aimodelshare-0.1.8.tar.gz tmp/aimodelshare-0.1.9.tar.gz --markdown 20240602/a/aimodelshare/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-06-02 17:34:17] INFO root fetch - processPackages [felicien]: Downloading https://files.pythonhosted.org/packages/7f/c8/5b694b0eb713b92b75c665d4aa2614ef47ed625059462fadc9483b40485e/felicien-0.8.0.tar.gz
+[2024-06-02 17:34:17] INFO root fetch - processPackages [spotify-utils]: executing diffoscope
+[2024-06-02 17:34:17] INFO root fetch - processPackages [spotify-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spotify_utils-1.0.5.tar.gz tmp/spotify_utils-1.0.6.tar.gz --markdown 20240602/s/spotify-utils/1.0.5-1.0.6/README.md --exclude *.pyd
+[2024-06-02 17:34:17] INFO root fetch - processPackages [felicien]: executing diffoscope
+[2024-06-02 17:34:17] INFO root fetch - processPackages [felicien]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/felicien-0.7.0.tar.gz tmp/felicien-0.8.0.tar.gz --markdown 20240602/f/felicien/0.7.0-0.8.0/README.md --exclude *.pyd
+[2024-06-02 17:34:17] INFO root fetch - processPackages [MzhFunc]: Remove: archive file [/home/abi/fetcher/tmp/MzhFunc-0.0.2.tar.gz]
+[2024-06-02 17:34:17] INFO root fetch - processPackages [MzhFunc]: Remove: archive file [/home/abi/fetcher/tmp/MzhFunc-0.0.3.tar.gz]
+[2024-06-02 17:34:17] INFO root fetch - main [MainThread]: End processing [MzhFunc]: success
+[2024-06-02 17:34:17] INFO root fetch - processPackages [spotify-utils]: Remove: archive file [/home/abi/fetcher/tmp/spotify_utils-1.0.5.tar.gz]
+[2024-06-02 17:34:17] INFO root fetch - processPackages [spotify-utils]: Remove: archive file [/home/abi/fetcher/tmp/spotify_utils-1.0.6.tar.gz]
+[2024-06-02 17:34:17] INFO root fetch - main [MainThread]: End processing [spotify-utils]: success
+[2024-06-02 17:34:17] INFO root fetch - processPackages [felicien]: Remove: archive file [/home/abi/fetcher/tmp/felicien-0.7.0.tar.gz]
+[2024-06-02 17:34:17] INFO root fetch - processPackages [felicien]: Remove: archive file [/home/abi/fetcher/tmp/felicien-0.8.0.tar.gz]
+[2024-06-02 17:34:17] INFO root fetch - main [MainThread]: End processing [felicien]: success
+[2024-06-02 17:34:18] INFO root fetch - processPackages [aimodelshare]: Remove: archive file [/home/abi/fetcher/tmp/aimodelshare-0.1.8.tar.gz]
+[2024-06-02 17:34:18] INFO root fetch - processPackages [aimodelshare]: Remove: archive file [/home/abi/fetcher/tmp/aimodelshare-0.1.9.tar.gz]
+[2024-06-02 17:34:18] INFO root fetch - main [MainThread]: End processing [aimodelshare]: success
+[2024-06-02 17:34:18] INFO root fetch - main [MainThread]: Store serial: [23490152]
