@@ -5127,3 +5127,24 @@
 [2024-06-02 08:47:48] INFO root fetch - processPackages [geochemistrypi]: Remove: archive file [/home/abi/fetcher/tmp/geochemistrypi-0.6.0.tar.gz]
 [2024-06-02 08:47:48] INFO root fetch - main [MainThread]: End processing [geochemistrypi]: success
 [2024-06-02 08:47:48] INFO root fetch - main [MainThread]: Store serial: [23486803]
+[2024-06-02 08:49:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23486803]
+[2024-06-02 08:49:58] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-02 08:49:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sphinxcontrib-typer
+[2024-06-02 08:49:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dime-sampler
+[2024-06-02 08:49:58] INFO root fetch - processPackages [dime-sampler]: New version: [1.0.0] Old Version: [0.9.1]
+[2024-06-02 08:49:58] INFO root fetch - processPackages [sphinxcontrib-typer]: New version: [0.3.0] Old Version: [0.2.5]
+[2024-06-02 08:49:58] INFO root fetch - processPackages [dime-sampler]: Downloading https://files.pythonhosted.org/packages/d1/c4/193593a2ae827aa6c0962bb28a143908f87e637ecc4e331f891b021f1e23/dime_sampler-0.9.1.tar.gz
+[2024-06-02 08:49:58] INFO root fetch - processPackages [sphinxcontrib-typer]: Downloading https://files.pythonhosted.org/packages/3b/95/61664129163cd47c8fa71482be38c66bbdb84a1ab76cfdf05ecc08a195ad/sphinxcontrib_typer-0.2.5.tar.gz
+[2024-06-02 08:49:59] INFO root fetch - processPackages [sphinxcontrib-typer]: Downloading https://files.pythonhosted.org/packages/ec/9c/61d02920302b5a30e75aa8d53325f9355f6690f72bb22ce530b213abd6d9/sphinxcontrib_typer-0.3.0.tar.gz
+[2024-06-02 08:49:59] INFO root fetch - processPackages [dime-sampler]: Downloading https://files.pythonhosted.org/packages/c9/f0/32de3bfdda83f7d82589eeb69db99c0cfe1d8b47c03821eb2c4ed0bf53ba/dime_sampler-1.0.0.tar.gz
+[2024-06-02 08:49:59] INFO root fetch - processPackages [sphinxcontrib-typer]: executing diffoscope
+[2024-06-02 08:49:59] INFO root fetch - processPackages [sphinxcontrib-typer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sphinxcontrib_typer-0.2.5.tar.gz tmp/sphinxcontrib_typer-0.3.0.tar.gz --markdown 20240602/s/sphinxcontrib-typer/0.2.5-0.3.0/README.md --exclude *.pyd
+[2024-06-02 08:49:59] INFO root fetch - processPackages [dime-sampler]: executing diffoscope
+[2024-06-02 08:49:59] INFO root fetch - processPackages [dime-sampler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dime_sampler-0.9.1.tar.gz tmp/dime_sampler-1.0.0.tar.gz --markdown 20240602/d/dime-sampler/0.9.1-1.0.0/README.md --exclude *.pyd
+[2024-06-02 08:49:59] INFO root fetch - processPackages [sphinxcontrib-typer]: Remove: archive file [/home/abi/fetcher/tmp/sphinxcontrib_typer-0.2.5.tar.gz]
+[2024-06-02 08:49:59] INFO root fetch - processPackages [sphinxcontrib-typer]: Remove: archive file [/home/abi/fetcher/tmp/sphinxcontrib_typer-0.3.0.tar.gz]
+[2024-06-02 08:49:59] INFO root fetch - main [MainThread]: End processing [sphinxcontrib-typer]: success
+[2024-06-02 08:49:59] INFO root fetch - processPackages [dime-sampler]: Remove: archive file [/home/abi/fetcher/tmp/dime_sampler-0.9.1.tar.gz]
+[2024-06-02 08:49:59] INFO root fetch - processPackages [dime-sampler]: Remove: archive file [/home/abi/fetcher/tmp/dime_sampler-1.0.0.tar.gz]
+[2024-06-02 08:49:59] INFO root fetch - main [MainThread]: End processing [dime-sampler]: success
+[2024-06-02 08:49:59] INFO root fetch - main [MainThread]: Store serial: [23486810]
