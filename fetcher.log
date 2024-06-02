@@ -16075,3 +16075,54 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 20:32:07] INFO root fetch - processPackages [nusacrowd]: Remove: archive file [/home/abi/fetcher/tmp/nusacrowd-0.1.4.tar.gz]
 [2024-06-02 20:32:07] INFO root fetch - main [MainThread]: End processing [nusacrowd]: success
 [2024-06-02 20:32:07] INFO root fetch - main [MainThread]: Store serial: [23491908]
+[2024-06-02 20:34:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23491908]
+[2024-06-02 20:34:16] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-06-02 20:34:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tkintertools
+[2024-06-02 20:34:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: emhass
+[2024-06-02 20:34:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: muselsl
+[2024-06-02 20:34:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: Simple-Space
+[2024-06-02 20:34:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyerualjetwork
+[2024-06-02 20:34:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: jds-tools
+[2024-06-02 20:34:16] WARNING root fetch - processPackages [jds-tools]: Skipping, unable to determine old version
+[2024-06-02 20:34:16] INFO root fetch - main [MainThread]: End processing [jds-tools] error
+[2024-06-02 20:34:16] INFO root fetch - processPackages [Simple-Space]: New version: [1.1.0] Old Version: [1.0.0]
+[2024-06-02 20:34:16] INFO root fetch - processPackages [muselsl]: New version: [2.3.0] Old Version: [2.2.2]
+[2024-06-02 20:34:16] INFO root fetch - processPackages [pyerualjetwork]: New version: [2.0] Old Version: [1.3.9]
+[2024-06-02 20:34:16] INFO root fetch - processPackages [tkintertools]: New version: [3.0.0b2] Old Version: [3.0.0b1]
+[2024-06-02 20:34:16] INFO root fetch - processPackages [emhass]: New version: [0.9.1] Old Version: [0.9.0]
+[2024-06-02 20:34:16] INFO root fetch - processPackages [Simple-Space]: Downloading https://files.pythonhosted.org/packages/83/d0/641a297b26ece98cdcb22fc63b29bc7c3e343f57fda956f36abd024fe362/simple_space-1.0.0.tar.gz
+[2024-06-02 20:34:16] INFO root fetch - processPackages [muselsl]: Downloading https://files.pythonhosted.org/packages/c2/27/43c61323918d4bfd1ac70a3241445c62a440b9995f807877b02577e72e9d/muselsl-2.2.2.tar.gz
+[2024-06-02 20:34:16] INFO root fetch - processPackages [tkintertools]: Downloading https://files.pythonhosted.org/packages/07/a1/d9d297db71cf9b6c302829d07263a0cf21171e3be5ce8c81b6d5c928561c/tkintertools-3.0.0b1.tar.gz
+[2024-06-02 20:34:16] INFO root fetch - processPackages [emhass]: Downloading https://files.pythonhosted.org/packages/3f/37/b0f3b02e9338d07d8d004be56cf9fb4a32907adc2c20c695cbea287d9372/emhass-0.9.0.tar.gz
+[2024-06-02 20:34:16] INFO root fetch - processPackages [pyerualjetwork]: Downloading https://files.pythonhosted.org/packages/4f/92/6b26292c572cc5883dec47514965a18ff91a0f9f404fc6ae1a6e7e5e2136/pyerualjetwork-1.3.9.tar.gz
+[2024-06-02 20:34:16] INFO root fetch - processPackages [Simple-Space]: Downloading https://files.pythonhosted.org/packages/f5/b5/8a9e5768ced4733fb2ae0a56cdf3d170eb78abdbdd953d12544952ef4306/simple_space-1.1.0.tar.gz
+[2024-06-02 20:34:16] INFO root fetch - processPackages [muselsl]: Downloading https://files.pythonhosted.org/packages/37/43/458940a28f0840c033dea0ea033d743d4b05161ce4d481112f60c9b4af6c/muselsl-2.3.0.tar.gz
+[2024-06-02 20:34:16] INFO root fetch - processPackages [tkintertools]: Downloading https://files.pythonhosted.org/packages/e7/4e/22647e36524d511b4327e8617052632f8a7bb0c9eedd4d41914e825ef80c/tkintertools-3.0.0b2.tar.gz
+[2024-06-02 20:34:16] INFO root fetch - processPackages [pyerualjetwork]: Downloading https://files.pythonhosted.org/packages/ab/98/a43ba457881f3984734315580075b308e5d5ede7e0cf920027894966a9b5/pyerualjetwork-2.0.tar.gz
+[2024-06-02 20:34:17] INFO root fetch - processPackages [Simple-Space]: executing diffoscope
+[2024-06-02 20:34:17] INFO root fetch - processPackages [Simple-Space]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simple_space-1.0.0.tar.gz tmp/simple_space-1.1.0.tar.gz --markdown 20240602/S/Simple-Space/1.0.0-1.1.0/README.md --exclude *.pyd
+[2024-06-02 20:34:17] INFO root fetch - processPackages [emhass]: Downloading https://files.pythonhosted.org/packages/2d/21/a5c049f7381b5494d57c4ad821d6dbe46ee2405da41fd6669c7527575756/emhass-0.9.1.tar.gz
+[2024-06-02 20:34:17] INFO root fetch - processPackages [muselsl]: executing diffoscope
+[2024-06-02 20:34:17] INFO root fetch - processPackages [muselsl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/muselsl-2.2.2.tar.gz tmp/muselsl-2.3.0.tar.gz --markdown 20240602/m/muselsl/2.2.2-2.3.0/README.md --exclude *.pyd
+[2024-06-02 20:34:17] INFO root fetch - processPackages [tkintertools]: executing diffoscope
+[2024-06-02 20:34:17] INFO root fetch - processPackages [tkintertools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tkintertools-3.0.0b1.tar.gz tmp/tkintertools-3.0.0b2.tar.gz --markdown 20240602/t/tkintertools/3.0.0b1-3.0.0b2/README.md --exclude *.pyd
+[2024-06-02 20:34:17] INFO root fetch - processPackages [pyerualjetwork]: executing diffoscope
+[2024-06-02 20:34:17] INFO root fetch - processPackages [pyerualjetwork]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyerualjetwork-1.3.9.tar.gz tmp/pyerualjetwork-2.0.tar.gz --markdown 20240602/p/pyerualjetwork/1.3.9-2.0/README.md --exclude *.pyd
+[2024-06-02 20:34:17] INFO root fetch - processPackages [emhass]: executing diffoscope
+[2024-06-02 20:34:17] INFO root fetch - processPackages [emhass]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/emhass-0.9.0.tar.gz tmp/emhass-0.9.1.tar.gz --markdown 20240602/e/emhass/0.9.0-0.9.1/README.md --exclude *.pyd
+[2024-06-02 20:34:17] INFO root fetch - processPackages [pyerualjetwork]: Remove: archive file [/home/abi/fetcher/tmp/pyerualjetwork-1.3.9.tar.gz]
+[2024-06-02 20:34:17] INFO root fetch - processPackages [pyerualjetwork]: Remove: archive file [/home/abi/fetcher/tmp/pyerualjetwork-2.0.tar.gz]
+[2024-06-02 20:34:17] INFO root fetch - main [MainThread]: End processing [pyerualjetwork]: success
+[2024-06-02 20:34:17] INFO root fetch - processPackages [Simple-Space]: Remove: archive file [/home/abi/fetcher/tmp/simple_space-1.0.0.tar.gz]
+[2024-06-02 20:34:17] INFO root fetch - processPackages [Simple-Space]: Remove: archive file [/home/abi/fetcher/tmp/simple_space-1.1.0.tar.gz]
+[2024-06-02 20:34:17] INFO root fetch - main [MainThread]: End processing [Simple-Space]: success
+[2024-06-02 20:34:17] INFO root fetch - processPackages [tkintertools]: Remove: archive file [/home/abi/fetcher/tmp/tkintertools-3.0.0b1.tar.gz]
+[2024-06-02 20:34:17] INFO root fetch - processPackages [tkintertools]: Remove: archive file [/home/abi/fetcher/tmp/tkintertools-3.0.0b2.tar.gz]
+[2024-06-02 20:34:17] INFO root fetch - main [MainThread]: End processing [tkintertools]: success
+[2024-06-02 20:34:17] INFO root fetch - processPackages [muselsl]: Remove: archive file [/home/abi/fetcher/tmp/muselsl-2.2.2.tar.gz]
+[2024-06-02 20:34:17] INFO root fetch - processPackages [muselsl]: Remove: archive file [/home/abi/fetcher/tmp/muselsl-2.3.0.tar.gz]
+[2024-06-02 20:34:17] INFO root fetch - main [MainThread]: End processing [muselsl]: success
+[2024-06-02 20:34:18] INFO root fetch - processPackages [emhass]: Remove: archive file [/home/abi/fetcher/tmp/emhass-0.9.0.tar.gz]
+[2024-06-02 20:34:18] INFO root fetch - processPackages [emhass]: Remove: archive file [/home/abi/fetcher/tmp/emhass-0.9.1.tar.gz]
+[2024-06-02 20:34:18] INFO root fetch - main [MainThread]: End processing [emhass]: success
+[2024-06-02 20:34:18] INFO root fetch - main [MainThread]: Store serial: [23491928]
