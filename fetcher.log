@@ -3460,3 +3460,33 @@
 [2024-06-02 05:22:37] INFO root fetch - processPackages [python-115]: Remove: archive file [/home/abi/fetcher/tmp/python_115-0.0.8.7.3.tar.gz]
 [2024-06-02 05:22:37] INFO root fetch - main [MainThread]: End processing [python-115]: success
 [2024-06-02 05:22:37] INFO root fetch - main [MainThread]: Store serial: [23485818]
+[2024-06-02 05:24:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23485818]
+[2024-06-02 05:24:45] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-02 05:24:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mwbot
+[2024-06-02 05:24:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: keras-nightly
+[2024-06-02 05:24:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ovos-backend-client
+[2024-06-02 05:24:45] INFO root fetch - processPackages [mwbot]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-06-02 05:24:45] INFO root fetch - processPackages [keras-nightly]: New version: [3.3.3.dev2024060103] Old Version: [3.3.3.dev2024053103]
+[2024-06-02 05:24:45] INFO root fetch - processPackages [mwbot]: Downloading https://files.pythonhosted.org/packages/04/2a/83c3c929ffa136caf04fe2e04e9996f788f3d902fda90f4b4a657879163b/mwbot-1.0.8.tar.gz
+[2024-06-02 05:24:45] INFO root fetch - processPackages [ovos-backend-client]: New version: [0.1.1a7] Old Version: [0.1.1a5]
+[2024-06-02 05:24:45] INFO root fetch - processPackages [keras-nightly]: Downloading https://files.pythonhosted.org/packages/66/fc/199fbb20ecca93bf97cf7b969b438ee9920467a4dca0d3f040908f635dfa/keras_nightly-3.3.3.dev2024053103.tar.gz
+[2024-06-02 05:24:46] INFO root fetch - processPackages [ovos-backend-client]: Downloading https://files.pythonhosted.org/packages/b1/e9/e70bbec256a56c01bb2e3eba55f57360a9cfa0be1b83416cdcce75aec25f/ovos-backend-client-0.1.1a5.tar.gz
+[2024-06-02 05:24:46] INFO root fetch - processPackages [mwbot]: Downloading https://files.pythonhosted.org/packages/13/d9/ccd8a39a431409e07bc8745f8cdfd517a823b4bbc6124285146a65795a24/mwbot-1.0.9.tar.gz
+[2024-06-02 05:24:46] INFO root fetch - processPackages [mwbot]: executing diffoscope
+[2024-06-02 05:24:46] INFO root fetch - processPackages [mwbot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mwbot-1.0.8.tar.gz tmp/mwbot-1.0.9.tar.gz --markdown 20240602/m/mwbot/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-06-02 05:24:46] INFO root fetch - processPackages [keras-nightly]: Downloading https://files.pythonhosted.org/packages/8f/0b/a81a2de3a4cdc0ca2dc72cd45fd983c169f110841ce3bb03b53b8e4b436a/keras_nightly-3.3.3.dev2024060103.tar.gz
+[2024-06-02 05:24:46] INFO root fetch - processPackages [ovos-backend-client]: Downloading https://files.pythonhosted.org/packages/32/04/64adb44371dedd8ea36e0dad592f16d0bf7bc003bd000129bfbe6d593031/ovos-backend-client-0.1.1a7.tar.gz
+[2024-06-02 05:24:46] INFO root fetch - processPackages [keras-nightly]: executing diffoscope
+[2024-06-02 05:24:46] INFO root fetch - processPackages [keras-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/keras_nightly-3.3.3.dev2024053103.tar.gz tmp/keras_nightly-3.3.3.dev2024060103.tar.gz --markdown 20240602/k/keras-nightly/3.3.3.dev2024053103-3.3.3.dev2024060103/README.md --exclude *.pyd
+[2024-06-02 05:24:46] INFO root fetch - processPackages [ovos-backend-client]: executing diffoscope
+[2024-06-02 05:24:46] INFO root fetch - processPackages [ovos-backend-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos-backend-client-0.1.1a5.tar.gz tmp/ovos-backend-client-0.1.1a7.tar.gz --markdown 20240602/o/ovos-backend-client/0.1.1a5-0.1.1a7/README.md --exclude *.pyd
+[2024-06-02 05:24:46] INFO root fetch - processPackages [mwbot]: Remove: archive file [/home/abi/fetcher/tmp/mwbot-1.0.8.tar.gz]
+[2024-06-02 05:24:46] INFO root fetch - processPackages [mwbot]: Remove: archive file [/home/abi/fetcher/tmp/mwbot-1.0.9.tar.gz]
+[2024-06-02 05:24:46] INFO root fetch - main [MainThread]: End processing [mwbot]: success
+[2024-06-02 05:24:47] INFO root fetch - processPackages [ovos-backend-client]: Remove: archive file [/home/abi/fetcher/tmp/ovos-backend-client-0.1.1a5.tar.gz]
+[2024-06-02 05:24:47] INFO root fetch - processPackages [ovos-backend-client]: Remove: archive file [/home/abi/fetcher/tmp/ovos-backend-client-0.1.1a7.tar.gz]
+[2024-06-02 05:24:47] INFO root fetch - main [MainThread]: End processing [ovos-backend-client]: success
+[2024-06-02 05:24:48] INFO root fetch - processPackages [keras-nightly]: Remove: archive file [/home/abi/fetcher/tmp/keras_nightly-3.3.3.dev2024053103.tar.gz]
+[2024-06-02 05:24:48] INFO root fetch - processPackages [keras-nightly]: Remove: archive file [/home/abi/fetcher/tmp/keras_nightly-3.3.3.dev2024060103.tar.gz]
+[2024-06-02 05:24:48] INFO root fetch - main [MainThread]: End processing [keras-nightly]: success
+[2024-06-02 05:24:48] INFO root fetch - main [MainThread]: Store serial: [23485831]
