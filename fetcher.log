@@ -2157,3 +2157,33 @@
 [2024-06-02 02:40:06] INFO root fetch - processPackages [crewcal]: Remove: archive file [/home/abi/fetcher/tmp/crewcal-0.8.2.tar.gz]
 [2024-06-02 02:40:06] INFO root fetch - main [MainThread]: End processing [crewcal]: success
 [2024-06-02 02:40:06] INFO root fetch - main [MainThread]: Store serial: [23485021]
+[2024-06-02 02:42:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23485021]
+[2024-06-02 02:42:16] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-02 02:42:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyslsqp
+[2024-06-02 02:42:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kaizen-cloudcode
+[2024-06-02 02:42:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cmn-ai
+[2024-06-02 02:42:16] INFO root fetch - processPackages [pyslsqp]: New version: [0.1.0a0] Old Version: [0.1.0.dev1]
+[2024-06-02 02:42:16] INFO root fetch - processPackages [kaizen-cloudcode]: New version: [0.2.0] Old Version: [0.1.9]
+[2024-06-02 02:42:16] INFO root fetch - processPackages [cmn-ai]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-06-02 02:42:17] INFO root fetch - processPackages [pyslsqp]: Downloading https://files.pythonhosted.org/packages/e1/44/122f4c0311e8d923a95314008c4e77f78b08a2a5978912673dc26a6f946d/pyslsqp-0.1.0.dev1.tar.gz
+[2024-06-02 02:42:17] INFO root fetch - processPackages [kaizen-cloudcode]: Downloading https://files.pythonhosted.org/packages/e4/d9/2c4a647ea9b29da3866ad33e2f70daddb22b06068d121a2e48e92d9a5b18/kaizen_cloudcode-0.1.9.tar.gz
+[2024-06-02 02:42:17] INFO root fetch - processPackages [cmn-ai]: Downloading https://files.pythonhosted.org/packages/49/2d/3ca66e6f88609c384986f54b7dadb6bf1f2fc9fd7b2ed2dc41d049ba0f77/cmn_ai-0.0.1.tar.gz
+[2024-06-02 02:42:17] INFO root fetch - processPackages [kaizen-cloudcode]: Downloading https://files.pythonhosted.org/packages/93/19/225e0f51bee8ff96bcb4edc32a84aadce0b1594f43fd3cdf24f6eb7f8f5a/kaizen_cloudcode-0.2.0.tar.gz
+[2024-06-02 02:42:17] INFO root fetch - processPackages [cmn-ai]: Downloading https://files.pythonhosted.org/packages/c5/61/269a8401f3834f423ce462b07455639199de53fea2e296947bee42e6796d/cmn_ai-0.0.2.tar.gz
+[2024-06-02 02:42:17] INFO root fetch - processPackages [pyslsqp]: Downloading https://files.pythonhosted.org/packages/32/aa/4bd636b35fbad5450d9f5ea4264187f737d87eb70a3d847a2f45f54930eb/pyslsqp-0.1.0a0.tar.gz
+[2024-06-02 02:42:17] INFO root fetch - processPackages [kaizen-cloudcode]: executing diffoscope
+[2024-06-02 02:42:17] INFO root fetch - processPackages [kaizen-cloudcode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kaizen_cloudcode-0.1.9.tar.gz tmp/kaizen_cloudcode-0.2.0.tar.gz --markdown 20240602/k/kaizen-cloudcode/0.1.9-0.2.0/README.md --exclude *.pyd
+[2024-06-02 02:42:17] INFO root fetch - processPackages [cmn-ai]: executing diffoscope
+[2024-06-02 02:42:17] INFO root fetch - processPackages [cmn-ai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cmn_ai-0.0.1.tar.gz tmp/cmn_ai-0.0.2.tar.gz --markdown 20240602/c/cmn-ai/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-06-02 02:42:17] INFO root fetch - processPackages [pyslsqp]: executing diffoscope
+[2024-06-02 02:42:17] INFO root fetch - processPackages [pyslsqp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyslsqp-0.1.0.dev1.tar.gz tmp/pyslsqp-0.1.0a0.tar.gz --markdown 20240602/p/pyslsqp/0.1.0.dev1-0.1.0a0/README.md --exclude *.pyd
+[2024-06-02 02:42:18] INFO root fetch - processPackages [cmn-ai]: Remove: archive file [/home/abi/fetcher/tmp/cmn_ai-0.0.1.tar.gz]
+[2024-06-02 02:42:18] INFO root fetch - processPackages [cmn-ai]: Remove: archive file [/home/abi/fetcher/tmp/cmn_ai-0.0.2.tar.gz]
+[2024-06-02 02:42:18] INFO root fetch - main [MainThread]: End processing [cmn-ai]: success
+[2024-06-02 02:42:18] INFO root fetch - processPackages [kaizen-cloudcode]: Remove: archive file [/home/abi/fetcher/tmp/kaizen_cloudcode-0.1.9.tar.gz]
+[2024-06-02 02:42:18] INFO root fetch - processPackages [kaizen-cloudcode]: Remove: archive file [/home/abi/fetcher/tmp/kaizen_cloudcode-0.2.0.tar.gz]
+[2024-06-02 02:42:18] INFO root fetch - main [MainThread]: End processing [kaizen-cloudcode]: success
+[2024-06-02 02:42:18] INFO root fetch - processPackages [pyslsqp]: Remove: archive file [/home/abi/fetcher/tmp/pyslsqp-0.1.0.dev1.tar.gz]
+[2024-06-02 02:42:18] INFO root fetch - processPackages [pyslsqp]: Remove: archive file [/home/abi/fetcher/tmp/pyslsqp-0.1.0a0.tar.gz]
+[2024-06-02 02:42:18] INFO root fetch - main [MainThread]: End processing [pyslsqp]: success
+[2024-06-02 02:42:18] INFO root fetch - main [MainThread]: Store serial: [23485031]
