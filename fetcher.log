@@ -21156,3 +21156,41 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 23:40:52] INFO root fetch - processPackages [fastlmmclib]: Remove: archive file [/home/abi/fetcher/tmp/fastlmmclib-0.0.5b1-cp39-cp39-win_amd64.whl.zip]
 [2024-06-02 23:40:52] INFO root fetch - main [MainThread]: End processing [fastlmmclib]: success
 [2024-06-02 23:40:52] INFO root fetch - main [MainThread]: Store serial: [23494036]
+[2024-06-02 23:42:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23494036]
+[2024-06-02 23:43:01] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-06-02 23:43:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sqlframe
+[2024-06-02 23:43:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: deshi-hello-world
+[2024-06-02 23:43:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pkg-vers
+[2024-06-02 23:43:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: navigator-api
+[2024-06-02 23:43:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: meghana-hello-world
+[2024-06-02 23:43:01] INFO root fetch - processPackages [deshi-hello-world]: New version: [0.3] Old Version: [0.2]
+[2024-06-02 23:43:01] INFO root fetch - processPackages [pkg-vers]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-06-02 23:43:01] INFO root fetch - processPackages [sqlframe]: New version: [1.5.2] Old Version: [1.5.1]
+[2024-06-02 23:43:01] WARNING root fetch - processPackages [meghana-hello-world]: Skipping, unable to determine old version
+[2024-06-02 23:43:01] INFO root fetch - main [MainThread]: End processing [meghana-hello-world] error
+[2024-06-02 23:43:01] INFO root fetch - processPackages [deshi-hello-world]: Downloading https://files.pythonhosted.org/packages/aa/f3/2464290b614a29399f50d17cae256b96a4e4c9029ced6c4050c1efc3d766/deshi_hello_world-0.2.tar.gz
+[2024-06-02 23:43:01] INFO root fetch - processPackages [pkg-vers]: Downloading https://files.pythonhosted.org/packages/a9/fc/dfc252f66eaeb6f7562ca44eab185296447d48d8a3d3d343fe8a969d6b83/pkg_vers-0.0.2.tar.gz
+[2024-06-02 23:43:01] INFO root fetch - processPackages [navigator-api]: New version: [2.8.9] Old Version: [2.8.8]
+[2024-06-02 23:43:01] INFO root fetch - processPackages [sqlframe]: Downloading https://files.pythonhosted.org/packages/c5/c1/6293c6ab65c579590666703da78dbd56b29ca1b37d6bd6103225b61beee3/sqlframe-1.5.1.tar.gz
+[2024-06-02 23:43:01] WARNING root fetch - processPackages [sqlframe]: Skipping package: exceeds size limit 17095728>=10485760
+[2024-06-02 23:43:01] INFO root fetch - main [MainThread]: End processing [sqlframe] error
+[2024-06-02 23:43:02] INFO root fetch - processPackages [navigator-api]: Downloading https://files.pythonhosted.org/packages/4a/c1/4d2ef0e02aedcb067c1226d3312106df0168bc742bbe6ff3199051a654c5/navigator_api-2.8.8-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-06-02 23:43:02] INFO root fetch - processPackages [deshi-hello-world]: Downloading https://files.pythonhosted.org/packages/78/dd/7a65d634dcb343a7ca8fc1d082aa450228b06197783c744ac021880aab8d/deshi_hello_world-0.3.tar.gz
+[2024-06-02 23:43:02] INFO root fetch - processPackages [pkg-vers]: Downloading https://files.pythonhosted.org/packages/76/d0/448ecccc81de2494ed1e019964460d502f316976995a0b5803c640c49232/pkg_vers-0.0.3.tar.gz
+[2024-06-02 23:43:02] INFO root fetch - processPackages [deshi-hello-world]: executing diffoscope
+[2024-06-02 23:43:02] INFO root fetch - processPackages [deshi-hello-world]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deshi_hello_world-0.2.tar.gz tmp/deshi_hello_world-0.3.tar.gz --markdown 20240602/d/deshi-hello-world/0.2-0.3/README.md --exclude *.pyd
+[2024-06-02 23:43:02] INFO root fetch - processPackages [pkg-vers]: executing diffoscope
+[2024-06-02 23:43:02] INFO root fetch - processPackages [pkg-vers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pkg_vers-0.0.2.tar.gz tmp/pkg_vers-0.0.3.tar.gz --markdown 20240602/p/pkg-vers/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-06-02 23:43:02] INFO root fetch - processPackages [deshi-hello-world]: Remove: archive file [/home/abi/fetcher/tmp/deshi_hello_world-0.2.tar.gz]
+[2024-06-02 23:43:02] INFO root fetch - processPackages [deshi-hello-world]: Remove: archive file [/home/abi/fetcher/tmp/deshi_hello_world-0.3.tar.gz]
+[2024-06-02 23:43:02] INFO root fetch - main [MainThread]: End processing [deshi-hello-world]: success
+[2024-06-02 23:43:02] INFO root fetch - processPackages [pkg-vers]: Remove: archive file [/home/abi/fetcher/tmp/pkg_vers-0.0.2.tar.gz]
+[2024-06-02 23:43:02] INFO root fetch - processPackages [pkg-vers]: Remove: archive file [/home/abi/fetcher/tmp/pkg_vers-0.0.3.tar.gz]
+[2024-06-02 23:43:02] INFO root fetch - main [MainThread]: End processing [pkg-vers]: success
+[2024-06-02 23:43:02] INFO root fetch - processPackages [navigator-api]: Downloading https://files.pythonhosted.org/packages/23/9d/d6e87407f60468f5fc607bc9db56b812d4afaf5641fdc7365a5b358ccfb4/navigator_api-2.8.9-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-06-02 23:43:04] INFO root fetch - processPackages [navigator-api]: executing diffoscope
+[2024-06-02 23:43:04] INFO root fetch - processPackages [navigator-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/navigator_api-2.8.8-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/navigator_api-2.8.9-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20240602/n/navigator-api/2.8.8-2.8.9/README.md --exclude *.pyd
+[2024-06-02 23:43:05] INFO root fetch - processPackages [navigator-api]: Remove: archive file [/home/abi/fetcher/tmp/navigator_api-2.8.8-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-06-02 23:43:05] INFO root fetch - processPackages [navigator-api]: Remove: archive file [/home/abi/fetcher/tmp/navigator_api-2.8.9-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-06-02 23:43:05] INFO root fetch - main [MainThread]: End processing [navigator-api]: success
+[2024-06-02 23:43:05] INFO root fetch - main [MainThread]: Store serial: [23494055]
