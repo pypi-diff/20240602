@@ -3401,3 +3401,15 @@
 [2024-06-02 05:13:58] INFO root fetch - processPackages [nadl]: Remove: archive file [/home/abi/fetcher/tmp/nadl-1.5.9.tar.gz]
 [2024-06-02 05:13:58] INFO root fetch - main [MainThread]: End processing [nadl]: success
 [2024-06-02 05:13:58] INFO root fetch - main [MainThread]: Store serial: [23485794]
+[2024-06-02 05:16:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23485794]
+[2024-06-02 05:16:07] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-02 05:16:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: keras-cv-nightly
+[2024-06-02 05:16:07] INFO root fetch - processPackages [keras-cv-nightly]: New version: [0.9.0.dev2024043000] Old Version: [0.9.0.dev2024042919]
+[2024-06-02 05:16:07] INFO root fetch - processPackages [keras-cv-nightly]: Downloading https://files.pythonhosted.org/packages/bd/17/3faa9e969f58abadca2ff3a4053bed558afb777bae344f994feeeaf1cfd3/keras_cv_nightly-0.9.0.dev2024042919.tar.gz
+[2024-06-02 05:16:07] INFO root fetch - processPackages [keras-cv-nightly]: Downloading https://files.pythonhosted.org/packages/81/e8/990891e08c4d6686000132786b783a9e72d0cf684f6f44245f2949fd0e57/keras_cv_nightly-0.9.0.dev2024043000.tar.gz
+[2024-06-02 05:16:08] INFO root fetch - processPackages [keras-cv-nightly]: executing diffoscope
+[2024-06-02 05:16:08] INFO root fetch - processPackages [keras-cv-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/keras_cv_nightly-0.9.0.dev2024042919.tar.gz tmp/keras_cv_nightly-0.9.0.dev2024043000.tar.gz --markdown 20240602/k/keras-cv-nightly/0.9.0.dev2024042919-0.9.0.dev2024043000/README.md --exclude *.pyd
+[2024-06-02 05:16:09] INFO root fetch - processPackages [keras-cv-nightly]: Remove: archive file [/home/abi/fetcher/tmp/keras_cv_nightly-0.9.0.dev2024042919.tar.gz]
+[2024-06-02 05:16:09] INFO root fetch - processPackages [keras-cv-nightly]: Remove: archive file [/home/abi/fetcher/tmp/keras_cv_nightly-0.9.0.dev2024043000.tar.gz]
+[2024-06-02 05:16:09] INFO root fetch - main [MainThread]: End processing [keras-cv-nightly]: success
+[2024-06-02 05:16:09] INFO root fetch - main [MainThread]: Store serial: [23485798]
