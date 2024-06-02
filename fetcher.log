@@ -3746,3 +3746,17 @@
 [2024-06-02 06:09:55] INFO root fetch - processPackages [python-geoacumen]: Remove: archive file [/home/abi/fetcher/tmp/python-geoacumen-2024.6.2.tar.gz]
 [2024-06-02 06:09:55] INFO root fetch - main [MainThread]: End processing [python-geoacumen]: success
 [2024-06-02 06:09:55] INFO root fetch - main [MainThread]: Store serial: [23486011]
+[2024-06-02 06:11:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23486011]
+[2024-06-02 06:12:03] INFO root fetch - main [MainThread]: No changed packages found
+[2024-06-02 06:14:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23486011]
+[2024-06-02 06:14:09] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-02 06:14:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: codal-tsetmc
+[2024-06-02 06:14:09] INFO root fetch - processPackages [codal-tsetmc]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-06-02 06:14:09] INFO root fetch - processPackages [codal-tsetmc]: Downloading https://files.pythonhosted.org/packages/d9/c4/267edd26f171e53aad2716c1b19a4a3cee6527999bf2d119dff8de0f061c/codal_tsetmc-0.0.8.tar.gz
+[2024-06-02 06:14:09] INFO root fetch - processPackages [codal-tsetmc]: Downloading https://files.pythonhosted.org/packages/10/18/92ca7e952acd820cc5293286bb96017f583d9ac1c5f6ddb222758d65ee89/codal_tsetmc-0.0.9.tar.gz
+[2024-06-02 06:14:09] INFO root fetch - processPackages [codal-tsetmc]: executing diffoscope
+[2024-06-02 06:14:09] INFO root fetch - processPackages [codal-tsetmc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/codal_tsetmc-0.0.8.tar.gz tmp/codal_tsetmc-0.0.9.tar.gz --markdown 20240602/c/codal-tsetmc/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-06-02 06:14:10] INFO root fetch - processPackages [codal-tsetmc]: Remove: archive file [/home/abi/fetcher/tmp/codal_tsetmc-0.0.8.tar.gz]
+[2024-06-02 06:14:10] INFO root fetch - processPackages [codal-tsetmc]: Remove: archive file [/home/abi/fetcher/tmp/codal_tsetmc-0.0.9.tar.gz]
+[2024-06-02 06:14:10] INFO root fetch - main [MainThread]: End processing [codal-tsetmc]: success
+[2024-06-02 06:14:10] INFO root fetch - main [MainThread]: Store serial: [23486014]
