@@ -2352,3 +2352,32 @@
 [2024-06-02 02:57:59] INFO root fetch - processPackages [rolyson]: Remove: archive file [/home/abi/fetcher/tmp/rolyson-0.2.tar.gz]
 [2024-06-02 02:57:59] INFO root fetch - main [MainThread]: End processing [rolyson]: success
 [2024-06-02 02:57:59] INFO root fetch - main [MainThread]: Store serial: [23485241]
+[2024-06-02 03:00:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23485241]
+[2024-06-02 03:00:09] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-02 03:00:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mbodied-agents
+[2024-06-02 03:00:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cdk-emrserverless-with-delta-lake
+[2024-06-02 03:00:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: Lanes
+[2024-06-02 03:00:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: simevopy
+[2024-06-02 03:00:09] INFO root fetch - processPackages [simevopy]: New version: [0.2.1] Old Version: [0.1.9]
+[2024-06-02 03:00:09] INFO root fetch - processPackages [cdk-emrserverless-with-delta-lake]: New version: [2.0.99] Old Version: [2.0.98]
+[2024-06-02 03:00:09] INFO root fetch - processPackages [simevopy]: Downloading https://files.pythonhosted.org/packages/22/53/31d63eb0aba745235ab86e254349ffc473dcf70538f3ab35a99fc2cf58ed/simevopy-0.1.9.tar.gz
+[2024-06-02 03:00:09] WARNING root fetch - processPackages [Lanes]: Skipping, unable to determine old version
+[2024-06-02 03:00:09] INFO root fetch - main [MainThread]: End processing [Lanes] error
+[2024-06-02 03:00:09] INFO root fetch - processPackages [mbodied-agents]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-06-02 03:00:09] INFO root fetch - processPackages [cdk-emrserverless-with-delta-lake]: Downloading https://files.pythonhosted.org/packages/ca/c8/c8aec8668c8ae715e0e15ea3ea2e2e326fea6b5d0258b79e2b876aefa521/cdk_emrserverless_with_delta_lake-2.0.98.tar.gz
+[2024-06-02 03:00:09] INFO root fetch - processPackages [mbodied-agents]: Downloading https://files.pythonhosted.org/packages/58/99/d47e4a901dd0a27be5f1b8462118257b06dd2246ebba354c5a479b35e856/mbodied_agents-0.0.3.tar.gz
+[2024-06-02 03:00:09] WARNING root fetch - processPackages [mbodied-agents]: Skipping package: exceeds size limit 26308606>=10485760
+[2024-06-02 03:00:09] INFO root fetch - main [MainThread]: End processing [mbodied-agents] error
+[2024-06-02 03:00:09] INFO root fetch - processPackages [simevopy]: Downloading https://files.pythonhosted.org/packages/63/f3/21ced6df0061f0a5e70ec3db34baa296aea7d8250dfdfb3da0cbffab3203/simevopy-0.2.1.tar.gz
+[2024-06-02 03:00:09] INFO root fetch - processPackages [simevopy]: executing diffoscope
+[2024-06-02 03:00:09] INFO root fetch - processPackages [simevopy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simevopy-0.1.9.tar.gz tmp/simevopy-0.2.1.tar.gz --markdown 20240602/s/simevopy/0.1.9-0.2.1/README.md --exclude *.pyd
+[2024-06-02 03:00:10] INFO root fetch - processPackages [cdk-emrserverless-with-delta-lake]: Downloading https://files.pythonhosted.org/packages/7f/24/30b3ba3f3be3fa0cda5f66dcfce20bb782a7327b2635d12d6f66d6acf91f/cdk_emrserverless_with_delta_lake-2.0.99.tar.gz
+[2024-06-02 03:00:10] INFO root fetch - processPackages [cdk-emrserverless-with-delta-lake]: executing diffoscope
+[2024-06-02 03:00:10] INFO root fetch - processPackages [cdk-emrserverless-with-delta-lake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk_emrserverless_with_delta_lake-2.0.98.tar.gz tmp/cdk_emrserverless_with_delta_lake-2.0.99.tar.gz --markdown 20240602/c/cdk-emrserverless-with-delta-lake/2.0.98-2.0.99/README.md --exclude *.pyd
+[2024-06-02 03:00:10] INFO root fetch - processPackages [simevopy]: Remove: archive file [/home/abi/fetcher/tmp/simevopy-0.1.9.tar.gz]
+[2024-06-02 03:00:10] INFO root fetch - processPackages [simevopy]: Remove: archive file [/home/abi/fetcher/tmp/simevopy-0.2.1.tar.gz]
+[2024-06-02 03:00:10] INFO root fetch - main [MainThread]: End processing [simevopy]: success
+[2024-06-02 03:00:11] INFO root fetch - processPackages [cdk-emrserverless-with-delta-lake]: Remove: archive file [/home/abi/fetcher/tmp/cdk_emrserverless_with_delta_lake-2.0.98.tar.gz]
+[2024-06-02 03:00:11] INFO root fetch - processPackages [cdk-emrserverless-with-delta-lake]: Remove: archive file [/home/abi/fetcher/tmp/cdk_emrserverless_with_delta_lake-2.0.99.tar.gz]
+[2024-06-02 03:00:11] INFO root fetch - main [MainThread]: End processing [cdk-emrserverless-with-delta-lake]: success
+[2024-06-02 03:00:11] INFO root fetch - main [MainThread]: Store serial: [23485254]
