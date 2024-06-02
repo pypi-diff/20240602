@@ -13051,3 +13051,42 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 18:05:13] INFO root fetch - main [MainThread]: End processing [trytond-sale]: success
 [2024-06-02 18:05:13] INFO root fetch - main [MainThread]: End processing [trytond-sale]: success
 [2024-06-02 18:05:13] INFO root fetch - main [MainThread]: Store serial: [23490529]
+[2024-06-02 18:07:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23490529]
+[2024-06-02 18:07:22] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-02 18:07:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cocoon-data
+[2024-06-02 18:07:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sage-lib
+[2024-06-02 18:07:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: trytond-sale
+[2024-06-02 18:07:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: heaobject
+[2024-06-02 18:07:22] INFO root fetch - processPackages [sage-lib]: New version: [0.1.5.6] Old Version: [0.1.5.5]
+[2024-06-02 18:07:22] INFO root fetch - processPackages [trytond-sale]: New version: [7.2.2] Old Version: [7.2.1]
+[2024-06-02 18:07:22] INFO root fetch - processPackages [cocoon-data]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-06-02 18:07:22] INFO root fetch - processPackages [sage-lib]: Downloading https://files.pythonhosted.org/packages/ea/0c/8b019e4a3ab9d83f611d40e26331dfe2fa2c2bba8db2edbb3b8fd567c8a5/sage_lib-0.1.5.5.tar.gz
+[2024-06-02 18:07:22] INFO root fetch - processPackages [trytond-sale]: Downloading https://files.pythonhosted.org/packages/c9/f3/8fa44dd71e5f686ab58361f8c97486e2b8ff4b7b3e8f0f3122f112fa3f2f/trytond_sale-7.2.1.tar.gz
+[2024-06-02 18:07:22] INFO root fetch - processPackages [heaobject]: New version: [1.6.4] Old Version: [1.6.3]
+[2024-06-02 18:07:22] INFO root fetch - processPackages [cocoon-data]: Downloading https://files.pythonhosted.org/packages/ac/3c/a1a6c95be4d731fc0db8d40b132730891186370f3cd304837773aa0dcce9/cocoon_data-0.1.8.tar.gz
+[2024-06-02 18:07:22] INFO root fetch - processPackages [sage-lib]: Downloading https://files.pythonhosted.org/packages/01/6d/e1a1788e0eb83967bdf3a043f6398b21aecf95a3b39ddb63726b157237f5/sage_lib-0.1.5.6.tar.gz
+[2024-06-02 18:07:22] INFO root fetch - processPackages [trytond-sale]: Downloading https://files.pythonhosted.org/packages/83/71/357fb5ad630cece2212eb23189d174449936b2f35be7a508d6e404c08ed7/trytond_sale-7.2.2.tar.gz
+[2024-06-02 18:07:22] INFO root fetch - processPackages [heaobject]: Downloading https://files.pythonhosted.org/packages/d8/fa/0c99580986029c4ea6f35ab2b51c6ebeec8375f9be0f10f0f1ccea4e9f98/heaobject-1.6.3.tar.gz
+[2024-06-02 18:07:22] INFO root fetch - processPackages [sage-lib]: executing diffoscope
+[2024-06-02 18:07:22] INFO root fetch - processPackages [sage-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sage_lib-0.1.5.5.tar.gz tmp/sage_lib-0.1.5.6.tar.gz --markdown 20240602/s/sage-lib/0.1.5.5-0.1.5.6/README.md --exclude *.pyd
+[2024-06-02 18:07:22] INFO root fetch - processPackages [trytond-sale]: executing diffoscope
+[2024-06-02 18:07:22] INFO root fetch - processPackages [trytond-sale]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trytond_sale-7.2.1.tar.gz tmp/trytond_sale-7.2.2.tar.gz --markdown 20240602/t/trytond-sale/7.2.1-7.2.2/README.md --exclude *.pyd
+[2024-06-02 18:07:22] INFO root fetch - processPackages [cocoon-data]: Downloading https://files.pythonhosted.org/packages/0b/b9/048ffb4abe066854ebc4d24ca277250c5668844b84d602ff0be9adf8b231/cocoon_data-0.1.9.tar.gz
+[2024-06-02 18:07:22] INFO root fetch - processPackages [heaobject]: Downloading https://files.pythonhosted.org/packages/4f/d6/3901ef4c4340f738ee67f1895cfec672e8bf3eecd60b7bba90165ea26bfe/heaobject-1.6.4.tar.gz
+[2024-06-02 18:07:23] INFO root fetch - processPackages [cocoon-data]: executing diffoscope
+[2024-06-02 18:07:23] INFO root fetch - processPackages [cocoon-data]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cocoon_data-0.1.8.tar.gz tmp/cocoon_data-0.1.9.tar.gz --markdown 20240602/c/cocoon-data/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-06-02 18:07:23] INFO root fetch - processPackages [heaobject]: executing diffoscope
+[2024-06-02 18:07:23] INFO root fetch - processPackages [heaobject]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/heaobject-1.6.3.tar.gz tmp/heaobject-1.6.4.tar.gz --markdown 20240602/h/heaobject/1.6.3-1.6.4/README.md --exclude *.pyd
+[2024-06-02 18:07:23] INFO root fetch - processPackages [sage-lib]: Remove: archive file [/home/abi/fetcher/tmp/sage_lib-0.1.5.5.tar.gz]
+[2024-06-02 18:07:23] INFO root fetch - processPackages [sage-lib]: Remove: archive file [/home/abi/fetcher/tmp/sage_lib-0.1.5.6.tar.gz]
+[2024-06-02 18:07:23] INFO root fetch - main [MainThread]: End processing [sage-lib]: success
+[2024-06-02 18:07:23] INFO root fetch - processPackages [cocoon-data]: Remove: archive file [/home/abi/fetcher/tmp/cocoon_data-0.1.8.tar.gz]
+[2024-06-02 18:07:23] INFO root fetch - processPackages [cocoon-data]: Remove: archive file [/home/abi/fetcher/tmp/cocoon_data-0.1.9.tar.gz]
+[2024-06-02 18:07:23] INFO root fetch - main [MainThread]: End processing [cocoon-data]: success
+[2024-06-02 18:07:23] INFO root fetch - processPackages [heaobject]: Remove: archive file [/home/abi/fetcher/tmp/heaobject-1.6.3.tar.gz]
+[2024-06-02 18:07:23] INFO root fetch - processPackages [heaobject]: Remove: archive file [/home/abi/fetcher/tmp/heaobject-1.6.4.tar.gz]
+[2024-06-02 18:07:23] INFO root fetch - main [MainThread]: End processing [heaobject]: success
+[2024-06-02 18:07:23] INFO root fetch - processPackages [trytond-sale]: Remove: archive file [/home/abi/fetcher/tmp/trytond_sale-7.2.1.tar.gz]
+[2024-06-02 18:07:23] INFO root fetch - processPackages [trytond-sale]: Remove: archive file [/home/abi/fetcher/tmp/trytond_sale-7.2.2.tar.gz]
+[2024-06-02 18:07:23] INFO root fetch - main [MainThread]: End processing [trytond-sale]: success
+[2024-06-02 18:07:23] INFO root fetch - main [MainThread]: Store serial: [23490542]
