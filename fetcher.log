@@ -3380,3 +3380,24 @@
 [2024-06-02 05:11:49] WARNING root fetch - processPackages [schwabtools]: Skipping, unable to determine old version
 [2024-06-02 05:11:49] INFO root fetch - main [MainThread]: End processing [schwabtools] error
 [2024-06-02 05:11:49] INFO root fetch - main [MainThread]: Store serial: [23485789]
+[2024-06-02 05:13:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23485789]
+[2024-06-02 05:13:57] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-02 05:13:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nadl
+[2024-06-02 05:13:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: toyai
+[2024-06-02 05:13:57] INFO root fetch - processPackages [toyai]: New version: [0.2] Old Version: [0.1.1]
+[2024-06-02 05:13:57] INFO root fetch - processPackages [toyai]: Downloading https://files.pythonhosted.org/packages/18/2d/e2434804d5d9374285643f95e40e5283fb286873fa47bbe5b3c392a07393/toyai-0.1.1-py3-none-any.whl
+[2024-06-02 05:13:57] INFO root fetch - processPackages [nadl]: New version: [1.5.9] Old Version: [1.5.8]
+[2024-06-02 05:13:57] INFO root fetch - processPackages [nadl]: Downloading https://files.pythonhosted.org/packages/2c/c3/b235ef1b3fc82fa606f9e00e2e8577c9b2eaf47225d357ba63873ea77a8e/nadl-1.5.8.tar.gz
+[2024-06-02 05:13:57] INFO root fetch - processPackages [toyai]: Downloading https://files.pythonhosted.org/packages/d8/76/14ea5a41222e4908226cf7603c97b8b57ef0ce6364586e0488f93a7e62e3/toyai-0.2.tar.gz
+[2024-06-02 05:13:58] INFO root fetch - processPackages [toyai]: executing diffoscope
+[2024-06-02 05:13:58] INFO root fetch - processPackages [toyai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/toyai-0.1.1-py3-none-any.whl.zip tmp/toyai-0.2.tar.gz --markdown 20240602/t/toyai/0.1.1-0.2/README.md --exclude *.pyd
+[2024-06-02 05:13:58] INFO root fetch - processPackages [nadl]: Downloading https://files.pythonhosted.org/packages/d6/21/ec8714247020baaa2b79de15a7a49d8d82cadffe0cc0d4f79ef3670592e2/nadl-1.5.9.tar.gz
+[2024-06-02 05:13:58] INFO root fetch - processPackages [nadl]: executing diffoscope
+[2024-06-02 05:13:58] INFO root fetch - processPackages [nadl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nadl-1.5.8.tar.gz tmp/nadl-1.5.9.tar.gz --markdown 20240602/n/nadl/1.5.8-1.5.9/README.md --exclude *.pyd
+[2024-06-02 05:13:58] INFO root fetch - processPackages [toyai]: Remove: archive file [/home/abi/fetcher/tmp/toyai-0.1.1-py3-none-any.whl.zip]
+[2024-06-02 05:13:58] INFO root fetch - processPackages [toyai]: Remove: archive file [/home/abi/fetcher/tmp/toyai-0.2.tar.gz]
+[2024-06-02 05:13:58] INFO root fetch - main [MainThread]: End processing [toyai]: success
+[2024-06-02 05:13:58] INFO root fetch - processPackages [nadl]: Remove: archive file [/home/abi/fetcher/tmp/nadl-1.5.8.tar.gz]
+[2024-06-02 05:13:58] INFO root fetch - processPackages [nadl]: Remove: archive file [/home/abi/fetcher/tmp/nadl-1.5.9.tar.gz]
+[2024-06-02 05:13:58] INFO root fetch - main [MainThread]: End processing [nadl]: success
+[2024-06-02 05:13:58] INFO root fetch - main [MainThread]: Store serial: [23485794]
