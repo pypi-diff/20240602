@@ -8663,3 +8663,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-02 13:40:23] INFO root fetch - processPackages [rio-ui]: Remove: archive file [/home/abi/fetcher/tmp/rio_ui-0.8.7.tar.gz]
 [2024-06-02 13:40:23] INFO root fetch - main [MainThread]: End processing [rio-ui]: success
 [2024-06-02 13:40:23] INFO root fetch - main [MainThread]: Store serial: [23488484]
+[2024-06-02 13:42:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23488484]
+[2024-06-02 13:42:32] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-02 13:42:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: generated-demo-repo
+[2024-06-02 13:42:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kal-middleware
+[2024-06-02 13:42:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: MainServiceManager
+[2024-06-02 13:42:32] INFO root fetch - processPackages [MainServiceManager]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-06-02 13:42:32] INFO root fetch - processPackages [MainServiceManager]: Downloading https://files.pythonhosted.org/packages/52/b1/b46c3ab34169a28ef8be35f9775d24acb3f5245407d84bf83b12859f4c88/mainservicemanager-0.0.8.tar.gz
+[2024-06-02 13:42:32] WARNING root fetch - processPackages [generated-demo-repo]: Skipping, unable to determine old version
+[2024-06-02 13:42:32] INFO root fetch - main [MainThread]: End processing [generated-demo-repo] error
+[2024-06-02 13:42:32] INFO root fetch - processPackages [kal-middleware]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-06-02 13:42:33] INFO root fetch - processPackages [kal-middleware]: Downloading https://files.pythonhosted.org/packages/a8/71/2fa6adbed924bb75df69ad78da7157039c9c5e3396e5429936d075a7e33f/kal_middleware-0.0.8.tar.gz
+[2024-06-02 13:42:33] INFO root fetch - processPackages [MainServiceManager]: Downloading https://files.pythonhosted.org/packages/0c/20/37eb190cf66c91eeaea7b47c1ba8415d2caf3ce766685a0f7ad587173fd4/mainservicemanager-0.0.9.tar.gz
+[2024-06-02 13:42:33] INFO root fetch - processPackages [MainServiceManager]: executing diffoscope
+[2024-06-02 13:42:33] INFO root fetch - processPackages [MainServiceManager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mainservicemanager-0.0.8.tar.gz tmp/mainservicemanager-0.0.9.tar.gz --markdown 20240602/M/MainServiceManager/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-06-02 13:42:33] INFO root fetch - processPackages [kal-middleware]: Downloading https://files.pythonhosted.org/packages/1b/9a/e5e521c0513bd0cccec2370bd24ebab34c5d0c17f6f7125c5865a12e7e7b/kal_middleware-0.0.9.tar.gz
+[2024-06-02 13:42:33] INFO root fetch - processPackages [kal-middleware]: executing diffoscope
+[2024-06-02 13:42:33] INFO root fetch - processPackages [kal-middleware]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kal_middleware-0.0.8.tar.gz tmp/kal_middleware-0.0.9.tar.gz --markdown 20240602/k/kal-middleware/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-06-02 13:42:33] INFO root fetch - processPackages [MainServiceManager]: Remove: archive file [/home/abi/fetcher/tmp/mainservicemanager-0.0.8.tar.gz]
+[2024-06-02 13:42:33] INFO root fetch - processPackages [MainServiceManager]: Remove: archive file [/home/abi/fetcher/tmp/mainservicemanager-0.0.9.tar.gz]
+[2024-06-02 13:42:33] INFO root fetch - main [MainThread]: End processing [MainServiceManager]: success
+[2024-06-02 13:42:34] INFO root fetch - processPackages [kal-middleware]: Remove: archive file [/home/abi/fetcher/tmp/kal_middleware-0.0.8.tar.gz]
+[2024-06-02 13:42:34] INFO root fetch - processPackages [kal-middleware]: Remove: archive file [/home/abi/fetcher/tmp/kal_middleware-0.0.9.tar.gz]
+[2024-06-02 13:42:34] INFO root fetch - main [MainThread]: End processing [kal-middleware]: success
+[2024-06-02 13:42:34] INFO root fetch - main [MainThread]: Store serial: [23488495]
