@@ -8939,3 +8939,57 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-02 14:00:44] INFO root fetch - processPackages [mayan-edms]: Remove: archive file [/home/abi/fetcher/tmp/mayan-edms-4.7.tar.gz]
 [2024-06-02 14:00:44] INFO root fetch - main [MainThread]: End processing [mayan-edms]: success
 [2024-06-02 14:00:44] INFO root fetch - main [MainThread]: Store serial: [23488577]
+[2024-06-02 14:02:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23488577]
+[2024-06-02 14:02:54] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-06-02 14:02:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: simpleworkspace
+[2024-06-02 14:02:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: stashconnect
+[2024-06-02 14:02:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: khoj-assistant
+[2024-06-02 14:02:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: igz-mgmt
+[2024-06-02 14:02:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: odoo14-addon-shipment-advice-reception-planner
+[2024-06-02 14:02:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: odoo14-addon-shipment-advice
+[2024-06-02 14:02:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: copilot-exporter
+[2024-06-02 14:02:54] INFO root fetch - processPackages [khoj-assistant]: New version: [1.9.1.dev8] Old Version: [1.9.1.dev74]
+[2024-06-02 14:02:54] INFO root fetch - processPackages [stashconnect]: New version: [0.8.6] Old Version: [0.8.5]
+[2024-06-02 14:02:54] INFO root fetch - processPackages [khoj-assistant]: Downloading https://files.pythonhosted.org/packages/fc/89/bbf1c812c39a0f341fea130ae430c11fcdd5fdcc5ca61fbaed2682cc4df7/khoj_assistant-1.9.1.dev74.tar.gz
+[2024-06-02 14:02:54] INFO root fetch - processPackages [stashconnect]: Downloading https://files.pythonhosted.org/packages/9b/c7/94a2f07a37e48607ed2bf9ee8d666ca2c71415cb8ce1a13ef35a2d801115/stashconnect-0.8.5.tar.gz
+[2024-06-02 14:02:54] INFO root fetch - processPackages [igz-mgmt]: New version: [0.2.0] Old Version: [0.1.4]
+[2024-06-02 14:02:54] WARNING root fetch - processPackages [copilot-exporter]: Skipping, unable to determine old version
+[2024-06-02 14:02:54] INFO root fetch - main [MainThread]: End processing [copilot-exporter] error
+[2024-06-02 14:02:54] INFO root fetch - processPackages [odoo14-addon-shipment-advice]: New version: [14.0.2.4.0] Old Version: [14.0.2.3.1.dev1]
+[2024-06-02 14:02:54] WARNING root fetch - processPackages [odoo14-addon-shipment-advice-reception-planner]: Skipping, unable to determine old version
+[2024-06-02 14:02:54] INFO root fetch - main [MainThread]: End processing [odoo14-addon-shipment-advice-reception-planner] error
+[2024-06-02 14:02:54] INFO root fetch - processPackages [simpleworkspace]: New version: [1.2.212] Old Version: [1.2.210]
+[2024-06-02 14:02:54] INFO root fetch - processPackages [simpleworkspace]: Downloading https://files.pythonhosted.org/packages/83/92/77420582bb5b2483f0dad46af69d8796039e0a90cf0674cc82c652bd2a58/simpleworkspace-1.2.210.tar.gz
+[2024-06-02 14:02:55] INFO root fetch - processPackages [igz-mgmt]: Downloading https://files.pythonhosted.org/packages/1f/4a/def0fbc7a75be540ccaa53a822a76dfeb8e32d4e577152aaf1b324c5e6ef/igz_mgmt-0.1.4.tar.gz
+[2024-06-02 14:02:55] INFO root fetch - processPackages [odoo14-addon-shipment-advice]: Downloading https://files.pythonhosted.org/packages/5d/dd/83d4d5f830242b36b4f1c38891b1cff67eee8ff251f47173a7141f0420f1/odoo14_addon_shipment_advice-14.0.2.3.1.dev1-py3-none-any.whl
+[2024-06-02 14:02:55] INFO root fetch - processPackages [stashconnect]: Downloading https://files.pythonhosted.org/packages/ca/0a/52459c52bcaf3921fe873efd13270f1abc8194371c284915d3c35df9da65/stashconnect-0.8.6.tar.gz
+[2024-06-02 14:02:55] INFO root fetch - processPackages [khoj-assistant]: Downloading https://files.pythonhosted.org/packages/47/ae/446626ff585bb336b70b59402ea6a46bf52326a51b81fd9ead920cde4c8a/khoj_assistant-1.9.1.dev8.tar.gz
+[2024-06-02 14:02:55] INFO root fetch - processPackages [stashconnect]: executing diffoscope
+[2024-06-02 14:02:55] INFO root fetch - processPackages [stashconnect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stashconnect-0.8.5.tar.gz tmp/stashconnect-0.8.6.tar.gz --markdown 20240602/s/stashconnect/0.8.5-0.8.6/README.md --exclude *.pyd
+[2024-06-02 14:02:55] INFO root fetch - processPackages [simpleworkspace]: Downloading https://files.pythonhosted.org/packages/67/a2/78ed5dceccbfc4e49def14733cf6a25950a85c879380261cafa55aaef677/simpleworkspace-1.2.212.tar.gz
+[2024-06-02 14:02:55] INFO root fetch - processPackages [khoj-assistant]: executing diffoscope
+[2024-06-02 14:02:55] INFO root fetch - processPackages [khoj-assistant]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/khoj_assistant-1.9.1.dev74.tar.gz tmp/khoj_assistant-1.9.1.dev8.tar.gz --markdown 20240602/k/khoj-assistant/1.9.1.dev74-1.9.1.dev8/README.md --exclude *.pyd
+[2024-06-02 14:02:55] INFO root fetch - processPackages [igz-mgmt]: Downloading https://files.pythonhosted.org/packages/02/cd/ae31e374b31659d6ad49be8dac457c8f2755c7d0cf311a36a06423bd7cbe/igz_mgmt-0.2.0.tar.gz
+[2024-06-02 14:02:55] INFO root fetch - processPackages [odoo14-addon-shipment-advice]: Downloading https://files.pythonhosted.org/packages/77/cc/9fd2c046e242dd8207cbdaf045728f7d0f50e1f4d789b9c487c48a5ffcf0/odoo14_addon_shipment_advice-14.0.2.4.0-py3-none-any.whl
+[2024-06-02 14:02:55] INFO root fetch - processPackages [simpleworkspace]: executing diffoscope
+[2024-06-02 14:02:55] INFO root fetch - processPackages [simpleworkspace]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simpleworkspace-1.2.210.tar.gz tmp/simpleworkspace-1.2.212.tar.gz --markdown 20240602/s/simpleworkspace/1.2.210-1.2.212/README.md --exclude *.pyd
+[2024-06-02 14:02:55] INFO root fetch - processPackages [igz-mgmt]: executing diffoscope
+[2024-06-02 14:02:55] INFO root fetch - processPackages [igz-mgmt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/igz_mgmt-0.1.4.tar.gz tmp/igz_mgmt-0.2.0.tar.gz --markdown 20240602/i/igz-mgmt/0.1.4-0.2.0/README.md --exclude *.pyd
+[2024-06-02 14:02:55] INFO root fetch - processPackages [odoo14-addon-shipment-advice]: executing diffoscope
+[2024-06-02 14:02:55] INFO root fetch - processPackages [odoo14-addon-shipment-advice]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_shipment_advice-14.0.2.3.1.dev1-py3-none-any.whl.zip tmp/odoo14_addon_shipment_advice-14.0.2.4.0-py3-none-any.whl.zip --markdown 20240602/o/odoo14-addon-shipment-advice/14.0.2.3.1.dev1-14.0.2.4.0/README.md --exclude *.pyd
+[2024-06-02 14:02:56] INFO root fetch - processPackages [stashconnect]: Remove: archive file [/home/abi/fetcher/tmp/stashconnect-0.8.5.tar.gz]
+[2024-06-02 14:02:56] INFO root fetch - processPackages [stashconnect]: Remove: archive file [/home/abi/fetcher/tmp/stashconnect-0.8.6.tar.gz]
+[2024-06-02 14:02:56] INFO root fetch - main [MainThread]: End processing [stashconnect]: success
+[2024-06-02 14:02:56] INFO root fetch - processPackages [igz-mgmt]: Remove: archive file [/home/abi/fetcher/tmp/igz_mgmt-0.1.4.tar.gz]
+[2024-06-02 14:02:56] INFO root fetch - processPackages [igz-mgmt]: Remove: archive file [/home/abi/fetcher/tmp/igz_mgmt-0.2.0.tar.gz]
+[2024-06-02 14:02:56] INFO root fetch - main [MainThread]: End processing [igz-mgmt]: success
+[2024-06-02 14:02:56] INFO root fetch - processPackages [odoo14-addon-shipment-advice]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_shipment_advice-14.0.2.3.1.dev1-py3-none-any.whl.zip]
+[2024-06-02 14:02:56] INFO root fetch - processPackages [odoo14-addon-shipment-advice]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_shipment_advice-14.0.2.4.0-py3-none-any.whl.zip]
+[2024-06-02 14:02:56] INFO root fetch - main [MainThread]: End processing [odoo14-addon-shipment-advice]: success
+[2024-06-02 14:02:56] INFO root fetch - processPackages [simpleworkspace]: Remove: archive file [/home/abi/fetcher/tmp/simpleworkspace-1.2.210.tar.gz]
+[2024-06-02 14:02:56] INFO root fetch - processPackages [simpleworkspace]: Remove: archive file [/home/abi/fetcher/tmp/simpleworkspace-1.2.212.tar.gz]
+[2024-06-02 14:02:56] INFO root fetch - main [MainThread]: End processing [simpleworkspace]: success
+[2024-06-02 14:02:56] INFO root fetch - processPackages [khoj-assistant]: Remove: archive file [/home/abi/fetcher/tmp/khoj_assistant-1.9.1.dev74.tar.gz]
+[2024-06-02 14:02:56] INFO root fetch - processPackages [khoj-assistant]: Remove: archive file [/home/abi/fetcher/tmp/khoj_assistant-1.9.1.dev8.tar.gz]
+[2024-06-02 14:02:56] INFO root fetch - main [MainThread]: End processing [khoj-assistant]: success
+[2024-06-02 14:02:56] INFO root fetch - main [MainThread]: Store serial: [23488617]
