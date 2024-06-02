@@ -5160,3 +5160,15 @@
 [2024-06-02 08:52:09] INFO root fetch - processPackages [SupervisedClustering]: Remove: archive file [/home/abi/fetcher/tmp/supervisedclustering-0.0.2.tar.gz]
 [2024-06-02 08:52:09] INFO root fetch - main [MainThread]: End processing [SupervisedClustering]: success
 [2024-06-02 08:52:09] INFO root fetch - main [MainThread]: Store serial: [23486813]
+[2024-06-02 08:54:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23486813]
+[2024-06-02 08:54:18] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-02 08:54:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: SupervisedClustering
+[2024-06-02 08:54:18] INFO root fetch - processPackages [SupervisedClustering]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-06-02 08:54:18] INFO root fetch - processPackages [SupervisedClustering]: Downloading https://files.pythonhosted.org/packages/ac/60/7645c5d26750ec5c0be1185b442b16a98db22a7698f9aed9a5e45366dcd0/supervisedclustering-0.0.1.tar.gz
+[2024-06-02 08:54:18] INFO root fetch - processPackages [SupervisedClustering]: Downloading https://files.pythonhosted.org/packages/5d/71/4e606e3da1cc59169630901d32aa9b2f08232cc0f7c37ed0388420999377/supervisedclustering-0.0.2.tar.gz
+[2024-06-02 08:54:18] INFO root fetch - processPackages [SupervisedClustering]: executing diffoscope
+[2024-06-02 08:54:18] INFO root fetch - processPackages [SupervisedClustering]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/supervisedclustering-0.0.1.tar.gz tmp/supervisedclustering-0.0.2.tar.gz --markdown 20240602/S/SupervisedClustering/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-06-02 08:54:19] INFO root fetch - processPackages [SupervisedClustering]: Remove: archive file [/home/abi/fetcher/tmp/supervisedclustering-0.0.1.tar.gz]
+[2024-06-02 08:54:19] INFO root fetch - processPackages [SupervisedClustering]: Remove: archive file [/home/abi/fetcher/tmp/supervisedclustering-0.0.2.tar.gz]
+[2024-06-02 08:54:19] INFO root fetch - main [MainThread]: End processing [SupervisedClustering]: success
+[2024-06-02 08:54:19] INFO root fetch - main [MainThread]: Store serial: [23486817]
