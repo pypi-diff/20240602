@@ -20832,3 +20832,64 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 23:23:18] INFO root fetch - processPackages [PyScopedStorage]: Remove: archive file [/home/abi/fetcher/tmp/pyscopedstorage-0.0.6.tar.gz]
 [2024-06-02 23:23:18] INFO root fetch - main [MainThread]: End processing [PyScopedStorage]: success
 [2024-06-02 23:23:18] INFO root fetch - main [MainThread]: Store serial: [23493905]
+[2024-06-02 23:25:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23493905]
+[2024-06-02 23:25:26] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-06-02 23:25:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: asyncraft
+[2024-06-02 23:25:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: protoc-polyglot
+[2024-06-02 23:25:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: utilityai
+[2024-06-02 23:25:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: deknp
+[2024-06-02 23:25:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: protoc-polyglot
+[2024-06-02 23:25:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: tcrutils
+[2024-06-02 23:25:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: scalex
+[2024-06-02 23:25:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: hemanth-hello-world
+[2024-06-02 23:25:26] INFO root fetch - processPackages [protoc-polyglot]: New version: [0.0.1.post9] Old Version: [0.0.1.post8]
+[2024-06-02 23:25:26] INFO root fetch - processPackages [deknp]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-06-02 23:25:26] INFO root fetch - processPackages [hemanth-hello-world]: New version: [0.3] Old Version: [0.2]
+[2024-06-02 23:25:26] INFO root fetch - processPackages [protoc-polyglot]: New version: [0.0.1.post9] Old Version: [0.0.1.post8]
+[2024-06-02 23:25:26] INFO root fetch - processPackages [protoc-polyglot]: Downloading https://files.pythonhosted.org/packages/e9/7b/373a68a962cdfb85f4bd76f6f4ea13ad3f2cfaca73bf0a9f70d0e7d34380/protoc_polyglot-0.0.1.post8.tar.gz
+[2024-06-02 23:25:26] WARNING root fetch - processPackages [asyncraft]: Skipping, unable to determine old version
+[2024-06-02 23:25:26] INFO root fetch - main [MainThread]: End processing [asyncraft] error
+[2024-06-02 23:25:26] WARNING root fetch - processPackages [utilityai]: Skipping, unable to determine old version
+[2024-06-02 23:25:26] INFO root fetch - main [MainThread]: End processing [utilityai] error
+[2024-06-02 23:25:26] INFO root fetch - processPackages [scalex]: New version: [1.0.4] Old Version: [1.0.3]
+[2024-06-02 23:25:26] INFO root fetch - processPackages [deknp]: Downloading https://files.pythonhosted.org/packages/a2/f8/9474dd68e73e4b37117396fd62a452b444f4d0c923e3eb1d3ecdbfde6c63/deknp-0.1.8.tar.gz
+[2024-06-02 23:25:26] INFO root fetch - processPackages [protoc-polyglot]: Downloading https://files.pythonhosted.org/packages/e9/7b/373a68a962cdfb85f4bd76f6f4ea13ad3f2cfaca73bf0a9f70d0e7d34380/protoc_polyglot-0.0.1.post8.tar.gz
+[2024-06-02 23:25:26] INFO root fetch - processPackages [tcrutils]: New version: [12.0.180] Old Version: [12.0.179]
+[2024-06-02 23:25:26] INFO root fetch - processPackages [hemanth-hello-world]: Downloading https://files.pythonhosted.org/packages/6a/90/384393a2c803fb7109558bec1d70a4713a528cbdbcb3f7305f6cb4461fb1/hemanth_hello_world-0.2.tar.gz
+[2024-06-02 23:25:26] INFO root fetch - processPackages [deknp]: Downloading https://files.pythonhosted.org/packages/90/3c/ef8894b05c6e3a5145b0b0434c3743c1d3196369d4c0009f02fa74a4a1aa/deknp-0.1.9.tar.gz
+[2024-06-02 23:25:26] INFO root fetch - processPackages [scalex]: Downloading https://files.pythonhosted.org/packages/af/a7/f6fd49af0ec7ec735aaa7141dc18c7dc7cb36983d075986a425f6c3cf366/scalex-1.0.3.tar.gz
+[2024-06-02 23:25:27] INFO root fetch - processPackages [protoc-polyglot]: Downloading https://files.pythonhosted.org/packages/01/80/bdadb218d1c3271c3a258316c3d5991f2676b54e6f358ac689f9495990f5/protoc_polyglot-0.0.1.post9.tar.gz
+[2024-06-02 23:25:27] INFO root fetch - processPackages [protoc-polyglot]: Downloading https://files.pythonhosted.org/packages/01/80/bdadb218d1c3271c3a258316c3d5991f2676b54e6f358ac689f9495990f5/protoc_polyglot-0.0.1.post9.tar.gz
+[2024-06-02 23:25:27] INFO root fetch - processPackages [tcrutils]: Downloading https://files.pythonhosted.org/packages/b0/ac/fa74bfc9b705141ace228c8ab063da8249ac0b7bbd5feda200be538ed85a/tcrutils-12.0.179.tar.gz
+[2024-06-02 23:25:27] INFO root fetch - processPackages [deknp]: executing diffoscope
+[2024-06-02 23:25:27] INFO root fetch - processPackages [deknp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deknp-0.1.8.tar.gz tmp/deknp-0.1.9.tar.gz --markdown 20240602/d/deknp/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-06-02 23:25:27] INFO root fetch - processPackages [protoc-polyglot]: executing diffoscope
+[2024-06-02 23:25:27] INFO root fetch - processPackages [protoc-polyglot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/protoc_polyglot-0.0.1.post8.tar.gz tmp/protoc_polyglot-0.0.1.post9.tar.gz --markdown 20240602/p/protoc-polyglot/0.0.1.post8-0.0.1.post9/README.md --exclude *.pyd
+[2024-06-02 23:25:27] INFO root fetch - processPackages [protoc-polyglot]: executing diffoscope
+[2024-06-02 23:25:27] INFO root fetch - processPackages [protoc-polyglot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/protoc_polyglot-0.0.1.post8.tar.gz tmp/protoc_polyglot-0.0.1.post9.tar.gz --markdown 20240602/p/protoc-polyglot/0.0.1.post8-0.0.1.post9/README.md --exclude *.pyd
+[2024-06-02 23:25:27] INFO root fetch - processPackages [hemanth-hello-world]: Downloading https://files.pythonhosted.org/packages/25/1e/d8860496d188a57db24e3e075cb27d5cf3496351c81db90ac9a1db5b0261/hemanth_hello_world-0.3.tar.gz
+[2024-06-02 23:25:27] INFO root fetch - processPackages [hemanth-hello-world]: executing diffoscope
+[2024-06-02 23:25:27] INFO root fetch - processPackages [hemanth-hello-world]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hemanth_hello_world-0.2.tar.gz tmp/hemanth_hello_world-0.3.tar.gz --markdown 20240602/h/hemanth-hello-world/0.2-0.3/README.md --exclude *.pyd
+[2024-06-02 23:25:27] INFO root fetch - processPackages [tcrutils]: Downloading https://files.pythonhosted.org/packages/cf/12/477c09882339702747f6135f03b221af84dd55d5791f68b38919e1fbd3b3/tcrutils-12.0.180.tar.gz
+[2024-06-02 23:25:27] INFO root fetch - processPackages [tcrutils]: executing diffoscope
+[2024-06-02 23:25:27] INFO root fetch - processPackages [tcrutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tcrutils-12.0.179.tar.gz tmp/tcrutils-12.0.180.tar.gz --markdown 20240602/t/tcrutils/12.0.179-12.0.180/README.md --exclude *.pyd
+[2024-06-02 23:25:27] INFO root fetch - processPackages [scalex]: Downloading https://files.pythonhosted.org/packages/4d/45/4c58807fcdc3408ca94fdf8daeb6879a8ebd2ada42f64b3214380dbf4932/scalex-1.0.4.tar.gz
+[2024-06-02 23:25:27] INFO root fetch - processPackages [deknp]: Remove: archive file [/home/abi/fetcher/tmp/deknp-0.1.8.tar.gz]
+[2024-06-02 23:25:27] INFO root fetch - processPackages [deknp]: Remove: archive file [/home/abi/fetcher/tmp/deknp-0.1.9.tar.gz]
+[2024-06-02 23:25:27] INFO root fetch - main [MainThread]: End processing [deknp]: success
+[2024-06-02 23:25:27] INFO root fetch - processPackages [protoc-polyglot]: Remove: archive file [/home/abi/fetcher/tmp/protoc_polyglot-0.0.1.post8.tar.gz]
+[2024-06-02 23:25:27] INFO root fetch - processPackages [protoc-polyglot]: Remove: archive file [/home/abi/fetcher/tmp/protoc_polyglot-0.0.1.post9.tar.gz]
+[2024-06-02 23:25:27] INFO root fetch - main [MainThread]: End processing [protoc-polyglot]: success
+[2024-06-02 23:25:27] INFO root fetch - main [MainThread]: End processing [protoc-polyglot]: success
+[2024-06-02 23:25:27] INFO root fetch - processPackages [hemanth-hello-world]: Remove: archive file [/home/abi/fetcher/tmp/hemanth_hello_world-0.2.tar.gz]
+[2024-06-02 23:25:27] INFO root fetch - processPackages [hemanth-hello-world]: Remove: archive file [/home/abi/fetcher/tmp/hemanth_hello_world-0.3.tar.gz]
+[2024-06-02 23:25:27] INFO root fetch - main [MainThread]: End processing [hemanth-hello-world]: success
+[2024-06-02 23:25:28] INFO root fetch - processPackages [tcrutils]: Remove: archive file [/home/abi/fetcher/tmp/tcrutils-12.0.179.tar.gz]
+[2024-06-02 23:25:28] INFO root fetch - processPackages [tcrutils]: Remove: archive file [/home/abi/fetcher/tmp/tcrutils-12.0.180.tar.gz]
+[2024-06-02 23:25:28] INFO root fetch - main [MainThread]: End processing [tcrutils]: success
+[2024-06-02 23:25:28] INFO root fetch - processPackages [scalex]: executing diffoscope
+[2024-06-02 23:25:28] INFO root fetch - processPackages [scalex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scalex-1.0.3.tar.gz tmp/scalex-1.0.4.tar.gz --markdown 20240602/s/scalex/1.0.3-1.0.4/README.md --exclude *.pyd
+[2024-06-02 23:25:29] INFO root fetch - processPackages [scalex]: Remove: archive file [/home/abi/fetcher/tmp/scalex-1.0.3.tar.gz]
+[2024-06-02 23:25:29] INFO root fetch - processPackages [scalex]: Remove: archive file [/home/abi/fetcher/tmp/scalex-1.0.4.tar.gz]
+[2024-06-02 23:25:29] INFO root fetch - main [MainThread]: End processing [scalex]: success
+[2024-06-02 23:25:29] INFO root fetch - main [MainThread]: Store serial: [23493931]
