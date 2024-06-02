@@ -10238,3 +10238,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-02 15:30:59] INFO root fetch - processPackages [idcn]: Remove: archive file [/home/abi/fetcher/tmp/idcn-1.1.0.tar.gz]
 [2024-06-02 15:30:59] INFO root fetch - main [MainThread]: End processing [idcn]: success
 [2024-06-02 15:30:59] INFO root fetch - main [MainThread]: Store serial: [23489236]
+[2024-06-02 15:33:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23489236]
+[2024-06-02 15:33:08] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-02 15:33:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pip-setting
+[2024-06-02 15:33:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: htmlExtractor
+[2024-06-02 15:33:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: anaplan-sdk
+[2024-06-02 15:33:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: spotify-to-ytmusic
+[2024-06-02 15:33:08] INFO root fetch - processPackages [pip-setting]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-06-02 15:33:08] INFO root fetch - processPackages [anaplan-sdk]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-06-02 15:33:08] INFO root fetch - processPackages [htmlExtractor]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-06-02 15:33:08] INFO root fetch - processPackages [spotify-to-ytmusic]: New version: [0.3.4] Old Version: [0.3.3]
+[2024-06-02 15:33:09] INFO root fetch - processPackages [anaplan-sdk]: Downloading https://files.pythonhosted.org/packages/25/af/7a654b6061e16a5bb06f4065bb2842182af6819e088457e5e44b85aaa771/anaplan_sdk-0.1.0.tar.gz
+[2024-06-02 15:33:09] INFO root fetch - processPackages [htmlExtractor]: Downloading https://files.pythonhosted.org/packages/e9/2a/ad36d678ae7327468d5cb0d2009ae59d125d8caa7a39c01c3b9a9db5c4d3/htmlExtractor-0.0.3.tar.gz
+[2024-06-02 15:33:09] INFO root fetch - processPackages [pip-setting]: Downloading https://files.pythonhosted.org/packages/06/a0/d79e851523e12ba80afa741b84432f5ca25229441a0c86251824a4abec69/pip-setting-1.0.1.tar.gz
+[2024-06-02 15:33:09] INFO root fetch - processPackages [spotify-to-ytmusic]: Downloading https://files.pythonhosted.org/packages/35/7d/f5563a3723f1f04a9af8dc704387ff301dd42137f039f5403341b2c89155/spotify_to_ytmusic-0.3.3.tar.gz
+[2024-06-02 15:33:09] INFO root fetch - processPackages [htmlExtractor]: Downloading https://files.pythonhosted.org/packages/40/8d/475205c44d912cc65adeae2c47d869e34f08dab6528a2813d86466268306/htmlExtractor-0.0.4.tar.gz
+[2024-06-02 15:33:09] INFO root fetch - processPackages [pip-setting]: Downloading https://files.pythonhosted.org/packages/94/59/40f870cdd55fdc9c8ac20a99859e933298e07613d61df3faad9d248e3c88/pip_setting-1.0.2.tar.gz
+[2024-06-02 15:33:09] INFO root fetch - processPackages [anaplan-sdk]: Downloading https://files.pythonhosted.org/packages/55/26/749ac4add9c9be83cada5ccdfc35fba1f583ccc3d032c4ab2e884be13192/anaplan_sdk-0.1.1.tar.gz
+[2024-06-02 15:33:09] INFO root fetch - processPackages [spotify-to-ytmusic]: Downloading https://files.pythonhosted.org/packages/35/51/74918e2022ffec70d1a599a30c3b0af5db9a0c4ab804ed630e16a5e57616/spotify_to_ytmusic-0.3.4.tar.gz
+[2024-06-02 15:33:09] INFO root fetch - processPackages [pip-setting]: executing diffoscope
+[2024-06-02 15:33:09] INFO root fetch - processPackages [pip-setting]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pip-setting-1.0.1.tar.gz tmp/pip_setting-1.0.2.tar.gz --markdown 20240602/p/pip-setting/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-06-02 15:33:09] INFO root fetch - processPackages [anaplan-sdk]: executing diffoscope
+[2024-06-02 15:33:09] INFO root fetch - processPackages [anaplan-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anaplan_sdk-0.1.0.tar.gz tmp/anaplan_sdk-0.1.1.tar.gz --markdown 20240602/a/anaplan-sdk/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-06-02 15:33:09] INFO root fetch - processPackages [htmlExtractor]: executing diffoscope
+[2024-06-02 15:33:09] INFO root fetch - processPackages [htmlExtractor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/htmlExtractor-0.0.3.tar.gz tmp/htmlExtractor-0.0.4.tar.gz --markdown 20240602/h/htmlExtractor/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-06-02 15:33:09] INFO root fetch - processPackages [spotify-to-ytmusic]: executing diffoscope
+[2024-06-02 15:33:09] INFO root fetch - processPackages [spotify-to-ytmusic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spotify_to_ytmusic-0.3.3.tar.gz tmp/spotify_to_ytmusic-0.3.4.tar.gz --markdown 20240602/s/spotify-to-ytmusic/0.3.3-0.3.4/README.md --exclude *.pyd
+[2024-06-02 15:33:10] INFO root fetch - processPackages [pip-setting]: Remove: archive file [/home/abi/fetcher/tmp/pip-setting-1.0.1.tar.gz]
+[2024-06-02 15:33:10] INFO root fetch - processPackages [pip-setting]: Remove: archive file [/home/abi/fetcher/tmp/pip_setting-1.0.2.tar.gz]
+[2024-06-02 15:33:10] INFO root fetch - main [MainThread]: End processing [pip-setting]: success
+[2024-06-02 15:33:10] INFO root fetch - processPackages [anaplan-sdk]: Remove: archive file [/home/abi/fetcher/tmp/anaplan_sdk-0.1.0.tar.gz]
+[2024-06-02 15:33:10] INFO root fetch - processPackages [anaplan-sdk]: Remove: archive file [/home/abi/fetcher/tmp/anaplan_sdk-0.1.1.tar.gz]
+[2024-06-02 15:33:10] INFO root fetch - main [MainThread]: End processing [anaplan-sdk]: success
+[2024-06-02 15:33:10] INFO root fetch - processPackages [htmlExtractor]: Remove: archive file [/home/abi/fetcher/tmp/htmlExtractor-0.0.3.tar.gz]
+[2024-06-02 15:33:10] INFO root fetch - processPackages [htmlExtractor]: Remove: archive file [/home/abi/fetcher/tmp/htmlExtractor-0.0.4.tar.gz]
+[2024-06-02 15:33:10] INFO root fetch - main [MainThread]: End processing [htmlExtractor]: success
+[2024-06-02 15:33:10] INFO root fetch - processPackages [spotify-to-ytmusic]: Remove: archive file [/home/abi/fetcher/tmp/spotify_to_ytmusic-0.3.3.tar.gz]
+[2024-06-02 15:33:10] INFO root fetch - processPackages [spotify-to-ytmusic]: Remove: archive file [/home/abi/fetcher/tmp/spotify_to_ytmusic-0.3.4.tar.gz]
+[2024-06-02 15:33:10] INFO root fetch - main [MainThread]: End processing [spotify-to-ytmusic]: success
+[2024-06-02 15:33:10] INFO root fetch - main [MainThread]: Store serial: [23489249]
