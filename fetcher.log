@@ -4130,3 +4130,15 @@
 [2024-06-02 06:52:59] INFO root fetch - processPackages [fhir-tx-encoder]: Remove: archive file [/home/abi/fetcher/tmp/fhir_tx_encoder-1.1.0.tar.gz]
 [2024-06-02 06:52:59] INFO root fetch - main [MainThread]: End processing [fhir-tx-encoder]: success
 [2024-06-02 06:52:59] INFO root fetch - main [MainThread]: Store serial: [23486293]
+[2024-06-02 06:55:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23486293]
+[2024-06-02 06:55:07] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-02 06:55:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: simple-disk-queue
+[2024-06-02 06:55:07] INFO root fetch - processPackages [simple-disk-queue]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-06-02 06:55:07] INFO root fetch - processPackages [simple-disk-queue]: Downloading https://files.pythonhosted.org/packages/23/df/b54cd83e1e846aa6fd220eeeadae79445c59b8bb9c30dc182066cf40cb58/simple_disk_queue-0.0.2.tar.gz
+[2024-06-02 06:55:08] INFO root fetch - processPackages [simple-disk-queue]: Downloading https://files.pythonhosted.org/packages/ed/57/b19ac24954a7c75f24449ec239642d55e070f50c40ef228d839841f02edd/simple_disk_queue-0.0.3.tar.gz
+[2024-06-02 06:55:08] INFO root fetch - processPackages [simple-disk-queue]: executing diffoscope
+[2024-06-02 06:55:08] INFO root fetch - processPackages [simple-disk-queue]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simple_disk_queue-0.0.2.tar.gz tmp/simple_disk_queue-0.0.3.tar.gz --markdown 20240602/s/simple-disk-queue/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-06-02 06:55:08] INFO root fetch - processPackages [simple-disk-queue]: Remove: archive file [/home/abi/fetcher/tmp/simple_disk_queue-0.0.2.tar.gz]
+[2024-06-02 06:55:08] INFO root fetch - processPackages [simple-disk-queue]: Remove: archive file [/home/abi/fetcher/tmp/simple_disk_queue-0.0.3.tar.gz]
+[2024-06-02 06:55:08] INFO root fetch - main [MainThread]: End processing [simple-disk-queue]: success
+[2024-06-02 06:55:08] INFO root fetch - main [MainThread]: Store serial: [23486300]
