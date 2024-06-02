@@ -8687,3 +8687,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-02 13:42:34] INFO root fetch - processPackages [kal-middleware]: Remove: archive file [/home/abi/fetcher/tmp/kal_middleware-0.0.9.tar.gz]
 [2024-06-02 13:42:34] INFO root fetch - main [MainThread]: End processing [kal-middleware]: success
 [2024-06-02 13:42:34] INFO root fetch - main [MainThread]: Store serial: [23488495]
+[2024-06-02 13:44:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23488495]
+[2024-06-02 13:44:43] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-02 13:44:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: semchunk
+[2024-06-02 13:44:43] INFO root fetch - processPackages [semchunk]: New version: [1.0.0] Old Version: [0.3.2]
+[2024-06-02 13:44:43] INFO root fetch - processPackages [semchunk]: Downloading https://files.pythonhosted.org/packages/45/05/8e2da0b9fafa43a0282eb3ad225fadff62e087ee71de4b6fed689b9d9942/semchunk-0.3.2.tar.gz
+[2024-06-02 13:44:43] INFO root fetch - processPackages [semchunk]: Downloading https://files.pythonhosted.org/packages/a0/09/8e03765334073251d1d7db3bbad73e7d58f27c1647c700cc6c0bf5ae3400/semchunk-1.0.0.tar.gz
+[2024-06-02 13:44:43] INFO root fetch - processPackages [semchunk]: executing diffoscope
+[2024-06-02 13:44:43] INFO root fetch - processPackages [semchunk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/semchunk-0.3.2.tar.gz tmp/semchunk-1.0.0.tar.gz --markdown 20240602/s/semchunk/0.3.2-1.0.0/README.md --exclude *.pyd
+[2024-06-02 13:44:44] INFO root fetch - processPackages [semchunk]: Remove: archive file [/home/abi/fetcher/tmp/semchunk-0.3.2.tar.gz]
+[2024-06-02 13:44:44] INFO root fetch - processPackages [semchunk]: Remove: archive file [/home/abi/fetcher/tmp/semchunk-1.0.0.tar.gz]
+[2024-06-02 13:44:44] INFO root fetch - main [MainThread]: End processing [semchunk]: success
+[2024-06-02 13:44:44] INFO root fetch - main [MainThread]: Store serial: [23488498]
