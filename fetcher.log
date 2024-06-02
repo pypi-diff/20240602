@@ -3336,3 +3336,15 @@
 [2024-06-02 05:01:06] INFO root fetch - processPackages [aixhello]: Remove: archive file [/home/abi/fetcher/tmp/aixhello-3.1.tar.gz]
 [2024-06-02 05:01:06] INFO root fetch - main [MainThread]: End processing [aixhello]: success
 [2024-06-02 05:01:06] INFO root fetch - main [MainThread]: Store serial: [23485775]
+[2024-06-02 05:03:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23485775]
+[2024-06-02 05:03:15] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-02 05:03:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sql-lsp
+[2024-06-02 05:03:15] INFO root fetch - processPackages [sql-lsp]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-06-02 05:03:15] INFO root fetch - processPackages [sql-lsp]: Downloading https://files.pythonhosted.org/packages/7b/e0/3ba2e741992e54ee20bb08de95823a36468c3f0605f4227061e05cb80b2d/sql_lsp-0.0.6.tar.gz
+[2024-06-02 05:03:15] INFO root fetch - processPackages [sql-lsp]: Downloading https://files.pythonhosted.org/packages/61/04/db8c1d923b3840672197e549c34ed3ad24a46e49f703d9dace087df02983/sql_lsp-0.0.7.tar.gz
+[2024-06-02 05:03:15] INFO root fetch - processPackages [sql-lsp]: executing diffoscope
+[2024-06-02 05:03:15] INFO root fetch - processPackages [sql-lsp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sql_lsp-0.0.6.tar.gz tmp/sql_lsp-0.0.7.tar.gz --markdown 20240602/s/sql-lsp/0.0.6-0.0.7/README.md --exclude *.pyd
+[2024-06-02 05:03:16] INFO root fetch - processPackages [sql-lsp]: Remove: archive file [/home/abi/fetcher/tmp/sql_lsp-0.0.6.tar.gz]
+[2024-06-02 05:03:16] INFO root fetch - processPackages [sql-lsp]: Remove: archive file [/home/abi/fetcher/tmp/sql_lsp-0.0.7.tar.gz]
+[2024-06-02 05:03:16] INFO root fetch - main [MainThread]: End processing [sql-lsp]: success
+[2024-06-02 05:03:16] INFO root fetch - main [MainThread]: Store serial: [23485778]
