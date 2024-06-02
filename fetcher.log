@@ -1921,3 +1921,14 @@
 [2024-06-02 02:22:43] INFO root fetch - processPackages [lightning]: Remove: archive file [/home/abi/fetcher/tmp/lightning-2.3.0.dev20240602.tar.gz]
 [2024-06-02 02:22:43] INFO root fetch - main [MainThread]: End processing [lightning]: success
 [2024-06-02 02:22:43] INFO root fetch - main [MainThread]: Store serial: [23484906]
+[2024-06-02 02:24:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23484906]
+[2024-06-02 02:24:53] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-02 02:24:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rolyson
+[2024-06-02 02:24:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: toolbox-utils
+[2024-06-02 02:24:53] WARNING root fetch - processPackages [rolyson]: Skipping, unable to determine old version
+[2024-06-02 02:24:53] INFO root fetch - main [MainThread]: End processing [rolyson] error
+[2024-06-02 02:24:53] INFO root fetch - processPackages [toolbox-utils]: New version: [5.1.1] Old Version: [5.1.0]
+[2024-06-02 02:24:54] INFO root fetch - processPackages [toolbox-utils]: Downloading https://files.pythonhosted.org/packages/cf/ae/be575fd415c6cbc258f2fdcf79dd3d0d00a8306554276279cdc98c84a234/toolbox_utils-5.1.0.tar.gz
+[2024-06-02 02:24:54] WARNING root fetch - processPackages [toolbox-utils]: Skipping package: exceeds size limit 18398975>=10485760
+[2024-06-02 02:24:54] INFO root fetch - main [MainThread]: End processing [toolbox-utils] error
+[2024-06-02 02:24:54] INFO root fetch - main [MainThread]: Store serial: [23484921]
