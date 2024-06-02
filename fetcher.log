@@ -16792,3 +16792,38 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 21:09:13] INFO root fetch - processPackages [seamm-dashboard]: Remove: archive file [/home/abi/fetcher/tmp/seamm_dashboard-2024.6.2.tar.gz]
 [2024-06-02 21:09:13] INFO root fetch - main [MainThread]: End processing [seamm-dashboard]: success
 [2024-06-02 21:09:13] INFO root fetch - main [MainThread]: Store serial: [23492275]
+[2024-06-02 21:11:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23492275]
+[2024-06-02 21:11:22] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-02 21:11:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: checkptr
+[2024-06-02 21:11:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: flask-Captchaify
+[2024-06-02 21:11:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: spotify-utils
+[2024-06-02 21:11:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dahlia
+[2024-06-02 21:11:22] INFO root fetch - processPackages [checkptr]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-06-02 21:11:22] INFO root fetch - processPackages [spotify-utils]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-06-02 21:11:22] INFO root fetch - processPackages [flask-Captchaify]: New version: [1.6.9.8.3] Old Version: [1.6.9.8.2]
+[2024-06-02 21:11:23] INFO root fetch - processPackages [spotify-utils]: Downloading https://files.pythonhosted.org/packages/bd/10/98bd146e9c1396adb8fafd457538d970e47efc67169f9c5844b17d8f2344/spotify_utils-1.0.8.tar.gz
+[2024-06-02 21:11:23] INFO root fetch - processPackages [dahlia]: New version: [3.0.0] Old Version: [2.3.2]
+[2024-06-02 21:11:23] INFO root fetch - processPackages [checkptr]: Downloading https://files.pythonhosted.org/packages/7c/3f/4a45345205a73b228b4097b529f38533214ddae23404ddc947612acff9be/checkptr-0.1.0.tar.gz
+[2024-06-02 21:11:23] INFO root fetch - processPackages [flask-Captchaify]: Downloading https://files.pythonhosted.org/packages/14/2f/d3b96c9fc0d53dea881cb2cacac893051ffb5c747fff1076f57cae523334/flask_captchaify-1.6.9.8.2.tar.gz
+[2024-06-02 21:11:23] WARNING root fetch - processPackages [flask-Captchaify]: Skipping package: exceeds size limit 43916089>=10485760
+[2024-06-02 21:11:23] INFO root fetch - main [MainThread]: End processing [flask-Captchaify] error
+[2024-06-02 21:11:23] INFO root fetch - processPackages [dahlia]: Downloading https://files.pythonhosted.org/packages/95/9c/654412743e89565c4997f0559275eee5fe9db1e2108f7ca1f77d72c51a89/dahlia-2.3.2.tar.gz
+[2024-06-02 21:11:23] INFO root fetch - processPackages [spotify-utils]: Downloading https://files.pythonhosted.org/packages/aa/db/a2b259741f25e3cddb2fd70cf766003979f3cc00d39858a21666c745943b/spotify_utils-1.0.9.tar.gz
+[2024-06-02 21:11:23] INFO root fetch - processPackages [spotify-utils]: executing diffoscope
+[2024-06-02 21:11:23] INFO root fetch - processPackages [spotify-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spotify_utils-1.0.8.tar.gz tmp/spotify_utils-1.0.9.tar.gz --markdown 20240602/s/spotify-utils/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-06-02 21:11:23] INFO root fetch - processPackages [checkptr]: Downloading https://files.pythonhosted.org/packages/f8/f8/d64a17749203cb4bce586d70029f5143038f7a3619b0a8f24b4498d25f93/checkptr-0.1.1.tar.gz
+[2024-06-02 21:11:23] INFO root fetch - processPackages [dahlia]: Downloading https://files.pythonhosted.org/packages/bd/19/605024171f4462d695f1d4cbe64c1d679a6510be7ce40b5d67d99ab6c538/dahlia-3.0.0.tar.gz
+[2024-06-02 21:11:23] INFO root fetch - processPackages [checkptr]: executing diffoscope
+[2024-06-02 21:11:23] INFO root fetch - processPackages [checkptr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/checkptr-0.1.0.tar.gz tmp/checkptr-0.1.1.tar.gz --markdown 20240602/c/checkptr/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-06-02 21:11:23] INFO root fetch - processPackages [dahlia]: executing diffoscope
+[2024-06-02 21:11:23] INFO root fetch - processPackages [dahlia]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dahlia-2.3.2.tar.gz tmp/dahlia-3.0.0.tar.gz --markdown 20240602/d/dahlia/2.3.2-3.0.0/README.md --exclude *.pyd
+[2024-06-02 21:11:23] INFO root fetch - processPackages [spotify-utils]: Remove: archive file [/home/abi/fetcher/tmp/spotify_utils-1.0.8.tar.gz]
+[2024-06-02 21:11:23] INFO root fetch - processPackages [spotify-utils]: Remove: archive file [/home/abi/fetcher/tmp/spotify_utils-1.0.9.tar.gz]
+[2024-06-02 21:11:23] INFO root fetch - main [MainThread]: End processing [spotify-utils]: success
+[2024-06-02 21:11:24] INFO root fetch - processPackages [checkptr]: Remove: archive file [/home/abi/fetcher/tmp/checkptr-0.1.0.tar.gz]
+[2024-06-02 21:11:24] INFO root fetch - processPackages [checkptr]: Remove: archive file [/home/abi/fetcher/tmp/checkptr-0.1.1.tar.gz]
+[2024-06-02 21:11:24] INFO root fetch - main [MainThread]: End processing [checkptr]: success
+[2024-06-02 21:11:24] INFO root fetch - processPackages [dahlia]: Remove: archive file [/home/abi/fetcher/tmp/dahlia-2.3.2.tar.gz]
+[2024-06-02 21:11:24] INFO root fetch - processPackages [dahlia]: Remove: archive file [/home/abi/fetcher/tmp/dahlia-3.0.0.tar.gz]
+[2024-06-02 21:11:24] INFO root fetch - main [MainThread]: End processing [dahlia]: success
+[2024-06-02 21:11:24] INFO root fetch - main [MainThread]: Store serial: [23492287]
