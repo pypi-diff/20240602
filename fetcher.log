@@ -9504,3 +9504,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-02 14:29:21] INFO root fetch - processPackages [ovos-PHAL]: Remove: archive file [/home/abi/fetcher/tmp/ovos_PHAL-0.0.5a9-py3-none-any.whl.zip]
 [2024-06-02 14:29:21] INFO root fetch - main [MainThread]: End processing [ovos-PHAL]: success
 [2024-06-02 14:29:21] INFO root fetch - main [MainThread]: Store serial: [23488877]
+[2024-06-02 14:31:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23488877]
+[2024-06-02 14:31:30] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-02 14:31:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mkdocs-juvix-plugin
+[2024-06-02 14:31:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ullm
+[2024-06-02 14:31:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tweeterpy
+[2024-06-02 14:31:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: aa-opcalendar
+[2024-06-02 14:31:30] INFO root fetch - processPackages [ullm]: New version: [0.3.1] Old Version: [0.3.0]
+[2024-06-02 14:31:30] INFO root fetch - processPackages [tweeterpy]: New version: [1.1.5] Old Version: [1.1.4]
+[2024-06-02 14:31:30] INFO root fetch - processPackages [mkdocs-juvix-plugin]: New version: [0.2.5] Old Version: [0.2.4]
+[2024-06-02 14:31:30] INFO root fetch - processPackages [aa-opcalendar]: New version: [3.0.0b3] Old Version: [3.0.0b2]
+[2024-06-02 14:31:30] INFO root fetch - processPackages [ullm]: Downloading https://files.pythonhosted.org/packages/88/0d/6b288f756382fb39657f48d6d5bf7d9a1612930050c66f1629be67a3f89e/ullm-0.3.0.tar.gz
+[2024-06-02 14:31:30] INFO root fetch - processPackages [mkdocs-juvix-plugin]: Downloading https://files.pythonhosted.org/packages/3f/2e/5e391323ea7b9e5704f861b338a31ffa062559dd8ecb7e969aad89a41f5f/mkdocs-juvix-plugin-0.2.4.tar.gz
+[2024-06-02 14:31:30] INFO root fetch - processPackages [tweeterpy]: Downloading https://files.pythonhosted.org/packages/e6/ee/84dd24221a3902723b78bfd028ee2b2fabc868d6cd80cc8f8d24ec77ced2/tweeterpy-1.1.4.tar.gz
+[2024-06-02 14:31:30] INFO root fetch - processPackages [aa-opcalendar]: Downloading https://files.pythonhosted.org/packages/02/30/ba73a37ce2efb7a158bf36dd7ece57e20b4dbab9e02ce4a48208eb3ee986/aa_opcalendar-3.0.0b2.tar.gz
+[2024-06-02 14:31:30] INFO root fetch - processPackages [mkdocs-juvix-plugin]: Downloading https://files.pythonhosted.org/packages/58/b4/57830e07f19bdae2ffaf431f372ed26def198ceae525142575ed80bb8d39/mkdocs-juvix-plugin-0.2.5.tar.gz
+[2024-06-02 14:31:31] INFO root fetch - processPackages [ullm]: Downloading https://files.pythonhosted.org/packages/d2/f5/3981754d22aadee97e455ff92425d1ba3da086e5828e23ee9accde7dab55/ullm-0.3.1.tar.gz
+[2024-06-02 14:31:31] INFO root fetch - processPackages [tweeterpy]: Downloading https://files.pythonhosted.org/packages/78/e1/8f56575d8b87c442e7f3a89ed1988afc15a49062d494ccfde5f7478bc1ee/tweeterpy-1.1.5.tar.gz
+[2024-06-02 14:31:31] INFO root fetch - processPackages [aa-opcalendar]: Downloading https://files.pythonhosted.org/packages/fa/4e/7c0dc36e32ad96e99b3af6e5cce940ea535a83f8fcdae4a5b48679afe734/aa_opcalendar-3.0.0b3.tar.gz
+[2024-06-02 14:31:31] INFO root fetch - processPackages [mkdocs-juvix-plugin]: executing diffoscope
+[2024-06-02 14:31:31] INFO root fetch - processPackages [mkdocs-juvix-plugin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mkdocs-juvix-plugin-0.2.4.tar.gz tmp/mkdocs-juvix-plugin-0.2.5.tar.gz --markdown 20240602/m/mkdocs-juvix-plugin/0.2.4-0.2.5/README.md --exclude *.pyd
+[2024-06-02 14:31:31] INFO root fetch - processPackages [ullm]: executing diffoscope
+[2024-06-02 14:31:31] INFO root fetch - processPackages [ullm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ullm-0.3.0.tar.gz tmp/ullm-0.3.1.tar.gz --markdown 20240602/u/ullm/0.3.0-0.3.1/README.md --exclude *.pyd
+[2024-06-02 14:31:31] INFO root fetch - processPackages [tweeterpy]: executing diffoscope
+[2024-06-02 14:31:31] INFO root fetch - processPackages [tweeterpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tweeterpy-1.1.4.tar.gz tmp/tweeterpy-1.1.5.tar.gz --markdown 20240602/t/tweeterpy/1.1.4-1.1.5/README.md --exclude *.pyd
+[2024-06-02 14:31:31] INFO root fetch - processPackages [aa-opcalendar]: executing diffoscope
+[2024-06-02 14:31:31] INFO root fetch - processPackages [aa-opcalendar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aa_opcalendar-3.0.0b2.tar.gz tmp/aa_opcalendar-3.0.0b3.tar.gz --markdown 20240602/a/aa-opcalendar/3.0.0b2-3.0.0b3/README.md --exclude *.pyd
+[2024-06-02 14:31:31] INFO root fetch - processPackages [mkdocs-juvix-plugin]: Remove: archive file [/home/abi/fetcher/tmp/mkdocs-juvix-plugin-0.2.4.tar.gz]
+[2024-06-02 14:31:31] INFO root fetch - processPackages [mkdocs-juvix-plugin]: Remove: archive file [/home/abi/fetcher/tmp/mkdocs-juvix-plugin-0.2.5.tar.gz]
+[2024-06-02 14:31:31] INFO root fetch - main [MainThread]: End processing [mkdocs-juvix-plugin]: success
+[2024-06-02 14:31:31] INFO root fetch - processPackages [tweeterpy]: Remove: archive file [/home/abi/fetcher/tmp/tweeterpy-1.1.4.tar.gz]
+[2024-06-02 14:31:31] INFO root fetch - processPackages [tweeterpy]: Remove: archive file [/home/abi/fetcher/tmp/tweeterpy-1.1.5.tar.gz]
+[2024-06-02 14:31:31] INFO root fetch - main [MainThread]: End processing [tweeterpy]: success
+[2024-06-02 14:31:31] INFO root fetch - processPackages [ullm]: Remove: archive file [/home/abi/fetcher/tmp/ullm-0.3.0.tar.gz]
+[2024-06-02 14:31:31] INFO root fetch - processPackages [ullm]: Remove: archive file [/home/abi/fetcher/tmp/ullm-0.3.1.tar.gz]
+[2024-06-02 14:31:31] INFO root fetch - main [MainThread]: End processing [ullm]: success
+[2024-06-02 14:31:32] INFO root fetch - processPackages [aa-opcalendar]: Remove: archive file [/home/abi/fetcher/tmp/aa_opcalendar-3.0.0b2.tar.gz]
+[2024-06-02 14:31:32] INFO root fetch - processPackages [aa-opcalendar]: Remove: archive file [/home/abi/fetcher/tmp/aa_opcalendar-3.0.0b3.tar.gz]
+[2024-06-02 14:31:32] INFO root fetch - main [MainThread]: End processing [aa-opcalendar]: success
+[2024-06-02 14:31:32] INFO root fetch - main [MainThread]: Store serial: [23488892]
