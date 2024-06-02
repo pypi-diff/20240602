@@ -7974,3 +7974,33 @@
 [2024-06-02 12:56:49] INFO root fetch - processPackages [stackview]: Remove: archive file [/home/abi/fetcher/tmp/stackview-0.7.8.tar.gz]
 [2024-06-02 12:56:49] INFO root fetch - main [MainThread]: End processing [stackview]: success
 [2024-06-02 12:56:49] INFO root fetch - main [MainThread]: Store serial: [23488274]
+[2024-06-02 12:58:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23488274]
+[2024-06-02 12:58:59] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-02 12:58:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: afeng-py-tools
+[2024-06-02 12:58:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: protoc-polyglot
+[2024-06-02 12:58:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sif-tools
+[2024-06-02 12:58:59] INFO root fetch - processPackages [sif-tools]: New version: [0.3.0] Old Version: [0.2]
+[2024-06-02 12:58:59] INFO root fetch - processPackages [protoc-polyglot]: New version: [0.0.1.post9] Old Version: [0.0.1.post8]
+[2024-06-02 12:58:59] INFO root fetch - processPackages [protoc-polyglot]: Downloading https://files.pythonhosted.org/packages/e9/7b/373a68a962cdfb85f4bd76f6f4ea13ad3f2cfaca73bf0a9f70d0e7d34380/protoc_polyglot-0.0.1.post8.tar.gz
+[2024-06-02 12:58:59] INFO root fetch - processPackages [afeng-py-tools]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-06-02 12:58:59] INFO root fetch - processPackages [sif-tools]: Downloading https://files.pythonhosted.org/packages/10/72/86a3b2c4a7301bad80f8a4d0a488e731ac4cc6cdc35db687d1865d1a7ea7/sif_tools-0.2-py3-none-any.whl
+[2024-06-02 12:58:59] INFO root fetch - processPackages [afeng-py-tools]: Downloading https://files.pythonhosted.org/packages/03/96/e24f6bbf418707708ed1ab31dd8f4af000cdfcd56c3955e6bcf876e28182/afeng-py-tools-0.0.98.tar.gz
+[2024-06-02 12:58:59] INFO root fetch - processPackages [protoc-polyglot]: Downloading https://files.pythonhosted.org/packages/01/80/bdadb218d1c3271c3a258316c3d5991f2676b54e6f358ac689f9495990f5/protoc_polyglot-0.0.1.post9.tar.gz
+[2024-06-02 12:58:59] INFO root fetch - processPackages [protoc-polyglot]: executing diffoscope
+[2024-06-02 12:58:59] INFO root fetch - processPackages [protoc-polyglot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/protoc_polyglot-0.0.1.post8.tar.gz tmp/protoc_polyglot-0.0.1.post9.tar.gz --markdown 20240602/p/protoc-polyglot/0.0.1.post8-0.0.1.post9/README.md --exclude *.pyd
+[2024-06-02 12:58:59] INFO root fetch - processPackages [sif-tools]: Downloading https://files.pythonhosted.org/packages/f1/94/cb84ceea133ce7811bef036d1c2affd75e8f909d49a5ca88ca903478b4d1/sif_tools-0.3.0-py3-none-any.whl
+[2024-06-02 12:59:00] INFO root fetch - processPackages [sif-tools]: executing diffoscope
+[2024-06-02 12:59:00] INFO root fetch - processPackages [sif-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sif_tools-0.2-py3-none-any.whl.zip tmp/sif_tools-0.3.0-py3-none-any.whl.zip --markdown 20240602/s/sif-tools/0.2-0.3.0/README.md --exclude *.pyd
+[2024-06-02 12:59:00] INFO root fetch - processPackages [afeng-py-tools]: Downloading https://files.pythonhosted.org/packages/b2/0a/41c6034fd5c224a859e4249b1b09e63d7acefba4ae5ac80d406a778a1e32/afeng-py-tools-0.0.99.tar.gz
+[2024-06-02 12:59:00] INFO root fetch - processPackages [afeng-py-tools]: executing diffoscope
+[2024-06-02 12:59:00] INFO root fetch - processPackages [afeng-py-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/afeng-py-tools-0.0.98.tar.gz tmp/afeng-py-tools-0.0.99.tar.gz --markdown 20240602/a/afeng-py-tools/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-06-02 12:59:00] INFO root fetch - processPackages [protoc-polyglot]: Remove: archive file [/home/abi/fetcher/tmp/protoc_polyglot-0.0.1.post8.tar.gz]
+[2024-06-02 12:59:00] INFO root fetch - processPackages [protoc-polyglot]: Remove: archive file [/home/abi/fetcher/tmp/protoc_polyglot-0.0.1.post9.tar.gz]
+[2024-06-02 12:59:00] INFO root fetch - main [MainThread]: End processing [protoc-polyglot]: success
+[2024-06-02 12:59:00] INFO root fetch - processPackages [sif-tools]: Remove: archive file [/home/abi/fetcher/tmp/sif_tools-0.2-py3-none-any.whl.zip]
+[2024-06-02 12:59:00] INFO root fetch - processPackages [sif-tools]: Remove: archive file [/home/abi/fetcher/tmp/sif_tools-0.3.0-py3-none-any.whl.zip]
+[2024-06-02 12:59:00] INFO root fetch - main [MainThread]: End processing [sif-tools]: success
+[2024-06-02 12:59:01] INFO root fetch - processPackages [afeng-py-tools]: Remove: archive file [/home/abi/fetcher/tmp/afeng-py-tools-0.0.98.tar.gz]
+[2024-06-02 12:59:01] INFO root fetch - processPackages [afeng-py-tools]: Remove: archive file [/home/abi/fetcher/tmp/afeng-py-tools-0.0.99.tar.gz]
+[2024-06-02 12:59:01] INFO root fetch - main [MainThread]: End processing [afeng-py-tools]: success
+[2024-06-02 12:59:01] INFO root fetch - main [MainThread]: Store serial: [23488282]
