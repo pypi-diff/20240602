@@ -7821,3 +7821,15 @@
 [2024-06-02 12:45:59] INFO root fetch - processPackages [dbt-command-center]: Remove: archive file [/home/abi/fetcher/tmp/dbt_command_center-0.1.9.tar.gz]
 [2024-06-02 12:45:59] INFO root fetch - main [MainThread]: End processing [dbt-command-center]: success
 [2024-06-02 12:45:59] INFO root fetch - main [MainThread]: Store serial: [23488201]
+[2024-06-02 12:48:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23488201]
+[2024-06-02 12:48:08] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-02 12:48:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pytro
+[2024-06-02 12:48:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Baseball-Info
+[2024-06-02 12:48:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: custom-maya
+[2024-06-02 12:48:08] WARNING root fetch - processPackages [pytro]: Skipping, unable to determine old version
+[2024-06-02 12:48:08] WARNING root fetch - processPackages [Baseball-Info]: Skipping, unable to determine old version
+[2024-06-02 12:48:08] INFO root fetch - main [MainThread]: End processing [pytro] error
+[2024-06-02 12:48:08] INFO root fetch - main [MainThread]: End processing [Baseball-Info] error
+[2024-06-02 12:48:08] WARNING root fetch - processPackages [custom-maya]: Skipping, unable to determine old version
+[2024-06-02 12:48:08] INFO root fetch - main [MainThread]: End processing [custom-maya] error
+[2024-06-02 12:48:08] INFO root fetch - main [MainThread]: Store serial: [23488214]
