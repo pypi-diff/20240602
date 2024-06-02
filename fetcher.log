@@ -10360,3 +10360,54 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-02 15:44:03] INFO root fetch - processPackages [rockai-cli-app]: Remove: archive file [/home/abi/fetcher/tmp/rockai_cli_app-0.2.8.tar.gz]
 [2024-06-02 15:44:03] INFO root fetch - main [MainThread]: End processing [rockai-cli-app]: success
 [2024-06-02 15:44:03] INFO root fetch - main [MainThread]: Store serial: [23489276]
+[2024-06-02 15:46:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23489276]
+[2024-06-02 15:46:13] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-06-02 15:46:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rl-tasks
+[2024-06-02 15:46:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rl-test-task-2
+[2024-06-02 15:46:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rl-test-task-3
+[2024-06-02 15:46:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: biliup
+[2024-06-02 15:46:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: autoutils-log
+[2024-06-02 15:46:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: batch-framework
+[2024-06-02 15:46:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: streamlit-avater
+[2024-06-02 15:46:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: rocketpy
+[2024-06-02 15:46:13] INFO root fetch - processPackages [autoutils-log]: New version: [0.4.0] Old Version: [0.3.0]
+[2024-06-02 15:46:13] INFO root fetch - processPackages [batch-framework]: New version: [0.2.5] Old Version: [0.2.4]
+[2024-06-02 15:46:13] WARNING root fetch - processPackages [rl-test-task-2]: Skipping, unable to determine old version
+[2024-06-02 15:46:13] INFO root fetch - main [MainThread]: End processing [rl-test-task-2] error
+[2024-06-02 15:46:13] INFO root fetch - processPackages [autoutils-log]: Downloading https://files.pythonhosted.org/packages/ba/5f/55925a507968ae8056660fb2e3900a0804a98381dc4f79269e20f3a51e8b/autoutils_log-0.3.0.tar.gz
+[2024-06-02 15:46:13] INFO root fetch - processPackages [batch-framework]: Downloading https://files.pythonhosted.org/packages/9e/56/88c69a25655f3f12d0587199659396097d4a864bbefa6d3781af25c626ea/batch-framework-0.2.4.tar.gz
+[2024-06-02 15:46:13] INFO root fetch - processPackages [rocketpy]: New version: [1.3.0] Old Version: [1.2.2]
+[2024-06-02 15:46:13] WARNING root fetch - processPackages [rl-tasks]: Skipping, unable to determine old version
+[2024-06-02 15:46:13] INFO root fetch - main [MainThread]: End processing [rl-tasks] error
+[2024-06-02 15:46:13] WARNING root fetch - processPackages [rl-test-task-3]: Skipping, unable to determine old version
+[2024-06-02 15:46:13] INFO root fetch - main [MainThread]: End processing [rl-test-task-3] error
+[2024-06-02 15:46:13] WARNING root fetch - processPackages [streamlit-avater]: Skipping, unable to determine old version
+[2024-06-02 15:46:13] INFO root fetch - main [MainThread]: End processing [streamlit-avater] error
+[2024-06-02 15:46:13] INFO root fetch - processPackages [biliup]: New version: [0.4.9] Old Version: [0.4.8]
+[2024-06-02 15:46:13] INFO root fetch - processPackages [biliup]: Downloading https://files.pythonhosted.org/packages/33/26/87446b9e80024414938248abd6d5d23524d52b9a0e07980909695db33a0a/biliup-0.4.8.tar.gz
+[2024-06-02 15:46:13] INFO root fetch - processPackages [batch-framework]: Downloading https://files.pythonhosted.org/packages/dc/4c/f545d4b751793cb9844767679596632d2f19e88a9df0dd3fb288c73e1210/batch-framework-0.2.5.tar.gz
+[2024-06-02 15:46:13] INFO root fetch - processPackages [autoutils-log]: Downloading https://files.pythonhosted.org/packages/7a/6f/f59e80a8bdb3236753894c7732b4e806f803c524ebf402a34b8ef0e752ea/autoutils_log-0.4.0.tar.gz
+[2024-06-02 15:46:13] INFO root fetch - processPackages [rocketpy]: Downloading https://files.pythonhosted.org/packages/c7/87/d9bd3e212ba1570f453abeab52ea1dd57fd645856aab9ff5f3468384f68d/rocketpy-1.2.2.tar.gz
+[2024-06-02 15:46:13] INFO root fetch - processPackages [batch-framework]: executing diffoscope
+[2024-06-02 15:46:13] INFO root fetch - processPackages [batch-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/batch-framework-0.2.4.tar.gz tmp/batch-framework-0.2.5.tar.gz --markdown 20240602/b/batch-framework/0.2.4-0.2.5/README.md --exclude *.pyd
+[2024-06-02 15:46:13] INFO root fetch - processPackages [autoutils-log]: executing diffoscope
+[2024-06-02 15:46:13] INFO root fetch - processPackages [autoutils-log]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autoutils_log-0.3.0.tar.gz tmp/autoutils_log-0.4.0.tar.gz --markdown 20240602/a/autoutils-log/0.3.0-0.4.0/README.md --exclude *.pyd
+[2024-06-02 15:46:14] INFO root fetch - processPackages [biliup]: Downloading https://files.pythonhosted.org/packages/ca/50/28c81627954370eeba7075b44c9ef20597ed8f140a1390c814dd976e6c70/biliup-0.4.9.tar.gz
+[2024-06-02 15:46:14] INFO root fetch - processPackages [rocketpy]: Downloading https://files.pythonhosted.org/packages/b2/0c/66cd562f0fdc53de21fc5f9d7b943ea4adc21ca3dc254e1b672befae29ae/rocketpy-1.3.0.tar.gz
+[2024-06-02 15:46:14] INFO root fetch - processPackages [biliup]: executing diffoscope
+[2024-06-02 15:46:14] INFO root fetch - processPackages [biliup]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/biliup-0.4.8.tar.gz tmp/biliup-0.4.9.tar.gz --markdown 20240602/b/biliup/0.4.8-0.4.9/README.md --exclude *.pyd
+[2024-06-02 15:46:14] INFO root fetch - processPackages [rocketpy]: executing diffoscope
+[2024-06-02 15:46:14] INFO root fetch - processPackages [rocketpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rocketpy-1.2.2.tar.gz tmp/rocketpy-1.3.0.tar.gz --markdown 20240602/r/rocketpy/1.2.2-1.3.0/README.md --exclude *.pyd
+[2024-06-02 15:46:14] INFO root fetch - processPackages [batch-framework]: Remove: archive file [/home/abi/fetcher/tmp/batch-framework-0.2.4.tar.gz]
+[2024-06-02 15:46:14] INFO root fetch - processPackages [batch-framework]: Remove: archive file [/home/abi/fetcher/tmp/batch-framework-0.2.5.tar.gz]
+[2024-06-02 15:46:14] INFO root fetch - main [MainThread]: End processing [batch-framework]: success
+[2024-06-02 15:46:14] INFO root fetch - processPackages [autoutils-log]: Remove: archive file [/home/abi/fetcher/tmp/autoutils_log-0.3.0.tar.gz]
+[2024-06-02 15:46:14] INFO root fetch - processPackages [autoutils-log]: Remove: archive file [/home/abi/fetcher/tmp/autoutils_log-0.4.0.tar.gz]
+[2024-06-02 15:46:14] INFO root fetch - main [MainThread]: End processing [autoutils-log]: success
+[2024-06-02 15:46:14] INFO root fetch - processPackages [rocketpy]: Remove: archive file [/home/abi/fetcher/tmp/rocketpy-1.2.2.tar.gz]
+[2024-06-02 15:46:14] INFO root fetch - processPackages [rocketpy]: Remove: archive file [/home/abi/fetcher/tmp/rocketpy-1.3.0.tar.gz]
+[2024-06-02 15:46:14] INFO root fetch - main [MainThread]: End processing [rocketpy]: success
+[2024-06-02 15:46:15] INFO root fetch - processPackages [biliup]: Remove: archive file [/home/abi/fetcher/tmp/biliup-0.4.8.tar.gz]
+[2024-06-02 15:46:15] INFO root fetch - processPackages [biliup]: Remove: archive file [/home/abi/fetcher/tmp/biliup-0.4.9.tar.gz]
+[2024-06-02 15:46:15] INFO root fetch - main [MainThread]: End processing [biliup]: success
+[2024-06-02 15:46:15] INFO root fetch - main [MainThread]: Store serial: [23489307]
