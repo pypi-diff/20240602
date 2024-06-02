@@ -3502,3 +3502,33 @@
 [2024-06-02 05:26:58] INFO root fetch - processPackages [aixhello]: Remove: archive file [/home/abi/fetcher/tmp/aixhello-3.2.tar.gz]
 [2024-06-02 05:26:58] INFO root fetch - main [MainThread]: End processing [aixhello]: success
 [2024-06-02 05:26:58] INFO root fetch - main [MainThread]: Store serial: [23485835]
+[2024-06-02 05:29:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23485835]
+[2024-06-02 05:29:06] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-02 05:29:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fastcore
+[2024-06-02 05:29:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: python-115
+[2024-06-02 05:29:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: llama-index-vector-stores-opensearch
+[2024-06-02 05:29:06] INFO root fetch - processPackages [python-115]: New version: [0.0.8.7.4] Old Version: [0.0.8.7.3]
+[2024-06-02 05:29:06] INFO root fetch - processPackages [python-115]: Downloading https://files.pythonhosted.org/packages/94/d0/429e80eeef3a5f82101e901e96703a1f5401792edfbcc0762bc1f86c1dfb/python_115-0.0.8.7.3.tar.gz
+[2024-06-02 05:29:06] INFO root fetch - processPackages [llama-index-vector-stores-opensearch]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-06-02 05:29:06] INFO root fetch - processPackages [fastcore]: New version: [1.5.9] Old Version: [1.5.8]
+[2024-06-02 05:29:07] INFO root fetch - processPackages [fastcore]: Downloading https://files.pythonhosted.org/packages/bd/a7/11687db0e0993cf3f28cbe4f087decfde90959b1ede6fa37acbf83c875d8/fastcore-1.5.8.tar.gz
+[2024-06-02 05:29:07] INFO root fetch - processPackages [llama-index-vector-stores-opensearch]: Downloading https://files.pythonhosted.org/packages/83/3a/4bd2030c159d662fe8261ab36cb94be4bf09bd0b4ec151854905e26e0e37/llama_index_vector_stores_opensearch-0.1.8.tar.gz
+[2024-06-02 05:29:07] INFO root fetch - processPackages [python-115]: Downloading https://files.pythonhosted.org/packages/3e/28/d998fb9ec18d9a0258329db6681842cc046598aecce24377a9c2ac8226cb/python_115-0.0.8.7.4.tar.gz
+[2024-06-02 05:29:07] INFO root fetch - processPackages [python-115]: executing diffoscope
+[2024-06-02 05:29:07] INFO root fetch - processPackages [python-115]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_115-0.0.8.7.3.tar.gz tmp/python_115-0.0.8.7.4.tar.gz --markdown 20240602/p/python-115/0.0.8.7.3-0.0.8.7.4/README.md --exclude *.pyd
+[2024-06-02 05:29:07] INFO root fetch - processPackages [fastcore]: Downloading https://files.pythonhosted.org/packages/e7/ca/756f70aa0a53475a198acbda3b9edb61b363c4b51ece542b7a7e3d890bcd/fastcore-1.5.9.tar.gz
+[2024-06-02 05:29:07] INFO root fetch - processPackages [llama-index-vector-stores-opensearch]: Downloading https://files.pythonhosted.org/packages/c2/fb/5e0cc951c7f141788ef08999593f151270fb666f65b0b7cefde09a802fd2/llama_index_vector_stores_opensearch-0.1.9.tar.gz
+[2024-06-02 05:29:07] INFO root fetch - processPackages [fastcore]: executing diffoscope
+[2024-06-02 05:29:07] INFO root fetch - processPackages [fastcore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastcore-1.5.8.tar.gz tmp/fastcore-1.5.9.tar.gz --markdown 20240602/f/fastcore/1.5.8-1.5.9/README.md --exclude *.pyd
+[2024-06-02 05:29:07] INFO root fetch - processPackages [llama-index-vector-stores-opensearch]: executing diffoscope
+[2024-06-02 05:29:07] INFO root fetch - processPackages [llama-index-vector-stores-opensearch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llama_index_vector_stores_opensearch-0.1.8.tar.gz tmp/llama_index_vector_stores_opensearch-0.1.9.tar.gz --markdown 20240602/l/llama-index-vector-stores-opensearch/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-06-02 05:29:08] INFO root fetch - processPackages [python-115]: Remove: archive file [/home/abi/fetcher/tmp/python_115-0.0.8.7.3.tar.gz]
+[2024-06-02 05:29:08] INFO root fetch - processPackages [python-115]: Remove: archive file [/home/abi/fetcher/tmp/python_115-0.0.8.7.4.tar.gz]
+[2024-06-02 05:29:08] INFO root fetch - main [MainThread]: End processing [python-115]: success
+[2024-06-02 05:29:08] INFO root fetch - processPackages [llama-index-vector-stores-opensearch]: Remove: archive file [/home/abi/fetcher/tmp/llama_index_vector_stores_opensearch-0.1.8.tar.gz]
+[2024-06-02 05:29:08] INFO root fetch - processPackages [llama-index-vector-stores-opensearch]: Remove: archive file [/home/abi/fetcher/tmp/llama_index_vector_stores_opensearch-0.1.9.tar.gz]
+[2024-06-02 05:29:08] INFO root fetch - main [MainThread]: End processing [llama-index-vector-stores-opensearch]: success
+[2024-06-02 05:29:08] INFO root fetch - processPackages [fastcore]: Remove: archive file [/home/abi/fetcher/tmp/fastcore-1.5.8.tar.gz]
+[2024-06-02 05:29:08] INFO root fetch - processPackages [fastcore]: Remove: archive file [/home/abi/fetcher/tmp/fastcore-1.5.9.tar.gz]
+[2024-06-02 05:29:08] INFO root fetch - main [MainThread]: End processing [fastcore]: success
+[2024-06-02 05:29:08] INFO root fetch - main [MainThread]: Store serial: [23485844]
