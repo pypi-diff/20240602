@@ -6384,3 +6384,45 @@
 [2024-06-02 10:53:32] INFO root fetch - processPackages [ruqia]: Remove: archive file [/home/abi/fetcher/tmp/ruqia-0.0.9.tar.gz]
 [2024-06-02 10:53:32] INFO root fetch - main [MainThread]: End processing [ruqia]: success
 [2024-06-02 10:53:32] INFO root fetch - main [MainThread]: Store serial: [23487496]
+[2024-06-02 10:55:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23487496]
+[2024-06-02 10:55:41] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-06-02 10:55:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: smol_k8s_lab
+[2024-06-02 10:55:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: smart-resume-job-matcher
+[2024-06-02 10:55:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aixhello
+[2024-06-02 10:55:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: hikari-core
+[2024-06-02 10:55:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyracf
+[2024-06-02 10:55:41] INFO root fetch - processPackages [aixhello]: New version: [3.8] Old Version: [3.7]
+[2024-06-02 10:55:41] INFO root fetch - processPackages [pyracf]: New version: [0.8.8] Old Version: [0.8.7]
+[2024-06-02 10:55:41] WARNING root fetch - processPackages [smart-resume-job-matcher]: Skipping, unable to determine old version
+[2024-06-02 10:55:41] INFO root fetch - main [MainThread]: End processing [smart-resume-job-matcher] error
+[2024-06-02 10:55:41] INFO root fetch - processPackages [aixhello]: Downloading https://files.pythonhosted.org/packages/b9/e0/199c502a585c1624e05fe0648bd56b97f302978d17ea1a62bab3c4ec5aae/aixhello-3.7.tar.gz
+[2024-06-02 10:55:41] INFO root fetch - processPackages [smol_k8s_lab]: New version: [5.3.2] Old Version: [5.3.1]
+[2024-06-02 10:55:41] INFO root fetch - processPackages [hikari-core]: New version: [1.1.0] Old Version: [1.0.9.1]
+[2024-06-02 10:55:41] INFO root fetch - processPackages [pyracf]: Downloading https://files.pythonhosted.org/packages/41/6e/e1da740f4e251f57d4503299af6f90f685c095c9a05a7a483b8bc057c41c/pyracf-0.8.7.tar.gz
+[2024-06-02 10:55:41] INFO root fetch - processPackages [smol_k8s_lab]: Downloading https://files.pythonhosted.org/packages/01/11/920a1b8a4e7958611eeee03c4eefd4b37b940295ba402b3c1bb187032ad5/smol_k8s_lab-5.3.1.tar.gz
+[2024-06-02 10:55:42] INFO root fetch - processPackages [hikari-core]: Downloading https://files.pythonhosted.org/packages/b4/3f/e32afe742f7047f2cdd242454085725e86dd16cb06ec9ee44d0e3b69f7e5/hikari_core-1.0.9.1.tar.gz
+[2024-06-02 10:55:42] INFO root fetch - processPackages [aixhello]: Downloading https://files.pythonhosted.org/packages/33/7a/0eb58f9eca809c247391b619ea79e84e766a874f151797f97721010a74c8/aixhello-3.8.tar.gz
+[2024-06-02 10:55:42] INFO root fetch - processPackages [aixhello]: executing diffoscope
+[2024-06-02 10:55:42] INFO root fetch - processPackages [aixhello]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aixhello-3.7.tar.gz tmp/aixhello-3.8.tar.gz --markdown 20240602/a/aixhello/3.7-3.8/README.md --exclude *.pyd
+[2024-06-02 10:55:42] INFO root fetch - processPackages [pyracf]: Downloading https://files.pythonhosted.org/packages/62/e5/89da8c7191f445823626601de2c8c971968f26a8551fa1e775930a9e7fe1/pyracf-0.8.8.tar.gz
+[2024-06-02 10:55:42] INFO root fetch - processPackages [hikari-core]: Downloading https://files.pythonhosted.org/packages/c9/e8/02dade8eb5837e3833a7b6629b9a31d688745285b26c77ee86c16703b8a0/hikari_core-1.1.0.tar.gz
+[2024-06-02 10:55:42] INFO root fetch - processPackages [pyracf]: executing diffoscope
+[2024-06-02 10:55:42] INFO root fetch - processPackages [pyracf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyracf-0.8.7.tar.gz tmp/pyracf-0.8.8.tar.gz --markdown 20240602/p/pyracf/0.8.7-0.8.8/README.md --exclude *.pyd
+[2024-06-02 10:55:42] INFO root fetch - processPackages [hikari-core]: executing diffoscope
+[2024-06-02 10:55:42] INFO root fetch - processPackages [hikari-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hikari_core-1.0.9.1.tar.gz tmp/hikari_core-1.1.0.tar.gz --markdown 20240602/h/hikari-core/1.0.9.1-1.1.0/README.md --exclude *.pyd
+[2024-06-02 10:55:42] INFO root fetch - processPackages [smol_k8s_lab]: Downloading https://files.pythonhosted.org/packages/06/e2/eece1207125bc94f02e8aef50daef46e5ea601f7dee6849e40bb5a500a20/smol_k8s_lab-5.3.2.tar.gz
+[2024-06-02 10:55:42] INFO root fetch - processPackages [smol_k8s_lab]: executing diffoscope
+[2024-06-02 10:55:42] INFO root fetch - processPackages [smol_k8s_lab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smol_k8s_lab-5.3.1.tar.gz tmp/smol_k8s_lab-5.3.2.tar.gz --markdown 20240602/s/smol_k8s_lab/5.3.1-5.3.2/README.md --exclude *.pyd
+[2024-06-02 10:55:42] INFO root fetch - processPackages [aixhello]: Remove: archive file [/home/abi/fetcher/tmp/aixhello-3.7.tar.gz]
+[2024-06-02 10:55:42] INFO root fetch - processPackages [aixhello]: Remove: archive file [/home/abi/fetcher/tmp/aixhello-3.8.tar.gz]
+[2024-06-02 10:55:42] INFO root fetch - main [MainThread]: End processing [aixhello]: success
+[2024-06-02 10:55:42] INFO root fetch - processPackages [pyracf]: Remove: archive file [/home/abi/fetcher/tmp/pyracf-0.8.7.tar.gz]
+[2024-06-02 10:55:42] INFO root fetch - processPackages [pyracf]: Remove: archive file [/home/abi/fetcher/tmp/pyracf-0.8.8.tar.gz]
+[2024-06-02 10:55:42] INFO root fetch - main [MainThread]: End processing [pyracf]: success
+[2024-06-02 10:55:43] INFO root fetch - processPackages [hikari-core]: Remove: archive file [/home/abi/fetcher/tmp/hikari_core-1.0.9.1.tar.gz]
+[2024-06-02 10:55:43] INFO root fetch - processPackages [hikari-core]: Remove: archive file [/home/abi/fetcher/tmp/hikari_core-1.1.0.tar.gz]
+[2024-06-02 10:55:43] INFO root fetch - main [MainThread]: End processing [hikari-core]: success
+[2024-06-02 10:55:44] INFO root fetch - processPackages [smol_k8s_lab]: Remove: archive file [/home/abi/fetcher/tmp/smol_k8s_lab-5.3.1.tar.gz]
+[2024-06-02 10:55:44] INFO root fetch - processPackages [smol_k8s_lab]: Remove: archive file [/home/abi/fetcher/tmp/smol_k8s_lab-5.3.2.tar.gz]
+[2024-06-02 10:55:44] INFO root fetch - main [MainThread]: End processing [smol_k8s_lab]: success
+[2024-06-02 10:55:44] INFO root fetch - main [MainThread]: Store serial: [23487513]
