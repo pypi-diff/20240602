@@ -14380,3 +14380,57 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 19:00:02] INFO root fetch - processPackages [bbot]: Remove: archive file [/home/abi/fetcher/tmp/bbot-1.1.9.3372rc0.tar.gz]
 [2024-06-02 19:00:02] INFO root fetch - main [MainThread]: End processing [bbot]: success
 [2024-06-02 19:00:02] INFO root fetch - main [MainThread]: Store serial: [23491156]
+[2024-06-02 19:02:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23491156]
+[2024-06-02 19:02:10] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-06-02 19:02:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: trytond-account-invoice
+[2024-06-02 19:02:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ok-script
+[2024-06-02 19:02:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: qsv-duct
+[2024-06-02 19:02:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: otsuwinhdlr
+[2024-06-02 19:02:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: contact-persons-local
+[2024-06-02 19:02:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: websole
+[2024-06-02 19:02:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: NJUlogin
+[2024-06-02 19:02:10] INFO root fetch - processPackages [contact-persons-local]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-06-02 19:02:10] INFO root fetch - processPackages [NJUlogin]: New version: [3.1.2] Old Version: [3.1.1]
+[2024-06-02 19:02:10] INFO root fetch - processPackages [ok-script]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-06-02 19:02:10] INFO root fetch - processPackages [trytond-account-invoice]: New version: [7.2.2] Old Version: [7.2.1]
+[2024-06-02 19:02:10] WARNING root fetch - processPackages [qsv-duct]: Skipping, unable to determine old version
+[2024-06-02 19:02:10] INFO root fetch - main [MainThread]: End processing [qsv-duct] error
+[2024-06-02 19:02:10] INFO root fetch - processPackages [otsuwinhdlr]: New version: [1.0.2.311] Old Version: [1.0.1.311]
+[2024-06-02 19:02:10] ERROR root fetch - processPackages [websole]: Unable to get metadata: No such project 'websole'
+[2024-06-02 19:02:10] INFO root fetch - main [MainThread]: End processing [websole] error
+[2024-06-02 19:02:10] INFO root fetch - processPackages [NJUlogin]: Downloading https://files.pythonhosted.org/packages/9f/77/4c3d58210681af2e0e8179d414670211b733a3461d4cd2c455ede2b830fb/NJUlogin-3.1.1.tar.gz
+[2024-06-02 19:02:10] INFO root fetch - processPackages [contact-persons-local]: Downloading https://files.pythonhosted.org/packages/0b/6b/76ed2113b4e86e4aaa68d65f4c760c036c393ee03064566f505f44867a22/contact-persons-local-0.0.8.tar.gz
+[2024-06-02 19:02:10] INFO root fetch - processPackages [ok-script]: Downloading https://files.pythonhosted.org/packages/5f/e3/968a4bfd4b0c82df5c5171f3d7d42fc8d8354283f3bae8becf975bc2cfb9/ok-script-0.0.8.tar.gz
+[2024-06-02 19:02:10] INFO root fetch - processPackages [trytond-account-invoice]: Downloading https://files.pythonhosted.org/packages/aa/f2/0aee19dd79d3be8c7fdd6ba221a9a2109f9420ad254a53d29e1cd8da0de8/trytond_account_invoice-7.2.1.tar.gz
+[2024-06-02 19:02:10] INFO root fetch - processPackages [otsuwinhdlr]: Downloading https://files.pythonhosted.org/packages/3b/3c/813b2f9094ec39f697cb4bdf969891affbe8205556bb6370d6c9da92c07f/otsuwinhdlr-1.0.1.311.tar.gz
+[2024-06-02 19:02:10] INFO root fetch - processPackages [contact-persons-local]: Downloading https://files.pythonhosted.org/packages/93/08/4bf1aef3fe8c2eb2bd907061dc10a7100c367ed8adfc58d6113cda458512/contact_persons_local-0.0.9.tar.gz
+[2024-06-02 19:02:10] INFO root fetch - processPackages [ok-script]: Downloading https://files.pythonhosted.org/packages/7e/57/3cb2ecf6f3abc49a58957eb87297ca0e7574e568b46c512c2a5fc710a462/ok-script-0.0.9.tar.gz
+[2024-06-02 19:02:10] INFO root fetch - processPackages [contact-persons-local]: executing diffoscope
+[2024-06-02 19:02:10] INFO root fetch - processPackages [contact-persons-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/contact-persons-local-0.0.8.tar.gz tmp/contact_persons_local-0.0.9.tar.gz --markdown 20240602/c/contact-persons-local/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-06-02 19:02:11] INFO root fetch - processPackages [ok-script]: executing diffoscope
+[2024-06-02 19:02:11] INFO root fetch - processPackages [ok-script]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ok-script-0.0.8.tar.gz tmp/ok-script-0.0.9.tar.gz --markdown 20240602/o/ok-script/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-06-02 19:02:11] INFO root fetch - processPackages [trytond-account-invoice]: Downloading https://files.pythonhosted.org/packages/3a/98/9b06ecd3bf378d27e83dbee7685f8d7b0294eecd5f95115607b3966af76b/trytond_account_invoice-7.2.2.tar.gz
+[2024-06-02 19:02:11] INFO root fetch - processPackages [otsuwinhdlr]: Downloading https://files.pythonhosted.org/packages/8c/54/ce9e6aa1ade8be6b6f115e3b912982622420a354bf1a4e5e249a994b6b11/otsuwinhdlr-1.0.2.311-py3-none-any.whl
+[2024-06-02 19:02:11] INFO root fetch - processPackages [NJUlogin]: Downloading https://files.pythonhosted.org/packages/d6/2d/f4dbe03ca8354893a435c970b66e4d9f495fda13c10271b928bd2edd5e7b/NJUlogin-3.1.2.tar.gz
+[2024-06-02 19:02:11] INFO root fetch - processPackages [trytond-account-invoice]: executing diffoscope
+[2024-06-02 19:02:11] INFO root fetch - processPackages [trytond-account-invoice]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trytond_account_invoice-7.2.1.tar.gz tmp/trytond_account_invoice-7.2.2.tar.gz --markdown 20240602/t/trytond-account-invoice/7.2.1-7.2.2/README.md --exclude *.pyd
+[2024-06-02 19:02:11] INFO root fetch - processPackages [otsuwinhdlr]: executing diffoscope
+[2024-06-02 19:02:11] INFO root fetch - processPackages [otsuwinhdlr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/otsuwinhdlr-1.0.1.311.tar.gz tmp/otsuwinhdlr-1.0.2.311-py3-none-any.whl.zip --markdown 20240602/o/otsuwinhdlr/1.0.1.311-1.0.2.311/README.md --exclude *.pyd
+[2024-06-02 19:02:11] INFO root fetch - processPackages [contact-persons-local]: Remove: archive file [/home/abi/fetcher/tmp/contact-persons-local-0.0.8.tar.gz]
+[2024-06-02 19:02:11] INFO root fetch - processPackages [contact-persons-local]: Remove: archive file [/home/abi/fetcher/tmp/contact_persons_local-0.0.9.tar.gz]
+[2024-06-02 19:02:11] INFO root fetch - main [MainThread]: End processing [contact-persons-local]: success
+[2024-06-02 19:02:11] INFO root fetch - processPackages [NJUlogin]: executing diffoscope
+[2024-06-02 19:02:11] INFO root fetch - processPackages [NJUlogin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/NJUlogin-3.1.1.tar.gz tmp/NJUlogin-3.1.2.tar.gz --markdown 20240602/N/NJUlogin/3.1.1-3.1.2/README.md --exclude *.pyd
+[2024-06-02 19:02:11] INFO root fetch - processPackages [otsuwinhdlr]: Remove: archive file [/home/abi/fetcher/tmp/otsuwinhdlr-1.0.1.311.tar.gz]
+[2024-06-02 19:02:11] INFO root fetch - processPackages [otsuwinhdlr]: Remove: archive file [/home/abi/fetcher/tmp/otsuwinhdlr-1.0.2.311-py3-none-any.whl.zip]
+[2024-06-02 19:02:11] INFO root fetch - main [MainThread]: End processing [otsuwinhdlr]: success
+[2024-06-02 19:02:11] INFO root fetch - processPackages [ok-script]: Remove: archive file [/home/abi/fetcher/tmp/ok-script-0.0.8.tar.gz]
+[2024-06-02 19:02:11] INFO root fetch - processPackages [ok-script]: Remove: archive file [/home/abi/fetcher/tmp/ok-script-0.0.9.tar.gz]
+[2024-06-02 19:02:11] INFO root fetch - main [MainThread]: End processing [ok-script]: success
+[2024-06-02 19:02:12] INFO root fetch - processPackages [trytond-account-invoice]: Remove: archive file [/home/abi/fetcher/tmp/trytond_account_invoice-7.2.1.tar.gz]
+[2024-06-02 19:02:12] INFO root fetch - processPackages [trytond-account-invoice]: Remove: archive file [/home/abi/fetcher/tmp/trytond_account_invoice-7.2.2.tar.gz]
+[2024-06-02 19:02:12] INFO root fetch - main [MainThread]: End processing [trytond-account-invoice]: success
+[2024-06-02 19:02:12] INFO root fetch - processPackages [NJUlogin]: Remove: archive file [/home/abi/fetcher/tmp/NJUlogin-3.1.1.tar.gz]
+[2024-06-02 19:02:12] INFO root fetch - processPackages [NJUlogin]: Remove: archive file [/home/abi/fetcher/tmp/NJUlogin-3.1.2.tar.gz]
+[2024-06-02 19:02:12] INFO root fetch - main [MainThread]: End processing [NJUlogin]: success
+[2024-06-02 19:02:12] INFO root fetch - main [MainThread]: Store serial: [23491180]
