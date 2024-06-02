@@ -17428,3 +17428,41 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 21:55:25] INFO root fetch - processPackages [rattail]: Remove: archive file [/home/abi/fetcher/tmp/rattail-0.9.99.tar.gz]
 [2024-06-02 21:55:25] INFO root fetch - main [MainThread]: End processing [rattail]: success
 [2024-06-02 21:55:25] INFO root fetch - main [MainThread]: Store serial: [23492586]
+[2024-06-02 21:57:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23492586]
+[2024-06-02 21:57:34] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-06-02 21:57:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: redbacktechpy
+[2024-06-02 21:57:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Tailbone
+[2024-06-02 21:57:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: larvaworld
+[2024-06-02 21:57:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ptah-cli
+[2024-06-02 21:57:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: copilothistoryexporter
+[2024-06-02 21:57:34] INFO root fetch - processPackages [copilothistoryexporter]: New version: [1.0.3] Old Version: [1.0.2.9]
+[2024-06-02 21:57:34] INFO root fetch - processPackages [redbacktechpy]: New version: [2024.5.1b7] Old Version: [2024.5.1b6]
+[2024-06-02 21:57:34] WARNING root fetch - processPackages [ptah-cli]: Skipping, unable to determine old version
+[2024-06-02 21:57:34] INFO root fetch - main [MainThread]: End processing [ptah-cli] error
+[2024-06-02 21:57:34] INFO root fetch - processPackages [copilothistoryexporter]: Downloading https://files.pythonhosted.org/packages/e3/1b/e114ec5da78f517be943dc317b5cb8d286c93b55f2ff1a070e5c3263f3db/copilothistoryexporter-1.0.2.9.tar.gz
+[2024-06-02 21:57:34] INFO root fetch - processPackages [redbacktechpy]: Downloading https://files.pythonhosted.org/packages/96/8c/49486a0f8b14abec760835cf37b18f68015c77ef563dd69126bbf23cdacb/redbacktechpy-2024.5.1b6.tar.gz
+[2024-06-02 21:57:34] INFO root fetch - processPackages [larvaworld]: New version: [0.0.534] Old Version: [0.0.533]
+[2024-06-02 21:57:34] INFO root fetch - processPackages [Tailbone]: New version: [0.9.96] Old Version: [0.9.95]
+[2024-06-02 21:57:34] INFO root fetch - processPackages [larvaworld]: Downloading https://files.pythonhosted.org/packages/e7/1b/a1e8308c046eaea68c00e12b9dbe28edcfc1bc15a79b526bf12813773364/larvaworld-0.0.533.tar.gz
+[2024-06-02 21:57:34] INFO root fetch - processPackages [Tailbone]: Downloading https://files.pythonhosted.org/packages/d3/f5/6281835322a9736c1e981d64eaedbd9719a7822f9b959938a9e431dfae22/tailbone-0.9.95.tar.gz
+[2024-06-02 21:57:34] INFO root fetch - processPackages [redbacktechpy]: Downloading https://files.pythonhosted.org/packages/d4/8e/3d11ccbc50753992517137006077beeb31b5199210df8886b7218f67764e/redbacktechpy-2024.5.1b7.tar.gz
+[2024-06-02 21:57:34] WARNING root fetch - processPackages [larvaworld]: Skipping package: exceeds size limit 28301367>=10485760
+[2024-06-02 21:57:34] INFO root fetch - main [MainThread]: End processing [larvaworld] error
+[2024-06-02 21:57:34] INFO root fetch - processPackages [copilothistoryexporter]: Downloading https://files.pythonhosted.org/packages/fb/08/299c7f7dc1ada5438ab2f169d35f25a8da6558edacc3d854ab362cf71824/copilothistoryexporter-1.0.3.tar.gz
+[2024-06-02 21:57:34] INFO root fetch - processPackages [copilothistoryexporter]: executing diffoscope
+[2024-06-02 21:57:34] INFO root fetch - processPackages [copilothistoryexporter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/copilothistoryexporter-1.0.2.9.tar.gz tmp/copilothistoryexporter-1.0.3.tar.gz --markdown 20240602/c/copilothistoryexporter/1.0.2.9-1.0.3/README.md --exclude *.pyd
+[2024-06-02 21:57:34] INFO root fetch - processPackages [redbacktechpy]: executing diffoscope
+[2024-06-02 21:57:34] INFO root fetch - processPackages [redbacktechpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/redbacktechpy-2024.5.1b6.tar.gz tmp/redbacktechpy-2024.5.1b7.tar.gz --markdown 20240602/r/redbacktechpy/2024.5.1b6-2024.5.1b7/README.md --exclude *.pyd
+[2024-06-02 21:57:34] INFO root fetch - processPackages [Tailbone]: Downloading https://files.pythonhosted.org/packages/40/48/d068d15e5c14b9048d5ffad6867d9353d33adf32a71b13b2a439ef5bdb17/tailbone-0.9.96.tar.gz
+[2024-06-02 21:57:35] INFO root fetch - processPackages [Tailbone]: executing diffoscope
+[2024-06-02 21:57:35] INFO root fetch - processPackages [Tailbone]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tailbone-0.9.95.tar.gz tmp/tailbone-0.9.96.tar.gz --markdown 20240602/T/Tailbone/0.9.95-0.9.96/README.md --exclude *.pyd
+[2024-06-02 21:57:35] INFO root fetch - processPackages [copilothistoryexporter]: Remove: archive file [/home/abi/fetcher/tmp/copilothistoryexporter-1.0.2.9.tar.gz]
+[2024-06-02 21:57:35] INFO root fetch - processPackages [copilothistoryexporter]: Remove: archive file [/home/abi/fetcher/tmp/copilothistoryexporter-1.0.3.tar.gz]
+[2024-06-02 21:57:35] INFO root fetch - main [MainThread]: End processing [copilothistoryexporter]: success
+[2024-06-02 21:57:35] INFO root fetch - processPackages [redbacktechpy]: Remove: archive file [/home/abi/fetcher/tmp/redbacktechpy-2024.5.1b6.tar.gz]
+[2024-06-02 21:57:35] INFO root fetch - processPackages [redbacktechpy]: Remove: archive file [/home/abi/fetcher/tmp/redbacktechpy-2024.5.1b7.tar.gz]
+[2024-06-02 21:57:35] INFO root fetch - main [MainThread]: End processing [redbacktechpy]: success
+[2024-06-02 21:57:37] INFO root fetch - processPackages [Tailbone]: Remove: archive file [/home/abi/fetcher/tmp/tailbone-0.9.95.tar.gz]
+[2024-06-02 21:57:37] INFO root fetch - processPackages [Tailbone]: Remove: archive file [/home/abi/fetcher/tmp/tailbone-0.9.96.tar.gz]
+[2024-06-02 21:57:37] INFO root fetch - main [MainThread]: End processing [Tailbone]: success
+[2024-06-02 21:57:37] INFO root fetch - main [MainThread]: Store serial: [23492602]
