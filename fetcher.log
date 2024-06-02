@@ -2498,3 +2498,33 @@
 [2024-06-02 03:19:27] ERROR root fetch - processPackages [aira]: Unable to get metadata: No such project 'aira'
 [2024-06-02 03:19:27] INFO root fetch - main [MainThread]: End processing [aira] error
 [2024-06-02 03:19:27] INFO root fetch - main [MainThread]: Store serial: [23485293]
+[2024-06-02 03:21:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23485293]
+[2024-06-02 03:21:35] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-02 03:21:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rencrypt
+[2024-06-02 03:21:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyslsqp
+[2024-06-02 03:21:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyOpenTTDAdmin
+[2024-06-02 03:21:35] INFO root fetch - processPackages [pyOpenTTDAdmin]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-06-02 03:21:35] INFO root fetch - processPackages [rencrypt]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-06-02 03:21:35] INFO root fetch - processPackages [pyslsqp]: New version: [0.1.0b0] Old Version: [0.1.0a0]
+[2024-06-02 03:21:35] INFO root fetch - processPackages [pyslsqp]: Downloading https://files.pythonhosted.org/packages/32/aa/4bd636b35fbad5450d9f5ea4264187f737d87eb70a3d847a2f45f54930eb/pyslsqp-0.1.0a0.tar.gz
+[2024-06-02 03:21:35] INFO root fetch - processPackages [pyOpenTTDAdmin]: Downloading https://files.pythonhosted.org/packages/17/7a/f364e42ff9675912afe2691204f222f6b0eabffc652749ba6e2931c5484d/pyopenttdadmin-0.1.2.tar.gz
+[2024-06-02 03:21:36] INFO root fetch - processPackages [rencrypt]: Downloading https://files.pythonhosted.org/packages/a6/25/8242ff2eb1086921ce695d7e231562ff3852dfaf31c497aea971e084b365/REncrypt-0.1.8.tar.gz
+[2024-06-02 03:21:36] INFO root fetch - processPackages [pyOpenTTDAdmin]: Downloading https://files.pythonhosted.org/packages/33/48/45a952a53bff37943f64bead4f04f5d51a5d92b337b6edceefb81d102dea/pyopenttdadmin-0.1.3.tar.gz
+[2024-06-02 03:21:36] INFO root fetch - processPackages [pyOpenTTDAdmin]: executing diffoscope
+[2024-06-02 03:21:36] INFO root fetch - processPackages [pyOpenTTDAdmin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyopenttdadmin-0.1.2.tar.gz tmp/pyopenttdadmin-0.1.3.tar.gz --markdown 20240602/p/pyOpenTTDAdmin/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-06-02 03:21:36] INFO root fetch - processPackages [pyslsqp]: Downloading https://files.pythonhosted.org/packages/2b/0e/fb8d619b8dcd777b54ed64422ca68b8cfaeb73326167c766284f198c5f8d/pyslsqp-0.1.0b0.tar.gz
+[2024-06-02 03:21:36] INFO root fetch - processPackages [rencrypt]: Downloading https://files.pythonhosted.org/packages/05/a0/d8093ea3b8c7cffd668f46310034f7690d20e23a1a2e2c643fe41a9d9e9c/REncrypt-0.1.9.tar.gz
+[2024-06-02 03:21:36] INFO root fetch - processPackages [pyslsqp]: executing diffoscope
+[2024-06-02 03:21:36] INFO root fetch - processPackages [pyslsqp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyslsqp-0.1.0a0.tar.gz tmp/pyslsqp-0.1.0b0.tar.gz --markdown 20240602/p/pyslsqp/0.1.0a0-0.1.0b0/README.md --exclude *.pyd
+[2024-06-02 03:21:36] INFO root fetch - processPackages [rencrypt]: executing diffoscope
+[2024-06-02 03:21:36] INFO root fetch - processPackages [rencrypt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/REncrypt-0.1.8.tar.gz tmp/REncrypt-0.1.9.tar.gz --markdown 20240602/r/rencrypt/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-06-02 03:21:36] INFO root fetch - processPackages [pyOpenTTDAdmin]: Remove: archive file [/home/abi/fetcher/tmp/pyopenttdadmin-0.1.2.tar.gz]
+[2024-06-02 03:21:36] INFO root fetch - processPackages [pyOpenTTDAdmin]: Remove: archive file [/home/abi/fetcher/tmp/pyopenttdadmin-0.1.3.tar.gz]
+[2024-06-02 03:21:36] INFO root fetch - main [MainThread]: End processing [pyOpenTTDAdmin]: success
+[2024-06-02 03:21:37] INFO root fetch - processPackages [pyslsqp]: Remove: archive file [/home/abi/fetcher/tmp/pyslsqp-0.1.0a0.tar.gz]
+[2024-06-02 03:21:37] INFO root fetch - processPackages [pyslsqp]: Remove: archive file [/home/abi/fetcher/tmp/pyslsqp-0.1.0b0.tar.gz]
+[2024-06-02 03:21:37] INFO root fetch - main [MainThread]: End processing [pyslsqp]: success
+[2024-06-02 03:21:39] INFO root fetch - processPackages [rencrypt]: Remove: archive file [/home/abi/fetcher/tmp/REncrypt-0.1.8.tar.gz]
+[2024-06-02 03:21:39] INFO root fetch - processPackages [rencrypt]: Remove: archive file [/home/abi/fetcher/tmp/REncrypt-0.1.9.tar.gz]
+[2024-06-02 03:21:39] INFO root fetch - main [MainThread]: End processing [rencrypt]: success
+[2024-06-02 03:21:39] INFO root fetch - main [MainThread]: Store serial: [23485365]
