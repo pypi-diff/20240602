@@ -11326,3 +11326,45 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 16:42:43] INFO root fetch - processPackages [pythreadserver]: Remove: archive file [/home/abi/fetcher/tmp/pythreadserver-0.1.7.tar.gz]
 [2024-06-02 16:42:43] INFO root fetch - main [MainThread]: End processing [pythreadserver]: success
 [2024-06-02 16:42:43] INFO root fetch - main [MainThread]: Store serial: [23489735]
+[2024-06-02 16:44:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23489735]
+[2024-06-02 16:44:51] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-06-02 16:44:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: python-datapack
+[2024-06-02 16:44:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: eidolon-ai-client
+[2024-06-02 16:44:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: eidolon-ai-sdk
+[2024-06-02 16:44:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: variable-local
+[2024-06-02 16:44:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: homebase-calendar-sync
+[2024-06-02 16:44:51] WARNING root fetch - processPackages [homebase-calendar-sync]: Skipping, unable to determine old version
+[2024-06-02 16:44:51] INFO root fetch - main [MainThread]: End processing [homebase-calendar-sync] error
+[2024-06-02 16:44:51] INFO root fetch - processPackages [python-datapack]: New version: [0.2.4] Old Version: [0.2.3]
+[2024-06-02 16:44:51] INFO root fetch - processPackages [eidolon-ai-client]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-06-02 16:44:51] INFO root fetch - processPackages [python-datapack]: Downloading https://files.pythonhosted.org/packages/65/c1/caaf2ae9e805790eccc7a6c2acae170662562e85f799e89a2ce3d2521e1a/python_datapack-0.2.3.tar.gz
+[2024-06-02 16:44:51] INFO root fetch - processPackages [variable-local]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-06-02 16:44:51] INFO root fetch - processPackages [eidolon-ai-sdk]: New version: [0.1.62] Old Version: [0.1.61]
+[2024-06-02 16:44:51] INFO root fetch - processPackages [eidolon-ai-client]: Downloading https://files.pythonhosted.org/packages/f0/61/6ca231006909006ba96753a764654d05e47de665b1bf7f42b131a6cdb841/eidolon_ai_client-0.1.8.tar.gz
+[2024-06-02 16:44:51] INFO root fetch - processPackages [eidolon-ai-sdk]: Downloading https://files.pythonhosted.org/packages/a3/43/966d93c710f44a1cafefb8ca05bf499f43a05948183fa77c090f45ae5a05/eidolon_ai_sdk-0.1.61.tar.gz
+[2024-06-02 16:44:51] INFO root fetch - processPackages [variable-local]: Downloading https://files.pythonhosted.org/packages/70/d7/8f1cedc8864b64b1a14b0babb14012e1b55d36ce7f7d4131efd3a144ba8d/variable_local-0.0.98.tar.gz
+[2024-06-02 16:44:51] INFO root fetch - processPackages [python-datapack]: Downloading https://files.pythonhosted.org/packages/a3/9d/d9d0940581124df2624eb04040846fe9a9394cf52bc7af1572480befc8f7/python_datapack-0.2.4.tar.gz
+[2024-06-02 16:44:52] INFO root fetch - processPackages [python-datapack]: executing diffoscope
+[2024-06-02 16:44:52] INFO root fetch - processPackages [python-datapack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_datapack-0.2.3.tar.gz tmp/python_datapack-0.2.4.tar.gz --markdown 20240602/p/python-datapack/0.2.3-0.2.4/README.md --exclude *.pyd
+[2024-06-02 16:44:52] INFO root fetch - processPackages [eidolon-ai-client]: Downloading https://files.pythonhosted.org/packages/14/16/63be890da3058c38960189037563296eb56f3d69154718e4a35d80261950/eidolon_ai_client-0.1.9.tar.gz
+[2024-06-02 16:44:52] INFO root fetch - processPackages [eidolon-ai-sdk]: Downloading https://files.pythonhosted.org/packages/20/8c/55ec11e6d6a4154068fc2967db7ae4a52865db4e5fbe362a49a6be97891a/eidolon_ai_sdk-0.1.62.tar.gz
+[2024-06-02 16:44:52] INFO root fetch - processPackages [variable-local]: Downloading https://files.pythonhosted.org/packages/20/8b/ee9947a8caefb731b30941901e0fe4a1c3ea3ec0e2f19a88de6dbd7bc499/variable_local-0.0.99.tar.gz
+[2024-06-02 16:44:52] INFO root fetch - processPackages [eidolon-ai-client]: executing diffoscope
+[2024-06-02 16:44:52] INFO root fetch - processPackages [eidolon-ai-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eidolon_ai_client-0.1.8.tar.gz tmp/eidolon_ai_client-0.1.9.tar.gz --markdown 20240602/e/eidolon-ai-client/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-06-02 16:44:52] INFO root fetch - processPackages [eidolon-ai-sdk]: executing diffoscope
+[2024-06-02 16:44:52] INFO root fetch - processPackages [eidolon-ai-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eidolon_ai_sdk-0.1.61.tar.gz tmp/eidolon_ai_sdk-0.1.62.tar.gz --markdown 20240602/e/eidolon-ai-sdk/0.1.61-0.1.62/README.md --exclude *.pyd
+[2024-06-02 16:44:52] INFO root fetch - processPackages [variable-local]: executing diffoscope
+[2024-06-02 16:44:52] INFO root fetch - processPackages [variable-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/variable_local-0.0.98.tar.gz tmp/variable_local-0.0.99.tar.gz --markdown 20240602/v/variable-local/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-06-02 16:44:52] INFO root fetch - processPackages [python-datapack]: Remove: archive file [/home/abi/fetcher/tmp/python_datapack-0.2.3.tar.gz]
+[2024-06-02 16:44:52] INFO root fetch - processPackages [python-datapack]: Remove: archive file [/home/abi/fetcher/tmp/python_datapack-0.2.4.tar.gz]
+[2024-06-02 16:44:52] INFO root fetch - main [MainThread]: End processing [python-datapack]: success
+[2024-06-02 16:44:52] INFO root fetch - processPackages [eidolon-ai-client]: Remove: archive file [/home/abi/fetcher/tmp/eidolon_ai_client-0.1.8.tar.gz]
+[2024-06-02 16:44:52] INFO root fetch - processPackages [eidolon-ai-client]: Remove: archive file [/home/abi/fetcher/tmp/eidolon_ai_client-0.1.9.tar.gz]
+[2024-06-02 16:44:52] INFO root fetch - main [MainThread]: End processing [eidolon-ai-client]: success
+[2024-06-02 16:44:52] INFO root fetch - processPackages [variable-local]: Remove: archive file [/home/abi/fetcher/tmp/variable_local-0.0.98.tar.gz]
+[2024-06-02 16:44:52] INFO root fetch - processPackages [variable-local]: Remove: archive file [/home/abi/fetcher/tmp/variable_local-0.0.99.tar.gz]
+[2024-06-02 16:44:52] INFO root fetch - main [MainThread]: End processing [variable-local]: success
+[2024-06-02 16:44:53] INFO root fetch - processPackages [eidolon-ai-sdk]: Remove: archive file [/home/abi/fetcher/tmp/eidolon_ai_sdk-0.1.61.tar.gz]
+[2024-06-02 16:44:53] INFO root fetch - processPackages [eidolon-ai-sdk]: Remove: archive file [/home/abi/fetcher/tmp/eidolon_ai_sdk-0.1.62.tar.gz]
+[2024-06-02 16:44:53] INFO root fetch - main [MainThread]: End processing [eidolon-ai-sdk]: success
+[2024-06-02 16:44:53] INFO root fetch - main [MainThread]: Store serial: [23489753]
