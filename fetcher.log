@@ -9919,3 +9919,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-02 15:02:40] INFO root fetch - processPackages [mteb]: Remove: archive file [/home/abi/fetcher/tmp/mteb-1.9.3.tar.gz]
 [2024-06-02 15:02:40] INFO root fetch - main [MainThread]: End processing [mteb]: success
 [2024-06-02 15:02:40] INFO root fetch - main [MainThread]: Store serial: [23489113]
+[2024-06-02 15:04:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23489113]
+[2024-06-02 15:04:50] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-02 15:04:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: semantic-router
+[2024-06-02 15:04:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ovos-skill-fallback-unknown
+[2024-06-02 15:04:50] INFO root fetch - processPackages [semantic-router]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-06-02 15:04:50] INFO root fetch - processPackages [ovos-skill-fallback-unknown]: New version: [0.0.4a3] Old Version: [0.0.4a2]
+[2024-06-02 15:04:50] INFO root fetch - processPackages [semantic-router]: Downloading https://files.pythonhosted.org/packages/69/f5/24f7ed2376beeca68004c749ee072334bcdbcd70becd7e5549ea5773efae/semantic_router-0.0.8.tar.gz
+[2024-06-02 15:04:50] INFO root fetch - processPackages [ovos-skill-fallback-unknown]: Downloading https://files.pythonhosted.org/packages/f8/ed/b86c4a646b78f50ed392162d210c40fa8eb6a90dc3d8ebc5f65ef71f024d/ovos_skill_fallback_unknown-0.0.4a2-py3-none-any.whl
+[2024-06-02 15:04:50] INFO root fetch - processPackages [semantic-router]: Downloading https://files.pythonhosted.org/packages/c6/e8/868f59ad8c7643feea9a25db402d4e84236189e1a9d89a4c840838be947f/semantic_router-0.0.9.tar.gz
+[2024-06-02 15:04:50] INFO root fetch - processPackages [ovos-skill-fallback-unknown]: Downloading https://files.pythonhosted.org/packages/63/ed/fb69e3568327139603f789bf6471fc7bd05de31cfcd8c177fb922b74acca/ovos_skill_fallback_unknown-0.0.4a3-py3-none-any.whl
+[2024-06-02 15:04:50] INFO root fetch - processPackages [semantic-router]: executing diffoscope
+[2024-06-02 15:04:50] INFO root fetch - processPackages [semantic-router]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/semantic_router-0.0.8.tar.gz tmp/semantic_router-0.0.9.tar.gz --markdown 20240602/s/semantic-router/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-06-02 15:04:51] INFO root fetch - processPackages [semantic-router]: Remove: archive file [/home/abi/fetcher/tmp/semantic_router-0.0.8.tar.gz]
+[2024-06-02 15:04:51] INFO root fetch - processPackages [semantic-router]: Remove: archive file [/home/abi/fetcher/tmp/semantic_router-0.0.9.tar.gz]
+[2024-06-02 15:04:51] INFO root fetch - main [MainThread]: End processing [semantic-router]: success
+[2024-06-02 15:04:51] INFO root fetch - processPackages [ovos-skill-fallback-unknown]: executing diffoscope
+[2024-06-02 15:04:51] INFO root fetch - processPackages [ovos-skill-fallback-unknown]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos_skill_fallback_unknown-0.0.4a2-py3-none-any.whl.zip tmp/ovos_skill_fallback_unknown-0.0.4a3-py3-none-any.whl.zip --markdown 20240602/o/ovos-skill-fallback-unknown/0.0.4a2-0.0.4a3/README.md --exclude *.pyd
+[2024-06-02 15:04:52] INFO root fetch - processPackages [ovos-skill-fallback-unknown]: Remove: archive file [/home/abi/fetcher/tmp/ovos_skill_fallback_unknown-0.0.4a2-py3-none-any.whl.zip]
+[2024-06-02 15:04:52] INFO root fetch - processPackages [ovos-skill-fallback-unknown]: Remove: archive file [/home/abi/fetcher/tmp/ovos_skill_fallback_unknown-0.0.4a3-py3-none-any.whl.zip]
+[2024-06-02 15:04:52] INFO root fetch - main [MainThread]: End processing [ovos-skill-fallback-unknown]: success
+[2024-06-02 15:04:52] INFO root fetch - main [MainThread]: Store serial: [23489117]
