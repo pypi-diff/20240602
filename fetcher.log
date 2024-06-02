@@ -9730,3 +9730,18 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-02 14:44:35] INFO root fetch - processPackages [PySimultanUI]: Remove: archive file [/home/abi/fetcher/tmp/pysimultanui-0.3.0.tar.gz]
 [2024-06-02 14:44:35] INFO root fetch - main [MainThread]: End processing [PySimultanUI]: success
 [2024-06-02 14:44:35] INFO root fetch - main [MainThread]: Store serial: [23488958]
+[2024-06-02 14:46:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23488958]
+[2024-06-02 14:46:43] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-02 14:46:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: synthx
+[2024-06-02 14:46:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bd-sig-filter
+[2024-06-02 14:46:43] WARNING root fetch - processPackages [bd-sig-filter]: Skipping, unable to determine old version
+[2024-06-02 14:46:43] INFO root fetch - main [MainThread]: End processing [bd-sig-filter] error
+[2024-06-02 14:46:44] INFO root fetch - processPackages [synthx]: New version: [1.2.2] Old Version: [1.2.1]
+[2024-06-02 14:46:44] INFO root fetch - processPackages [synthx]: Downloading https://files.pythonhosted.org/packages/ea/5a/66bda93034e9bdcc4ca0010879f29f109734e392a4b76edb3a2d5418692f/synthx-1.2.1.tar.gz
+[2024-06-02 14:46:44] INFO root fetch - processPackages [synthx]: Downloading https://files.pythonhosted.org/packages/f0/2e/bc069dbc144cbe86aa9dead8ede1ea052d7c35dc95105786e36bd9bafae3/synthx-1.2.2.tar.gz
+[2024-06-02 14:46:44] INFO root fetch - processPackages [synthx]: executing diffoscope
+[2024-06-02 14:46:44] INFO root fetch - processPackages [synthx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/synthx-1.2.1.tar.gz tmp/synthx-1.2.2.tar.gz --markdown 20240602/s/synthx/1.2.1-1.2.2/README.md --exclude *.pyd
+[2024-06-02 14:46:45] INFO root fetch - processPackages [synthx]: Remove: archive file [/home/abi/fetcher/tmp/synthx-1.2.1.tar.gz]
+[2024-06-02 14:46:45] INFO root fetch - processPackages [synthx]: Remove: archive file [/home/abi/fetcher/tmp/synthx-1.2.2.tar.gz]
+[2024-06-02 14:46:45] INFO root fetch - main [MainThread]: End processing [synthx]: success
+[2024-06-02 14:46:45] INFO root fetch - main [MainThread]: Store serial: [23488966]
