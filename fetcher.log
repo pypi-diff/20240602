@@ -1551,3 +1551,15 @@
 [2024-06-02 01:58:43] INFO root fetch - processPackages [novelai-api]: Remove: archive file [/home/abi/fetcher/tmp/novelai-api-0.9.tar.gz]
 [2024-06-02 01:58:43] INFO root fetch - main [MainThread]: End processing [novelai-api]: success
 [2024-06-02 01:58:43] INFO root fetch - main [MainThread]: Store serial: [23484773]
+[2024-06-02 02:00:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23484773]
+[2024-06-02 02:00:53] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-02 02:00:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: network-diffusion
+[2024-06-02 02:00:53] INFO root fetch - processPackages [network-diffusion]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-06-02 02:00:53] INFO root fetch - processPackages [network-diffusion]: Downloading https://files.pythonhosted.org/packages/31/07/8b415bbd0cce5d8c54f10ca2e9441fdbff6d9e3ce91e58f44843f41d2335/network_diffusion-0.8.0.tar.gz
+[2024-06-02 02:00:53] INFO root fetch - processPackages [network-diffusion]: Downloading https://files.pythonhosted.org/packages/81/1a/b6692ce2d9c366a1672e75b7adbd512df91035714fadccd1a9f35515bd8e/network_diffusion-0.9.0.tar.gz
+[2024-06-02 02:00:53] INFO root fetch - processPackages [network-diffusion]: executing diffoscope
+[2024-06-02 02:00:53] INFO root fetch - processPackages [network-diffusion]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/network_diffusion-0.8.0.tar.gz tmp/network_diffusion-0.9.0.tar.gz --markdown 20240602/n/network-diffusion/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-06-02 02:00:54] INFO root fetch - processPackages [network-diffusion]: Remove: archive file [/home/abi/fetcher/tmp/network_diffusion-0.8.0.tar.gz]
+[2024-06-02 02:00:54] INFO root fetch - processPackages [network-diffusion]: Remove: archive file [/home/abi/fetcher/tmp/network_diffusion-0.9.0.tar.gz]
+[2024-06-02 02:00:54] INFO root fetch - main [MainThread]: End processing [network-diffusion]: success
+[2024-06-02 02:00:54] INFO root fetch - main [MainThread]: Store serial: [23484777]
