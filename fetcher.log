@@ -16207,3 +16207,81 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 20:38:41] INFO root fetch - processPackages [skyperious]: Remove: archive file [/home/abi/fetcher/tmp/skyperious-5.6-py2.py3-none-any.whl.zip]
 [2024-06-02 20:38:41] INFO root fetch - main [MainThread]: End processing [skyperious]: success
 [2024-06-02 20:38:41] INFO root fetch - main [MainThread]: Store serial: [23492035]
+[2024-06-02 20:40:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23492035]
+[2024-06-02 20:40:52] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2024-06-02 20:40:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PKDevTools
+[2024-06-02 20:40:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: test-pkg-zteinck
+[2024-06-02 20:40:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: oarepo
+[2024-06-02 20:40:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: paracelsus
+[2024-06-02 20:40:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: evo-framework
+[2024-06-02 20:40:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: retailtree
+[2024-06-02 20:40:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: hahomematic
+[2024-06-02 20:40:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: omnata-plugin-runtime
+[2024-06-02 20:40:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: pyroblack
+[2024-06-02 20:40:52] INFO root fetch - processPackages [pyroblack]: New version: [2.3.72] Old Version: [2.3.71]
+[2024-06-02 20:40:52] INFO root fetch - processPackages [paracelsus]: New version: [0.6.0] Old Version: [0.5.2]
+[2024-06-02 20:40:52] INFO root fetch - processPackages [PKDevTools]: New version: [0.13.20240602.131] Old Version: [0.13.20240601.130]
+[2024-06-02 20:40:52] INFO root fetch - processPackages [omnata-plugin-runtime]: New version: [0.3.9a44] Old Version: [0.3.9a43]
+[2024-06-02 20:40:52] INFO root fetch - processPackages [PKDevTools]: Downloading https://files.pythonhosted.org/packages/19/56/1ce12899f2eb61997550543c4e6e73298a263c46a92a946b3234696a0db8/PKDevTools-0.13.20240601.130.tar.gz
+[2024-06-02 20:40:52] WARNING root fetch - processPackages [test-pkg-zteinck]: Skipping, unable to determine old version
+[2024-06-02 20:40:52] INFO root fetch - main [MainThread]: End processing [test-pkg-zteinck] error
+[2024-06-02 20:40:52] INFO root fetch - processPackages [retailtree]: New version: [1.3] Old Version: [1.2]
+[2024-06-02 20:40:52] INFO root fetch - processPackages [evo-framework]: New version: [2024.6.1] Old Version: [2024.5.46]
+[2024-06-02 20:40:52] INFO root fetch - processPackages [paracelsus]: Downloading https://files.pythonhosted.org/packages/d5/00/ac1deb381f3cbc065cbe90be92aa6e00c8d02372fe653bb16220604aebee/paracelsus-0.5.2.tar.gz
+[2024-06-02 20:40:52] INFO root fetch - processPackages [pyroblack]: Downloading https://files.pythonhosted.org/packages/2e/01/cfa3643b037f7d1c9efb5aed3517748c1da3f156a559ff1f293cbb63e3a2/pyroblack-2.3.71.tar.gz
+[2024-06-02 20:40:52] INFO root fetch - processPackages [hahomematic]: New version: [2024.6.0] Old Version: [2024.5.6]
+[2024-06-02 20:40:52] INFO root fetch - processPackages [oarepo]: New version: [9.0.9] Old Version: [9.0.8]
+[2024-06-02 20:40:52] INFO root fetch - processPackages [omnata-plugin-runtime]: Downloading https://files.pythonhosted.org/packages/8e/11/abde4b4d82373bc42a84a5591bf31c6cca540ba9f13337491df615af0b6c/omnata_plugin_runtime-0.3.9a43.tar.gz
+[2024-06-02 20:40:52] INFO root fetch - processPackages [evo-framework]: Downloading https://files.pythonhosted.org/packages/7a/de/825a911cca288bd5a5d8d934198a829c2762e34a5ea5ebfacfe78b51702e/evo_framework-2024.5.46.tar.gz
+[2024-06-02 20:40:52] INFO root fetch - processPackages [retailtree]: Downloading https://files.pythonhosted.org/packages/85/cb/f774d9c529d869b7ca347a5c3197fbb444bf34503155dce4fd6ff63a05d8/retailtree-1.2.tar.gz
+[2024-06-02 20:40:52] INFO root fetch - processPackages [hahomematic]: Downloading https://files.pythonhosted.org/packages/12/68/4e89bc9b6058be17745fb55f8947c78221eaffee9fe1fec59938d49dc559/hahomematic-2024.5.6.tar.gz
+[2024-06-02 20:40:52] INFO root fetch - processPackages [oarepo]: Downloading https://files.pythonhosted.org/packages/38/4c/f399359852cbe9b678586f09c718e6d26467563b540067619f17a7416616/oarepo-9.0.8.tar.gz
+[2024-06-02 20:40:52] INFO root fetch - processPackages [paracelsus]: Downloading https://files.pythonhosted.org/packages/bf/58/474eb639e359d17b42e183641720f8c51643c46f94b339126063b549eb49/paracelsus-0.6.0.tar.gz
+[2024-06-02 20:40:52] INFO root fetch - processPackages [omnata-plugin-runtime]: Downloading https://files.pythonhosted.org/packages/de/f5/326ad467bb560d9dc8d7cebfe2aed77d524aeaf8a8ee7c6107f202eb6d0d/omnata_plugin_runtime-0.3.9a44.tar.gz
+[2024-06-02 20:40:52] INFO root fetch - processPackages [PKDevTools]: Downloading https://files.pythonhosted.org/packages/90/83/9312a68f65903b6f51a1f9118c9810eefa589989c1a2036ebca79beed333/PKDevTools-0.13.20240602.131.tar.gz
+[2024-06-02 20:40:53] INFO root fetch - processPackages [pyroblack]: Downloading https://files.pythonhosted.org/packages/05/91/4603e1a7f3cb38988d0c1d60bd79272c428c880aea949464dd0c6ee37aed/pyroblack-2.3.72.tar.gz
+[2024-06-02 20:40:53] INFO root fetch - processPackages [paracelsus]: executing diffoscope
+[2024-06-02 20:40:53] INFO root fetch - processPackages [paracelsus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/paracelsus-0.5.2.tar.gz tmp/paracelsus-0.6.0.tar.gz --markdown 20240602/p/paracelsus/0.5.2-0.6.0/README.md --exclude *.pyd
+[2024-06-02 20:40:53] INFO root fetch - processPackages [omnata-plugin-runtime]: executing diffoscope
+[2024-06-02 20:40:53] INFO root fetch - processPackages [omnata-plugin-runtime]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/omnata_plugin_runtime-0.3.9a43.tar.gz tmp/omnata_plugin_runtime-0.3.9a44.tar.gz --markdown 20240602/o/omnata-plugin-runtime/0.3.9a43-0.3.9a44/README.md --exclude *.pyd
+[2024-06-02 20:40:53] INFO root fetch - processPackages [PKDevTools]: executing diffoscope
+[2024-06-02 20:40:53] INFO root fetch - processPackages [PKDevTools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PKDevTools-0.13.20240601.130.tar.gz tmp/PKDevTools-0.13.20240602.131.tar.gz --markdown 20240602/P/PKDevTools/0.13.20240601.130-0.13.20240602.131/README.md --exclude *.pyd
+[2024-06-02 20:40:53] INFO root fetch - processPackages [pyroblack]: executing diffoscope
+[2024-06-02 20:40:53] INFO root fetch - processPackages [pyroblack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyroblack-2.3.71.tar.gz tmp/pyroblack-2.3.72.tar.gz --markdown 20240602/p/pyroblack/2.3.71-2.3.72/README.md --exclude *.pyd
+[2024-06-02 20:40:53] INFO root fetch - processPackages [evo-framework]: Downloading https://files.pythonhosted.org/packages/95/dc/32957ae9645043b685a98401615b0b259bbed8f058bcd6d79fa5368b3a93/evo_framework-2024.6.1.tar.gz
+[2024-06-02 20:40:53] INFO root fetch - processPackages [retailtree]: Downloading https://files.pythonhosted.org/packages/5a/29/8c25b50f281b6ac60cd12cf0dde788b6620fc57b28047d3ceebca996ca3c/retailtree-1.3.tar.gz
+[2024-06-02 20:40:53] INFO root fetch - processPackages [hahomematic]: Downloading https://files.pythonhosted.org/packages/26/93/a217084d51ad02337bd961bf2f83f6eba938f437ea6638bf8994bc5d94eb/hahomematic-2024.6.0.tar.gz
+[2024-06-02 20:40:53] INFO root fetch - processPackages [oarepo]: Downloading https://files.pythonhosted.org/packages/47/d6/1ba1ba3d67b43bf65622b8597a86dda0a099313f4c7a307060535f4309b4/oarepo-9.0.9.tar.gz
+[2024-06-02 20:40:53] INFO root fetch - processPackages [evo-framework]: executing diffoscope
+[2024-06-02 20:40:53] INFO root fetch - processPackages [evo-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/evo_framework-2024.5.46.tar.gz tmp/evo_framework-2024.6.1.tar.gz --markdown 20240602/e/evo-framework/2024.5.46-2024.6.1/README.md --exclude *.pyd
+[2024-06-02 20:40:53] INFO root fetch - processPackages [retailtree]: executing diffoscope
+[2024-06-02 20:40:53] INFO root fetch - processPackages [retailtree]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/retailtree-1.2.tar.gz tmp/retailtree-1.3.tar.gz --markdown 20240602/r/retailtree/1.2-1.3/README.md --exclude *.pyd
+[2024-06-02 20:40:53] INFO root fetch - processPackages [hahomematic]: executing diffoscope
+[2024-06-02 20:40:53] INFO root fetch - processPackages [hahomematic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hahomematic-2024.5.6.tar.gz tmp/hahomematic-2024.6.0.tar.gz --markdown 20240602/h/hahomematic/2024.5.6-2024.6.0/README.md --exclude *.pyd
+[2024-06-02 20:40:53] INFO root fetch - processPackages [oarepo]: executing diffoscope
+[2024-06-02 20:40:53] INFO root fetch - processPackages [oarepo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oarepo-9.0.8.tar.gz tmp/oarepo-9.0.9.tar.gz --markdown 20240602/o/oarepo/9.0.8-9.0.9/README.md --exclude *.pyd
+[2024-06-02 20:40:53] INFO root fetch - processPackages [omnata-plugin-runtime]: Remove: archive file [/home/abi/fetcher/tmp/omnata_plugin_runtime-0.3.9a43.tar.gz]
+[2024-06-02 20:40:53] INFO root fetch - processPackages [omnata-plugin-runtime]: Remove: archive file [/home/abi/fetcher/tmp/omnata_plugin_runtime-0.3.9a44.tar.gz]
+[2024-06-02 20:40:53] INFO root fetch - main [MainThread]: End processing [omnata-plugin-runtime]: success
+[2024-06-02 20:40:53] INFO root fetch - processPackages [paracelsus]: Remove: archive file [/home/abi/fetcher/tmp/paracelsus-0.5.2.tar.gz]
+[2024-06-02 20:40:53] INFO root fetch - processPackages [paracelsus]: Remove: archive file [/home/abi/fetcher/tmp/paracelsus-0.6.0.tar.gz]
+[2024-06-02 20:40:53] INFO root fetch - main [MainThread]: End processing [paracelsus]: success
+[2024-06-02 20:40:54] INFO root fetch - processPackages [PKDevTools]: Remove: archive file [/home/abi/fetcher/tmp/PKDevTools-0.13.20240601.130.tar.gz]
+[2024-06-02 20:40:54] INFO root fetch - processPackages [PKDevTools]: Remove: archive file [/home/abi/fetcher/tmp/PKDevTools-0.13.20240602.131.tar.gz]
+[2024-06-02 20:40:54] INFO root fetch - main [MainThread]: End processing [PKDevTools]: success
+[2024-06-02 20:40:54] INFO root fetch - processPackages [oarepo]: Remove: archive file [/home/abi/fetcher/tmp/oarepo-9.0.8.tar.gz]
+[2024-06-02 20:40:54] INFO root fetch - processPackages [oarepo]: Remove: archive file [/home/abi/fetcher/tmp/oarepo-9.0.9.tar.gz]
+[2024-06-02 20:40:54] INFO root fetch - main [MainThread]: End processing [oarepo]: success
+[2024-06-02 20:40:54] INFO root fetch - processPackages [evo-framework]: Remove: archive file [/home/abi/fetcher/tmp/evo_framework-2024.5.46.tar.gz]
+[2024-06-02 20:40:54] INFO root fetch - processPackages [evo-framework]: Remove: archive file [/home/abi/fetcher/tmp/evo_framework-2024.6.1.tar.gz]
+[2024-06-02 20:40:54] INFO root fetch - main [MainThread]: End processing [evo-framework]: success
+[2024-06-02 20:40:54] INFO root fetch - processPackages [retailtree]: Remove: archive file [/home/abi/fetcher/tmp/retailtree-1.2.tar.gz]
+[2024-06-02 20:40:54] INFO root fetch - processPackages [retailtree]: Remove: archive file [/home/abi/fetcher/tmp/retailtree-1.3.tar.gz]
+[2024-06-02 20:40:54] INFO root fetch - main [MainThread]: End processing [retailtree]: success
+[2024-06-02 20:40:54] INFO root fetch - processPackages [hahomematic]: Remove: archive file [/home/abi/fetcher/tmp/hahomematic-2024.5.6.tar.gz]
+[2024-06-02 20:40:54] INFO root fetch - processPackages [hahomematic]: Remove: archive file [/home/abi/fetcher/tmp/hahomematic-2024.6.0.tar.gz]
+[2024-06-02 20:40:54] INFO root fetch - main [MainThread]: End processing [hahomematic]: success
+[2024-06-02 20:40:55] INFO root fetch - processPackages [pyroblack]: Remove: archive file [/home/abi/fetcher/tmp/pyroblack-2.3.71.tar.gz]
+[2024-06-02 20:40:55] INFO root fetch - processPackages [pyroblack]: Remove: archive file [/home/abi/fetcher/tmp/pyroblack-2.3.72.tar.gz]
+[2024-06-02 20:40:55] INFO root fetch - main [MainThread]: End processing [pyroblack]: success
+[2024-06-02 20:40:55] INFO root fetch - main [MainThread]: Store serial: [23492067]
