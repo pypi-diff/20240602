@@ -20775,3 +20775,39 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 23:18:58] INFO root fetch - processPackages [surfkit]: Remove: archive file [/home/abi/fetcher/tmp/surfkit-0.1.99.tar.gz]
 [2024-06-02 23:18:58] INFO root fetch - main [MainThread]: End processing [surfkit]: success
 [2024-06-02 23:18:58] INFO root fetch - main [MainThread]: Store serial: [23493872]
+[2024-06-02 23:21:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23493872]
+[2024-06-02 23:21:06] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-06-02 23:21:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: semantic-text-splitter
+[2024-06-02 23:21:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: vicodepy
+[2024-06-02 23:21:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: red-logging
+[2024-06-02 23:21:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: abcli
+[2024-06-02 23:21:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: hemanth-hello-world
+[2024-06-02 23:21:06] INFO root fetch - processPackages [vicodepy]: New version: [0.4.3] Old Version: [0.4.2]
+[2024-06-02 23:21:06] WARNING root fetch - processPackages [hemanth-hello-world]: Skipping, unable to determine old version
+[2024-06-02 23:21:06] INFO root fetch - main [MainThread]: End processing [hemanth-hello-world] error
+[2024-06-02 23:21:06] WARNING root fetch - processPackages [red-logging]: Skipping, unable to determine old version
+[2024-06-02 23:21:06] INFO root fetch - main [MainThread]: End processing [red-logging] error
+[2024-06-02 23:21:07] INFO root fetch - processPackages [vicodepy]: Downloading https://files.pythonhosted.org/packages/a1/87/b0a2da857a895634c42cf8c4b41ca9cb70e96eb0ee82e4bb8d904fdc7cc1/vicodepy-0.4.2.tar.gz
+[2024-06-02 23:21:07] INFO root fetch - processPackages [semantic-text-splitter]: New version: [0.9.1] Old Version: [0.9.0]
+[2024-06-02 23:21:07] INFO root fetch - processPackages [abcli]: New version: [9.50.1] Old Version: [9.48.1]
+[2024-06-02 23:21:07] INFO root fetch - processPackages [vicodepy]: Downloading https://files.pythonhosted.org/packages/e7/2a/cd485fa658906250f0952530e18d31dcc3498a2cc2b5a03667571660b6eb/vicodepy-0.4.3.tar.gz
+[2024-06-02 23:21:07] INFO root fetch - processPackages [semantic-text-splitter]: Downloading https://files.pythonhosted.org/packages/8d/61/d7c98d7141429ad2f0247f0e41447f23f5c1f6358d687e2e9664544d9bf8/semantic_text_splitter-0.9.0.tar.gz
+[2024-06-02 23:21:07] INFO root fetch - processPackages [abcli]: Downloading https://files.pythonhosted.org/packages/b7/bd/7e4afbbc6106226b8b212b3b87bf6d67fbebb6aabe6a4f6afc3f9155abde/abcli-9.48.1.tar.gz
+[2024-06-02 23:21:07] INFO root fetch - processPackages [vicodepy]: executing diffoscope
+[2024-06-02 23:21:07] INFO root fetch - processPackages [vicodepy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vicodepy-0.4.2.tar.gz tmp/vicodepy-0.4.3.tar.gz --markdown 20240602/v/vicodepy/0.4.2-0.4.3/README.md --exclude *.pyd
+[2024-06-02 23:21:07] INFO root fetch - processPackages [abcli]: Downloading https://files.pythonhosted.org/packages/7f/3a/89948badfdd3195fcb1270a44a35f68d363aad791d8ec32a80130806c843/abcli-9.50.1.tar.gz
+[2024-06-02 23:21:07] INFO root fetch - processPackages [semantic-text-splitter]: Downloading https://files.pythonhosted.org/packages/12/97/37b9e48a5128e88cf8877a0b87c2a037e2d5027924233a18fe722a57f369/semantic_text_splitter-0.9.1.tar.gz
+[2024-06-02 23:21:07] INFO root fetch - processPackages [abcli]: executing diffoscope
+[2024-06-02 23:21:07] INFO root fetch - processPackages [abcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abcli-9.48.1.tar.gz tmp/abcli-9.50.1.tar.gz --markdown 20240602/a/abcli/9.48.1-9.50.1/README.md --exclude *.pyd
+[2024-06-02 23:21:07] INFO root fetch - processPackages [semantic-text-splitter]: executing diffoscope
+[2024-06-02 23:21:07] INFO root fetch - processPackages [semantic-text-splitter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/semantic_text_splitter-0.9.0.tar.gz tmp/semantic_text_splitter-0.9.1.tar.gz --markdown 20240602/s/semantic-text-splitter/0.9.0-0.9.1/README.md --exclude *.pyd
+[2024-06-02 23:21:07] INFO root fetch - processPackages [vicodepy]: Remove: archive file [/home/abi/fetcher/tmp/vicodepy-0.4.2.tar.gz]
+[2024-06-02 23:21:07] INFO root fetch - processPackages [vicodepy]: Remove: archive file [/home/abi/fetcher/tmp/vicodepy-0.4.3.tar.gz]
+[2024-06-02 23:21:07] INFO root fetch - main [MainThread]: End processing [vicodepy]: success
+[2024-06-02 23:21:08] INFO root fetch - processPackages [abcli]: Remove: archive file [/home/abi/fetcher/tmp/abcli-9.48.1.tar.gz]
+[2024-06-02 23:21:08] INFO root fetch - processPackages [abcli]: Remove: archive file [/home/abi/fetcher/tmp/abcli-9.50.1.tar.gz]
+[2024-06-02 23:21:08] INFO root fetch - main [MainThread]: End processing [abcli]: success
+[2024-06-02 23:21:08] INFO root fetch - processPackages [semantic-text-splitter]: Remove: archive file [/home/abi/fetcher/tmp/semantic_text_splitter-0.9.0.tar.gz]
+[2024-06-02 23:21:08] INFO root fetch - processPackages [semantic-text-splitter]: Remove: archive file [/home/abi/fetcher/tmp/semantic_text_splitter-0.9.1.tar.gz]
+[2024-06-02 23:21:08] INFO root fetch - main [MainThread]: End processing [semantic-text-splitter]: success
+[2024-06-02 23:21:08] INFO root fetch - main [MainThread]: Store serial: [23493898]
