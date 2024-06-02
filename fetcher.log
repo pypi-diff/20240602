@@ -8840,3 +8840,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 
 [2024-06-02 13:51:13] INFO root fetch - main [MainThread]: End processing [bigdl-core-xe-batch-21] error
 [2024-06-02 13:51:13] INFO root fetch - main [MainThread]: Store serial: [23488520]
+[2024-06-02 13:53:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23488520]
+[2024-06-02 13:53:22] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-02 13:53:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cmakemake
+[2024-06-02 13:53:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Baseball-Info
+[2024-06-02 13:53:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: stockdatamanager
+[2024-06-02 13:53:23] INFO root fetch - processPackages [Baseball-Info]: New version: [0.0.0.5] Old Version: [0.0.0.4]
+[2024-06-02 13:53:23] INFO root fetch - processPackages [Baseball-Info]: Downloading https://files.pythonhosted.org/packages/d0/5a/e67c69ce1f27fca25a8ed48dd32575af6284bb38abcd3c5a582df06cd0c1/Baseball-Info-0.0.0.4.tar.gz
+[2024-06-02 13:53:23] WARNING root fetch - processPackages [cmakemake]: Skipping, unable to determine old version
+[2024-06-02 13:53:23] INFO root fetch - main [MainThread]: End processing [cmakemake] error
+[2024-06-02 13:53:23] INFO root fetch - processPackages [stockdatamanager]: New version: [1.1] Old Version: [1.0.1]
+[2024-06-02 13:53:23] INFO root fetch - processPackages [stockdatamanager]: Downloading https://files.pythonhosted.org/packages/c1/42/6f5d7588b21f7fcc784445a7a2f6ab1daf4e0b51377f5aeaf4efd7ba8a19/stockdatamanager-1.0.1.tar.gz
+[2024-06-02 13:53:23] INFO root fetch - processPackages [Baseball-Info]: Downloading https://files.pythonhosted.org/packages/dc/fc/4c15f847e72987288f65ea4294b6d4c5ba6e36aec3a9556a461e92ed063b/Baseball-Info-0.0.0.5.tar.gz
+[2024-06-02 13:53:23] INFO root fetch - processPackages [Baseball-Info]: executing diffoscope
+[2024-06-02 13:53:23] INFO root fetch - processPackages [Baseball-Info]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Baseball-Info-0.0.0.4.tar.gz tmp/Baseball-Info-0.0.0.5.tar.gz --markdown 20240602/B/Baseball-Info/0.0.0.4-0.0.0.5/README.md --exclude *.pyd
+[2024-06-02 13:53:23] INFO root fetch - processPackages [stockdatamanager]: Downloading https://files.pythonhosted.org/packages/48/d0/6570ed8db62dfa51535513534c9bab0dcab67119db2e8bf35ba1a6fa02e7/stockdatamanager-1.1.tar.gz
+[2024-06-02 13:53:23] INFO root fetch - processPackages [stockdatamanager]: executing diffoscope
+[2024-06-02 13:53:23] INFO root fetch - processPackages [stockdatamanager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stockdatamanager-1.0.1.tar.gz tmp/stockdatamanager-1.1.tar.gz --markdown 20240602/s/stockdatamanager/1.0.1-1.1/README.md --exclude *.pyd
+[2024-06-02 13:53:24] INFO root fetch - processPackages [Baseball-Info]: Remove: archive file [/home/abi/fetcher/tmp/Baseball-Info-0.0.0.4.tar.gz]
+[2024-06-02 13:53:24] INFO root fetch - processPackages [Baseball-Info]: Remove: archive file [/home/abi/fetcher/tmp/Baseball-Info-0.0.0.5.tar.gz]
+[2024-06-02 13:53:24] INFO root fetch - main [MainThread]: End processing [Baseball-Info]: success
+[2024-06-02 13:53:24] INFO root fetch - processPackages [stockdatamanager]: Remove: archive file [/home/abi/fetcher/tmp/stockdatamanager-1.0.1.tar.gz]
+[2024-06-02 13:53:24] INFO root fetch - processPackages [stockdatamanager]: Remove: archive file [/home/abi/fetcher/tmp/stockdatamanager-1.1.tar.gz]
+[2024-06-02 13:53:24] INFO root fetch - main [MainThread]: End processing [stockdatamanager]: success
+[2024-06-02 13:53:24] INFO root fetch - main [MainThread]: Store serial: [23488532]
