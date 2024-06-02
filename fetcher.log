@@ -16449,3 +16449,33 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 20:49:38] INFO root fetch - processPackages [cornsnake]: Remove: archive file [/home/abi/fetcher/tmp/cornsnake-0.0.9.tar.gz]
 [2024-06-02 20:49:38] INFO root fetch - main [MainThread]: End processing [cornsnake]: success
 [2024-06-02 20:49:38] INFO root fetch - main [MainThread]: Store serial: [23492147]
+[2024-06-02 20:51:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23492147]
+[2024-06-02 20:51:47] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-02 20:51:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: krank
+[2024-06-02 20:51:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pfsc-examp
+[2024-06-02 20:51:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: reolink-aio
+[2024-06-02 20:51:47] INFO root fetch - processPackages [krank]: New version: [0.0.1.dev3] Old Version: [0.0.1]
+[2024-06-02 20:51:47] INFO root fetch - processPackages [pfsc-examp]: New version: [0.24.0] Old Version: [0.23.0b0]
+[2024-06-02 20:51:47] INFO root fetch - processPackages [reolink-aio]: New version: [0.9.0] Old Version: [0.8.9]
+[2024-06-02 20:51:47] INFO root fetch - processPackages [krank]: Downloading https://files.pythonhosted.org/packages/f5/52/094bb257f77be7104f0ad618871b87cbf4b86c070c1d27c5817b2090c564/krank-0.0.1.tar.gz
+[2024-06-02 20:51:47] INFO root fetch - processPackages [reolink-aio]: Downloading https://files.pythonhosted.org/packages/c4/de/060683746083241d72d842b723b3a9052bbe295f681bba314c4d32ad2a43/reolink_aio-0.8.9.tar.gz
+[2024-06-02 20:51:47] INFO root fetch - processPackages [pfsc-examp]: Downloading https://files.pythonhosted.org/packages/47/4e/641a5a1f2f670c8ff693c7c0d0392fb11f1b60ac47aa8303506496945ba3/pfsc-examp-0.23.0b0.tar.gz
+[2024-06-02 20:51:48] INFO root fetch - processPackages [reolink-aio]: Downloading https://files.pythonhosted.org/packages/37/58/98cd93e5e24bbc0884d1843cabb9b76058a42406e89275766436635b607c/reolink_aio-0.9.0.tar.gz
+[2024-06-02 20:51:48] INFO root fetch - processPackages [pfsc-examp]: Downloading https://files.pythonhosted.org/packages/39/5d/3d09df4dac319e8f638745787ed40d494f4337eddc0bceec36486fadb8eb/pfsc_examp-0.24.0.tar.gz
+[2024-06-02 20:51:48] INFO root fetch - processPackages [krank]: Downloading https://files.pythonhosted.org/packages/be/2a/96d3bdcb2b062ee423cb5728908e2f49d0c1309b8db49c5777ddf4d55c37/krank-0.0.1.dev3.tar.gz
+[2024-06-02 20:51:48] INFO root fetch - processPackages [pfsc-examp]: executing diffoscope
+[2024-06-02 20:51:48] INFO root fetch - processPackages [pfsc-examp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pfsc-examp-0.23.0b0.tar.gz tmp/pfsc_examp-0.24.0.tar.gz --markdown 20240602/p/pfsc-examp/0.23.0b0-0.24.0/README.md --exclude *.pyd
+[2024-06-02 20:51:48] INFO root fetch - processPackages [krank]: executing diffoscope
+[2024-06-02 20:51:48] INFO root fetch - processPackages [krank]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/krank-0.0.1.tar.gz tmp/krank-0.0.1.dev3.tar.gz --markdown 20240602/k/krank/0.0.1-0.0.1.dev3/README.md --exclude *.pyd
+[2024-06-02 20:51:48] INFO root fetch - processPackages [reolink-aio]: executing diffoscope
+[2024-06-02 20:51:48] INFO root fetch - processPackages [reolink-aio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/reolink_aio-0.8.9.tar.gz tmp/reolink_aio-0.9.0.tar.gz --markdown 20240602/r/reolink-aio/0.8.9-0.9.0/README.md --exclude *.pyd
+[2024-06-02 20:51:48] INFO root fetch - processPackages [krank]: Remove: archive file [/home/abi/fetcher/tmp/krank-0.0.1.tar.gz]
+[2024-06-02 20:51:48] INFO root fetch - processPackages [krank]: Remove: archive file [/home/abi/fetcher/tmp/krank-0.0.1.dev3.tar.gz]
+[2024-06-02 20:51:48] INFO root fetch - main [MainThread]: End processing [krank]: success
+[2024-06-02 20:51:48] INFO root fetch - processPackages [pfsc-examp]: Remove: archive file [/home/abi/fetcher/tmp/pfsc-examp-0.23.0b0.tar.gz]
+[2024-06-02 20:51:48] INFO root fetch - processPackages [pfsc-examp]: Remove: archive file [/home/abi/fetcher/tmp/pfsc_examp-0.24.0.tar.gz]
+[2024-06-02 20:51:48] INFO root fetch - main [MainThread]: End processing [pfsc-examp]: success
+[2024-06-02 20:51:48] INFO root fetch - processPackages [reolink-aio]: Remove: archive file [/home/abi/fetcher/tmp/reolink_aio-0.8.9.tar.gz]
+[2024-06-02 20:51:48] INFO root fetch - processPackages [reolink-aio]: Remove: archive file [/home/abi/fetcher/tmp/reolink_aio-0.9.0.tar.gz]
+[2024-06-02 20:51:48] INFO root fetch - main [MainThread]: End processing [reolink-aio]: success
+[2024-06-02 20:51:48] INFO root fetch - main [MainThread]: Store serial: [23492157]
