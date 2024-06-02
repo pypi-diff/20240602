@@ -15120,3 +15120,41 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 19:45:45] INFO root fetch - processPackages [morphosamplers]: Remove: archive file [/home/abi/fetcher/tmp/morphosamplers-0.0.9.tar.gz]
 [2024-06-02 19:45:45] INFO root fetch - main [MainThread]: End processing [morphosamplers]: success
 [2024-06-02 19:45:45] INFO root fetch - main [MainThread]: Store serial: [23491442]
+[2024-06-02 19:47:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23491442]
+[2024-06-02 19:47:53] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-06-02 19:47:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dycw-utilities
+[2024-06-02 19:47:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: barotropic
+[2024-06-02 19:47:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: vtacML
+[2024-06-02 19:47:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: fancy-dataclass
+[2024-06-02 19:47:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: streamiopipe
+[2024-06-02 19:47:53] INFO root fetch - processPackages [vtacML]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-06-02 19:47:53] WARNING root fetch - processPackages [streamiopipe]: Skipping, unable to determine old version
+[2024-06-02 19:47:53] INFO root fetch - main [MainThread]: End processing [streamiopipe] error
+[2024-06-02 19:47:53] INFO root fetch - processPackages [fancy-dataclass]: New version: [0.5.0] Old Version: [0.4.5]
+[2024-06-02 19:47:53] INFO root fetch - processPackages [barotropic]: New version: [3.1.0] Old Version: [3.0.1]
+[2024-06-02 19:47:53] INFO root fetch - processPackages [vtacML]: Downloading https://files.pythonhosted.org/packages/af/31/e6451c82cb5bd62679ed942a8911beae12be24a37a36ccd4da13829871ca/vtacML-0.1.8.tar.gz
+[2024-06-02 19:47:53] INFO root fetch - processPackages [dycw-utilities]: New version: [0.9.0] Old Version: [0.8.8]
+[2024-06-02 19:47:53] WARNING root fetch - processPackages [vtacML]: Skipping package: exceeds size limit 67197768>=10485760
+[2024-06-02 19:47:53] INFO root fetch - main [MainThread]: End processing [vtacML] error
+[2024-06-02 19:47:53] INFO root fetch - processPackages [dycw-utilities]: Downloading https://files.pythonhosted.org/packages/a5/a4/993374a162ca6d880ff284c54df5acfb25a9f3347426746bb1aeeae915b9/dycw_utilities-0.8.8.tar.gz
+[2024-06-02 19:47:53] INFO root fetch - processPackages [barotropic]: Downloading https://files.pythonhosted.org/packages/64/aa/bd03b4c2deb794f0ae4d0f8abcda21a988c26641c1903ff8d890c9042592/barotropic-3.0.1.tar.gz
+[2024-06-02 19:47:53] INFO root fetch - processPackages [fancy-dataclass]: Downloading https://files.pythonhosted.org/packages/ae/c1/9e7048825c9692e20d8d27ae2cdc562385187da2c723a0a89623dc1ea23d/fancy_dataclass-0.4.5.tar.gz
+[2024-06-02 19:47:54] INFO root fetch - processPackages [barotropic]: Downloading https://files.pythonhosted.org/packages/2d/d8/292657ba57f0ac5b87f50ff465b8df0a36247018ac528d83185b35f50e64/barotropic-3.1.0.tar.gz
+[2024-06-02 19:47:54] INFO root fetch - processPackages [dycw-utilities]: Downloading https://files.pythonhosted.org/packages/18/5f/14fd12b36288c6f50f412854105898b537e348c0c10e7cedb0b54a05a56e/dycw_utilities-0.9.0.tar.gz
+[2024-06-02 19:47:54] INFO root fetch - processPackages [fancy-dataclass]: Downloading https://files.pythonhosted.org/packages/e3/a1/aa8fda9c9bd9665e5adf7c46c9b33aa7287bf05d9da135f141bb0430e1d2/fancy_dataclass-0.5.0.tar.gz
+[2024-06-02 19:47:54] INFO root fetch - processPackages [barotropic]: executing diffoscope
+[2024-06-02 19:47:54] INFO root fetch - processPackages [barotropic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/barotropic-3.0.1.tar.gz tmp/barotropic-3.1.0.tar.gz --markdown 20240602/b/barotropic/3.0.1-3.1.0/README.md --exclude *.pyd
+[2024-06-02 19:47:54] INFO root fetch - processPackages [dycw-utilities]: executing diffoscope
+[2024-06-02 19:47:54] INFO root fetch - processPackages [dycw-utilities]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dycw_utilities-0.8.8.tar.gz tmp/dycw_utilities-0.9.0.tar.gz --markdown 20240602/d/dycw-utilities/0.8.8-0.9.0/README.md --exclude *.pyd
+[2024-06-02 19:47:54] INFO root fetch - processPackages [fancy-dataclass]: executing diffoscope
+[2024-06-02 19:47:54] INFO root fetch - processPackages [fancy-dataclass]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fancy_dataclass-0.4.5.tar.gz tmp/fancy_dataclass-0.5.0.tar.gz --markdown 20240602/f/fancy-dataclass/0.4.5-0.5.0/README.md --exclude *.pyd
+[2024-06-02 19:47:54] INFO root fetch - processPackages [barotropic]: Remove: archive file [/home/abi/fetcher/tmp/barotropic-3.0.1.tar.gz]
+[2024-06-02 19:47:54] INFO root fetch - processPackages [barotropic]: Remove: archive file [/home/abi/fetcher/tmp/barotropic-3.1.0.tar.gz]
+[2024-06-02 19:47:54] INFO root fetch - main [MainThread]: End processing [barotropic]: success
+[2024-06-02 19:47:55] INFO root fetch - processPackages [dycw-utilities]: Remove: archive file [/home/abi/fetcher/tmp/dycw_utilities-0.8.8.tar.gz]
+[2024-06-02 19:47:55] INFO root fetch - processPackages [dycw-utilities]: Remove: archive file [/home/abi/fetcher/tmp/dycw_utilities-0.9.0.tar.gz]
+[2024-06-02 19:47:55] INFO root fetch - main [MainThread]: End processing [dycw-utilities]: success
+[2024-06-02 19:47:56] INFO root fetch - processPackages [fancy-dataclass]: Remove: archive file [/home/abi/fetcher/tmp/fancy_dataclass-0.4.5.tar.gz]
+[2024-06-02 19:47:56] INFO root fetch - processPackages [fancy-dataclass]: Remove: archive file [/home/abi/fetcher/tmp/fancy_dataclass-0.5.0.tar.gz]
+[2024-06-02 19:47:56] INFO root fetch - main [MainThread]: End processing [fancy-dataclass]: success
+[2024-06-02 19:47:56] INFO root fetch - main [MainThread]: Store serial: [23491460]
