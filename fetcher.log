@@ -4324,3 +4324,24 @@
 [2024-06-02 07:10:19] INFO root fetch - processPackages [textembed]: Remove: archive file [/home/abi/fetcher/tmp/textembed-0.0.5.tar.gz]
 [2024-06-02 07:10:19] INFO root fetch - main [MainThread]: End processing [textembed]: success
 [2024-06-02 07:10:19] INFO root fetch - main [MainThread]: Store serial: [23486362]
+[2024-06-02 07:12:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23486362]
+[2024-06-02 07:12:28] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-02 07:12:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: contact-group-local
+[2024-06-02 07:12:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: core-system-utils
+[2024-06-02 07:12:28] INFO root fetch - processPackages [core-system-utils]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-06-02 07:12:28] INFO root fetch - processPackages [contact-group-local]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-06-02 07:12:28] INFO root fetch - processPackages [core-system-utils]: Downloading https://files.pythonhosted.org/packages/db/64/29778832e1239f917bfa2626cd7ce5684b0d7500b42073242dc47297e4f4/core-system-utils-0.0.1.tar.gz
+[2024-06-02 07:12:28] INFO root fetch - processPackages [contact-group-local]: Downloading https://files.pythonhosted.org/packages/63/e5/ff261731db98a38a39f4657a4cd1e04b2a998f175a7af36c640220ff9b00/contact-group-local-0.0.8.tar.gz
+[2024-06-02 07:12:28] INFO root fetch - processPackages [core-system-utils]: Downloading https://files.pythonhosted.org/packages/0f/cc/9ec26b462685b16c3adc3d4046218cbc1cf06aea4b3cdec819f428a5e479/core-system-utils-0.0.2.tar.gz
+[2024-06-02 07:12:28] INFO root fetch - processPackages [contact-group-local]: Downloading https://files.pythonhosted.org/packages/84/cc/f78576331b2ff0f497f4640872d65b71ec33ae804f6a44bb2f10f1957687/contact-group-local-0.0.9.tar.gz
+[2024-06-02 07:12:28] INFO root fetch - processPackages [core-system-utils]: executing diffoscope
+[2024-06-02 07:12:28] INFO root fetch - processPackages [core-system-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/core-system-utils-0.0.1.tar.gz tmp/core-system-utils-0.0.2.tar.gz --markdown 20240602/c/core-system-utils/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-06-02 07:12:28] INFO root fetch - processPackages [contact-group-local]: executing diffoscope
+[2024-06-02 07:12:28] INFO root fetch - processPackages [contact-group-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/contact-group-local-0.0.8.tar.gz tmp/contact-group-local-0.0.9.tar.gz --markdown 20240602/c/contact-group-local/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-06-02 07:12:29] INFO root fetch - processPackages [core-system-utils]: Remove: archive file [/home/abi/fetcher/tmp/core-system-utils-0.0.1.tar.gz]
+[2024-06-02 07:12:29] INFO root fetch - processPackages [core-system-utils]: Remove: archive file [/home/abi/fetcher/tmp/core-system-utils-0.0.2.tar.gz]
+[2024-06-02 07:12:29] INFO root fetch - main [MainThread]: End processing [core-system-utils]: success
+[2024-06-02 07:12:29] INFO root fetch - processPackages [contact-group-local]: Remove: archive file [/home/abi/fetcher/tmp/contact-group-local-0.0.8.tar.gz]
+[2024-06-02 07:12:29] INFO root fetch - processPackages [contact-group-local]: Remove: archive file [/home/abi/fetcher/tmp/contact-group-local-0.0.9.tar.gz]
+[2024-06-02 07:12:29] INFO root fetch - main [MainThread]: End processing [contact-group-local]: success
+[2024-06-02 07:12:29] INFO root fetch - main [MainThread]: Store serial: [23486370]
