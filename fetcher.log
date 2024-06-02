@@ -14846,3 +14846,51 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 19:26:12] INFO root fetch - processPackages [audiconnectpy]: Remove: archive file [/home/abi/fetcher/tmp/audiconnectpy-2.2.8.tar.gz]
 [2024-06-02 19:26:12] INFO root fetch - main [MainThread]: End processing [audiconnectpy]: success
 [2024-06-02 19:26:12] INFO root fetch - main [MainThread]: Store serial: [23491326]
+[2024-06-02 19:28:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23491326]
+[2024-06-02 19:28:20] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-06-02 19:28:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: audiconnectpy
+[2024-06-02 19:28:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sd-parsers
+[2024-06-02 19:28:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: paquo
+[2024-06-02 19:28:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: selenium-assist
+[2024-06-02 19:28:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pycountries
+[2024-06-02 19:28:21] INFO root fetch - processPackages [audiconnectpy]: New version: [2.2.8] Old Version: [2.2.7]
+[2024-06-02 19:28:21] INFO root fetch - processPackages [audiconnectpy]: Downloading https://files.pythonhosted.org/packages/d0/f0/ce0137fe83bef335ffd155da2e6f63f793d3d4e7c89caf70c81bba0651dd/audiconnectpy-2.2.7.tar.gz
+[2024-06-02 19:28:21] INFO root fetch - processPackages [pycountries]: New version: [1.0.3] Old Version: [1.0.2]
+[2024-06-02 19:28:21] INFO root fetch - processPackages [sd-parsers]: New version: [0.3rc2] Old Version: [0.3rc1]
+[2024-06-02 19:28:21] INFO root fetch - processPackages [paquo]: New version: [0.8.0] Old Version: [0.7.2]
+[2024-06-02 19:28:21] INFO root fetch - processPackages [selenium-assist]: New version: [0.3.5] Old Version: [0.3.4]
+[2024-06-02 19:28:21] INFO root fetch - processPackages [paquo]: Downloading https://files.pythonhosted.org/packages/1d/33/639e5029acb32ec6e380f231ea924377ddc584ad7a98e122bc0270f94bb7/paquo-0.7.2.tar.gz
+[2024-06-02 19:28:21] INFO root fetch - processPackages [sd-parsers]: Downloading https://files.pythonhosted.org/packages/be/98/eb33b0a324cdfb7dec8f3f602c22470dd11fe9ba33059529dc6b89e149a2/sd-parsers-0.3rc1.tar.gz
+[2024-06-02 19:28:21] INFO root fetch - processPackages [audiconnectpy]: Downloading https://files.pythonhosted.org/packages/b7/38/af53ba0447f7fb2b632d4d39b8d5681b93acc8e49ccc8eeaa485cce41bb8/audiconnectpy-2.2.8.tar.gz
+[2024-06-02 19:28:21] INFO root fetch - processPackages [pycountries]: Downloading https://files.pythonhosted.org/packages/f4/27/776a66f931a3872320bae12dd109232aaa440106374154f00e23257e197d/pycountries-1.0.2.tar.gz
+[2024-06-02 19:28:21] INFO root fetch - processPackages [selenium-assist]: Downloading https://files.pythonhosted.org/packages/19/c6/fe7500310dc9fb3a3b08e36b437a51be61e6433ab30f1a9aa6a0ef963fa1/selenium_assist-0.3.4.tar.gz
+[2024-06-02 19:28:21] INFO root fetch - processPackages [audiconnectpy]: executing diffoscope
+[2024-06-02 19:28:21] INFO root fetch - processPackages [audiconnectpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/audiconnectpy-2.2.7.tar.gz tmp/audiconnectpy-2.2.8.tar.gz --markdown 20240602/a/audiconnectpy/2.2.7-2.2.8/README.md --exclude *.pyd
+[2024-06-02 19:28:21] INFO root fetch - processPackages [sd-parsers]: Downloading https://files.pythonhosted.org/packages/5c/f2/9f8a09aeec0501fcf60d21e0def03b158e0a07b7b5f675d31698c91b3b6c/sd-parsers-0.3rc2.tar.gz
+[2024-06-02 19:28:21] INFO root fetch - processPackages [selenium-assist]: Downloading https://files.pythonhosted.org/packages/67/72/3aaac91cb67d628d7a4ad51b4f3dcdb5531c017fad09a6c7e4693ae683c4/selenium_assist-0.3.5.tar.gz
+[2024-06-02 19:28:21] INFO root fetch - processPackages [pycountries]: Downloading https://files.pythonhosted.org/packages/10/da/a034a2d648de0dbc76b12f4d08016ea68194a0e0c4eccf62829f06a6c415/pycountries-1.0.3.tar.gz
+[2024-06-02 19:28:21] INFO root fetch - processPackages [paquo]: Downloading https://files.pythonhosted.org/packages/1e/13/2054a3db2aed576c5a952bb17777057f20915a0537442dc32ce874fb0f03/paquo-0.8.0.tar.gz
+[2024-06-02 19:28:21] INFO root fetch - processPackages [sd-parsers]: executing diffoscope
+[2024-06-02 19:28:21] INFO root fetch - processPackages [sd-parsers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sd-parsers-0.3rc1.tar.gz tmp/sd-parsers-0.3rc2.tar.gz --markdown 20240602/s/sd-parsers/0.3rc1-0.3rc2/README.md --exclude *.pyd
+[2024-06-02 19:28:21] INFO root fetch - processPackages [selenium-assist]: executing diffoscope
+[2024-06-02 19:28:21] INFO root fetch - processPackages [selenium-assist]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/selenium_assist-0.3.4.tar.gz tmp/selenium_assist-0.3.5.tar.gz --markdown 20240602/s/selenium-assist/0.3.4-0.3.5/README.md --exclude *.pyd
+[2024-06-02 19:28:21] INFO root fetch - processPackages [pycountries]: executing diffoscope
+[2024-06-02 19:28:21] INFO root fetch - processPackages [pycountries]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pycountries-1.0.2.tar.gz tmp/pycountries-1.0.3.tar.gz --markdown 20240602/p/pycountries/1.0.2-1.0.3/README.md --exclude *.pyd
+[2024-06-02 19:28:21] INFO root fetch - processPackages [paquo]: executing diffoscope
+[2024-06-02 19:28:21] INFO root fetch - processPackages [paquo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/paquo-0.7.2.tar.gz tmp/paquo-0.8.0.tar.gz --markdown 20240602/p/paquo/0.7.2-0.8.0/README.md --exclude *.pyd
+[2024-06-02 19:28:22] INFO root fetch - processPackages [audiconnectpy]: Remove: archive file [/home/abi/fetcher/tmp/audiconnectpy-2.2.7.tar.gz]
+[2024-06-02 19:28:22] INFO root fetch - processPackages [audiconnectpy]: Remove: archive file [/home/abi/fetcher/tmp/audiconnectpy-2.2.8.tar.gz]
+[2024-06-02 19:28:22] INFO root fetch - main [MainThread]: End processing [audiconnectpy]: success
+[2024-06-02 19:28:22] INFO root fetch - processPackages [selenium-assist]: Remove: archive file [/home/abi/fetcher/tmp/selenium_assist-0.3.4.tar.gz]
+[2024-06-02 19:28:22] INFO root fetch - processPackages [selenium-assist]: Remove: archive file [/home/abi/fetcher/tmp/selenium_assist-0.3.5.tar.gz]
+[2024-06-02 19:28:22] INFO root fetch - main [MainThread]: End processing [selenium-assist]: success
+[2024-06-02 19:28:22] INFO root fetch - processPackages [sd-parsers]: Remove: archive file [/home/abi/fetcher/tmp/sd-parsers-0.3rc1.tar.gz]
+[2024-06-02 19:28:22] INFO root fetch - processPackages [sd-parsers]: Remove: archive file [/home/abi/fetcher/tmp/sd-parsers-0.3rc2.tar.gz]
+[2024-06-02 19:28:22] INFO root fetch - main [MainThread]: End processing [sd-parsers]: success
+[2024-06-02 19:28:22] INFO root fetch - processPackages [pycountries]: Remove: archive file [/home/abi/fetcher/tmp/pycountries-1.0.2.tar.gz]
+[2024-06-02 19:28:22] INFO root fetch - processPackages [pycountries]: Remove: archive file [/home/abi/fetcher/tmp/pycountries-1.0.3.tar.gz]
+[2024-06-02 19:28:22] INFO root fetch - main [MainThread]: End processing [pycountries]: success
+[2024-06-02 19:28:22] INFO root fetch - processPackages [paquo]: Remove: archive file [/home/abi/fetcher/tmp/paquo-0.7.2.tar.gz]
+[2024-06-02 19:28:22] INFO root fetch - processPackages [paquo]: Remove: archive file [/home/abi/fetcher/tmp/paquo-0.8.0.tar.gz]
+[2024-06-02 19:28:22] INFO root fetch - main [MainThread]: End processing [paquo]: success
+[2024-06-02 19:28:22] INFO root fetch - main [MainThread]: Store serial: [23491342]
