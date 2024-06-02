@@ -8530,3 +8530,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-02 13:31:39] INFO root fetch - processPackages [socket.d]: Remove: archive file [/home/abi/fetcher/tmp/socket.d-2.5.2.tar.gz]
 [2024-06-02 13:31:39] INFO root fetch - main [MainThread]: End processing [socket.d]: success
 [2024-06-02 13:31:39] INFO root fetch - main [MainThread]: Store serial: [23488438]
+[2024-06-02 13:33:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23488438]
+[2024-06-02 13:33:47] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-02 13:33:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fastapi_errors
+[2024-06-02 13:33:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: SimpleDomControl
+[2024-06-02 13:33:47] INFO root fetch - processPackages [fastapi_errors]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-06-02 13:33:47] INFO root fetch - processPackages [SimpleDomControl]: New version: [0.5.0] Old Version: [0.4.8]
+[2024-06-02 13:33:47] INFO root fetch - processPackages [fastapi_errors]: Downloading https://files.pythonhosted.org/packages/3b/03/1e76a0dd5c46b72748771ff7f05cf43e7a90e9689357bd3285409c9b5ba9/fastapi_errors-0.0.1.tar.gz
+[2024-06-02 13:33:47] INFO root fetch - processPackages [SimpleDomControl]: Downloading https://files.pythonhosted.org/packages/58/13/fa958e772a1a7985e7a806807c0fff6fc49ee67ec322e00043ccd53521a7/simpledomcontrol-0.4.8.tar.gz
+[2024-06-02 13:33:47] INFO root fetch - processPackages [fastapi_errors]: Downloading https://files.pythonhosted.org/packages/74/9c/d988f66b968a48a0537395e77d8b8fe7937aa4fc0c66c1eeb3faa13c2a8d/fastapi_errors-0.0.2.tar.gz
+[2024-06-02 13:33:47] INFO root fetch - processPackages [SimpleDomControl]: Downloading https://files.pythonhosted.org/packages/d2/1b/a1ae373e60a536f4f6cace949486b4a840088033dc6d6f0505a4f6e856fd/simpledomcontrol-0.5.0.tar.gz
+[2024-06-02 13:33:47] INFO root fetch - processPackages [fastapi_errors]: executing diffoscope
+[2024-06-02 13:33:47] INFO root fetch - processPackages [fastapi_errors]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastapi_errors-0.0.1.tar.gz tmp/fastapi_errors-0.0.2.tar.gz --markdown 20240602/f/fastapi_errors/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-06-02 13:33:48] INFO root fetch - processPackages [SimpleDomControl]: executing diffoscope
+[2024-06-02 13:33:48] INFO root fetch - processPackages [SimpleDomControl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simpledomcontrol-0.4.8.tar.gz tmp/simpledomcontrol-0.5.0.tar.gz --markdown 20240602/S/SimpleDomControl/0.4.8-0.5.0/README.md --exclude *.pyd
+[2024-06-02 13:33:48] INFO root fetch - processPackages [fastapi_errors]: Remove: archive file [/home/abi/fetcher/tmp/fastapi_errors-0.0.1.tar.gz]
+[2024-06-02 13:33:48] INFO root fetch - processPackages [fastapi_errors]: Remove: archive file [/home/abi/fetcher/tmp/fastapi_errors-0.0.2.tar.gz]
+[2024-06-02 13:33:48] INFO root fetch - main [MainThread]: End processing [fastapi_errors]: success
+[2024-06-02 13:33:50] INFO root fetch - processPackages [SimpleDomControl]: Remove: archive file [/home/abi/fetcher/tmp/simpledomcontrol-0.4.8.tar.gz]
+[2024-06-02 13:33:50] INFO root fetch - processPackages [SimpleDomControl]: Remove: archive file [/home/abi/fetcher/tmp/simpledomcontrol-0.5.0.tar.gz]
+[2024-06-02 13:33:50] INFO root fetch - main [MainThread]: End processing [SimpleDomControl]: success
+[2024-06-02 13:33:50] INFO root fetch - main [MainThread]: Store serial: [23488444]
