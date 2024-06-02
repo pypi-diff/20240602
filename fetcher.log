@@ -4803,3 +4803,27 @@
 [2024-06-02 08:17:31] INFO root fetch - processPackages [pretext]: Remove: archive file [/home/abi/fetcher/tmp/pretext-2.4.2.dev20240602.tar.gz]
 [2024-06-02 08:17:31] INFO root fetch - main [MainThread]: End processing [pretext]: success
 [2024-06-02 08:17:31] INFO root fetch - main [MainThread]: Store serial: [23486680]
+[2024-06-02 08:19:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23486680]
+[2024-06-02 08:19:41] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-02 08:19:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: market-generic
+[2024-06-02 08:19:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fastapi-mongo
+[2024-06-02 08:19:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: not1mm
+[2024-06-02 08:19:41] INFO root fetch - processPackages [market-generic]: New version: [0.2.0] Old Version: [0.1.0]
+[2024-06-02 08:19:41] WARNING root fetch - processPackages [fastapi-mongo]: Skipping, unable to determine old version
+[2024-06-02 08:19:41] INFO root fetch - main [MainThread]: End processing [fastapi-mongo] error
+[2024-06-02 08:19:41] INFO root fetch - processPackages [market-generic]: Downloading https://files.pythonhosted.org/packages/08/db/fea3fdeeb0f041abac35ee81e4e5f7bb499e7bfc1dc671fd3bbbf033a4c4/market_generic-0.1.0.tar.gz
+[2024-06-02 08:19:41] INFO root fetch - processPackages [not1mm]: New version: [24.6.1] Old Version: [24.5.9]
+[2024-06-02 08:19:41] INFO root fetch - processPackages [not1mm]: Downloading https://files.pythonhosted.org/packages/37/b2/33b1f03f668a23e65c50c7fbd144613c5d6da4b25a40e4309666dd8f91e8/not1mm-24.5.9.tar.gz
+[2024-06-02 08:19:41] INFO root fetch - processPackages [market-generic]: Downloading https://files.pythonhosted.org/packages/13/1f/b71dfa1a53efb92bcd117f0a3a41e1baf22b0cac8ef670fa3aef3cd602d6/market_generic-0.2.0.tar.gz
+[2024-06-02 08:19:42] INFO root fetch - processPackages [market-generic]: executing diffoscope
+[2024-06-02 08:19:42] INFO root fetch - processPackages [market-generic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/market_generic-0.1.0.tar.gz tmp/market_generic-0.2.0.tar.gz --markdown 20240602/m/market-generic/0.1.0-0.2.0/README.md --exclude *.pyd
+[2024-06-02 08:19:42] INFO root fetch - processPackages [not1mm]: Downloading https://files.pythonhosted.org/packages/c3/a9/42a2b4d3c97e60d3a211146f149b2ecc6ce72299be74853f1e904325d94f/not1mm-24.6.1.tar.gz
+[2024-06-02 08:19:42] INFO root fetch - processPackages [market-generic]: Remove: archive file [/home/abi/fetcher/tmp/market_generic-0.1.0.tar.gz]
+[2024-06-02 08:19:42] INFO root fetch - processPackages [market-generic]: Remove: archive file [/home/abi/fetcher/tmp/market_generic-0.2.0.tar.gz]
+[2024-06-02 08:19:42] INFO root fetch - main [MainThread]: End processing [market-generic]: success
+[2024-06-02 08:19:42] INFO root fetch - processPackages [not1mm]: executing diffoscope
+[2024-06-02 08:19:42] INFO root fetch - processPackages [not1mm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/not1mm-24.5.9.tar.gz tmp/not1mm-24.6.1.tar.gz --markdown 20240602/n/not1mm/24.5.9-24.6.1/README.md --exclude *.pyd
+[2024-06-02 08:19:46] INFO root fetch - processPackages [not1mm]: Remove: archive file [/home/abi/fetcher/tmp/not1mm-24.5.9.tar.gz]
+[2024-06-02 08:19:46] INFO root fetch - processPackages [not1mm]: Remove: archive file [/home/abi/fetcher/tmp/not1mm-24.6.1.tar.gz]
+[2024-06-02 08:19:46] INFO root fetch - main [MainThread]: End processing [not1mm]: success
+[2024-06-02 08:19:46] INFO root fetch - main [MainThread]: Store serial: [23486689]
