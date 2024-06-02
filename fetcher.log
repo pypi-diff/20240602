@@ -8716,3 +8716,127 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-02 13:46:54] INFO root fetch - processPackages [network-diffusion]: Remove: archive file [/home/abi/fetcher/tmp/network_diffusion-0.9.0.tar.gz]
 [2024-06-02 13:46:54] INFO root fetch - main [MainThread]: End processing [network-diffusion]: success
 [2024-06-02 13:46:54] INFO root fetch - main [MainThread]: Store serial: [23488504]
+[2024-06-02 13:48:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23488504]
+[2024-06-02 13:49:02] INFO root fetch - main [MainThread]: No changed packages found
+[2024-06-02 13:51:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23488507]
+[2024-06-02 13:51:08] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-02 13:51:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bigdl-core-xe-batch-21
+[2024-06-02 13:51:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Baseball-Info
+[2024-06-02 13:51:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: jfk-django-core
+[2024-06-02 13:51:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cmeta
+[2024-06-02 13:51:09] INFO root fetch - processPackages [Baseball-Info]: New version: [0.0.0.4] Old Version: [0.0.0.3]
+[2024-06-02 13:51:09] INFO root fetch - processPackages [Baseball-Info]: Downloading https://files.pythonhosted.org/packages/b7/1e/8f01f8201b56af8d04a7b1df23dbcf614d43533b518a7385f597432a5e8e/Baseball-Info-0.0.0.3.tar.gz
+[2024-06-02 13:51:09] INFO root fetch - processPackages [bigdl-core-xe-batch-21]: New version: [2.5.0b20240602] Old Version: [2.5.0b20240601]
+[2024-06-02 13:51:09] WARNING root fetch - processPackages [cmeta]: Skipping, unable to determine old version
+[2024-06-02 13:51:09] INFO root fetch - main [MainThread]: End processing [cmeta] error
+[2024-06-02 13:51:09] INFO root fetch - processPackages [jfk-django-core]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-06-02 13:51:09] INFO root fetch - processPackages [bigdl-core-xe-batch-21]: Downloading https://files.pythonhosted.org/packages/2f/4f/5129269d60118c614e8cc5cca4d9f3082fa1bb2b69604542268c49b9fb47/bigdl_core_xe_batch_21-2.5.0b20240601-cp39-cp39-win_amd64.whl
+[2024-06-02 13:51:09] INFO root fetch - processPackages [jfk-django-core]: Downloading https://files.pythonhosted.org/packages/fe/34/c04d10156c1349a9e7317e4caf3abcd455db6b43a89b2a6a83f3c69580bc/jfk_django_core-0.0.6.tar.gz
+[2024-06-02 13:51:09] INFO root fetch - processPackages [Baseball-Info]: Downloading https://files.pythonhosted.org/packages/d0/5a/e67c69ce1f27fca25a8ed48dd32575af6284bb38abcd3c5a582df06cd0c1/Baseball-Info-0.0.0.4.tar.gz
+[2024-06-02 13:51:09] INFO root fetch - processPackages [Baseball-Info]: executing diffoscope
+[2024-06-02 13:51:09] INFO root fetch - processPackages [Baseball-Info]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Baseball-Info-0.0.0.3.tar.gz tmp/Baseball-Info-0.0.0.4.tar.gz --markdown 20240602/B/Baseball-Info/0.0.0.3-0.0.0.4/README.md --exclude *.pyd
+[2024-06-02 13:51:09] INFO root fetch - processPackages [jfk-django-core]: Downloading https://files.pythonhosted.org/packages/6b/ce/2f0f16cf6655fc45441c474e11360aa82c816c433493e1617dc5270bbbca/jfk_django_core-0.0.7.tar.gz
+[2024-06-02 13:51:09] INFO root fetch - processPackages [jfk-django-core]: executing diffoscope
+[2024-06-02 13:51:09] INFO root fetch - processPackages [jfk-django-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jfk_django_core-0.0.6.tar.gz tmp/jfk_django_core-0.0.7.tar.gz --markdown 20240602/j/jfk-django-core/0.0.6-0.0.7/README.md --exclude *.pyd
+[2024-06-02 13:51:09] INFO root fetch - processPackages [Baseball-Info]: Remove: archive file [/home/abi/fetcher/tmp/Baseball-Info-0.0.0.3.tar.gz]
+[2024-06-02 13:51:09] INFO root fetch - processPackages [Baseball-Info]: Remove: archive file [/home/abi/fetcher/tmp/Baseball-Info-0.0.0.4.tar.gz]
+[2024-06-02 13:51:09] INFO root fetch - main [MainThread]: End processing [Baseball-Info]: success
+[2024-06-02 13:51:10] INFO root fetch - processPackages [jfk-django-core]: Remove: archive file [/home/abi/fetcher/tmp/jfk_django_core-0.0.6.tar.gz]
+[2024-06-02 13:51:10] INFO root fetch - processPackages [jfk-django-core]: Remove: archive file [/home/abi/fetcher/tmp/jfk_django_core-0.0.7.tar.gz]
+[2024-06-02 13:51:10] INFO root fetch - main [MainThread]: End processing [jfk-django-core]: success
+[2024-06-02 13:51:11] INFO root fetch - processPackages [bigdl-core-xe-batch-21]: Downloading https://files.pythonhosted.org/packages/ea/3f/bd38ffc5b159e107c53520c019e7190dc95a9583754c65093a508af71cfd/bigdl_core_xe_batch_21-2.5.0b20240602-cp310-cp310-win_amd64.whl
+[2024-06-02 13:51:12] INFO root fetch - processPackages [bigdl-core-xe-batch-21]: executing diffoscope
+[2024-06-02 13:51:12] INFO root fetch - processPackages [bigdl-core-xe-batch-21]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigdl_core_xe_batch_21-2.5.0b20240601-cp39-cp39-win_amd64.whl.zip tmp/bigdl_core_xe_batch_21-2.5.0b20240602-cp310-cp310-win_amd64.whl.zip --markdown 20240602/b/bigdl-core-xe-batch-21/2.5.0b20240601-2.5.0b20240602/README.md --exclude *.pyd
+[2024-06-02 13:51:13] ERROR root fetch - processPackages [bigdl-core-xe-batch-21]: Diffoscope failed: time="2024-06-02T13:51:12+02:00" level=error msg="User-selected graph driver \"vfs\" overwritten by graph driver \"overlay\" from database - delete libpod local files to resolve.  May prevent use of images created by other tools"
+Traceback (most recent call last):
+  File "/srv/diffoscope/diffoscope/diff.py", line 334, in diff
+    with FIFOFeeder(feeder1, fifo1_path) as fifo1, FIFOFeeder(
+  File "/srv/diffoscope/diffoscope/diff.py", line 225, in __exit__
+    self.join()
+  File "/srv/diffoscope/diffoscope/diff.py", line 258, in join
+    raise self._exception
+  File "/srv/diffoscope/diffoscope/diff.py", line 249, in run
+    end_nl = self.feeder(fifo)
+             ^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 79, in feeder
+    for buf in in_file:
+  File "/srv/diffoscope/diffoscope/comparators/utils/libarchive.py", line 134, in list_libarchive
+    for entry in archive:
+  File "/usr/lib/python3/dist-packages/libarchive/read.py", line 26, in __iter__
+    r = read_next_header2(archive_p, entry_p)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/libarchive/ffi.py", line 91, in check_int
+    raise archive_error(args[0], retcode)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/libarchive/ffi.py", line 75, in archive_error
+    raise ArchiveError(msg, errno(archive_p), retcode, archive_p)
+libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, archive_p=140485763014144)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/srv/diffoscope/diffoscope/main.py", line 767, in main
+    sys.exit(run_diffoscope(parsed_args))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/main.py", line 718, in run_diffoscope
+    difference = compare_root_paths(path1, path2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 69, in compare_root_paths
+    difference = compare_files(file1, file2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 217, in compare
+    x = super().compare(other, source)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 532, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 467, in _compare_using_details
+    details.extend(
+  File "/srv/diffoscope/diffoscope/comparators/utils/container.py", line 197, in compare_pair
+    difference = compare_files(
+                 ^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 532, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 433, in _compare_using_details
+    details.extend(self.compare_details(other, source))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/ar.py", line 71, in compare_details
+    Difference.from_text_readers(
+  File "/srv/diffoscope/diffoscope/difference.py", line 258, in from_text_readers
+    return Difference.from_feeder(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/difference.py", line 214, in from_feeder
+    unified_diff = diff(feeder1, feeder2)
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/diff.py", line 334, in diff
+    with FIFOFeeder(feeder1, fifo1_path) as fifo1, FIFOFeeder(
+  File "/srv/diffoscope/diffoscope/diff.py", line 225, in __exit__
+    self.join()
+  File "/srv/diffoscope/diffoscope/diff.py", line 258, in join
+    raise self._exception
+  File "/srv/diffoscope/diffoscope/diff.py", line 249, in run
+    end_nl = self.feeder(fifo)
+             ^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 79, in feeder
+    for buf in in_file:
+  File "/srv/diffoscope/diffoscope/comparators/utils/libarchive.py", line 134, in list_libarchive
+    for entry in archive:
+  File "/usr/lib/python3/dist-packages/libarchive/read.py", line 26, in __iter__
+    r = read_next_header2(archive_p, entry_p)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/libarchive/ffi.py", line 91, in check_int
+    raise archive_error(args[0], retcode)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/libarchive/ffi.py", line 75, in archive_error
+    raise ArchiveError(msg, errno(archive_p), retcode, archive_p)
+libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, archive_p=140485628796304)
+
+[2024-06-02 13:51:13] INFO root fetch - main [MainThread]: End processing [bigdl-core-xe-batch-21] error
+[2024-06-02 13:51:13] INFO root fetch - main [MainThread]: Store serial: [23488520]
