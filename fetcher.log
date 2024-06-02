@@ -16126,3 +16126,60 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 20:34:18] INFO root fetch - processPackages [emhass]: Remove: archive file [/home/abi/fetcher/tmp/emhass-0.9.1.tar.gz]
 [2024-06-02 20:34:18] INFO root fetch - main [MainThread]: End processing [emhass]: success
 [2024-06-02 20:34:18] INFO root fetch - main [MainThread]: Store serial: [23491928]
+[2024-06-02 20:36:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23491928]
+[2024-06-02 20:36:27] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-06-02 20:36:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: projen
+[2024-06-02 20:36:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sofapal
+[2024-06-02 20:36:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: zeroize
+[2024-06-02 20:36:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: appthreat-vulnerability-db
+[2024-06-02 20:36:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: odoo14-addon-l10n-br-base
+[2024-06-02 20:36:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: odoo14-addon-l10n-br-nfe
+[2024-06-02 20:36:27] INFO root fetch - processPackages [appthreat-vulnerability-db]: New version: [6.0.4] Old Version: [6.0.3]
+[2024-06-02 20:36:27] INFO root fetch - processPackages [projen]: New version: [0.82.3] Old Version: [0.82.2]
+[2024-06-02 20:36:27] INFO root fetch - processPackages [sofapal]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-06-02 20:36:27] INFO root fetch - processPackages [appthreat-vulnerability-db]: Downloading https://files.pythonhosted.org/packages/2b/b3/9ceccaa536bb3e76d585b15bac91aa3ca53495252e46fd4d7b953fc2caff/appthreat_vulnerability_db-6.0.3.tar.gz
+[2024-06-02 20:36:27] INFO root fetch - processPackages [odoo14-addon-l10n-br-base]: New version: [14.0.3.9.0] Old Version: [14.0.3.8.1.dev1]
+[2024-06-02 20:36:27] INFO root fetch - processPackages [projen]: Downloading https://files.pythonhosted.org/packages/4b/b4/07c9fe54cb21434055682380249512c721360f2e121665c1aaaaeb532d2d/projen-0.82.2.tar.gz
+[2024-06-02 20:36:27] INFO root fetch - processPackages [odoo14-addon-l10n-br-nfe]: New version: [14.0.9.1.1.dev1] Old Version: [14.0.9.0.1]
+[2024-06-02 20:36:27] INFO root fetch - processPackages [zeroize]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-06-02 20:36:27] INFO root fetch - processPackages [sofapal]: Downloading https://files.pythonhosted.org/packages/cf/bd/a6101846c44ce1bae8d7b5fe3528671928c32e428c50032381fb34c6ef68/sofapal-0.0.3.tar.gz
+[2024-06-02 20:36:27] INFO root fetch - processPackages [odoo14-addon-l10n-br-base]: Downloading https://files.pythonhosted.org/packages/6a/1e/2e1665bcae55b16ddd5f1a198365a14c09cdcc78d9ffd85ae25a9ff848f7/odoo14_addon_l10n_br_base-14.0.3.8.1.dev1-py3-none-any.whl
+[2024-06-02 20:36:27] INFO root fetch - processPackages [appthreat-vulnerability-db]: Downloading https://files.pythonhosted.org/packages/a4/7a/1b82c34802eeeff3b46d1265f3e6246d577d3eb054e6c38b5e095126b4e5/appthreat_vulnerability_db-6.0.4.tar.gz
+[2024-06-02 20:36:28] INFO root fetch - processPackages [odoo14-addon-l10n-br-nfe]: Downloading https://files.pythonhosted.org/packages/e3/8c/24116b604c6bc22ce1e4e6d458ad5f4941cc363b81eabac01fe2ae3bcd9c/odoo14_addon_l10n_br_nfe-14.0.9.0.1-py3-none-any.whl
+[2024-06-02 20:36:28] INFO root fetch - processPackages [zeroize]: Downloading https://files.pythonhosted.org/packages/95/da/651562ce520e93c243e66aea32f3c3e7b1e518843f303051d0b0e3130229/zeroize-0.1.5.tar.gz
+[2024-06-02 20:36:28] INFO root fetch - processPackages [appthreat-vulnerability-db]: executing diffoscope
+[2024-06-02 20:36:28] INFO root fetch - processPackages [appthreat-vulnerability-db]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/appthreat_vulnerability_db-6.0.3.tar.gz tmp/appthreat_vulnerability_db-6.0.4.tar.gz --markdown 20240602/a/appthreat-vulnerability-db/6.0.3-6.0.4/README.md --exclude *.pyd
+[2024-06-02 20:36:28] INFO root fetch - processPackages [sofapal]: Downloading https://files.pythonhosted.org/packages/08/fc/f016935ef4bda90e59001b253abbf1654e884d4c10c25415c73ecffab93e/sofapal-0.0.4.tar.gz
+[2024-06-02 20:36:28] INFO root fetch - processPackages [projen]: Downloading https://files.pythonhosted.org/packages/27/01/9cade801c981186dd30be6406621f9193ef7e78f58f22ebd01ec323ad46c/projen-0.82.3.tar.gz
+[2024-06-02 20:36:28] INFO root fetch - processPackages [sofapal]: executing diffoscope
+[2024-06-02 20:36:28] INFO root fetch - processPackages [sofapal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sofapal-0.0.3.tar.gz tmp/sofapal-0.0.4.tar.gz --markdown 20240602/s/sofapal/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-06-02 20:36:28] INFO root fetch - processPackages [odoo14-addon-l10n-br-base]: Downloading https://files.pythonhosted.org/packages/e6/4e/1de605afc3554f26c5d369223ddbdaa172fe7e48ca2958b2cddfea5d5bce/odoo14_addon_l10n_br_base-14.0.3.9.0-py3-none-any.whl
+[2024-06-02 20:36:28] INFO root fetch - processPackages [odoo14-addon-l10n-br-nfe]: Downloading https://files.pythonhosted.org/packages/f8/ef/5b863388381c35c36cfea4e1f356dafa923aab127c4dfe81de1ea7bd0465/odoo14_addon_l10n_br_nfe-14.0.9.1.1.dev1-py3-none-any.whl
+[2024-06-02 20:36:28] INFO root fetch - processPackages [zeroize]: Downloading https://files.pythonhosted.org/packages/bb/44/1c63d90a724b10d5bbb173fe9843becae8f7e448d41ccabc5f351c5b9188/zeroize-0.1.6-pp39-pypy39_pp73-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl
+[2024-06-02 20:36:28] INFO root fetch - processPackages [odoo14-addon-l10n-br-base]: executing diffoscope
+[2024-06-02 20:36:28] INFO root fetch - processPackages [odoo14-addon-l10n-br-base]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_l10n_br_base-14.0.3.8.1.dev1-py3-none-any.whl.zip tmp/odoo14_addon_l10n_br_base-14.0.3.9.0-py3-none-any.whl.zip --markdown 20240602/o/odoo14-addon-l10n-br-base/14.0.3.8.1.dev1-14.0.3.9.0/README.md --exclude *.pyd
+[2024-06-02 20:36:28] INFO root fetch - processPackages [odoo14-addon-l10n-br-nfe]: executing diffoscope
+[2024-06-02 20:36:28] INFO root fetch - processPackages [odoo14-addon-l10n-br-nfe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_l10n_br_nfe-14.0.9.0.1-py3-none-any.whl.zip tmp/odoo14_addon_l10n_br_nfe-14.0.9.1.1.dev1-py3-none-any.whl.zip --markdown 20240602/o/odoo14-addon-l10n-br-nfe/14.0.9.0.1-14.0.9.1.1.dev1/README.md --exclude *.pyd
+[2024-06-02 20:36:28] INFO root fetch - processPackages [projen]: executing diffoscope
+[2024-06-02 20:36:28] INFO root fetch - processPackages [projen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/projen-0.82.2.tar.gz tmp/projen-0.82.3.tar.gz --markdown 20240602/p/projen/0.82.2-0.82.3/README.md --exclude *.pyd
+[2024-06-02 20:36:28] INFO root fetch - processPackages [zeroize]: executing diffoscope
+[2024-06-02 20:36:28] INFO root fetch - processPackages [zeroize]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zeroize-0.1.5.tar.gz tmp/zeroize-0.1.6-pp39-pypy39_pp73-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl.zip --markdown 20240602/z/zeroize/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-06-02 20:36:28] INFO root fetch - processPackages [appthreat-vulnerability-db]: Remove: archive file [/home/abi/fetcher/tmp/appthreat_vulnerability_db-6.0.3.tar.gz]
+[2024-06-02 20:36:28] INFO root fetch - processPackages [appthreat-vulnerability-db]: Remove: archive file [/home/abi/fetcher/tmp/appthreat_vulnerability_db-6.0.4.tar.gz]
+[2024-06-02 20:36:28] INFO root fetch - main [MainThread]: End processing [appthreat-vulnerability-db]: success
+[2024-06-02 20:36:28] INFO root fetch - processPackages [sofapal]: Remove: archive file [/home/abi/fetcher/tmp/sofapal-0.0.3.tar.gz]
+[2024-06-02 20:36:28] INFO root fetch - processPackages [sofapal]: Remove: archive file [/home/abi/fetcher/tmp/sofapal-0.0.4.tar.gz]
+[2024-06-02 20:36:28] INFO root fetch - main [MainThread]: End processing [sofapal]: success
+[2024-06-02 20:36:29] INFO root fetch - processPackages [odoo14-addon-l10n-br-nfe]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_l10n_br_nfe-14.0.9.0.1-py3-none-any.whl.zip]
+[2024-06-02 20:36:29] INFO root fetch - processPackages [odoo14-addon-l10n-br-nfe]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_l10n_br_nfe-14.0.9.1.1.dev1-py3-none-any.whl.zip]
+[2024-06-02 20:36:29] INFO root fetch - main [MainThread]: End processing [odoo14-addon-l10n-br-nfe]: success
+[2024-06-02 20:36:29] INFO root fetch - processPackages [zeroize]: Remove: archive file [/home/abi/fetcher/tmp/zeroize-0.1.5.tar.gz]
+[2024-06-02 20:36:29] INFO root fetch - processPackages [zeroize]: Remove: archive file [/home/abi/fetcher/tmp/zeroize-0.1.6-pp39-pypy39_pp73-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl.zip]
+[2024-06-02 20:36:29] INFO root fetch - main [MainThread]: End processing [zeroize]: success
+[2024-06-02 20:36:29] INFO root fetch - processPackages [odoo14-addon-l10n-br-base]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_l10n_br_base-14.0.3.8.1.dev1-py3-none-any.whl.zip]
+[2024-06-02 20:36:29] INFO root fetch - processPackages [odoo14-addon-l10n-br-base]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_l10n_br_base-14.0.3.9.0-py3-none-any.whl.zip]
+[2024-06-02 20:36:29] INFO root fetch - main [MainThread]: End processing [odoo14-addon-l10n-br-base]: success
+[2024-06-02 20:36:29] INFO root fetch - processPackages [projen]: Remove: archive file [/home/abi/fetcher/tmp/projen-0.82.2.tar.gz]
+[2024-06-02 20:36:29] INFO root fetch - processPackages [projen]: Remove: archive file [/home/abi/fetcher/tmp/projen-0.82.3.tar.gz]
+[2024-06-02 20:36:29] INFO root fetch - main [MainThread]: End processing [projen]: success
+[2024-06-02 20:36:29] INFO root fetch - main [MainThread]: Store serial: [23491980]
