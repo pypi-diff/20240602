@@ -20066,3 +20066,102 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 22:57:05] INFO root fetch - processPackages [gopad]: Remove: archive file [/home/abi/fetcher/tmp/gopad-1.1.0.tar.gz]
 [2024-06-02 22:57:05] INFO root fetch - main [MainThread]: End processing [gopad]: success
 [2024-06-02 22:57:05] INFO root fetch - main [MainThread]: Store serial: [23493596]
+[2024-06-02 22:59:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23493596]
+[2024-06-02 22:59:14] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2024-06-02 22:59:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: meghana-hello-world
+[2024-06-02 22:59:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: copilothistoryexporter
+[2024-06-02 22:59:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: came-domotic-unofficial
+[2024-06-02 22:59:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tencentcloud-sdk-python-tcb
+[2024-06-02 22:59:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: neurocaps
+[2024-06-02 22:59:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: tencentcloud-sdk-python-tcbr
+[2024-06-02 22:59:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: clicksearch
+[2024-06-02 22:59:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: tencentcloud-sdk-python-tcex
+[2024-06-02 22:59:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: tencentcloud-sdk-python-tchd
+[2024-06-02 22:59:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: hemanth-hello-world
+[2024-06-02 22:59:14] INFO root fetch - processPackages [copilothistoryexporter]: New version: [1.0.3.5] Old Version: [1.0.3.4]
+[2024-06-02 22:59:14] INFO root fetch - processPackages [copilothistoryexporter]: Downloading https://files.pythonhosted.org/packages/6d/01/faaa4ec610f3e1cdc0515b5bcb67898df1159b3b75a269ae51ae939862f2/copilothistoryexporter-1.0.3.4.tar.gz
+[2024-06-02 22:59:14] WARNING root fetch - processPackages [meghana-hello-world]: Skipping, unable to determine old version
+[2024-06-02 22:59:14] INFO root fetch - processPackages [meghana-hello-world]: Start processing: tencentcloud-sdk-python-tci
+[2024-06-02 22:59:14] INFO root fetch - main [MainThread]: End processing [meghana-hello-world] error
+[2024-06-02 22:59:14] INFO root fetch - processPackages [came-domotic-unofficial]: New version: [1.0.0rc9] Old Version: [1.0.0rc8]
+[2024-06-02 22:59:14] WARNING root fetch - processPackages [hemanth-hello-world]: Skipping, unable to determine old version
+[2024-06-02 22:59:14] INFO root fetch - processPackages [hemanth-hello-world]: Start processing: stack-graphs-python-bindings
+[2024-06-02 22:59:14] INFO root fetch - main [MainThread]: End processing [hemanth-hello-world] error
+[2024-06-02 22:59:14] INFO root fetch - processPackages [clicksearch]: New version: [0.2] Old Version: [0.1]
+[2024-06-02 22:59:14] INFO root fetch - processPackages [neurocaps]: New version: [0.9.7] Old Version: [0.9.6]
+[2024-06-02 22:59:14] INFO root fetch - processPackages [tencentcloud-sdk-python-tchd]: New version: [3.0.999] Old Version: [3.0.998]
+[2024-06-02 22:59:14] INFO root fetch - processPackages [tencentcloud-sdk-python-tcbr]: New version: [3.0.999] Old Version: [3.0.998]
+[2024-06-02 22:59:14] INFO root fetch - processPackages [tencentcloud-sdk-python-tcb]: New version: [3.0.999] Old Version: [3.0.998]
+[2024-06-02 22:59:14] INFO root fetch - processPackages [tencentcloud-sdk-python-tcex]: New version: [3.0.999] Old Version: [3.0.998]
+[2024-06-02 22:59:15] INFO root fetch - processPackages [stack-graphs-python-bindings]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-06-02 22:59:15] INFO root fetch - processPackages [tencentcloud-sdk-python-tcb]: Downloading https://files.pythonhosted.org/packages/b0/9f/9fae18b940ebf887508248e5cc5d4d6e5342f9d09f04f147fcc21cbccc5d/tencentcloud-sdk-python-tcb-3.0.998.tar.gz
+[2024-06-02 22:59:15] INFO root fetch - processPackages [neurocaps]: Downloading https://files.pythonhosted.org/packages/94/b8/eb63fc066c2e35578a28070597cdf52459ef4de6a703f6fc50be60f2a1ea/neurocaps-0.9.6.tar.gz
+[2024-06-02 22:59:15] INFO root fetch - processPackages [tencentcloud-sdk-python-tchd]: Downloading https://files.pythonhosted.org/packages/e7/dd/470496a8bc3644c6dc51ea7ae9f5294a97e04aa55d7cb6c13f9cdfbae504/tencentcloud-sdk-python-tchd-3.0.998.tar.gz
+[2024-06-02 22:59:15] INFO root fetch - processPackages [came-domotic-unofficial]: Downloading https://files.pythonhosted.org/packages/56/db/a922ffb6c60188e7d3784dd620aef483ad4c07acc9d385fa43d16dcadfdf/came_domotic_unofficial-1.0.0rc8.tar.gz
+[2024-06-02 22:59:15] INFO root fetch - processPackages [tencentcloud-sdk-python-tcbr]: Downloading https://files.pythonhosted.org/packages/1e/ca/3a77920b5d015352c941caae0af0b9e47101e454af90349e7a00ee9d4f40/tencentcloud-sdk-python-tcbr-3.0.998.tar.gz
+[2024-06-02 22:59:15] INFO root fetch - processPackages [clicksearch]: Downloading https://files.pythonhosted.org/packages/a4/07/588701b83e70c80c9c72b4947bf797617bc080755405c07bc7aa5968f7f5/clicksearch-0.1.tar.gz
+[2024-06-02 22:59:15] INFO root fetch - processPackages [tencentcloud-sdk-python-tci]: New version: [3.0.999] Old Version: [3.0.998]
+[2024-06-02 22:59:15] INFO root fetch - processPackages [tencentcloud-sdk-python-tcex]: Downloading https://files.pythonhosted.org/packages/27/a7/c326c453e0c7d0a625b76b160e70327916f52648d1e12ddf5362a05fc032/tencentcloud-sdk-python-tcex-3.0.998.tar.gz
+[2024-06-02 22:59:15] INFO root fetch - processPackages [copilothistoryexporter]: Downloading https://files.pythonhosted.org/packages/58/b3/4ba3119cb784db5419b661dbc6c47fbb981da92717c60980f2532d0760ed/copilothistoryexporter-1.0.3.5.tar.gz
+[2024-06-02 22:59:15] INFO root fetch - processPackages [stack-graphs-python-bindings]: Downloading https://files.pythonhosted.org/packages/06/b8/a178941027195a77a7d5eb3f29012f26faf71cb27cfcf2cfcab729a7ae73/stack_graphs_python_bindings-0.0.8.tar.gz
+[2024-06-02 22:59:15] INFO root fetch - processPackages [copilothistoryexporter]: executing diffoscope
+[2024-06-02 22:59:15] INFO root fetch - processPackages [copilothistoryexporter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/copilothistoryexporter-1.0.3.4.tar.gz tmp/copilothistoryexporter-1.0.3.5.tar.gz --markdown 20240602/c/copilothistoryexporter/1.0.3.4-1.0.3.5/README.md --exclude *.pyd
+[2024-06-02 22:59:15] INFO root fetch - processPackages [tencentcloud-sdk-python-tci]: Downloading https://files.pythonhosted.org/packages/88/13/447244fea2ac59fb002143ab7a6872a40fe023ef19c53b914c1007d5f801/tencentcloud-sdk-python-tci-3.0.998.tar.gz
+[2024-06-02 22:59:15] INFO root fetch - processPackages [neurocaps]: Downloading https://files.pythonhosted.org/packages/c5/e2/fea9c30ca0f9f024f0cff662fc651469177434f7fbe5368a658856372f85/neurocaps-0.9.7.tar.gz
+[2024-06-02 22:59:15] INFO root fetch - processPackages [tencentcloud-sdk-python-tcb]: Downloading https://files.pythonhosted.org/packages/74/3b/942dca5f60c252fa151c186ac96d525e10206a4d5f0449ab92870990a428/tencentcloud-sdk-python-tcb-3.0.999.tar.gz
+[2024-06-02 22:59:15] INFO root fetch - processPackages [clicksearch]: Downloading https://files.pythonhosted.org/packages/68/b2/63df4d99e703c77ac066050c1ae1aea109f20284c18d17475c9e2c8f3eb9/clicksearch-0.2.tar.gz
+[2024-06-02 22:59:15] INFO root fetch - processPackages [tencentcloud-sdk-python-tchd]: Downloading https://files.pythonhosted.org/packages/ff/0d/a4657aff6a79429f541d57dd11f9f8250141378d3343253bf2a9e2191f28/tencentcloud-sdk-python-tchd-3.0.999.tar.gz
+[2024-06-02 22:59:15] INFO root fetch - processPackages [tencentcloud-sdk-python-tcbr]: Downloading https://files.pythonhosted.org/packages/bc/ea/a72bf279ee2386a70d415d18ef8f8bd2e92f395a8d13c12deb5560030de2/tencentcloud-sdk-python-tcbr-3.0.999.tar.gz
+[2024-06-02 22:59:15] INFO root fetch - processPackages [came-domotic-unofficial]: Downloading https://files.pythonhosted.org/packages/ae/ac/35cd80b06275e61fcac0172400a0f72d904ae61a3d5ef631cecdcfab7d52/came_domotic_unofficial-1.0.0rc9.tar.gz
+[2024-06-02 22:59:15] INFO root fetch - processPackages [tencentcloud-sdk-python-tcex]: Downloading https://files.pythonhosted.org/packages/06/f0/bef7ea7199fb40b71edbd9e4bc7e430fba283576e0933a65bd66d32faa68/tencentcloud-sdk-python-tcex-3.0.999.tar.gz
+[2024-06-02 22:59:15] INFO root fetch - processPackages [neurocaps]: executing diffoscope
+[2024-06-02 22:59:15] INFO root fetch - processPackages [neurocaps]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neurocaps-0.9.6.tar.gz tmp/neurocaps-0.9.7.tar.gz --markdown 20240602/n/neurocaps/0.9.6-0.9.7/README.md --exclude *.pyd
+[2024-06-02 22:59:15] INFO root fetch - processPackages [tencentcloud-sdk-python-tcb]: executing diffoscope
+[2024-06-02 22:59:15] INFO root fetch - processPackages [tencentcloud-sdk-python-tcb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tencentcloud-sdk-python-tcb-3.0.998.tar.gz tmp/tencentcloud-sdk-python-tcb-3.0.999.tar.gz --markdown 20240602/t/tencentcloud-sdk-python-tcb/3.0.998-3.0.999/README.md --exclude *.pyd
+[2024-06-02 22:59:15] INFO root fetch - processPackages [stack-graphs-python-bindings]: Downloading https://files.pythonhosted.org/packages/d9/8d/87ff4505177b44a4c8f1aac75b05fe9e1d5b46c4715ab3ac99780ccd9d30/stack_graphs_python_bindings-0.0.9.tar.gz
+[2024-06-02 22:59:15] INFO root fetch - processPackages [tencentcloud-sdk-python-tchd]: executing diffoscope
+[2024-06-02 22:59:15] INFO root fetch - processPackages [tencentcloud-sdk-python-tchd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tencentcloud-sdk-python-tchd-3.0.998.tar.gz tmp/tencentcloud-sdk-python-tchd-3.0.999.tar.gz --markdown 20240602/t/tencentcloud-sdk-python-tchd/3.0.998-3.0.999/README.md --exclude *.pyd
+[2024-06-02 22:59:15] INFO root fetch - processPackages [came-domotic-unofficial]: executing diffoscope
+[2024-06-02 22:59:15] INFO root fetch - processPackages [came-domotic-unofficial]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/came_domotic_unofficial-1.0.0rc8.tar.gz tmp/came_domotic_unofficial-1.0.0rc9.tar.gz --markdown 20240602/c/came-domotic-unofficial/1.0.0rc8-1.0.0rc9/README.md --exclude *.pyd
+[2024-06-02 22:59:15] INFO root fetch - processPackages [tencentcloud-sdk-python-tcbr]: executing diffoscope
+[2024-06-02 22:59:15] INFO root fetch - processPackages [tencentcloud-sdk-python-tcbr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tencentcloud-sdk-python-tcbr-3.0.998.tar.gz tmp/tencentcloud-sdk-python-tcbr-3.0.999.tar.gz --markdown 20240602/t/tencentcloud-sdk-python-tcbr/3.0.998-3.0.999/README.md --exclude *.pyd
+[2024-06-02 22:59:15] INFO root fetch - processPackages [tencentcloud-sdk-python-tci]: Downloading https://files.pythonhosted.org/packages/5f/e1/bab98f22337a6e71c07f6c1fc578c7161f0c0497a7a6080530c6a07063d1/tencentcloud-sdk-python-tci-3.0.999.tar.gz
+[2024-06-02 22:59:15] INFO root fetch - processPackages [tencentcloud-sdk-python-tcex]: executing diffoscope
+[2024-06-02 22:59:15] INFO root fetch - processPackages [tencentcloud-sdk-python-tcex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tencentcloud-sdk-python-tcex-3.0.998.tar.gz tmp/tencentcloud-sdk-python-tcex-3.0.999.tar.gz --markdown 20240602/t/tencentcloud-sdk-python-tcex/3.0.998-3.0.999/README.md --exclude *.pyd
+[2024-06-02 22:59:15] INFO root fetch - processPackages [clicksearch]: executing diffoscope
+[2024-06-02 22:59:15] INFO root fetch - processPackages [clicksearch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clicksearch-0.1.tar.gz tmp/clicksearch-0.2.tar.gz --markdown 20240602/c/clicksearch/0.1-0.2/README.md --exclude *.pyd
+[2024-06-02 22:59:15] INFO root fetch - processPackages [stack-graphs-python-bindings]: executing diffoscope
+[2024-06-02 22:59:15] INFO root fetch - processPackages [stack-graphs-python-bindings]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stack_graphs_python_bindings-0.0.8.tar.gz tmp/stack_graphs_python_bindings-0.0.9.tar.gz --markdown 20240602/s/stack-graphs-python-bindings/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-06-02 22:59:16] INFO root fetch - processPackages [tencentcloud-sdk-python-tci]: executing diffoscope
+[2024-06-02 22:59:16] INFO root fetch - processPackages [tencentcloud-sdk-python-tci]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tencentcloud-sdk-python-tci-3.0.998.tar.gz tmp/tencentcloud-sdk-python-tci-3.0.999.tar.gz --markdown 20240602/t/tencentcloud-sdk-python-tci/3.0.998-3.0.999/README.md --exclude *.pyd
+[2024-06-02 22:59:16] INFO root fetch - processPackages [copilothistoryexporter]: Remove: archive file [/home/abi/fetcher/tmp/copilothistoryexporter-1.0.3.4.tar.gz]
+[2024-06-02 22:59:16] INFO root fetch - processPackages [copilothistoryexporter]: Remove: archive file [/home/abi/fetcher/tmp/copilothistoryexporter-1.0.3.5.tar.gz]
+[2024-06-02 22:59:16] INFO root fetch - main [MainThread]: End processing [copilothistoryexporter]: success
+[2024-06-02 22:59:16] INFO root fetch - processPackages [tencentcloud-sdk-python-tchd]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-tchd-3.0.998.tar.gz]
+[2024-06-02 22:59:16] INFO root fetch - processPackages [tencentcloud-sdk-python-tchd]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-tchd-3.0.999.tar.gz]
+[2024-06-02 22:59:16] INFO root fetch - main [MainThread]: End processing [tencentcloud-sdk-python-tchd]: success
+[2024-06-02 22:59:16] INFO root fetch - processPackages [tencentcloud-sdk-python-tcb]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-tcb-3.0.998.tar.gz]
+[2024-06-02 22:59:16] INFO root fetch - processPackages [tencentcloud-sdk-python-tcb]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-tcb-3.0.999.tar.gz]
+[2024-06-02 22:59:16] INFO root fetch - main [MainThread]: End processing [tencentcloud-sdk-python-tcb]: success
+[2024-06-02 22:59:16] INFO root fetch - processPackages [tencentcloud-sdk-python-tcex]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-tcex-3.0.998.tar.gz]
+[2024-06-02 22:59:16] INFO root fetch - processPackages [tencentcloud-sdk-python-tcex]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-tcex-3.0.999.tar.gz]
+[2024-06-02 22:59:16] INFO root fetch - main [MainThread]: End processing [tencentcloud-sdk-python-tcex]: success
+[2024-06-02 22:59:16] INFO root fetch - processPackages [came-domotic-unofficial]: Remove: archive file [/home/abi/fetcher/tmp/came_domotic_unofficial-1.0.0rc8.tar.gz]
+[2024-06-02 22:59:16] INFO root fetch - processPackages [came-domotic-unofficial]: Remove: archive file [/home/abi/fetcher/tmp/came_domotic_unofficial-1.0.0rc9.tar.gz]
+[2024-06-02 22:59:16] INFO root fetch - main [MainThread]: End processing [came-domotic-unofficial]: success
+[2024-06-02 22:59:16] INFO root fetch - processPackages [stack-graphs-python-bindings]: Remove: archive file [/home/abi/fetcher/tmp/stack_graphs_python_bindings-0.0.8.tar.gz]
+[2024-06-02 22:59:16] INFO root fetch - processPackages [stack-graphs-python-bindings]: Remove: archive file [/home/abi/fetcher/tmp/stack_graphs_python_bindings-0.0.9.tar.gz]
+[2024-06-02 22:59:16] INFO root fetch - main [MainThread]: End processing [stack-graphs-python-bindings]: success
+[2024-06-02 22:59:16] INFO root fetch - processPackages [tencentcloud-sdk-python-tcbr]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-tcbr-3.0.998.tar.gz]
+[2024-06-02 22:59:16] INFO root fetch - processPackages [tencentcloud-sdk-python-tcbr]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-tcbr-3.0.999.tar.gz]
+[2024-06-02 22:59:16] INFO root fetch - main [MainThread]: End processing [tencentcloud-sdk-python-tcbr]: success
+[2024-06-02 22:59:16] INFO root fetch - processPackages [tencentcloud-sdk-python-tci]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-tci-3.0.998.tar.gz]
+[2024-06-02 22:59:16] INFO root fetch - processPackages [tencentcloud-sdk-python-tci]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-tci-3.0.999.tar.gz]
+[2024-06-02 22:59:16] INFO root fetch - main [MainThread]: End processing [tencentcloud-sdk-python-tci]: success
+[2024-06-02 22:59:17] INFO root fetch - processPackages [clicksearch]: Remove: archive file [/home/abi/fetcher/tmp/clicksearch-0.1.tar.gz]
+[2024-06-02 22:59:17] INFO root fetch - processPackages [clicksearch]: Remove: archive file [/home/abi/fetcher/tmp/clicksearch-0.2.tar.gz]
+[2024-06-02 22:59:17] INFO root fetch - main [MainThread]: End processing [clicksearch]: success
+[2024-06-02 22:59:17] INFO root fetch - processPackages [neurocaps]: Remove: archive file [/home/abi/fetcher/tmp/neurocaps-0.9.6.tar.gz]
+[2024-06-02 22:59:17] INFO root fetch - processPackages [neurocaps]: Remove: archive file [/home/abi/fetcher/tmp/neurocaps-0.9.7.tar.gz]
+[2024-06-02 22:59:17] INFO root fetch - main [MainThread]: End processing [neurocaps]: success
+[2024-06-02 22:59:17] INFO root fetch - main [MainThread]: Store serial: [23493635]
