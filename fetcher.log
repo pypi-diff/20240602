@@ -10160,3 +10160,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-02 15:22:14] WARNING root fetch - processPackages [htmlExtractor]: Skipping, unable to determine old version
 [2024-06-02 15:22:14] INFO root fetch - main [MainThread]: End processing [htmlExtractor] error
 [2024-06-02 15:22:14] INFO root fetch - main [MainThread]: Store serial: [23489210]
+[2024-06-02 15:24:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23489210]
+[2024-06-02 15:24:23] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-02 15:24:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dimwit
+[2024-06-02 15:24:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: htmlExtractor
+[2024-06-02 15:24:23] INFO root fetch - processPackages [htmlExtractor]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-06-02 15:24:23] INFO root fetch - processPackages [dimwit]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-06-02 15:24:23] INFO root fetch - processPackages [htmlExtractor]: Downloading https://files.pythonhosted.org/packages/c1/26/2ca69ab050a7e463e7c285a286fc86c8e24abbf00c4e22d4339dc762e4f4/htmlExtractor-0.1.0.tar.gz
+[2024-06-02 15:24:23] INFO root fetch - processPackages [dimwit]: Downloading https://files.pythonhosted.org/packages/a9/18/678401ffda04d17a12961a9c0f4c90c376e51d1a35b99a2186ff88c770f4/dimwit-0.2.8.tar.gz
+[2024-06-02 15:24:23] INFO root fetch - processPackages [htmlExtractor]: Downloading https://files.pythonhosted.org/packages/13/0e/1d1e27a0160805bae9a4f407b24c787ed41bbbf85468edb79a379a9179e5/htmlExtractor-0.1.1.tar.gz
+[2024-06-02 15:24:24] INFO root fetch - processPackages [htmlExtractor]: executing diffoscope
+[2024-06-02 15:24:24] INFO root fetch - processPackages [htmlExtractor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/htmlExtractor-0.1.0.tar.gz tmp/htmlExtractor-0.1.1.tar.gz --markdown 20240602/h/htmlExtractor/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-06-02 15:24:24] INFO root fetch - processPackages [dimwit]: Downloading https://files.pythonhosted.org/packages/64/17/44179468a24462cb26ef0c8037042f4558fd0afd1d01815707b277472ce8/dimwit-0.2.9.tar.gz
+[2024-06-02 15:24:24] INFO root fetch - processPackages [dimwit]: executing diffoscope
+[2024-06-02 15:24:24] INFO root fetch - processPackages [dimwit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dimwit-0.2.8.tar.gz tmp/dimwit-0.2.9.tar.gz --markdown 20240602/d/dimwit/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-06-02 15:24:24] INFO root fetch - processPackages [htmlExtractor]: Remove: archive file [/home/abi/fetcher/tmp/htmlExtractor-0.1.0.tar.gz]
+[2024-06-02 15:24:24] INFO root fetch - processPackages [htmlExtractor]: Remove: archive file [/home/abi/fetcher/tmp/htmlExtractor-0.1.1.tar.gz]
+[2024-06-02 15:24:24] INFO root fetch - main [MainThread]: End processing [htmlExtractor]: success
+[2024-06-02 15:24:24] INFO root fetch - processPackages [dimwit]: Remove: archive file [/home/abi/fetcher/tmp/dimwit-0.2.8.tar.gz]
+[2024-06-02 15:24:24] INFO root fetch - processPackages [dimwit]: Remove: archive file [/home/abi/fetcher/tmp/dimwit-0.2.9.tar.gz]
+[2024-06-02 15:24:24] INFO root fetch - main [MainThread]: End processing [dimwit]: success
+[2024-06-02 15:24:24] INFO root fetch - main [MainThread]: Store serial: [23489216]
