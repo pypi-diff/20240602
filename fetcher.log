@@ -2492,3 +2492,9 @@
 [2024-06-02 03:17:18] INFO root fetch - processPackages [cdk-lambda-layer-curl]: Remove: archive file [/home/abi/fetcher/tmp/cdk-lambda-layer-curl-2.0.99.tar.gz]
 [2024-06-02 03:17:18] INFO root fetch - main [MainThread]: End processing [cdk-lambda-layer-curl]: success
 [2024-06-02 03:17:18] INFO root fetch - main [MainThread]: Store serial: [23485288]
+[2024-06-02 03:19:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23485288]
+[2024-06-02 03:19:27] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-02 03:19:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aira
+[2024-06-02 03:19:27] ERROR root fetch - processPackages [aira]: Unable to get metadata: No such project 'aira'
+[2024-06-02 03:19:27] INFO root fetch - main [MainThread]: End processing [aira] error
+[2024-06-02 03:19:27] INFO root fetch - main [MainThread]: Store serial: [23485293]
