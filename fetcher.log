@@ -7482,3 +7482,18 @@
 [2024-06-02 12:19:57] INFO root fetch - processPackages [danila-lib]: Remove: archive file [/home/abi/fetcher/tmp/danila-lib-1.8.5.tar.gz]
 [2024-06-02 12:19:57] INFO root fetch - main [MainThread]: End processing [danila-lib]: success
 [2024-06-02 12:19:57] INFO root fetch - main [MainThread]: Store serial: [23488080]
+[2024-06-02 12:22:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23488080]
+[2024-06-02 12:22:05] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-02 12:22:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dkregression
+[2024-06-02 12:22:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gaiah-toolkit
+[2024-06-02 12:22:06] INFO root fetch - processPackages [gaiah-toolkit]: New version: [0.6.1] Old Version: [0.5.2]
+[2024-06-02 12:22:06] WARNING root fetch - processPackages [dkregression]: Skipping, unable to determine old version
+[2024-06-02 12:22:06] INFO root fetch - main [MainThread]: End processing [dkregression] error
+[2024-06-02 12:22:06] INFO root fetch - processPackages [gaiah-toolkit]: Downloading https://files.pythonhosted.org/packages/12/bd/9c2f28340b58633064bf5c191eb610f1389ff7d9183f863d7157e0acda79/gaiah_toolkit-0.5.2.tar.gz
+[2024-06-02 12:22:06] INFO root fetch - processPackages [gaiah-toolkit]: Downloading https://files.pythonhosted.org/packages/05/0f/182aeaf3fc08ab6985024b62db6dfe760ac3405cf56cf23fbca1e2dcea16/gaiah_toolkit-0.6.1.tar.gz
+[2024-06-02 12:22:06] INFO root fetch - processPackages [gaiah-toolkit]: executing diffoscope
+[2024-06-02 12:22:06] INFO root fetch - processPackages [gaiah-toolkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gaiah_toolkit-0.5.2.tar.gz tmp/gaiah_toolkit-0.6.1.tar.gz --markdown 20240602/g/gaiah-toolkit/0.5.2-0.6.1/README.md --exclude *.pyd
+[2024-06-02 12:22:07] INFO root fetch - processPackages [gaiah-toolkit]: Remove: archive file [/home/abi/fetcher/tmp/gaiah_toolkit-0.5.2.tar.gz]
+[2024-06-02 12:22:07] INFO root fetch - processPackages [gaiah-toolkit]: Remove: archive file [/home/abi/fetcher/tmp/gaiah_toolkit-0.6.1.tar.gz]
+[2024-06-02 12:22:07] INFO root fetch - main [MainThread]: End processing [gaiah-toolkit]: success
+[2024-06-02 12:22:07] INFO root fetch - main [MainThread]: Store serial: [23488086]
