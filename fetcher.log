@@ -12217,3 +12217,42 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 17:27:00] INFO root fetch - processPackages [mistralrs]: Remove: archive file [/home/abi/fetcher/tmp/mistralrs-0.1.8.tar.gz]
 [2024-06-02 17:27:00] INFO root fetch - main [MainThread]: End processing [mistralrs]: success
 [2024-06-02 17:27:00] INFO root fetch - main [MainThread]: Store serial: [23490106]
+[2024-06-02 17:29:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23490106]
+[2024-06-02 17:29:09] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-02 17:29:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sc3dg
+[2024-06-02 17:29:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: few-shot-priming
+[2024-06-02 17:29:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dialog-workflow-local
+[2024-06-02 17:29:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: commonX
+[2024-06-02 17:29:09] INFO root fetch - processPackages [sc3dg]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-06-02 17:29:09] INFO root fetch - processPackages [commonX]: New version: [0.6.9] Old Version: [0.6.8]
+[2024-06-02 17:29:09] INFO root fetch - processPackages [dialog-workflow-local]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-06-02 17:29:09] INFO root fetch - processPackages [few-shot-priming]: New version: [0.3.99] Old Version: [0.3.98]
+[2024-06-02 17:29:09] INFO root fetch - processPackages [sc3dg]: Downloading https://files.pythonhosted.org/packages/97/65/1394420940d9bdc212860a3842baed2ba84016ee1556fa9c66bfb0fa3d07/sc3dg-0.0.8.tar.gz
+[2024-06-02 17:29:09] INFO root fetch - processPackages [commonX]: Downloading https://files.pythonhosted.org/packages/93/06/b016f34f2917fd0f6f455ca31a9a51d500bed0d9f9a3ef5b0347a1e20987/commonX-0.6.8.tar.gz
+[2024-06-02 17:29:09] INFO root fetch - processPackages [dialog-workflow-local]: Downloading https://files.pythonhosted.org/packages/d7/1b/685106e77cf65c8cf8b6d89352922054ce5d7b8980732c303e96ea9deb86/dialog_workflow_local-0.0.98.tar.gz
+[2024-06-02 17:29:09] INFO root fetch - processPackages [few-shot-priming]: Downloading https://files.pythonhosted.org/packages/eb/67/d15b11d0bfb57369fa16ba7f8c97cd3ddec8f771e6da8f11a3d819004b69/few_shot_priming-0.3.98-py3-none-any.whl
+[2024-06-02 17:29:09] INFO root fetch - processPackages [commonX]: Downloading https://files.pythonhosted.org/packages/22/5b/23b2f1d395988d177c31fc017d1e8270f793cd05333223e1cc122cdd9025/commonX-0.6.9.tar.gz
+[2024-06-02 17:29:09] INFO root fetch - processPackages [dialog-workflow-local]: Downloading https://files.pythonhosted.org/packages/05/c3/6c26db02b10e70c46d216b7b8ce442c6d7069761960f4589837162999b2a/dialog_workflow_local-0.0.99.tar.gz
+[2024-06-02 17:29:09] INFO root fetch - processPackages [sc3dg]: Downloading https://files.pythonhosted.org/packages/36/99/5a97c5b877e089a11d7fcbc1d935f5e5301bcc0f77867bda7d000fc1eb58/sc3dg-0.0.9.tar.gz
+[2024-06-02 17:29:09] INFO root fetch - processPackages [few-shot-priming]: Downloading https://files.pythonhosted.org/packages/ff/11/548f6e96803602e6431dc610d736d401b20fde986f85c35c8ad19a6d0958/few_shot_priming-0.3.99-py3-none-any.whl
+[2024-06-02 17:29:09] INFO root fetch - processPackages [commonX]: executing diffoscope
+[2024-06-02 17:29:09] INFO root fetch - processPackages [commonX]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/commonX-0.6.8.tar.gz tmp/commonX-0.6.9.tar.gz --markdown 20240602/c/commonX/0.6.8-0.6.9/README.md --exclude *.pyd
+[2024-06-02 17:29:09] INFO root fetch - processPackages [dialog-workflow-local]: executing diffoscope
+[2024-06-02 17:29:09] INFO root fetch - processPackages [dialog-workflow-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dialog_workflow_local-0.0.98.tar.gz tmp/dialog_workflow_local-0.0.99.tar.gz --markdown 20240602/d/dialog-workflow-local/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-06-02 17:29:09] INFO root fetch - processPackages [sc3dg]: executing diffoscope
+[2024-06-02 17:29:09] INFO root fetch - processPackages [sc3dg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sc3dg-0.0.8.tar.gz tmp/sc3dg-0.0.9.tar.gz --markdown 20240602/s/sc3dg/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-06-02 17:29:10] INFO root fetch - processPackages [few-shot-priming]: executing diffoscope
+[2024-06-02 17:29:10] INFO root fetch - processPackages [few-shot-priming]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/few_shot_priming-0.3.98-py3-none-any.whl.zip tmp/few_shot_priming-0.3.99-py3-none-any.whl.zip --markdown 20240602/f/few-shot-priming/0.3.98-0.3.99/README.md --exclude *.pyd
+[2024-06-02 17:29:10] INFO root fetch - processPackages [sc3dg]: Remove: archive file [/home/abi/fetcher/tmp/sc3dg-0.0.8.tar.gz]
+[2024-06-02 17:29:10] INFO root fetch - processPackages [sc3dg]: Remove: archive file [/home/abi/fetcher/tmp/sc3dg-0.0.9.tar.gz]
+[2024-06-02 17:29:10] INFO root fetch - main [MainThread]: End processing [sc3dg]: success
+[2024-06-02 17:29:10] INFO root fetch - processPackages [commonX]: Remove: archive file [/home/abi/fetcher/tmp/commonX-0.6.8.tar.gz]
+[2024-06-02 17:29:10] INFO root fetch - processPackages [commonX]: Remove: archive file [/home/abi/fetcher/tmp/commonX-0.6.9.tar.gz]
+[2024-06-02 17:29:10] INFO root fetch - main [MainThread]: End processing [commonX]: success
+[2024-06-02 17:29:10] INFO root fetch - processPackages [dialog-workflow-local]: Remove: archive file [/home/abi/fetcher/tmp/dialog_workflow_local-0.0.98.tar.gz]
+[2024-06-02 17:29:10] INFO root fetch - processPackages [dialog-workflow-local]: Remove: archive file [/home/abi/fetcher/tmp/dialog_workflow_local-0.0.99.tar.gz]
+[2024-06-02 17:29:10] INFO root fetch - main [MainThread]: End processing [dialog-workflow-local]: success
+[2024-06-02 17:29:11] INFO root fetch - processPackages [few-shot-priming]: Remove: archive file [/home/abi/fetcher/tmp/few_shot_priming-0.3.98-py3-none-any.whl.zip]
+[2024-06-02 17:29:11] INFO root fetch - processPackages [few-shot-priming]: Remove: archive file [/home/abi/fetcher/tmp/few_shot_priming-0.3.99-py3-none-any.whl.zip]
+[2024-06-02 17:29:11] INFO root fetch - main [MainThread]: End processing [few-shot-priming]: success
+[2024-06-02 17:29:11] INFO root fetch - main [MainThread]: Store serial: [23490119]
