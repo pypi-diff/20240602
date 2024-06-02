@@ -9191,3 +9191,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-02 14:09:34] INFO root fetch - processPackages [miksiai]: Remove: archive file [/home/abi/fetcher/tmp/miksiai-1.0.8-cp38-cp38-musllinux_1_1_x86_64.whl.zip]
 [2024-06-02 14:09:34] INFO root fetch - main [MainThread]: End processing [miksiai]: success
 [2024-06-02 14:09:34] INFO root fetch - main [MainThread]: Store serial: [23488722]
+[2024-06-02 14:11:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23488722]
+[2024-06-02 14:11:42] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-06-02 14:11:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: visioncam
+[2024-06-02 14:11:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: duckdb_engine
+[2024-06-02 14:11:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: vsfemasr
+[2024-06-02 14:11:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: foreverbull
+[2024-06-02 14:11:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: apysc
+[2024-06-02 14:11:42] INFO root fetch - processPackages [apysc]: New version: [4.5.0] Old Version: [4.4.3]
+[2024-06-02 14:11:42] INFO root fetch - processPackages [foreverbull]: New version: [0.0.0.99.20230610094209] Old Version: [0.0.0.92]
+[2024-06-02 14:11:42] INFO root fetch - processPackages [vsfemasr]: New version: [2.0.0] Old Version: [1.2.0]
+[2024-06-02 14:11:42] INFO root fetch - processPackages [duckdb_engine]: New version: [0.9.5] Old Version: [0.9.4]
+[2024-06-02 14:11:42] WARNING root fetch - processPackages [visioncam]: Skipping, unable to determine old version
+[2024-06-02 14:11:42] INFO root fetch - main [MainThread]: End processing [visioncam] error
+[2024-06-02 14:11:42] INFO root fetch - processPackages [foreverbull]: Downloading https://files.pythonhosted.org/packages/83/5e/402b3d8e197a33b59ae5994459465f8027f487cad42df3747b300fe53dc4/foreverbull-0.0.0.92.tar.gz
+[2024-06-02 14:11:42] INFO root fetch - processPackages [apysc]: Downloading https://files.pythonhosted.org/packages/88/db/334bc29fce37aacff98b34e7fd48710a3fe32c5044a499823a52acd7d5ce/apysc-4.4.3.tar.gz
+[2024-06-02 14:11:43] INFO root fetch - processPackages [foreverbull]: Downloading https://files.pythonhosted.org/packages/6e/c3/cf13499a255fd30c5d6ccd05686ba0af46cbde2f1cb23b7a4e121a7e23ee/foreverbull-0.0.0.99.20230610094209.tar.gz
+[2024-06-02 14:11:43] INFO root fetch - processPackages [vsfemasr]: Downloading https://files.pythonhosted.org/packages/05/70/fdb14e0f85e3143fb22667089eb1112429484efc558e705d3fb0d0ddf7a7/vsfemasr-1.2.0-py3-none-any.whl
+[2024-06-02 14:11:43] INFO root fetch - processPackages [duckdb_engine]: Downloading https://files.pythonhosted.org/packages/c0/58/45ec039d7ee30f4acfa14fd7496e9ed81494e336d456c05f5dc412c5df6f/duckdb_engine-0.9.4.tar.gz
+[2024-06-02 14:11:43] INFO root fetch - processPackages [apysc]: Downloading https://files.pythonhosted.org/packages/6d/69/b9eb6f746af752a89cdaa4c111ffc8a50de8c1104d9857a2c6843ee0e570/apysc-4.5.0.tar.gz
+[2024-06-02 14:11:43] INFO root fetch - processPackages [foreverbull]: executing diffoscope
+[2024-06-02 14:11:43] INFO root fetch - processPackages [foreverbull]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/foreverbull-0.0.0.92.tar.gz tmp/foreverbull-0.0.0.99.20230610094209.tar.gz --markdown 20240602/f/foreverbull/0.0.0.92-0.0.0.99.20230610094209/README.md --exclude *.pyd
+[2024-06-02 14:11:43] INFO root fetch - processPackages [apysc]: executing diffoscope
+[2024-06-02 14:11:43] INFO root fetch - processPackages [apysc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/apysc-4.4.3.tar.gz tmp/apysc-4.5.0.tar.gz --markdown 20240602/a/apysc/4.4.3-4.5.0/README.md --exclude *.pyd
+[2024-06-02 14:11:43] INFO root fetch - processPackages [vsfemasr]: Downloading https://files.pythonhosted.org/packages/4b/e5/a41a63223a078cced5d78c751a372bca2fb6d71ccc0feab20cce62c79902/vsfemasr-2.0.0-py3-none-any.whl
+[2024-06-02 14:11:43] INFO root fetch - processPackages [duckdb_engine]: Downloading https://files.pythonhosted.org/packages/88/e6/96f825b215f7893dcb5cced97d436355f2baab2cddb553187e1be19c8d9a/duckdb_engine-0.9.5.tar.gz
+[2024-06-02 14:11:43] INFO root fetch - processPackages [duckdb_engine]: executing diffoscope
+[2024-06-02 14:11:43] INFO root fetch - processPackages [duckdb_engine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/duckdb_engine-0.9.4.tar.gz tmp/duckdb_engine-0.9.5.tar.gz --markdown 20240602/d/duckdb_engine/0.9.4-0.9.5/README.md --exclude *.pyd
+[2024-06-02 14:11:43] INFO root fetch - processPackages [vsfemasr]: executing diffoscope
+[2024-06-02 14:11:43] INFO root fetch - processPackages [vsfemasr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vsfemasr-1.2.0-py3-none-any.whl.zip tmp/vsfemasr-2.0.0-py3-none-any.whl.zip --markdown 20240602/v/vsfemasr/1.2.0-2.0.0/README.md --exclude *.pyd
+[2024-06-02 14:11:43] INFO root fetch - processPackages [foreverbull]: Remove: archive file [/home/abi/fetcher/tmp/foreverbull-0.0.0.92.tar.gz]
+[2024-06-02 14:11:43] INFO root fetch - processPackages [foreverbull]: Remove: archive file [/home/abi/fetcher/tmp/foreverbull-0.0.0.99.20230610094209.tar.gz]
+[2024-06-02 14:11:43] INFO root fetch - main [MainThread]: End processing [foreverbull]: success
+[2024-06-02 14:11:44] INFO root fetch - processPackages [vsfemasr]: Remove: archive file [/home/abi/fetcher/tmp/vsfemasr-1.2.0-py3-none-any.whl.zip]
+[2024-06-02 14:11:44] INFO root fetch - processPackages [vsfemasr]: Remove: archive file [/home/abi/fetcher/tmp/vsfemasr-2.0.0-py3-none-any.whl.zip]
+[2024-06-02 14:11:44] INFO root fetch - main [MainThread]: End processing [vsfemasr]: success
+[2024-06-02 14:11:44] INFO root fetch - processPackages [duckdb_engine]: Remove: archive file [/home/abi/fetcher/tmp/duckdb_engine-0.9.4.tar.gz]
+[2024-06-02 14:11:44] INFO root fetch - processPackages [duckdb_engine]: Remove: archive file [/home/abi/fetcher/tmp/duckdb_engine-0.9.5.tar.gz]
+[2024-06-02 14:11:44] INFO root fetch - main [MainThread]: End processing [duckdb_engine]: success
+[2024-06-02 14:11:50] INFO root fetch - processPackages [apysc]: Remove: archive file [/home/abi/fetcher/tmp/apysc-4.4.3.tar.gz]
+[2024-06-02 14:11:50] INFO root fetch - processPackages [apysc]: Remove: archive file [/home/abi/fetcher/tmp/apysc-4.5.0.tar.gz]
+[2024-06-02 14:11:50] INFO root fetch - main [MainThread]: End processing [apysc]: success
+[2024-06-02 14:11:50] INFO root fetch - main [MainThread]: Store serial: [23488759]
