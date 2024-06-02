@@ -9793,3 +9793,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-02 14:51:08] WARNING root fetch - processPackages [bertrand]: Skipping, unable to determine old version
 [2024-06-02 14:51:08] INFO root fetch - main [MainThread]: End processing [bertrand] error
 [2024-06-02 14:51:08] INFO root fetch - main [MainThread]: Store serial: [23489058]
+[2024-06-02 14:53:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23489058]
+[2024-06-02 14:53:16] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-02 14:53:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rockai-cli-app
+[2024-06-02 14:53:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mteb
+[2024-06-02 14:53:16] INFO root fetch - processPackages [rockai-cli-app]: New version: [0.2.8] Old Version: [0.2.7]
+[2024-06-02 14:53:16] INFO root fetch - processPackages [mteb]: New version: [1.9.3] Old Version: [1.9.2]
+[2024-06-02 14:53:16] INFO root fetch - processPackages [rockai-cli-app]: Downloading https://files.pythonhosted.org/packages/7f/a9/cfbe194eb00b392f8c27dcca495de16dab129d6ee40ff4c7439c1cbb7d42/rockai_cli_app-0.2.7.tar.gz
+[2024-06-02 14:53:16] INFO root fetch - processPackages [mteb]: Downloading https://files.pythonhosted.org/packages/aa/99/be58df74a89833b5d44fbd8f00e5c99b4ca82aa67a9c1487fd782328d3b5/mteb-1.9.2.tar.gz
+[2024-06-02 14:53:16] INFO root fetch - processPackages [rockai-cli-app]: Downloading https://files.pythonhosted.org/packages/4f/78/5efee53c62dd6c940dd8a56dfdda2217e352a5eac6dff0aab800c7c52c5b/rockai_cli_app-0.2.8.tar.gz
+[2024-06-02 14:53:16] INFO root fetch - processPackages [mteb]: Downloading https://files.pythonhosted.org/packages/1a/05/483a4778dcfb42b672c3c28ac435e64d386b1df507d3c0059e5da9194653/mteb-1.9.3.tar.gz
+[2024-06-02 14:53:16] INFO root fetch - processPackages [rockai-cli-app]: executing diffoscope
+[2024-06-02 14:53:16] INFO root fetch - processPackages [rockai-cli-app]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rockai_cli_app-0.2.7.tar.gz tmp/rockai_cli_app-0.2.8.tar.gz --markdown 20240602/r/rockai-cli-app/0.2.7-0.2.8/README.md --exclude *.pyd
+[2024-06-02 14:53:17] INFO root fetch - processPackages [mteb]: executing diffoscope
+[2024-06-02 14:53:17] INFO root fetch - processPackages [mteb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mteb-1.9.2.tar.gz tmp/mteb-1.9.3.tar.gz --markdown 20240602/m/mteb/1.9.2-1.9.3/README.md --exclude *.pyd
+[2024-06-02 14:53:17] INFO root fetch - processPackages [rockai-cli-app]: Remove: archive file [/home/abi/fetcher/tmp/rockai_cli_app-0.2.7.tar.gz]
+[2024-06-02 14:53:17] INFO root fetch - processPackages [rockai-cli-app]: Remove: archive file [/home/abi/fetcher/tmp/rockai_cli_app-0.2.8.tar.gz]
+[2024-06-02 14:53:17] INFO root fetch - main [MainThread]: End processing [rockai-cli-app]: success
+[2024-06-02 14:53:19] INFO root fetch - processPackages [mteb]: Remove: archive file [/home/abi/fetcher/tmp/mteb-1.9.2.tar.gz]
+[2024-06-02 14:53:19] INFO root fetch - processPackages [mteb]: Remove: archive file [/home/abi/fetcher/tmp/mteb-1.9.3.tar.gz]
+[2024-06-02 14:53:19] INFO root fetch - main [MainThread]: End processing [mteb]: success
+[2024-06-02 14:53:19] INFO root fetch - main [MainThread]: Store serial: [23489066]
