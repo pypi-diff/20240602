@@ -16827,3 +16827,51 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 21:11:24] INFO root fetch - processPackages [dahlia]: Remove: archive file [/home/abi/fetcher/tmp/dahlia-3.0.0.tar.gz]
 [2024-06-02 21:11:24] INFO root fetch - main [MainThread]: End processing [dahlia]: success
 [2024-06-02 21:11:24] INFO root fetch - main [MainThread]: Store serial: [23492287]
+[2024-06-02 21:13:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23492287]
+[2024-06-02 21:13:32] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-06-02 21:13:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: demetric
+[2024-06-02 21:13:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: breadslicer
+[2024-06-02 21:13:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gspread-delimited-export
+[2024-06-02 21:13:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: outline-python-api
+[2024-06-02 21:13:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: copilothistoryexporter
+[2024-06-02 21:13:32] INFO root fetch - processPackages [demetric]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-06-02 21:13:32] INFO root fetch - processPackages [copilothistoryexporter]: New version: [1.0.2.8] Old Version: [1.0.2.7]
+[2024-06-02 21:13:32] INFO root fetch - processPackages [breadslicer]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-06-02 21:13:32] INFO root fetch - processPackages [gspread-delimited-export]: New version: [0.2.2] Old Version: [0.2.1]
+[2024-06-02 21:13:32] INFO root fetch - processPackages [outline-python-api]: New version: [0.1.0a0] Old Version: [0.0.1a0]
+[2024-06-02 21:13:32] INFO root fetch - processPackages [demetric]: Downloading https://files.pythonhosted.org/packages/53/db/8a8a4289ae3819bd9ddf9f4834bbe69004daee811cea9ae568942b6ae753/demetric-0.1.8.tar.gz
+[2024-06-02 21:13:32] INFO root fetch - processPackages [breadslicer]: Downloading https://files.pythonhosted.org/packages/fd/83/34ca8087a2088b0bd166993aefe33ece9ad07823a62c7cf50bb8cd7246c2/breadslicer-0.0.2.tar.gz
+[2024-06-02 21:13:33] INFO root fetch - processPackages [copilothistoryexporter]: Downloading https://files.pythonhosted.org/packages/ef/4f/64bf6d045af2bec114e3fcd223aa7a275c2b50d7e32d418de328e0dc4ce0/copilothistoryexporter-1.0.2.7-py3-none-any.whl
+[2024-06-02 21:13:33] INFO root fetch - processPackages [gspread-delimited-export]: Downloading https://files.pythonhosted.org/packages/57/45/43bcafbe0aaaa98243f04dc53a70483f4b124904bc4f2f1e61b1fff8c482/gspread_delimited_export-0.2.1.tar.gz
+[2024-06-02 21:13:33] INFO root fetch - processPackages [outline-python-api]: Downloading https://files.pythonhosted.org/packages/70/5e/1ca39aa62eba0db4499460cd4f80e4b08b1ce3b4e7afa9963a97f81724ad/outline_python_api-0.0.1a0.tar.gz
+[2024-06-02 21:13:33] INFO root fetch - processPackages [breadslicer]: Downloading https://files.pythonhosted.org/packages/d9/98/40d2e4d2a49cb5fe3aaa5ee2cd367e60f52dbb775bf40f08c659c8947f69/breadslicer-0.0.3.tar.gz
+[2024-06-02 21:13:33] INFO root fetch - processPackages [demetric]: Downloading https://files.pythonhosted.org/packages/92/f8/edc34f262d45c9ceaa5e373f207b892ca2de7a9e5b095476f7f0d137f845/demetric-0.1.9.tar.gz
+[2024-06-02 21:13:33] INFO root fetch - processPackages [breadslicer]: executing diffoscope
+[2024-06-02 21:13:33] INFO root fetch - processPackages [breadslicer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/breadslicer-0.0.2.tar.gz tmp/breadslicer-0.0.3.tar.gz --markdown 20240602/b/breadslicer/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-06-02 21:13:33] INFO root fetch - processPackages [copilothistoryexporter]: Downloading https://files.pythonhosted.org/packages/a7/df/988feecfe93912a1d7fe8dad54361149e3eced17b1c6007c290ea0888d36/copilothistoryexporter-1.0.2.8-py3-none-any.whl
+[2024-06-02 21:13:33] INFO root fetch - processPackages [gspread-delimited-export]: Downloading https://files.pythonhosted.org/packages/2a/92/0d964963c0ac1733634e8716a582443188bc6141887896c630528df6901a/gspread_delimited_export-0.2.2.tar.gz
+[2024-06-02 21:13:33] INFO root fetch - processPackages [demetric]: executing diffoscope
+[2024-06-02 21:13:33] INFO root fetch - processPackages [demetric]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/demetric-0.1.8.tar.gz tmp/demetric-0.1.9.tar.gz --markdown 20240602/d/demetric/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-06-02 21:13:33] INFO root fetch - processPackages [copilothistoryexporter]: executing diffoscope
+[2024-06-02 21:13:33] INFO root fetch - processPackages [copilothistoryexporter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/copilothistoryexporter-1.0.2.7-py3-none-any.whl.zip tmp/copilothistoryexporter-1.0.2.8-py3-none-any.whl.zip --markdown 20240602/c/copilothistoryexporter/1.0.2.7-1.0.2.8/README.md --exclude *.pyd
+[2024-06-02 21:13:33] INFO root fetch - processPackages [gspread-delimited-export]: executing diffoscope
+[2024-06-02 21:13:33] INFO root fetch - processPackages [gspread-delimited-export]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gspread_delimited_export-0.2.1.tar.gz tmp/gspread_delimited_export-0.2.2.tar.gz --markdown 20240602/g/gspread-delimited-export/0.2.1-0.2.2/README.md --exclude *.pyd
+[2024-06-02 21:13:33] INFO root fetch - processPackages [outline-python-api]: Downloading https://files.pythonhosted.org/packages/1c/4d/e71b5582d46ddad127887160dc8b180a593799c4026a0a570ac1dfe0f658/outline_python_api-0.1.0a0.tar.gz
+[2024-06-02 21:13:33] INFO root fetch - processPackages [outline-python-api]: executing diffoscope
+[2024-06-02 21:13:33] INFO root fetch - processPackages [outline-python-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/outline_python_api-0.0.1a0.tar.gz tmp/outline_python_api-0.1.0a0.tar.gz --markdown 20240602/o/outline-python-api/0.0.1a0-0.1.0a0/README.md --exclude *.pyd
+[2024-06-02 21:13:34] INFO root fetch - processPackages [demetric]: Remove: archive file [/home/abi/fetcher/tmp/demetric-0.1.8.tar.gz]
+[2024-06-02 21:13:34] INFO root fetch - processPackages [demetric]: Remove: archive file [/home/abi/fetcher/tmp/demetric-0.1.9.tar.gz]
+[2024-06-02 21:13:34] INFO root fetch - main [MainThread]: End processing [demetric]: success
+[2024-06-02 21:13:34] INFO root fetch - processPackages [copilothistoryexporter]: Remove: archive file [/home/abi/fetcher/tmp/copilothistoryexporter-1.0.2.7-py3-none-any.whl.zip]
+[2024-06-02 21:13:34] INFO root fetch - processPackages [copilothistoryexporter]: Remove: archive file [/home/abi/fetcher/tmp/copilothistoryexporter-1.0.2.8-py3-none-any.whl.zip]
+[2024-06-02 21:13:34] INFO root fetch - main [MainThread]: End processing [copilothistoryexporter]: success
+[2024-06-02 21:13:34] INFO root fetch - processPackages [gspread-delimited-export]: Remove: archive file [/home/abi/fetcher/tmp/gspread_delimited_export-0.2.1.tar.gz]
+[2024-06-02 21:13:34] INFO root fetch - processPackages [gspread-delimited-export]: Remove: archive file [/home/abi/fetcher/tmp/gspread_delimited_export-0.2.2.tar.gz]
+[2024-06-02 21:13:34] INFO root fetch - main [MainThread]: End processing [gspread-delimited-export]: success
+[2024-06-02 21:13:34] INFO root fetch - processPackages [breadslicer]: Remove: archive file [/home/abi/fetcher/tmp/breadslicer-0.0.2.tar.gz]
+[2024-06-02 21:13:34] INFO root fetch - processPackages [breadslicer]: Remove: archive file [/home/abi/fetcher/tmp/breadslicer-0.0.3.tar.gz]
+[2024-06-02 21:13:34] INFO root fetch - main [MainThread]: End processing [breadslicer]: success
+[2024-06-02 21:13:34] INFO root fetch - processPackages [outline-python-api]: Remove: archive file [/home/abi/fetcher/tmp/outline_python_api-0.0.1a0.tar.gz]
+[2024-06-02 21:13:34] INFO root fetch - processPackages [outline-python-api]: Remove: archive file [/home/abi/fetcher/tmp/outline_python_api-0.1.0a0.tar.gz]
+[2024-06-02 21:13:34] INFO root fetch - main [MainThread]: End processing [outline-python-api]: success
+[2024-06-02 21:13:34] INFO root fetch - main [MainThread]: Store serial: [23492302]
