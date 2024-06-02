@@ -11862,3 +11862,62 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 17:11:28] INFO root fetch - processPackages [few-shot-priming]: Remove: archive file [/home/abi/fetcher/tmp/few_shot_priming-0.3.99-py3-none-any.whl.zip]
 [2024-06-02 17:11:28] INFO root fetch - main [MainThread]: End processing [few-shot-priming]: success
 [2024-06-02 17:11:28] INFO root fetch - main [MainThread]: Store serial: [23489952]
+[2024-06-02 17:13:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23489952]
+[2024-06-02 17:13:37] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-06-02 17:13:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kfish
+[2024-06-02 17:13:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rlbot
+[2024-06-02 17:13:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: quickstats
+[2024-06-02 17:13:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cython-xinput
+[2024-06-02 17:13:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: rl-test-task-1
+[2024-06-02 17:13:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: rl-test-task-2
+[2024-06-02 17:13:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: rl-test-task-3
+[2024-06-02 17:13:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: SpheroidPy
+[2024-06-02 17:13:37] INFO root fetch - processPackages [rl-test-task-2]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-06-02 17:13:37] INFO root fetch - processPackages [rl-test-task-1]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-06-02 17:13:37] INFO root fetch - processPackages [rl-test-task-3]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-06-02 17:13:37] INFO root fetch - processPackages [kfish]: New version: [99.0.202406021510] Old Version: [99.0.202406020949]
+[2024-06-02 17:13:37] INFO root fetch - processPackages [rlbot]: New version: [1.9.6] Old Version: [1.9.5]
+[2024-06-02 17:13:37] INFO root fetch - processPackages [rl-test-task-3]: Downloading https://files.pythonhosted.org/packages/b5/4b/ea8e5a025b60bb233c84aa4de6a8b6e92a11ad7a6cf09533d37dfeb6cfc5/rl_test_task_3-0.1.1.tar.gz
+[2024-06-02 17:13:37] INFO root fetch - processPackages [rl-test-task-2]: Downloading https://files.pythonhosted.org/packages/90/94/fdd4b8220ea1e6605caff3e731a74dff5e637b3f2d0c599919493dfa954d/rl_test_task_2-0.1.1.tar.gz
+[2024-06-02 17:13:37] INFO root fetch - processPackages [quickstats]: New version: [0.7.0.5] Old Version: [0.7.0.4.3]
+[2024-06-02 17:13:37] WARNING root fetch - processPackages [SpheroidPy]: Skipping, unable to determine old version
+[2024-06-02 17:13:37] INFO root fetch - main [MainThread]: End processing [SpheroidPy] error
+[2024-06-02 17:13:37] WARNING root fetch - processPackages [cython-xinput]: Skipping, unable to determine old version
+[2024-06-02 17:13:37] INFO root fetch - main [MainThread]: End processing [cython-xinput] error
+[2024-06-02 17:13:37] INFO root fetch - processPackages [rl-test-task-1]: Downloading https://files.pythonhosted.org/packages/f6/05/63c284d9b8a60a34623dde85bdf8a2be010be359d29e239401c3fb419ada/rl_test_task_1-0.1.1.tar.gz
+[2024-06-02 17:13:37] INFO root fetch - processPackages [kfish]: Downloading https://files.pythonhosted.org/packages/b6/07/3f7335eb0d25bcc825c60bceaa121708059a3cdd11c50e58703c8bb1b2ab/kfish-99.0.202406020949.tar.gz
+[2024-06-02 17:13:37] INFO root fetch - processPackages [rlbot]: Downloading https://files.pythonhosted.org/packages/1a/93/e16a31790585a1f2f1a63ae0be9c894bf565a6d18e457e7fb9ae73662ff3/rlbot-1.9.5.tar.gz
+[2024-06-02 17:13:37] INFO root fetch - processPackages [quickstats]: Downloading https://files.pythonhosted.org/packages/19/b5/8349b3526c1c3610da3de1053040ec6b96867f5687da0eac606d51734199/quickstats-0.7.0.4.3-py3-none-any.whl
+[2024-06-02 17:13:37] WARNING root fetch - processPackages [kfish]: Skipping package: exceeds size limit 17007057>=10485760
+[2024-06-02 17:13:37] INFO root fetch - main [MainThread]: End processing [kfish] error
+[2024-06-02 17:13:37] INFO root fetch - processPackages [rl-test-task-2]: Downloading https://files.pythonhosted.org/packages/c7/aa/097de70c7efcd43bb8948dbda96f05641a519faa30cdd9dd135ce6dfff95/rl_test_task_2-0.1.2.tar.gz
+[2024-06-02 17:13:37] INFO root fetch - processPackages [rl-test-task-3]: Downloading https://files.pythonhosted.org/packages/a3/76/26a22f78f5486558ca084b5db5f522045a2c33788f7f17afbd190d293ffc/rl_test_task_3-0.1.2.tar.gz
+[2024-06-02 17:13:38] INFO root fetch - processPackages [rl-test-task-2]: executing diffoscope
+[2024-06-02 17:13:38] INFO root fetch - processPackages [rl-test-task-2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rl_test_task_2-0.1.1.tar.gz tmp/rl_test_task_2-0.1.2.tar.gz --markdown 20240602/r/rl-test-task-2/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-06-02 17:13:38] INFO root fetch - processPackages [rl-test-task-3]: executing diffoscope
+[2024-06-02 17:13:38] INFO root fetch - processPackages [rl-test-task-3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rl_test_task_3-0.1.1.tar.gz tmp/rl_test_task_3-0.1.2.tar.gz --markdown 20240602/r/rl-test-task-3/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-06-02 17:13:38] INFO root fetch - processPackages [rl-test-task-1]: Downloading https://files.pythonhosted.org/packages/c2/be/fe95243fe4e60652d6a6777f684a1a03b2630bd727cac58bceb8b8aff79d/rl_test_task_1-0.1.2.tar.gz
+[2024-06-02 17:13:38] INFO root fetch - processPackages [quickstats]: Downloading https://files.pythonhosted.org/packages/45/d5/5aa096988ce7be1747683702ca3eef0476dea4689f140114e113e9cfc635/quickstats-0.7.0.5.tar.gz
+[2024-06-02 17:13:38] INFO root fetch - processPackages [rl-test-task-1]: executing diffoscope
+[2024-06-02 17:13:38] INFO root fetch - processPackages [rl-test-task-1]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rl_test_task_1-0.1.1.tar.gz tmp/rl_test_task_1-0.1.2.tar.gz --markdown 20240602/r/rl-test-task-1/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-06-02 17:13:38] INFO root fetch - processPackages [rlbot]: Downloading https://files.pythonhosted.org/packages/76/ea/0c10db0b687a1f00e4ea4670cb258d704b444879725602fad12f6bcbe68f/rlbot-1.9.6.tar.gz
+[2024-06-02 17:13:38] INFO root fetch - processPackages [quickstats]: executing diffoscope
+[2024-06-02 17:13:38] INFO root fetch - processPackages [quickstats]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quickstats-0.7.0.4.3-py3-none-any.whl.zip tmp/quickstats-0.7.0.5.tar.gz --markdown 20240602/q/quickstats/0.7.0.4.3-0.7.0.5/README.md --exclude *.pyd
+[2024-06-02 17:13:38] INFO root fetch - processPackages [rl-test-task-2]: Remove: archive file [/home/abi/fetcher/tmp/rl_test_task_2-0.1.1.tar.gz]
+[2024-06-02 17:13:38] INFO root fetch - processPackages [rl-test-task-2]: Remove: archive file [/home/abi/fetcher/tmp/rl_test_task_2-0.1.2.tar.gz]
+[2024-06-02 17:13:38] INFO root fetch - main [MainThread]: End processing [rl-test-task-2]: success
+[2024-06-02 17:13:38] INFO root fetch - processPackages [rl-test-task-3]: Remove: archive file [/home/abi/fetcher/tmp/rl_test_task_3-0.1.1.tar.gz]
+[2024-06-02 17:13:38] INFO root fetch - processPackages [rl-test-task-3]: Remove: archive file [/home/abi/fetcher/tmp/rl_test_task_3-0.1.2.tar.gz]
+[2024-06-02 17:13:38] INFO root fetch - main [MainThread]: End processing [rl-test-task-3]: success
+[2024-06-02 17:13:38] INFO root fetch - processPackages [rl-test-task-1]: Remove: archive file [/home/abi/fetcher/tmp/rl_test_task_1-0.1.1.tar.gz]
+[2024-06-02 17:13:38] INFO root fetch - processPackages [rl-test-task-1]: Remove: archive file [/home/abi/fetcher/tmp/rl_test_task_1-0.1.2.tar.gz]
+[2024-06-02 17:13:38] INFO root fetch - main [MainThread]: End processing [rl-test-task-1]: success
+[2024-06-02 17:13:38] INFO root fetch - processPackages [rlbot]: executing diffoscope
+[2024-06-02 17:13:38] INFO root fetch - processPackages [rlbot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rlbot-1.9.5.tar.gz tmp/rlbot-1.9.6.tar.gz --markdown 20240602/r/rlbot/1.9.5-1.9.6/README.md --exclude *.pyd
+[2024-06-02 17:13:39] INFO root fetch - processPackages [quickstats]: Remove: archive file [/home/abi/fetcher/tmp/quickstats-0.7.0.4.3-py3-none-any.whl.zip]
+[2024-06-02 17:13:39] INFO root fetch - processPackages [quickstats]: Remove: archive file [/home/abi/fetcher/tmp/quickstats-0.7.0.5.tar.gz]
+[2024-06-02 17:13:39] INFO root fetch - main [MainThread]: End processing [quickstats]: success
+[2024-06-02 17:13:40] INFO root fetch - processPackages [rlbot]: Remove: archive file [/home/abi/fetcher/tmp/rlbot-1.9.5.tar.gz]
+[2024-06-02 17:13:40] INFO root fetch - processPackages [rlbot]: Remove: archive file [/home/abi/fetcher/tmp/rlbot-1.9.6.tar.gz]
+[2024-06-02 17:13:40] INFO root fetch - main [MainThread]: End processing [rlbot]: success
+[2024-06-02 17:13:40] INFO root fetch - main [MainThread]: Store serial: [23489980]
