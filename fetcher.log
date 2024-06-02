@@ -13541,3 +13541,63 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 18:25:04] INFO root fetch - processPackages [runningz]: Remove: archive file [/home/abi/fetcher/tmp/runningz-0.16.5-py39-none-any.whl.zip]
 [2024-06-02 18:25:04] INFO root fetch - main [MainThread]: End processing [runningz]: success
 [2024-06-02 18:25:05] INFO root fetch - main [MainThread]: Store serial: [23490708]
+[2024-06-02 18:27:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23490708]
+[2024-06-02 18:27:13] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-06-02 18:27:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cycls
+[2024-06-02 18:27:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: deknp
+[2024-06-02 18:27:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: yay-automation
+[2024-06-02 18:27:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: runningz
+[2024-06-02 18:27:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mltoolkit-laht
+[2024-06-02 18:27:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: basketball-reference-webscrapper
+[2024-06-02 18:27:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: hostinjection
+[2024-06-02 18:27:14] INFO root fetch - processPackages [yay-automation]: New version: [1.1.0] Old Version: [1.0.0]
+[2024-06-02 18:27:14] INFO root fetch - processPackages [mltoolkit-laht]: New version: [0.2.0] Old Version: [0.1.4]
+[2024-06-02 18:27:14] INFO root fetch - processPackages [cycls]: New version: [0.0.2.0] Old Version: [0.0.1.5]
+[2024-06-02 18:27:14] INFO root fetch - processPackages [runningz]: New version: [0.16.5] Old Version: [0.16.4]
+[2024-06-02 18:27:14] INFO root fetch - processPackages [deknp]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-06-02 18:27:14] INFO root fetch - processPackages [cycls]: Downloading https://files.pythonhosted.org/packages/3d/12/764bc2b95c1eb82e955e40ba58a35c288c35bc758be5ba6b90f373fd8d7e/cycls-0.0.1.5.tar.gz
+[2024-06-02 18:27:14] WARNING root fetch - processPackages [hostinjection]: Skipping, unable to determine old version
+[2024-06-02 18:27:14] INFO root fetch - main [MainThread]: End processing [hostinjection] error
+[2024-06-02 18:27:14] INFO root fetch - processPackages [basketball-reference-webscrapper]: New version: [0.4.1] Old Version: [0.4.0]
+[2024-06-02 18:27:14] INFO root fetch - processPackages [mltoolkit-laht]: Downloading https://files.pythonhosted.org/packages/cf/ed/df313b189c9bd9506324683f2e2b246f3e633d5cab0c0383c4af9b2335fb/mltoolkit-laht-0.1.4.tar.gz
+[2024-06-02 18:27:14] INFO root fetch - processPackages [runningz]: Downloading https://files.pythonhosted.org/packages/29/52/39bd09f5dae18157112be8a4157f352e58064fd1314fe42700c8a0aea3ba/runningz-0.16.4-py39-none-any.whl
+[2024-06-02 18:27:14] INFO root fetch - processPackages [yay-automation]: Downloading https://files.pythonhosted.org/packages/04/5a/95786d546346e1c92d7d1f31f290e46a704e498628d89b08d84327fe7024/yay-automation-1.0.0.tar.gz
+[2024-06-02 18:27:14] INFO root fetch - processPackages [deknp]: Downloading https://files.pythonhosted.org/packages/a2/f8/9474dd68e73e4b37117396fd62a452b444f4d0c923e3eb1d3ecdbfde6c63/deknp-0.1.8.tar.gz
+[2024-06-02 18:27:14] INFO root fetch - processPackages [basketball-reference-webscrapper]: Downloading https://files.pythonhosted.org/packages/26/3c/c3db1f4d3fec04121414d731609b39a4917f4134111f0eac76edf1104c13/basketball_reference_webscrapper-0.4.0.tar.gz
+[2024-06-02 18:27:14] INFO root fetch - processPackages [cycls]: Downloading https://files.pythonhosted.org/packages/b7/49/21b01bc8e40082a0f85d110ded53ffca5c0967ade6c43259ce47abffe145/cycls-0.0.2.0.tar.gz
+[2024-06-02 18:27:14] INFO root fetch - processPackages [mltoolkit-laht]: Downloading https://files.pythonhosted.org/packages/73/fe/c95b23953ccbe1505d0e5e72248477eafb0ed81bf90bcb51146e352a15b9/mltoolkit-laht-0.2.0.tar.gz
+[2024-06-02 18:27:14] INFO root fetch - processPackages [runningz]: Downloading https://files.pythonhosted.org/packages/a5/a1/28c09f6b8f973680979f6ca4c1794cac6965674b703d83eb937b2e096604/runningz-0.16.5-py39-none-any.whl
+[2024-06-02 18:27:14] INFO root fetch - processPackages [cycls]: executing diffoscope
+[2024-06-02 18:27:14] INFO root fetch - processPackages [cycls]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cycls-0.0.1.5.tar.gz tmp/cycls-0.0.2.0.tar.gz --markdown 20240602/c/cycls/0.0.1.5-0.0.2.0/README.md --exclude *.pyd
+[2024-06-02 18:27:14] INFO root fetch - processPackages [yay-automation]: Downloading https://files.pythonhosted.org/packages/17/39/6f8738a119c5983da778575b0aa5d215f91aea26a3c63c79304f9fac389a/yay-automation-1.1.0.tar.gz
+[2024-06-02 18:27:14] INFO root fetch - processPackages [mltoolkit-laht]: executing diffoscope
+[2024-06-02 18:27:14] INFO root fetch - processPackages [mltoolkit-laht]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mltoolkit-laht-0.1.4.tar.gz tmp/mltoolkit-laht-0.2.0.tar.gz --markdown 20240602/m/mltoolkit-laht/0.1.4-0.2.0/README.md --exclude *.pyd
+[2024-06-02 18:27:14] INFO root fetch - processPackages [yay-automation]: executing diffoscope
+[2024-06-02 18:27:14] INFO root fetch - processPackages [yay-automation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yay-automation-1.0.0.tar.gz tmp/yay-automation-1.1.0.tar.gz --markdown 20240602/y/yay-automation/1.0.0-1.1.0/README.md --exclude *.pyd
+[2024-06-02 18:27:14] INFO root fetch - processPackages [basketball-reference-webscrapper]: Downloading https://files.pythonhosted.org/packages/1d/1e/33800eea4cf58a3ecd2d7cc166915b6a3f3d58e3def782b15b3da298bd62/basketball_reference_webscrapper-0.4.1.tar.gz
+[2024-06-02 18:27:14] INFO root fetch - processPackages [runningz]: executing diffoscope
+[2024-06-02 18:27:14] INFO root fetch - processPackages [runningz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/runningz-0.16.4-py39-none-any.whl.zip tmp/runningz-0.16.5-py39-none-any.whl.zip --markdown 20240602/r/runningz/0.16.4-0.16.5/README.md --exclude *.pyd
+[2024-06-02 18:27:14] INFO root fetch - processPackages [deknp]: Downloading https://files.pythonhosted.org/packages/90/3c/ef8894b05c6e3a5145b0b0434c3743c1d3196369d4c0009f02fa74a4a1aa/deknp-0.1.9.tar.gz
+[2024-06-02 18:27:14] INFO root fetch - processPackages [basketball-reference-webscrapper]: executing diffoscope
+[2024-06-02 18:27:14] INFO root fetch - processPackages [basketball-reference-webscrapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/basketball_reference_webscrapper-0.4.0.tar.gz tmp/basketball_reference_webscrapper-0.4.1.tar.gz --markdown 20240602/b/basketball-reference-webscrapper/0.4.0-0.4.1/README.md --exclude *.pyd
+[2024-06-02 18:27:15] INFO root fetch - processPackages [deknp]: executing diffoscope
+[2024-06-02 18:27:15] INFO root fetch - processPackages [deknp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deknp-0.1.8.tar.gz tmp/deknp-0.1.9.tar.gz --markdown 20240602/d/deknp/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-06-02 18:27:15] INFO root fetch - processPackages [cycls]: Remove: archive file [/home/abi/fetcher/tmp/cycls-0.0.1.5.tar.gz]
+[2024-06-02 18:27:15] INFO root fetch - processPackages [cycls]: Remove: archive file [/home/abi/fetcher/tmp/cycls-0.0.2.0.tar.gz]
+[2024-06-02 18:27:15] INFO root fetch - main [MainThread]: End processing [cycls]: success
+[2024-06-02 18:27:15] INFO root fetch - processPackages [yay-automation]: Remove: archive file [/home/abi/fetcher/tmp/yay-automation-1.0.0.tar.gz]
+[2024-06-02 18:27:15] INFO root fetch - processPackages [yay-automation]: Remove: archive file [/home/abi/fetcher/tmp/yay-automation-1.1.0.tar.gz]
+[2024-06-02 18:27:15] INFO root fetch - main [MainThread]: End processing [yay-automation]: success
+[2024-06-02 18:27:15] INFO root fetch - processPackages [mltoolkit-laht]: Remove: archive file [/home/abi/fetcher/tmp/mltoolkit-laht-0.1.4.tar.gz]
+[2024-06-02 18:27:15] INFO root fetch - processPackages [mltoolkit-laht]: Remove: archive file [/home/abi/fetcher/tmp/mltoolkit-laht-0.2.0.tar.gz]
+[2024-06-02 18:27:15] INFO root fetch - main [MainThread]: End processing [mltoolkit-laht]: success
+[2024-06-02 18:27:15] INFO root fetch - processPackages [basketball-reference-webscrapper]: Remove: archive file [/home/abi/fetcher/tmp/basketball_reference_webscrapper-0.4.0.tar.gz]
+[2024-06-02 18:27:15] INFO root fetch - processPackages [basketball-reference-webscrapper]: Remove: archive file [/home/abi/fetcher/tmp/basketball_reference_webscrapper-0.4.1.tar.gz]
+[2024-06-02 18:27:15] INFO root fetch - main [MainThread]: End processing [basketball-reference-webscrapper]: success
+[2024-06-02 18:27:15] INFO root fetch - processPackages [deknp]: Remove: archive file [/home/abi/fetcher/tmp/deknp-0.1.8.tar.gz]
+[2024-06-02 18:27:15] INFO root fetch - processPackages [deknp]: Remove: archive file [/home/abi/fetcher/tmp/deknp-0.1.9.tar.gz]
+[2024-06-02 18:27:15] INFO root fetch - main [MainThread]: End processing [deknp]: success
+[2024-06-02 18:27:16] INFO root fetch - processPackages [runningz]: Remove: archive file [/home/abi/fetcher/tmp/runningz-0.16.4-py39-none-any.whl.zip]
+[2024-06-02 18:27:16] INFO root fetch - processPackages [runningz]: Remove: archive file [/home/abi/fetcher/tmp/runningz-0.16.5-py39-none-any.whl.zip]
+[2024-06-02 18:27:16] INFO root fetch - main [MainThread]: End processing [runningz]: success
+[2024-06-02 18:27:16] INFO root fetch - main [MainThread]: Store serial: [23490731]
