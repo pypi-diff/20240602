@@ -16183,3 +16183,27 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 20:36:29] INFO root fetch - processPackages [projen]: Remove: archive file [/home/abi/fetcher/tmp/projen-0.82.3.tar.gz]
 [2024-06-02 20:36:29] INFO root fetch - main [MainThread]: End processing [projen]: success
 [2024-06-02 20:36:29] INFO root fetch - main [MainThread]: Store serial: [23491980]
+[2024-06-02 20:38:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23491980]
+[2024-06-02 20:38:38] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-02 20:38:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: skyperious
+[2024-06-02 20:38:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: EthaneHikeNotification
+[2024-06-02 20:38:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ipyslides
+[2024-06-02 20:38:38] INFO root fetch - processPackages [ipyslides]: New version: [3.9.9] Old Version: [3.9.7]
+[2024-06-02 20:38:38] WARNING root fetch - processPackages [EthaneHikeNotification]: Skipping, unable to determine old version
+[2024-06-02 20:38:38] INFO root fetch - main [MainThread]: End processing [EthaneHikeNotification] error
+[2024-06-02 20:38:38] INFO root fetch - processPackages [ipyslides]: Downloading https://files.pythonhosted.org/packages/66/25/596ef64ca11e8a928e9faf06a21af19bd4a6853e41e6c83194ca87dfc01c/ipyslides-3.9.7.tar.gz
+[2024-06-02 20:38:38] INFO root fetch - processPackages [skyperious]: New version: [5.6] Old Version: [5.5]
+[2024-06-02 20:38:38] INFO root fetch - processPackages [skyperious]: Downloading https://files.pythonhosted.org/packages/9f/5c/a5244683b37ad9edfeb299cc006945182d0e2625f0a6ad564af21570bfc1/skyperious-5.5-py2.py3-none-any.whl
+[2024-06-02 20:38:38] INFO root fetch - processPackages [ipyslides]: Downloading https://files.pythonhosted.org/packages/8c/a0/d9b56bad4fadb34e075f0240f87f4c921739449db6e2fe3b814c11a1a1ec/ipyslides-3.9.9.tar.gz
+[2024-06-02 20:38:39] INFO root fetch - processPackages [ipyslides]: executing diffoscope
+[2024-06-02 20:38:39] INFO root fetch - processPackages [ipyslides]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ipyslides-3.9.7.tar.gz tmp/ipyslides-3.9.9.tar.gz --markdown 20240602/i/ipyslides/3.9.7-3.9.9/README.md --exclude *.pyd
+[2024-06-02 20:38:39] INFO root fetch - processPackages [skyperious]: Downloading https://files.pythonhosted.org/packages/a8/f6/49e708f84390f5f9c0be46575ea5f2bb555b557ec9d8d9aa428092cff0ba/skyperious-5.6-py2.py3-none-any.whl
+[2024-06-02 20:38:39] INFO root fetch - processPackages [skyperious]: executing diffoscope
+[2024-06-02 20:38:39] INFO root fetch - processPackages [skyperious]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/skyperious-5.5-py2.py3-none-any.whl.zip tmp/skyperious-5.6-py2.py3-none-any.whl.zip --markdown 20240602/s/skyperious/5.5-5.6/README.md --exclude *.pyd
+[2024-06-02 20:38:40] INFO root fetch - processPackages [ipyslides]: Remove: archive file [/home/abi/fetcher/tmp/ipyslides-3.9.7.tar.gz]
+[2024-06-02 20:38:40] INFO root fetch - processPackages [ipyslides]: Remove: archive file [/home/abi/fetcher/tmp/ipyslides-3.9.9.tar.gz]
+[2024-06-02 20:38:40] INFO root fetch - main [MainThread]: End processing [ipyslides]: success
+[2024-06-02 20:38:41] INFO root fetch - processPackages [skyperious]: Remove: archive file [/home/abi/fetcher/tmp/skyperious-5.5-py2.py3-none-any.whl.zip]
+[2024-06-02 20:38:41] INFO root fetch - processPackages [skyperious]: Remove: archive file [/home/abi/fetcher/tmp/skyperious-5.6-py2.py3-none-any.whl.zip]
+[2024-06-02 20:38:41] INFO root fetch - main [MainThread]: End processing [skyperious]: success
+[2024-06-02 20:38:41] INFO root fetch - main [MainThread]: Store serial: [23492035]
