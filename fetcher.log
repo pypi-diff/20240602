@@ -3229,3 +3229,15 @@
 [2024-06-02 04:43:54] INFO root fetch - processPackages [julep]: Remove: archive file [/home/abi/fetcher/tmp/julep-0.3.7.tar.gz]
 [2024-06-02 04:43:54] INFO root fetch - main [MainThread]: End processing [julep]: success
 [2024-06-02 04:43:54] INFO root fetch - main [MainThread]: Store serial: [23485741]
+[2024-06-02 04:45:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23485741]
+[2024-06-02 04:46:03] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-02 04:46:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mwbot
+[2024-06-02 04:46:03] INFO root fetch - processPackages [mwbot]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-06-02 04:46:03] INFO root fetch - processPackages [mwbot]: Downloading https://files.pythonhosted.org/packages/04/2a/83c3c929ffa136caf04fe2e04e9996f788f3d902fda90f4b4a657879163b/mwbot-1.0.8.tar.gz
+[2024-06-02 04:46:03] INFO root fetch - processPackages [mwbot]: Downloading https://files.pythonhosted.org/packages/13/d9/ccd8a39a431409e07bc8745f8cdfd517a823b4bbc6124285146a65795a24/mwbot-1.0.9.tar.gz
+[2024-06-02 04:46:04] INFO root fetch - processPackages [mwbot]: executing diffoscope
+[2024-06-02 04:46:04] INFO root fetch - processPackages [mwbot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mwbot-1.0.8.tar.gz tmp/mwbot-1.0.9.tar.gz --markdown 20240602/m/mwbot/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-06-02 04:46:04] INFO root fetch - processPackages [mwbot]: Remove: archive file [/home/abi/fetcher/tmp/mwbot-1.0.8.tar.gz]
+[2024-06-02 04:46:04] INFO root fetch - processPackages [mwbot]: Remove: archive file [/home/abi/fetcher/tmp/mwbot-1.0.9.tar.gz]
+[2024-06-02 04:46:04] INFO root fetch - main [MainThread]: End processing [mwbot]: success
+[2024-06-02 04:46:04] INFO root fetch - main [MainThread]: Store serial: [23485745]
