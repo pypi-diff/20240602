@@ -10838,3 +10838,60 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-02 16:16:25] INFO root fetch - processPackages [boldigger2]: Remove: archive file [/home/abi/fetcher/tmp/boldigger2-1.0.3.tar.gz]
 [2024-06-02 16:16:25] INFO root fetch - main [MainThread]: End processing [boldigger2]: success
 [2024-06-02 16:16:25] INFO root fetch - main [MainThread]: Store serial: [23489548]
+[2024-06-02 16:18:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23489548]
+[2024-06-02 16:18:33] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-06-02 16:18:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: earningscall
+[2024-06-02 16:18:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pysmartcocoon
+[2024-06-02 16:18:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: anydi
+[2024-06-02 16:18:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: xrayvisim
+[2024-06-02 16:18:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: DCMake
+[2024-06-02 16:18:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: scim2-client
+[2024-06-02 16:18:34] INFO root fetch - processPackages [anydi]: New version: [0.27.0a1] Old Version: [0.27.0a0]
+[2024-06-02 16:18:34] INFO root fetch - processPackages [scim2-client]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-06-02 16:18:34] INFO root fetch - processPackages [DCMake]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-06-02 16:18:34] INFO root fetch - processPackages [pysmartcocoon]: New version: [1.0.0] Old Version: [0.8.1]
+[2024-06-02 16:18:34] INFO root fetch - processPackages [earningscall]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-06-02 16:18:34] INFO root fetch - processPackages [xrayvisim]: New version: [0.2.0rc1] Old Version: [0.1.0rc1]
+[2024-06-02 16:18:34] INFO root fetch - processPackages [anydi]: Downloading https://files.pythonhosted.org/packages/fc/76/2c036fb9463fd91799470293bf9caeb9fb3b353728492ccde1a6d912ca15/anydi-0.27.0a0.tar.gz
+[2024-06-02 16:18:34] INFO root fetch - processPackages [scim2-client]: Downloading https://files.pythonhosted.org/packages/da/ad/a40fa548264ec075ec7e80ece981de54f89d92e26b0b3504a2641bee66f5/scim2_client-0.1.1.tar.gz
+[2024-06-02 16:18:34] INFO root fetch - processPackages [DCMake]: Downloading https://files.pythonhosted.org/packages/93/97/f812ee6f9e479ae46024730d256e28939d166605ebc2535b572ed651b6d8/DCMake-0.0.6.tar.gz
+[2024-06-02 16:18:34] INFO root fetch - processPackages [pysmartcocoon]: Downloading https://files.pythonhosted.org/packages/03/0a/6656b869b010e3e9b0425982f49d6dde50f100e7853d0d3c661c048db13a/pysmartcocoon-0.8.1.tar.gz
+[2024-06-02 16:18:34] INFO root fetch - processPackages [xrayvisim]: Downloading https://files.pythonhosted.org/packages/b9/64/a33c7ddde5c9629579b0e6d0bf5d0dfe16242f255d3e904c0d5121ba6fcb/xrayvisim-0.1.0rc1.tar.gz
+[2024-06-02 16:18:34] INFO root fetch - processPackages [earningscall]: Downloading https://files.pythonhosted.org/packages/03/a0/8653bcc30469658164bb6fbdc4e26c67b104d935cf347daadafc1cf24c68/earningscall-0.0.8.tar.gz
+[2024-06-02 16:18:34] INFO root fetch - processPackages [DCMake]: Downloading https://files.pythonhosted.org/packages/f1/73/878deb598eef7dfcaf0e242c139dfb7ffc017cf7fca998c16f467848e9e0/DCMake-0.0.7.tar.gz
+[2024-06-02 16:18:34] INFO root fetch - processPackages [anydi]: Downloading https://files.pythonhosted.org/packages/67/67/bb63a55ef565b52866ebd9df3d9635451f849e5959571e3a896fe0df5937/anydi-0.27.0a1.tar.gz
+[2024-06-02 16:18:34] INFO root fetch - processPackages [pysmartcocoon]: Downloading https://files.pythonhosted.org/packages/fe/97/e7d16b81d80089f10f47f9f454b8224ad40604a7bef0171f04fd09d491fd/pysmartcocoon-1.0.0.tar.gz
+[2024-06-02 16:18:34] INFO root fetch - processPackages [scim2-client]: Downloading https://files.pythonhosted.org/packages/b2/78/1dec47209534837e7fe696e7e5badfad28d5cedba92157570ad7c3d7bf37/scim2_client-0.1.2.tar.gz
+[2024-06-02 16:18:34] INFO root fetch - processPackages [DCMake]: executing diffoscope
+[2024-06-02 16:18:34] INFO root fetch - processPackages [DCMake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/DCMake-0.0.6.tar.gz tmp/DCMake-0.0.7.tar.gz --markdown 20240602/D/DCMake/0.0.6-0.0.7/README.md --exclude *.pyd
+[2024-06-02 16:18:34] INFO root fetch - processPackages [anydi]: executing diffoscope
+[2024-06-02 16:18:34] INFO root fetch - processPackages [anydi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anydi-0.27.0a0.tar.gz tmp/anydi-0.27.0a1.tar.gz --markdown 20240602/a/anydi/0.27.0a0-0.27.0a1/README.md --exclude *.pyd
+[2024-06-02 16:18:34] INFO root fetch - processPackages [pysmartcocoon]: executing diffoscope
+[2024-06-02 16:18:34] INFO root fetch - processPackages [pysmartcocoon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysmartcocoon-0.8.1.tar.gz tmp/pysmartcocoon-1.0.0.tar.gz --markdown 20240602/p/pysmartcocoon/0.8.1-1.0.0/README.md --exclude *.pyd
+[2024-06-02 16:18:34] INFO root fetch - processPackages [scim2-client]: executing diffoscope
+[2024-06-02 16:18:34] INFO root fetch - processPackages [scim2-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scim2_client-0.1.1.tar.gz tmp/scim2_client-0.1.2.tar.gz --markdown 20240602/s/scim2-client/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-06-02 16:18:34] INFO root fetch - processPackages [earningscall]: Downloading https://files.pythonhosted.org/packages/e5/3d/58609374fdb76716c9d6429b6e1f3312e864c292311b923b61bc204be50e/earningscall-0.0.9.tar.gz
+[2024-06-02 16:18:34] INFO root fetch - processPackages [xrayvisim]: Downloading https://files.pythonhosted.org/packages/79/cd/b1f91076e67adde60169dc41288fd6b0cc46823f117c178ef344ff2f132f/xrayvisim-0.2.0rc1.tar.gz
+[2024-06-02 16:18:34] INFO root fetch - processPackages [earningscall]: executing diffoscope
+[2024-06-02 16:18:34] INFO root fetch - processPackages [earningscall]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/earningscall-0.0.8.tar.gz tmp/earningscall-0.0.9.tar.gz --markdown 20240602/e/earningscall/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-06-02 16:18:35] INFO root fetch - processPackages [xrayvisim]: executing diffoscope
+[2024-06-02 16:18:35] INFO root fetch - processPackages [xrayvisim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xrayvisim-0.1.0rc1.tar.gz tmp/xrayvisim-0.2.0rc1.tar.gz --markdown 20240602/x/xrayvisim/0.1.0rc1-0.2.0rc1/README.md --exclude *.pyd
+[2024-06-02 16:18:35] INFO root fetch - processPackages [DCMake]: Remove: archive file [/home/abi/fetcher/tmp/DCMake-0.0.6.tar.gz]
+[2024-06-02 16:18:35] INFO root fetch - processPackages [DCMake]: Remove: archive file [/home/abi/fetcher/tmp/DCMake-0.0.7.tar.gz]
+[2024-06-02 16:18:35] INFO root fetch - main [MainThread]: End processing [DCMake]: success
+[2024-06-02 16:18:35] INFO root fetch - processPackages [pysmartcocoon]: Remove: archive file [/home/abi/fetcher/tmp/pysmartcocoon-0.8.1.tar.gz]
+[2024-06-02 16:18:35] INFO root fetch - processPackages [pysmartcocoon]: Remove: archive file [/home/abi/fetcher/tmp/pysmartcocoon-1.0.0.tar.gz]
+[2024-06-02 16:18:35] INFO root fetch - main [MainThread]: End processing [pysmartcocoon]: success
+[2024-06-02 16:18:35] INFO root fetch - processPackages [scim2-client]: Remove: archive file [/home/abi/fetcher/tmp/scim2_client-0.1.1.tar.gz]
+[2024-06-02 16:18:35] INFO root fetch - processPackages [scim2-client]: Remove: archive file [/home/abi/fetcher/tmp/scim2_client-0.1.2.tar.gz]
+[2024-06-02 16:18:35] INFO root fetch - main [MainThread]: End processing [scim2-client]: success
+[2024-06-02 16:18:35] INFO root fetch - processPackages [anydi]: Remove: archive file [/home/abi/fetcher/tmp/anydi-0.27.0a0.tar.gz]
+[2024-06-02 16:18:35] INFO root fetch - processPackages [anydi]: Remove: archive file [/home/abi/fetcher/tmp/anydi-0.27.0a1.tar.gz]
+[2024-06-02 16:18:35] INFO root fetch - main [MainThread]: End processing [anydi]: success
+[2024-06-02 16:18:35] INFO root fetch - processPackages [earningscall]: Remove: archive file [/home/abi/fetcher/tmp/earningscall-0.0.8.tar.gz]
+[2024-06-02 16:18:35] INFO root fetch - processPackages [earningscall]: Remove: archive file [/home/abi/fetcher/tmp/earningscall-0.0.9.tar.gz]
+[2024-06-02 16:18:35] INFO root fetch - main [MainThread]: End processing [earningscall]: success
+[2024-06-02 16:18:35] INFO root fetch - processPackages [xrayvisim]: Remove: archive file [/home/abi/fetcher/tmp/xrayvisim-0.1.0rc1.tar.gz]
+[2024-06-02 16:18:35] INFO root fetch - processPackages [xrayvisim]: Remove: archive file [/home/abi/fetcher/tmp/xrayvisim-0.2.0rc1.tar.gz]
+[2024-06-02 16:18:35] INFO root fetch - main [MainThread]: End processing [xrayvisim]: success
+[2024-06-02 16:18:35] INFO root fetch - main [MainThread]: Store serial: [23489565]
