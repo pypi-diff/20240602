@@ -15826,3 +15826,45 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 20:21:14] INFO root fetch - processPackages [ludic]: Remove: archive file [/home/abi/fetcher/tmp/ludic-0.4.9.tar.gz]
 [2024-06-02 20:21:14] INFO root fetch - main [MainThread]: End processing [ludic]: success
 [2024-06-02 20:21:14] INFO root fetch - main [MainThread]: Store serial: [23491820]
+[2024-06-02 20:23:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23491820]
+[2024-06-02 20:23:23] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-06-02 20:23:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ludic
+[2024-06-02 20:23:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: blaze-double-bot
+[2024-06-02 20:23:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gink
+[2024-06-02 20:23:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: krdict.py
+[2024-06-02 20:23:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: encryption-ciphers
+[2024-06-02 20:23:23] INFO root fetch - processPackages [blaze-double-bot]: New version: [1.3.0] Old Version: [1.2.0]
+[2024-06-02 20:23:23] INFO root fetch - processPackages [krdict.py]: New version: [3.0.1] Old Version: [3.0.0]
+[2024-06-02 20:23:23] INFO root fetch - processPackages [ludic]: New version: [0.4.9] Old Version: [0.4.8]
+[2024-06-02 20:23:23] INFO root fetch - processPackages [blaze-double-bot]: Downloading https://files.pythonhosted.org/packages/6c/f7/570fd705f6eb6cf2f71bdb2694df19fc1cbc64eda599cf2fe4efd2872698/blaze_double_bot-1.2.0.tar.gz
+[2024-06-02 20:23:23] WARNING root fetch - processPackages [encryption-ciphers]: Skipping, unable to determine old version
+[2024-06-02 20:23:23] INFO root fetch - main [MainThread]: End processing [encryption-ciphers] error
+[2024-06-02 20:23:23] INFO root fetch - processPackages [krdict.py]: Downloading https://files.pythonhosted.org/packages/64/c0/760612c82e52c197419e87dd8d6d4012ae67d14da5660a2ddb4a4ae449d6/krdict.py-3.0.0.tar.gz
+[2024-06-02 20:23:23] INFO root fetch - processPackages [ludic]: Downloading https://files.pythonhosted.org/packages/ce/91/c18d969b2eba5fa9465db54c6feeb7bf8c445ca78541315ab94bb35d8c71/ludic-0.4.8.tar.gz
+[2024-06-02 20:23:23] INFO root fetch - processPackages [gink]: New version: [0.20240602.1717352499] Old Version: [0.20240601.1717210459]
+[2024-06-02 20:23:23] INFO root fetch - processPackages [krdict.py]: Downloading https://files.pythonhosted.org/packages/48/fb/da199abda86fbf71e23aac72d0b3f72acb94c84932e012c0117819d6b096/krdict.py-3.0.1.tar.gz
+[2024-06-02 20:23:23] INFO root fetch - processPackages [gink]: Downloading https://files.pythonhosted.org/packages/0a/ee/15965fe885845d4b3f248b4c797434823c6ac4eb85aa52cde6c90c792ecc/gink-0.20240601.1717210459.tar.gz
+[2024-06-02 20:23:23] INFO root fetch - processPackages [ludic]: Downloading https://files.pythonhosted.org/packages/6d/fd/5ffb4cedbb92946ca50093ffad1f8de27d0a66770316a9e34411bfc2f0f6/ludic-0.4.9.tar.gz
+[2024-06-02 20:23:23] INFO root fetch - processPackages [blaze-double-bot]: Downloading https://files.pythonhosted.org/packages/f2/51/f97f3ae76eea8d94c171e3084f53457b7dfeab971741fb21beb0e8d88a5b/blaze_double_bot-1.3.0.tar.gz
+[2024-06-02 20:23:24] INFO root fetch - processPackages [krdict.py]: executing diffoscope
+[2024-06-02 20:23:24] INFO root fetch - processPackages [krdict.py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/krdict.py-3.0.0.tar.gz tmp/krdict.py-3.0.1.tar.gz --markdown 20240602/k/krdict.py/3.0.0-3.0.1/README.md --exclude *.pyd
+[2024-06-02 20:23:24] INFO root fetch - processPackages [ludic]: executing diffoscope
+[2024-06-02 20:23:24] INFO root fetch - processPackages [ludic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ludic-0.4.8.tar.gz tmp/ludic-0.4.9.tar.gz --markdown 20240602/l/ludic/0.4.8-0.4.9/README.md --exclude *.pyd
+[2024-06-02 20:23:24] INFO root fetch - processPackages [blaze-double-bot]: executing diffoscope
+[2024-06-02 20:23:24] INFO root fetch - processPackages [blaze-double-bot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blaze_double_bot-1.2.0.tar.gz tmp/blaze_double_bot-1.3.0.tar.gz --markdown 20240602/b/blaze-double-bot/1.2.0-1.3.0/README.md --exclude *.pyd
+[2024-06-02 20:23:24] INFO root fetch - processPackages [gink]: Downloading https://files.pythonhosted.org/packages/59/48/da98b9f8f55300f581a44e71f7a529e7a3fbf034243445ae9dfb5d613dfd/gink-0.20240602.1717352499.tar.gz
+[2024-06-02 20:23:24] INFO root fetch - processPackages [gink]: executing diffoscope
+[2024-06-02 20:23:24] INFO root fetch - processPackages [gink]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gink-0.20240601.1717210459.tar.gz tmp/gink-0.20240602.1717352499.tar.gz --markdown 20240602/g/gink/0.20240601.1717210459-0.20240602.1717352499/README.md --exclude *.pyd
+[2024-06-02 20:23:24] INFO root fetch - processPackages [krdict.py]: Remove: archive file [/home/abi/fetcher/tmp/krdict.py-3.0.0.tar.gz]
+[2024-06-02 20:23:24] INFO root fetch - processPackages [krdict.py]: Remove: archive file [/home/abi/fetcher/tmp/krdict.py-3.0.1.tar.gz]
+[2024-06-02 20:23:24] INFO root fetch - main [MainThread]: End processing [krdict.py]: success
+[2024-06-02 20:23:24] INFO root fetch - processPackages [blaze-double-bot]: Remove: archive file [/home/abi/fetcher/tmp/blaze_double_bot-1.2.0.tar.gz]
+[2024-06-02 20:23:24] INFO root fetch - processPackages [blaze-double-bot]: Remove: archive file [/home/abi/fetcher/tmp/blaze_double_bot-1.3.0.tar.gz]
+[2024-06-02 20:23:24] INFO root fetch - main [MainThread]: End processing [blaze-double-bot]: success
+[2024-06-02 20:23:24] INFO root fetch - processPackages [ludic]: Remove: archive file [/home/abi/fetcher/tmp/ludic-0.4.8.tar.gz]
+[2024-06-02 20:23:24] INFO root fetch - processPackages [ludic]: Remove: archive file [/home/abi/fetcher/tmp/ludic-0.4.9.tar.gz]
+[2024-06-02 20:23:24] INFO root fetch - main [MainThread]: End processing [ludic]: success
+[2024-06-02 20:23:25] INFO root fetch - processPackages [gink]: Remove: archive file [/home/abi/fetcher/tmp/gink-0.20240601.1717210459.tar.gz]
+[2024-06-02 20:23:25] INFO root fetch - processPackages [gink]: Remove: archive file [/home/abi/fetcher/tmp/gink-0.20240602.1717352499.tar.gz]
+[2024-06-02 20:23:25] INFO root fetch - main [MainThread]: End processing [gink]: success
+[2024-06-02 20:23:25] INFO root fetch - main [MainThread]: Store serial: [23491839]
