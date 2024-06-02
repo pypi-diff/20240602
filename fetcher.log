@@ -8906,3 +8906,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-02 13:57:45] INFO root fetch - processPackages [prompeteer]: Remove: archive file [/home/abi/fetcher/tmp/prompeteer-0.3.5.tar.gz]
 [2024-06-02 13:57:45] INFO root fetch - main [MainThread]: End processing [prompeteer]: success
 [2024-06-02 13:57:45] INFO root fetch - main [MainThread]: Store serial: [23488549]
+[2024-06-02 13:59:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23488549]
+[2024-06-02 13:59:53] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-02 13:59:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mayan-edms
+[2024-06-02 13:59:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tdrpa.tdworker
+[2024-06-02 13:59:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: func-bk
+[2024-06-02 13:59:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: khoj-assistant
+[2024-06-02 13:59:53] INFO root fetch - processPackages [func-bk]: New version: [1.5.7] Old Version: [1.5.6]
+[2024-06-02 13:59:53] INFO root fetch - processPackages [khoj-assistant]: New version: [1.9.1.dev8] Old Version: [1.9.1.dev74]
+[2024-06-02 13:59:54] INFO root fetch - processPackages [func-bk]: Downloading https://files.pythonhosted.org/packages/29/9a/c4e542c5fe9d6ddc1d6cc201bbb76f702a004bc19c2bc6982a180f5fe542/func_bk-1.5.6.tar.gz
+[2024-06-02 13:59:54] WARNING root fetch - processPackages [tdrpa.tdworker]: Skipping, unable to determine old version
+[2024-06-02 13:59:54] INFO root fetch - main [MainThread]: End processing [tdrpa.tdworker] error
+[2024-06-02 13:59:54] INFO root fetch - processPackages [khoj-assistant]: Downloading https://files.pythonhosted.org/packages/fc/89/bbf1c812c39a0f341fea130ae430c11fcdd5fdcc5ca61fbaed2682cc4df7/khoj_assistant-1.9.1.dev74.tar.gz
+[2024-06-02 13:59:54] INFO root fetch - processPackages [mayan-edms]: New version: [4.7] Old Version: [4.6.4]
+[2024-06-02 13:59:54] INFO root fetch - processPackages [mayan-edms]: Downloading https://files.pythonhosted.org/packages/0b/e3/e2c1c66b63526a7c9208bab4db36e6cb08984027541746e99f67f380a9ba/mayan-edms-4.6.4.tar.gz
+[2024-06-02 13:59:54] INFO root fetch - processPackages [func-bk]: Downloading https://files.pythonhosted.org/packages/a6/e0/74a124eef1e4232657b3963e3d13352a0f4ac35e31b8a34966ffe630cc9e/func_bk-1.5.7.tar.gz
+[2024-06-02 13:59:54] INFO root fetch - processPackages [func-bk]: executing diffoscope
+[2024-06-02 13:59:54] INFO root fetch - processPackages [func-bk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/func_bk-1.5.6.tar.gz tmp/func_bk-1.5.7.tar.gz --markdown 20240602/f/func-bk/1.5.6-1.5.7/README.md --exclude *.pyd
+[2024-06-02 13:59:54] INFO root fetch - processPackages [khoj-assistant]: Downloading https://files.pythonhosted.org/packages/47/ae/446626ff585bb336b70b59402ea6a46bf52326a51b81fd9ead920cde4c8a/khoj_assistant-1.9.1.dev8.tar.gz
+[2024-06-02 13:59:54] INFO root fetch - processPackages [khoj-assistant]: executing diffoscope
+[2024-06-02 13:59:54] INFO root fetch - processPackages [khoj-assistant]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/khoj_assistant-1.9.1.dev74.tar.gz tmp/khoj_assistant-1.9.1.dev8.tar.gz --markdown 20240602/k/khoj-assistant/1.9.1.dev74-1.9.1.dev8/README.md --exclude *.pyd
+[2024-06-02 13:59:55] INFO root fetch - processPackages [func-bk]: Remove: archive file [/home/abi/fetcher/tmp/func_bk-1.5.6.tar.gz]
+[2024-06-02 13:59:55] INFO root fetch - processPackages [func-bk]: Remove: archive file [/home/abi/fetcher/tmp/func_bk-1.5.7.tar.gz]
+[2024-06-02 13:59:55] INFO root fetch - main [MainThread]: End processing [func-bk]: success
+[2024-06-02 13:59:55] INFO root fetch - processPackages [mayan-edms]: Downloading https://files.pythonhosted.org/packages/55/96/f8edb1514b6a353ae967986b3a07a94d2e58d236b42512906108a87afec6/mayan-edms-4.7.tar.gz
+[2024-06-02 13:59:56] INFO root fetch - processPackages [mayan-edms]: executing diffoscope
+[2024-06-02 13:59:56] INFO root fetch - processPackages [mayan-edms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mayan-edms-4.6.4.tar.gz tmp/mayan-edms-4.7.tar.gz --markdown 20240602/m/mayan-edms/4.6.4-4.7/README.md --exclude *.pyd
+[2024-06-02 13:59:56] INFO root fetch - processPackages [khoj-assistant]: Remove: archive file [/home/abi/fetcher/tmp/khoj_assistant-1.9.1.dev74.tar.gz]
+[2024-06-02 13:59:56] INFO root fetch - processPackages [khoj-assistant]: Remove: archive file [/home/abi/fetcher/tmp/khoj_assistant-1.9.1.dev8.tar.gz]
+[2024-06-02 13:59:56] INFO root fetch - main [MainThread]: End processing [khoj-assistant]: success
+[2024-06-02 14:00:44] INFO root fetch - processPackages [mayan-edms]: Remove: archive file [/home/abi/fetcher/tmp/mayan-edms-4.6.4.tar.gz]
+[2024-06-02 14:00:44] INFO root fetch - processPackages [mayan-edms]: Remove: archive file [/home/abi/fetcher/tmp/mayan-edms-4.7.tar.gz]
+[2024-06-02 14:00:44] INFO root fetch - main [MainThread]: End processing [mayan-edms]: success
+[2024-06-02 14:00:44] INFO root fetch - main [MainThread]: Store serial: [23488577]
