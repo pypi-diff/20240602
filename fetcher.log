@@ -7854,3 +7854,18 @@
 [2024-06-02 12:50:19] INFO root fetch - processPackages [yafowil.widget.autocomplete]: Remove: archive file [/home/abi/fetcher/tmp/yafowil_widget_autocomplete-2.0a1.tar.gz]
 [2024-06-02 12:50:19] INFO root fetch - main [MainThread]: End processing [yafowil.widget.autocomplete]: success
 [2024-06-02 12:50:19] INFO root fetch - main [MainThread]: Store serial: [23488220]
+[2024-06-02 12:52:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23488220]
+[2024-06-02 12:52:28] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-02 12:52:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: xphonebr
+[2024-06-02 12:52:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pytro
+[2024-06-02 12:52:28] WARNING root fetch - processPackages [pytro]: Skipping, unable to determine old version
+[2024-06-02 12:52:28] INFO root fetch - main [MainThread]: End processing [pytro] error
+[2024-06-02 12:52:28] INFO root fetch - processPackages [xphonebr]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-06-02 12:52:29] INFO root fetch - processPackages [xphonebr]: Downloading https://files.pythonhosted.org/packages/42/47/125e498be52e5caf86487c9669877aecc9c6b8cdfead0992345938ac5709/xphonebr-0.0.3.tar.gz
+[2024-06-02 12:52:29] INFO root fetch - processPackages [xphonebr]: Downloading https://files.pythonhosted.org/packages/d1/8e/2573596036ea948334b6ff8a093d15f3ff1b2c26b4a411fa3a6d300ef522/xphonebr-0.0.4.tar.gz
+[2024-06-02 12:52:29] INFO root fetch - processPackages [xphonebr]: executing diffoscope
+[2024-06-02 12:52:29] INFO root fetch - processPackages [xphonebr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xphonebr-0.0.3.tar.gz tmp/xphonebr-0.0.4.tar.gz --markdown 20240602/x/xphonebr/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-06-02 12:52:30] INFO root fetch - processPackages [xphonebr]: Remove: archive file [/home/abi/fetcher/tmp/xphonebr-0.0.3.tar.gz]
+[2024-06-02 12:52:30] INFO root fetch - processPackages [xphonebr]: Remove: archive file [/home/abi/fetcher/tmp/xphonebr-0.0.4.tar.gz]
+[2024-06-02 12:52:30] INFO root fetch - main [MainThread]: End processing [xphonebr]: success
+[2024-06-02 12:52:30] INFO root fetch - main [MainThread]: Store serial: [23488232]
