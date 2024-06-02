@@ -12432,3 +12432,53 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 17:38:50] INFO root fetch - processPackages [glide-for-redis]: Remove: archive file [/home/abi/fetcher/tmp/glide_for_redis-0.4.1rc5-cp39-cp39-manylinux_2_28_aarch64.whl.zip]
 [2024-06-02 17:38:50] INFO root fetch - main [MainThread]: End processing [glide-for-redis]: success
 [2024-06-02 17:38:50] INFO root fetch - main [MainThread]: Store serial: [23490204]
+[2024-06-02 17:40:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23490204]
+[2024-06-02 17:40:58] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-06-02 17:40:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: netband
+[2024-06-02 17:40:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wynntilsresolver
+[2024-06-02 17:40:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: starknet-crypto-py
+[2024-06-02 17:40:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: hammy
+[2024-06-02 17:40:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: homebase-calendar-sync
+[2024-06-02 17:40:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: Tooldelta
+[2024-06-02 17:40:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: vtacML
+[2024-06-02 17:40:58] INFO root fetch - processPackages [vtacML]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-06-02 17:40:58] INFO root fetch - processPackages [homebase-calendar-sync]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-06-02 17:40:58] INFO root fetch - processPackages [Tooldelta]: New version: [0.7.2] Old Version: [0.7.1]
+[2024-06-02 17:40:58] WARNING root fetch - processPackages [hammy]: Skipping, unable to determine old version
+[2024-06-02 17:40:58] INFO root fetch - main [MainThread]: End processing [hammy] error
+[2024-06-02 17:40:58] INFO root fetch - processPackages [wynntilsresolver]: New version: [1.3.0] Old Version: [1.2.1]
+[2024-06-02 17:40:58] INFO root fetch - processPackages [starknet-crypto-py]: New version: [0.2.0] Old Version: [0.1.0]
+[2024-06-02 17:40:58] WARNING root fetch - processPackages [netband]: Skipping, unable to determine old version
+[2024-06-02 17:40:58] INFO root fetch - main [MainThread]: End processing [netband] error
+[2024-06-02 17:40:58] INFO root fetch - processPackages [homebase-calendar-sync]: Downloading https://files.pythonhosted.org/packages/e0/22/bb507825244291a84ecd81960a38b2ffae3c1a3df0215dc0bc53f524d5eb/homebase_calendar_sync-0.1.1.tar.gz
+[2024-06-02 17:40:58] INFO root fetch - processPackages [Tooldelta]: Downloading https://files.pythonhosted.org/packages/ce/50/123880d2e63136bbdadd4fd7552117a7028d53ffd8401603fb0e1985c004/tooldelta-0.7.1.tar.gz
+[2024-06-02 17:40:58] INFO root fetch - processPackages [vtacML]: Downloading https://files.pythonhosted.org/packages/af/31/e6451c82cb5bd62679ed942a8911beae12be24a37a36ccd4da13829871ca/vtacML-0.1.8.tar.gz
+[2024-06-02 17:40:58] INFO root fetch - processPackages [wynntilsresolver]: Downloading https://files.pythonhosted.org/packages/08/ed/e42af6c125efa859f79d8291a7eda9c6b18bbd68a3cfe4c2c0cdb9d230ca/wynntilsresolver-1.2.1.tar.gz
+[2024-06-02 17:40:58] WARNING root fetch - processPackages [vtacML]: Skipping package: exceeds size limit 67197768>=10485760
+[2024-06-02 17:40:58] INFO root fetch - main [MainThread]: End processing [vtacML] error
+[2024-06-02 17:40:59] INFO root fetch - processPackages [starknet-crypto-py]: Downloading https://files.pythonhosted.org/packages/7b/79/f475b9ee4ecfbf9e3d4cde98d11a394ed11d180be283f6c2576211fc90da/starknet_crypto_py-0.1.0.tar.gz
+[2024-06-02 17:40:59] INFO root fetch - processPackages [homebase-calendar-sync]: Downloading https://files.pythonhosted.org/packages/14/ca/9c931cdd4efeeeaf702b87639259e2f3b27b32d114e33395e4cc7ce32a46/homebase_calendar_sync-0.1.2.tar.gz
+[2024-06-02 17:40:59] INFO root fetch - processPackages [Tooldelta]: Downloading https://files.pythonhosted.org/packages/ce/6f/00540e400d40052eb5408730e40a27f2789029e841031ecc809600bb008a/tooldelta-0.7.2.tar.gz
+[2024-06-02 17:40:59] INFO root fetch - processPackages [homebase-calendar-sync]: executing diffoscope
+[2024-06-02 17:40:59] INFO root fetch - processPackages [homebase-calendar-sync]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/homebase_calendar_sync-0.1.1.tar.gz tmp/homebase_calendar_sync-0.1.2.tar.gz --markdown 20240602/h/homebase-calendar-sync/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-06-02 17:40:59] INFO root fetch - processPackages [Tooldelta]: executing diffoscope
+[2024-06-02 17:40:59] INFO root fetch - processPackages [Tooldelta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tooldelta-0.7.1.tar.gz tmp/tooldelta-0.7.2.tar.gz --markdown 20240602/T/Tooldelta/0.7.1-0.7.2/README.md --exclude *.pyd
+[2024-06-02 17:40:59] INFO root fetch - processPackages [wynntilsresolver]: Downloading https://files.pythonhosted.org/packages/71/6b/abb81c5b8ff3e16bfde470d273458991e4ccc6de0d5f883f36073d4508cf/wynntilsresolver-1.3.0.tar.gz
+[2024-06-02 17:40:59] INFO root fetch - processPackages [starknet-crypto-py]: Downloading https://files.pythonhosted.org/packages/7e/86/c46d345c297aca5e08375f2a9b58dc44d204ef372c50b75d00d4b7d595d5/starknet_crypto_py-0.2.0.tar.gz
+[2024-06-02 17:40:59] INFO root fetch - processPackages [wynntilsresolver]: executing diffoscope
+[2024-06-02 17:40:59] INFO root fetch - processPackages [wynntilsresolver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wynntilsresolver-1.2.1.tar.gz tmp/wynntilsresolver-1.3.0.tar.gz --markdown 20240602/w/wynntilsresolver/1.2.1-1.3.0/README.md --exclude *.pyd
+[2024-06-02 17:40:59] INFO root fetch - processPackages [starknet-crypto-py]: executing diffoscope
+[2024-06-02 17:40:59] INFO root fetch - processPackages [starknet-crypto-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/starknet_crypto_py-0.1.0.tar.gz tmp/starknet_crypto_py-0.2.0.tar.gz --markdown 20240602/s/starknet-crypto-py/0.1.0-0.2.0/README.md --exclude *.pyd
+[2024-06-02 17:40:59] INFO root fetch - processPackages [homebase-calendar-sync]: Remove: archive file [/home/abi/fetcher/tmp/homebase_calendar_sync-0.1.1.tar.gz]
+[2024-06-02 17:40:59] INFO root fetch - processPackages [homebase-calendar-sync]: Remove: archive file [/home/abi/fetcher/tmp/homebase_calendar_sync-0.1.2.tar.gz]
+[2024-06-02 17:40:59] INFO root fetch - main [MainThread]: End processing [homebase-calendar-sync]: success
+[2024-06-02 17:40:59] INFO root fetch - processPackages [Tooldelta]: Remove: archive file [/home/abi/fetcher/tmp/tooldelta-0.7.1.tar.gz]
+[2024-06-02 17:40:59] INFO root fetch - processPackages [Tooldelta]: Remove: archive file [/home/abi/fetcher/tmp/tooldelta-0.7.2.tar.gz]
+[2024-06-02 17:40:59] INFO root fetch - main [MainThread]: End processing [Tooldelta]: success
+[2024-06-02 17:41:00] INFO root fetch - processPackages [wynntilsresolver]: Remove: archive file [/home/abi/fetcher/tmp/wynntilsresolver-1.2.1.tar.gz]
+[2024-06-02 17:41:00] INFO root fetch - processPackages [wynntilsresolver]: Remove: archive file [/home/abi/fetcher/tmp/wynntilsresolver-1.3.0.tar.gz]
+[2024-06-02 17:41:00] INFO root fetch - main [MainThread]: End processing [wynntilsresolver]: success
+[2024-06-02 17:41:00] INFO root fetch - processPackages [starknet-crypto-py]: Remove: archive file [/home/abi/fetcher/tmp/starknet_crypto_py-0.1.0.tar.gz]
+[2024-06-02 17:41:00] INFO root fetch - processPackages [starknet-crypto-py]: Remove: archive file [/home/abi/fetcher/tmp/starknet_crypto_py-0.2.0.tar.gz]
+[2024-06-02 17:41:00] INFO root fetch - main [MainThread]: End processing [starknet-crypto-py]: success
+[2024-06-02 17:41:00] INFO root fetch - main [MainThread]: Store serial: [23490269]
