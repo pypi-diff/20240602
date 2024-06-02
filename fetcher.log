@@ -2877,3 +2877,24 @@
 [2024-06-02 04:04:47] INFO root fetch - processPackages [pkgconf]: Remove: archive file [/home/abi/fetcher/tmp/pkgconf-2.1.1.post9.tar.gz]
 [2024-06-02 04:04:47] INFO root fetch - main [MainThread]: End processing [pkgconf]: success
 [2024-06-02 04:04:47] INFO root fetch - main [MainThread]: Store serial: [23485592]
+[2024-06-02 04:06:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23485592]
+[2024-06-02 04:06:56] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-02 04:06:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rlottie-python
+[2024-06-02 04:06:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bipsea
+[2024-06-02 04:06:56] INFO root fetch - processPackages [bipsea]: New version: [0.2.1] Old Version: [0.2.0]
+[2024-06-02 04:06:56] INFO root fetch - processPackages [rlottie-python]: New version: [1.3.4] Old Version: [1.3.3]
+[2024-06-02 04:06:56] INFO root fetch - processPackages [bipsea]: Downloading https://files.pythonhosted.org/packages/33/e9/3a9759ecde652ba83e26722fd27fbe694c923261325377aa56350ae7598f/bipsea-0.2.0.tar.gz
+[2024-06-02 04:06:56] INFO root fetch - processPackages [rlottie-python]: Downloading https://files.pythonhosted.org/packages/71/07/67a6d69d504eae3e385c7bc37469247fbd616282786eb7606cccd28c3d1f/rlottie_python-1.3.3.tar.gz
+[2024-06-02 04:06:56] INFO root fetch - processPackages [bipsea]: Downloading https://files.pythonhosted.org/packages/d0/08/24e97d0e314dcfe558464a4fea7c3b4bd5c30f0a5932adce237986fbf136/bipsea-0.2.1.tar.gz
+[2024-06-02 04:06:57] INFO root fetch - processPackages [bipsea]: executing diffoscope
+[2024-06-02 04:06:57] INFO root fetch - processPackages [bipsea]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bipsea-0.2.0.tar.gz tmp/bipsea-0.2.1.tar.gz --markdown 20240602/b/bipsea/0.2.0-0.2.1/README.md --exclude *.pyd
+[2024-06-02 04:06:57] INFO root fetch - processPackages [rlottie-python]: Downloading https://files.pythonhosted.org/packages/e3/04/45af3206c34dc07d737250e18ac07dee4ccc9bd85cece9a1edd20ed0eb00/rlottie_python-1.3.4.tar.gz
+[2024-06-02 04:06:57] INFO root fetch - processPackages [rlottie-python]: executing diffoscope
+[2024-06-02 04:06:57] INFO root fetch - processPackages [rlottie-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rlottie_python-1.3.3.tar.gz tmp/rlottie_python-1.3.4.tar.gz --markdown 20240602/r/rlottie-python/1.3.3-1.3.4/README.md --exclude *.pyd
+[2024-06-02 04:06:57] INFO root fetch - processPackages [bipsea]: Remove: archive file [/home/abi/fetcher/tmp/bipsea-0.2.0.tar.gz]
+[2024-06-02 04:06:57] INFO root fetch - processPackages [bipsea]: Remove: archive file [/home/abi/fetcher/tmp/bipsea-0.2.1.tar.gz]
+[2024-06-02 04:06:57] INFO root fetch - main [MainThread]: End processing [bipsea]: success
+[2024-06-02 04:07:00] INFO root fetch - processPackages [rlottie-python]: Remove: archive file [/home/abi/fetcher/tmp/rlottie_python-1.3.3.tar.gz]
+[2024-06-02 04:07:00] INFO root fetch - processPackages [rlottie-python]: Remove: archive file [/home/abi/fetcher/tmp/rlottie_python-1.3.4.tar.gz]
+[2024-06-02 04:07:00] INFO root fetch - main [MainThread]: End processing [rlottie-python]: success
+[2024-06-02 04:07:00] INFO root fetch - main [MainThread]: Store serial: [23485636]
