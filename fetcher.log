@@ -6188,3 +6188,18 @@
 [2024-06-02 10:30:33] INFO root fetch - processPackages [pyEDAA.Reports]: Remove: archive file [/home/abi/fetcher/tmp/pyedaa_reports-0.9.0.tar.gz]
 [2024-06-02 10:30:33] INFO root fetch - main [MainThread]: End processing [pyEDAA.Reports]: success
 [2024-06-02 10:30:33] INFO root fetch - main [MainThread]: Store serial: [23487395]
+[2024-06-02 10:32:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23487395]
+[2024-06-02 10:32:41] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-02 10:32:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pytest-zcc
+[2024-06-02 10:32:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: toru
+[2024-06-02 10:32:41] INFO root fetch - processPackages [pytest-zcc]: New version: [1.3] Old Version: [1.2]
+[2024-06-02 10:32:41] WARNING root fetch - processPackages [toru]: Skipping, unable to determine old version
+[2024-06-02 10:32:41] INFO root fetch - main [MainThread]: End processing [toru] error
+[2024-06-02 10:32:41] INFO root fetch - processPackages [pytest-zcc]: Downloading https://files.pythonhosted.org/packages/0d/4d/ed1657c6cfa7f5ea0202012dd37fb6ab7b88fb60432809d36485b3cb3697/pytest_zcc-1.2.tar.gz
+[2024-06-02 10:32:42] INFO root fetch - processPackages [pytest-zcc]: Downloading https://files.pythonhosted.org/packages/bb/e9/115831d795d75b60c85ddb400e0ce23c33a10748fef7492fb51be1acbac8/pytest_zcc-1.3.tar.gz
+[2024-06-02 10:32:42] INFO root fetch - processPackages [pytest-zcc]: executing diffoscope
+[2024-06-02 10:32:42] INFO root fetch - processPackages [pytest-zcc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytest_zcc-1.2.tar.gz tmp/pytest_zcc-1.3.tar.gz --markdown 20240602/p/pytest-zcc/1.2-1.3/README.md --exclude *.pyd
+[2024-06-02 10:32:42] INFO root fetch - processPackages [pytest-zcc]: Remove: archive file [/home/abi/fetcher/tmp/pytest_zcc-1.2.tar.gz]
+[2024-06-02 10:32:42] INFO root fetch - processPackages [pytest-zcc]: Remove: archive file [/home/abi/fetcher/tmp/pytest_zcc-1.3.tar.gz]
+[2024-06-02 10:32:42] INFO root fetch - main [MainThread]: End processing [pytest-zcc]: success
+[2024-06-02 10:32:42] INFO root fetch - main [MainThread]: Store serial: [23487397]
