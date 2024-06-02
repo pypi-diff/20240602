@@ -9745,3 +9745,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-02 14:46:45] INFO root fetch - processPackages [synthx]: Remove: archive file [/home/abi/fetcher/tmp/synthx-1.2.2.tar.gz]
 [2024-06-02 14:46:45] INFO root fetch - main [MainThread]: End processing [synthx]: success
 [2024-06-02 14:46:45] INFO root fetch - main [MainThread]: Store serial: [23488966]
+[2024-06-02 14:48:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23488966]
+[2024-06-02 14:48:56] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-06-02 14:48:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sc3dg
+[2024-06-02 14:48:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: stadiffuser
+[2024-06-02 14:48:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: MzhFunc
+[2024-06-02 14:48:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: verysimpletree
+[2024-06-02 14:48:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cachebox
+[2024-06-02 14:48:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: sc3dg
+[2024-06-02 14:48:56] INFO root fetch - processPackages [sc3dg]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-06-02 14:48:56] INFO root fetch - processPackages [verysimpletree]: New version: [0.1.3b0] Old Version: [0.1.2b0]
+[2024-06-02 14:48:56] INFO root fetch - processPackages [sc3dg]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-06-02 14:48:56] WARNING root fetch - processPackages [MzhFunc]: Skipping, unable to determine old version
+[2024-06-02 14:48:56] INFO root fetch - main [MainThread]: End processing [MzhFunc] error
+[2024-06-02 14:48:56] INFO root fetch - processPackages [sc3dg]: Downloading https://files.pythonhosted.org/packages/c7/98/00398783f591f3dc3e8f278af3a3fa730c86e61e932b71b0760135139eeb/sc3dg-0.0.7.tar.gz
+[2024-06-02 14:48:56] INFO root fetch - processPackages [sc3dg]: Downloading https://files.pythonhosted.org/packages/c7/98/00398783f591f3dc3e8f278af3a3fa730c86e61e932b71b0760135139eeb/sc3dg-0.0.7.tar.gz
+[2024-06-02 14:48:56] INFO root fetch - processPackages [verysimpletree]: Downloading https://files.pythonhosted.org/packages/ec/0f/35068d4f6cabe37a2802800ec624883cba3f223dc4d56d4c9414c70c5e35/verysimpletree-0.1.2b0.tar.gz
+[2024-06-02 14:48:56] INFO root fetch - processPackages [cachebox]: New version: [3.0.0] Old Version: [2.2.4]
+[2024-06-02 14:48:56] WARNING root fetch - processPackages [stadiffuser]: Skipping, unable to determine old version
+[2024-06-02 14:48:56] INFO root fetch - main [MainThread]: End processing [stadiffuser] error
+[2024-06-02 14:48:56] INFO root fetch - processPackages [verysimpletree]: Downloading https://files.pythonhosted.org/packages/1a/b7/1738424d6c6f686d0d9f21c92856f16503786a98b3de840404dc02e37609/verysimpletree-0.1.3b0.tar.gz
+[2024-06-02 14:48:56] INFO root fetch - processPackages [sc3dg]: Downloading https://files.pythonhosted.org/packages/97/65/1394420940d9bdc212860a3842baed2ba84016ee1556fa9c66bfb0fa3d07/sc3dg-0.0.8.tar.gz
+[2024-06-02 14:48:56] INFO root fetch - processPackages [cachebox]: Downloading https://files.pythonhosted.org/packages/9a/95/0bf7685973c4cc337691e53edc121811fe8b44de70908d10e5c21964b3a2/cachebox-2.2.4.tar.gz
+[2024-06-02 14:48:56] INFO root fetch - processPackages [verysimpletree]: executing diffoscope
+[2024-06-02 14:48:56] INFO root fetch - processPackages [verysimpletree]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/verysimpletree-0.1.2b0.tar.gz tmp/verysimpletree-0.1.3b0.tar.gz --markdown 20240602/v/verysimpletree/0.1.2b0-0.1.3b0/README.md --exclude *.pyd
+[2024-06-02 14:48:56] INFO root fetch - processPackages [sc3dg]: executing diffoscope
+[2024-06-02 14:48:56] INFO root fetch - processPackages [sc3dg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sc3dg-0.0.7.tar.gz tmp/sc3dg-0.0.8.tar.gz --markdown 20240602/s/sc3dg/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-06-02 14:48:56] INFO root fetch - processPackages [sc3dg]: executing diffoscope
+[2024-06-02 14:48:56] INFO root fetch - processPackages [sc3dg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sc3dg-0.0.7.tar.gz tmp/sc3dg-0.0.8.tar.gz --markdown 20240602/s/sc3dg/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-06-02 14:48:56] INFO root fetch - processPackages [cachebox]: Downloading https://files.pythonhosted.org/packages/a7/f7/1300124d6419d6bb21db1b15d53cc9976ab8b3bfbb1ae7ce0a47e38ade86/cachebox-3.0.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-06-02 14:48:57] INFO root fetch - processPackages [verysimpletree]: Remove: archive file [/home/abi/fetcher/tmp/verysimpletree-0.1.2b0.tar.gz]
+[2024-06-02 14:48:57] INFO root fetch - processPackages [verysimpletree]: Remove: archive file [/home/abi/fetcher/tmp/verysimpletree-0.1.3b0.tar.gz]
+[2024-06-02 14:48:57] INFO root fetch - main [MainThread]: End processing [verysimpletree]: success
+[2024-06-02 14:48:57] INFO root fetch - processPackages [sc3dg]: Remove: archive file [/home/abi/fetcher/tmp/sc3dg-0.0.7.tar.gz]
+[2024-06-02 14:48:57] INFO root fetch - processPackages [sc3dg]: Remove: archive file [/home/abi/fetcher/tmp/sc3dg-0.0.8.tar.gz]
+[2024-06-02 14:48:57] INFO root fetch - main [MainThread]: End processing [sc3dg]: success
+[2024-06-02 14:48:57] INFO root fetch - main [MainThread]: End processing [sc3dg]: success
+[2024-06-02 14:48:58] INFO root fetch - processPackages [cachebox]: executing diffoscope
+[2024-06-02 14:48:58] INFO root fetch - processPackages [cachebox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cachebox-2.2.4.tar.gz tmp/cachebox-3.0.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20240602/c/cachebox/2.2.4-3.0.0/README.md --exclude *.pyd
+[2024-06-02 14:48:58] INFO root fetch - processPackages [cachebox]: Remove: archive file [/home/abi/fetcher/tmp/cachebox-2.2.4.tar.gz]
+[2024-06-02 14:48:58] INFO root fetch - processPackages [cachebox]: Remove: archive file [/home/abi/fetcher/tmp/cachebox-3.0.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-06-02 14:48:58] INFO root fetch - main [MainThread]: End processing [cachebox]: success
+[2024-06-02 14:48:58] INFO root fetch - main [MainThread]: Store serial: [23488999]
