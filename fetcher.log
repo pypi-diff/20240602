@@ -17323,3 +17323,54 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 21:51:03] INFO root fetch - processPackages [stashapp-tools]: Remove: archive file [/home/abi/fetcher/tmp/stashapp-tools-0.2.9.tar.gz]
 [2024-06-02 21:51:03] INFO root fetch - main [MainThread]: End processing [stashapp-tools]: success
 [2024-06-02 21:51:03] INFO root fetch - main [MainThread]: Store serial: [23492530]
+[2024-06-02 21:53:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23492530]
+[2024-06-02 21:53:11] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-06-02 21:53:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: stashapp-tools
+[2024-06-02 21:53:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: socialdataanalysis
+[2024-06-02 21:53:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: esbmtk
+[2024-06-02 21:53:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: baseball
+[2024-06-02 21:53:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: odoo-addon-pos-product-mergeable-line
+[2024-06-02 21:53:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: foo-et-al-parameterization
+[2024-06-02 21:53:11] INFO root fetch - processPackages [foo-et-al-parameterization]: New version: [0.0.4] Old Version: [0.0.2]
+[2024-06-02 21:53:11] INFO root fetch - processPackages [stashapp-tools]: New version: [0.2.9] Old Version: [0.2.7]
+[2024-06-02 21:53:12] INFO root fetch - processPackages [socialdataanalysis]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-06-02 21:53:12] INFO root fetch - processPackages [stashapp-tools]: Downloading https://files.pythonhosted.org/packages/13/37/5dc9b1af56bff91fcd0a65649933c4572503f05bcc50b2ed6bca1800bf3f/stashapp-tools-0.2.7.tar.gz
+[2024-06-02 21:53:12] INFO root fetch - processPackages [foo-et-al-parameterization]: Downloading https://files.pythonhosted.org/packages/e7/e3/b1656a199d07add7e15f9f8ac83ad14bd0dd2e341f21d3c7ab3082b7271e/foo_et_al_parameterization-0.0.2.tar.gz
+[2024-06-02 21:53:12] WARNING root fetch - processPackages [odoo-addon-pos-product-mergeable-line]: Skipping, unable to determine old version
+[2024-06-02 21:53:12] INFO root fetch - main [MainThread]: End processing [odoo-addon-pos-product-mergeable-line] error
+[2024-06-02 21:53:12] INFO root fetch - processPackages [esbmtk]: New version: [0.9.0.1] Old Version: [0.8.0.0]
+[2024-06-02 21:53:12] INFO root fetch - processPackages [baseball]: New version: [9.9] Old Version: [9.8]
+[2024-06-02 21:53:12] INFO root fetch - processPackages [socialdataanalysis]: Downloading https://files.pythonhosted.org/packages/eb/47/cc4f8924b0e418534cd231584b512aec4cac0d4d54fcc7bb835b538d4127/socialdataanalysis-0.9.8.tar.gz
+[2024-06-02 21:53:12] INFO root fetch - processPackages [esbmtk]: Downloading https://files.pythonhosted.org/packages/bb/db/43f864ec19c6c352197cac358cf900d69e03025a4f4390aa7881849fde27/esbmtk-0.8.0.0.tar.gz
+[2024-06-02 21:53:12] INFO root fetch - processPackages [stashapp-tools]: Downloading https://files.pythonhosted.org/packages/10/83/df6a945c364057e4440ad9edd49938ae31ae0d97d6f0088ebcc0001db9d5/stashapp-tools-0.2.9.tar.gz
+[2024-06-02 21:53:12] INFO root fetch - processPackages [baseball]: Downloading https://files.pythonhosted.org/packages/04/2a/8b198995c2f8d35c19f4b1e0e6c5c067e955f1258d57c1b1341eab88715e/baseball-9.8.tar.gz
+[2024-06-02 21:53:12] INFO root fetch - processPackages [foo-et-al-parameterization]: Downloading https://files.pythonhosted.org/packages/b3/71/a9218e75c0f238ad595ab57e0456f3542c7cbea0b576412e9164c26cedab/foo_et_al_parameterization-0.0.4.tar.gz
+[2024-06-02 21:53:12] INFO root fetch - processPackages [stashapp-tools]: executing diffoscope
+[2024-06-02 21:53:12] INFO root fetch - processPackages [stashapp-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stashapp-tools-0.2.7.tar.gz tmp/stashapp-tools-0.2.9.tar.gz --markdown 20240602/s/stashapp-tools/0.2.7-0.2.9/README.md --exclude *.pyd
+[2024-06-02 21:53:12] INFO root fetch - processPackages [foo-et-al-parameterization]: executing diffoscope
+[2024-06-02 21:53:12] INFO root fetch - processPackages [foo-et-al-parameterization]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/foo_et_al_parameterization-0.0.2.tar.gz tmp/foo_et_al_parameterization-0.0.4.tar.gz --markdown 20240602/f/foo-et-al-parameterization/0.0.2-0.0.4/README.md --exclude *.pyd
+[2024-06-02 21:53:12] INFO root fetch - processPackages [esbmtk]: Downloading https://files.pythonhosted.org/packages/11/6f/87ddaf24ac6364989ab766f93b2f007ea867ce40fd85816050640df525c4/esbmtk-0.9.0.1.tar.gz
+[2024-06-02 21:53:12] INFO root fetch - processPackages [socialdataanalysis]: Downloading https://files.pythonhosted.org/packages/d9/4b/54fdab9dfc08dfaa30b65dec24c14246f2efb44604af761b5a72bbef0087/socialdataanalysis-0.9.9.tar.gz
+[2024-06-02 21:53:12] INFO root fetch - processPackages [baseball]: Downloading https://files.pythonhosted.org/packages/1a/e0/fb3c48a01fd33034695694663cfddfb7a099e47f8aa30dc6c901a5fcee37/baseball-9.9.tar.gz
+[2024-06-02 21:53:12] INFO root fetch - processPackages [esbmtk]: executing diffoscope
+[2024-06-02 21:53:12] INFO root fetch - processPackages [esbmtk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/esbmtk-0.8.0.0.tar.gz tmp/esbmtk-0.9.0.1.tar.gz --markdown 20240602/e/esbmtk/0.8.0.0-0.9.0.1/README.md --exclude *.pyd
+[2024-06-02 21:53:12] INFO root fetch - processPackages [socialdataanalysis]: executing diffoscope
+[2024-06-02 21:53:12] INFO root fetch - processPackages [socialdataanalysis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/socialdataanalysis-0.9.8.tar.gz tmp/socialdataanalysis-0.9.9.tar.gz --markdown 20240602/s/socialdataanalysis/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-06-02 21:53:12] INFO root fetch - processPackages [baseball]: executing diffoscope
+[2024-06-02 21:53:12] INFO root fetch - processPackages [baseball]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/baseball-9.8.tar.gz tmp/baseball-9.9.tar.gz --markdown 20240602/b/baseball/9.8-9.9/README.md --exclude *.pyd
+[2024-06-02 21:53:13] INFO root fetch - processPackages [stashapp-tools]: Remove: archive file [/home/abi/fetcher/tmp/stashapp-tools-0.2.7.tar.gz]
+[2024-06-02 21:53:13] INFO root fetch - processPackages [stashapp-tools]: Remove: archive file [/home/abi/fetcher/tmp/stashapp-tools-0.2.9.tar.gz]
+[2024-06-02 21:53:13] INFO root fetch - main [MainThread]: End processing [stashapp-tools]: success
+[2024-06-02 21:53:13] INFO root fetch - processPackages [foo-et-al-parameterization]: Remove: archive file [/home/abi/fetcher/tmp/foo_et_al_parameterization-0.0.2.tar.gz]
+[2024-06-02 21:53:13] INFO root fetch - processPackages [foo-et-al-parameterization]: Remove: archive file [/home/abi/fetcher/tmp/foo_et_al_parameterization-0.0.4.tar.gz]
+[2024-06-02 21:53:13] INFO root fetch - main [MainThread]: End processing [foo-et-al-parameterization]: success
+[2024-06-02 21:53:13] INFO root fetch - processPackages [socialdataanalysis]: Remove: archive file [/home/abi/fetcher/tmp/socialdataanalysis-0.9.8.tar.gz]
+[2024-06-02 21:53:13] INFO root fetch - processPackages [socialdataanalysis]: Remove: archive file [/home/abi/fetcher/tmp/socialdataanalysis-0.9.9.tar.gz]
+[2024-06-02 21:53:13] INFO root fetch - main [MainThread]: End processing [socialdataanalysis]: success
+[2024-06-02 21:53:13] INFO root fetch - processPackages [baseball]: Remove: archive file [/home/abi/fetcher/tmp/baseball-9.8.tar.gz]
+[2024-06-02 21:53:13] INFO root fetch - processPackages [baseball]: Remove: archive file [/home/abi/fetcher/tmp/baseball-9.9.tar.gz]
+[2024-06-02 21:53:13] INFO root fetch - main [MainThread]: End processing [baseball]: success
+[2024-06-02 21:53:13] INFO root fetch - processPackages [esbmtk]: Remove: archive file [/home/abi/fetcher/tmp/esbmtk-0.8.0.0.tar.gz]
+[2024-06-02 21:53:13] INFO root fetch - processPackages [esbmtk]: Remove: archive file [/home/abi/fetcher/tmp/esbmtk-0.9.0.1.tar.gz]
+[2024-06-02 21:53:13] INFO root fetch - main [MainThread]: End processing [esbmtk]: success
+[2024-06-02 21:53:13] INFO root fetch - main [MainThread]: Store serial: [23492553]
