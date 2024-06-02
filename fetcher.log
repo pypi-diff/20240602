@@ -5938,3 +5938,29 @@
 [2024-06-02 10:04:29] INFO root fetch - processPackages [langfun]: Remove: archive file [/home/abi/fetcher/tmp/langfun-0.0.2.dev20240601.tar.gz]
 [2024-06-02 10:04:29] INFO root fetch - main [MainThread]: End processing [langfun]: success
 [2024-06-02 10:04:29] INFO root fetch - main [MainThread]: Store serial: [23487268]
+[2024-06-02 10:06:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23487268]
+[2024-06-02 10:06:39] INFO root fetch - main [MainThread]: No changed packages found
+[2024-06-02 10:08:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23487268]
+[2024-06-02 10:08:44] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-02 10:08:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PKDevTools
+[2024-06-02 10:08:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyglove
+[2024-06-02 10:08:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rl-test-storage-handlers
+[2024-06-02 10:08:44] INFO root fetch - processPackages [PKDevTools]: New version: [0.13.20240601.130] Old Version: [0.13.20240601.129]
+[2024-06-02 10:08:44] INFO root fetch - processPackages [pyglove]: New version: [0.4.5.dev20240601] Old Version: [0.4.5.dev20240531]
+[2024-06-02 10:08:44] WARNING root fetch - processPackages [rl-test-storage-handlers]: Skipping, unable to determine old version
+[2024-06-02 10:08:44] INFO root fetch - main [MainThread]: End processing [rl-test-storage-handlers] error
+[2024-06-02 10:08:44] INFO root fetch - processPackages [PKDevTools]: Downloading https://files.pythonhosted.org/packages/d0/40/a61e4896accd89bcea97efc1e1df80fe920a52be672813908ba9a72405c8/PKDevTools-0.13.20240601.129.tar.gz
+[2024-06-02 10:08:44] INFO root fetch - processPackages [pyglove]: Downloading https://files.pythonhosted.org/packages/83/a5/7750f02c425b154459f41b3cfad2c37a806cee92edd03890ef08d959bd65/pyglove-0.4.5.dev20240531.tar.gz
+[2024-06-02 10:08:44] INFO root fetch - processPackages [PKDevTools]: Downloading https://files.pythonhosted.org/packages/19/56/1ce12899f2eb61997550543c4e6e73298a263c46a92a946b3234696a0db8/PKDevTools-0.13.20240601.130.tar.gz
+[2024-06-02 10:08:45] INFO root fetch - processPackages [pyglove]: Downloading https://files.pythonhosted.org/packages/f3/e8/2eff5f045de6302ba9280966d97c6bd7ba6a71470d9d1d50eca3663a7d59/pyglove-0.4.5.dev20240601.tar.gz
+[2024-06-02 10:08:45] INFO root fetch - processPackages [PKDevTools]: executing diffoscope
+[2024-06-02 10:08:45] INFO root fetch - processPackages [PKDevTools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PKDevTools-0.13.20240601.129.tar.gz tmp/PKDevTools-0.13.20240601.130.tar.gz --markdown 20240602/P/PKDevTools/0.13.20240601.129-0.13.20240601.130/README.md --exclude *.pyd
+[2024-06-02 10:08:45] INFO root fetch - processPackages [pyglove]: executing diffoscope
+[2024-06-02 10:08:45] INFO root fetch - processPackages [pyglove]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyglove-0.4.5.dev20240531.tar.gz tmp/pyglove-0.4.5.dev20240601.tar.gz --markdown 20240602/p/pyglove/0.4.5.dev20240531-0.4.5.dev20240601/README.md --exclude *.pyd
+[2024-06-02 10:08:45] INFO root fetch - processPackages [PKDevTools]: Remove: archive file [/home/abi/fetcher/tmp/PKDevTools-0.13.20240601.129.tar.gz]
+[2024-06-02 10:08:45] INFO root fetch - processPackages [PKDevTools]: Remove: archive file [/home/abi/fetcher/tmp/PKDevTools-0.13.20240601.130.tar.gz]
+[2024-06-02 10:08:45] INFO root fetch - main [MainThread]: End processing [PKDevTools]: success
+[2024-06-02 10:08:46] INFO root fetch - processPackages [pyglove]: Remove: archive file [/home/abi/fetcher/tmp/pyglove-0.4.5.dev20240531.tar.gz]
+[2024-06-02 10:08:46] INFO root fetch - processPackages [pyglove]: Remove: archive file [/home/abi/fetcher/tmp/pyglove-0.4.5.dev20240601.tar.gz]
+[2024-06-02 10:08:46] INFO root fetch - main [MainThread]: End processing [pyglove]: success
+[2024-06-02 10:08:46] INFO root fetch - main [MainThread]: Store serial: [23487288]
