@@ -15638,3 +15638,60 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 20:12:07] INFO root fetch - processPackages [zuspec-parser]: Remove: archive file [/home/abi/fetcher/tmp/zuspec_parser-0.0.1.9340218502-cp312-cp312-macosx_14_0_arm64.whl.zip]
 [2024-06-02 20:12:07] INFO root fetch - main [MainThread]: End processing [zuspec-parser]: success
 [2024-06-02 20:12:07] INFO root fetch - main [MainThread]: Store serial: [23491671]
+[2024-06-02 20:14:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23491671]
+[2024-06-02 20:14:15] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-06-02 20:14:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: trytond-currency
+[2024-06-02 20:14:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gsnodegraph
+[2024-06-02 20:14:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pysnptools
+[2024-06-02 20:14:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: trytond-currency
+[2024-06-02 20:14:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sentry-offline-transport
+[2024-06-02 20:14:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: trytond-currency
+[2024-06-02 20:14:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: all-cipher
+[2024-06-02 20:14:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: trytond-currency
+[2024-06-02 20:14:15] INFO root fetch - processPackages [pysnptools]: New version: [0.5.9] Old Version: [0.5.8]
+[2024-06-02 20:14:16] INFO root fetch - processPackages [gsnodegraph]: New version: [0.5.6] Old Version: [0.5.5]
+[2024-06-02 20:14:16] INFO root fetch - processPackages [trytond-currency]: New version: [7.2.2] Old Version: [7.2.1]
+[2024-06-02 20:14:16] INFO root fetch - processPackages [trytond-currency]: New version: [7.2.2] Old Version: [7.2.1]
+[2024-06-02 20:14:16] INFO root fetch - processPackages [trytond-currency]: New version: [7.2.2] Old Version: [7.2.1]
+[2024-06-02 20:14:16] INFO root fetch - processPackages [trytond-currency]: New version: [7.2.2] Old Version: [7.2.1]
+[2024-06-02 20:14:16] WARNING root fetch - processPackages [sentry-offline-transport]: Skipping, unable to determine old version
+[2024-06-02 20:14:16] WARNING root fetch - processPackages [all-cipher]: Skipping, unable to determine old version
+[2024-06-02 20:14:16] INFO root fetch - main [MainThread]: End processing [sentry-offline-transport] error
+[2024-06-02 20:14:16] INFO root fetch - main [MainThread]: End processing [all-cipher] error
+[2024-06-02 20:14:16] INFO root fetch - processPackages [pysnptools]: Downloading https://files.pythonhosted.org/packages/17/b0/bc1c6f31051df9fa7f5b40cb6a49fc2f6bc6a069a06320a93b57c59e127e/pysnptools-0.5.8.tar.gz
+[2024-06-02 20:14:16] INFO root fetch - processPackages [gsnodegraph]: Downloading https://files.pythonhosted.org/packages/84/b6/b355fcd47c7836c0fb296542283e015ae7ec1cfa99e066f865fbcc43d029/gsnodegraph-0.5.5.tar.gz
+[2024-06-02 20:14:16] INFO root fetch - processPackages [trytond-currency]: Downloading https://files.pythonhosted.org/packages/38/f3/726ddbb7b8a87cc8feea74d11b1418b2c707cb41f1bf8b22b9e9d7d4e151/trytond_currency-7.2.1.tar.gz
+[2024-06-02 20:14:16] INFO root fetch - processPackages [trytond-currency]: Downloading https://files.pythonhosted.org/packages/38/f3/726ddbb7b8a87cc8feea74d11b1418b2c707cb41f1bf8b22b9e9d7d4e151/trytond_currency-7.2.1.tar.gz
+[2024-06-02 20:14:16] INFO root fetch - processPackages [trytond-currency]: Downloading https://files.pythonhosted.org/packages/38/f3/726ddbb7b8a87cc8feea74d11b1418b2c707cb41f1bf8b22b9e9d7d4e151/trytond_currency-7.2.1.tar.gz
+[2024-06-02 20:14:16] INFO root fetch - processPackages [trytond-currency]: Downloading https://files.pythonhosted.org/packages/38/f3/726ddbb7b8a87cc8feea74d11b1418b2c707cb41f1bf8b22b9e9d7d4e151/trytond_currency-7.2.1.tar.gz
+[2024-06-02 20:14:16] INFO root fetch - processPackages [pysnptools]: Downloading https://files.pythonhosted.org/packages/1d/dd/63cc496535f242494f710121392c8b4224d9a2fa1acbd4e5c31e379e5ece/pysnptools-0.5.9.tar.gz
+[2024-06-02 20:14:16] INFO root fetch - processPackages [pysnptools]: executing diffoscope
+[2024-06-02 20:14:16] INFO root fetch - processPackages [pysnptools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysnptools-0.5.8.tar.gz tmp/pysnptools-0.5.9.tar.gz --markdown 20240602/p/pysnptools/0.5.8-0.5.9/README.md --exclude *.pyd
+[2024-06-02 20:14:16] INFO root fetch - processPackages [gsnodegraph]: Downloading https://files.pythonhosted.org/packages/31/e5/9391965124f76a2f97ca9515576d0e4410fce9487ac689796531a83cdacb/gsnodegraph-0.5.6.tar.gz
+[2024-06-02 20:14:16] INFO root fetch - processPackages [trytond-currency]: Downloading https://files.pythonhosted.org/packages/71/a9/d3d789504b8ebc79125af1e4726ffd70df8eb491c56ba5283a3992bcb7a0/trytond_currency-7.2.2.tar.gz
+[2024-06-02 20:14:16] INFO root fetch - processPackages [trytond-currency]: Downloading https://files.pythonhosted.org/packages/71/a9/d3d789504b8ebc79125af1e4726ffd70df8eb491c56ba5283a3992bcb7a0/trytond_currency-7.2.2.tar.gz
+[2024-06-02 20:14:16] INFO root fetch - processPackages [trytond-currency]: Downloading https://files.pythonhosted.org/packages/71/a9/d3d789504b8ebc79125af1e4726ffd70df8eb491c56ba5283a3992bcb7a0/trytond_currency-7.2.2.tar.gz
+[2024-06-02 20:14:16] INFO root fetch - processPackages [trytond-currency]: Downloading https://files.pythonhosted.org/packages/71/a9/d3d789504b8ebc79125af1e4726ffd70df8eb491c56ba5283a3992bcb7a0/trytond_currency-7.2.2.tar.gz
+[2024-06-02 20:14:16] INFO root fetch - processPackages [gsnodegraph]: executing diffoscope
+[2024-06-02 20:14:16] INFO root fetch - processPackages [gsnodegraph]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gsnodegraph-0.5.5.tar.gz tmp/gsnodegraph-0.5.6.tar.gz --markdown 20240602/g/gsnodegraph/0.5.5-0.5.6/README.md --exclude *.pyd
+[2024-06-02 20:14:16] INFO root fetch - processPackages [trytond-currency]: executing diffoscope
+[2024-06-02 20:14:16] INFO root fetch - processPackages [trytond-currency]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trytond_currency-7.2.1.tar.gz tmp/trytond_currency-7.2.2.tar.gz --markdown 20240602/t/trytond-currency/7.2.1-7.2.2/README.md --exclude *.pyd
+[2024-06-02 20:14:16] INFO root fetch - processPackages [trytond-currency]: executing diffoscope
+[2024-06-02 20:14:16] INFO root fetch - processPackages [trytond-currency]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trytond_currency-7.2.1.tar.gz tmp/trytond_currency-7.2.2.tar.gz --markdown 20240602/t/trytond-currency/7.2.1-7.2.2/README.md --exclude *.pyd
+[2024-06-02 20:14:16] INFO root fetch - processPackages [trytond-currency]: executing diffoscope
+[2024-06-02 20:14:16] INFO root fetch - processPackages [trytond-currency]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trytond_currency-7.2.1.tar.gz tmp/trytond_currency-7.2.2.tar.gz --markdown 20240602/t/trytond-currency/7.2.1-7.2.2/README.md --exclude *.pyd
+[2024-06-02 20:14:16] INFO root fetch - processPackages [trytond-currency]: executing diffoscope
+[2024-06-02 20:14:16] INFO root fetch - processPackages [trytond-currency]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trytond_currency-7.2.1.tar.gz tmp/trytond_currency-7.2.2.tar.gz --markdown 20240602/t/trytond-currency/7.2.1-7.2.2/README.md --exclude *.pyd
+[2024-06-02 20:14:17] INFO root fetch - processPackages [gsnodegraph]: Remove: archive file [/home/abi/fetcher/tmp/gsnodegraph-0.5.5.tar.gz]
+[2024-06-02 20:14:17] INFO root fetch - processPackages [gsnodegraph]: Remove: archive file [/home/abi/fetcher/tmp/gsnodegraph-0.5.6.tar.gz]
+[2024-06-02 20:14:17] INFO root fetch - main [MainThread]: End processing [gsnodegraph]: success
+[2024-06-02 20:14:17] INFO root fetch - processPackages [pysnptools]: Remove: archive file [/home/abi/fetcher/tmp/pysnptools-0.5.8.tar.gz]
+[2024-06-02 20:14:17] INFO root fetch - processPackages [pysnptools]: Remove: archive file [/home/abi/fetcher/tmp/pysnptools-0.5.9.tar.gz]
+[2024-06-02 20:14:17] INFO root fetch - main [MainThread]: End processing [pysnptools]: success
+[2024-06-02 20:14:17] INFO root fetch - processPackages [trytond-currency]: Remove: archive file [/home/abi/fetcher/tmp/trytond_currency-7.2.1.tar.gz]
+[2024-06-02 20:14:17] INFO root fetch - processPackages [trytond-currency]: Remove: archive file [/home/abi/fetcher/tmp/trytond_currency-7.2.2.tar.gz]
+[2024-06-02 20:14:17] INFO root fetch - main [MainThread]: End processing [trytond-currency]: success
+[2024-06-02 20:14:17] INFO root fetch - main [MainThread]: End processing [trytond-currency]: success
+[2024-06-02 20:14:17] INFO root fetch - main [MainThread]: End processing [trytond-currency]: success
+[2024-06-02 20:14:17] INFO root fetch - main [MainThread]: End processing [trytond-currency]: success
+[2024-06-02 20:14:17] INFO root fetch - main [MainThread]: Store serial: [23491722]
