@@ -10603,3 +10603,30 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-02 16:03:20] INFO root fetch - processPackages [steelseries-sonar-py]: Remove: archive file [/home/abi/fetcher/tmp/steelseries_sonar_py-1.2.0.tar.gz]
 [2024-06-02 16:03:20] INFO root fetch - main [MainThread]: End processing [steelseries-sonar-py]: success
 [2024-06-02 16:03:20] INFO root fetch - main [MainThread]: Store serial: [23489402]
+[2024-06-02 16:05:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23489402]
+[2024-06-02 16:05:29] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-02 16:05:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: streamlit-avater
+[2024-06-02 16:05:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kub
+[2024-06-02 16:05:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: monopoly-core
+[2024-06-02 16:05:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: auto-coder
+[2024-06-02 16:05:29] WARNING root fetch - processPackages [streamlit-avater]: Skipping, unable to determine old version
+[2024-06-02 16:05:29] INFO root fetch - main [MainThread]: End processing [streamlit-avater] error
+[2024-06-02 16:05:29] WARNING root fetch - processPackages [monopoly-core]: Skipping, unable to determine old version
+[2024-06-02 16:05:29] INFO root fetch - main [MainThread]: End processing [monopoly-core] error
+[2024-06-02 16:05:29] INFO root fetch - processPackages [kub]: New version: [0.2.1] Old Version: [0.2.0]
+[2024-06-02 16:05:29] INFO root fetch - processPackages [auto-coder]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-06-02 16:05:29] INFO root fetch - processPackages [kub]: Downloading https://files.pythonhosted.org/packages/49/f0/289a6350442410dbc000b703b4ee71f30a1f46dfdf99c9ad701d41c02a69/kub-0.2.0.tar.gz
+[2024-06-02 16:05:29] INFO root fetch - processPackages [auto-coder]: Downloading https://files.pythonhosted.org/packages/d1/69/520c5552e42e8901e930364867dc863b8beb917b52544194a46c864a7385/auto-coder-0.1.8.tar.gz
+[2024-06-02 16:05:29] INFO root fetch - processPackages [kub]: Downloading https://files.pythonhosted.org/packages/c4/ba/1b3ca1a6aebe627a3085fbdfc2587c08ba72635c705454b70a2a80f1af79/kub-0.2.1.tar.gz
+[2024-06-02 16:05:30] INFO root fetch - processPackages [auto-coder]: Downloading https://files.pythonhosted.org/packages/4d/9a/1bad03fbe8fd6d47cd359f857b05e28efaa8cba07c33aa029696a40dd646/auto-coder-0.1.9.tar.gz
+[2024-06-02 16:05:30] INFO root fetch - processPackages [kub]: executing diffoscope
+[2024-06-02 16:05:30] INFO root fetch - processPackages [kub]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kub-0.2.0.tar.gz tmp/kub-0.2.1.tar.gz --markdown 20240602/k/kub/0.2.0-0.2.1/README.md --exclude *.pyd
+[2024-06-02 16:05:30] INFO root fetch - processPackages [auto-coder]: executing diffoscope
+[2024-06-02 16:05:30] INFO root fetch - processPackages [auto-coder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/auto-coder-0.1.8.tar.gz tmp/auto-coder-0.1.9.tar.gz --markdown 20240602/a/auto-coder/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-06-02 16:05:30] INFO root fetch - processPackages [kub]: Remove: archive file [/home/abi/fetcher/tmp/kub-0.2.0.tar.gz]
+[2024-06-02 16:05:30] INFO root fetch - processPackages [kub]: Remove: archive file [/home/abi/fetcher/tmp/kub-0.2.1.tar.gz]
+[2024-06-02 16:05:30] INFO root fetch - main [MainThread]: End processing [kub]: success
+[2024-06-02 16:05:30] INFO root fetch - processPackages [auto-coder]: Remove: archive file [/home/abi/fetcher/tmp/auto-coder-0.1.8.tar.gz]
+[2024-06-02 16:05:30] INFO root fetch - processPackages [auto-coder]: Remove: archive file [/home/abi/fetcher/tmp/auto-coder-0.1.9.tar.gz]
+[2024-06-02 16:05:30] INFO root fetch - main [MainThread]: End processing [auto-coder]: success
+[2024-06-02 16:05:30] INFO root fetch - main [MainThread]: Store serial: [23489417]
