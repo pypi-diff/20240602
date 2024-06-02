@@ -2528,3 +2528,33 @@
 [2024-06-02 03:21:39] INFO root fetch - processPackages [rencrypt]: Remove: archive file [/home/abi/fetcher/tmp/REncrypt-0.1.9.tar.gz]
 [2024-06-02 03:21:39] INFO root fetch - main [MainThread]: End processing [rencrypt]: success
 [2024-06-02 03:21:39] INFO root fetch - main [MainThread]: Store serial: [23485365]
+[2024-06-02 03:23:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23485365]
+[2024-06-02 03:23:47] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-02 03:23:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: environment-helpers
+[2024-06-02 03:23:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: jobQuery
+[2024-06-02 03:23:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: zeroize
+[2024-06-02 03:23:47] INFO root fetch - processPackages [jobQuery]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-06-02 03:23:47] INFO root fetch - processPackages [zeroize]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-06-02 03:23:47] INFO root fetch - processPackages [jobQuery]: Downloading https://files.pythonhosted.org/packages/70/61/fe49ccd0c9843653cbf1938f8789a2bafb64be9b975c4bc2ae51cb6537e0/jobquery-1.0.1.tar.gz
+[2024-06-02 03:23:47] INFO root fetch - processPackages [environment-helpers]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-06-02 03:23:47] INFO root fetch - processPackages [zeroize]: Downloading https://files.pythonhosted.org/packages/2d/a8/1cd75fcfd698fbde9d155df6b56bfb0b90aa4cb312f5748c988fa22958b0/zeroize-0.1.3.tar.gz
+[2024-06-02 03:23:47] INFO root fetch - processPackages [environment-helpers]: Downloading https://files.pythonhosted.org/packages/c2/a7/6cfc0ab95eef2f46279dc13597687c57bba6cf6662b6ce3fb522d48dc230/environment_helpers-0.1.2.tar.gz
+[2024-06-02 03:23:47] INFO root fetch - processPackages [zeroize]: Downloading https://files.pythonhosted.org/packages/ed/eb/9134f6ce1c0d63debd50b37bba18c7c2488099e97cbaaa04bc0b920f5eb1/zeroize-0.1.4.tar.gz
+[2024-06-02 03:23:48] INFO root fetch - processPackages [jobQuery]: Downloading https://files.pythonhosted.org/packages/80/16/8246d10e6a136d0d04b86c7c0be1a385dcc9156b40897832624c00b3c30a/jobquery-1.0.2.tar.gz
+[2024-06-02 03:23:48] INFO root fetch - processPackages [zeroize]: executing diffoscope
+[2024-06-02 03:23:48] INFO root fetch - processPackages [zeroize]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zeroize-0.1.3.tar.gz tmp/zeroize-0.1.4.tar.gz --markdown 20240602/z/zeroize/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-06-02 03:23:48] INFO root fetch - processPackages [jobQuery]: executing diffoscope
+[2024-06-02 03:23:48] INFO root fetch - processPackages [jobQuery]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jobquery-1.0.1.tar.gz tmp/jobquery-1.0.2.tar.gz --markdown 20240602/j/jobQuery/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-06-02 03:23:48] INFO root fetch - processPackages [environment-helpers]: Downloading https://files.pythonhosted.org/packages/f4/13/5176db28d660db9b7825e1270446db809f2b18ccd26d900f48ad9c8eef52/environment_helpers-0.1.3.tar.gz
+[2024-06-02 03:23:48] INFO root fetch - processPackages [environment-helpers]: executing diffoscope
+[2024-06-02 03:23:48] INFO root fetch - processPackages [environment-helpers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/environment_helpers-0.1.2.tar.gz tmp/environment_helpers-0.1.3.tar.gz --markdown 20240602/e/environment-helpers/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-06-02 03:23:48] INFO root fetch - processPackages [jobQuery]: Remove: archive file [/home/abi/fetcher/tmp/jobquery-1.0.1.tar.gz]
+[2024-06-02 03:23:48] INFO root fetch - processPackages [jobQuery]: Remove: archive file [/home/abi/fetcher/tmp/jobquery-1.0.2.tar.gz]
+[2024-06-02 03:23:48] INFO root fetch - main [MainThread]: End processing [jobQuery]: success
+[2024-06-02 03:23:48] INFO root fetch - processPackages [zeroize]: Remove: archive file [/home/abi/fetcher/tmp/zeroize-0.1.3.tar.gz]
+[2024-06-02 03:23:48] INFO root fetch - processPackages [zeroize]: Remove: archive file [/home/abi/fetcher/tmp/zeroize-0.1.4.tar.gz]
+[2024-06-02 03:23:48] INFO root fetch - main [MainThread]: End processing [zeroize]: success
+[2024-06-02 03:23:48] INFO root fetch - processPackages [environment-helpers]: Remove: archive file [/home/abi/fetcher/tmp/environment_helpers-0.1.2.tar.gz]
+[2024-06-02 03:23:48] INFO root fetch - processPackages [environment-helpers]: Remove: archive file [/home/abi/fetcher/tmp/environment_helpers-0.1.3.tar.gz]
+[2024-06-02 03:23:48] INFO root fetch - main [MainThread]: End processing [environment-helpers]: success
+[2024-06-02 03:23:48] INFO root fetch - main [MainThread]: Store serial: [23485399]
