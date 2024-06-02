@@ -4611,3 +4611,15 @@
 [2024-06-02 07:49:23] WARNING root fetch - processPackages [checkptr]: Skipping, unable to determine old version
 [2024-06-02 07:49:23] INFO root fetch - main [MainThread]: End processing [checkptr] error
 [2024-06-02 07:49:23] INFO root fetch - main [MainThread]: Store serial: [23486541]
+[2024-06-02 07:51:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23486541]
+[2024-06-02 07:51:32] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-02 07:51:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pydal
+[2024-06-02 07:51:32] INFO root fetch - processPackages [pydal]: New version: [20240601.1] Old Version: [20240529.1]
+[2024-06-02 07:51:32] INFO root fetch - processPackages [pydal]: Downloading https://files.pythonhosted.org/packages/76/1f/0979fd968881ba348db3b4d2b159300fdd7893dbcd51315e7a66e79da24f/pydal-20240529.1.tar.gz
+[2024-06-02 07:51:32] INFO root fetch - processPackages [pydal]: Downloading https://files.pythonhosted.org/packages/4f/79/8f4a15ff8a74009c5614e041dd323bb1b292035f95574f841b253cb7bd65/pydal-20240601.1.tar.gz
+[2024-06-02 07:51:32] INFO root fetch - processPackages [pydal]: executing diffoscope
+[2024-06-02 07:51:32] INFO root fetch - processPackages [pydal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydal-20240529.1.tar.gz tmp/pydal-20240601.1.tar.gz --markdown 20240602/p/pydal/20240529.1-20240601.1/README.md --exclude *.pyd
+[2024-06-02 07:51:33] INFO root fetch - processPackages [pydal]: Remove: archive file [/home/abi/fetcher/tmp/pydal-20240529.1.tar.gz]
+[2024-06-02 07:51:33] INFO root fetch - processPackages [pydal]: Remove: archive file [/home/abi/fetcher/tmp/pydal-20240601.1.tar.gz]
+[2024-06-02 07:51:33] INFO root fetch - main [MainThread]: End processing [pydal]: success
+[2024-06-02 07:51:33] INFO root fetch - main [MainThread]: Store serial: [23486545]
