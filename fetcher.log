@@ -15078,3 +15078,15 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 19:41:25] INFO root fetch - processPackages [ml4co-kit]: Remove: archive file [/home/abi/fetcher/tmp/ml4co_kit-0.0.7.tar.gz]
 [2024-06-02 19:41:25] INFO root fetch - main [MainThread]: End processing [ml4co-kit]: success
 [2024-06-02 19:41:25] INFO root fetch - main [MainThread]: Store serial: [23491421]
+[2024-06-02 19:43:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23491421]
+[2024-06-02 19:43:34] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-02 19:43:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pypi-cicd
+[2024-06-02 19:43:34] INFO root fetch - processPackages [pypi-cicd]: New version: [0.5] Old Version: [0.4]
+[2024-06-02 19:43:34] INFO root fetch - processPackages [pypi-cicd]: Downloading https://files.pythonhosted.org/packages/73/26/cf77e469f284fcac35ef7c514b4bcafc461a7f353b3537363d75f579e173/pypi_cicd-0.4.tar.gz
+[2024-06-02 19:43:34] INFO root fetch - processPackages [pypi-cicd]: Downloading https://files.pythonhosted.org/packages/3d/da/c414af17bf136428ebe5f5ab5d1ff8fe1e350cc4264bf286609a7e06e3e1/pypi_cicd-0.5.tar.gz
+[2024-06-02 19:43:34] INFO root fetch - processPackages [pypi-cicd]: executing diffoscope
+[2024-06-02 19:43:34] INFO root fetch - processPackages [pypi-cicd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypi_cicd-0.4.tar.gz tmp/pypi_cicd-0.5.tar.gz --markdown 20240602/p/pypi-cicd/0.4-0.5/README.md --exclude *.pyd
+[2024-06-02 19:43:35] INFO root fetch - processPackages [pypi-cicd]: Remove: archive file [/home/abi/fetcher/tmp/pypi_cicd-0.4.tar.gz]
+[2024-06-02 19:43:35] INFO root fetch - processPackages [pypi-cicd]: Remove: archive file [/home/abi/fetcher/tmp/pypi_cicd-0.5.tar.gz]
+[2024-06-02 19:43:35] INFO root fetch - main [MainThread]: End processing [pypi-cicd]: success
+[2024-06-02 19:43:35] INFO root fetch - main [MainThread]: Store serial: [23491428]
