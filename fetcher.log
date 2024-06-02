@@ -13789,3 +13789,40 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 18:36:00] INFO root fetch - processPackages [litestar]: Remove: archive file [/home/abi/fetcher/tmp/litestar-2.9.0.tar.gz]
 [2024-06-02 18:36:00] INFO root fetch - main [MainThread]: End processing [litestar]: success
 [2024-06-02 18:36:00] INFO root fetch - main [MainThread]: Store serial: [23490798]
+[2024-06-02 18:38:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23490798]
+[2024-06-02 18:38:09] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-02 18:38:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: trytond-product-cost-fifo
+[2024-06-02 18:38:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: trytond-document-incoming-ocr
+[2024-06-02 18:38:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gumbi
+[2024-06-02 18:38:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: trytond-document-incoming-ocr
+[2024-06-02 18:38:09] INFO root fetch - processPackages [trytond-product-cost-fifo]: New version: [7.2.1] Old Version: [7.2.0]
+[2024-06-02 18:38:09] INFO root fetch - processPackages [trytond-product-cost-fifo]: Downloading https://files.pythonhosted.org/packages/fe/c1/d188f8e42f8eca9c862a005c1abd92a9f3685a589c0fb2a076c58b4ed920/trytond_product_cost_fifo-7.2.0.tar.gz
+[2024-06-02 18:38:09] INFO root fetch - processPackages [trytond-document-incoming-ocr]: New version: [7.2.1] Old Version: [7.2.0]
+[2024-06-02 18:38:09] INFO root fetch - processPackages [trytond-document-incoming-ocr]: New version: [7.2.1] Old Version: [7.2.0]
+[2024-06-02 18:38:09] INFO root fetch - processPackages [gumbi]: New version: [0.2.2] Old Version: [0.2.1]
+[2024-06-02 18:38:09] INFO root fetch - processPackages [trytond-product-cost-fifo]: Downloading https://files.pythonhosted.org/packages/5d/45/b92f4d4373fe978c78ccc3ac17b21699c16c0122c891324101864efc8097/trytond_product_cost_fifo-7.2.1.tar.gz
+[2024-06-02 18:38:09] INFO root fetch - processPackages [trytond-document-incoming-ocr]: Downloading https://files.pythonhosted.org/packages/8a/7d/bdd597aeb64b3a2041a781c8abdf1c3135a0c7190cbf10a06c85bd0d61c3/trytond_document_incoming_ocr-7.2.0.tar.gz
+[2024-06-02 18:38:09] INFO root fetch - processPackages [gumbi]: Downloading https://files.pythonhosted.org/packages/da/8b/d8f1d8c7ee601b23862fbceda543119e2a72daeaed19962221db4f787fd7/gumbi-0.2.1.tar.gz
+[2024-06-02 18:38:09] INFO root fetch - processPackages [trytond-document-incoming-ocr]: Downloading https://files.pythonhosted.org/packages/8a/7d/bdd597aeb64b3a2041a781c8abdf1c3135a0c7190cbf10a06c85bd0d61c3/trytond_document_incoming_ocr-7.2.0.tar.gz
+[2024-06-02 18:38:09] INFO root fetch - processPackages [trytond-product-cost-fifo]: executing diffoscope
+[2024-06-02 18:38:09] INFO root fetch - processPackages [trytond-product-cost-fifo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trytond_product_cost_fifo-7.2.0.tar.gz tmp/trytond_product_cost_fifo-7.2.1.tar.gz --markdown 20240602/t/trytond-product-cost-fifo/7.2.0-7.2.1/README.md --exclude *.pyd
+[2024-06-02 18:38:09] INFO root fetch - processPackages [trytond-document-incoming-ocr]: Downloading https://files.pythonhosted.org/packages/51/1d/25fb1a9a9dbac8d11324ea709426fd04095b345495e719c8308373e09345/trytond_document_incoming_ocr-7.2.1.tar.gz
+[2024-06-02 18:38:09] INFO root fetch - processPackages [trytond-document-incoming-ocr]: Downloading https://files.pythonhosted.org/packages/51/1d/25fb1a9a9dbac8d11324ea709426fd04095b345495e719c8308373e09345/trytond_document_incoming_ocr-7.2.1.tar.gz
+[2024-06-02 18:38:10] INFO root fetch - processPackages [trytond-document-incoming-ocr]: executing diffoscope
+[2024-06-02 18:38:10] INFO root fetch - processPackages [trytond-document-incoming-ocr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trytond_document_incoming_ocr-7.2.0.tar.gz tmp/trytond_document_incoming_ocr-7.2.1.tar.gz --markdown 20240602/t/trytond-document-incoming-ocr/7.2.0-7.2.1/README.md --exclude *.pyd
+[2024-06-02 18:38:10] INFO root fetch - processPackages [trytond-document-incoming-ocr]: executing diffoscope
+[2024-06-02 18:38:10] INFO root fetch - processPackages [trytond-document-incoming-ocr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trytond_document_incoming_ocr-7.2.0.tar.gz tmp/trytond_document_incoming_ocr-7.2.1.tar.gz --markdown 20240602/t/trytond-document-incoming-ocr/7.2.0-7.2.1/README.md --exclude *.pyd
+[2024-06-02 18:38:10] INFO root fetch - processPackages [gumbi]: Downloading https://files.pythonhosted.org/packages/e4/dc/4c7fe38b095b6274de45bff19b43134d5e8798ad270a301d09c2f381a3c9/gumbi-0.2.2.tar.gz
+[2024-06-02 18:38:10] INFO root fetch - processPackages [trytond-product-cost-fifo]: Remove: archive file [/home/abi/fetcher/tmp/trytond_product_cost_fifo-7.2.0.tar.gz]
+[2024-06-02 18:38:10] INFO root fetch - processPackages [trytond-product-cost-fifo]: Remove: archive file [/home/abi/fetcher/tmp/trytond_product_cost_fifo-7.2.1.tar.gz]
+[2024-06-02 18:38:10] INFO root fetch - main [MainThread]: End processing [trytond-product-cost-fifo]: success
+[2024-06-02 18:38:10] INFO root fetch - processPackages [gumbi]: executing diffoscope
+[2024-06-02 18:38:10] INFO root fetch - processPackages [gumbi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gumbi-0.2.1.tar.gz tmp/gumbi-0.2.2.tar.gz --markdown 20240602/g/gumbi/0.2.1-0.2.2/README.md --exclude *.pyd
+[2024-06-02 18:38:10] INFO root fetch - processPackages [trytond-document-incoming-ocr]: Remove: archive file [/home/abi/fetcher/tmp/trytond_document_incoming_ocr-7.2.0.tar.gz]
+[2024-06-02 18:38:10] INFO root fetch - processPackages [trytond-document-incoming-ocr]: Remove: archive file [/home/abi/fetcher/tmp/trytond_document_incoming_ocr-7.2.1.tar.gz]
+[2024-06-02 18:38:10] INFO root fetch - main [MainThread]: End processing [trytond-document-incoming-ocr]: success
+[2024-06-02 18:38:10] INFO root fetch - main [MainThread]: End processing [trytond-document-incoming-ocr]: success
+[2024-06-02 18:38:11] INFO root fetch - processPackages [gumbi]: Remove: archive file [/home/abi/fetcher/tmp/gumbi-0.2.1.tar.gz]
+[2024-06-02 18:38:11] INFO root fetch - processPackages [gumbi]: Remove: archive file [/home/abi/fetcher/tmp/gumbi-0.2.2.tar.gz]
+[2024-06-02 18:38:11] INFO root fetch - main [MainThread]: End processing [gumbi]: success
+[2024-06-02 18:38:11] INFO root fetch - main [MainThread]: Store serial: [23490810]
