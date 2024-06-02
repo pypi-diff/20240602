@@ -8055,3 +8055,53 @@
 [2024-06-02 13:01:13] INFO root fetch - processPackages [eolymp]: Remove: archive file [/home/abi/fetcher/tmp/eolymp-0.9.9.tar.gz]
 [2024-06-02 13:01:13] INFO root fetch - main [MainThread]: End processing [eolymp]: success
 [2024-06-02 13:01:13] INFO root fetch - main [MainThread]: Store serial: [23488300]
+[2024-06-02 13:03:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23488300]
+[2024-06-02 13:03:22] INFO root fetch - main [MainThread]: No changed packages found
+[2024-06-02 13:05:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23488301]
+[2024-06-02 13:05:28] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-06-02 13:05:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: contact-profile-local
+[2024-06-02 13:05:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sbe
+[2024-06-02 13:05:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mteb
+[2024-06-02 13:05:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ruqia
+[2024-06-02 13:05:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pytro
+[2024-06-02 13:05:29] INFO root fetch - processPackages [ruqia]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-06-02 13:05:29] INFO root fetch - processPackages [pytro]: New version: [0.1.1] Old Version: [0.1]
+[2024-06-02 13:05:29] INFO root fetch - processPackages [mteb]: New version: [1.9.3] Old Version: [1.9.2]
+[2024-06-02 13:05:29] INFO root fetch - processPackages [contact-profile-local]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-06-02 13:05:29] INFO root fetch - processPackages [ruqia]: Downloading https://files.pythonhosted.org/packages/00/6e/947f842f446dc3c06f4c72f25f4faf2f40d7ee8d535636e379f541a68606/ruqia-0.0.8.tar.gz
+[2024-06-02 13:05:29] INFO root fetch - processPackages [sbe]: New version: [0.3.4] Old Version: [0.3.3]
+[2024-06-02 13:05:29] INFO root fetch - processPackages [contact-profile-local]: Downloading https://files.pythonhosted.org/packages/25/4a/9c68dad06d1a31f725b72a9ffc13addd416fc1a79227150e4cf02bed13fd/contact_profile_local-0.0.8.tar.gz
+[2024-06-02 13:05:29] INFO root fetch - processPackages [mteb]: Downloading https://files.pythonhosted.org/packages/aa/99/be58df74a89833b5d44fbd8f00e5c99b4ca82aa67a9c1487fd782328d3b5/mteb-1.9.2.tar.gz
+[2024-06-02 13:05:29] INFO root fetch - processPackages [pytro]: Downloading https://files.pythonhosted.org/packages/d8/1b/e9525811e0ec9261477ada2185bc1300198177bb515ad1e35ad5149f2887/pytro-0.1.tar.gz
+[2024-06-02 13:05:29] INFO root fetch - processPackages [sbe]: Downloading https://files.pythonhosted.org/packages/e2/30/d0f46de7f50f4875561abdfbcea2c44e755d1d8403f4424b5b3445613f2a/sbe-0.3.3.tar.gz
+[2024-06-02 13:05:29] INFO root fetch - processPackages [ruqia]: Downloading https://files.pythonhosted.org/packages/04/7e/91a622c32fde873979352ba2f81b9e503bcc5368785872602ed8d9e9a394/ruqia-0.0.9.tar.gz
+[2024-06-02 13:05:29] INFO root fetch - processPackages [contact-profile-local]: Downloading https://files.pythonhosted.org/packages/8f/de/661db7b84762d21a0fe82f0b63a31a7df9b884479bcaa52c125b53e4caa3/contact_profile_local-0.0.9.tar.gz
+[2024-06-02 13:05:29] INFO root fetch - processPackages [mteb]: Downloading https://files.pythonhosted.org/packages/1a/05/483a4778dcfb42b672c3c28ac435e64d386b1df507d3c0059e5da9194653/mteb-1.9.3.tar.gz
+[2024-06-02 13:05:29] INFO root fetch - processPackages [contact-profile-local]: executing diffoscope
+[2024-06-02 13:05:29] INFO root fetch - processPackages [contact-profile-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/contact_profile_local-0.0.8.tar.gz tmp/contact_profile_local-0.0.9.tar.gz --markdown 20240602/c/contact-profile-local/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-06-02 13:05:29] INFO root fetch - processPackages [pytro]: Downloading https://files.pythonhosted.org/packages/53/ec/9d1bd5593cd03c64d4d2a02445d7c61cbbbbd60b8528c56da2e6805142b8/pytro-0.1.1.tar.gz
+[2024-06-02 13:05:29] INFO root fetch - processPackages [sbe]: Downloading https://files.pythonhosted.org/packages/1f/f6/2061b37b7336b8d8066911bc3d2914f91cf6fd0919e942ae818d6361bc78/sbe-0.3.4.tar.gz
+[2024-06-02 13:05:29] INFO root fetch - processPackages [pytro]: executing diffoscope
+[2024-06-02 13:05:29] INFO root fetch - processPackages [pytro]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytro-0.1.tar.gz tmp/pytro-0.1.1.tar.gz --markdown 20240602/p/pytro/0.1-0.1.1/README.md --exclude *.pyd
+[2024-06-02 13:05:29] INFO root fetch - processPackages [mteb]: executing diffoscope
+[2024-06-02 13:05:29] INFO root fetch - processPackages [mteb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mteb-1.9.2.tar.gz tmp/mteb-1.9.3.tar.gz --markdown 20240602/m/mteb/1.9.2-1.9.3/README.md --exclude *.pyd
+[2024-06-02 13:05:29] INFO root fetch - processPackages [sbe]: executing diffoscope
+[2024-06-02 13:05:29] INFO root fetch - processPackages [sbe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sbe-0.3.3.tar.gz tmp/sbe-0.3.4.tar.gz --markdown 20240602/s/sbe/0.3.3-0.3.4/README.md --exclude *.pyd
+[2024-06-02 13:05:30] INFO root fetch - processPackages [ruqia]: executing diffoscope
+[2024-06-02 13:05:30] INFO root fetch - processPackages [ruqia]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ruqia-0.0.8.tar.gz tmp/ruqia-0.0.9.tar.gz --markdown 20240602/r/ruqia/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-06-02 13:05:30] INFO root fetch - processPackages [contact-profile-local]: Remove: archive file [/home/abi/fetcher/tmp/contact_profile_local-0.0.8.tar.gz]
+[2024-06-02 13:05:30] INFO root fetch - processPackages [contact-profile-local]: Remove: archive file [/home/abi/fetcher/tmp/contact_profile_local-0.0.9.tar.gz]
+[2024-06-02 13:05:30] INFO root fetch - main [MainThread]: End processing [contact-profile-local]: success
+[2024-06-02 13:05:30] INFO root fetch - processPackages [pytro]: Remove: archive file [/home/abi/fetcher/tmp/pytro-0.1.tar.gz]
+[2024-06-02 13:05:30] INFO root fetch - processPackages [pytro]: Remove: archive file [/home/abi/fetcher/tmp/pytro-0.1.1.tar.gz]
+[2024-06-02 13:05:30] INFO root fetch - main [MainThread]: End processing [pytro]: success
+[2024-06-02 13:05:30] INFO root fetch - processPackages [sbe]: Remove: archive file [/home/abi/fetcher/tmp/sbe-0.3.3.tar.gz]
+[2024-06-02 13:05:30] INFO root fetch - processPackages [sbe]: Remove: archive file [/home/abi/fetcher/tmp/sbe-0.3.4.tar.gz]
+[2024-06-02 13:05:30] INFO root fetch - main [MainThread]: End processing [sbe]: success
+[2024-06-02 13:05:30] INFO root fetch - processPackages [ruqia]: Remove: archive file [/home/abi/fetcher/tmp/ruqia-0.0.8.tar.gz]
+[2024-06-02 13:05:30] INFO root fetch - processPackages [ruqia]: Remove: archive file [/home/abi/fetcher/tmp/ruqia-0.0.9.tar.gz]
+[2024-06-02 13:05:30] INFO root fetch - main [MainThread]: End processing [ruqia]: success
+[2024-06-02 13:05:32] INFO root fetch - processPackages [mteb]: Remove: archive file [/home/abi/fetcher/tmp/mteb-1.9.2.tar.gz]
+[2024-06-02 13:05:32] INFO root fetch - processPackages [mteb]: Remove: archive file [/home/abi/fetcher/tmp/mteb-1.9.3.tar.gz]
+[2024-06-02 13:05:32] INFO root fetch - main [MainThread]: End processing [mteb]: success
+[2024-06-02 13:05:32] INFO root fetch - main [MainThread]: Store serial: [23488315]
