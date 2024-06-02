@@ -15170,3 +15170,45 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 19:50:06] INFO root fetch - processPackages [surfkit]: Remove: archive file [/home/abi/fetcher/tmp/surfkit-0.1.99.tar.gz]
 [2024-06-02 19:50:06] INFO root fetch - main [MainThread]: End processing [surfkit]: success
 [2024-06-02 19:50:06] INFO root fetch - main [MainThread]: Store serial: [23491464]
+[2024-06-02 19:52:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23491464]
+[2024-06-02 19:52:14] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-06-02 19:52:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: FinalsLabExam
+[2024-06-02 19:52:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: OpenTTDLab
+[2024-06-02 19:52:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lasagna-ai
+[2024-06-02 19:52:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ok-script
+[2024-06-02 19:52:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: omnata-plugin-runtime
+[2024-06-02 19:52:14] INFO root fetch - processPackages [omnata-plugin-runtime]: New version: [0.3.9a44] Old Version: [0.3.9a43]
+[2024-06-02 19:52:14] INFO root fetch - processPackages [ok-script]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-06-02 19:52:14] INFO root fetch - processPackages [OpenTTDLab]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-06-02 19:52:14] INFO root fetch - processPackages [ok-script]: Downloading https://files.pythonhosted.org/packages/5f/e3/968a4bfd4b0c82df5c5171f3d7d42fc8d8354283f3bae8becf975bc2cfb9/ok-script-0.0.8.tar.gz
+[2024-06-02 19:52:15] WARNING root fetch - processPackages [FinalsLabExam]: Skipping, unable to determine old version
+[2024-06-02 19:52:15] INFO root fetch - main [MainThread]: End processing [FinalsLabExam] error
+[2024-06-02 19:52:15] INFO root fetch - processPackages [lasagna-ai]: New version: [0.2.0] Old Version: [0.1.0]
+[2024-06-02 19:52:15] INFO root fetch - processPackages [omnata-plugin-runtime]: Downloading https://files.pythonhosted.org/packages/8e/11/abde4b4d82373bc42a84a5591bf31c6cca540ba9f13337491df615af0b6c/omnata_plugin_runtime-0.3.9a43.tar.gz
+[2024-06-02 19:52:15] INFO root fetch - processPackages [OpenTTDLab]: Downloading https://files.pythonhosted.org/packages/1f/6e/f9d8e929738fb28f0cf285d806e9d1e0b273a3abd0c627b823c266f87274/openttdlab-0.0.8.tar.gz
+[2024-06-02 19:52:15] INFO root fetch - processPackages [ok-script]: Downloading https://files.pythonhosted.org/packages/7e/57/3cb2ecf6f3abc49a58957eb87297ca0e7574e568b46c512c2a5fc710a462/ok-script-0.0.9.tar.gz
+[2024-06-02 19:52:15] INFO root fetch - processPackages [lasagna-ai]: Downloading https://files.pythonhosted.org/packages/13/ce/14da634c2ea032997026971d322f562b3a6f4cea88ba7f7f2061b150c3bb/lasagna_ai-0.1.0.tar.gz
+[2024-06-02 19:52:15] INFO root fetch - processPackages [omnata-plugin-runtime]: Downloading https://files.pythonhosted.org/packages/de/f5/326ad467bb560d9dc8d7cebfe2aed77d524aeaf8a8ee7c6107f202eb6d0d/omnata_plugin_runtime-0.3.9a44.tar.gz
+[2024-06-02 19:52:15] INFO root fetch - processPackages [OpenTTDLab]: Downloading https://files.pythonhosted.org/packages/c9/28/0b49734d3f0e2b039817ac8dbe0930487e1d1764bc5c7cc16063210352e0/openttdlab-0.0.9.tar.gz
+[2024-06-02 19:52:15] INFO root fetch - processPackages [ok-script]: executing diffoscope
+[2024-06-02 19:52:15] INFO root fetch - processPackages [ok-script]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ok-script-0.0.8.tar.gz tmp/ok-script-0.0.9.tar.gz --markdown 20240602/o/ok-script/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-06-02 19:52:15] INFO root fetch - processPackages [OpenTTDLab]: executing diffoscope
+[2024-06-02 19:52:15] INFO root fetch - processPackages [OpenTTDLab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openttdlab-0.0.8.tar.gz tmp/openttdlab-0.0.9.tar.gz --markdown 20240602/O/OpenTTDLab/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-06-02 19:52:15] INFO root fetch - processPackages [omnata-plugin-runtime]: executing diffoscope
+[2024-06-02 19:52:15] INFO root fetch - processPackages [omnata-plugin-runtime]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/omnata_plugin_runtime-0.3.9a43.tar.gz tmp/omnata_plugin_runtime-0.3.9a44.tar.gz --markdown 20240602/o/omnata-plugin-runtime/0.3.9a43-0.3.9a44/README.md --exclude *.pyd
+[2024-06-02 19:52:15] INFO root fetch - processPackages [lasagna-ai]: Downloading https://files.pythonhosted.org/packages/33/20/a81bb2d57e472f0490e1e026b89b4962c0f0a490fb175a7751a80c1d1abd/lasagna_ai-0.2.0.tar.gz
+[2024-06-02 19:52:15] INFO root fetch - processPackages [lasagna-ai]: executing diffoscope
+[2024-06-02 19:52:15] INFO root fetch - processPackages [lasagna-ai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lasagna_ai-0.1.0.tar.gz tmp/lasagna_ai-0.2.0.tar.gz --markdown 20240602/l/lasagna-ai/0.1.0-0.2.0/README.md --exclude *.pyd
+[2024-06-02 19:52:15] INFO root fetch - processPackages [omnata-plugin-runtime]: Remove: archive file [/home/abi/fetcher/tmp/omnata_plugin_runtime-0.3.9a43.tar.gz]
+[2024-06-02 19:52:15] INFO root fetch - processPackages [omnata-plugin-runtime]: Remove: archive file [/home/abi/fetcher/tmp/omnata_plugin_runtime-0.3.9a44.tar.gz]
+[2024-06-02 19:52:15] INFO root fetch - main [MainThread]: End processing [omnata-plugin-runtime]: success
+[2024-06-02 19:52:16] INFO root fetch - processPackages [OpenTTDLab]: Remove: archive file [/home/abi/fetcher/tmp/openttdlab-0.0.8.tar.gz]
+[2024-06-02 19:52:16] INFO root fetch - processPackages [OpenTTDLab]: Remove: archive file [/home/abi/fetcher/tmp/openttdlab-0.0.9.tar.gz]
+[2024-06-02 19:52:16] INFO root fetch - main [MainThread]: End processing [OpenTTDLab]: success
+[2024-06-02 19:52:16] INFO root fetch - processPackages [ok-script]: Remove: archive file [/home/abi/fetcher/tmp/ok-script-0.0.8.tar.gz]
+[2024-06-02 19:52:16] INFO root fetch - processPackages [ok-script]: Remove: archive file [/home/abi/fetcher/tmp/ok-script-0.0.9.tar.gz]
+[2024-06-02 19:52:16] INFO root fetch - main [MainThread]: End processing [ok-script]: success
+[2024-06-02 19:52:16] INFO root fetch - processPackages [lasagna-ai]: Remove: archive file [/home/abi/fetcher/tmp/lasagna_ai-0.1.0.tar.gz]
+[2024-06-02 19:52:16] INFO root fetch - processPackages [lasagna-ai]: Remove: archive file [/home/abi/fetcher/tmp/lasagna_ai-0.2.0.tar.gz]
+[2024-06-02 19:52:16] INFO root fetch - main [MainThread]: End processing [lasagna-ai]: success
+[2024-06-02 19:52:16] INFO root fetch - main [MainThread]: Store serial: [23491490]
