@@ -11269,3 +11269,27 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 16:38:22] INFO root fetch - processPackages [glide-for-redis]: Remove: archive file [/home/abi/fetcher/tmp/glide_for_redis-0.4.1rc3-cp39-cp39-manylinux_2_28_aarch64.whl.zip]
 [2024-06-02 16:38:22] INFO root fetch - main [MainThread]: End processing [glide-for-redis]: success
 [2024-06-02 16:38:22] INFO root fetch - main [MainThread]: Store serial: [23489699]
+[2024-06-02 16:40:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23489699]
+[2024-06-02 16:40:31] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-02 16:40:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyproject-patcher
+[2024-06-02 16:40:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: revampdeployer
+[2024-06-02 16:40:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: epyt-flow
+[2024-06-02 16:40:31] WARNING root fetch - processPackages [pyproject-patcher]: Skipping, unable to determine old version
+[2024-06-02 16:40:31] INFO root fetch - main [MainThread]: End processing [pyproject-patcher] error
+[2024-06-02 16:40:31] INFO root fetch - processPackages [revampdeployer]: New version: [0.2.0] Old Version: [0.1.5]
+[2024-06-02 16:40:31] INFO root fetch - processPackages [epyt-flow]: New version: [0.2.0] Old Version: [0.1.1]
+[2024-06-02 16:40:31] INFO root fetch - processPackages [revampdeployer]: Downloading https://files.pythonhosted.org/packages/0e/ca/0b542d18c583c176389893319ed50f1cf64f7ca288a6a3226bbf1cf8fa62/revampdeployer-0.1.5.tar.gz
+[2024-06-02 16:40:31] INFO root fetch - processPackages [epyt-flow]: Downloading https://files.pythonhosted.org/packages/07/fe/5ef747a9da0bffa475ca5cb684bd07eaa34a7755957e6a296396e306c4e9/epyt_flow-0.1.1.tar.gz
+[2024-06-02 16:40:31] INFO root fetch - processPackages [revampdeployer]: Downloading https://files.pythonhosted.org/packages/75/dd/f476e03b2a3b1766716ae992ad6e17bc9de296e9db7ae2b44a768c05284d/revampdeployer-0.2.0.tar.gz
+[2024-06-02 16:40:31] INFO root fetch - processPackages [epyt-flow]: Downloading https://files.pythonhosted.org/packages/f2/a7/0479dee3afaf8a60f733263f42dd0afee859225a39d525debf5f8c586f6c/epyt_flow-0.2.0.tar.gz
+[2024-06-02 16:40:31] INFO root fetch - processPackages [revampdeployer]: executing diffoscope
+[2024-06-02 16:40:31] INFO root fetch - processPackages [revampdeployer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/revampdeployer-0.1.5.tar.gz tmp/revampdeployer-0.2.0.tar.gz --markdown 20240602/r/revampdeployer/0.1.5-0.2.0/README.md --exclude *.pyd
+[2024-06-02 16:40:32] INFO root fetch - processPackages [epyt-flow]: executing diffoscope
+[2024-06-02 16:40:32] INFO root fetch - processPackages [epyt-flow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/epyt_flow-0.1.1.tar.gz tmp/epyt_flow-0.2.0.tar.gz --markdown 20240602/e/epyt-flow/0.1.1-0.2.0/README.md --exclude *.pyd
+[2024-06-02 16:40:32] INFO root fetch - processPackages [revampdeployer]: Remove: archive file [/home/abi/fetcher/tmp/revampdeployer-0.1.5.tar.gz]
+[2024-06-02 16:40:32] INFO root fetch - processPackages [revampdeployer]: Remove: archive file [/home/abi/fetcher/tmp/revampdeployer-0.2.0.tar.gz]
+[2024-06-02 16:40:32] INFO root fetch - main [MainThread]: End processing [revampdeployer]: success
+[2024-06-02 16:40:33] INFO root fetch - processPackages [epyt-flow]: Remove: archive file [/home/abi/fetcher/tmp/epyt_flow-0.1.1.tar.gz]
+[2024-06-02 16:40:33] INFO root fetch - processPackages [epyt-flow]: Remove: archive file [/home/abi/fetcher/tmp/epyt_flow-0.2.0.tar.gz]
+[2024-06-02 16:40:33] INFO root fetch - main [MainThread]: End processing [epyt-flow]: success
+[2024-06-02 16:40:33] INFO root fetch - main [MainThread]: Store serial: [23489721]
