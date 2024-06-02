@@ -16989,3 +16989,18 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 21:20:05] INFO root fetch - processPackages [gitlab-ci-docs]: Remove: archive file [/home/abi/fetcher/tmp/gitlab_ci_docs-0.1.0b3.tar.gz]
 [2024-06-02 21:20:05] INFO root fetch - main [MainThread]: End processing [gitlab-ci-docs]: success
 [2024-06-02 21:20:05] INFO root fetch - main [MainThread]: Store serial: [23492344]
+[2024-06-02 21:22:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23492344]
+[2024-06-02 21:22:14] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-02 21:22:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PyEclipse
+[2024-06-02 21:22:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pymerc
+[2024-06-02 21:22:14] WARNING root fetch - processPackages [PyEclipse]: Skipping, unable to determine old version
+[2024-06-02 21:22:14] INFO root fetch - main [MainThread]: End processing [PyEclipse] error
+[2024-06-02 21:22:14] INFO root fetch - processPackages [pymerc]: New version: [0.6.0] Old Version: [0.5.0]
+[2024-06-02 21:22:14] INFO root fetch - processPackages [pymerc]: Downloading https://files.pythonhosted.org/packages/30/e2/069c02ae41593b35d7020052e70cdd2d8c96f532be466569aa1850502e5a/pymerc-0.5.0.tar.gz
+[2024-06-02 21:22:14] INFO root fetch - processPackages [pymerc]: Downloading https://files.pythonhosted.org/packages/07/54/c7ce42801127c06ea3dc1d992c1203f20e8c8398eaa422644b9899aa06b8/pymerc-0.6.0.tar.gz
+[2024-06-02 21:22:15] INFO root fetch - processPackages [pymerc]: executing diffoscope
+[2024-06-02 21:22:15] INFO root fetch - processPackages [pymerc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymerc-0.5.0.tar.gz tmp/pymerc-0.6.0.tar.gz --markdown 20240602/p/pymerc/0.5.0-0.6.0/README.md --exclude *.pyd
+[2024-06-02 21:22:15] INFO root fetch - processPackages [pymerc]: Remove: archive file [/home/abi/fetcher/tmp/pymerc-0.5.0.tar.gz]
+[2024-06-02 21:22:15] INFO root fetch - processPackages [pymerc]: Remove: archive file [/home/abi/fetcher/tmp/pymerc-0.6.0.tar.gz]
+[2024-06-02 21:22:15] INFO root fetch - main [MainThread]: End processing [pymerc]: success
+[2024-06-02 21:22:15] INFO root fetch - main [MainThread]: Store serial: [23492350]
