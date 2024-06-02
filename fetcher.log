@@ -14748,3 +14748,36 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 19:21:50] INFO root fetch - processPackages [chess-transformer]: Remove: archive file [/home/abi/fetcher/tmp/chess_transformer-0.1.9.tar.gz]
 [2024-06-02 19:21:50] INFO root fetch - main [MainThread]: End processing [chess-transformer]: success
 [2024-06-02 19:21:50] INFO root fetch - main [MainThread]: Store serial: [23491289]
+[2024-06-02 19:23:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23491289]
+[2024-06-02 19:23:58] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-02 19:23:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: plum-dispatch
+[2024-06-02 19:23:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: zopyx-fastapi-auth
+[2024-06-02 19:23:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: satnogs-db-api-client
+[2024-06-02 19:23:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: netmask
+[2024-06-02 19:23:58] INFO root fetch - processPackages [plum-dispatch]: New version: [2.4] Old Version: [2.3.6]
+[2024-06-02 19:23:58] WARNING root fetch - processPackages [netmask]: Skipping, unable to determine old version
+[2024-06-02 19:23:58] INFO root fetch - main [MainThread]: End processing [netmask] error
+[2024-06-02 19:23:58] INFO root fetch - processPackages [satnogs-db-api-client]: New version: [1.9] Old Version: [1.8.1]
+[2024-06-02 19:23:58] INFO root fetch - processPackages [plum-dispatch]: Downloading https://files.pythonhosted.org/packages/cf/bc/22150aa5e6e15e07f329f0437da8104d1b6b479d03b3f65b28ed90a611f2/plum_dispatch-2.3.6.tar.gz
+[2024-06-02 19:23:58] INFO root fetch - processPackages [zopyx-fastapi-auth]: New version: [0.2.2.7] Old Version: [0.2.2.6]
+[2024-06-02 19:23:59] INFO root fetch - processPackages [satnogs-db-api-client]: Downloading https://files.pythonhosted.org/packages/de/26/3c2478c6d1aa22925bec63f392cfe40031eb8717aa6e621456571760db67/satnogs-db-api-client-1.8.1.tar.gz
+[2024-06-02 19:23:59] INFO root fetch - processPackages [zopyx-fastapi-auth]: Downloading https://files.pythonhosted.org/packages/6a/0f/139a498306699fc7f9b3c60ee48c887a57517e5e696c9ede7837558e5742/zopyx_fastapi_auth-0.2.2.6.tar.gz
+[2024-06-02 19:23:59] INFO root fetch - processPackages [plum-dispatch]: Downloading https://files.pythonhosted.org/packages/b8/5e/eb8fd622fe6673687cae53ba4dbabca27813955c3f316886cafe46110332/plum_dispatch-2.4.tar.gz
+[2024-06-02 19:23:59] INFO root fetch - processPackages [plum-dispatch]: executing diffoscope
+[2024-06-02 19:23:59] INFO root fetch - processPackages [plum-dispatch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plum_dispatch-2.3.6.tar.gz tmp/plum_dispatch-2.4.tar.gz --markdown 20240602/p/plum-dispatch/2.3.6-2.4/README.md --exclude *.pyd
+[2024-06-02 19:23:59] INFO root fetch - processPackages [zopyx-fastapi-auth]: Downloading https://files.pythonhosted.org/packages/ca/ac/040248a53bae8ca17142bdff6571a98222ee17cdbd8cd3539be5bb9a116f/zopyx_fastapi_auth-0.2.2.7.tar.gz
+[2024-06-02 19:23:59] INFO root fetch - processPackages [zopyx-fastapi-auth]: executing diffoscope
+[2024-06-02 19:23:59] INFO root fetch - processPackages [zopyx-fastapi-auth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zopyx_fastapi_auth-0.2.2.6.tar.gz tmp/zopyx_fastapi_auth-0.2.2.7.tar.gz --markdown 20240602/z/zopyx-fastapi-auth/0.2.2.6-0.2.2.7/README.md --exclude *.pyd
+[2024-06-02 19:23:59] INFO root fetch - processPackages [plum-dispatch]: Remove: archive file [/home/abi/fetcher/tmp/plum_dispatch-2.3.6.tar.gz]
+[2024-06-02 19:23:59] INFO root fetch - processPackages [plum-dispatch]: Remove: archive file [/home/abi/fetcher/tmp/plum_dispatch-2.4.tar.gz]
+[2024-06-02 19:23:59] INFO root fetch - main [MainThread]: End processing [plum-dispatch]: success
+[2024-06-02 19:24:00] INFO root fetch - processPackages [satnogs-db-api-client]: Downloading https://files.pythonhosted.org/packages/ce/f3/039fe99ddd4610a495c165809bce966cfc42e8892162f465cb34f42569bb/satnogs-db-api-client-1.9.tar.gz
+[2024-06-02 19:24:00] INFO root fetch - processPackages [satnogs-db-api-client]: executing diffoscope
+[2024-06-02 19:24:00] INFO root fetch - processPackages [satnogs-db-api-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/satnogs-db-api-client-1.8.1.tar.gz tmp/satnogs-db-api-client-1.9.tar.gz --markdown 20240602/s/satnogs-db-api-client/1.8.1-1.9/README.md --exclude *.pyd
+[2024-06-02 19:24:01] INFO root fetch - processPackages [zopyx-fastapi-auth]: Remove: archive file [/home/abi/fetcher/tmp/zopyx_fastapi_auth-0.2.2.6.tar.gz]
+[2024-06-02 19:24:01] INFO root fetch - processPackages [zopyx-fastapi-auth]: Remove: archive file [/home/abi/fetcher/tmp/zopyx_fastapi_auth-0.2.2.7.tar.gz]
+[2024-06-02 19:24:01] INFO root fetch - main [MainThread]: End processing [zopyx-fastapi-auth]: success
+[2024-06-02 19:24:01] INFO root fetch - processPackages [satnogs-db-api-client]: Remove: archive file [/home/abi/fetcher/tmp/satnogs-db-api-client-1.8.1.tar.gz]
+[2024-06-02 19:24:01] INFO root fetch - processPackages [satnogs-db-api-client]: Remove: archive file [/home/abi/fetcher/tmp/satnogs-db-api-client-1.9.tar.gz]
+[2024-06-02 19:24:01] INFO root fetch - main [MainThread]: End processing [satnogs-db-api-client]: success
+[2024-06-02 19:24:01] INFO root fetch - main [MainThread]: Store serial: [23491301]
