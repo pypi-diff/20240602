@@ -14304,3 +14304,79 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 18:57:50] INFO root fetch - processPackages [mapdata]: Remove: archive file [/home/abi/fetcher/tmp/mapdata-3.8.0.tar.gz]
 [2024-06-02 18:57:50] INFO root fetch - main [MainThread]: End processing [mapdata]: success
 [2024-06-02 18:57:50] INFO root fetch - main [MainThread]: Store serial: [23491120]
+[2024-06-02 18:59:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23491120]
+[2024-06-02 18:59:58] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2024-06-02 18:59:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: trytond-account-statement
+[2024-06-02 18:59:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: torrey
+[2024-06-02 18:59:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sqlframe
+[2024-06-02 18:59:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: trytond-account-statement
+[2024-06-02 18:59:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: LLM-PCT
+[2024-06-02 18:59:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: trytond-account-statement
+[2024-06-02 18:59:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pymimir
+[2024-06-02 18:59:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: evillimiter
+[2024-06-02 18:59:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: bbot
+[2024-06-02 18:59:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: trytond-account-statement
+[2024-06-02 18:59:59] INFO root fetch - processPackages [torrey]: New version: [3.2.2.dev20240602040715] Old Version: [3.2.2.dev20240602035016]
+[2024-06-02 18:59:59] INFO root fetch - processPackages [pymimir]: New version: [0.9.9] Old Version: [0.9.10]
+[2024-06-02 18:59:59] INFO root fetch - processPackages [torrey]: Downloading https://files.pythonhosted.org/packages/50/52/49b10874f92d2dccdf2356b859bfad8b6e7b56abd35fac760bc5a793f971/torrey-3.2.2.dev20240602035016.tar.gz
+[2024-06-02 18:59:59] INFO root fetch - processPackages [pymimir]: Downloading https://files.pythonhosted.org/packages/39/66/3e55ed905e9d1e11a99e5be0d833cf73f801f108334dd88f8911b1c3dbf0/pymimir-0.9.10.tar.gz
+[2024-06-02 18:59:59] INFO root fetch - processPackages [trytond-account-statement]: New version: [7.2.2] Old Version: [7.2.1]
+[2024-06-02 18:59:59] INFO root fetch - processPackages [trytond-account-statement]: New version: [7.2.2] Old Version: [7.2.1]
+[2024-06-02 18:59:59] INFO root fetch - processPackages [trytond-account-statement]: New version: [7.2.2] Old Version: [7.2.1]
+[2024-06-02 18:59:59] WARNING root fetch - processPackages [evillimiter]: Skipping, unable to determine old version
+[2024-06-02 18:59:59] INFO root fetch - processPackages [evillimiter]: Start processing: sqlframe
+[2024-06-02 18:59:59] INFO root fetch - main [MainThread]: End processing [evillimiter] error
+[2024-06-02 18:59:59] INFO root fetch - processPackages [trytond-account-statement]: New version: [7.2.2] Old Version: [7.2.1]
+[2024-06-02 18:59:59] WARNING root fetch - processPackages [LLM-PCT]: Skipping, unable to determine old version
+[2024-06-02 18:59:59] INFO root fetch - processPackages [sqlframe]: New version: [1.5.1] Old Version: [1.5.0]
+[2024-06-02 18:59:59] INFO root fetch - main [MainThread]: End processing [LLM-PCT] error
+[2024-06-02 18:59:59] INFO root fetch - processPackages [bbot]: New version: [1.1.9.3372rc0] Old Version: [1.1.9.3370rc0]
+[2024-06-02 18:59:59] INFO root fetch - processPackages [sqlframe]: New version: [1.5.1] Old Version: [1.5.0]
+[2024-06-02 18:59:59] INFO root fetch - processPackages [trytond-account-statement]: Downloading https://files.pythonhosted.org/packages/18/92/ce297a52f238ed61fa15569b22ab01415fece379a0332b9d224640e2f49c/trytond_account_statement-7.2.1.tar.gz
+[2024-06-02 18:59:59] INFO root fetch - processPackages [trytond-account-statement]: Downloading https://files.pythonhosted.org/packages/18/92/ce297a52f238ed61fa15569b22ab01415fece379a0332b9d224640e2f49c/trytond_account_statement-7.2.1.tar.gz
+[2024-06-02 18:59:59] INFO root fetch - processPackages [trytond-account-statement]: Downloading https://files.pythonhosted.org/packages/18/92/ce297a52f238ed61fa15569b22ab01415fece379a0332b9d224640e2f49c/trytond_account_statement-7.2.1.tar.gz
+[2024-06-02 18:59:59] INFO root fetch - processPackages [trytond-account-statement]: Downloading https://files.pythonhosted.org/packages/18/92/ce297a52f238ed61fa15569b22ab01415fece379a0332b9d224640e2f49c/trytond_account_statement-7.2.1.tar.gz
+[2024-06-02 18:59:59] INFO root fetch - processPackages [sqlframe]: Downloading https://files.pythonhosted.org/packages/7e/f3/de93de95d7cc0ab5de00e8430d207927101d585dfd6773195fc0be415e9e/sqlframe-1.5.0.tar.gz
+[2024-06-02 18:59:59] INFO root fetch - processPackages [bbot]: Downloading https://files.pythonhosted.org/packages/ae/71/aa20c1ba717e3b37f4e015e9f0c9143e59280ead6286e97779c8c883becf/bbot-1.1.9.3370rc0.tar.gz
+[2024-06-02 18:59:59] INFO root fetch - processPackages [sqlframe]: Downloading https://files.pythonhosted.org/packages/7e/f3/de93de95d7cc0ab5de00e8430d207927101d585dfd6773195fc0be415e9e/sqlframe-1.5.0.tar.gz
+[2024-06-02 18:59:59] INFO root fetch - processPackages [pymimir]: Downloading https://files.pythonhosted.org/packages/17/24/0cbc735c2f249b207c785050c9d09a31e22ba83acc8ea4066d273134201c/pymimir-0.9.9.tar.gz
+[2024-06-02 18:59:59] WARNING root fetch - processPackages [sqlframe]: Skipping package: exceeds size limit 17095678>=10485760
+[2024-06-02 18:59:59] INFO root fetch - main [MainThread]: End processing [sqlframe] error
+[2024-06-02 18:59:59] WARNING root fetch - processPackages [sqlframe]: Skipping package: exceeds size limit 17095678>=10485760
+[2024-06-02 18:59:59] INFO root fetch - main [MainThread]: End processing [sqlframe] error
+[2024-06-02 18:59:59] INFO root fetch - processPackages [torrey]: Downloading https://files.pythonhosted.org/packages/96/d9/ad7dfa96f23302c80212c03c5652a1a0b857b9cf3ae73e91310b7f0684d3/torrey-3.2.2.dev20240602040715.tar.gz
+[2024-06-02 18:59:59] INFO root fetch - processPackages [pymimir]: executing diffoscope
+[2024-06-02 18:59:59] INFO root fetch - processPackages [pymimir]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymimir-0.9.10.tar.gz tmp/pymimir-0.9.9.tar.gz --markdown 20240602/p/pymimir/0.9.10-0.9.9/README.md --exclude *.pyd
+[2024-06-02 18:59:59] INFO root fetch - processPackages [trytond-account-statement]: Downloading https://files.pythonhosted.org/packages/39/7c/dca22a54dda1d68ddc9b7f0b799657c741d83cc84aba36adb37a45e081fe/trytond_account_statement-7.2.2.tar.gz
+[2024-06-02 18:59:59] INFO root fetch - processPackages [trytond-account-statement]: Downloading https://files.pythonhosted.org/packages/39/7c/dca22a54dda1d68ddc9b7f0b799657c741d83cc84aba36adb37a45e081fe/trytond_account_statement-7.2.2.tar.gz
+[2024-06-02 18:59:59] INFO root fetch - processPackages [trytond-account-statement]: Downloading https://files.pythonhosted.org/packages/39/7c/dca22a54dda1d68ddc9b7f0b799657c741d83cc84aba36adb37a45e081fe/trytond_account_statement-7.2.2.tar.gz
+[2024-06-02 18:59:59] INFO root fetch - processPackages [trytond-account-statement]: Downloading https://files.pythonhosted.org/packages/39/7c/dca22a54dda1d68ddc9b7f0b799657c741d83cc84aba36adb37a45e081fe/trytond_account_statement-7.2.2.tar.gz
+[2024-06-02 18:59:59] INFO root fetch - processPackages [torrey]: executing diffoscope
+[2024-06-02 18:59:59] INFO root fetch - processPackages [torrey]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torrey-3.2.2.dev20240602035016.tar.gz tmp/torrey-3.2.2.dev20240602040715.tar.gz --markdown 20240602/t/torrey/3.2.2.dev20240602035016-3.2.2.dev20240602040715/README.md --exclude *.pyd
+[2024-06-02 18:59:59] INFO root fetch - processPackages [trytond-account-statement]: executing diffoscope
+[2024-06-02 18:59:59] INFO root fetch - processPackages [trytond-account-statement]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trytond_account_statement-7.2.1.tar.gz tmp/trytond_account_statement-7.2.2.tar.gz --markdown 20240602/t/trytond-account-statement/7.2.1-7.2.2/README.md --exclude *.pyd
+[2024-06-02 18:59:59] INFO root fetch - processPackages [trytond-account-statement]: executing diffoscope
+[2024-06-02 18:59:59] INFO root fetch - processPackages [trytond-account-statement]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trytond_account_statement-7.2.1.tar.gz tmp/trytond_account_statement-7.2.2.tar.gz --markdown 20240602/t/trytond-account-statement/7.2.1-7.2.2/README.md --exclude *.pyd
+[2024-06-02 18:59:59] INFO root fetch - processPackages [trytond-account-statement]: executing diffoscope
+[2024-06-02 18:59:59] INFO root fetch - processPackages [trytond-account-statement]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trytond_account_statement-7.2.1.tar.gz tmp/trytond_account_statement-7.2.2.tar.gz --markdown 20240602/t/trytond-account-statement/7.2.1-7.2.2/README.md --exclude *.pyd
+[2024-06-02 18:59:59] INFO root fetch - processPackages [trytond-account-statement]: executing diffoscope
+[2024-06-02 18:59:59] INFO root fetch - processPackages [trytond-account-statement]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trytond_account_statement-7.2.1.tar.gz tmp/trytond_account_statement-7.2.2.tar.gz --markdown 20240602/t/trytond-account-statement/7.2.1-7.2.2/README.md --exclude *.pyd
+[2024-06-02 18:59:59] INFO root fetch - processPackages [bbot]: Downloading https://files.pythonhosted.org/packages/52/4a/88c493099e07cda5818393c4ddd6590e05115925567a7e94ed4840aaf75d/bbot-1.1.9.3372rc0.tar.gz
+[2024-06-02 19:00:00] INFO root fetch - processPackages [bbot]: executing diffoscope
+[2024-06-02 19:00:00] INFO root fetch - processPackages [bbot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bbot-1.1.9.3370rc0.tar.gz tmp/bbot-1.1.9.3372rc0.tar.gz --markdown 20240602/b/bbot/1.1.9.3370rc0-1.1.9.3372rc0/README.md --exclude *.pyd
+[2024-06-02 19:00:00] INFO root fetch - processPackages [trytond-account-statement]: Remove: archive file [/home/abi/fetcher/tmp/trytond_account_statement-7.2.1.tar.gz]
+[2024-06-02 19:00:00] INFO root fetch - processPackages [trytond-account-statement]: Remove: archive file [/home/abi/fetcher/tmp/trytond_account_statement-7.2.2.tar.gz]
+[2024-06-02 19:00:00] INFO root fetch - main [MainThread]: End processing [trytond-account-statement]: success
+[2024-06-02 19:00:00] INFO root fetch - main [MainThread]: End processing [trytond-account-statement]: success
+[2024-06-02 19:00:00] INFO root fetch - main [MainThread]: End processing [trytond-account-statement]: success
+[2024-06-02 19:00:00] INFO root fetch - main [MainThread]: End processing [trytond-account-statement]: success
+[2024-06-02 19:00:01] INFO root fetch - processPackages [torrey]: Remove: archive file [/home/abi/fetcher/tmp/torrey-3.2.2.dev20240602035016.tar.gz]
+[2024-06-02 19:00:01] INFO root fetch - processPackages [torrey]: Remove: archive file [/home/abi/fetcher/tmp/torrey-3.2.2.dev20240602040715.tar.gz]
+[2024-06-02 19:00:01] INFO root fetch - main [MainThread]: End processing [torrey]: success
+[2024-06-02 19:00:01] INFO root fetch - processPackages [pymimir]: Remove: archive file [/home/abi/fetcher/tmp/pymimir-0.9.10.tar.gz]
+[2024-06-02 19:00:01] INFO root fetch - processPackages [pymimir]: Remove: archive file [/home/abi/fetcher/tmp/pymimir-0.9.9.tar.gz]
+[2024-06-02 19:00:01] INFO root fetch - main [MainThread]: End processing [pymimir]: success
+[2024-06-02 19:00:02] INFO root fetch - processPackages [bbot]: Remove: archive file [/home/abi/fetcher/tmp/bbot-1.1.9.3370rc0.tar.gz]
+[2024-06-02 19:00:02] INFO root fetch - processPackages [bbot]: Remove: archive file [/home/abi/fetcher/tmp/bbot-1.1.9.3372rc0.tar.gz]
+[2024-06-02 19:00:02] INFO root fetch - main [MainThread]: End processing [bbot]: success
+[2024-06-02 19:00:02] INFO root fetch - main [MainThread]: Store serial: [23491156]
