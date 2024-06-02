@@ -1854,3 +1854,70 @@
 [2024-06-02 02:20:31] INFO root fetch - processPackages [cdk-budibase]: Remove: archive file [/home/abi/fetcher/tmp/cdk-budibase-0.0.99.tar.gz]
 [2024-06-02 02:20:31] INFO root fetch - main [MainThread]: End processing [cdk-budibase]: success
 [2024-06-02 02:20:31] INFO root fetch - main [MainThread]: Store serial: [23484885]
+[2024-06-02 02:22:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23484885]
+[2024-06-02 02:22:39] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-06-02 02:22:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cndi
+[2024-06-02 02:22:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: NEURON-nightly
+[2024-06-02 02:22:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cdklabs.cdk-ethereum-node
+[2024-06-02 02:22:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cdk-cr-constructs
+[2024-06-02 02:22:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: lightning-thunder
+[2024-06-02 02:22:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: lightning
+[2024-06-02 02:22:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: canvasxpress
+[2024-06-02 02:22:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: cdk-aurora-globaldatabase
+[2024-06-02 02:22:39] INFO root fetch - processPackages [cdk-cr-constructs]: New version: [2.1.472] Old Version: [2.1.471]
+[2024-06-02 02:22:39] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: New version: [2.3.99] Old Version: [2.3.98]
+[2024-06-02 02:22:39] INFO root fetch - processPackages [cndi]: New version: [2.4.4] Old Version: [2.4.3]
+[2024-06-02 02:22:39] INFO root fetch - processPackages [NEURON-nightly]: New version: [9.0a1.dev248] Old Version: [9.0a1.dev247]
+[2024-06-02 02:22:39] INFO root fetch - processPackages [lightning-thunder]: New version: [0.2.0.dev20240602] Old Version: [0.2.0.dev20240526]
+[2024-06-02 02:22:39] INFO root fetch - processPackages [cdk-cr-constructs]: Downloading https://files.pythonhosted.org/packages/52/d2/9696b85f5ab23383b2bbcf916a34338ab659b3ebe951198bc60b35f7eae0/cdk-cr-constructs-2.1.471.tar.gz
+[2024-06-02 02:22:39] INFO root fetch - processPackages [lightning]: New version: [2.3.0.dev20240602] Old Version: [2.3.0.dev20240526]
+[2024-06-02 02:22:39] INFO root fetch - processPackages [canvasxpress]: New version: [2024.6.2.2207] Old Version: [2024.4.7.2406]
+[2024-06-02 02:22:39] INFO root fetch - processPackages [cdklabs.cdk-ethereum-node]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-06-02 02:22:39] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: Downloading https://files.pythonhosted.org/packages/e4/39/e997b5acac972df8d777c4a4ad6dfd9f51e03e75fc8e23c973a7772267d5/cdk-aurora-globaldatabase-2.3.98.tar.gz
+[2024-06-02 02:22:39] WARNING root fetch - processPackages [cdk-cr-constructs]: Skipping package: exceeds size limit 15131836>=10485760
+[2024-06-02 02:22:39] INFO root fetch - main [MainThread]: End processing [cdk-cr-constructs] error
+[2024-06-02 02:22:39] INFO root fetch - processPackages [cdklabs.cdk-ethereum-node]: Downloading https://files.pythonhosted.org/packages/d8/1a/417af84315b2d52f6063ccf2072677259777d28fb73cab91e17879faaa26/cdklabs.cdk-ethereum-node-0.0.98.tar.gz
+[2024-06-02 02:22:39] INFO root fetch - processPackages [NEURON-nightly]: Downloading https://files.pythonhosted.org/packages/28/73/ad709277877d0ad251984363a61465d2a3d519fc9267853ef03170301bd6/NEURON_nightly-9.0a1.dev247-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-06-02 02:22:39] INFO root fetch - processPackages [cndi]: Downloading https://files.pythonhosted.org/packages/3d/10/2b5858dc28b0364952f6f6cc8303621f7cb34128062717b65325fa3a151f/cndi-2.4.3.tar.gz
+[2024-06-02 02:22:39] INFO root fetch - processPackages [lightning-thunder]: Downloading https://files.pythonhosted.org/packages/3e/ef/afe9592fcca5dc5bb00dff8546a13cefb5d4debea96c0c774c32c4f6c080/lightning_thunder-0.2.0.dev20240526.tar.gz
+[2024-06-02 02:22:39] WARNING root fetch - processPackages [NEURON-nightly]: Skipping package: exceeds size limit 26095048>=10485760
+[2024-06-02 02:22:39] INFO root fetch - main [MainThread]: End processing [NEURON-nightly] error
+[2024-06-02 02:22:39] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: Downloading https://files.pythonhosted.org/packages/51/53/0158facaec2becec86707148eb931de78a7ad1c2b63f80b9911a53e4c17b/cdk-aurora-globaldatabase-2.3.99.tar.gz
+[2024-06-02 02:22:39] INFO root fetch - processPackages [canvasxpress]: Downloading https://files.pythonhosted.org/packages/9a/a9/4718ff49db620984b31b1c5070c0c97d69f6a1fea76ac5e8ff4a3df6b7a7/canvasxpress-2024.4.7.2406.tar.gz
+[2024-06-02 02:22:39] INFO root fetch - processPackages [cdklabs.cdk-ethereum-node]: Downloading https://files.pythonhosted.org/packages/2d/d8/3fd98f927d9988f7c189f488b1829ac7aa7f855bf93f6030e3bed9af9a97/cdklabs.cdk-ethereum-node-0.0.99.tar.gz
+[2024-06-02 02:22:39] INFO root fetch - processPackages [lightning]: Downloading https://files.pythonhosted.org/packages/d4/70/0df73dd1e03eeb8a6cbd79e52c4f7bddb02e6f97829f5eab945aaffbe7c7/lightning-2.3.0.dev20240526.tar.gz
+[2024-06-02 02:22:39] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: executing diffoscope
+[2024-06-02 02:22:39] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-aurora-globaldatabase-2.3.98.tar.gz tmp/cdk-aurora-globaldatabase-2.3.99.tar.gz --markdown 20240602/c/cdk-aurora-globaldatabase/2.3.98-2.3.99/README.md --exclude *.pyd
+[2024-06-02 02:22:39] INFO root fetch - processPackages [cdklabs.cdk-ethereum-node]: executing diffoscope
+[2024-06-02 02:22:39] INFO root fetch - processPackages [cdklabs.cdk-ethereum-node]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdklabs.cdk-ethereum-node-0.0.98.tar.gz tmp/cdklabs.cdk-ethereum-node-0.0.99.tar.gz --markdown 20240602/c/cdklabs.cdk-ethereum-node/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-06-02 02:22:39] INFO root fetch - processPackages [cndi]: Downloading https://files.pythonhosted.org/packages/e4/e4/87874104307b1acaa7ce835d10339548693769142ce2592bc3aa1e4c6976/cndi-2.4.4.tar.gz
+[2024-06-02 02:22:39] INFO root fetch - processPackages [lightning-thunder]: Downloading https://files.pythonhosted.org/packages/98/18/af057335d51aa96c9c73697256177a73ff253b2aaf38af77b619ae981818/lightning_thunder-0.2.0.dev20240602.tar.gz
+[2024-06-02 02:22:40] INFO root fetch - processPackages [cndi]: executing diffoscope
+[2024-06-02 02:22:40] INFO root fetch - processPackages [cndi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cndi-2.4.3.tar.gz tmp/cndi-2.4.4.tar.gz --markdown 20240602/c/cndi/2.4.3-2.4.4/README.md --exclude *.pyd
+[2024-06-02 02:22:40] INFO root fetch - processPackages [lightning-thunder]: executing diffoscope
+[2024-06-02 02:22:40] INFO root fetch - processPackages [lightning-thunder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lightning_thunder-0.2.0.dev20240526.tar.gz tmp/lightning_thunder-0.2.0.dev20240602.tar.gz --markdown 20240602/l/lightning-thunder/0.2.0.dev20240526-0.2.0.dev20240602/README.md --exclude *.pyd
+[2024-06-02 02:22:40] INFO root fetch - processPackages [lightning]: Downloading https://files.pythonhosted.org/packages/0a/34/09cf9e0e135eaf095290cf66022982727c68a871393b49422e966de4c6ab/lightning-2.3.0.dev20240602.tar.gz
+[2024-06-02 02:22:40] INFO root fetch - processPackages [canvasxpress]: Downloading https://files.pythonhosted.org/packages/02/4b/b3fbcb7c27ab2b9b00bbb808f04523797e23c9d8d3571640a53c1e2a0602/canvasxpress-2024.6.2.2207.tar.gz
+[2024-06-02 02:22:40] INFO root fetch - processPackages [canvasxpress]: executing diffoscope
+[2024-06-02 02:22:40] INFO root fetch - processPackages [canvasxpress]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/canvasxpress-2024.4.7.2406.tar.gz tmp/canvasxpress-2024.6.2.2207.tar.gz --markdown 20240602/c/canvasxpress/2024.4.7.2406-2024.6.2.2207/README.md --exclude *.pyd
+[2024-06-02 02:22:40] INFO root fetch - processPackages [lightning]: executing diffoscope
+[2024-06-02 02:22:40] INFO root fetch - processPackages [lightning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lightning-2.3.0.dev20240526.tar.gz tmp/lightning-2.3.0.dev20240602.tar.gz --markdown 20240602/l/lightning/2.3.0.dev20240526-2.3.0.dev20240602/README.md --exclude *.pyd
+[2024-06-02 02:22:40] INFO root fetch - processPackages [cdklabs.cdk-ethereum-node]: Remove: archive file [/home/abi/fetcher/tmp/cdklabs.cdk-ethereum-node-0.0.98.tar.gz]
+[2024-06-02 02:22:40] INFO root fetch - processPackages [cdklabs.cdk-ethereum-node]: Remove: archive file [/home/abi/fetcher/tmp/cdklabs.cdk-ethereum-node-0.0.99.tar.gz]
+[2024-06-02 02:22:40] INFO root fetch - main [MainThread]: End processing [cdklabs.cdk-ethereum-node]: success
+[2024-06-02 02:22:40] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: Remove: archive file [/home/abi/fetcher/tmp/cdk-aurora-globaldatabase-2.3.98.tar.gz]
+[2024-06-02 02:22:40] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: Remove: archive file [/home/abi/fetcher/tmp/cdk-aurora-globaldatabase-2.3.99.tar.gz]
+[2024-06-02 02:22:40] INFO root fetch - main [MainThread]: End processing [cdk-aurora-globaldatabase]: success
+[2024-06-02 02:22:40] INFO root fetch - processPackages [cndi]: Remove: archive file [/home/abi/fetcher/tmp/cndi-2.4.3.tar.gz]
+[2024-06-02 02:22:40] INFO root fetch - processPackages [cndi]: Remove: archive file [/home/abi/fetcher/tmp/cndi-2.4.4.tar.gz]
+[2024-06-02 02:22:40] INFO root fetch - main [MainThread]: End processing [cndi]: success
+[2024-06-02 02:22:41] INFO root fetch - processPackages [canvasxpress]: Remove: archive file [/home/abi/fetcher/tmp/canvasxpress-2024.4.7.2406.tar.gz]
+[2024-06-02 02:22:41] INFO root fetch - processPackages [canvasxpress]: Remove: archive file [/home/abi/fetcher/tmp/canvasxpress-2024.6.2.2207.tar.gz]
+[2024-06-02 02:22:41] INFO root fetch - main [MainThread]: End processing [canvasxpress]: success
+[2024-06-02 02:22:41] INFO root fetch - processPackages [lightning-thunder]: Remove: archive file [/home/abi/fetcher/tmp/lightning_thunder-0.2.0.dev20240526.tar.gz]
+[2024-06-02 02:22:41] INFO root fetch - processPackages [lightning-thunder]: Remove: archive file [/home/abi/fetcher/tmp/lightning_thunder-0.2.0.dev20240602.tar.gz]
+[2024-06-02 02:22:41] INFO root fetch - main [MainThread]: End processing [lightning-thunder]: success
+[2024-06-02 02:22:43] INFO root fetch - processPackages [lightning]: Remove: archive file [/home/abi/fetcher/tmp/lightning-2.3.0.dev20240526.tar.gz]
+[2024-06-02 02:22:43] INFO root fetch - processPackages [lightning]: Remove: archive file [/home/abi/fetcher/tmp/lightning-2.3.0.dev20240602.tar.gz]
+[2024-06-02 02:22:43] INFO root fetch - main [MainThread]: End processing [lightning]: success
+[2024-06-02 02:22:43] INFO root fetch - main [MainThread]: Store serial: [23484906]
