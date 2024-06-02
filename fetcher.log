@@ -17651,3 +17651,36 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 22:08:30] INFO root fetch - processPackages [gmx-python-sdk]: Remove: archive file [/home/abi/fetcher/tmp/gmx_python_sdk-0.0.5.tar.gz]
 [2024-06-02 22:08:30] INFO root fetch - main [MainThread]: End processing [gmx-python-sdk]: success
 [2024-06-02 22:08:30] INFO root fetch - main [MainThread]: Store serial: [23492742]
+[2024-06-02 22:10:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23492742]
+[2024-06-02 22:10:40] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-02 22:10:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pynboard
+[2024-06-02 22:10:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ptah-cli
+[2024-06-02 22:10:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tccli
+[2024-06-02 22:10:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyerualjetwork
+[2024-06-02 22:10:40] INFO root fetch - processPackages [pyerualjetwork]: New version: [2.0.2] Old Version: [2.0.1]
+[2024-06-02 22:10:40] WARNING root fetch - processPackages [ptah-cli]: Skipping, unable to determine old version
+[2024-06-02 22:10:40] INFO root fetch - main [MainThread]: End processing [ptah-cli] error
+[2024-06-02 22:10:40] INFO root fetch - processPackages [pynboard]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-06-02 22:10:40] INFO root fetch - processPackages [pyerualjetwork]: Downloading https://files.pythonhosted.org/packages/c4/21/a4c118d08dd04ba201dc51efc0cd1bcc658bc29f1342237111cdbd3f3144/pyerualjetwork-2.0.1.tar.gz
+[2024-06-02 22:10:40] INFO root fetch - processPackages [pynboard]: Downloading https://files.pythonhosted.org/packages/7f/b8/47943a56d38af2e1afd61ff8abb518cbd1315349d7a10ff35d0abf87c338/pynboard-0.0.2.tar.gz
+[2024-06-02 22:10:40] INFO root fetch - processPackages [tccli]: New version: [3.0.999.1] Old Version: [3.0.998.1]
+[2024-06-02 22:10:40] INFO root fetch - processPackages [tccli]: Downloading https://files.pythonhosted.org/packages/4b/45/a3b0e2cc7f86f87ffa99bd6f833796de67aee82386f88a6d4a85073532e9/tccli-3.0.998.1.tar.gz
+[2024-06-02 22:10:41] INFO root fetch - processPackages [pynboard]: Downloading https://files.pythonhosted.org/packages/0d/b0/1cae5f9f5cc66113e4b648d57258c03ffb05e9f8c7060077e4ff3faa133e/pynboard-0.0.3.tar.gz
+[2024-06-02 22:10:41] INFO root fetch - processPackages [pynboard]: executing diffoscope
+[2024-06-02 22:10:41] INFO root fetch - processPackages [pynboard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pynboard-0.0.2.tar.gz tmp/pynboard-0.0.3.tar.gz --markdown 20240602/p/pynboard/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-06-02 22:10:41] INFO root fetch - processPackages [pyerualjetwork]: Downloading https://files.pythonhosted.org/packages/28/13/f5b20c87b237f0bf4658744c1757a036fa6715f93aee74efbbb63cda0c64/pyerualjetwork-2.0.2.tar.gz
+[2024-06-02 22:10:41] INFO root fetch - processPackages [pyerualjetwork]: executing diffoscope
+[2024-06-02 22:10:41] INFO root fetch - processPackages [pyerualjetwork]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyerualjetwork-2.0.1.tar.gz tmp/pyerualjetwork-2.0.2.tar.gz --markdown 20240602/p/pyerualjetwork/2.0.1-2.0.2/README.md --exclude *.pyd
+[2024-06-02 22:10:42] INFO root fetch - processPackages [pynboard]: Remove: archive file [/home/abi/fetcher/tmp/pynboard-0.0.2.tar.gz]
+[2024-06-02 22:10:42] INFO root fetch - processPackages [pynboard]: Remove: archive file [/home/abi/fetcher/tmp/pynboard-0.0.3.tar.gz]
+[2024-06-02 22:10:42] INFO root fetch - main [MainThread]: End processing [pynboard]: success
+[2024-06-02 22:10:42] INFO root fetch - processPackages [pyerualjetwork]: Remove: archive file [/home/abi/fetcher/tmp/pyerualjetwork-2.0.1.tar.gz]
+[2024-06-02 22:10:42] INFO root fetch - processPackages [pyerualjetwork]: Remove: archive file [/home/abi/fetcher/tmp/pyerualjetwork-2.0.2.tar.gz]
+[2024-06-02 22:10:42] INFO root fetch - main [MainThread]: End processing [pyerualjetwork]: success
+[2024-06-02 22:10:42] INFO root fetch - processPackages [tccli]: Downloading https://files.pythonhosted.org/packages/06/41/78d3ee9b2ead17ab0876618d203995653100fb27e524f51810d16df1bc97/tccli-3.0.999.1.tar.gz
+[2024-06-02 22:10:44] INFO root fetch - processPackages [tccli]: executing diffoscope
+[2024-06-02 22:10:44] INFO root fetch - processPackages [tccli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tccli-3.0.998.1.tar.gz tmp/tccli-3.0.999.1.tar.gz --markdown 20240602/t/tccli/3.0.998.1-3.0.999.1/README.md --exclude *.pyd
+[2024-06-02 22:12:04] INFO root fetch - processPackages [tccli]: Remove: archive file [/home/abi/fetcher/tmp/tccli-3.0.998.1.tar.gz]
+[2024-06-02 22:12:04] INFO root fetch - processPackages [tccli]: Remove: archive file [/home/abi/fetcher/tmp/tccli-3.0.999.1.tar.gz]
+[2024-06-02 22:12:04] INFO root fetch - main [MainThread]: End processing [tccli]: success
+[2024-06-02 22:12:04] INFO root fetch - main [MainThread]: Store serial: [23492755]
