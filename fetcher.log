@@ -3065,3 +3065,42 @@
 [2024-06-02 04:24:27] INFO root fetch - processPackages [sweetrpg-web-core]: Remove: archive file [/home/abi/fetcher/tmp/sweetrpg-web-core-0.0.99.tar.gz]
 [2024-06-02 04:24:27] INFO root fetch - main [MainThread]: End processing [sweetrpg-web-core]: success
 [2024-06-02 04:24:27] INFO root fetch - main [MainThread]: Store serial: [23485688]
+[2024-06-02 04:26:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23485688]
+[2024-06-02 04:26:35] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-02 04:26:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mbbank-lib
+[2024-06-02 04:26:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: agiflow-sdk
+[2024-06-02 04:26:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: stoobly-agent
+[2024-06-02 04:26:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: hj-proj-module
+[2024-06-02 04:26:35] INFO root fetch - processPackages [mbbank-lib]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-06-02 04:26:35] INFO root fetch - processPackages [hj-proj-module]: New version: [0.1.9] Old Version: [0.1.7]
+[2024-06-02 04:26:35] INFO root fetch - processPackages [mbbank-lib]: Downloading https://files.pythonhosted.org/packages/2d/be/74e395fcfc856dca9239f875935cbdd0bcca3d90e7487712a28ce5fec890/mbbank_lib-0.1.3.tar.gz
+[2024-06-02 04:26:35] INFO root fetch - processPackages [agiflow-sdk]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-06-02 04:26:35] INFO root fetch - processPackages [hj-proj-module]: Downloading https://files.pythonhosted.org/packages/db/12/7bb0e640457f3bbbbc0b77439e6b03839642728f5b9676f3a6cdbf41672e/hj_proj_module-0.1.7.tar.gz
+[2024-06-02 04:26:35] INFO root fetch - processPackages [stoobly-agent]: New version: [0.9.7] Old Version: [0.9.6]
+[2024-06-02 04:26:36] INFO root fetch - processPackages [agiflow-sdk]: Downloading https://files.pythonhosted.org/packages/83/e6/bc7a35393789cc14c97f21e5ed91f4586c44be75065b41a67b694299ecd6/agiflow_sdk-0.0.2.tar.gz
+[2024-06-02 04:26:36] INFO root fetch - processPackages [stoobly-agent]: Downloading https://files.pythonhosted.org/packages/e9/78/2350cae18a65474161019a795a652b6b64841323787b44192e8f739ac86a/stoobly-agent-0.9.6.tar.gz
+[2024-06-02 04:26:36] INFO root fetch - processPackages [hj-proj-module]: Downloading https://files.pythonhosted.org/packages/94/49/69693d7a64f73d84255649b427048581401581af1b2733dd7b132cd4a620/hj_proj_module-0.1.9.tar.gz
+[2024-06-02 04:26:36] INFO root fetch - processPackages [hj-proj-module]: executing diffoscope
+[2024-06-02 04:26:36] INFO root fetch - processPackages [hj-proj-module]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hj_proj_module-0.1.7.tar.gz tmp/hj_proj_module-0.1.9.tar.gz --markdown 20240602/h/hj-proj-module/0.1.7-0.1.9/README.md --exclude *.pyd
+[2024-06-02 04:26:36] INFO root fetch - processPackages [mbbank-lib]: Downloading https://files.pythonhosted.org/packages/81/5f/a24d7335c32b68ae87e5966f4b6e01dd8bf1fbee3dc2fb87e96ce0e1b99d/mbbank_lib-0.1.4.tar.gz
+[2024-06-02 04:26:36] INFO root fetch - processPackages [mbbank-lib]: executing diffoscope
+[2024-06-02 04:26:36] INFO root fetch - processPackages [mbbank-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mbbank_lib-0.1.3.tar.gz tmp/mbbank_lib-0.1.4.tar.gz --markdown 20240602/m/mbbank-lib/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-06-02 04:26:36] INFO root fetch - processPackages [agiflow-sdk]: Downloading https://files.pythonhosted.org/packages/79/7f/9f6ecf2ea4232a8661efbc3bed36d4424f5c0db5396824abbcfa7e43f2d1/agiflow_sdk-0.0.3.tar.gz
+[2024-06-02 04:26:36] INFO root fetch - processPackages [stoobly-agent]: Downloading https://files.pythonhosted.org/packages/45/f8/01a12e6de49e8f9a58b3c7a511a2a2b6259be0af19738d4fefcfb2af88f5/stoobly-agent-0.9.7.tar.gz
+[2024-06-02 04:26:36] INFO root fetch - processPackages [agiflow-sdk]: executing diffoscope
+[2024-06-02 04:26:36] INFO root fetch - processPackages [agiflow-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/agiflow_sdk-0.0.2.tar.gz tmp/agiflow_sdk-0.0.3.tar.gz --markdown 20240602/a/agiflow-sdk/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-06-02 04:26:36] INFO root fetch - processPackages [stoobly-agent]: executing diffoscope
+[2024-06-02 04:26:36] INFO root fetch - processPackages [stoobly-agent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stoobly-agent-0.9.6.tar.gz tmp/stoobly-agent-0.9.7.tar.gz --markdown 20240602/s/stoobly-agent/0.9.6-0.9.7/README.md --exclude *.pyd
+[2024-06-02 04:26:36] INFO root fetch - processPackages [hj-proj-module]: Remove: archive file [/home/abi/fetcher/tmp/hj_proj_module-0.1.7.tar.gz]
+[2024-06-02 04:26:36] INFO root fetch - processPackages [hj-proj-module]: Remove: archive file [/home/abi/fetcher/tmp/hj_proj_module-0.1.9.tar.gz]
+[2024-06-02 04:26:36] INFO root fetch - main [MainThread]: End processing [hj-proj-module]: success
+[2024-06-02 04:26:36] INFO root fetch - processPackages [mbbank-lib]: Remove: archive file [/home/abi/fetcher/tmp/mbbank_lib-0.1.3.tar.gz]
+[2024-06-02 04:26:36] INFO root fetch - processPackages [mbbank-lib]: Remove: archive file [/home/abi/fetcher/tmp/mbbank_lib-0.1.4.tar.gz]
+[2024-06-02 04:26:36] INFO root fetch - main [MainThread]: End processing [mbbank-lib]: success
+[2024-06-02 04:26:37] INFO root fetch - processPackages [stoobly-agent]: Remove: archive file [/home/abi/fetcher/tmp/stoobly-agent-0.9.6.tar.gz]
+[2024-06-02 04:26:37] INFO root fetch - processPackages [stoobly-agent]: Remove: archive file [/home/abi/fetcher/tmp/stoobly-agent-0.9.7.tar.gz]
+[2024-06-02 04:26:37] INFO root fetch - main [MainThread]: End processing [stoobly-agent]: success
+[2024-06-02 04:26:37] INFO root fetch - processPackages [agiflow-sdk]: Remove: archive file [/home/abi/fetcher/tmp/agiflow_sdk-0.0.2.tar.gz]
+[2024-06-02 04:26:37] INFO root fetch - processPackages [agiflow-sdk]: Remove: archive file [/home/abi/fetcher/tmp/agiflow_sdk-0.0.3.tar.gz]
+[2024-06-02 04:26:37] INFO root fetch - main [MainThread]: End processing [agiflow-sdk]: success
+[2024-06-02 04:26:37] INFO root fetch - main [MainThread]: Store serial: [23485700]
