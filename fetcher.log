@@ -17466,3 +17466,60 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 21:57:37] INFO root fetch - processPackages [Tailbone]: Remove: archive file [/home/abi/fetcher/tmp/tailbone-0.9.96.tar.gz]
 [2024-06-02 21:57:37] INFO root fetch - main [MainThread]: End processing [Tailbone]: success
 [2024-06-02 21:57:37] INFO root fetch - main [MainThread]: Store serial: [23492602]
+[2024-06-02 21:59:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23492602]
+[2024-06-02 21:59:45] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-06-02 21:59:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ratarmount
+[2024-06-02 21:59:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: esbmtk
+[2024-06-02 21:59:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: foo-et-al-parameterization
+[2024-06-02 21:59:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: steam-market-history
+[2024-06-02 21:59:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: neural-cherche
+[2024-06-02 21:59:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: opsvis
+[2024-06-02 21:59:45] INFO root fetch - processPackages [foo-et-al-parameterization]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-06-02 21:59:45] INFO root fetch - processPackages [esbmtk]: New version: [0.9.0.1] Old Version: [0.8.0.0]
+[2024-06-02 21:59:45] INFO root fetch - processPackages [foo-et-al-parameterization]: Downloading https://files.pythonhosted.org/packages/b3/71/a9218e75c0f238ad595ab57e0456f3542c7cbea0b576412e9164c26cedab/foo_et_al_parameterization-0.0.4.tar.gz
+[2024-06-02 21:59:45] INFO root fetch - processPackages [neural-cherche]: New version: [1.4.1] Old Version: [1.4.0]
+[2024-06-02 21:59:45] INFO root fetch - processPackages [steam-market-history]: New version: [3.1.1] Old Version: [3.1.0]
+[2024-06-02 21:59:45] INFO root fetch - processPackages [esbmtk]: Downloading https://files.pythonhosted.org/packages/bb/db/43f864ec19c6c352197cac358cf900d69e03025a4f4390aa7881849fde27/esbmtk-0.8.0.0.tar.gz
+[2024-06-02 21:59:45] INFO root fetch - processPackages [ratarmount]: New version: [0.9.3] Old Version: [0.9.2]
+[2024-06-02 21:59:45] INFO root fetch - processPackages [opsvis]: New version: [1.1.6] Old Version: [1.1.5]
+[2024-06-02 21:59:46] INFO root fetch - processPackages [neural-cherche]: Downloading https://files.pythonhosted.org/packages/84/df/738dc0cf51dfe0298e25cee4125b1cde0214c11de87d9594f54daa669a30/neural_cherche-1.4.0.tar.gz
+[2024-06-02 21:59:46] INFO root fetch - processPackages [steam-market-history]: Downloading https://files.pythonhosted.org/packages/c9/1d/b39df295465d9f786ec87209314b0c96d75879a5ca4a7590c89bb6e71f44/steam_market_history-3.1.0.tar.gz
+[2024-06-02 21:59:46] INFO root fetch - processPackages [ratarmount]: Downloading https://files.pythonhosted.org/packages/bf/9d/6c4f392e383fefcc503b63f8ad3ee1b1ceb6bd2b5113a980879120296147/ratarmount-0.9.2.tar.gz
+[2024-06-02 21:59:46] INFO root fetch - processPackages [opsvis]: Downloading https://files.pythonhosted.org/packages/38/38/cf1eb678a18c7a3f72616d599bc5f727e01bb1168cee406ab69026fdfd46/opsvis-1.1.5.tar.gz
+[2024-06-02 21:59:46] INFO root fetch - processPackages [foo-et-al-parameterization]: Downloading https://files.pythonhosted.org/packages/06/66/1f3e5c5bd96aec691985fa87b8a7ea71386845d34bc26585681b466b610c/foo_et_al_parameterization-0.0.5.tar.gz
+[2024-06-02 21:59:46] INFO root fetch - processPackages [esbmtk]: Downloading https://files.pythonhosted.org/packages/11/6f/87ddaf24ac6364989ab766f93b2f007ea867ce40fd85816050640df525c4/esbmtk-0.9.0.1.tar.gz
+[2024-06-02 21:59:46] INFO root fetch - processPackages [foo-et-al-parameterization]: executing diffoscope
+[2024-06-02 21:59:46] INFO root fetch - processPackages [foo-et-al-parameterization]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/foo_et_al_parameterization-0.0.4.tar.gz tmp/foo_et_al_parameterization-0.0.5.tar.gz --markdown 20240602/f/foo-et-al-parameterization/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-06-02 21:59:46] INFO root fetch - processPackages [esbmtk]: executing diffoscope
+[2024-06-02 21:59:46] INFO root fetch - processPackages [esbmtk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/esbmtk-0.8.0.0.tar.gz tmp/esbmtk-0.9.0.1.tar.gz --markdown 20240602/e/esbmtk/0.8.0.0-0.9.0.1/README.md --exclude *.pyd
+[2024-06-02 21:59:46] INFO root fetch - processPackages [neural-cherche]: Downloading https://files.pythonhosted.org/packages/f0/8e/a2d99ef7ab89b23675c7a4222a96f7137a8d0cd217f5ffb9776e42922470/neural_cherche-1.4.1.tar.gz
+[2024-06-02 21:59:46] INFO root fetch - processPackages [steam-market-history]: Downloading https://files.pythonhosted.org/packages/d5/48/a3380e95462574476facc654ddacd4b782e70766d6041c7fcbf88e9fda41/steam_market_history-3.1.1.tar.gz
+[2024-06-02 21:59:46] INFO root fetch - processPackages [opsvis]: Downloading https://files.pythonhosted.org/packages/0e/f3/089230c1c73d6c9f535fbc287a3b2cd9f519a3b4ffc83123abf9cec96cb2/opsvis-1.1.6.tar.gz
+[2024-06-02 21:59:46] INFO root fetch - processPackages [neural-cherche]: executing diffoscope
+[2024-06-02 21:59:46] INFO root fetch - processPackages [neural-cherche]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neural_cherche-1.4.0.tar.gz tmp/neural_cherche-1.4.1.tar.gz --markdown 20240602/n/neural-cherche/1.4.0-1.4.1/README.md --exclude *.pyd
+[2024-06-02 21:59:46] INFO root fetch - processPackages [steam-market-history]: executing diffoscope
+[2024-06-02 21:59:46] INFO root fetch - processPackages [steam-market-history]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/steam_market_history-3.1.0.tar.gz tmp/steam_market_history-3.1.1.tar.gz --markdown 20240602/s/steam-market-history/3.1.0-3.1.1/README.md --exclude *.pyd
+[2024-06-02 21:59:46] INFO root fetch - processPackages [opsvis]: executing diffoscope
+[2024-06-02 21:59:46] INFO root fetch - processPackages [opsvis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/opsvis-1.1.5.tar.gz tmp/opsvis-1.1.6.tar.gz --markdown 20240602/o/opsvis/1.1.5-1.1.6/README.md --exclude *.pyd
+[2024-06-02 21:59:46] INFO root fetch - processPackages [foo-et-al-parameterization]: Remove: archive file [/home/abi/fetcher/tmp/foo_et_al_parameterization-0.0.4.tar.gz]
+[2024-06-02 21:59:46] INFO root fetch - processPackages [foo-et-al-parameterization]: Remove: archive file [/home/abi/fetcher/tmp/foo_et_al_parameterization-0.0.5.tar.gz]
+[2024-06-02 21:59:46] INFO root fetch - main [MainThread]: End processing [foo-et-al-parameterization]: success
+[2024-06-02 21:59:47] INFO root fetch - processPackages [esbmtk]: Remove: archive file [/home/abi/fetcher/tmp/esbmtk-0.8.0.0.tar.gz]
+[2024-06-02 21:59:47] INFO root fetch - processPackages [esbmtk]: Remove: archive file [/home/abi/fetcher/tmp/esbmtk-0.9.0.1.tar.gz]
+[2024-06-02 21:59:47] INFO root fetch - main [MainThread]: End processing [esbmtk]: success
+[2024-06-02 21:59:47] INFO root fetch - processPackages [neural-cherche]: Remove: archive file [/home/abi/fetcher/tmp/neural_cherche-1.4.0.tar.gz]
+[2024-06-02 21:59:47] INFO root fetch - processPackages [neural-cherche]: Remove: archive file [/home/abi/fetcher/tmp/neural_cherche-1.4.1.tar.gz]
+[2024-06-02 21:59:47] INFO root fetch - main [MainThread]: End processing [neural-cherche]: success
+[2024-06-02 21:59:47] INFO root fetch - processPackages [steam-market-history]: Remove: archive file [/home/abi/fetcher/tmp/steam_market_history-3.1.0.tar.gz]
+[2024-06-02 21:59:47] INFO root fetch - processPackages [steam-market-history]: Remove: archive file [/home/abi/fetcher/tmp/steam_market_history-3.1.1.tar.gz]
+[2024-06-02 21:59:47] INFO root fetch - main [MainThread]: End processing [steam-market-history]: success
+[2024-06-02 21:59:47] INFO root fetch - processPackages [opsvis]: Remove: archive file [/home/abi/fetcher/tmp/opsvis-1.1.5.tar.gz]
+[2024-06-02 21:59:47] INFO root fetch - processPackages [opsvis]: Remove: archive file [/home/abi/fetcher/tmp/opsvis-1.1.6.tar.gz]
+[2024-06-02 21:59:47] INFO root fetch - main [MainThread]: End processing [opsvis]: success
+[2024-06-02 21:59:47] INFO root fetch - processPackages [ratarmount]: Downloading https://files.pythonhosted.org/packages/c1/b9/5ef008709e4297ac30fd8f404425ec1c65f6df21ea4136735b23bc582f4f/ratarmount-0.9.3.tar.gz
+[2024-06-02 21:59:48] INFO root fetch - processPackages [ratarmount]: executing diffoscope
+[2024-06-02 21:59:48] INFO root fetch - processPackages [ratarmount]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ratarmount-0.9.2.tar.gz tmp/ratarmount-0.9.3.tar.gz --markdown 20240602/r/ratarmount/0.9.2-0.9.3/README.md --exclude *.pyd
+[2024-06-02 21:59:49] INFO root fetch - processPackages [ratarmount]: Remove: archive file [/home/abi/fetcher/tmp/ratarmount-0.9.2.tar.gz]
+[2024-06-02 21:59:49] INFO root fetch - processPackages [ratarmount]: Remove: archive file [/home/abi/fetcher/tmp/ratarmount-0.9.3.tar.gz]
+[2024-06-02 21:59:49] INFO root fetch - main [MainThread]: End processing [ratarmount]: success
+[2024-06-02 21:59:49] INFO root fetch - main [MainThread]: Store serial: [23492626]
