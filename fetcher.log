@@ -6492,3 +6492,60 @@
 [2024-06-02 11:02:23] INFO root fetch - processPackages [spaceone-api]: Remove: archive file [/home/abi/fetcher/tmp/spaceone-api-2.0.dev89.tar.gz]
 [2024-06-02 11:02:23] INFO root fetch - main [MainThread]: End processing [spaceone-api]: success
 [2024-06-02 11:02:23] INFO root fetch - main [MainThread]: Store serial: [23487549]
+[2024-06-02 11:04:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23487549]
+[2024-06-02 11:04:32] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-06-02 11:04:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: suparkanbun
+[2024-06-02 11:04:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aixhello
+[2024-06-02 11:04:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: autogluon.common
+[2024-06-02 11:04:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: autogluon.core
+[2024-06-02 11:04:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: wagtail-liveedit
+[2024-06-02 11:04:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: muko
+[2024-06-02 11:04:32] INFO root fetch - processPackages [wagtail-liveedit]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-06-02 11:04:32] INFO root fetch - processPackages [muko]: New version: [2.62] Old Version: [2.61]
+[2024-06-02 11:04:32] INFO root fetch - processPackages [aixhello]: New version: [3.9] Old Version: [3.8]
+[2024-06-02 11:04:32] INFO root fetch - processPackages [autogluon.core]: New version: [1.1.1b20240601] Old Version: [1.1.1b20240530]
+[2024-06-02 11:04:32] INFO root fetch - processPackages [autogluon.common]: New version: [1.1.1b20240601] Old Version: [1.1.1b20240530]
+[2024-06-02 11:04:32] INFO root fetch - processPackages [muko]: Downloading https://files.pythonhosted.org/packages/eb/a7/8b220697c7cbfaf4d41be7745fea7f009d182c462a381b7177d5bd7b8f28/muko-2.61-py3-none-any.whl
+[2024-06-02 11:04:32] INFO root fetch - processPackages [suparkanbun]: New version: [1.5.3] Old Version: [1.5.2]
+[2024-06-02 11:04:32] INFO root fetch - processPackages [autogluon.core]: Downloading https://files.pythonhosted.org/packages/f5/58/3462d18d784bbd589cf45113a7cf75b6c8c9b703b1858c9d26f4728a4ee8/autogluon.core-1.1.1b20240530.tar.gz
+[2024-06-02 11:04:32] INFO root fetch - processPackages [autogluon.common]: Downloading https://files.pythonhosted.org/packages/90/a8/f533a2e164651fe08699ca0fbba60fbd571af5994332d0f85b2c2160943d/autogluon.common-1.1.1b20240530.tar.gz
+[2024-06-02 11:04:32] INFO root fetch - processPackages [aixhello]: Downloading https://files.pythonhosted.org/packages/33/7a/0eb58f9eca809c247391b619ea79e84e766a874f151797f97721010a74c8/aixhello-3.8.tar.gz
+[2024-06-02 11:04:32] INFO root fetch - processPackages [wagtail-liveedit]: Downloading https://files.pythonhosted.org/packages/1c/db/006a57c06237139b00c43702e39c05e8d04100487bb3e150affa51891823/wagtail-liveedit-0.0.8.tar.gz
+[2024-06-02 11:04:32] INFO root fetch - processPackages [suparkanbun]: Downloading https://files.pythonhosted.org/packages/98/40/ab91da486bfe32753dca7e6e0bd681c72ecc1bd1709533ff001ea8029b66/suparkanbun-1.5.2-py3-none-any.whl
+[2024-06-02 11:04:32] INFO root fetch - processPackages [autogluon.common]: Downloading https://files.pythonhosted.org/packages/04/77/5f74813d1a95f1936a655e5ccf894fc1dd5ffad3aa11ffd419ad61f2d79a/autogluon.common-1.1.1b20240601.tar.gz
+[2024-06-02 11:04:32] INFO root fetch - processPackages [autogluon.core]: Downloading https://files.pythonhosted.org/packages/44/62/edc25164f364859329968587f5b97c184c34126d86a2765e0387d04d9fa2/autogluon.core-1.1.1b20240601.tar.gz
+[2024-06-02 11:04:32] INFO root fetch - processPackages [aixhello]: Downloading https://files.pythonhosted.org/packages/79/5b/dd5760a0de9ed75f0ce5bf103adde583e9678760b2f11d4b0f3ae73ba292/aixhello-3.9.tar.gz
+[2024-06-02 11:04:32] INFO root fetch - processPackages [autogluon.common]: executing diffoscope
+[2024-06-02 11:04:32] INFO root fetch - processPackages [autogluon.common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autogluon.common-1.1.1b20240530.tar.gz tmp/autogluon.common-1.1.1b20240601.tar.gz --markdown 20240602/a/autogluon.common/1.1.1b20240530-1.1.1b20240601/README.md --exclude *.pyd
+[2024-06-02 11:04:32] INFO root fetch - processPackages [autogluon.core]: executing diffoscope
+[2024-06-02 11:04:32] INFO root fetch - processPackages [autogluon.core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autogluon.core-1.1.1b20240530.tar.gz tmp/autogluon.core-1.1.1b20240601.tar.gz --markdown 20240602/a/autogluon.core/1.1.1b20240530-1.1.1b20240601/README.md --exclude *.pyd
+[2024-06-02 11:04:32] INFO root fetch - processPackages [wagtail-liveedit]: Downloading https://files.pythonhosted.org/packages/f8/97/d08962dfac235077755098aab40e3712b17b632f47f65ae892187db69fe3/wagtail-liveedit-0.0.9.tar.gz
+[2024-06-02 11:04:32] INFO root fetch - processPackages [aixhello]: executing diffoscope
+[2024-06-02 11:04:32] INFO root fetch - processPackages [aixhello]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aixhello-3.8.tar.gz tmp/aixhello-3.9.tar.gz --markdown 20240602/a/aixhello/3.8-3.9/README.md --exclude *.pyd
+[2024-06-02 11:04:32] INFO root fetch - processPackages [wagtail-liveedit]: executing diffoscope
+[2024-06-02 11:04:32] INFO root fetch - processPackages [wagtail-liveedit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wagtail-liveedit-0.0.8.tar.gz tmp/wagtail-liveedit-0.0.9.tar.gz --markdown 20240602/w/wagtail-liveedit/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-06-02 11:04:33] INFO root fetch - processPackages [suparkanbun]: Downloading https://files.pythonhosted.org/packages/27/fe/21157b29e94cff30f46ae70673cfc625a123aaf4d5a69a8bc7156ad498e4/suparkanbun-1.5.3-py3-none-any.whl
+[2024-06-02 11:04:33] INFO root fetch - processPackages [muko]: Downloading https://files.pythonhosted.org/packages/d1/05/d88189b5aeda0eb3c07de9348df467a49295a06afab33dac1f717cf611b3/muko-2.62-py3-none-any.whl
+[2024-06-02 11:04:33] INFO root fetch - processPackages [suparkanbun]: executing diffoscope
+[2024-06-02 11:04:33] INFO root fetch - processPackages [suparkanbun]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/suparkanbun-1.5.2-py3-none-any.whl.zip tmp/suparkanbun-1.5.3-py3-none-any.whl.zip --markdown 20240602/s/suparkanbun/1.5.2-1.5.3/README.md --exclude *.pyd
+[2024-06-02 11:04:33] INFO root fetch - processPackages [muko]: executing diffoscope
+[2024-06-02 11:04:33] INFO root fetch - processPackages [muko]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/muko-2.61-py3-none-any.whl.zip tmp/muko-2.62-py3-none-any.whl.zip --markdown 20240602/m/muko/2.61-2.62/README.md --exclude *.pyd
+[2024-06-02 11:04:33] INFO root fetch - processPackages [autogluon.common]: Remove: archive file [/home/abi/fetcher/tmp/autogluon.common-1.1.1b20240530.tar.gz]
+[2024-06-02 11:04:33] INFO root fetch - processPackages [autogluon.common]: Remove: archive file [/home/abi/fetcher/tmp/autogluon.common-1.1.1b20240601.tar.gz]
+[2024-06-02 11:04:33] INFO root fetch - main [MainThread]: End processing [autogluon.common]: success
+[2024-06-02 11:04:33] INFO root fetch - processPackages [aixhello]: Remove: archive file [/home/abi/fetcher/tmp/aixhello-3.8.tar.gz]
+[2024-06-02 11:04:33] INFO root fetch - processPackages [aixhello]: Remove: archive file [/home/abi/fetcher/tmp/aixhello-3.9.tar.gz]
+[2024-06-02 11:04:33] INFO root fetch - main [MainThread]: End processing [aixhello]: success
+[2024-06-02 11:04:33] INFO root fetch - processPackages [wagtail-liveedit]: Remove: archive file [/home/abi/fetcher/tmp/wagtail-liveedit-0.0.8.tar.gz]
+[2024-06-02 11:04:33] INFO root fetch - processPackages [wagtail-liveedit]: Remove: archive file [/home/abi/fetcher/tmp/wagtail-liveedit-0.0.9.tar.gz]
+[2024-06-02 11:04:33] INFO root fetch - main [MainThread]: End processing [wagtail-liveedit]: success
+[2024-06-02 11:04:33] INFO root fetch - processPackages [autogluon.core]: Remove: archive file [/home/abi/fetcher/tmp/autogluon.core-1.1.1b20240530.tar.gz]
+[2024-06-02 11:04:33] INFO root fetch - processPackages [autogluon.core]: Remove: archive file [/home/abi/fetcher/tmp/autogluon.core-1.1.1b20240601.tar.gz]
+[2024-06-02 11:04:33] INFO root fetch - main [MainThread]: End processing [autogluon.core]: success
+[2024-06-02 11:04:34] INFO root fetch - processPackages [suparkanbun]: Remove: archive file [/home/abi/fetcher/tmp/suparkanbun-1.5.2-py3-none-any.whl.zip]
+[2024-06-02 11:04:34] INFO root fetch - processPackages [suparkanbun]: Remove: archive file [/home/abi/fetcher/tmp/suparkanbun-1.5.3-py3-none-any.whl.zip]
+[2024-06-02 11:04:34] INFO root fetch - main [MainThread]: End processing [suparkanbun]: success
+[2024-06-02 11:04:34] INFO root fetch - processPackages [muko]: Remove: archive file [/home/abi/fetcher/tmp/muko-2.61-py3-none-any.whl.zip]
+[2024-06-02 11:04:34] INFO root fetch - processPackages [muko]: Remove: archive file [/home/abi/fetcher/tmp/muko-2.62-py3-none-any.whl.zip]
+[2024-06-02 11:04:34] INFO root fetch - main [MainThread]: End processing [muko]: success
+[2024-06-02 11:04:34] INFO root fetch - main [MainThread]: Store serial: [23487563]
