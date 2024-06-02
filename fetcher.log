@@ -3247,3 +3247,26 @@
 [2024-06-02 04:48:13] WARNING root fetch - processPackages [parameter-fooetal]: Skipping, unable to determine old version
 [2024-06-02 04:48:13] INFO root fetch - main [MainThread]: End processing [parameter-fooetal] error
 [2024-06-02 04:48:13] INFO root fetch - main [MainThread]: Store serial: [23485750]
+[2024-06-02 04:50:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23485750]
+[2024-06-02 04:50:21] INFO root fetch - main [MainThread]: No changed packages found
+[2024-06-02 04:52:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23485750]
+[2024-06-02 04:52:26] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-02 04:52:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: julep
+[2024-06-02 04:52:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: joyrl
+[2024-06-02 04:52:27] INFO root fetch - processPackages [julep]: New version: [0.3.7] Old Version: [0.3.6]
+[2024-06-02 04:52:27] INFO root fetch - processPackages [joyrl]: New version: [0.6.1.1] Old Version: [0.6.1]
+[2024-06-02 04:52:27] INFO root fetch - processPackages [joyrl]: Downloading https://files.pythonhosted.org/packages/c3/16/1edcdffbb37818c42c803d9ae0f04b9f299d218c635685fda4da4ab367af/joyrl-0.6.1.tar.gz
+[2024-06-02 04:52:27] INFO root fetch - processPackages [julep]: Downloading https://files.pythonhosted.org/packages/06/d8/27264a6a3994be0907ddebd35934b90f0b881c5381dbb4f0a09ce20a723a/julep-0.3.6.tar.gz
+[2024-06-02 04:52:27] INFO root fetch - processPackages [julep]: Downloading https://files.pythonhosted.org/packages/5c/0e/b2cf2658570052e3cb160abcb9746b3fddcca91fef26b3066bef1ff46162/julep-0.3.7.tar.gz
+[2024-06-02 04:52:27] INFO root fetch - processPackages [julep]: executing diffoscope
+[2024-06-02 04:52:27] INFO root fetch - processPackages [julep]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/julep-0.3.6.tar.gz tmp/julep-0.3.7.tar.gz --markdown 20240602/j/julep/0.3.6-0.3.7/README.md --exclude *.pyd
+[2024-06-02 04:52:27] INFO root fetch - processPackages [joyrl]: Downloading https://files.pythonhosted.org/packages/f8/d0/1cbf994e773e086bd0b7d85b767211e94db63d9ea74b78ef8df7fa8bdebd/joyrl-0.6.1.1.tar.gz
+[2024-06-02 04:52:27] INFO root fetch - processPackages [joyrl]: executing diffoscope
+[2024-06-02 04:52:27] INFO root fetch - processPackages [joyrl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/joyrl-0.6.1.tar.gz tmp/joyrl-0.6.1.1.tar.gz --markdown 20240602/j/joyrl/0.6.1-0.6.1.1/README.md --exclude *.pyd
+[2024-06-02 04:52:28] INFO root fetch - processPackages [julep]: Remove: archive file [/home/abi/fetcher/tmp/julep-0.3.6.tar.gz]
+[2024-06-02 04:52:28] INFO root fetch - processPackages [julep]: Remove: archive file [/home/abi/fetcher/tmp/julep-0.3.7.tar.gz]
+[2024-06-02 04:52:28] INFO root fetch - main [MainThread]: End processing [julep]: success
+[2024-06-02 04:52:28] INFO root fetch - processPackages [joyrl]: Remove: archive file [/home/abi/fetcher/tmp/joyrl-0.6.1.tar.gz]
+[2024-06-02 04:52:28] INFO root fetch - processPackages [joyrl]: Remove: archive file [/home/abi/fetcher/tmp/joyrl-0.6.1.1.tar.gz]
+[2024-06-02 04:52:28] INFO root fetch - main [MainThread]: End processing [joyrl]: success
+[2024-06-02 04:52:28] INFO root fetch - main [MainThread]: Store serial: [23485756]
