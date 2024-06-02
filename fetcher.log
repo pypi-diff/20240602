@@ -16306,3 +16306,57 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 20:43:05] INFO root fetch - processPackages [DatasetsFactory]: Remove: archive file [/home/abi/fetcher/tmp/datasetsfactory-0.3.tar.gz]
 [2024-06-02 20:43:05] INFO root fetch - main [MainThread]: End processing [DatasetsFactory]: success
 [2024-06-02 20:43:05] INFO root fetch - main [MainThread]: Store serial: [23492074]
+[2024-06-02 20:45:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23492074]
+[2024-06-02 20:45:14] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-06-02 20:45:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: prompt-defender
+[2024-06-02 20:45:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kcli
+[2024-06-02 20:45:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyudev-zero
+[2024-06-02 20:45:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: httpexec
+[2024-06-02 20:45:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: unthermal
+[2024-06-02 20:45:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: schemafunc
+[2024-06-02 20:45:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pynboard
+[2024-06-02 20:45:14] INFO root fetch - processPackages [schemafunc]: New version: [0.3.8] Old Version: [0.3.7]
+[2024-06-02 20:45:14] WARNING root fetch - processPackages [pynboard]: Skipping, unable to determine old version
+[2024-06-02 20:45:14] INFO root fetch - main [MainThread]: End processing [pynboard] error
+[2024-06-02 20:45:14] INFO root fetch - processPackages [unthermal]: New version: [0.1001] Old Version: [0.1.dev1]
+[2024-06-02 20:45:14] INFO root fetch - processPackages [kcli]: New version: [99.0.202406021753] Old Version: [99.0.202406021631]
+[2024-06-02 20:45:14] INFO root fetch - processPackages [httpexec]: New version: [1.0.3] Old Version: [1.0.2]
+[2024-06-02 20:45:14] INFO root fetch - processPackages [prompt-defender]: New version: [0.1.1] Old Version: [0.0.28]
+[2024-06-02 20:45:14] INFO root fetch - processPackages [schemafunc]: Downloading https://files.pythonhosted.org/packages/b9/a9/434e5b23a6a5b4f291475a8ac0e0c46ff31f463e4966823643f25d78a3e8/schemafunc-0.3.7.tar.gz
+[2024-06-02 20:45:14] WARNING root fetch - processPackages [pyudev-zero]: Skipping, unable to determine old version
+[2024-06-02 20:45:14] INFO root fetch - main [MainThread]: End processing [pyudev-zero] error
+[2024-06-02 20:45:14] INFO root fetch - processPackages [unthermal]: Downloading https://files.pythonhosted.org/packages/f5/f8/d07227a2c3d141fb8d9790c5141cdcd1a3cef178b6d77f2c0185cba50086/unthermal-0.1.dev1.tar.gz
+[2024-06-02 20:45:14] INFO root fetch - processPackages [kcli]: Downloading https://files.pythonhosted.org/packages/f8/14/5f69e8904c02dfeb40caccd733f830b401449a8fa6e8608366cd87867dfa/kcli-99.0.202406021631.tar.gz
+[2024-06-02 20:45:14] INFO root fetch - processPackages [httpexec]: Downloading https://files.pythonhosted.org/packages/2c/8a/ad558f43cbf801d88aa99f38751990fed719ab92e85b194bba37a146dea7/httpexec-1.0.2.tar.gz
+[2024-06-02 20:45:14] INFO root fetch - processPackages [prompt-defender]: Downloading https://files.pythonhosted.org/packages/c5/a8/64d0ea0a17a6fb02185294f4e4dcbe1f17e3ee05756b99e4ed08813a42d1/prompt_defender-0.0.28.tar.gz
+[2024-06-02 20:45:14] INFO root fetch - processPackages [unthermal]: Downloading https://files.pythonhosted.org/packages/d5/81/664671b86da1a5bcd349280ea890d75f32be93c4daadc3b562edf311352c/unthermal-0.1001.tar.gz
+[2024-06-02 20:45:14] INFO root fetch - processPackages [schemafunc]: Downloading https://files.pythonhosted.org/packages/cd/bc/6c0846adbfd797317a55d765d4e7fd5e71ee46c9fb52390e422a57565de7/schemafunc-0.3.8.tar.gz
+[2024-06-02 20:45:14] INFO root fetch - processPackages [unthermal]: executing diffoscope
+[2024-06-02 20:45:14] INFO root fetch - processPackages [unthermal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unthermal-0.1.dev1.tar.gz tmp/unthermal-0.1001.tar.gz --markdown 20240602/u/unthermal/0.1.dev1-0.1001/README.md --exclude *.pyd
+[2024-06-02 20:45:14] INFO root fetch - processPackages [schemafunc]: executing diffoscope
+[2024-06-02 20:45:14] INFO root fetch - processPackages [schemafunc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/schemafunc-0.3.7.tar.gz tmp/schemafunc-0.3.8.tar.gz --markdown 20240602/s/schemafunc/0.3.7-0.3.8/README.md --exclude *.pyd
+[2024-06-02 20:45:14] INFO root fetch - processPackages [prompt-defender]: Downloading https://files.pythonhosted.org/packages/64/44/2ec5fc7f869be55346d26c46aa44396fb5e322601a05b2d4f064f86662df/prompt_defender-0.1.1.tar.gz
+[2024-06-02 20:45:14] INFO root fetch - processPackages [httpexec]: Downloading https://files.pythonhosted.org/packages/a0/42/5f21602677c8eab5f020ef65c666763640289988e2d5ef122d3c89f3e848/httpexec-1.0.3.tar.gz
+[2024-06-02 20:45:14] INFO root fetch - processPackages [kcli]: Downloading https://files.pythonhosted.org/packages/1f/13/6c217f691c08efe07c4a2c5a5d38945530536f38d4ced02ec9a52e118764/kcli-99.0.202406021753.tar.gz
+[2024-06-02 20:45:14] INFO root fetch - processPackages [prompt-defender]: executing diffoscope
+[2024-06-02 20:45:14] INFO root fetch - processPackages [prompt-defender]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prompt_defender-0.0.28.tar.gz tmp/prompt_defender-0.1.1.tar.gz --markdown 20240602/p/prompt-defender/0.0.28-0.1.1/README.md --exclude *.pyd
+[2024-06-02 20:45:15] INFO root fetch - processPackages [httpexec]: executing diffoscope
+[2024-06-02 20:45:15] INFO root fetch - processPackages [httpexec]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/httpexec-1.0.2.tar.gz tmp/httpexec-1.0.3.tar.gz --markdown 20240602/h/httpexec/1.0.2-1.0.3/README.md --exclude *.pyd
+[2024-06-02 20:45:15] INFO root fetch - processPackages [kcli]: executing diffoscope
+[2024-06-02 20:45:15] INFO root fetch - processPackages [kcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kcli-99.0.202406021631.tar.gz tmp/kcli-99.0.202406021753.tar.gz --markdown 20240602/k/kcli/99.0.202406021631-99.0.202406021753/README.md --exclude *.pyd
+[2024-06-02 20:45:15] INFO root fetch - processPackages [schemafunc]: Remove: archive file [/home/abi/fetcher/tmp/schemafunc-0.3.7.tar.gz]
+[2024-06-02 20:45:15] INFO root fetch - processPackages [schemafunc]: Remove: archive file [/home/abi/fetcher/tmp/schemafunc-0.3.8.tar.gz]
+[2024-06-02 20:45:15] INFO root fetch - main [MainThread]: End processing [schemafunc]: success
+[2024-06-02 20:45:15] INFO root fetch - processPackages [unthermal]: Remove: archive file [/home/abi/fetcher/tmp/unthermal-0.1.dev1.tar.gz]
+[2024-06-02 20:45:15] INFO root fetch - processPackages [unthermal]: Remove: archive file [/home/abi/fetcher/tmp/unthermal-0.1001.tar.gz]
+[2024-06-02 20:45:15] INFO root fetch - main [MainThread]: End processing [unthermal]: success
+[2024-06-02 20:45:15] INFO root fetch - processPackages [prompt-defender]: Remove: archive file [/home/abi/fetcher/tmp/prompt_defender-0.0.28.tar.gz]
+[2024-06-02 20:45:15] INFO root fetch - processPackages [prompt-defender]: Remove: archive file [/home/abi/fetcher/tmp/prompt_defender-0.1.1.tar.gz]
+[2024-06-02 20:45:15] INFO root fetch - main [MainThread]: End processing [prompt-defender]: success
+[2024-06-02 20:45:15] INFO root fetch - processPackages [httpexec]: Remove: archive file [/home/abi/fetcher/tmp/httpexec-1.0.2.tar.gz]
+[2024-06-02 20:45:15] INFO root fetch - processPackages [httpexec]: Remove: archive file [/home/abi/fetcher/tmp/httpexec-1.0.3.tar.gz]
+[2024-06-02 20:45:15] INFO root fetch - main [MainThread]: End processing [httpexec]: success
+[2024-06-02 20:45:17] INFO root fetch - processPackages [kcli]: Remove: archive file [/home/abi/fetcher/tmp/kcli-99.0.202406021631.tar.gz]
+[2024-06-02 20:45:17] INFO root fetch - processPackages [kcli]: Remove: archive file [/home/abi/fetcher/tmp/kcli-99.0.202406021753.tar.gz]
+[2024-06-02 20:45:17] INFO root fetch - main [MainThread]: End processing [kcli]: success
+[2024-06-02 20:45:17] INFO root fetch - main [MainThread]: Store serial: [23492097]
