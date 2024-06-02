@@ -12256,3 +12256,36 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 17:29:11] INFO root fetch - processPackages [few-shot-priming]: Remove: archive file [/home/abi/fetcher/tmp/few_shot_priming-0.3.99-py3-none-any.whl.zip]
 [2024-06-02 17:29:11] INFO root fetch - main [MainThread]: End processing [few-shot-priming]: success
 [2024-06-02 17:29:11] INFO root fetch - main [MainThread]: Store serial: [23490119]
+[2024-06-02 17:31:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23490119]
+[2024-06-02 17:31:19] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-02 17:31:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: townsnet
+[2024-06-02 17:31:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sc3dg
+[2024-06-02 17:31:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mayan-edms
+[2024-06-02 17:31:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nostr-dvm
+[2024-06-02 17:31:19] INFO root fetch - processPackages [nostr-dvm]: New version: [0.5.6] Old Version: [0.5.5]
+[2024-06-02 17:31:19] INFO root fetch - processPackages [mayan-edms]: New version: [4.7] Old Version: [4.6.4]
+[2024-06-02 17:31:19] INFO root fetch - processPackages [sc3dg]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-06-02 17:31:19] INFO root fetch - processPackages [nostr-dvm]: Downloading https://files.pythonhosted.org/packages/86/aa/b7e6c3a13138e3f52c1186059648fceb17f296d6c7ffc2aadf9fdc25cf84/nostr_dvm-0.5.5.tar.gz
+[2024-06-02 17:31:19] WARNING root fetch - processPackages [townsnet]: Skipping, unable to determine old version
+[2024-06-02 17:31:19] INFO root fetch - main [MainThread]: End processing [townsnet] error
+[2024-06-02 17:31:19] INFO root fetch - processPackages [sc3dg]: Downloading https://files.pythonhosted.org/packages/97/65/1394420940d9bdc212860a3842baed2ba84016ee1556fa9c66bfb0fa3d07/sc3dg-0.0.8.tar.gz
+[2024-06-02 17:31:19] INFO root fetch - processPackages [mayan-edms]: Downloading https://files.pythonhosted.org/packages/0b/e3/e2c1c66b63526a7c9208bab4db36e6cb08984027541746e99f67f380a9ba/mayan-edms-4.6.4.tar.gz
+[2024-06-02 17:31:19] INFO root fetch - processPackages [sc3dg]: Downloading https://files.pythonhosted.org/packages/36/99/5a97c5b877e089a11d7fcbc1d935f5e5301bcc0f77867bda7d000fc1eb58/sc3dg-0.0.9.tar.gz
+[2024-06-02 17:31:19] INFO root fetch - processPackages [nostr-dvm]: Downloading https://files.pythonhosted.org/packages/26/3d/783aab9a21cfb1eb11a33a57ff663a04b2fc72d3b104fe1c8b905f9c1b10/nostr_dvm-0.5.6.tar.gz
+[2024-06-02 17:31:19] INFO root fetch - processPackages [sc3dg]: executing diffoscope
+[2024-06-02 17:31:19] INFO root fetch - processPackages [sc3dg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sc3dg-0.0.8.tar.gz tmp/sc3dg-0.0.9.tar.gz --markdown 20240602/s/sc3dg/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-06-02 17:31:20] INFO root fetch - processPackages [nostr-dvm]: executing diffoscope
+[2024-06-02 17:31:20] INFO root fetch - processPackages [nostr-dvm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nostr_dvm-0.5.5.tar.gz tmp/nostr_dvm-0.5.6.tar.gz --markdown 20240602/n/nostr-dvm/0.5.5-0.5.6/README.md --exclude *.pyd
+[2024-06-02 17:31:20] INFO root fetch - processPackages [mayan-edms]: Downloading https://files.pythonhosted.org/packages/55/96/f8edb1514b6a353ae967986b3a07a94d2e58d236b42512906108a87afec6/mayan-edms-4.7.tar.gz
+[2024-06-02 17:31:20] INFO root fetch - processPackages [mayan-edms]: executing diffoscope
+[2024-06-02 17:31:20] INFO root fetch - processPackages [mayan-edms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mayan-edms-4.6.4.tar.gz tmp/mayan-edms-4.7.tar.gz --markdown 20240602/m/mayan-edms/4.6.4-4.7/README.md --exclude *.pyd
+[2024-06-02 17:31:20] INFO root fetch - processPackages [sc3dg]: Remove: archive file [/home/abi/fetcher/tmp/sc3dg-0.0.8.tar.gz]
+[2024-06-02 17:31:20] INFO root fetch - processPackages [sc3dg]: Remove: archive file [/home/abi/fetcher/tmp/sc3dg-0.0.9.tar.gz]
+[2024-06-02 17:31:20] INFO root fetch - main [MainThread]: End processing [sc3dg]: success
+[2024-06-02 17:31:20] INFO root fetch - processPackages [nostr-dvm]: Remove: archive file [/home/abi/fetcher/tmp/nostr_dvm-0.5.5.tar.gz]
+[2024-06-02 17:31:20] INFO root fetch - processPackages [nostr-dvm]: Remove: archive file [/home/abi/fetcher/tmp/nostr_dvm-0.5.6.tar.gz]
+[2024-06-02 17:31:20] INFO root fetch - main [MainThread]: End processing [nostr-dvm]: success
+[2024-06-02 17:32:08] INFO root fetch - processPackages [mayan-edms]: Remove: archive file [/home/abi/fetcher/tmp/mayan-edms-4.6.4.tar.gz]
+[2024-06-02 17:32:08] INFO root fetch - processPackages [mayan-edms]: Remove: archive file [/home/abi/fetcher/tmp/mayan-edms-4.7.tar.gz]
+[2024-06-02 17:32:08] INFO root fetch - main [MainThread]: End processing [mayan-edms]: success
+[2024-06-02 17:32:08] INFO root fetch - main [MainThread]: Store serial: [23490133]
