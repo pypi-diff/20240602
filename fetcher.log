@@ -4652,3 +4652,15 @@
 [2024-06-02 07:57:58] INFO root fetch - processPackages [test-dvs-printf]: Remove: archive file [/home/abi/fetcher/tmp/test_dvs_printf-1.6.tar.gz]
 [2024-06-02 07:57:58] INFO root fetch - main [MainThread]: End processing [test-dvs-printf]: success
 [2024-06-02 07:57:58] INFO root fetch - main [MainThread]: Store serial: [23486554]
+[2024-06-02 08:00:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23486554]
+[2024-06-02 08:00:08] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-02 08:00:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: data-manipulation
+[2024-06-02 08:00:08] INFO root fetch - processPackages [data-manipulation]: New version: [0.9] Old Version: [0.8]
+[2024-06-02 08:00:08] INFO root fetch - processPackages [data-manipulation]: Downloading https://files.pythonhosted.org/packages/11/e3/4b1ec8449e9e36a6057de278e11d627e1da10527371c7c3f13d668f3c2d4/data_manipulation-0.8.tar.gz
+[2024-06-02 08:00:08] INFO root fetch - processPackages [data-manipulation]: Downloading https://files.pythonhosted.org/packages/45/5a/fcb54c7d4023096be4bcedc594a44ad9cb8e93a6258c07807b914f7af380/data_manipulation-0.9.tar.gz
+[2024-06-02 08:00:08] INFO root fetch - processPackages [data-manipulation]: executing diffoscope
+[2024-06-02 08:00:08] INFO root fetch - processPackages [data-manipulation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/data_manipulation-0.8.tar.gz tmp/data_manipulation-0.9.tar.gz --markdown 20240602/d/data-manipulation/0.8-0.9/README.md --exclude *.pyd
+[2024-06-02 08:00:09] INFO root fetch - processPackages [data-manipulation]: Remove: archive file [/home/abi/fetcher/tmp/data_manipulation-0.8.tar.gz]
+[2024-06-02 08:00:09] INFO root fetch - processPackages [data-manipulation]: Remove: archive file [/home/abi/fetcher/tmp/data_manipulation-0.9.tar.gz]
+[2024-06-02 08:00:09] INFO root fetch - main [MainThread]: End processing [data-manipulation]: success
+[2024-06-02 08:00:09] INFO root fetch - main [MainThread]: Store serial: [23486556]
