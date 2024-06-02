@@ -7419,3 +7419,15 @@
 [2024-06-02 12:13:25] INFO root fetch - processPackages [ai-edge-torch-nightly]: Remove: archive file [/home/abi/fetcher/tmp/ai_edge_torch_nightly-0.2.0.dev20240602-py3-none-any.whl.zip]
 [2024-06-02 12:13:25] INFO root fetch - main [MainThread]: End processing [ai-edge-torch-nightly]: success
 [2024-06-02 12:13:25] INFO root fetch - main [MainThread]: Store serial: [23488050]
+[2024-06-02 12:15:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23488050]
+[2024-06-02 12:15:34] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-02 12:15:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: libresvip
+[2024-06-02 12:15:34] INFO root fetch - processPackages [libresvip]: New version: [1.1.5] Old Version: [1.1.4]
+[2024-06-02 12:15:34] INFO root fetch - processPackages [libresvip]: Downloading https://files.pythonhosted.org/packages/9c/a3/f9139d4149746fc545ad2b93e9ab5d91cd276c7087b11a08256c4c7d8c06/libresvip-1.1.4.tar.gz
+[2024-06-02 12:15:35] INFO root fetch - processPackages [libresvip]: Downloading https://files.pythonhosted.org/packages/ad/8c/16eb4ec78f5962e9b1d03618e32b120383796588526f0320ac57b610ea84/libresvip-1.1.5.tar.gz
+[2024-06-02 12:15:35] INFO root fetch - processPackages [libresvip]: executing diffoscope
+[2024-06-02 12:15:35] INFO root fetch - processPackages [libresvip]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/libresvip-1.1.4.tar.gz tmp/libresvip-1.1.5.tar.gz --markdown 20240602/l/libresvip/1.1.4-1.1.5/README.md --exclude *.pyd
+[2024-06-02 12:15:37] INFO root fetch - processPackages [libresvip]: Remove: archive file [/home/abi/fetcher/tmp/libresvip-1.1.4.tar.gz]
+[2024-06-02 12:15:37] INFO root fetch - processPackages [libresvip]: Remove: archive file [/home/abi/fetcher/tmp/libresvip-1.1.5.tar.gz]
+[2024-06-02 12:15:37] INFO root fetch - main [MainThread]: End processing [libresvip]: success
+[2024-06-02 12:15:37] INFO root fetch - main [MainThread]: Store serial: [23488064]
