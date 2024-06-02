@@ -10962,3 +10962,90 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-02 16:24:45] INFO root fetch - processPackages [abstra]: Remove: archive file [/home/abi/fetcher/tmp/abstra-2.9.0.tar.gz]
 [2024-06-02 16:24:45] INFO root fetch - main [MainThread]: End processing [abstra]: success
 [2024-06-02 16:24:45] INFO root fetch - main [MainThread]: Store serial: [23489593]
+[2024-06-02 16:26:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23489593]
+[2024-06-02 16:26:53] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2024-06-02 16:26:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: htmlExtractor
+[2024-06-02 16:26:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sc3dg
+[2024-06-02 16:26:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: paracelsus
+[2024-06-02 16:26:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: anydi
+[2024-06-02 16:26:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: glide-for-redis
+[2024-06-02 16:26:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: owega
+[2024-06-02 16:26:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: nonebot-plugin-nai3-bot
+[2024-06-02 16:26:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: mkdocs-juvix-plugin
+[2024-06-02 16:26:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: pkscreener
+[2024-06-02 16:26:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: qwak-core
+[2024-06-02 16:26:53] INFO root fetch - processPackages [mkdocs-juvix-plugin]: New version: [0.2.5] Old Version: [0.2.4]
+[2024-06-02 16:26:53] WARNING root fetch - processPackages [htmlExtractor]: Skipping, unable to determine old version
+[2024-06-02 16:26:53] INFO root fetch - main [MainThread]: End processing [htmlExtractor] error
+[2024-06-02 16:26:53] INFO root fetch - processPackages [sc3dg]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-06-02 16:26:53] INFO root fetch - processPackages [anydi]: New version: [0.27.0a1] Old Version: [0.27.0a0]
+[2024-06-02 16:26:53] INFO root fetch - processPackages [nonebot-plugin-nai3-bot]: New version: [1.1.0] Old Version: [1.0.1]
+[2024-06-02 16:26:53] INFO root fetch - processPackages [mkdocs-juvix-plugin]: Downloading https://files.pythonhosted.org/packages/3f/2e/5e391323ea7b9e5704f861b338a31ffa062559dd8ecb7e969aad89a41f5f/mkdocs-juvix-plugin-0.2.4.tar.gz
+[2024-06-02 16:26:53] INFO root fetch - processPackages [paracelsus]: New version: [0.6.0] Old Version: [0.5.2]
+[2024-06-02 16:26:53] INFO root fetch - processPackages [pkscreener]: New version: [0.45.20240602.427] Old Version: [0.45.20240602.426]
+[2024-06-02 16:26:53] INFO root fetch - processPackages [sc3dg]: Downloading https://files.pythonhosted.org/packages/97/65/1394420940d9bdc212860a3842baed2ba84016ee1556fa9c66bfb0fa3d07/sc3dg-0.0.8.tar.gz
+[2024-06-02 16:26:53] INFO root fetch - processPackages [owega]: New version: [5.9.2] Old Version: [5.9.1]
+[2024-06-02 16:26:53] INFO root fetch - processPackages [anydi]: Downloading https://files.pythonhosted.org/packages/fc/76/2c036fb9463fd91799470293bf9caeb9fb3b353728492ccde1a6d912ca15/anydi-0.27.0a0.tar.gz
+[2024-06-02 16:26:53] INFO root fetch - processPackages [glide-for-redis]: New version: [0.4.1rc3] Old Version: [0.4.0rc4]
+[2024-06-02 16:26:53] INFO root fetch - processPackages [qwak-core]: New version: [0.4.9] Old Version: [0.4.8]
+[2024-06-02 16:26:53] INFO root fetch - processPackages [nonebot-plugin-nai3-bot]: Downloading https://files.pythonhosted.org/packages/82/a6/445dbb6648db802aae379bebdbcdb1dbae1e692b8fd2d68e60208ffb49b7/nonebot_plugin_nai3_bot-1.0.1.tar.gz
+[2024-06-02 16:26:53] INFO root fetch - processPackages [paracelsus]: Downloading https://files.pythonhosted.org/packages/d5/00/ac1deb381f3cbc065cbe90be92aa6e00c8d02372fe653bb16220604aebee/paracelsus-0.5.2.tar.gz
+[2024-06-02 16:26:53] INFO root fetch - processPackages [pkscreener]: Downloading https://files.pythonhosted.org/packages/b3/fa/1decef4bccfb8a2f44bf8c109d81ec19f33fc70aa5dde27dcf1423d895a9/pkscreener-0.45.20240602.426.tar.gz
+[2024-06-02 16:26:53] INFO root fetch - processPackages [glide-for-redis]: Downloading https://files.pythonhosted.org/packages/c5/ea/a36d5fd0dab7647960a2afd8cbc58f9f6ab84c6c903a2ae0d90b9954daec/glide_for_redis-0.4.0rc4-cp39-cp39-manylinux_2_28_aarch64.whl
+[2024-06-02 16:26:53] INFO root fetch - processPackages [owega]: Downloading https://files.pythonhosted.org/packages/85/76/57fa9903697edea08b20da806c9ee14cf9d8ef0efe432ea26470dfbcaba3/owega-5.9.1.tar.gz
+[2024-06-02 16:26:53] INFO root fetch - processPackages [mkdocs-juvix-plugin]: Downloading https://files.pythonhosted.org/packages/58/b4/57830e07f19bdae2ffaf431f372ed26def198ceae525142575ed80bb8d39/mkdocs-juvix-plugin-0.2.5.tar.gz
+[2024-06-02 16:26:53] INFO root fetch - processPackages [qwak-core]: Downloading https://files.pythonhosted.org/packages/40/dc/9bf7a0a11e5d16704620fd9a2d038eee79e38d502983f2c9975412d1053c/qwak_core-0.4.8.tar.gz
+[2024-06-02 16:26:53] INFO root fetch - processPackages [sc3dg]: Downloading https://files.pythonhosted.org/packages/36/99/5a97c5b877e089a11d7fcbc1d935f5e5301bcc0f77867bda7d000fc1eb58/sc3dg-0.0.9.tar.gz
+[2024-06-02 16:26:53] INFO root fetch - processPackages [anydi]: Downloading https://files.pythonhosted.org/packages/67/67/bb63a55ef565b52866ebd9df3d9635451f849e5959571e3a896fe0df5937/anydi-0.27.0a1.tar.gz
+[2024-06-02 16:26:54] INFO root fetch - processPackages [mkdocs-juvix-plugin]: executing diffoscope
+[2024-06-02 16:26:54] INFO root fetch - processPackages [mkdocs-juvix-plugin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mkdocs-juvix-plugin-0.2.4.tar.gz tmp/mkdocs-juvix-plugin-0.2.5.tar.gz --markdown 20240602/m/mkdocs-juvix-plugin/0.2.4-0.2.5/README.md --exclude *.pyd
+[2024-06-02 16:26:54] INFO root fetch - processPackages [anydi]: executing diffoscope
+[2024-06-02 16:26:54] INFO root fetch - processPackages [anydi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anydi-0.27.0a0.tar.gz tmp/anydi-0.27.0a1.tar.gz --markdown 20240602/a/anydi/0.27.0a0-0.27.0a1/README.md --exclude *.pyd
+[2024-06-02 16:26:54] INFO root fetch - processPackages [sc3dg]: executing diffoscope
+[2024-06-02 16:26:54] INFO root fetch - processPackages [sc3dg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sc3dg-0.0.8.tar.gz tmp/sc3dg-0.0.9.tar.gz --markdown 20240602/s/sc3dg/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-06-02 16:26:54] INFO root fetch - processPackages [nonebot-plugin-nai3-bot]: Downloading https://files.pythonhosted.org/packages/f6/31/979c8c9eff2ef542ac5d6107128578b2e424598c0970f8427e55da1f865a/nonebot_plugin_nai3_bot-1.1.0.tar.gz
+[2024-06-02 16:26:54] INFO root fetch - processPackages [paracelsus]: Downloading https://files.pythonhosted.org/packages/bf/58/474eb639e359d17b42e183641720f8c51643c46f94b339126063b549eb49/paracelsus-0.6.0.tar.gz
+[2024-06-02 16:26:54] INFO root fetch - processPackages [owega]: Downloading https://files.pythonhosted.org/packages/fd/0e/5545ead0b5918c5ba6daea5b2ac76ba0c1beb20095a8b8525f453b9bcb7f/owega-5.9.2.tar.gz
+[2024-06-02 16:26:54] INFO root fetch - processPackages [pkscreener]: Downloading https://files.pythonhosted.org/packages/a1/e5/5dc9644bf5873109194532c11192934290ed1a962b48635e25f2f77075fa/pkscreener-0.45.20240602.427.tar.gz
+[2024-06-02 16:26:54] INFO root fetch - processPackages [nonebot-plugin-nai3-bot]: executing diffoscope
+[2024-06-02 16:26:54] INFO root fetch - processPackages [nonebot-plugin-nai3-bot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_nai3_bot-1.0.1.tar.gz tmp/nonebot_plugin_nai3_bot-1.1.0.tar.gz --markdown 20240602/n/nonebot-plugin-nai3-bot/1.0.1-1.1.0/README.md --exclude *.pyd
+[2024-06-02 16:26:54] INFO root fetch - processPackages [qwak-core]: Downloading https://files.pythonhosted.org/packages/fe/09/8867573c92d18e200499a583b45f6adb1552d9e721e39370c8aa578b7080/qwak_core-0.4.9.tar.gz
+[2024-06-02 16:26:54] INFO root fetch - processPackages [glide-for-redis]: Downloading https://files.pythonhosted.org/packages/c1/bb/933ca582efa267340d6a7e0e4d7471b7dbc4b84085624c18cc8a1479eaf5/glide_for_redis-0.4.1rc3-cp39-cp39-manylinux_2_28_aarch64.whl
+[2024-06-02 16:26:54] INFO root fetch - processPackages [owega]: executing diffoscope
+[2024-06-02 16:26:54] INFO root fetch - processPackages [owega]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/owega-5.9.1.tar.gz tmp/owega-5.9.2.tar.gz --markdown 20240602/o/owega/5.9.1-5.9.2/README.md --exclude *.pyd
+[2024-06-02 16:26:54] INFO root fetch - processPackages [paracelsus]: executing diffoscope
+[2024-06-02 16:26:54] INFO root fetch - processPackages [paracelsus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/paracelsus-0.5.2.tar.gz tmp/paracelsus-0.6.0.tar.gz --markdown 20240602/p/paracelsus/0.5.2-0.6.0/README.md --exclude *.pyd
+[2024-06-02 16:26:54] INFO root fetch - processPackages [pkscreener]: executing diffoscope
+[2024-06-02 16:26:54] INFO root fetch - processPackages [pkscreener]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pkscreener-0.45.20240602.426.tar.gz tmp/pkscreener-0.45.20240602.427.tar.gz --markdown 20240602/p/pkscreener/0.45.20240602.426-0.45.20240602.427/README.md --exclude *.pyd
+[2024-06-02 16:26:54] INFO root fetch - processPackages [qwak-core]: executing diffoscope
+[2024-06-02 16:26:54] INFO root fetch - processPackages [qwak-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qwak_core-0.4.8.tar.gz tmp/qwak_core-0.4.9.tar.gz --markdown 20240602/q/qwak-core/0.4.8-0.4.9/README.md --exclude *.pyd
+[2024-06-02 16:26:54] INFO root fetch - processPackages [mkdocs-juvix-plugin]: Remove: archive file [/home/abi/fetcher/tmp/mkdocs-juvix-plugin-0.2.4.tar.gz]
+[2024-06-02 16:26:54] INFO root fetch - processPackages [mkdocs-juvix-plugin]: Remove: archive file [/home/abi/fetcher/tmp/mkdocs-juvix-plugin-0.2.5.tar.gz]
+[2024-06-02 16:26:54] INFO root fetch - main [MainThread]: End processing [mkdocs-juvix-plugin]: success
+[2024-06-02 16:26:54] INFO root fetch - processPackages [glide-for-redis]: executing diffoscope
+[2024-06-02 16:26:54] INFO root fetch - processPackages [glide-for-redis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/glide_for_redis-0.4.0rc4-cp39-cp39-manylinux_2_28_aarch64.whl.zip tmp/glide_for_redis-0.4.1rc3-cp39-cp39-manylinux_2_28_aarch64.whl.zip --markdown 20240602/g/glide-for-redis/0.4.0rc4-0.4.1rc3/README.md --exclude *.pyd
+[2024-06-02 16:26:54] INFO root fetch - processPackages [anydi]: Remove: archive file [/home/abi/fetcher/tmp/anydi-0.27.0a0.tar.gz]
+[2024-06-02 16:26:54] INFO root fetch - processPackages [anydi]: Remove: archive file [/home/abi/fetcher/tmp/anydi-0.27.0a1.tar.gz]
+[2024-06-02 16:26:54] INFO root fetch - main [MainThread]: End processing [anydi]: success
+[2024-06-02 16:26:54] INFO root fetch - processPackages [sc3dg]: Remove: archive file [/home/abi/fetcher/tmp/sc3dg-0.0.8.tar.gz]
+[2024-06-02 16:26:54] INFO root fetch - processPackages [sc3dg]: Remove: archive file [/home/abi/fetcher/tmp/sc3dg-0.0.9.tar.gz]
+[2024-06-02 16:26:54] INFO root fetch - main [MainThread]: End processing [sc3dg]: success
+[2024-06-02 16:26:55] INFO root fetch - processPackages [nonebot-plugin-nai3-bot]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_nai3_bot-1.0.1.tar.gz]
+[2024-06-02 16:26:55] INFO root fetch - processPackages [nonebot-plugin-nai3-bot]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_nai3_bot-1.1.0.tar.gz]
+[2024-06-02 16:26:55] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-nai3-bot]: success
+[2024-06-02 16:26:55] INFO root fetch - processPackages [paracelsus]: Remove: archive file [/home/abi/fetcher/tmp/paracelsus-0.5.2.tar.gz]
+[2024-06-02 16:26:55] INFO root fetch - processPackages [paracelsus]: Remove: archive file [/home/abi/fetcher/tmp/paracelsus-0.6.0.tar.gz]
+[2024-06-02 16:26:55] INFO root fetch - main [MainThread]: End processing [paracelsus]: success
+[2024-06-02 16:26:55] INFO root fetch - processPackages [owega]: Remove: archive file [/home/abi/fetcher/tmp/owega-5.9.1.tar.gz]
+[2024-06-02 16:26:55] INFO root fetch - processPackages [owega]: Remove: archive file [/home/abi/fetcher/tmp/owega-5.9.2.tar.gz]
+[2024-06-02 16:26:55] INFO root fetch - main [MainThread]: End processing [owega]: success
+[2024-06-02 16:26:55] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.45.20240602.426.tar.gz]
+[2024-06-02 16:26:55] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.45.20240602.427.tar.gz]
+[2024-06-02 16:26:55] INFO root fetch - main [MainThread]: End processing [pkscreener]: success
+[2024-06-02 16:26:57] INFO root fetch - processPackages [qwak-core]: Remove: archive file [/home/abi/fetcher/tmp/qwak_core-0.4.8.tar.gz]
+[2024-06-02 16:26:57] INFO root fetch - processPackages [qwak-core]: Remove: archive file [/home/abi/fetcher/tmp/qwak_core-0.4.9.tar.gz]
+[2024-06-02 16:26:57] INFO root fetch - main [MainThread]: End processing [qwak-core]: success
+[2024-06-02 16:27:12] INFO root fetch - processPackages [glide-for-redis]: Remove: archive file [/home/abi/fetcher/tmp/glide_for_redis-0.4.0rc4-cp39-cp39-manylinux_2_28_aarch64.whl.zip]
+[2024-06-02 16:27:12] INFO root fetch - processPackages [glide-for-redis]: Remove: archive file [/home/abi/fetcher/tmp/glide_for_redis-0.4.1rc3-cp39-cp39-manylinux_2_28_aarch64.whl.zip]
+[2024-06-02 16:27:12] INFO root fetch - main [MainThread]: End processing [glide-for-redis]: success
+[2024-06-02 16:27:12] INFO root fetch - main [MainThread]: Store serial: [23489645]
