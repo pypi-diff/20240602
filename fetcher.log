@@ -8134,3 +8134,24 @@
 [2024-06-02 13:09:51] INFO root fetch - processPackages [django-relations-iterator]: Remove: archive file [/home/abi/fetcher/tmp/django_relations_iterator-0.0.5.tar.gz]
 [2024-06-02 13:09:51] INFO root fetch - main [MainThread]: End processing [django-relations-iterator]: success
 [2024-06-02 13:09:51] INFO root fetch - main [MainThread]: Store serial: [23488324]
+[2024-06-02 13:11:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23488324]
+[2024-06-02 13:12:00] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-02 13:12:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sif-tools
+[2024-06-02 13:12:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: alita-tools
+[2024-06-02 13:12:00] INFO root fetch - processPackages [sif-tools]: New version: [0.3.1] Old Version: [0.3.0]
+[2024-06-02 13:12:00] INFO root fetch - processPackages [sif-tools]: Downloading https://files.pythonhosted.org/packages/f1/94/cb84ceea133ce7811bef036d1c2affd75e8f909d49a5ca88ca903478b4d1/sif_tools-0.3.0-py3-none-any.whl
+[2024-06-02 13:12:00] INFO root fetch - processPackages [alita-tools]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-06-02 13:12:00] INFO root fetch - processPackages [alita-tools]: Downloading https://files.pythonhosted.org/packages/11/7e/f89b7d2fb29b664d4a1b772c0a8757857534dc4981d9d9547b1410352f8b/alita_tools-0.0.8.tar.gz
+[2024-06-02 13:12:00] INFO root fetch - processPackages [sif-tools]: Downloading https://files.pythonhosted.org/packages/c5/d5/f51e7592af5b89432a6bc4a7a6d5cca7d50e792210ffdb7a8ac61a8f4d44/sif_tools-0.3.1-py3-none-any.whl
+[2024-06-02 13:12:00] INFO root fetch - processPackages [sif-tools]: executing diffoscope
+[2024-06-02 13:12:00] INFO root fetch - processPackages [sif-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sif_tools-0.3.0-py3-none-any.whl.zip tmp/sif_tools-0.3.1-py3-none-any.whl.zip --markdown 20240602/s/sif-tools/0.3.0-0.3.1/README.md --exclude *.pyd
+[2024-06-02 13:12:00] INFO root fetch - processPackages [alita-tools]: Downloading https://files.pythonhosted.org/packages/b2/e0/efa7908f0bf622856778acf50ffea9fd834a7e4b47167ee967dc96ba217d/alita_tools-0.0.9.tar.gz
+[2024-06-02 13:12:00] INFO root fetch - processPackages [alita-tools]: executing diffoscope
+[2024-06-02 13:12:00] INFO root fetch - processPackages [alita-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alita_tools-0.0.8.tar.gz tmp/alita_tools-0.0.9.tar.gz --markdown 20240602/a/alita-tools/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-06-02 13:12:01] INFO root fetch - processPackages [sif-tools]: Remove: archive file [/home/abi/fetcher/tmp/sif_tools-0.3.0-py3-none-any.whl.zip]
+[2024-06-02 13:12:01] INFO root fetch - processPackages [sif-tools]: Remove: archive file [/home/abi/fetcher/tmp/sif_tools-0.3.1-py3-none-any.whl.zip]
+[2024-06-02 13:12:01] INFO root fetch - main [MainThread]: End processing [sif-tools]: success
+[2024-06-02 13:12:01] INFO root fetch - processPackages [alita-tools]: Remove: archive file [/home/abi/fetcher/tmp/alita_tools-0.0.8.tar.gz]
+[2024-06-02 13:12:01] INFO root fetch - processPackages [alita-tools]: Remove: archive file [/home/abi/fetcher/tmp/alita_tools-0.0.9.tar.gz]
+[2024-06-02 13:12:01] INFO root fetch - main [MainThread]: End processing [alita-tools]: success
+[2024-06-02 13:12:01] INFO root fetch - main [MainThread]: Store serial: [23488329]
