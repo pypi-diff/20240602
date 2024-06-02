@@ -4860,3 +4860,9 @@
 [2024-06-02 08:21:56] INFO root fetch - processPackages [pih]: Remove: archive file [/home/abi/fetcher/tmp/pih-0.37.6.tar.gz]
 [2024-06-02 08:21:56] INFO root fetch - main [MainThread]: End processing [pih]: success
 [2024-06-02 08:21:56] INFO root fetch - main [MainThread]: Store serial: [23486701]
+[2024-06-02 08:24:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23486701]
+[2024-06-02 08:24:06] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-02 08:24:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fastapi-mongo
+[2024-06-02 08:24:06] WARNING root fetch - processPackages [fastapi-mongo]: Skipping, unable to determine old version
+[2024-06-02 08:24:06] INFO root fetch - main [MainThread]: End processing [fastapi-mongo] error
+[2024-06-02 08:24:06] INFO root fetch - main [MainThread]: Store serial: [23486704]
