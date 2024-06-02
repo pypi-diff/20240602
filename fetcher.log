@@ -4723,3 +4723,18 @@
 [2024-06-02 08:08:48] WARNING root fetch - processPackages [certora-cli-alpha-master]: Skipping package: exceeds size limit 14611830>=10485760
 [2024-06-02 08:08:48] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-master] error
 [2024-06-02 08:08:48] INFO root fetch - main [MainThread]: Store serial: [23486582]
+[2024-06-02 08:10:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23486582]
+[2024-06-02 08:10:57] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-02 08:10:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: opengamedata-core
+[2024-06-02 08:10:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mycompat
+[2024-06-02 08:10:57] INFO root fetch - processPackages [opengamedata-core]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-06-02 08:10:57] WARNING root fetch - processPackages [mycompat]: Skipping, unable to determine old version
+[2024-06-02 08:10:57] INFO root fetch - main [MainThread]: End processing [mycompat] error
+[2024-06-02 08:10:57] INFO root fetch - processPackages [opengamedata-core]: Downloading https://files.pythonhosted.org/packages/67/0d/d60b4fac8824e01083209e2e3f36384dd2c3f42951029b1684a37a9ffbeb/opengamedata_core-0.0.8.tar.gz
+[2024-06-02 08:10:57] INFO root fetch - processPackages [opengamedata-core]: Downloading https://files.pythonhosted.org/packages/90/16/1fcaa54cc50ac98f9339491507465e6317ffaeb45f2b10e0c11754bb958b/opengamedata_core-0.0.9.tar.gz
+[2024-06-02 08:10:57] INFO root fetch - processPackages [opengamedata-core]: executing diffoscope
+[2024-06-02 08:10:57] INFO root fetch - processPackages [opengamedata-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/opengamedata_core-0.0.8.tar.gz tmp/opengamedata_core-0.0.9.tar.gz --markdown 20240602/o/opengamedata-core/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-06-02 08:10:59] INFO root fetch - processPackages [opengamedata-core]: Remove: archive file [/home/abi/fetcher/tmp/opengamedata_core-0.0.8.tar.gz]
+[2024-06-02 08:10:59] INFO root fetch - processPackages [opengamedata-core]: Remove: archive file [/home/abi/fetcher/tmp/opengamedata_core-0.0.9.tar.gz]
+[2024-06-02 08:10:59] INFO root fetch - main [MainThread]: End processing [opengamedata-core]: success
+[2024-06-02 08:10:59] INFO root fetch - main [MainThread]: Store serial: [23486590]
