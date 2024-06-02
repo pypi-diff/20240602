@@ -7653,3 +7653,90 @@
 [2024-06-02 12:36:54] INFO root fetch - processPackages [django-codenerix]: Remove: archive file [/home/abi/fetcher/tmp/django-codenerix-4.0.9.tar.gz]
 [2024-06-02 12:36:54] INFO root fetch - main [MainThread]: End processing [django-codenerix]: success
 [2024-06-02 12:36:54] INFO root fetch - main [MainThread]: Store serial: [23488136]
+[2024-06-02 12:38:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23488136]
+[2024-06-02 12:39:04] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2024-06-02 12:39:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nnetsauce
+[2024-06-02 12:39:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: megaparse
+[2024-06-02 12:39:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: chess-transformer
+[2024-06-02 12:39:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: organization-profile-local
+[2024-06-02 12:39:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: lazy-crawler
+[2024-06-02 12:39:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: verysimpletree
+[2024-06-02 12:39:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: skypilot-nightly
+[2024-06-02 12:39:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: advanced-automapper
+[2024-06-02 12:39:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: stashconnect
+[2024-06-02 12:39:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: dbt-command-center
+[2024-06-02 12:39:05] INFO root fetch - processPackages [dbt-command-center]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-06-02 12:39:05] INFO root fetch - processPackages [advanced-automapper]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-06-02 12:39:05] INFO root fetch - processPackages [stashconnect]: New version: [0.8.3] Old Version: [0.8.2]
+[2024-06-02 12:39:05] INFO root fetch - processPackages [megaparse]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-06-02 12:39:05] INFO root fetch - processPackages [nnetsauce]: New version: [0.9.6] Old Version: [0.9.5]
+[2024-06-02 12:39:05] INFO root fetch - processPackages [chess-transformer]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-06-02 12:39:05] INFO root fetch - processPackages [skypilot-nightly]: New version: [1.0.0.dev20240601] Old Version: [1.0.0.dev2024053101]
+[2024-06-02 12:39:05] INFO root fetch - processPackages [organization-profile-local]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-06-02 12:39:05] WARNING root fetch - processPackages [lazy-crawler]: Skipping, unable to determine old version
+[2024-06-02 12:39:05] INFO root fetch - main [MainThread]: End processing [lazy-crawler] error
+[2024-06-02 12:39:05] INFO root fetch - processPackages [verysimpletree]: New version: [0.1.3b0] Old Version: [0.1.2b0]
+[2024-06-02 12:39:05] INFO root fetch - processPackages [dbt-command-center]: Downloading https://files.pythonhosted.org/packages/a3/1b/e7b9d46d70211e152f2e4018bfad3ba858bc72b73503f5bb9c7df806f598/dbt_command_center-0.1.7.tar.gz
+[2024-06-02 12:39:05] INFO root fetch - processPackages [stashconnect]: Downloading https://files.pythonhosted.org/packages/14/df/94b0f3a3829ed535932be724390eb15c24dc4e509cee26b14e087544c8be/stashconnect-0.8.2.tar.gz
+[2024-06-02 12:39:05] INFO root fetch - processPackages [nnetsauce]: Downloading https://files.pythonhosted.org/packages/e4/c1/c099d0aaf9dd67f11d6704ca840f18bc30e5bc6bc8610951c94cafda6620/nnetsauce-0.9.5-cp38-cp38-macosx_10_15_x86_64.whl
+[2024-06-02 12:39:05] INFO root fetch - processPackages [megaparse]: Downloading https://files.pythonhosted.org/packages/5f/04/d486fc73a1d4e4b84ff2f171f5a892a8e9e47172374b44980078b381e6c7/megaparse-0.0.3.tar.gz
+[2024-06-02 12:39:05] INFO root fetch - processPackages [skypilot-nightly]: Downloading https://files.pythonhosted.org/packages/0f/55/90fc538b4eb5313c2e315792159b63309a55fea219709e0d2e542fa6c4e1/skypilot_nightly-1.0.0.dev2024053101.tar.gz
+[2024-06-02 12:39:05] INFO root fetch - processPackages [chess-transformer]: Downloading https://files.pythonhosted.org/packages/17/9a/4eaffd0a6a3b549dde852c3725d047241701c2bfbd76111bc2bccccb0658/chess_transformer-0.1.8.tar.gz
+[2024-06-02 12:39:05] INFO root fetch - processPackages [advanced-automapper]: Downloading https://files.pythonhosted.org/packages/b4/36/d6539264f54583424f1f63b07636271a510f70593cac2d719be8b587b0ae/advanced_automapper-0.1.3.tar.gz
+[2024-06-02 12:39:05] INFO root fetch - processPackages [organization-profile-local]: Downloading https://files.pythonhosted.org/packages/73/b3/f86e58823b7c30476049628b03681261ca34a78391a23635cd1d2886a02c/organization_profile_local-0.0.7.tar.gz
+[2024-06-02 12:39:05] INFO root fetch - processPackages [verysimpletree]: Downloading https://files.pythonhosted.org/packages/ec/0f/35068d4f6cabe37a2802800ec624883cba3f223dc4d56d4c9414c70c5e35/verysimpletree-0.1.2b0.tar.gz
+[2024-06-02 12:39:05] INFO root fetch - processPackages [megaparse]: Downloading https://files.pythonhosted.org/packages/48/48/998a8e6b33c1f633374e3fe0b648294633e1209f805dd74f0089c0dfd44c/megaparse-0.0.4.tar.gz
+[2024-06-02 12:39:05] INFO root fetch - processPackages [nnetsauce]: Downloading https://files.pythonhosted.org/packages/5d/3d/2c1ea2226e34b252e89b11951ff2d62c9dd12ea4a6a66be92a58b378f9de/nnetsauce-0.9.6-cp38-cp38-macosx_10_15_x86_64.whl
+[2024-06-02 12:39:05] INFO root fetch - processPackages [stashconnect]: Downloading https://files.pythonhosted.org/packages/97/8c/262c0614b2464dea217a8b2693a5f50266ed1cb354ef167afecb16ca74cd/stashconnect-0.8.3.tar.gz
+[2024-06-02 12:39:05] INFO root fetch - processPackages [megaparse]: executing diffoscope
+[2024-06-02 12:39:05] INFO root fetch - processPackages [megaparse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/megaparse-0.0.3.tar.gz tmp/megaparse-0.0.4.tar.gz --markdown 20240602/m/megaparse/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-06-02 12:39:05] INFO root fetch - processPackages [organization-profile-local]: Downloading https://files.pythonhosted.org/packages/81/90/0410ad89775192aef8b8e9746af0f7275b91487d06b057fb04673d948e6f/organization_profile_local-0.0.8.tar.gz
+[2024-06-02 12:39:05] INFO root fetch - processPackages [chess-transformer]: Downloading https://files.pythonhosted.org/packages/ee/65/ac93cfdac6866e37c13a65533e65710bf7f19f73880bfb7a9eaeb907f8e0/chess_transformer-0.1.9.tar.gz
+[2024-06-02 12:39:05] INFO root fetch - processPackages [advanced-automapper]: Downloading https://files.pythonhosted.org/packages/a8/c3/c2b2553a7fda0de5b4f348e4e617ad1de68af22d0bf2cd3b75f07c82e6e9/advanced_automapper-0.1.4.tar.gz
+[2024-06-02 12:39:05] INFO root fetch - processPackages [stashconnect]: executing diffoscope
+[2024-06-02 12:39:05] INFO root fetch - processPackages [stashconnect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stashconnect-0.8.2.tar.gz tmp/stashconnect-0.8.3.tar.gz --markdown 20240602/s/stashconnect/0.8.2-0.8.3/README.md --exclude *.pyd
+[2024-06-02 12:39:05] INFO root fetch - processPackages [verysimpletree]: Downloading https://files.pythonhosted.org/packages/1a/b7/1738424d6c6f686d0d9f21c92856f16503786a98b3de840404dc02e37609/verysimpletree-0.1.3b0.tar.gz
+[2024-06-02 12:39:05] INFO root fetch - processPackages [nnetsauce]: executing diffoscope
+[2024-06-02 12:39:05] INFO root fetch - processPackages [nnetsauce]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nnetsauce-0.9.5-cp38-cp38-macosx_10_15_x86_64.whl.zip tmp/nnetsauce-0.9.6-cp38-cp38-macosx_10_15_x86_64.whl.zip --markdown 20240602/n/nnetsauce/0.9.5-0.9.6/README.md --exclude *.pyd
+[2024-06-02 12:39:05] INFO root fetch - processPackages [dbt-command-center]: Downloading https://files.pythonhosted.org/packages/be/f2/bd7bb6ed02db3abf4be3dbd9bec4ac6ec28c78772395c4c048c5d2e7ab67/dbt_command_center-0.1.8.tar.gz
+[2024-06-02 12:39:05] INFO root fetch - processPackages [organization-profile-local]: executing diffoscope
+[2024-06-02 12:39:05] INFO root fetch - processPackages [organization-profile-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/organization_profile_local-0.0.7.tar.gz tmp/organization_profile_local-0.0.8.tar.gz --markdown 20240602/o/organization-profile-local/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-06-02 12:39:05] INFO root fetch - processPackages [skypilot-nightly]: Downloading https://files.pythonhosted.org/packages/1f/15/dae7f95cd4dae01c0374b55ff680457b6496eeaae0e129892db2e3a5e8ab/skypilot_nightly-1.0.0.dev20240601.tar.gz
+[2024-06-02 12:39:05] INFO root fetch - processPackages [chess-transformer]: executing diffoscope
+[2024-06-02 12:39:05] INFO root fetch - processPackages [chess-transformer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chess_transformer-0.1.8.tar.gz tmp/chess_transformer-0.1.9.tar.gz --markdown 20240602/c/chess-transformer/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-06-02 12:39:05] INFO root fetch - processPackages [advanced-automapper]: executing diffoscope
+[2024-06-02 12:39:05] INFO root fetch - processPackages [advanced-automapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/advanced_automapper-0.1.3.tar.gz tmp/advanced_automapper-0.1.4.tar.gz --markdown 20240602/a/advanced-automapper/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-06-02 12:39:05] INFO root fetch - processPackages [verysimpletree]: executing diffoscope
+[2024-06-02 12:39:05] INFO root fetch - processPackages [verysimpletree]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/verysimpletree-0.1.2b0.tar.gz tmp/verysimpletree-0.1.3b0.tar.gz --markdown 20240602/v/verysimpletree/0.1.2b0-0.1.3b0/README.md --exclude *.pyd
+[2024-06-02 12:39:06] INFO root fetch - processPackages [dbt-command-center]: executing diffoscope
+[2024-06-02 12:39:06] INFO root fetch - processPackages [dbt-command-center]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbt_command_center-0.1.7.tar.gz tmp/dbt_command_center-0.1.8.tar.gz --markdown 20240602/d/dbt-command-center/0.1.7-0.1.8/README.md --exclude *.pyd
+[2024-06-02 12:39:06] INFO root fetch - processPackages [skypilot-nightly]: executing diffoscope
+[2024-06-02 12:39:06] INFO root fetch - processPackages [skypilot-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/skypilot_nightly-1.0.0.dev2024053101.tar.gz tmp/skypilot_nightly-1.0.0.dev20240601.tar.gz --markdown 20240602/s/skypilot-nightly/1.0.0.dev2024053101-1.0.0.dev20240601/README.md --exclude *.pyd
+[2024-06-02 12:39:06] INFO root fetch - processPackages [megaparse]: Remove: archive file [/home/abi/fetcher/tmp/megaparse-0.0.3.tar.gz]
+[2024-06-02 12:39:06] INFO root fetch - processPackages [megaparse]: Remove: archive file [/home/abi/fetcher/tmp/megaparse-0.0.4.tar.gz]
+[2024-06-02 12:39:06] INFO root fetch - main [MainThread]: End processing [megaparse]: success
+[2024-06-02 12:39:06] INFO root fetch - processPackages [stashconnect]: Remove: archive file [/home/abi/fetcher/tmp/stashconnect-0.8.2.tar.gz]
+[2024-06-02 12:39:06] INFO root fetch - processPackages [stashconnect]: Remove: archive file [/home/abi/fetcher/tmp/stashconnect-0.8.3.tar.gz]
+[2024-06-02 12:39:06] INFO root fetch - main [MainThread]: End processing [stashconnect]: success
+[2024-06-02 12:39:06] INFO root fetch - processPackages [organization-profile-local]: Remove: archive file [/home/abi/fetcher/tmp/organization_profile_local-0.0.7.tar.gz]
+[2024-06-02 12:39:06] INFO root fetch - processPackages [organization-profile-local]: Remove: archive file [/home/abi/fetcher/tmp/organization_profile_local-0.0.8.tar.gz]
+[2024-06-02 12:39:06] INFO root fetch - main [MainThread]: End processing [organization-profile-local]: success
+[2024-06-02 12:39:06] INFO root fetch - processPackages [chess-transformer]: Remove: archive file [/home/abi/fetcher/tmp/chess_transformer-0.1.8.tar.gz]
+[2024-06-02 12:39:06] INFO root fetch - processPackages [chess-transformer]: Remove: archive file [/home/abi/fetcher/tmp/chess_transformer-0.1.9.tar.gz]
+[2024-06-02 12:39:06] INFO root fetch - main [MainThread]: End processing [chess-transformer]: success
+[2024-06-02 12:39:06] INFO root fetch - processPackages [advanced-automapper]: Remove: archive file [/home/abi/fetcher/tmp/advanced_automapper-0.1.3.tar.gz]
+[2024-06-02 12:39:06] INFO root fetch - processPackages [advanced-automapper]: Remove: archive file [/home/abi/fetcher/tmp/advanced_automapper-0.1.4.tar.gz]
+[2024-06-02 12:39:06] INFO root fetch - main [MainThread]: End processing [advanced-automapper]: success
+[2024-06-02 12:39:06] INFO root fetch - processPackages [verysimpletree]: Remove: archive file [/home/abi/fetcher/tmp/verysimpletree-0.1.2b0.tar.gz]
+[2024-06-02 12:39:06] INFO root fetch - processPackages [verysimpletree]: Remove: archive file [/home/abi/fetcher/tmp/verysimpletree-0.1.3b0.tar.gz]
+[2024-06-02 12:39:06] INFO root fetch - main [MainThread]: End processing [verysimpletree]: success
+[2024-06-02 12:39:07] INFO root fetch - processPackages [skypilot-nightly]: Remove: archive file [/home/abi/fetcher/tmp/skypilot_nightly-1.0.0.dev2024053101.tar.gz]
+[2024-06-02 12:39:07] INFO root fetch - processPackages [skypilot-nightly]: Remove: archive file [/home/abi/fetcher/tmp/skypilot_nightly-1.0.0.dev20240601.tar.gz]
+[2024-06-02 12:39:07] INFO root fetch - main [MainThread]: End processing [skypilot-nightly]: success
+[2024-06-02 12:39:09] INFO root fetch - processPackages [dbt-command-center]: Remove: archive file [/home/abi/fetcher/tmp/dbt_command_center-0.1.7.tar.gz]
+[2024-06-02 12:39:09] INFO root fetch - processPackages [dbt-command-center]: Remove: archive file [/home/abi/fetcher/tmp/dbt_command_center-0.1.8.tar.gz]
+[2024-06-02 12:39:09] INFO root fetch - main [MainThread]: End processing [dbt-command-center]: success
+[2024-06-02 12:39:13] INFO root fetch - processPackages [nnetsauce]: Remove: archive file [/home/abi/fetcher/tmp/nnetsauce-0.9.5-cp38-cp38-macosx_10_15_x86_64.whl.zip]
+[2024-06-02 12:39:13] INFO root fetch - processPackages [nnetsauce]: Remove: archive file [/home/abi/fetcher/tmp/nnetsauce-0.9.6-cp38-cp38-macosx_10_15_x86_64.whl.zip]
+[2024-06-02 12:39:13] INFO root fetch - main [MainThread]: End processing [nnetsauce]: success
+[2024-06-02 12:39:13] INFO root fetch - main [MainThread]: Store serial: [23488174]
