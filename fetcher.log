@@ -10441,3 +10441,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-02 15:50:15] INFO root fetch - processPackages [abstra]: Remove: archive file [/home/abi/fetcher/tmp/abstra-2.9.0.tar.gz]
 [2024-06-02 15:50:15] INFO root fetch - main [MainThread]: End processing [abstra]: success
 [2024-06-02 15:50:15] INFO root fetch - main [MainThread]: Store serial: [23489315]
+[2024-06-02 15:52:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23489315]
+[2024-06-02 15:52:25] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-02 15:52:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: OpenTTDLab
+[2024-06-02 15:52:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: vtacML
+[2024-06-02 15:52:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bridgecrew
+[2024-06-02 15:52:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: contact-notes-local
+[2024-06-02 15:52:25] INFO root fetch - processPackages [OpenTTDLab]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-06-02 15:52:25] INFO root fetch - processPackages [bridgecrew]: New version: [3.2.99] Old Version: [3.2.98]
+[2024-06-02 15:52:25] INFO root fetch - processPackages [vtacML]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-06-02 15:52:25] INFO root fetch - processPackages [contact-notes-local]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-06-02 15:52:25] INFO root fetch - processPackages [OpenTTDLab]: Downloading https://files.pythonhosted.org/packages/1f/6e/f9d8e929738fb28f0cf285d806e9d1e0b273a3abd0c627b823c266f87274/openttdlab-0.0.8.tar.gz
+[2024-06-02 15:52:25] INFO root fetch - processPackages [bridgecrew]: Downloading https://files.pythonhosted.org/packages/5e/b5/7cd86ab5bf038cd7943f580e675768a014b20cb33f33518059ce303b9c9d/bridgecrew-3.2.98.tar.gz
+[2024-06-02 15:52:25] INFO root fetch - processPackages [vtacML]: Downloading https://files.pythonhosted.org/packages/d5/06/531eb02f5f2e5276090cfaae088b4f6eeed2fc5d94aab40c72dabac385b9/vtacML-0.1.3.tar.gz
+[2024-06-02 15:52:26] INFO root fetch - processPackages [contact-notes-local]: Downloading https://files.pythonhosted.org/packages/94/02/401f72b4bc3a22137e39e519a300db91b6d7f6f995ff3fdd5266dd81540c/contact-notes-local-0.0.8.tar.gz
+[2024-06-02 15:52:26] INFO root fetch - processPackages [OpenTTDLab]: Downloading https://files.pythonhosted.org/packages/c9/28/0b49734d3f0e2b039817ac8dbe0930487e1d1764bc5c7cc16063210352e0/openttdlab-0.0.9.tar.gz
+[2024-06-02 15:52:26] INFO root fetch - processPackages [bridgecrew]: Downloading https://files.pythonhosted.org/packages/8c/e2/de43e2e6c966fe98c0624abafa7f7374b59b424536aaa809a4d6a8fe4aa1/bridgecrew-3.2.99.tar.gz
+[2024-06-02 15:52:26] INFO root fetch - processPackages [OpenTTDLab]: executing diffoscope
+[2024-06-02 15:52:26] INFO root fetch - processPackages [OpenTTDLab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openttdlab-0.0.8.tar.gz tmp/openttdlab-0.0.9.tar.gz --markdown 20240602/O/OpenTTDLab/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-06-02 15:52:26] INFO root fetch - processPackages [bridgecrew]: executing diffoscope
+[2024-06-02 15:52:26] INFO root fetch - processPackages [bridgecrew]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bridgecrew-3.2.98.tar.gz tmp/bridgecrew-3.2.99.tar.gz --markdown 20240602/b/bridgecrew/3.2.98-3.2.99/README.md --exclude *.pyd
+[2024-06-02 15:52:26] INFO root fetch - processPackages [vtacML]: Downloading https://files.pythonhosted.org/packages/2c/dc/23ee46e87fe948740ba523236f2c194d3ec0f4789418dffcc05a7d2edf40/vtacML-0.1.4.tar.gz
+[2024-06-02 15:52:26] INFO root fetch - processPackages [contact-notes-local]: Downloading https://files.pythonhosted.org/packages/7d/da/15635ad28159f22874e3fbe243ec786d3658da7812c3243f5feb8d5f8385/contact-notes-local-0.0.9.tar.gz
+[2024-06-02 15:52:26] INFO root fetch - processPackages [vtacML]: executing diffoscope
+[2024-06-02 15:52:26] INFO root fetch - processPackages [vtacML]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vtacML-0.1.3.tar.gz tmp/vtacML-0.1.4.tar.gz --markdown 20240602/v/vtacML/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-06-02 15:52:26] INFO root fetch - processPackages [contact-notes-local]: executing diffoscope
+[2024-06-02 15:52:26] INFO root fetch - processPackages [contact-notes-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/contact-notes-local-0.0.8.tar.gz tmp/contact-notes-local-0.0.9.tar.gz --markdown 20240602/c/contact-notes-local/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-06-02 15:52:26] INFO root fetch - processPackages [bridgecrew]: Remove: archive file [/home/abi/fetcher/tmp/bridgecrew-3.2.98.tar.gz]
+[2024-06-02 15:52:26] INFO root fetch - processPackages [bridgecrew]: Remove: archive file [/home/abi/fetcher/tmp/bridgecrew-3.2.99.tar.gz]
+[2024-06-02 15:52:26] INFO root fetch - main [MainThread]: End processing [bridgecrew]: success
+[2024-06-02 15:52:26] INFO root fetch - processPackages [OpenTTDLab]: Remove: archive file [/home/abi/fetcher/tmp/openttdlab-0.0.8.tar.gz]
+[2024-06-02 15:52:26] INFO root fetch - processPackages [OpenTTDLab]: Remove: archive file [/home/abi/fetcher/tmp/openttdlab-0.0.9.tar.gz]
+[2024-06-02 15:52:26] INFO root fetch - main [MainThread]: End processing [OpenTTDLab]: success
+[2024-06-02 15:52:26] INFO root fetch - processPackages [contact-notes-local]: Remove: archive file [/home/abi/fetcher/tmp/contact-notes-local-0.0.8.tar.gz]
+[2024-06-02 15:52:26] INFO root fetch - processPackages [contact-notes-local]: Remove: archive file [/home/abi/fetcher/tmp/contact-notes-local-0.0.9.tar.gz]
+[2024-06-02 15:52:26] INFO root fetch - main [MainThread]: End processing [contact-notes-local]: success
+[2024-06-02 15:52:27] INFO root fetch - processPackages [vtacML]: Remove: archive file [/home/abi/fetcher/tmp/vtacML-0.1.3.tar.gz]
+[2024-06-02 15:52:27] INFO root fetch - processPackages [vtacML]: Remove: archive file [/home/abi/fetcher/tmp/vtacML-0.1.4.tar.gz]
+[2024-06-02 15:52:27] INFO root fetch - main [MainThread]: End processing [vtacML]: success
+[2024-06-02 15:52:27] INFO root fetch - main [MainThread]: Store serial: [23489334]
