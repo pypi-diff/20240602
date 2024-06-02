@@ -5077,3 +5077,14 @@
 [2024-06-02 08:43:28] INFO root fetch - processPackages [FastKmedoids]: Remove: archive file [/home/abi/fetcher/tmp/fastkmedoids-0.0.9.tar.gz]
 [2024-06-02 08:43:28] INFO root fetch - main [MainThread]: End processing [FastKmedoids]: success
 [2024-06-02 08:43:28] INFO root fetch - main [MainThread]: Store serial: [23486786]
+[2024-06-02 08:45:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23486786]
+[2024-06-02 08:45:37] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-02 08:45:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: thedoppler
+[2024-06-02 08:45:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: UnionCalLib
+[2024-06-02 08:45:37] WARNING root fetch - processPackages [UnionCalLib]: Skipping, unable to determine old version
+[2024-06-02 08:45:37] INFO root fetch - processPackages [thedoppler]: New version: [1.1.9] Old Version: [1.1.8]
+[2024-06-02 08:45:37] INFO root fetch - main [MainThread]: End processing [UnionCalLib] error
+[2024-06-02 08:45:37] INFO root fetch - processPackages [thedoppler]: Downloading https://files.pythonhosted.org/packages/b9/d9/473006bf33485c7262c3e67bee584647e947d75959c5cfd17556e23631fd/thedoppler-1.1.8.tar.gz
+[2024-06-02 08:45:37] WARNING root fetch - processPackages [thedoppler]: Skipping package: exceeds size limit 46033344>=10485760
+[2024-06-02 08:45:37] INFO root fetch - main [MainThread]: End processing [thedoppler] error
+[2024-06-02 08:45:37] INFO root fetch - main [MainThread]: Store serial: [23486792]
