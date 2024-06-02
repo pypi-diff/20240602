@@ -6908,3 +6908,33 @@
 [2024-06-02 11:34:05] INFO root fetch - processPackages [benchmark-runner]: Remove: archive file [/home/abi/fetcher/tmp/benchmark-runner-1.0.99.tar.gz]
 [2024-06-02 11:34:05] INFO root fetch - main [MainThread]: End processing [benchmark-runner]: success
 [2024-06-02 11:34:05] INFO root fetch - main [MainThread]: Store serial: [23487816]
+[2024-06-02 11:36:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23487816]
+[2024-06-02 11:36:13] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-02 11:36:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: facexformer-pipeline
+[2024-06-02 11:36:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: scim2-client
+[2024-06-02 11:36:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bain-wizard-interpreter
+[2024-06-02 11:36:13] INFO root fetch - processPackages [scim2-client]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-06-02 11:36:13] INFO root fetch - processPackages [facexformer-pipeline]: New version: [0.2.4] Old Version: [0.2.2]
+[2024-06-02 11:36:13] INFO root fetch - processPackages [bain-wizard-interpreter]: New version: [1.0.4] Old Version: [1.0.3]
+[2024-06-02 11:36:13] INFO root fetch - processPackages [scim2-client]: Downloading https://files.pythonhosted.org/packages/5b/20/d6afc1c201c0334de332b0ca7c9c55e5e7b77af76a642031731335284a56/scim2_client-0.1.0.tar.gz
+[2024-06-02 11:36:13] INFO root fetch - processPackages [facexformer-pipeline]: Downloading https://files.pythonhosted.org/packages/08/c7/b3c91dd44205e66ec6761fbf55ebed62dea1a2f6853edb3edecb8ae9b627/facexformer_pipeline-0.2.2.tar.gz
+[2024-06-02 11:36:13] INFO root fetch - processPackages [bain-wizard-interpreter]: Downloading https://files.pythonhosted.org/packages/e0/87/13dfca5fe030b6cda838ec612dbaafee9cf5baa0440d5239bb9c7fa16bc9/bain-wizard-interpreter-1.0.3.tar.gz
+[2024-06-02 11:36:13] INFO root fetch - processPackages [scim2-client]: Downloading https://files.pythonhosted.org/packages/da/ad/a40fa548264ec075ec7e80ece981de54f89d92e26b0b3504a2641bee66f5/scim2_client-0.1.1.tar.gz
+[2024-06-02 11:36:13] INFO root fetch - processPackages [facexformer-pipeline]: Downloading https://files.pythonhosted.org/packages/f7/40/1d842c651c2fba2a043da21e09cd0ec0386d72f925b6a51d5a3ba3c31cbe/facexformer_pipeline-0.2.4.tar.gz
+[2024-06-02 11:36:13] INFO root fetch - processPackages [bain-wizard-interpreter]: Downloading https://files.pythonhosted.org/packages/85/22/09c0a73a5712e5afcbea476edb42fe55f00ea4c97ec7c1b749342b9fe34e/bain_wizard_interpreter-1.0.4.tar.gz
+[2024-06-02 11:36:14] INFO root fetch - processPackages [scim2-client]: executing diffoscope
+[2024-06-02 11:36:14] INFO root fetch - processPackages [scim2-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scim2_client-0.1.0.tar.gz tmp/scim2_client-0.1.1.tar.gz --markdown 20240602/s/scim2-client/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-06-02 11:36:14] INFO root fetch - processPackages [facexformer-pipeline]: executing diffoscope
+[2024-06-02 11:36:14] INFO root fetch - processPackages [facexformer-pipeline]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/facexformer_pipeline-0.2.2.tar.gz tmp/facexformer_pipeline-0.2.4.tar.gz --markdown 20240602/f/facexformer-pipeline/0.2.2-0.2.4/README.md --exclude *.pyd
+[2024-06-02 11:36:14] INFO root fetch - processPackages [bain-wizard-interpreter]: executing diffoscope
+[2024-06-02 11:36:14] INFO root fetch - processPackages [bain-wizard-interpreter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bain-wizard-interpreter-1.0.3.tar.gz tmp/bain_wizard_interpreter-1.0.4.tar.gz --markdown 20240602/b/bain-wizard-interpreter/1.0.3-1.0.4/README.md --exclude *.pyd
+[2024-06-02 11:36:14] INFO root fetch - processPackages [scim2-client]: Remove: archive file [/home/abi/fetcher/tmp/scim2_client-0.1.0.tar.gz]
+[2024-06-02 11:36:14] INFO root fetch - processPackages [scim2-client]: Remove: archive file [/home/abi/fetcher/tmp/scim2_client-0.1.1.tar.gz]
+[2024-06-02 11:36:14] INFO root fetch - main [MainThread]: End processing [scim2-client]: success
+[2024-06-02 11:36:14] INFO root fetch - processPackages [facexformer-pipeline]: Remove: archive file [/home/abi/fetcher/tmp/facexformer_pipeline-0.2.2.tar.gz]
+[2024-06-02 11:36:14] INFO root fetch - processPackages [facexformer-pipeline]: Remove: archive file [/home/abi/fetcher/tmp/facexformer_pipeline-0.2.4.tar.gz]
+[2024-06-02 11:36:14] INFO root fetch - main [MainThread]: End processing [facexformer-pipeline]: success
+[2024-06-02 11:36:14] INFO root fetch - processPackages [bain-wizard-interpreter]: Remove: archive file [/home/abi/fetcher/tmp/bain-wizard-interpreter-1.0.3.tar.gz]
+[2024-06-02 11:36:14] INFO root fetch - processPackages [bain-wizard-interpreter]: Remove: archive file [/home/abi/fetcher/tmp/bain_wizard_interpreter-1.0.4.tar.gz]
+[2024-06-02 11:36:14] INFO root fetch - main [MainThread]: End processing [bain-wizard-interpreter]: success
+[2024-06-02 11:36:14] INFO root fetch - main [MainThread]: Store serial: [23487825]
