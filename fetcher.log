@@ -15695,3 +15695,51 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 20:14:17] INFO root fetch - main [MainThread]: End processing [trytond-currency]: success
 [2024-06-02 20:14:17] INFO root fetch - main [MainThread]: End processing [trytond-currency]: success
 [2024-06-02 20:14:17] INFO root fetch - main [MainThread]: Store serial: [23491722]
+[2024-06-02 20:16:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23491722]
+[2024-06-02 20:16:26] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-06-02 20:16:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: copilothistoryexporter
+[2024-06-02 20:16:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: coincurve
+[2024-06-02 20:16:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pypi-cicd
+[2024-06-02 20:16:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dataforseo-client
+[2024-06-02 20:16:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cdk-pipelines-github
+[2024-06-02 20:16:26] INFO root fetch - processPackages [copilothistoryexporter]: New version: [1.0.2.2] Old Version: [1.0.2.1]
+[2024-06-02 20:16:26] INFO root fetch - processPackages [copilothistoryexporter]: Downloading https://files.pythonhosted.org/packages/a8/59/be3ec882235e834d8ffe9ced57edd7f4a7279ac85426d3697d580a1bc179/copilothistoryexporter-1.0.2.1.tar.gz
+[2024-06-02 20:16:26] INFO root fetch - processPackages [dataforseo-client]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-06-02 20:16:26] INFO root fetch - processPackages [coincurve]: New version: [9.0.0] Old Version: [8.0.2rc3]
+[2024-06-02 20:16:26] INFO root fetch - processPackages [pypi-cicd]: New version: [0.9] Old Version: [0.8]
+[2024-06-02 20:16:26] INFO root fetch - processPackages [cdk-pipelines-github]: New version: [0.4.99] Old Version: [0.4.98]
+[2024-06-02 20:16:26] INFO root fetch - processPackages [dataforseo-client]: Downloading https://files.pythonhosted.org/packages/d2/68/84689fba81cb3c59fee0e9b14ee4e226f70268905547fed46e29a9c67acd/dataforseo-client-1.0.8.tar.gz
+[2024-06-02 20:16:27] INFO root fetch - processPackages [pypi-cicd]: Downloading https://files.pythonhosted.org/packages/86/7c/1f3a018bb7b9a5f2a998a34b1f34ed82f392167979956b42bd09bd1bca2a/pypi_cicd-0.8.tar.gz
+[2024-06-02 20:16:27] INFO root fetch - processPackages [coincurve]: Downloading https://files.pythonhosted.org/packages/c5/aa/4ec12959cc263de1f1e063e8823e1de028315fab7b415633e92116d303d6/coincurve-8.0.2rc3.tar.gz
+[2024-06-02 20:16:27] INFO root fetch - processPackages [copilothistoryexporter]: Downloading https://files.pythonhosted.org/packages/3a/91/fa82e98d501e40f569a2f637e2fbe4714a5c03d4c095c8e482b3fd7c99fc/copilothistoryexporter-1.0.2.2.tar.gz
+[2024-06-02 20:16:27] INFO root fetch - processPackages [copilothistoryexporter]: executing diffoscope
+[2024-06-02 20:16:27] INFO root fetch - processPackages [copilothistoryexporter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/copilothistoryexporter-1.0.2.1.tar.gz tmp/copilothistoryexporter-1.0.2.2.tar.gz --markdown 20240602/c/copilothistoryexporter/1.0.2.1-1.0.2.2/README.md --exclude *.pyd
+[2024-06-02 20:16:27] INFO root fetch - processPackages [cdk-pipelines-github]: Downloading https://files.pythonhosted.org/packages/08/86/5ebbf404d98bafd9d0b9e06d35fc4a1997cade73d46bd14dea656afdbaa3/cdk-pipelines-github-0.4.98.tar.gz
+[2024-06-02 20:16:27] INFO root fetch - processPackages [pypi-cicd]: Downloading https://files.pythonhosted.org/packages/8d/29/cfea02994e21451ff2a806a294fca1951c13e512c723927775d700a90ae8/pypi_cicd-0.9.tar.gz
+[2024-06-02 20:16:27] INFO root fetch - processPackages [pypi-cicd]: executing diffoscope
+[2024-06-02 20:16:27] INFO root fetch - processPackages [pypi-cicd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypi_cicd-0.8.tar.gz tmp/pypi_cicd-0.9.tar.gz --markdown 20240602/p/pypi-cicd/0.8-0.9/README.md --exclude *.pyd
+[2024-06-02 20:16:27] INFO root fetch - processPackages [dataforseo-client]: Downloading https://files.pythonhosted.org/packages/8d/04/47b191652bf6e54ee50a87ce1cdfc88a53f79dafe06782858d8b4d892246/dataforseo-client-1.0.9.tar.gz
+[2024-06-02 20:16:27] INFO root fetch - processPackages [coincurve]: Downloading https://files.pythonhosted.org/packages/f4/1d/008a37946ed0a8a818a7d92b25e6799691052c505b59ec676b8d65be7e88/coincurve-9.0.0.tar.gz
+[2024-06-02 20:16:27] INFO root fetch - processPackages [cdk-pipelines-github]: Downloading https://files.pythonhosted.org/packages/3f/a0/fc461f8c3f909eb20752a857e11eb54b903a8cc395cdeba4fa844b53d741/cdk-pipelines-github-0.4.99.tar.gz
+[2024-06-02 20:16:27] INFO root fetch - processPackages [copilothistoryexporter]: Remove: archive file [/home/abi/fetcher/tmp/copilothistoryexporter-1.0.2.1.tar.gz]
+[2024-06-02 20:16:27] INFO root fetch - processPackages [copilothistoryexporter]: Remove: archive file [/home/abi/fetcher/tmp/copilothistoryexporter-1.0.2.2.tar.gz]
+[2024-06-02 20:16:27] INFO root fetch - main [MainThread]: End processing [copilothistoryexporter]: success
+[2024-06-02 20:16:27] INFO root fetch - processPackages [coincurve]: executing diffoscope
+[2024-06-02 20:16:27] INFO root fetch - processPackages [coincurve]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coincurve-8.0.2rc3.tar.gz tmp/coincurve-9.0.0.tar.gz --markdown 20240602/c/coincurve/8.0.2rc3-9.0.0/README.md --exclude *.pyd
+[2024-06-02 20:16:27] INFO root fetch - processPackages [dataforseo-client]: executing diffoscope
+[2024-06-02 20:16:27] INFO root fetch - processPackages [dataforseo-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dataforseo-client-1.0.8.tar.gz tmp/dataforseo-client-1.0.9.tar.gz --markdown 20240602/d/dataforseo-client/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-06-02 20:16:27] INFO root fetch - processPackages [cdk-pipelines-github]: executing diffoscope
+[2024-06-02 20:16:27] INFO root fetch - processPackages [cdk-pipelines-github]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-pipelines-github-0.4.98.tar.gz tmp/cdk-pipelines-github-0.4.99.tar.gz --markdown 20240602/c/cdk-pipelines-github/0.4.98-0.4.99/README.md --exclude *.pyd
+[2024-06-02 20:16:27] INFO root fetch - processPackages [pypi-cicd]: Remove: archive file [/home/abi/fetcher/tmp/pypi_cicd-0.8.tar.gz]
+[2024-06-02 20:16:27] INFO root fetch - processPackages [pypi-cicd]: Remove: archive file [/home/abi/fetcher/tmp/pypi_cicd-0.9.tar.gz]
+[2024-06-02 20:16:27] INFO root fetch - main [MainThread]: End processing [pypi-cicd]: success
+[2024-06-02 20:16:28] INFO root fetch - processPackages [cdk-pipelines-github]: Remove: archive file [/home/abi/fetcher/tmp/cdk-pipelines-github-0.4.98.tar.gz]
+[2024-06-02 20:16:28] INFO root fetch - processPackages [cdk-pipelines-github]: Remove: archive file [/home/abi/fetcher/tmp/cdk-pipelines-github-0.4.99.tar.gz]
+[2024-06-02 20:16:28] INFO root fetch - main [MainThread]: End processing [cdk-pipelines-github]: success
+[2024-06-02 20:16:30] INFO root fetch - processPackages [coincurve]: Remove: archive file [/home/abi/fetcher/tmp/coincurve-8.0.2rc3.tar.gz]
+[2024-06-02 20:16:30] INFO root fetch - processPackages [coincurve]: Remove: archive file [/home/abi/fetcher/tmp/coincurve-9.0.0.tar.gz]
+[2024-06-02 20:16:30] INFO root fetch - main [MainThread]: End processing [coincurve]: success
+[2024-06-02 20:16:53] INFO root fetch - processPackages [dataforseo-client]: Remove: archive file [/home/abi/fetcher/tmp/dataforseo-client-1.0.8.tar.gz]
+[2024-06-02 20:16:53] INFO root fetch - processPackages [dataforseo-client]: Remove: archive file [/home/abi/fetcher/tmp/dataforseo-client-1.0.9.tar.gz]
+[2024-06-02 20:16:53] INFO root fetch - main [MainThread]: End processing [dataforseo-client]: success
+[2024-06-02 20:16:53] INFO root fetch - main [MainThread]: Store serial: [23491786]
