@@ -6776,3 +6776,90 @@
 [2024-06-02 11:18:18] INFO root fetch - processPackages [PyQt6-3D-Qt6]: Remove: archive file [/home/abi/fetcher/tmp/PyQt6_3D_Qt6-6.7.0-py3-none-win_amd64.whl.zip]
 [2024-06-02 11:18:18] INFO root fetch - main [MainThread]: End processing [PyQt6-3D-Qt6]: success
 [2024-06-02 11:18:18] INFO root fetch - main [MainThread]: Store serial: [23487650]
+[2024-06-02 11:20:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23487650]
+[2024-06-02 11:20:35] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2024-06-02 11:20:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PyQt6-3D-Qt6
+[2024-06-02 11:20:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PyQt6-Charts-Qt6
+[2024-06-02 11:20:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: profile-local
+[2024-06-02 11:20:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PyQt6-DataVisualization-Qt6
+[2024-06-02 11:20:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: PyQt6-NetworkAuth-Qt6
+[2024-06-02 11:20:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: rustgi
+[2024-06-02 11:20:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: tuyul-sdk
+[2024-06-02 11:20:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: image-input-handler
+[2024-06-02 11:20:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: nonebot-plugin-cyberfurry
+[2024-06-02 11:20:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: fastmock
+[2024-06-02 11:20:35] INFO root fetch - processPackages [profile-local]: New version: [0.0.9] Old Version: [0.0.81]
+[2024-06-02 11:20:35] INFO root fetch - processPackages [PyQt6-3D-Qt6]: New version: [6.7.1] Old Version: [6.7.0]
+[2024-06-02 11:20:35] INFO root fetch - processPackages [tuyul-sdk]: New version: [0.1.0rc3] Old Version: [0.1.0rc2]
+[2024-06-02 11:20:35] INFO root fetch - processPackages [PyQt6-Charts-Qt6]: New version: [6.7.1] Old Version: [6.7.0]
+[2024-06-02 11:20:35] INFO root fetch - processPackages [profile-local]: Downloading https://files.pythonhosted.org/packages/1b/2e/db5c64e29a978727a476aaa6a32c7552471152ee5c79d83fc95b6bfe212e/profile_local-0.0.81.tar.gz
+[2024-06-02 11:20:35] INFO root fetch - processPackages [PyQt6-3D-Qt6]: Downloading https://files.pythonhosted.org/packages/ff/76/c4564402be7bb99f39a14c1984fd8c65e0e54c0b4aa802ff7cca9e3227a8/PyQt6_3D_Qt6-6.7.0-py3-none-win_amd64.whl
+[2024-06-02 11:20:35] INFO root fetch - processPackages [PyQt6-DataVisualization-Qt6]: New version: [6.7.1] Old Version: [6.7.0]
+[2024-06-02 11:20:36] INFO root fetch - processPackages [tuyul-sdk]: Downloading https://files.pythonhosted.org/packages/84/08/fc10d40d5136fef015b7b221a76b3b7c55ef33129f7e08822043868196f7/tuyul_sdk-0.1.0rc2.tar.gz
+[2024-06-02 11:20:36] WARNING root fetch - processPackages [fastmock]: Skipping, unable to determine old version
+[2024-06-02 11:20:36] INFO root fetch - main [MainThread]: End processing [fastmock] error
+[2024-06-02 11:20:36] INFO root fetch - processPackages [image-input-handler]: New version: [0.4.0] Old Version: [0.2.5]
+[2024-06-02 11:20:36] INFO root fetch - processPackages [PyQt6-NetworkAuth-Qt6]: New version: [6.7.1] Old Version: [6.7.0]
+[2024-06-02 11:20:36] INFO root fetch - processPackages [nonebot-plugin-cyberfurry]: New version: [1.6.2] Old Version: [1.6.1]
+[2024-06-02 11:20:36] INFO root fetch - processPackages [rustgi]: New version: [0.1.8] Old Version: [0.1.21]
+[2024-06-02 11:20:36] INFO root fetch - processPackages [PyQt6-Charts-Qt6]: Downloading https://files.pythonhosted.org/packages/7a/71/7d01002f0fe81a39394606a4e164835ee8515242e58b794aaa6589fd3e82/PyQt6_Charts_Qt6-6.7.0-py3-none-win_amd64.whl
+[2024-06-02 11:20:36] INFO root fetch - processPackages [PyQt6-DataVisualization-Qt6]: Downloading https://files.pythonhosted.org/packages/dc/6d/eb5a37e891e3aeb933d9f210e1d027261b84927f8cc0ac1e9e1cf4a4e057/PyQt6_DataVisualization_Qt6-6.7.0-py3-none-win_amd64.whl
+[2024-06-02 11:20:36] INFO root fetch - processPackages [PyQt6-NetworkAuth-Qt6]: Downloading https://files.pythonhosted.org/packages/18/fe/8c4768db9890a57e8068c81347aaa5169ba70a9ec15c2c13d52f1d22c168/PyQt6_NetworkAuth_Qt6-6.7.0-py3-none-win_amd64.whl
+[2024-06-02 11:20:36] INFO root fetch - processPackages [profile-local]: Downloading https://files.pythonhosted.org/packages/a8/54/e07308090c523485559291c7a02f014be5ed9511f87a7701fb7328a58149/profile-local-0.0.9.tar.gz
+[2024-06-02 11:20:36] INFO root fetch - processPackages [image-input-handler]: Downloading https://files.pythonhosted.org/packages/8b/e4/013183758d6de66b8c3d4ff0fc144f4328668bb14015bd9738d1c17eab39/image_input_handler-0.2.5.tar.gz
+[2024-06-02 11:20:36] INFO root fetch - processPackages [tuyul-sdk]: Downloading https://files.pythonhosted.org/packages/53/5e/f67179d51ec957120d70cd4bf10a615dcab8c427b40273ad20a03634fde8/tuyul_sdk-0.1.0rc3.tar.gz
+[2024-06-02 11:20:36] INFO root fetch - processPackages [nonebot-plugin-cyberfurry]: Downloading https://files.pythonhosted.org/packages/b9/80/81c55b11ea3fa71ccb4c34d9bd25e73e8adadaf0c22c3bbf140ea2e23da5/nonebot_plugin_cyberfurry-1.6.1.tar.gz
+[2024-06-02 11:20:36] INFO root fetch - processPackages [rustgi]: Downloading https://files.pythonhosted.org/packages/63/02/68520253ff01877e83cabbcc95d9d572cd6c1adf5fbd2ca5f31672f88eff/rustgi-0.1.21-cp39-cp39-musllinux_1_1_x86_64.whl
+[2024-06-02 11:20:36] INFO root fetch - processPackages [profile-local]: executing diffoscope
+[2024-06-02 11:20:36] INFO root fetch - processPackages [profile-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/profile_local-0.0.81.tar.gz tmp/profile-local-0.0.9.tar.gz --markdown 20240602/p/profile-local/0.0.81-0.0.9/README.md --exclude *.pyd
+[2024-06-02 11:20:36] INFO root fetch - processPackages [tuyul-sdk]: executing diffoscope
+[2024-06-02 11:20:36] INFO root fetch - processPackages [tuyul-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tuyul_sdk-0.1.0rc2.tar.gz tmp/tuyul_sdk-0.1.0rc3.tar.gz --markdown 20240602/t/tuyul-sdk/0.1.0rc2-0.1.0rc3/README.md --exclude *.pyd
+[2024-06-02 11:20:36] INFO root fetch - processPackages [PyQt6-3D-Qt6]: Downloading https://files.pythonhosted.org/packages/29/3e/b325400c7833a53ddf01bcde6079d44afb9915244c87531fcb83a2f8a697/PyQt6_3D_Qt6-6.7.1-py3-none-win_amd64.whl
+[2024-06-02 11:20:36] INFO root fetch - processPackages [PyQt6-NetworkAuth-Qt6]: Downloading https://files.pythonhosted.org/packages/93/61/1d52f1428460ac44a08868afdb50e2415028151dbdbbc7dbaf490a3e82aa/PyQt6_NetworkAuth_Qt6-6.7.1-py3-none-win_amd64.whl
+[2024-06-02 11:20:36] INFO root fetch - processPackages [PyQt6-Charts-Qt6]: Downloading https://files.pythonhosted.org/packages/37/a9/62abc52724415e9245010c20e32c4ab0564d028d7a0edc210fa2a39e073f/PyQt6_Charts_Qt6-6.7.1-py3-none-win_amd64.whl
+[2024-06-02 11:20:36] INFO root fetch - processPackages [image-input-handler]: Downloading https://files.pythonhosted.org/packages/e5/33/fd4c5bb742851a1931cb1e274f26e4107b74a7a6d7169d6e159962711edc/image_input_handler-0.4.0.tar.gz
+[2024-06-02 11:20:36] INFO root fetch - processPackages [PyQt6-DataVisualization-Qt6]: Downloading https://files.pythonhosted.org/packages/95/f3/0ba90c368072b241f1bf3fd68f3c8e2ea39b78910cbdc8f04871e0be965e/PyQt6_DataVisualization_Qt6-6.7.1-py3-none-win_amd64.whl
+[2024-06-02 11:20:36] INFO root fetch - processPackages [nonebot-plugin-cyberfurry]: Downloading https://files.pythonhosted.org/packages/6a/7d/bb38fec12a7c48733af0cf468bc44e3ed4ab790ca50dab112041aeb53300/nonebot_plugin_cyberfurry-1.6.2.tar.gz
+[2024-06-02 11:20:36] INFO root fetch - processPackages [image-input-handler]: executing diffoscope
+[2024-06-02 11:20:36] INFO root fetch - processPackages [image-input-handler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/image_input_handler-0.2.5.tar.gz tmp/image_input_handler-0.4.0.tar.gz --markdown 20240602/i/image-input-handler/0.2.5-0.4.0/README.md --exclude *.pyd
+[2024-06-02 11:20:36] INFO root fetch - processPackages [PyQt6-NetworkAuth-Qt6]: executing diffoscope
+[2024-06-02 11:20:36] INFO root fetch - processPackages [PyQt6-NetworkAuth-Qt6]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyQt6_NetworkAuth_Qt6-6.7.0-py3-none-win_amd64.whl.zip tmp/PyQt6_NetworkAuth_Qt6-6.7.1-py3-none-win_amd64.whl.zip --markdown 20240602/P/PyQt6-NetworkAuth-Qt6/6.7.0-6.7.1/README.md --exclude *.pyd
+[2024-06-02 11:20:36] INFO root fetch - processPackages [nonebot-plugin-cyberfurry]: executing diffoscope
+[2024-06-02 11:20:36] INFO root fetch - processPackages [nonebot-plugin-cyberfurry]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_cyberfurry-1.6.1.tar.gz tmp/nonebot_plugin_cyberfurry-1.6.2.tar.gz --markdown 20240602/n/nonebot-plugin-cyberfurry/1.6.1-1.6.2/README.md --exclude *.pyd
+[2024-06-02 11:20:36] INFO root fetch - processPackages [PyQt6-Charts-Qt6]: executing diffoscope
+[2024-06-02 11:20:36] INFO root fetch - processPackages [PyQt6-Charts-Qt6]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyQt6_Charts_Qt6-6.7.0-py3-none-win_amd64.whl.zip tmp/PyQt6_Charts_Qt6-6.7.1-py3-none-win_amd64.whl.zip --markdown 20240602/P/PyQt6-Charts-Qt6/6.7.0-6.7.1/README.md --exclude *.pyd
+[2024-06-02 11:20:37] INFO root fetch - processPackages [PyQt6-DataVisualization-Qt6]: executing diffoscope
+[2024-06-02 11:20:37] INFO root fetch - processPackages [PyQt6-DataVisualization-Qt6]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyQt6_DataVisualization_Qt6-6.7.0-py3-none-win_amd64.whl.zip tmp/PyQt6_DataVisualization_Qt6-6.7.1-py3-none-win_amd64.whl.zip --markdown 20240602/P/PyQt6-DataVisualization-Qt6/6.7.0-6.7.1/README.md --exclude *.pyd
+[2024-06-02 11:20:37] INFO root fetch - processPackages [PyQt6-3D-Qt6]: executing diffoscope
+[2024-06-02 11:20:37] INFO root fetch - processPackages [PyQt6-3D-Qt6]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyQt6_3D_Qt6-6.7.0-py3-none-win_amd64.whl.zip tmp/PyQt6_3D_Qt6-6.7.1-py3-none-win_amd64.whl.zip --markdown 20240602/P/PyQt6-3D-Qt6/6.7.0-6.7.1/README.md --exclude *.pyd
+[2024-06-02 11:20:37] INFO root fetch - processPackages [profile-local]: Remove: archive file [/home/abi/fetcher/tmp/profile_local-0.0.81.tar.gz]
+[2024-06-02 11:20:37] INFO root fetch - processPackages [profile-local]: Remove: archive file [/home/abi/fetcher/tmp/profile-local-0.0.9.tar.gz]
+[2024-06-02 11:20:37] INFO root fetch - main [MainThread]: End processing [profile-local]: success
+[2024-06-02 11:20:37] INFO root fetch - processPackages [rustgi]: Downloading https://files.pythonhosted.org/packages/cf/82/22831df768e88074917ab6c2fc29ccfe1529ceac2bcc71aaef24b2c3916a/rustgi-0.1.8.tar.gz
+[2024-06-02 11:20:37] INFO root fetch - processPackages [tuyul-sdk]: Remove: archive file [/home/abi/fetcher/tmp/tuyul_sdk-0.1.0rc2.tar.gz]
+[2024-06-02 11:20:37] INFO root fetch - processPackages [tuyul-sdk]: Remove: archive file [/home/abi/fetcher/tmp/tuyul_sdk-0.1.0rc3.tar.gz]
+[2024-06-02 11:20:37] INFO root fetch - main [MainThread]: End processing [tuyul-sdk]: success
+[2024-06-02 11:20:37] INFO root fetch - processPackages [rustgi]: executing diffoscope
+[2024-06-02 11:20:37] INFO root fetch - processPackages [rustgi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rustgi-0.1.21-cp39-cp39-musllinux_1_1_x86_64.whl.zip tmp/rustgi-0.1.8.tar.gz --markdown 20240602/r/rustgi/0.1.21-0.1.8/README.md --exclude *.pyd
+[2024-06-02 11:20:37] INFO root fetch - processPackages [image-input-handler]: Remove: archive file [/home/abi/fetcher/tmp/image_input_handler-0.2.5.tar.gz]
+[2024-06-02 11:20:37] INFO root fetch - processPackages [image-input-handler]: Remove: archive file [/home/abi/fetcher/tmp/image_input_handler-0.4.0.tar.gz]
+[2024-06-02 11:20:37] INFO root fetch - main [MainThread]: End processing [image-input-handler]: success
+[2024-06-02 11:20:37] INFO root fetch - processPackages [nonebot-plugin-cyberfurry]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_cyberfurry-1.6.1.tar.gz]
+[2024-06-02 11:20:37] INFO root fetch - processPackages [nonebot-plugin-cyberfurry]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_cyberfurry-1.6.2.tar.gz]
+[2024-06-02 11:20:37] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-cyberfurry]: success
+[2024-06-02 11:20:38] INFO root fetch - processPackages [PyQt6-NetworkAuth-Qt6]: Remove: archive file [/home/abi/fetcher/tmp/PyQt6_NetworkAuth_Qt6-6.7.0-py3-none-win_amd64.whl.zip]
+[2024-06-02 11:20:38] INFO root fetch - processPackages [PyQt6-NetworkAuth-Qt6]: Remove: archive file [/home/abi/fetcher/tmp/PyQt6_NetworkAuth_Qt6-6.7.1-py3-none-win_amd64.whl.zip]
+[2024-06-02 11:20:38] INFO root fetch - main [MainThread]: End processing [PyQt6-NetworkAuth-Qt6]: success
+[2024-06-02 11:20:38] INFO root fetch - processPackages [rustgi]: Remove: archive file [/home/abi/fetcher/tmp/rustgi-0.1.21-cp39-cp39-musllinux_1_1_x86_64.whl.zip]
+[2024-06-02 11:20:38] INFO root fetch - processPackages [rustgi]: Remove: archive file [/home/abi/fetcher/tmp/rustgi-0.1.8.tar.gz]
+[2024-06-02 11:20:38] INFO root fetch - main [MainThread]: End processing [rustgi]: success
+[2024-06-02 11:20:44] INFO root fetch - processPackages [PyQt6-DataVisualization-Qt6]: Remove: archive file [/home/abi/fetcher/tmp/PyQt6_DataVisualization_Qt6-6.7.0-py3-none-win_amd64.whl.zip]
+[2024-06-02 11:20:44] INFO root fetch - processPackages [PyQt6-DataVisualization-Qt6]: Remove: archive file [/home/abi/fetcher/tmp/PyQt6_DataVisualization_Qt6-6.7.1-py3-none-win_amd64.whl.zip]
+[2024-06-02 11:20:44] INFO root fetch - main [MainThread]: End processing [PyQt6-DataVisualization-Qt6]: success
+[2024-06-02 11:20:47] INFO root fetch - processPackages [PyQt6-Charts-Qt6]: Remove: archive file [/home/abi/fetcher/tmp/PyQt6_Charts_Qt6-6.7.0-py3-none-win_amd64.whl.zip]
+[2024-06-02 11:20:47] INFO root fetch - processPackages [PyQt6-Charts-Qt6]: Remove: archive file [/home/abi/fetcher/tmp/PyQt6_Charts_Qt6-6.7.1-py3-none-win_amd64.whl.zip]
+[2024-06-02 11:20:47] INFO root fetch - main [MainThread]: End processing [PyQt6-Charts-Qt6]: success
+[2024-06-02 11:21:01] INFO root fetch - processPackages [PyQt6-3D-Qt6]: Remove: archive file [/home/abi/fetcher/tmp/PyQt6_3D_Qt6-6.7.0-py3-none-win_amd64.whl.zip]
+[2024-06-02 11:21:01] INFO root fetch - processPackages [PyQt6-3D-Qt6]: Remove: archive file [/home/abi/fetcher/tmp/PyQt6_3D_Qt6-6.7.1-py3-none-win_amd64.whl.zip]
+[2024-06-02 11:21:01] INFO root fetch - main [MainThread]: End processing [PyQt6-3D-Qt6]: success
+[2024-06-02 11:21:01] INFO root fetch - main [MainThread]: Store serial: [23487756]
