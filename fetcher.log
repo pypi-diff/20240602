@@ -21103,3 +21103,56 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 23:38:41] INFO root fetch - processPackages [muFFT]: Remove: archive file [/home/abi/fetcher/tmp/mufft-0.91.0.tar.gz]
 [2024-06-02 23:38:41] INFO root fetch - main [MainThread]: End processing [muFFT]: success
 [2024-06-02 23:38:41] INFO root fetch - main [MainThread]: Store serial: [23494002]
+[2024-06-02 23:40:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23494002]
+[2024-06-02 23:40:50] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-06-02 23:40:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: deshi-hello-world
+[2024-06-02 23:40:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: omnata-plugin-runtime
+[2024-06-02 23:40:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fastlmmclib
+[2024-06-02 23:40:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dcor-control
+[2024-06-02 23:40:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mpservice
+[2024-06-02 23:40:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: sqlframe
+[2024-06-02 23:40:51] INFO root fetch - processPackages [deshi-hello-world]: New version: [0.2] Old Version: [0.1]
+[2024-06-02 23:40:51] INFO root fetch - processPackages [sqlframe]: New version: [1.5.1] Old Version: [1.5.0]
+[2024-06-02 23:40:51] INFO root fetch - processPackages [omnata-plugin-runtime]: New version: [0.3.9a44] Old Version: [0.3.9a43]
+[2024-06-02 23:40:51] INFO root fetch - processPackages [sqlframe]: Downloading https://files.pythonhosted.org/packages/7e/f3/de93de95d7cc0ab5de00e8430d207927101d585dfd6773195fc0be415e9e/sqlframe-1.5.0.tar.gz
+[2024-06-02 23:40:51] INFO root fetch - processPackages [dcor-control]: New version: [0.9.5] Old Version: [0.9.4]
+[2024-06-02 23:40:51] INFO root fetch - processPackages [fastlmmclib]: New version: [0.0.5b1] Old Version: [0.0.3]
+[2024-06-02 23:40:51] INFO root fetch - processPackages [omnata-plugin-runtime]: Downloading https://files.pythonhosted.org/packages/8e/11/abde4b4d82373bc42a84a5591bf31c6cca540ba9f13337491df615af0b6c/omnata_plugin_runtime-0.3.9a43.tar.gz
+[2024-06-02 23:40:51] INFO root fetch - processPackages [mpservice]: New version: [0.9.9.post1] Old Version: [0.9.9]
+[2024-06-02 23:40:51] WARNING root fetch - processPackages [sqlframe]: Skipping package: exceeds size limit 17095678>=10485760
+[2024-06-02 23:40:51] INFO root fetch - main [MainThread]: End processing [sqlframe] error
+[2024-06-02 23:40:51] INFO root fetch - processPackages [deshi-hello-world]: Downloading https://files.pythonhosted.org/packages/86/45/eab05bb3f924c65e12819788113f08526550befef44826aaafc17c7448c9/deshi_hello_world-0.1.tar.gz
+[2024-06-02 23:40:51] INFO root fetch - processPackages [dcor-control]: Downloading https://files.pythonhosted.org/packages/3f/e0/b529d0b47a5311206f02a4a2afcb79c527dc87c6e48d5502150b3f89c584/dcor_control-0.9.4.tar.gz
+[2024-06-02 23:40:51] INFO root fetch - processPackages [fastlmmclib]: Downloading https://files.pythonhosted.org/packages/cc/70/493e82f0fbeaf2eb5235330cfc96f381a9f878a85079e59ec6876b698b16/fastlmmclib-0.0.3-cp39-cp39-win_amd64.whl
+[2024-06-02 23:40:51] INFO root fetch - processPackages [mpservice]: Downloading https://files.pythonhosted.org/packages/a4/76/0caf3e54fc1b0c685c01abdb7deb283a4e0ab62467df218edf79256efe6d/mpservice-0.9.9.tar.gz
+[2024-06-02 23:40:51] INFO root fetch - processPackages [omnata-plugin-runtime]: Downloading https://files.pythonhosted.org/packages/de/f5/326ad467bb560d9dc8d7cebfe2aed77d524aeaf8a8ee7c6107f202eb6d0d/omnata_plugin_runtime-0.3.9a44.tar.gz
+[2024-06-02 23:40:51] INFO root fetch - processPackages [deshi-hello-world]: Downloading https://files.pythonhosted.org/packages/aa/f3/2464290b614a29399f50d17cae256b96a4e4c9029ced6c4050c1efc3d766/deshi_hello_world-0.2.tar.gz
+[2024-06-02 23:40:51] INFO root fetch - processPackages [omnata-plugin-runtime]: executing diffoscope
+[2024-06-02 23:40:51] INFO root fetch - processPackages [omnata-plugin-runtime]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/omnata_plugin_runtime-0.3.9a43.tar.gz tmp/omnata_plugin_runtime-0.3.9a44.tar.gz --markdown 20240602/o/omnata-plugin-runtime/0.3.9a43-0.3.9a44/README.md --exclude *.pyd
+[2024-06-02 23:40:51] INFO root fetch - processPackages [deshi-hello-world]: executing diffoscope
+[2024-06-02 23:40:51] INFO root fetch - processPackages [deshi-hello-world]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deshi_hello_world-0.1.tar.gz tmp/deshi_hello_world-0.2.tar.gz --markdown 20240602/d/deshi-hello-world/0.1-0.2/README.md --exclude *.pyd
+[2024-06-02 23:40:51] INFO root fetch - processPackages [dcor-control]: Downloading https://files.pythonhosted.org/packages/cd/c1/a7cdfc3e3b4c69171f93c66e26ce8a4d0b4c13c0f47406c81ed0a12433f0/dcor_control-0.9.5.tar.gz
+[2024-06-02 23:40:51] INFO root fetch - processPackages [fastlmmclib]: Downloading https://files.pythonhosted.org/packages/c9/6f/267e89cf4ca24de857a5d8e12bbef596a4d09bdd91b53786bd1e002d504b/fastlmmclib-0.0.5b1-cp39-cp39-win_amd64.whl
+[2024-06-02 23:40:51] INFO root fetch - processPackages [dcor-control]: executing diffoscope
+[2024-06-02 23:40:51] INFO root fetch - processPackages [dcor-control]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dcor_control-0.9.4.tar.gz tmp/dcor_control-0.9.5.tar.gz --markdown 20240602/d/dcor-control/0.9.4-0.9.5/README.md --exclude *.pyd
+[2024-06-02 23:40:51] INFO root fetch - processPackages [mpservice]: Downloading https://files.pythonhosted.org/packages/62/83/992eb812676a1d5b8ffbc5c9ba7e1bd57f82c86ae5c8a0e509834c8df031/mpservice-0.9.9.post1.tar.gz
+[2024-06-02 23:40:52] INFO root fetch - processPackages [fastlmmclib]: executing diffoscope
+[2024-06-02 23:40:52] INFO root fetch - processPackages [fastlmmclib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastlmmclib-0.0.3-cp39-cp39-win_amd64.whl.zip tmp/fastlmmclib-0.0.5b1-cp39-cp39-win_amd64.whl.zip --markdown 20240602/f/fastlmmclib/0.0.3-0.0.5b1/README.md --exclude *.pyd
+[2024-06-02 23:40:52] INFO root fetch - processPackages [mpservice]: executing diffoscope
+[2024-06-02 23:40:52] INFO root fetch - processPackages [mpservice]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mpservice-0.9.9.tar.gz tmp/mpservice-0.9.9.post1.tar.gz --markdown 20240602/m/mpservice/0.9.9-0.9.9.post1/README.md --exclude *.pyd
+[2024-06-02 23:40:52] INFO root fetch - processPackages [deshi-hello-world]: Remove: archive file [/home/abi/fetcher/tmp/deshi_hello_world-0.1.tar.gz]
+[2024-06-02 23:40:52] INFO root fetch - processPackages [deshi-hello-world]: Remove: archive file [/home/abi/fetcher/tmp/deshi_hello_world-0.2.tar.gz]
+[2024-06-02 23:40:52] INFO root fetch - main [MainThread]: End processing [deshi-hello-world]: success
+[2024-06-02 23:40:52] INFO root fetch - processPackages [omnata-plugin-runtime]: Remove: archive file [/home/abi/fetcher/tmp/omnata_plugin_runtime-0.3.9a43.tar.gz]
+[2024-06-02 23:40:52] INFO root fetch - processPackages [omnata-plugin-runtime]: Remove: archive file [/home/abi/fetcher/tmp/omnata_plugin_runtime-0.3.9a44.tar.gz]
+[2024-06-02 23:40:52] INFO root fetch - main [MainThread]: End processing [omnata-plugin-runtime]: success
+[2024-06-02 23:40:52] INFO root fetch - processPackages [dcor-control]: Remove: archive file [/home/abi/fetcher/tmp/dcor_control-0.9.4.tar.gz]
+[2024-06-02 23:40:52] INFO root fetch - processPackages [dcor-control]: Remove: archive file [/home/abi/fetcher/tmp/dcor_control-0.9.5.tar.gz]
+[2024-06-02 23:40:52] INFO root fetch - main [MainThread]: End processing [dcor-control]: success
+[2024-06-02 23:40:52] INFO root fetch - processPackages [mpservice]: Remove: archive file [/home/abi/fetcher/tmp/mpservice-0.9.9.tar.gz]
+[2024-06-02 23:40:52] INFO root fetch - processPackages [mpservice]: Remove: archive file [/home/abi/fetcher/tmp/mpservice-0.9.9.post1.tar.gz]
+[2024-06-02 23:40:52] INFO root fetch - main [MainThread]: End processing [mpservice]: success
+[2024-06-02 23:40:52] INFO root fetch - processPackages [fastlmmclib]: Remove: archive file [/home/abi/fetcher/tmp/fastlmmclib-0.0.3-cp39-cp39-win_amd64.whl.zip]
+[2024-06-02 23:40:52] INFO root fetch - processPackages [fastlmmclib]: Remove: archive file [/home/abi/fetcher/tmp/fastlmmclib-0.0.5b1-cp39-cp39-win_amd64.whl.zip]
+[2024-06-02 23:40:52] INFO root fetch - main [MainThread]: End processing [fastlmmclib]: success
+[2024-06-02 23:40:52] INFO root fetch - main [MainThread]: Store serial: [23494036]
