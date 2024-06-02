@@ -15773,3 +15773,56 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 20:19:04] INFO root fetch - processPackages [vnstock3]: Remove: archive file [/home/abi/fetcher/tmp/vnstock3-0.3.0.3.tar.gz]
 [2024-06-02 20:19:04] INFO root fetch - main [MainThread]: End processing [vnstock3]: success
 [2024-06-02 20:19:04] INFO root fetch - main [MainThread]: Store serial: [23491796]
+[2024-06-02 20:21:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23491796]
+[2024-06-02 20:21:12] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-06-02 20:21:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: vpx-rtp-py
+[2024-06-02 20:21:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: copilothistoryexporter
+[2024-06-02 20:21:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pywal16
+[2024-06-02 20:21:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ch9329
+[2024-06-02 20:21:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: rticonnextdds-connector
+[2024-06-02 20:21:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ludic
+[2024-06-02 20:21:13] INFO root fetch - processPackages [vpx-rtp-py]: New version: [0.2.0] Old Version: [0.1.3]
+[2024-06-02 20:21:13] INFO root fetch - processPackages [copilothistoryexporter]: New version: [1.0.2.3] Old Version: [1.0.2.2]
+[2024-06-02 20:21:13] INFO root fetch - processPackages [pywal16]: New version: [3.5.3] Old Version: [3.5.2]
+[2024-06-02 20:21:13] INFO root fetch - processPackages [ch9329]: New version: [1.2.5] Old Version: [1.2.4]
+[2024-06-02 20:21:13] INFO root fetch - processPackages [copilothistoryexporter]: Downloading https://files.pythonhosted.org/packages/3a/91/fa82e98d501e40f569a2f637e2fbe4714a5c03d4c095c8e482b3fd7c99fc/copilothistoryexporter-1.0.2.2.tar.gz
+[2024-06-02 20:21:13] INFO root fetch - processPackages [vpx-rtp-py]: Downloading https://files.pythonhosted.org/packages/4d/3d/2420c879b9a6f14729c858a39b19ebde86092e59ece74b047354e9095f49/vpx_rtp_py-0.1.3.tar.gz
+[2024-06-02 20:21:13] INFO root fetch - processPackages [rticonnextdds-connector]: New version: [1.2.3] Old Version: [1.2.2]
+[2024-06-02 20:21:13] INFO root fetch - processPackages [ch9329]: Downloading https://files.pythonhosted.org/packages/81/a2/8edf30573909a6900d2061b67fcdd5e8ea3457cc66ca133460def6d947be/ch9329-1.2.4.tar.gz
+[2024-06-02 20:21:13] INFO root fetch - processPackages [ludic]: New version: [0.4.9] Old Version: [0.4.8]
+[2024-06-02 20:21:13] INFO root fetch - processPackages [pywal16]: Downloading https://files.pythonhosted.org/packages/52/7d/b85a3eb09b3340e7fd95d42c9047f657420c1604f697489f08bb59a95e11/pywal16-3.5.2.tar.gz
+[2024-06-02 20:21:13] INFO root fetch - processPackages [rticonnextdds-connector]: Downloading https://files.pythonhosted.org/packages/a5/82/c99708e29673e9ced0b61848b0be133a479dc8688e6987306b254d44af9d/rticonnextdds_connector-1.2.2.tar.gz
+[2024-06-02 20:21:13] INFO root fetch - processPackages [ludic]: Downloading https://files.pythonhosted.org/packages/ce/91/c18d969b2eba5fa9465db54c6feeb7bf8c445ca78541315ab94bb35d8c71/ludic-0.4.8.tar.gz
+[2024-06-02 20:21:13] WARNING root fetch - processPackages [rticonnextdds-connector]: Skipping package: exceeds size limit 23317479>=10485760
+[2024-06-02 20:21:13] INFO root fetch - main [MainThread]: End processing [rticonnextdds-connector] error
+[2024-06-02 20:21:13] INFO root fetch - processPackages [copilothistoryexporter]: Downloading https://files.pythonhosted.org/packages/4c/d1/f76bc96d7af0dbb1a8053759bcab3bf6e4de8d26bf35dd63b64cf5609126/copilothistoryexporter-1.0.2.3.tar.gz
+[2024-06-02 20:21:13] INFO root fetch - processPackages [vpx-rtp-py]: Downloading https://files.pythonhosted.org/packages/19/40/56dd8a6eaebb2eb431222bba383fb4e2514db3c5f7ab292dc3f652506469/vpx_rtp_py-0.2.0.tar.gz
+[2024-06-02 20:21:13] INFO root fetch - processPackages [ch9329]: Downloading https://files.pythonhosted.org/packages/6d/14/6ddd22a94526e99b3f5e6e48448dcfc92e435d0832606774906e5ad079b4/ch9329-1.2.5.tar.gz
+[2024-06-02 20:21:13] INFO root fetch - processPackages [copilothistoryexporter]: executing diffoscope
+[2024-06-02 20:21:13] INFO root fetch - processPackages [copilothistoryexporter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/copilothistoryexporter-1.0.2.2.tar.gz tmp/copilothistoryexporter-1.0.2.3.tar.gz --markdown 20240602/c/copilothistoryexporter/1.0.2.2-1.0.2.3/README.md --exclude *.pyd
+[2024-06-02 20:21:13] INFO root fetch - processPackages [vpx-rtp-py]: executing diffoscope
+[2024-06-02 20:21:13] INFO root fetch - processPackages [vpx-rtp-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vpx_rtp_py-0.1.3.tar.gz tmp/vpx_rtp_py-0.2.0.tar.gz --markdown 20240602/v/vpx-rtp-py/0.1.3-0.2.0/README.md --exclude *.pyd
+[2024-06-02 20:21:13] INFO root fetch - processPackages [ch9329]: executing diffoscope
+[2024-06-02 20:21:13] INFO root fetch - processPackages [ch9329]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ch9329-1.2.4.tar.gz tmp/ch9329-1.2.5.tar.gz --markdown 20240602/c/ch9329/1.2.4-1.2.5/README.md --exclude *.pyd
+[2024-06-02 20:21:13] INFO root fetch - processPackages [pywal16]: Downloading https://files.pythonhosted.org/packages/f2/e0/d55e4111c3bc61f828023c508a4d3dc87dcc279adf688f6f59cef7c22dcf/pywal16-3.5.3.tar.gz
+[2024-06-02 20:21:13] INFO root fetch - processPackages [pywal16]: executing diffoscope
+[2024-06-02 20:21:13] INFO root fetch - processPackages [pywal16]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pywal16-3.5.2.tar.gz tmp/pywal16-3.5.3.tar.gz --markdown 20240602/p/pywal16/3.5.2-3.5.3/README.md --exclude *.pyd
+[2024-06-02 20:21:13] INFO root fetch - processPackages [ludic]: Downloading https://files.pythonhosted.org/packages/6d/fd/5ffb4cedbb92946ca50093ffad1f8de27d0a66770316a9e34411bfc2f0f6/ludic-0.4.9.tar.gz
+[2024-06-02 20:21:14] INFO root fetch - processPackages [ludic]: executing diffoscope
+[2024-06-02 20:21:14] INFO root fetch - processPackages [ludic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ludic-0.4.8.tar.gz tmp/ludic-0.4.9.tar.gz --markdown 20240602/l/ludic/0.4.8-0.4.9/README.md --exclude *.pyd
+[2024-06-02 20:21:14] INFO root fetch - processPackages [vpx-rtp-py]: Remove: archive file [/home/abi/fetcher/tmp/vpx_rtp_py-0.1.3.tar.gz]
+[2024-06-02 20:21:14] INFO root fetch - processPackages [vpx-rtp-py]: Remove: archive file [/home/abi/fetcher/tmp/vpx_rtp_py-0.2.0.tar.gz]
+[2024-06-02 20:21:14] INFO root fetch - main [MainThread]: End processing [vpx-rtp-py]: success
+[2024-06-02 20:21:14] INFO root fetch - processPackages [copilothistoryexporter]: Remove: archive file [/home/abi/fetcher/tmp/copilothistoryexporter-1.0.2.2.tar.gz]
+[2024-06-02 20:21:14] INFO root fetch - processPackages [copilothistoryexporter]: Remove: archive file [/home/abi/fetcher/tmp/copilothistoryexporter-1.0.2.3.tar.gz]
+[2024-06-02 20:21:14] INFO root fetch - main [MainThread]: End processing [copilothistoryexporter]: success
+[2024-06-02 20:21:14] INFO root fetch - processPackages [ch9329]: Remove: archive file [/home/abi/fetcher/tmp/ch9329-1.2.4.tar.gz]
+[2024-06-02 20:21:14] INFO root fetch - processPackages [ch9329]: Remove: archive file [/home/abi/fetcher/tmp/ch9329-1.2.5.tar.gz]
+[2024-06-02 20:21:14] INFO root fetch - main [MainThread]: End processing [ch9329]: success
+[2024-06-02 20:21:14] INFO root fetch - processPackages [pywal16]: Remove: archive file [/home/abi/fetcher/tmp/pywal16-3.5.2.tar.gz]
+[2024-06-02 20:21:14] INFO root fetch - processPackages [pywal16]: Remove: archive file [/home/abi/fetcher/tmp/pywal16-3.5.3.tar.gz]
+[2024-06-02 20:21:14] INFO root fetch - main [MainThread]: End processing [pywal16]: success
+[2024-06-02 20:21:14] INFO root fetch - processPackages [ludic]: Remove: archive file [/home/abi/fetcher/tmp/ludic-0.4.8.tar.gz]
+[2024-06-02 20:21:14] INFO root fetch - processPackages [ludic]: Remove: archive file [/home/abi/fetcher/tmp/ludic-0.4.9.tar.gz]
+[2024-06-02 20:21:14] INFO root fetch - main [MainThread]: End processing [ludic]: success
+[2024-06-02 20:21:14] INFO root fetch - main [MainThread]: Store serial: [23491820]
