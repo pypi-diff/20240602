@@ -8618,3 +8618,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-02 13:36:01] INFO root fetch - processPackages [contact-email-address-local]: Remove: archive file [/home/abi/fetcher/tmp/contact_email_address_local-0.0.9.tar.gz]
 [2024-06-02 13:36:01] INFO root fetch - main [MainThread]: End processing [contact-email-address-local]: success
 [2024-06-02 13:36:01] INFO root fetch - main [MainThread]: Store serial: [23488466]
+[2024-06-02 13:38:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23488466]
+[2024-06-02 13:38:10] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-02 13:38:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: botasaurus-server
+[2024-06-02 13:38:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: qsketchmetric
+[2024-06-02 13:38:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lazy-crawler
+[2024-06-02 13:38:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: term-piechart
+[2024-06-02 13:38:10] INFO root fetch - processPackages [botasaurus-server]: New version: [4.0.9] Old Version: [4.0.8]
+[2024-06-02 13:38:10] INFO root fetch - processPackages [botasaurus-server]: Downloading https://files.pythonhosted.org/packages/f0/29/6236cf00c97e9e74fa0c4e7fb1f7ef957e52111b705e85e89defe4ec7de6/botasaurus_server-4.0.8.tar.gz
+[2024-06-02 13:38:10] INFO root fetch - processPackages [term-piechart]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-06-02 13:38:10] WARNING root fetch - processPackages [lazy-crawler]: Skipping, unable to determine old version
+[2024-06-02 13:38:10] INFO root fetch - main [MainThread]: End processing [lazy-crawler] error
+[2024-06-02 13:38:10] INFO root fetch - processPackages [qsketchmetric]: New version: [1.7.2] Old Version: [1.7.1]
+[2024-06-02 13:38:10] INFO root fetch - processPackages [qsketchmetric]: Downloading https://files.pythonhosted.org/packages/da/fb/c2a6d4a3cea79d13bc6670394cb65f1cf3746256043e755c78b3707d6ed8/qsketchmetric-1.7.1.tar.gz
+[2024-06-02 13:38:10] INFO root fetch - processPackages [term-piechart]: Downloading https://files.pythonhosted.org/packages/f7/dd/9685261230e58c7c1baf8ad53c24624b13a745aa343dacebab3be53e85d4/term_piechart-0.1.2.tar.gz
+[2024-06-02 13:38:10] INFO root fetch - processPackages [botasaurus-server]: Downloading https://files.pythonhosted.org/packages/03/11/ef707a7fce8129a4d151622283f54a8d7ab9c844defd6f5f294b0bac1632/botasaurus_server-4.0.9.tar.gz
+[2024-06-02 13:38:11] INFO root fetch - processPackages [botasaurus-server]: executing diffoscope
+[2024-06-02 13:38:11] INFO root fetch - processPackages [botasaurus-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/botasaurus_server-4.0.8.tar.gz tmp/botasaurus_server-4.0.9.tar.gz --markdown 20240602/b/botasaurus-server/4.0.8-4.0.9/README.md --exclude *.pyd
+[2024-06-02 13:38:11] INFO root fetch - processPackages [qsketchmetric]: Downloading https://files.pythonhosted.org/packages/90/91/67d48ec5a6d7821c5c85e97b36fe9e9f7db6e05ca4a05a1970349d146f5b/qsketchmetric-1.7.2.tar.gz
+[2024-06-02 13:38:11] INFO root fetch - processPackages [term-piechart]: Downloading https://files.pythonhosted.org/packages/5e/cf/a7725c04ab2931482de8c4c3fca169bdfe6263ba5e237cad940df84eef29/term_piechart-0.1.3.tar.gz
+[2024-06-02 13:38:11] INFO root fetch - processPackages [qsketchmetric]: executing diffoscope
+[2024-06-02 13:38:11] INFO root fetch - processPackages [qsketchmetric]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qsketchmetric-1.7.1.tar.gz tmp/qsketchmetric-1.7.2.tar.gz --markdown 20240602/q/qsketchmetric/1.7.1-1.7.2/README.md --exclude *.pyd
+[2024-06-02 13:38:11] INFO root fetch - processPackages [term-piechart]: executing diffoscope
+[2024-06-02 13:38:11] INFO root fetch - processPackages [term-piechart]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/term_piechart-0.1.2.tar.gz tmp/term_piechart-0.1.3.tar.gz --markdown 20240602/t/term-piechart/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-06-02 13:38:11] INFO root fetch - processPackages [botasaurus-server]: Remove: archive file [/home/abi/fetcher/tmp/botasaurus_server-4.0.8.tar.gz]
+[2024-06-02 13:38:11] INFO root fetch - processPackages [botasaurus-server]: Remove: archive file [/home/abi/fetcher/tmp/botasaurus_server-4.0.9.tar.gz]
+[2024-06-02 13:38:11] INFO root fetch - main [MainThread]: End processing [botasaurus-server]: success
+[2024-06-02 13:38:11] INFO root fetch - processPackages [qsketchmetric]: Remove: archive file [/home/abi/fetcher/tmp/qsketchmetric-1.7.1.tar.gz]
+[2024-06-02 13:38:11] INFO root fetch - processPackages [qsketchmetric]: Remove: archive file [/home/abi/fetcher/tmp/qsketchmetric-1.7.2.tar.gz]
+[2024-06-02 13:38:11] INFO root fetch - main [MainThread]: End processing [qsketchmetric]: success
+[2024-06-02 13:38:11] INFO root fetch - processPackages [term-piechart]: Remove: archive file [/home/abi/fetcher/tmp/term_piechart-0.1.2.tar.gz]
+[2024-06-02 13:38:11] INFO root fetch - processPackages [term-piechart]: Remove: archive file [/home/abi/fetcher/tmp/term_piechart-0.1.3.tar.gz]
+[2024-06-02 13:38:11] INFO root fetch - main [MainThread]: End processing [term-piechart]: success
+[2024-06-02 13:38:11] INFO root fetch - main [MainThread]: Store serial: [23488481]
