@@ -17236,3 +17236,18 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 21:40:14] INFO root fetch - processPackages [vlite2]: Remove: archive file [/home/abi/fetcher/tmp/vlite2-3.5.0.tar.gz]
 [2024-06-02 21:40:14] INFO root fetch - main [MainThread]: End processing [vlite2]: success
 [2024-06-02 21:40:14] INFO root fetch - main [MainThread]: Store serial: [23492484]
+[2024-06-02 21:42:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23492484]
+[2024-06-02 21:42:22] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-02 21:42:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: niceguicrud
+[2024-06-02 21:42:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: spotify-utils
+[2024-06-02 21:42:22] INFO root fetch - processPackages [spotify-utils]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-06-02 21:42:22] INFO root fetch - processPackages [spotify-utils]: Downloading https://files.pythonhosted.org/packages/bd/10/98bd146e9c1396adb8fafd457538d970e47efc67169f9c5844b17d8f2344/spotify_utils-1.0.8.tar.gz
+[2024-06-02 21:42:22] WARNING root fetch - processPackages [niceguicrud]: Skipping, unable to determine old version
+[2024-06-02 21:42:22] INFO root fetch - main [MainThread]: End processing [niceguicrud] error
+[2024-06-02 21:42:22] INFO root fetch - processPackages [spotify-utils]: Downloading https://files.pythonhosted.org/packages/aa/db/a2b259741f25e3cddb2fd70cf766003979f3cc00d39858a21666c745943b/spotify_utils-1.0.9.tar.gz
+[2024-06-02 21:42:22] INFO root fetch - processPackages [spotify-utils]: executing diffoscope
+[2024-06-02 21:42:22] INFO root fetch - processPackages [spotify-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spotify_utils-1.0.8.tar.gz tmp/spotify_utils-1.0.9.tar.gz --markdown 20240602/s/spotify-utils/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-06-02 21:42:23] INFO root fetch - processPackages [spotify-utils]: Remove: archive file [/home/abi/fetcher/tmp/spotify_utils-1.0.8.tar.gz]
+[2024-06-02 21:42:23] INFO root fetch - processPackages [spotify-utils]: Remove: archive file [/home/abi/fetcher/tmp/spotify_utils-1.0.9.tar.gz]
+[2024-06-02 21:42:23] INFO root fetch - main [MainThread]: End processing [spotify-utils]: success
+[2024-06-02 21:42:23] INFO root fetch - main [MainThread]: Store serial: [23492491]
