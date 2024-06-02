@@ -8212,3 +8212,32 @@
 [2024-06-02 13:14:12] INFO root fetch - processPackages [tb-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tb_nightly-2.9.0a20220502-py3-none-any.whl.zip]
 [2024-06-02 13:14:12] INFO root fetch - main [MainThread]: End processing [tb-nightly]: success
 [2024-06-02 13:14:12] INFO root fetch - main [MainThread]: Store serial: [23488346]
+[2024-06-02 13:16:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23488346]
+[2024-06-02 13:16:22] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-02 13:16:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bigdl-core-cpp
+[2024-06-02 13:16:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: alita-sdk
+[2024-06-02 13:16:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: alita-tools
+[2024-06-02 13:16:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: directedit
+[2024-06-02 13:16:22] INFO root fetch - processPackages [alita-tools]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-06-02 13:16:22] INFO root fetch - processPackages [alita-tools]: Downloading https://files.pythonhosted.org/packages/11/7e/f89b7d2fb29b664d4a1b772c0a8757857534dc4981d9d9547b1410352f8b/alita_tools-0.0.8.tar.gz
+[2024-06-02 13:16:22] WARNING root fetch - processPackages [directedit]: Skipping, unable to determine old version
+[2024-06-02 13:16:22] INFO root fetch - main [MainThread]: End processing [directedit] error
+[2024-06-02 13:16:22] INFO root fetch - processPackages [alita-sdk]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-06-02 13:16:22] INFO root fetch - processPackages [bigdl-core-cpp]: New version: [2.5.0b20240602] Old Version: [2.5.0b20240601]
+[2024-06-02 13:16:22] INFO root fetch - processPackages [alita-sdk]: Downloading https://files.pythonhosted.org/packages/58/77/699a43c7f5d3229ed63ff8d8eaba7999323921fbe9a94d3dd2d8b0f9b7a6/alita_sdk-0.1.8.tar.gz
+[2024-06-02 13:16:22] INFO root fetch - processPackages [bigdl-core-cpp]: Downloading https://files.pythonhosted.org/packages/37/7d/3746b3c966e510fac6d1c5bc07db2b47486e62ec97c575a1408842910911/bigdl_core_cpp-2.5.0b20240601-py3-none-win_amd64.whl
+[2024-06-02 13:16:22] INFO root fetch - processPackages [alita-tools]: Downloading https://files.pythonhosted.org/packages/b2/e0/efa7908f0bf622856778acf50ffea9fd834a7e4b47167ee967dc96ba217d/alita_tools-0.0.9.tar.gz
+[2024-06-02 13:16:22] WARNING root fetch - processPackages [bigdl-core-cpp]: Skipping package: exceeds size limit 33964877>=10485760
+[2024-06-02 13:16:22] INFO root fetch - main [MainThread]: End processing [bigdl-core-cpp] error
+[2024-06-02 13:16:22] INFO root fetch - processPackages [alita-tools]: executing diffoscope
+[2024-06-02 13:16:22] INFO root fetch - processPackages [alita-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alita_tools-0.0.8.tar.gz tmp/alita_tools-0.0.9.tar.gz --markdown 20240602/a/alita-tools/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-06-02 13:16:22] INFO root fetch - processPackages [alita-sdk]: Downloading https://files.pythonhosted.org/packages/6d/5f/08f7caedc136fde13091ef88ae35349e7285ef4b9c181b34fb1c4dffd4ba/alita_sdk-0.1.9.tar.gz
+[2024-06-02 13:16:22] INFO root fetch - processPackages [alita-sdk]: executing diffoscope
+[2024-06-02 13:16:22] INFO root fetch - processPackages [alita-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alita_sdk-0.1.8.tar.gz tmp/alita_sdk-0.1.9.tar.gz --markdown 20240602/a/alita-sdk/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-06-02 13:16:23] INFO root fetch - processPackages [alita-tools]: Remove: archive file [/home/abi/fetcher/tmp/alita_tools-0.0.8.tar.gz]
+[2024-06-02 13:16:23] INFO root fetch - processPackages [alita-tools]: Remove: archive file [/home/abi/fetcher/tmp/alita_tools-0.0.9.tar.gz]
+[2024-06-02 13:16:23] INFO root fetch - main [MainThread]: End processing [alita-tools]: success
+[2024-06-02 13:16:23] INFO root fetch - processPackages [alita-sdk]: Remove: archive file [/home/abi/fetcher/tmp/alita_sdk-0.1.8.tar.gz]
+[2024-06-02 13:16:23] INFO root fetch - processPackages [alita-sdk]: Remove: archive file [/home/abi/fetcher/tmp/alita_sdk-0.1.9.tar.gz]
+[2024-06-02 13:16:23] INFO root fetch - main [MainThread]: End processing [alita-sdk]: success
+[2024-06-02 13:16:23] INFO root fetch - main [MainThread]: Store serial: [23488358]
