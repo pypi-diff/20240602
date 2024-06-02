@@ -7791,3 +7791,33 @@
 [2024-06-02 12:43:42] INFO root fetch - processPackages [dbt-command-center]: Remove: archive file [/home/abi/fetcher/tmp/dbt_command_center-0.1.9.tar.gz]
 [2024-06-02 12:43:42] INFO root fetch - main [MainThread]: End processing [dbt-command-center]: success
 [2024-06-02 12:43:42] INFO root fetch - main [MainThread]: Store serial: [23488192]
+[2024-06-02 12:45:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23488192]
+[2024-06-02 12:45:55] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-02 12:45:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dbt-command-center
+[2024-06-02 12:45:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: stashconnect
+[2024-06-02 12:45:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hddm-s
+[2024-06-02 12:45:56] INFO root fetch - processPackages [dbt-command-center]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-06-02 12:45:56] INFO root fetch - processPackages [stashconnect]: New version: [0.8.4] Old Version: [0.8.3]
+[2024-06-02 12:45:56] INFO root fetch - processPackages [dbt-command-center]: Downloading https://files.pythonhosted.org/packages/be/f2/bd7bb6ed02db3abf4be3dbd9bec4ac6ec28c78772395c4c048c5d2e7ab67/dbt_command_center-0.1.8.tar.gz
+[2024-06-02 12:45:56] INFO root fetch - processPackages [hddm-s]: New version: [1.1.0] Old Version: [1.0.9]
+[2024-06-02 12:45:56] INFO root fetch - processPackages [stashconnect]: Downloading https://files.pythonhosted.org/packages/97/8c/262c0614b2464dea217a8b2693a5f50266ed1cb354ef167afecb16ca74cd/stashconnect-0.8.3.tar.gz
+[2024-06-02 12:45:56] INFO root fetch - processPackages [hddm-s]: Downloading https://files.pythonhosted.org/packages/d2/24/0bac70948a0f916016590dddfc7e17148c466fa4b02e8bd2d4f3119e1816/hddm_s-1.0.9.tar.gz
+[2024-06-02 12:45:56] INFO root fetch - processPackages [stashconnect]: Downloading https://files.pythonhosted.org/packages/bf/ee/af44ccd105f3efd8ff505151ed3342d61fc3e94f9e626010b67aed66ab55/stashconnect-0.8.4.tar.gz
+[2024-06-02 12:45:56] INFO root fetch - processPackages [dbt-command-center]: Downloading https://files.pythonhosted.org/packages/66/5f/5fedd28b2272fdf006ed8bb414d5fad18369ccd87f8092e9f90a626017b7/dbt_command_center-0.1.9.tar.gz
+[2024-06-02 12:45:56] INFO root fetch - processPackages [stashconnect]: executing diffoscope
+[2024-06-02 12:45:56] INFO root fetch - processPackages [stashconnect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stashconnect-0.8.3.tar.gz tmp/stashconnect-0.8.4.tar.gz --markdown 20240602/s/stashconnect/0.8.3-0.8.4/README.md --exclude *.pyd
+[2024-06-02 12:45:56] INFO root fetch - processPackages [dbt-command-center]: executing diffoscope
+[2024-06-02 12:45:56] INFO root fetch - processPackages [dbt-command-center]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbt_command_center-0.1.8.tar.gz tmp/dbt_command_center-0.1.9.tar.gz --markdown 20240602/d/dbt-command-center/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-06-02 12:45:56] INFO root fetch - processPackages [hddm-s]: Downloading https://files.pythonhosted.org/packages/e3/92/06fcc0b58cd99786731fe242d377522e0abcf034f8bcf72889deba90d145/hddm_s-1.1.0.tar.gz
+[2024-06-02 12:45:56] INFO root fetch - processPackages [hddm-s]: executing diffoscope
+[2024-06-02 12:45:56] INFO root fetch - processPackages [hddm-s]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hddm_s-1.0.9.tar.gz tmp/hddm_s-1.1.0.tar.gz --markdown 20240602/h/hddm-s/1.0.9-1.1.0/README.md --exclude *.pyd
+[2024-06-02 12:45:57] INFO root fetch - processPackages [stashconnect]: Remove: archive file [/home/abi/fetcher/tmp/stashconnect-0.8.3.tar.gz]
+[2024-06-02 12:45:57] INFO root fetch - processPackages [stashconnect]: Remove: archive file [/home/abi/fetcher/tmp/stashconnect-0.8.4.tar.gz]
+[2024-06-02 12:45:57] INFO root fetch - main [MainThread]: End processing [stashconnect]: success
+[2024-06-02 12:45:57] INFO root fetch - processPackages [hddm-s]: Remove: archive file [/home/abi/fetcher/tmp/hddm_s-1.0.9.tar.gz]
+[2024-06-02 12:45:57] INFO root fetch - processPackages [hddm-s]: Remove: archive file [/home/abi/fetcher/tmp/hddm_s-1.1.0.tar.gz]
+[2024-06-02 12:45:57] INFO root fetch - main [MainThread]: End processing [hddm-s]: success
+[2024-06-02 12:45:59] INFO root fetch - processPackages [dbt-command-center]: Remove: archive file [/home/abi/fetcher/tmp/dbt_command_center-0.1.8.tar.gz]
+[2024-06-02 12:45:59] INFO root fetch - processPackages [dbt-command-center]: Remove: archive file [/home/abi/fetcher/tmp/dbt_command_center-0.1.9.tar.gz]
+[2024-06-02 12:45:59] INFO root fetch - main [MainThread]: End processing [dbt-command-center]: success
+[2024-06-02 12:45:59] INFO root fetch - main [MainThread]: Store serial: [23488201]
