@@ -17714,3 +17714,93 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 22:14:15] INFO root fetch - processPackages [lupin-grognard]: Remove: archive file [/home/abi/fetcher/tmp/lupin_grognard-2.1.0.dev1-py3-none-any.whl.zip]
 [2024-06-02 22:14:15] INFO root fetch - main [MainThread]: End processing [lupin-grognard]: success
 [2024-06-02 22:14:15] INFO root fetch - main [MainThread]: Store serial: [23492767]
+[2024-06-02 22:16:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23492767]
+[2024-06-02 22:16:23] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2024-06-02 22:16:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: spanishconjugator
+[2024-06-02 22:16:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lupin-grognard
+[2024-06-02 22:16:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: socialdataanalysis
+[2024-06-02 22:16:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: universal-silabs-flasher
+[2024-06-02 22:16:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: spanishconjugator
+[2024-06-02 22:16:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pianosdk
+[2024-06-02 22:16:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: copilothistoryexporter
+[2024-06-02 22:16:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: opsvis
+[2024-06-02 22:16:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: foreverbull
+[2024-06-02 22:16:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: pyerualjetwork
+[2024-06-02 22:16:24] INFO root fetch - processPackages [lupin-grognard]: New version: [2.1.0.dev1] Old Version: [2.1.0.dev0]
+[2024-06-02 22:16:24] INFO root fetch - processPackages [copilothistoryexporter]: New version: [1.0.3.3] Old Version: [1.0.3.2]
+[2024-06-02 22:16:24] INFO root fetch - processPackages [pyerualjetwork]: New version: [2.0.3] Old Version: [2.0.2]
+[2024-06-02 22:16:24] INFO root fetch - processPackages [opsvis]: New version: [1.1.6] Old Version: [1.1.5]
+[2024-06-02 22:16:24] INFO root fetch - processPackages [pianosdk]: New version: [16.195.1] Old Version: [16.188.1]
+[2024-06-02 22:16:24] WARNING root fetch - processPackages [socialdataanalysis]: Skipping, unable to determine old version
+[2024-06-02 22:16:24] INFO root fetch - processPackages [socialdataanalysis]: Start processing: moto
+[2024-06-02 22:16:24] INFO root fetch - main [MainThread]: End processing [socialdataanalysis] error
+[2024-06-02 22:16:24] INFO root fetch - processPackages [universal-silabs-flasher]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-06-02 22:16:24] INFO root fetch - processPackages [foreverbull]: New version: [0.0.2406021544] Old Version: [0.0.2406020803]
+[2024-06-02 22:16:24] INFO root fetch - processPackages [lupin-grognard]: Downloading https://files.pythonhosted.org/packages/11/e5/e0df1db174ee225dc5439845bb1e22d64a19d2a0c182a82eb8093fdd061a/lupin_grognard-2.1.0.dev0.tar.gz
+[2024-06-02 22:16:24] INFO root fetch - processPackages [copilothistoryexporter]: Downloading https://files.pythonhosted.org/packages/a0/af/b57cea43d5e485dafa2e8f9722b2a0ba4e9fbab64c2850dcd39e1c6fcd33/copilothistoryexporter-1.0.3.2.tar.gz
+[2024-06-02 22:16:24] INFO root fetch - processPackages [pyerualjetwork]: Downloading https://files.pythonhosted.org/packages/28/13/f5b20c87b237f0bf4658744c1757a036fa6715f93aee74efbbb63cda0c64/pyerualjetwork-2.0.2.tar.gz
+[2024-06-02 22:16:24] INFO root fetch - processPackages [opsvis]: Downloading https://files.pythonhosted.org/packages/38/38/cf1eb678a18c7a3f72616d599bc5f727e01bb1168cee406ab69026fdfd46/opsvis-1.1.5.tar.gz
+[2024-06-02 22:16:24] INFO root fetch - processPackages [moto]: New version: [5.0.9.dev9] Old Version: [5.0.9.dev8]
+[2024-06-02 22:16:24] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2024-06-02 22:16:24] INFO root fetch - processPackages [pianosdk]: Downloading https://files.pythonhosted.org/packages/49/85/5b1ea402bf3c91786a75a29d16eebb33ed5246525777c8dcf8193c30b1fa/pianosdk-16.188.1.tar.gz
+[2024-06-02 22:16:24] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2024-06-02 22:16:24] INFO root fetch - processPackages [foreverbull]: Downloading https://files.pythonhosted.org/packages/d7/5d/5f518f8cf82bc6e65104e7fd9eb79d6eaaca7b7c222af49792ee3752e2ca/foreverbull-0.0.2406020803.tar.gz
+[2024-06-02 22:16:24] INFO root fetch - processPackages [moto]: Downloading https://files.pythonhosted.org/packages/74/6a/691f8117aba58f45da36de57406430d2a7ff0822cbc28ea6de3f53414044/moto-5.0.9.dev8.tar.gz
+[2024-06-02 22:16:24] INFO root fetch - processPackages [universal-silabs-flasher]: Downloading https://files.pythonhosted.org/packages/1e/19/b52099152cd3d31bfe068c6d308b73149c89b6ee5f2c34b075d481c404b7/universal-silabs-flasher-0.0.8.tar.gz
+[2024-06-02 22:16:24] ERROR root fetch - processPackages [lupin-grognard]: Unable to fetch info: No such project/version 'lupin-grognard' 2.1.0.dev1
+[2024-06-02 22:16:24] INFO root fetch - main [MainThread]: End processing [lupin-grognard] error
+[2024-06-02 22:16:24] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/1c/a2/a7226dfd48c2c6d3e52091175146891f40a2c1c7d20943e8e0560192be85/spanishconjugator-2.3.998.tar.gz
+[2024-06-02 22:16:24] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/1c/a2/a7226dfd48c2c6d3e52091175146891f40a2c1c7d20943e8e0560192be85/spanishconjugator-2.3.998.tar.gz
+[2024-06-02 22:16:24] INFO root fetch - processPackages [copilothistoryexporter]: Downloading https://files.pythonhosted.org/packages/cb/5a/511fb69bc2498a6b2ee8f47a848f7108b9884c76a8c82dbdf74a7645e19a/copilothistoryexporter-1.0.3.3.tar.gz
+[2024-06-02 22:16:24] INFO root fetch - processPackages [pyerualjetwork]: Downloading https://files.pythonhosted.org/packages/f7/8b/4c1553daf2df71330086e4b2d49774b454eb251bfad3afdcf4e7962da82d/pyerualjetwork-2.0.3.tar.gz
+[2024-06-02 22:16:24] INFO root fetch - processPackages [opsvis]: Downloading https://files.pythonhosted.org/packages/0e/f3/089230c1c73d6c9f535fbc287a3b2cd9f519a3b4ffc83123abf9cec96cb2/opsvis-1.1.6.tar.gz
+[2024-06-02 22:16:24] INFO root fetch - processPackages [copilothistoryexporter]: executing diffoscope
+[2024-06-02 22:16:24] INFO root fetch - processPackages [copilothistoryexporter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/copilothistoryexporter-1.0.3.2.tar.gz tmp/copilothistoryexporter-1.0.3.3.tar.gz --markdown 20240602/c/copilothistoryexporter/1.0.3.2-1.0.3.3/README.md --exclude *.pyd
+[2024-06-02 22:16:24] INFO root fetch - processPackages [pyerualjetwork]: executing diffoscope
+[2024-06-02 22:16:24] INFO root fetch - processPackages [pyerualjetwork]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyerualjetwork-2.0.2.tar.gz tmp/pyerualjetwork-2.0.3.tar.gz --markdown 20240602/p/pyerualjetwork/2.0.2-2.0.3/README.md --exclude *.pyd
+[2024-06-02 22:16:24] INFO root fetch - processPackages [opsvis]: executing diffoscope
+[2024-06-02 22:16:24] INFO root fetch - processPackages [opsvis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/opsvis-1.1.5.tar.gz tmp/opsvis-1.1.6.tar.gz --markdown 20240602/o/opsvis/1.1.5-1.1.6/README.md --exclude *.pyd
+[2024-06-02 22:16:24] INFO root fetch - processPackages [pianosdk]: Downloading https://files.pythonhosted.org/packages/b1/ed/d38d21414694a1066fde3258384b586c9e031ea17dafb78aa2525701db47/pianosdk-16.195.1.tar.gz
+[2024-06-02 22:16:24] INFO root fetch - processPackages [foreverbull]: Downloading https://files.pythonhosted.org/packages/cc/78/02251216c70f8d394034eb3329e5a66af05d5e79f028928c7b5808e59f2d/foreverbull-0.0.2406021544.tar.gz
+[2024-06-02 22:16:25] INFO root fetch - processPackages [pianosdk]: executing diffoscope
+[2024-06-02 22:16:25] INFO root fetch - processPackages [pianosdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pianosdk-16.188.1.tar.gz tmp/pianosdk-16.195.1.tar.gz --markdown 20240602/p/pianosdk/16.188.1-16.195.1/README.md --exclude *.pyd
+[2024-06-02 22:16:25] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/38/b5/7c4b33d552653d08874337c2258ccc985f5f1bc589073e61d6e1ccff130e/spanishconjugator-2.3.999.tar.gz
+[2024-06-02 22:16:25] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/38/b5/7c4b33d552653d08874337c2258ccc985f5f1bc589073e61d6e1ccff130e/spanishconjugator-2.3.999.tar.gz
+[2024-06-02 22:16:25] INFO root fetch - processPackages [foreverbull]: executing diffoscope
+[2024-06-02 22:16:25] INFO root fetch - processPackages [foreverbull]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/foreverbull-0.0.2406020803.tar.gz tmp/foreverbull-0.0.2406021544.tar.gz --markdown 20240602/f/foreverbull/0.0.2406020803-0.0.2406021544/README.md --exclude *.pyd
+[2024-06-02 22:16:25] INFO root fetch - processPackages [universal-silabs-flasher]: Downloading https://files.pythonhosted.org/packages/51/7a/dfb609cf4da7d1b7a38a26a59b4306737c2c3baa5472afa708c5c7c6891a/universal-silabs-flasher-0.0.9.tar.gz
+[2024-06-02 22:16:25] INFO root fetch - processPackages [moto]: Downloading https://files.pythonhosted.org/packages/2e/60/914a17a286d989ccb6e05208527b55d03dac0daa620f3c050f3b6cc92a9e/moto-5.0.9.dev9.tar.gz
+[2024-06-02 22:16:25] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2024-06-02 22:16:25] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20240602/s/spanishconjugator/2.3.998-2.3.999/README.md --exclude *.pyd
+[2024-06-02 22:16:25] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2024-06-02 22:16:25] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20240602/s/spanishconjugator/2.3.998-2.3.999/README.md --exclude *.pyd
+[2024-06-02 22:16:25] INFO root fetch - processPackages [universal-silabs-flasher]: executing diffoscope
+[2024-06-02 22:16:25] INFO root fetch - processPackages [universal-silabs-flasher]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/universal-silabs-flasher-0.0.8.tar.gz tmp/universal-silabs-flasher-0.0.9.tar.gz --markdown 20240602/u/universal-silabs-flasher/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-06-02 22:16:25] INFO root fetch - processPackages [copilothistoryexporter]: Remove: archive file [/home/abi/fetcher/tmp/copilothistoryexporter-1.0.3.2.tar.gz]
+[2024-06-02 22:16:25] INFO root fetch - processPackages [copilothistoryexporter]: Remove: archive file [/home/abi/fetcher/tmp/copilothistoryexporter-1.0.3.3.tar.gz]
+[2024-06-02 22:16:25] INFO root fetch - main [MainThread]: End processing [copilothistoryexporter]: success
+[2024-06-02 22:16:25] INFO root fetch - processPackages [moto]: executing diffoscope
+[2024-06-02 22:16:25] INFO root fetch - processPackages [moto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moto-5.0.9.dev8.tar.gz tmp/moto-5.0.9.dev9.tar.gz --markdown 20240602/m/moto/5.0.9.dev8-5.0.9.dev9/README.md --exclude *.pyd
+[2024-06-02 22:16:25] INFO root fetch - processPackages [pyerualjetwork]: Remove: archive file [/home/abi/fetcher/tmp/pyerualjetwork-2.0.2.tar.gz]
+[2024-06-02 22:16:25] INFO root fetch - processPackages [pyerualjetwork]: Remove: archive file [/home/abi/fetcher/tmp/pyerualjetwork-2.0.3.tar.gz]
+[2024-06-02 22:16:25] INFO root fetch - main [MainThread]: End processing [pyerualjetwork]: success
+[2024-06-02 22:16:25] INFO root fetch - processPackages [opsvis]: Remove: archive file [/home/abi/fetcher/tmp/opsvis-1.1.5.tar.gz]
+[2024-06-02 22:16:25] INFO root fetch - processPackages [opsvis]: Remove: archive file [/home/abi/fetcher/tmp/opsvis-1.1.6.tar.gz]
+[2024-06-02 22:16:25] INFO root fetch - main [MainThread]: End processing [opsvis]: success
+[2024-06-02 22:16:26] INFO root fetch - processPackages [spanishconjugator]: Remove: archive file [/home/abi/fetcher/tmp/spanishconjugator-2.3.998.tar.gz]
+[2024-06-02 22:16:26] INFO root fetch - processPackages [spanishconjugator]: Remove: archive file [/home/abi/fetcher/tmp/spanishconjugator-2.3.999.tar.gz]
+[2024-06-02 22:16:26] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2024-06-02 22:16:26] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2024-06-02 22:16:26] INFO root fetch - processPackages [foreverbull]: Remove: archive file [/home/abi/fetcher/tmp/foreverbull-0.0.2406020803.tar.gz]
+[2024-06-02 22:16:26] INFO root fetch - processPackages [foreverbull]: Remove: archive file [/home/abi/fetcher/tmp/foreverbull-0.0.2406021544.tar.gz]
+[2024-06-02 22:16:26] INFO root fetch - main [MainThread]: End processing [foreverbull]: success
+[2024-06-02 22:16:26] INFO root fetch - processPackages [universal-silabs-flasher]: Remove: archive file [/home/abi/fetcher/tmp/universal-silabs-flasher-0.0.8.tar.gz]
+[2024-06-02 22:16:26] INFO root fetch - processPackages [universal-silabs-flasher]: Remove: archive file [/home/abi/fetcher/tmp/universal-silabs-flasher-0.0.9.tar.gz]
+[2024-06-02 22:16:26] INFO root fetch - main [MainThread]: End processing [universal-silabs-flasher]: success
+[2024-06-02 22:16:26] INFO root fetch - processPackages [pianosdk]: Remove: archive file [/home/abi/fetcher/tmp/pianosdk-16.188.1.tar.gz]
+[2024-06-02 22:16:26] INFO root fetch - processPackages [pianosdk]: Remove: archive file [/home/abi/fetcher/tmp/pianosdk-16.195.1.tar.gz]
+[2024-06-02 22:16:26] INFO root fetch - main [MainThread]: End processing [pianosdk]: success
+[2024-06-02 22:16:37] INFO root fetch - processPackages [moto]: Remove: archive file [/home/abi/fetcher/tmp/moto-5.0.9.dev8.tar.gz]
+[2024-06-02 22:16:37] INFO root fetch - processPackages [moto]: Remove: archive file [/home/abi/fetcher/tmp/moto-5.0.9.dev9.tar.gz]
+[2024-06-02 22:16:37] INFO root fetch - main [MainThread]: End processing [moto]: success
+[2024-06-02 22:16:37] INFO root fetch - main [MainThread]: Store serial: [23492806]
