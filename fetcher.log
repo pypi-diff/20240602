@@ -7539,3 +7539,51 @@
 [2024-06-02 12:26:27] INFO root fetch - processPackages [appier]: Remove: archive file [/home/abi/fetcher/tmp/appier-1.9.9.tar.gz]
 [2024-06-02 12:26:27] INFO root fetch - main [MainThread]: End processing [appier]: success
 [2024-06-02 12:26:27] INFO root fetch - main [MainThread]: Store serial: [23488097]
+[2024-06-02 12:28:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23488097]
+[2024-06-02 12:28:35] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-06-02 12:28:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: stashconnect
+[2024-06-02 12:28:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: scrapegraphai
+[2024-06-02 12:28:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: python-moss
+[2024-06-02 12:28:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: danila-lib
+[2024-06-02 12:28:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pgn-clis
+[2024-06-02 12:28:35] INFO root fetch - processPackages [python-moss]: New version: [0.3.2] Old Version: [0.3.1]
+[2024-06-02 12:28:35] INFO root fetch - processPackages [danila-lib]: New version: [1.8.5] Old Version: [1.8.4]
+[2024-06-02 12:28:35] INFO root fetch - processPackages [stashconnect]: New version: [0.8.2] Old Version: [0.8.1]
+[2024-06-02 12:28:35] INFO root fetch - processPackages [pgn-clis]: New version: [0.1.9] Old Version: [0.1.7]
+[2024-06-02 12:28:35] INFO root fetch - processPackages [python-moss]: Downloading https://files.pythonhosted.org/packages/cf/3e/77800ce21fd249f394f2d288f3d908bbf24010dbcdb4e0a4c74f40772cf8/python_moss-0.3.1-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-06-02 12:28:35] INFO root fetch - processPackages [danila-lib]: Downloading https://files.pythonhosted.org/packages/c5/39/757bca22a449630c4f1b8cadcfa0a32f2b456e0267df3788f99d7d27ed0d/danila-lib-1.8.4.tar.gz
+[2024-06-02 12:28:35] INFO root fetch - processPackages [scrapegraphai]: New version: [1.6.0b1] Old Version: [1.5.5b1]
+[2024-06-02 12:28:35] INFO root fetch - processPackages [stashconnect]: Downloading https://files.pythonhosted.org/packages/39/b2/a4da5202efdad1a3f76ca31047b68ee72ee4a5a4f6b4c912a163bc7d0cac/stashconnect-0.8.1.tar.gz
+[2024-06-02 12:28:35] INFO root fetch - processPackages [pgn-clis]: Downloading https://files.pythonhosted.org/packages/44/3c/e19eb232037dd98c9146865a34e22ea5333d8ca0b0f7d7f1bd6b13566f18/pgn_clis-0.1.7.tar.gz
+[2024-06-02 12:28:35] INFO root fetch - processPackages [scrapegraphai]: Downloading https://files.pythonhosted.org/packages/fb/f5/9c216e277c8e3bc2b6621f7819bb509e6e5eb3ffd8c6897068f403ebd403/scrapegraphai-1.5.5b1.tar.gz
+[2024-06-02 12:28:35] INFO root fetch - processPackages [pgn-clis]: Downloading https://files.pythonhosted.org/packages/89/d5/1ab48ea4e65547bf52f440d5509e10c877616541956047cb21790eb9ccd8/pgn_clis-0.1.9.tar.gz
+[2024-06-02 12:28:35] INFO root fetch - processPackages [danila-lib]: Downloading https://files.pythonhosted.org/packages/c3/0a/bb9e6276e1b71b006ac55cbd6f0761cb3568bfb3fa5f98ff0633e02699cf/danila-lib-1.8.5.tar.gz
+[2024-06-02 12:28:36] INFO root fetch - processPackages [pgn-clis]: executing diffoscope
+[2024-06-02 12:28:36] INFO root fetch - processPackages [pgn-clis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pgn_clis-0.1.7.tar.gz tmp/pgn_clis-0.1.9.tar.gz --markdown 20240602/p/pgn-clis/0.1.7-0.1.9/README.md --exclude *.pyd
+[2024-06-02 12:28:36] INFO root fetch - processPackages [stashconnect]: Downloading https://files.pythonhosted.org/packages/14/df/94b0f3a3829ed535932be724390eb15c24dc4e509cee26b14e087544c8be/stashconnect-0.8.2.tar.gz
+[2024-06-02 12:28:36] INFO root fetch - processPackages [danila-lib]: executing diffoscope
+[2024-06-02 12:28:36] INFO root fetch - processPackages [danila-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/danila-lib-1.8.4.tar.gz tmp/danila-lib-1.8.5.tar.gz --markdown 20240602/d/danila-lib/1.8.4-1.8.5/README.md --exclude *.pyd
+[2024-06-02 12:28:36] INFO root fetch - processPackages [stashconnect]: executing diffoscope
+[2024-06-02 12:28:36] INFO root fetch - processPackages [stashconnect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stashconnect-0.8.1.tar.gz tmp/stashconnect-0.8.2.tar.gz --markdown 20240602/s/stashconnect/0.8.1-0.8.2/README.md --exclude *.pyd
+[2024-06-02 12:28:36] INFO root fetch - processPackages [python-moss]: Downloading https://files.pythonhosted.org/packages/e3/47/723ac5453b917022db9cf348cc0d3790980cd4c97438ff18458d4c12e09d/python_moss-0.3.2-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-06-02 12:28:36] INFO root fetch - processPackages [scrapegraphai]: Downloading https://files.pythonhosted.org/packages/d2/b1/fa4d44e271f59a4a439947dcfeac0715635269b7882138bd24b29544e0e8/scrapegraphai-1.6.0b1.tar.gz
+[2024-06-02 12:28:36] INFO root fetch - processPackages [pgn-clis]: Remove: archive file [/home/abi/fetcher/tmp/pgn_clis-0.1.7.tar.gz]
+[2024-06-02 12:28:36] INFO root fetch - processPackages [pgn-clis]: Remove: archive file [/home/abi/fetcher/tmp/pgn_clis-0.1.9.tar.gz]
+[2024-06-02 12:28:36] INFO root fetch - main [MainThread]: End processing [pgn-clis]: success
+[2024-06-02 12:28:36] INFO root fetch - processPackages [scrapegraphai]: executing diffoscope
+[2024-06-02 12:28:36] INFO root fetch - processPackages [scrapegraphai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scrapegraphai-1.5.5b1.tar.gz tmp/scrapegraphai-1.6.0b1.tar.gz --markdown 20240602/s/scrapegraphai/1.5.5b1-1.6.0b1/README.md --exclude *.pyd
+[2024-06-02 12:28:36] INFO root fetch - processPackages [danila-lib]: Remove: archive file [/home/abi/fetcher/tmp/danila-lib-1.8.4.tar.gz]
+[2024-06-02 12:28:36] INFO root fetch - processPackages [danila-lib]: Remove: archive file [/home/abi/fetcher/tmp/danila-lib-1.8.5.tar.gz]
+[2024-06-02 12:28:36] INFO root fetch - main [MainThread]: End processing [danila-lib]: success
+[2024-06-02 12:28:36] INFO root fetch - processPackages [stashconnect]: Remove: archive file [/home/abi/fetcher/tmp/stashconnect-0.8.1.tar.gz]
+[2024-06-02 12:28:36] INFO root fetch - processPackages [stashconnect]: Remove: archive file [/home/abi/fetcher/tmp/stashconnect-0.8.2.tar.gz]
+[2024-06-02 12:28:36] INFO root fetch - main [MainThread]: End processing [stashconnect]: success
+[2024-06-02 12:28:37] INFO root fetch - processPackages [python-moss]: executing diffoscope
+[2024-06-02 12:28:37] INFO root fetch - processPackages [python-moss]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_moss-0.3.1-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/python_moss-0.3.2-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20240602/p/python-moss/0.3.1-0.3.2/README.md --exclude *.pyd
+[2024-06-02 12:28:38] INFO root fetch - processPackages [scrapegraphai]: Remove: archive file [/home/abi/fetcher/tmp/scrapegraphai-1.5.5b1.tar.gz]
+[2024-06-02 12:28:38] INFO root fetch - processPackages [scrapegraphai]: Remove: archive file [/home/abi/fetcher/tmp/scrapegraphai-1.6.0b1.tar.gz]
+[2024-06-02 12:28:38] INFO root fetch - main [MainThread]: End processing [scrapegraphai]: success
+[2024-06-02 12:29:31] INFO root fetch - processPackages [python-moss]: Remove: archive file [/home/abi/fetcher/tmp/python_moss-0.3.1-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-06-02 12:29:31] INFO root fetch - processPackages [python-moss]: Remove: archive file [/home/abi/fetcher/tmp/python_moss-0.3.2-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-06-02 12:29:31] INFO root fetch - main [MainThread]: End processing [python-moss]: success
+[2024-06-02 12:29:31] INFO root fetch - main [MainThread]: Store serial: [23488115]
