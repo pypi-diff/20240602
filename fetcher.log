@@ -6140,3 +6140,18 @@
 [2024-06-02 10:23:56] INFO root fetch - processPackages [pyoload]: Remove: archive file [/home/abi/fetcher/tmp/pyoload-1.1.1.tar.gz]
 [2024-06-02 10:23:56] INFO root fetch - main [MainThread]: End processing [pyoload]: success
 [2024-06-02 10:23:56] INFO root fetch - main [MainThread]: Store serial: [23487370]
+[2024-06-02 10:26:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23487370]
+[2024-06-02 10:26:04] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-02 10:26:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tree-sitter-arduino
+[2024-06-02 10:26:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: patternlib
+[2024-06-02 10:26:05] WARNING root fetch - processPackages [patternlib]: Skipping, unable to determine old version
+[2024-06-02 10:26:05] INFO root fetch - main [MainThread]: End processing [patternlib] error
+[2024-06-02 10:26:05] INFO root fetch - processPackages [tree-sitter-arduino]: New version: [0.21.1] Old Version: [0.21.0]
+[2024-06-02 10:26:05] INFO root fetch - processPackages [tree-sitter-arduino]: Downloading https://files.pythonhosted.org/packages/e7/73/93d57e34f7021cce56cfa49c48cfe0b3a9035ce460b2131623f2be13188c/tree_sitter_arduino-0.21.0-cp38-abi3-win_amd64.whl
+[2024-06-02 10:26:06] INFO root fetch - processPackages [tree-sitter-arduino]: Downloading https://files.pythonhosted.org/packages/bb/35/507503e1fb265106fc0317f23100cb97c9bb8ee17e7443e0bdb3724a7d41/tree-sitter-arduino-0.21.1.tar.gz
+[2024-06-02 10:26:06] INFO root fetch - processPackages [tree-sitter-arduino]: executing diffoscope
+[2024-06-02 10:26:06] INFO root fetch - processPackages [tree-sitter-arduino]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tree_sitter_arduino-0.21.0-cp38-abi3-win_amd64.whl.zip tmp/tree-sitter-arduino-0.21.1.tar.gz --markdown 20240602/t/tree-sitter-arduino/0.21.0-0.21.1/README.md --exclude *.pyd
+[2024-06-02 10:26:08] INFO root fetch - processPackages [tree-sitter-arduino]: Remove: archive file [/home/abi/fetcher/tmp/tree_sitter_arduino-0.21.0-cp38-abi3-win_amd64.whl.zip]
+[2024-06-02 10:26:08] INFO root fetch - processPackages [tree-sitter-arduino]: Remove: archive file [/home/abi/fetcher/tmp/tree-sitter-arduino-0.21.1.tar.gz]
+[2024-06-02 10:26:08] INFO root fetch - main [MainThread]: End processing [tree-sitter-arduino]: success
+[2024-06-02 10:26:08] INFO root fetch - main [MainThread]: Store serial: [23487384]
