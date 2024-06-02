@@ -20893,3 +20893,45 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 23:25:29] INFO root fetch - processPackages [scalex]: Remove: archive file [/home/abi/fetcher/tmp/scalex-1.0.4.tar.gz]
 [2024-06-02 23:25:29] INFO root fetch - main [MainThread]: End processing [scalex]: success
 [2024-06-02 23:25:29] INFO root fetch - main [MainThread]: Store serial: [23493931]
+[2024-06-02 23:27:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23493931]
+[2024-06-02 23:27:38] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-06-02 23:27:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: py4web
+[2024-06-02 23:27:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: swc-utils
+[2024-06-02 23:27:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: orig
+[2024-06-02 23:27:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: protoc-polyglot
+[2024-06-02 23:27:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mlfab
+[2024-06-02 23:27:38] INFO root fetch - processPackages [protoc-polyglot]: New version: [0.0.1.post9] Old Version: [0.0.1.post8]
+[2024-06-02 23:27:38] INFO root fetch - processPackages [swc-utils]: New version: [0.3.1] Old Version: [0.2.1]
+[2024-06-02 23:27:38] INFO root fetch - processPackages [protoc-polyglot]: Downloading https://files.pythonhosted.org/packages/e9/7b/373a68a962cdfb85f4bd76f6f4ea13ad3f2cfaca73bf0a9f70d0e7d34380/protoc_polyglot-0.0.1.post8.tar.gz
+[2024-06-02 23:27:38] INFO root fetch - processPackages [mlfab]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-06-02 23:27:38] WARNING root fetch - processPackages [orig]: Skipping, unable to determine old version
+[2024-06-02 23:27:38] INFO root fetch - main [MainThread]: End processing [orig] error
+[2024-06-02 23:27:38] INFO root fetch - processPackages [py4web]: New version: [1.20240602.1] Old Version: [1.20240530.2]
+[2024-06-02 23:27:38] INFO root fetch - processPackages [protoc-polyglot]: Downloading https://files.pythonhosted.org/packages/01/80/bdadb218d1c3271c3a258316c3d5991f2676b54e6f358ac689f9495990f5/protoc_polyglot-0.0.1.post9.tar.gz
+[2024-06-02 23:27:38] INFO root fetch - processPackages [swc-utils]: Downloading https://files.pythonhosted.org/packages/8e/4a/baea46992811e62201bf806a6542d56b335b00b388e5636f082e31dc6656/swc_utils-0.2.1.tar.gz
+[2024-06-02 23:27:38] INFO root fetch - processPackages [py4web]: Downloading https://files.pythonhosted.org/packages/fc/01/3374a664586673e12950a2b18869a3d9b9368826c5f081a12b813894f6b0/py4web-1.20240530.2.tar.gz
+[2024-06-02 23:27:38] INFO root fetch - processPackages [mlfab]: Downloading https://files.pythonhosted.org/packages/c4/72/85d3c3a95ee721e23153609f999bdf722318ecd5c35c5628d184be3053ac/mlfab-0.1.8.tar.gz
+[2024-06-02 23:27:38] INFO root fetch - processPackages [protoc-polyglot]: executing diffoscope
+[2024-06-02 23:27:38] INFO root fetch - processPackages [protoc-polyglot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/protoc_polyglot-0.0.1.post8.tar.gz tmp/protoc_polyglot-0.0.1.post9.tar.gz --markdown 20240602/p/protoc-polyglot/0.0.1.post8-0.0.1.post9/README.md --exclude *.pyd
+[2024-06-02 23:27:38] INFO root fetch - processPackages [swc-utils]: Downloading https://files.pythonhosted.org/packages/98/8c/5857f78d9945c326d0316468a96f5d113d562209558272b7328437280eea/swc_utils-0.3.1.tar.gz
+[2024-06-02 23:27:39] INFO root fetch - processPackages [mlfab]: Downloading https://files.pythonhosted.org/packages/0e/87/ef727427b8dfe81acffbb1f26533da2a70f85e7beb67451421ead578c9a1/mlfab-0.1.9.tar.gz
+[2024-06-02 23:27:39] INFO root fetch - processPackages [swc-utils]: executing diffoscope
+[2024-06-02 23:27:39] INFO root fetch - processPackages [swc-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/swc_utils-0.2.1.tar.gz tmp/swc_utils-0.3.1.tar.gz --markdown 20240602/s/swc-utils/0.2.1-0.3.1/README.md --exclude *.pyd
+[2024-06-02 23:27:39] INFO root fetch - processPackages [mlfab]: executing diffoscope
+[2024-06-02 23:27:39] INFO root fetch - processPackages [mlfab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlfab-0.1.8.tar.gz tmp/mlfab-0.1.9.tar.gz --markdown 20240602/m/mlfab/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-06-02 23:27:39] INFO root fetch - processPackages [py4web]: Downloading https://files.pythonhosted.org/packages/d0/96/729da907ebfdf31b263c6956d35394c7dfe64fdc09ad06275a434ebb6655/py4web-1.20240602.1.tar.gz
+[2024-06-02 23:27:39] INFO root fetch - processPackages [protoc-polyglot]: Remove: archive file [/home/abi/fetcher/tmp/protoc_polyglot-0.0.1.post8.tar.gz]
+[2024-06-02 23:27:39] INFO root fetch - processPackages [protoc-polyglot]: Remove: archive file [/home/abi/fetcher/tmp/protoc_polyglot-0.0.1.post9.tar.gz]
+[2024-06-02 23:27:39] INFO root fetch - main [MainThread]: End processing [protoc-polyglot]: success
+[2024-06-02 23:27:39] INFO root fetch - processPackages [py4web]: executing diffoscope
+[2024-06-02 23:27:39] INFO root fetch - processPackages [py4web]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py4web-1.20240530.2.tar.gz tmp/py4web-1.20240602.1.tar.gz --markdown 20240602/p/py4web/1.20240530.2-1.20240602.1/README.md --exclude *.pyd
+[2024-06-02 23:27:39] INFO root fetch - processPackages [swc-utils]: Remove: archive file [/home/abi/fetcher/tmp/swc_utils-0.2.1.tar.gz]
+[2024-06-02 23:27:39] INFO root fetch - processPackages [swc-utils]: Remove: archive file [/home/abi/fetcher/tmp/swc_utils-0.3.1.tar.gz]
+[2024-06-02 23:27:39] INFO root fetch - main [MainThread]: End processing [swc-utils]: success
+[2024-06-02 23:27:40] INFO root fetch - processPackages [mlfab]: Remove: archive file [/home/abi/fetcher/tmp/mlfab-0.1.8.tar.gz]
+[2024-06-02 23:27:40] INFO root fetch - processPackages [mlfab]: Remove: archive file [/home/abi/fetcher/tmp/mlfab-0.1.9.tar.gz]
+[2024-06-02 23:27:40] INFO root fetch - main [MainThread]: End processing [mlfab]: success
+[2024-06-02 23:27:46] INFO root fetch - processPackages [py4web]: Remove: archive file [/home/abi/fetcher/tmp/py4web-1.20240530.2.tar.gz]
+[2024-06-02 23:27:46] INFO root fetch - processPackages [py4web]: Remove: archive file [/home/abi/fetcher/tmp/py4web-1.20240602.1.tar.gz]
+[2024-06-02 23:27:46] INFO root fetch - main [MainThread]: End processing [py4web]: success
+[2024-06-02 23:27:46] INFO root fetch - main [MainThread]: Store serial: [23493947]
