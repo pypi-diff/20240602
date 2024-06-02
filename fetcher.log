@@ -3801,3 +3801,20 @@
 [2024-06-02 06:22:42] INFO root fetch - processPackages [aixhello]: Remove: archive file [/home/abi/fetcher/tmp/aixhello-3.3.tar.gz]
 [2024-06-02 06:22:42] INFO root fetch - main [MainThread]: End processing [aixhello]: success
 [2024-06-02 06:22:42] INFO root fetch - main [MainThread]: Store serial: [23486027]
+[2024-06-02 06:24:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23486027]
+[2024-06-02 06:24:51] INFO root fetch - main [MainThread]: No changed packages found
+[2024-06-02 06:26:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23486027]
+[2024-06-02 06:26:56] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-02 06:26:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: canaddress
+[2024-06-02 06:26:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ezcoding
+[2024-06-02 06:26:56] ERROR root fetch - processPackages [canaddress]: Unable to get metadata: No such project 'canaddress'
+[2024-06-02 06:26:56] INFO root fetch - main [MainThread]: End processing [canaddress] error
+[2024-06-02 06:26:56] INFO root fetch - processPackages [ezcoding]: New version: [0.2.3] Old Version: [0.2.2]
+[2024-06-02 06:26:56] INFO root fetch - processPackages [ezcoding]: Downloading https://files.pythonhosted.org/packages/ed/c8/1b1b97e77223b13df30bf08f8878e7d83d1a27cf5810145e66f2f325a484/ezcoding-0.2.2.tar.gz
+[2024-06-02 06:26:57] INFO root fetch - processPackages [ezcoding]: Downloading https://files.pythonhosted.org/packages/af/55/06a7713a0d02b1121fbab66bd4ceef2acdd8fac461b59f6919a35502fe9d/ezcoding-0.2.3.tar.gz
+[2024-06-02 06:26:57] INFO root fetch - processPackages [ezcoding]: executing diffoscope
+[2024-06-02 06:26:57] INFO root fetch - processPackages [ezcoding]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ezcoding-0.2.2.tar.gz tmp/ezcoding-0.2.3.tar.gz --markdown 20240602/e/ezcoding/0.2.2-0.2.3/README.md --exclude *.pyd
+[2024-06-02 06:26:57] INFO root fetch - processPackages [ezcoding]: Remove: archive file [/home/abi/fetcher/tmp/ezcoding-0.2.2.tar.gz]
+[2024-06-02 06:26:57] INFO root fetch - processPackages [ezcoding]: Remove: archive file [/home/abi/fetcher/tmp/ezcoding-0.2.3.tar.gz]
+[2024-06-02 06:26:57] INFO root fetch - main [MainThread]: End processing [ezcoding]: success
+[2024-06-02 06:26:57] INFO root fetch - main [MainThread]: Store serial: [23486036]
