@@ -3324,3 +3324,15 @@
 [2024-06-02 04:58:57] INFO root fetch - processPackages [joyrl]: Remove: archive file [/home/abi/fetcher/tmp/joyrl-0.6.1.2.tar.gz]
 [2024-06-02 04:58:57] INFO root fetch - main [MainThread]: End processing [joyrl]: success
 [2024-06-02 04:58:57] INFO root fetch - main [MainThread]: Store serial: [23485772]
+[2024-06-02 05:01:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23485772]
+[2024-06-02 05:01:05] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-02 05:01:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aixhello
+[2024-06-02 05:01:05] INFO root fetch - processPackages [aixhello]: New version: [3.1] Old Version: [3.0]
+[2024-06-02 05:01:05] INFO root fetch - processPackages [aixhello]: Downloading https://files.pythonhosted.org/packages/56/25/02d8e65834bbfde2424f4914971a4d587aa56026b1403f22f40759197390/aixhello-3.0.tar.gz
+[2024-06-02 05:01:05] INFO root fetch - processPackages [aixhello]: Downloading https://files.pythonhosted.org/packages/34/ec/88a1fca684c924bf750504b134160f23b0af55920fcadb1c79069f81c8a4/aixhello-3.1.tar.gz
+[2024-06-02 05:01:05] INFO root fetch - processPackages [aixhello]: executing diffoscope
+[2024-06-02 05:01:05] INFO root fetch - processPackages [aixhello]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aixhello-3.0.tar.gz tmp/aixhello-3.1.tar.gz --markdown 20240602/a/aixhello/3.0-3.1/README.md --exclude *.pyd
+[2024-06-02 05:01:06] INFO root fetch - processPackages [aixhello]: Remove: archive file [/home/abi/fetcher/tmp/aixhello-3.0.tar.gz]
+[2024-06-02 05:01:06] INFO root fetch - processPackages [aixhello]: Remove: archive file [/home/abi/fetcher/tmp/aixhello-3.1.tar.gz]
+[2024-06-02 05:01:06] INFO root fetch - main [MainThread]: End processing [aixhello]: success
+[2024-06-02 05:01:06] INFO root fetch - main [MainThread]: Store serial: [23485775]
