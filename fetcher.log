@@ -5746,3 +5746,30 @@
 [2024-06-02 09:49:18] INFO root fetch - processPackages [unstract-sdk]: Remove: archive file [/home/abi/fetcher/tmp/unstract_sdk-0.9.0.tar.gz]
 [2024-06-02 09:49:18] INFO root fetch - main [MainThread]: End processing [unstract-sdk]: success
 [2024-06-02 09:49:18] INFO root fetch - main [MainThread]: Store serial: [23487182]
+[2024-06-02 09:51:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23487182]
+[2024-06-02 09:51:26] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-02 09:51:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: openai-batch-sdk
+[2024-06-02 09:51:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pytest-zcc
+[2024-06-02 09:51:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: TorU
+[2024-06-02 09:51:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: CI-CloudConnector
+[2024-06-02 09:51:26] INFO root fetch - processPackages [openai-batch-sdk]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-06-02 09:51:26] INFO root fetch - processPackages [openai-batch-sdk]: Downloading https://files.pythonhosted.org/packages/06/3e/bd0bdc8a14db86c4368a4fdfd50821a85c4a80af06ead549342a979ae7fb/openai_batch_sdk-0.1.1.tar.gz
+[2024-06-02 09:51:26] WARNING root fetch - processPackages [TorU]: Skipping, unable to determine old version
+[2024-06-02 09:51:26] INFO root fetch - main [MainThread]: End processing [TorU] error
+[2024-06-02 09:51:26] WARNING root fetch - processPackages [pytest-zcc]: Skipping, unable to determine old version
+[2024-06-02 09:51:26] INFO root fetch - main [MainThread]: End processing [pytest-zcc] error
+[2024-06-02 09:51:26] INFO root fetch - processPackages [CI-CloudConnector]: New version: [2.6] Old Version: [2.5]
+[2024-06-02 09:51:27] INFO root fetch - processPackages [CI-CloudConnector]: Downloading https://files.pythonhosted.org/packages/17/bb/9dc99050d9d2c21c5107a695cac213a276e604a7350e46c46786a805446d/ci_cloudconnector-2.5.tar.gz
+[2024-06-02 09:51:27] INFO root fetch - processPackages [openai-batch-sdk]: Downloading https://files.pythonhosted.org/packages/9a/24/7624122602647270860a26bb1243ccb560ed386851b17e9a419c06ce2381/openai_batch_sdk-0.1.2.tar.gz
+[2024-06-02 09:51:27] INFO root fetch - processPackages [openai-batch-sdk]: executing diffoscope
+[2024-06-02 09:51:27] INFO root fetch - processPackages [openai-batch-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openai_batch_sdk-0.1.1.tar.gz tmp/openai_batch_sdk-0.1.2.tar.gz --markdown 20240602/o/openai-batch-sdk/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-06-02 09:51:27] INFO root fetch - processPackages [CI-CloudConnector]: Downloading https://files.pythonhosted.org/packages/74/97/b7246d7b8add29f8deb1ef4cd9b7da7f5b3ba92a4bbb7f890a7143e1eaf4/ci_cloudconnector-2.6.tar.gz
+[2024-06-02 09:51:27] INFO root fetch - processPackages [CI-CloudConnector]: executing diffoscope
+[2024-06-02 09:51:27] INFO root fetch - processPackages [CI-CloudConnector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ci_cloudconnector-2.5.tar.gz tmp/ci_cloudconnector-2.6.tar.gz --markdown 20240602/C/CI-CloudConnector/2.5-2.6/README.md --exclude *.pyd
+[2024-06-02 09:51:27] INFO root fetch - processPackages [openai-batch-sdk]: Remove: archive file [/home/abi/fetcher/tmp/openai_batch_sdk-0.1.1.tar.gz]
+[2024-06-02 09:51:27] INFO root fetch - processPackages [openai-batch-sdk]: Remove: archive file [/home/abi/fetcher/tmp/openai_batch_sdk-0.1.2.tar.gz]
+[2024-06-02 09:51:27] INFO root fetch - main [MainThread]: End processing [openai-batch-sdk]: success
+[2024-06-02 09:51:28] INFO root fetch - processPackages [CI-CloudConnector]: Remove: archive file [/home/abi/fetcher/tmp/ci_cloudconnector-2.5.tar.gz]
+[2024-06-02 09:51:28] INFO root fetch - processPackages [CI-CloudConnector]: Remove: archive file [/home/abi/fetcher/tmp/ci_cloudconnector-2.6.tar.gz]
+[2024-06-02 09:51:28] INFO root fetch - main [MainThread]: End processing [CI-CloudConnector]: success
+[2024-06-02 09:51:28] INFO root fetch - main [MainThread]: Store serial: [23487198]
