@@ -12402,3 +12402,33 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 17:36:28] INFO root fetch - processPackages [janim]: Remove: archive file [/home/abi/fetcher/tmp/janim-1.2.2.tar.gz]
 [2024-06-02 17:36:28] INFO root fetch - main [MainThread]: End processing [janim]: success
 [2024-06-02 17:36:28] INFO root fetch - main [MainThread]: Store serial: [23490177]
+[2024-06-02 17:38:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23490177]
+[2024-06-02 17:38:37] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-02 17:38:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: glide-for-redis
+[2024-06-02 17:38:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: message-local
+[2024-06-02 17:38:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: qwak-core
+[2024-06-02 17:38:37] INFO root fetch - processPackages [message-local]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-06-02 17:38:37] INFO root fetch - processPackages [glide-for-redis]: New version: [0.4.1rc5] Old Version: [0.4.1rc4]
+[2024-06-02 17:38:37] INFO root fetch - processPackages [qwak-core]: New version: [0.4.9] Old Version: [0.4.8]
+[2024-06-02 17:38:37] INFO root fetch - processPackages [message-local]: Downloading https://files.pythonhosted.org/packages/58/98/6002a91d9f0eb23b635ecf892333a787e13c1e810b92090bc53584aa2f18/message-local-0.0.98.tar.gz
+[2024-06-02 17:38:37] INFO root fetch - processPackages [glide-for-redis]: Downloading https://files.pythonhosted.org/packages/96/bd/fe0c9453857cd6da6e0a7e881bd4551d33019091897822b4dfcd14989641/glide_for_redis-0.4.1rc4-cp39-cp39-manylinux_2_28_aarch64.whl
+[2024-06-02 17:38:37] INFO root fetch - processPackages [qwak-core]: Downloading https://files.pythonhosted.org/packages/40/dc/9bf7a0a11e5d16704620fd9a2d038eee79e38d502983f2c9975412d1053c/qwak_core-0.4.8.tar.gz
+[2024-06-02 17:38:37] INFO root fetch - processPackages [message-local]: Downloading https://files.pythonhosted.org/packages/78/17/d149670c7821186afe25a7b74020f68bd8db48497b170965d75952fbe2d8/message-local-0.0.99.tar.gz
+[2024-06-02 17:38:37] INFO root fetch - processPackages [qwak-core]: Downloading https://files.pythonhosted.org/packages/fe/09/8867573c92d18e200499a583b45f6adb1552d9e721e39370c8aa578b7080/qwak_core-0.4.9.tar.gz
+[2024-06-02 17:38:37] INFO root fetch - processPackages [message-local]: executing diffoscope
+[2024-06-02 17:38:37] INFO root fetch - processPackages [message-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/message-local-0.0.98.tar.gz tmp/message-local-0.0.99.tar.gz --markdown 20240602/m/message-local/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-06-02 17:38:38] INFO root fetch - processPackages [qwak-core]: executing diffoscope
+[2024-06-02 17:38:38] INFO root fetch - processPackages [qwak-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qwak_core-0.4.8.tar.gz tmp/qwak_core-0.4.9.tar.gz --markdown 20240602/q/qwak-core/0.4.8-0.4.9/README.md --exclude *.pyd
+[2024-06-02 17:38:38] INFO root fetch - processPackages [glide-for-redis]: Downloading https://files.pythonhosted.org/packages/0c/7c/dcdeb945380ea6d168bb3a50aa131bbb28926bf86362d4966387419822cf/glide_for_redis-0.4.1rc5-cp39-cp39-manylinux_2_28_aarch64.whl
+[2024-06-02 17:38:38] INFO root fetch - processPackages [glide-for-redis]: executing diffoscope
+[2024-06-02 17:38:38] INFO root fetch - processPackages [glide-for-redis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/glide_for_redis-0.4.1rc4-cp39-cp39-manylinux_2_28_aarch64.whl.zip tmp/glide_for_redis-0.4.1rc5-cp39-cp39-manylinux_2_28_aarch64.whl.zip --markdown 20240602/g/glide-for-redis/0.4.1rc4-0.4.1rc5/README.md --exclude *.pyd
+[2024-06-02 17:38:38] INFO root fetch - processPackages [message-local]: Remove: archive file [/home/abi/fetcher/tmp/message-local-0.0.98.tar.gz]
+[2024-06-02 17:38:38] INFO root fetch - processPackages [message-local]: Remove: archive file [/home/abi/fetcher/tmp/message-local-0.0.99.tar.gz]
+[2024-06-02 17:38:38] INFO root fetch - main [MainThread]: End processing [message-local]: success
+[2024-06-02 17:38:40] INFO root fetch - processPackages [qwak-core]: Remove: archive file [/home/abi/fetcher/tmp/qwak_core-0.4.8.tar.gz]
+[2024-06-02 17:38:40] INFO root fetch - processPackages [qwak-core]: Remove: archive file [/home/abi/fetcher/tmp/qwak_core-0.4.9.tar.gz]
+[2024-06-02 17:38:40] INFO root fetch - main [MainThread]: End processing [qwak-core]: success
+[2024-06-02 17:38:50] INFO root fetch - processPackages [glide-for-redis]: Remove: archive file [/home/abi/fetcher/tmp/glide_for_redis-0.4.1rc4-cp39-cp39-manylinux_2_28_aarch64.whl.zip]
+[2024-06-02 17:38:50] INFO root fetch - processPackages [glide-for-redis]: Remove: archive file [/home/abi/fetcher/tmp/glide_for_redis-0.4.1rc5-cp39-cp39-manylinux_2_28_aarch64.whl.zip]
+[2024-06-02 17:38:50] INFO root fetch - main [MainThread]: End processing [glide-for-redis]: success
+[2024-06-02 17:38:50] INFO root fetch - main [MainThread]: Store serial: [23490204]
