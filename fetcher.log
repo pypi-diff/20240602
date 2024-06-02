@@ -16668,3 +16668,18 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 21:00:30] INFO root fetch - processPackages [pyiwe]: Remove: archive file [/home/abi/fetcher/tmp/pyiwe-0.0.8.post2-py3-none-any.whl.zip]
 [2024-06-02 21:00:30] INFO root fetch - main [MainThread]: End processing [pyiwe]: success
 [2024-06-02 21:00:30] INFO root fetch - main [MainThread]: Store serial: [23492229]
+[2024-06-02 21:02:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23492229]
+[2024-06-02 21:02:39] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-02 21:02:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tinydata
+[2024-06-02 21:02:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: flake8-classmethod-staticmethod
+[2024-06-02 21:02:39] INFO root fetch - processPackages [flake8-classmethod-staticmethod]: New version: [2.1] Old Version: [2.0]
+[2024-06-02 21:02:39] WARNING root fetch - processPackages [tinydata]: Skipping, unable to determine old version
+[2024-06-02 21:02:39] INFO root fetch - main [MainThread]: End processing [tinydata] error
+[2024-06-02 21:02:39] INFO root fetch - processPackages [flake8-classmethod-staticmethod]: Downloading https://files.pythonhosted.org/packages/da/b0/0c1d0f9269c956ba89f9ef608647be4178a7e083a1459e3d1167b3b2334a/flake8-classmethod-staticmethod-2.0.tar.gz
+[2024-06-02 21:02:40] INFO root fetch - processPackages [flake8-classmethod-staticmethod]: Downloading https://files.pythonhosted.org/packages/cd/5e/35b53a5fb9e490260365b03443065b68221d5596970579807bf560e37bf2/flake8_classmethod_staticmethod-2.1.tar.gz
+[2024-06-02 21:02:40] INFO root fetch - processPackages [flake8-classmethod-staticmethod]: executing diffoscope
+[2024-06-02 21:02:40] INFO root fetch - processPackages [flake8-classmethod-staticmethod]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flake8-classmethod-staticmethod-2.0.tar.gz tmp/flake8_classmethod_staticmethod-2.1.tar.gz --markdown 20240602/f/flake8-classmethod-staticmethod/2.0-2.1/README.md --exclude *.pyd
+[2024-06-02 21:02:41] INFO root fetch - processPackages [flake8-classmethod-staticmethod]: Remove: archive file [/home/abi/fetcher/tmp/flake8-classmethod-staticmethod-2.0.tar.gz]
+[2024-06-02 21:02:41] INFO root fetch - processPackages [flake8-classmethod-staticmethod]: Remove: archive file [/home/abi/fetcher/tmp/flake8_classmethod_staticmethod-2.1.tar.gz]
+[2024-06-02 21:02:41] INFO root fetch - main [MainThread]: End processing [flake8-classmethod-staticmethod]: success
+[2024-06-02 21:02:41] INFO root fetch - main [MainThread]: Store serial: [23492237]
