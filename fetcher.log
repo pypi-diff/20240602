@@ -8105,3 +8105,11 @@
 [2024-06-02 13:05:32] INFO root fetch - processPackages [mteb]: Remove: archive file [/home/abi/fetcher/tmp/mteb-1.9.3.tar.gz]
 [2024-06-02 13:05:32] INFO root fetch - main [MainThread]: End processing [mteb]: success
 [2024-06-02 13:05:32] INFO root fetch - main [MainThread]: Store serial: [23488315]
+[2024-06-02 13:07:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23488315]
+[2024-06-02 13:07:41] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-02 13:07:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: halftone-converter
+[2024-06-02 13:07:41] INFO root fetch - processPackages [halftone-converter]: New version: [2.6.0] Old Version: [2.5.3]
+[2024-06-02 13:07:41] INFO root fetch - processPackages [halftone-converter]: Downloading https://files.pythonhosted.org/packages/a1/60/453f7b658358359161042ae5b67da79284959599ee3d8195c90b9911413d/halftone_converter-2.5.3.tar.gz
+[2024-06-02 13:07:41] WARNING root fetch - processPackages [halftone-converter]: Skipping package: exceeds size limit 19404888>=10485760
+[2024-06-02 13:07:41] INFO root fetch - main [MainThread]: End processing [halftone-converter] error
+[2024-06-02 13:07:41] INFO root fetch - main [MainThread]: Store serial: [23488318]
