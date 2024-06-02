@@ -14724,3 +14724,27 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 19:19:40] INFO root fetch - processPackages [ok-script]: Remove: archive file [/home/abi/fetcher/tmp/ok-script-0.0.9.tar.gz]
 [2024-06-02 19:19:40] INFO root fetch - main [MainThread]: End processing [ok-script]: success
 [2024-06-02 19:19:40] INFO root fetch - main [MainThread]: Store serial: [23491280]
+[2024-06-02 19:21:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23491280]
+[2024-06-02 19:21:49] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-02 19:21:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: chess-transformer
+[2024-06-02 19:21:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PyEclipse
+[2024-06-02 19:21:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: otsuwinhdlr
+[2024-06-02 19:21:49] INFO root fetch - processPackages [otsuwinhdlr]: New version: [1.0.2.311] Old Version: [1.0.1.311]
+[2024-06-02 19:21:49] INFO root fetch - processPackages [chess-transformer]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-06-02 19:21:49] INFO root fetch - processPackages [otsuwinhdlr]: Downloading https://files.pythonhosted.org/packages/3b/3c/813b2f9094ec39f697cb4bdf969891affbe8205556bb6370d6c9da92c07f/otsuwinhdlr-1.0.1.311.tar.gz
+[2024-06-02 19:21:49] INFO root fetch - processPackages [chess-transformer]: Downloading https://files.pythonhosted.org/packages/17/9a/4eaffd0a6a3b549dde852c3725d047241701c2bfbd76111bc2bccccb0658/chess_transformer-0.1.8.tar.gz
+[2024-06-02 19:21:49] WARNING root fetch - processPackages [PyEclipse]: Skipping, unable to determine old version
+[2024-06-02 19:21:49] INFO root fetch - main [MainThread]: End processing [PyEclipse] error
+[2024-06-02 19:21:49] INFO root fetch - processPackages [otsuwinhdlr]: Downloading https://files.pythonhosted.org/packages/8c/54/ce9e6aa1ade8be6b6f115e3b912982622420a354bf1a4e5e249a994b6b11/otsuwinhdlr-1.0.2.311-py3-none-any.whl
+[2024-06-02 19:21:49] INFO root fetch - processPackages [chess-transformer]: Downloading https://files.pythonhosted.org/packages/ee/65/ac93cfdac6866e37c13a65533e65710bf7f19f73880bfb7a9eaeb907f8e0/chess_transformer-0.1.9.tar.gz
+[2024-06-02 19:21:49] INFO root fetch - processPackages [chess-transformer]: executing diffoscope
+[2024-06-02 19:21:49] INFO root fetch - processPackages [chess-transformer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chess_transformer-0.1.8.tar.gz tmp/chess_transformer-0.1.9.tar.gz --markdown 20240602/c/chess-transformer/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-06-02 19:21:49] INFO root fetch - processPackages [otsuwinhdlr]: executing diffoscope
+[2024-06-02 19:21:49] INFO root fetch - processPackages [otsuwinhdlr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/otsuwinhdlr-1.0.1.311.tar.gz tmp/otsuwinhdlr-1.0.2.311-py3-none-any.whl.zip --markdown 20240602/o/otsuwinhdlr/1.0.1.311-1.0.2.311/README.md --exclude *.pyd
+[2024-06-02 19:21:50] INFO root fetch - processPackages [otsuwinhdlr]: Remove: archive file [/home/abi/fetcher/tmp/otsuwinhdlr-1.0.1.311.tar.gz]
+[2024-06-02 19:21:50] INFO root fetch - processPackages [otsuwinhdlr]: Remove: archive file [/home/abi/fetcher/tmp/otsuwinhdlr-1.0.2.311-py3-none-any.whl.zip]
+[2024-06-02 19:21:50] INFO root fetch - main [MainThread]: End processing [otsuwinhdlr]: success
+[2024-06-02 19:21:50] INFO root fetch - processPackages [chess-transformer]: Remove: archive file [/home/abi/fetcher/tmp/chess_transformer-0.1.8.tar.gz]
+[2024-06-02 19:21:50] INFO root fetch - processPackages [chess-transformer]: Remove: archive file [/home/abi/fetcher/tmp/chess_transformer-0.1.9.tar.gz]
+[2024-06-02 19:21:50] INFO root fetch - main [MainThread]: End processing [chess-transformer]: success
+[2024-06-02 19:21:50] INFO root fetch - main [MainThread]: Store serial: [23491289]
