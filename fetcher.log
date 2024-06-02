@@ -6210,3 +6210,42 @@
 [2024-06-02 10:34:51] ERROR root fetch - processPackages [toru]: Unable to fetch info: No such project/version 'toru' 0.2
 [2024-06-02 10:34:51] INFO root fetch - main [MainThread]: End processing [toru] error
 [2024-06-02 10:34:51] INFO root fetch - main [MainThread]: Store serial: [23487402]
+[2024-06-02 10:36:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23487402]
+[2024-06-02 10:37:01] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-02 10:37:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: muko
+[2024-06-02 10:37:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kuzu
+[2024-06-02 10:37:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dbt-command-center
+[2024-06-02 10:37:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: rmediator
+[2024-06-02 10:37:01] INFO root fetch - processPackages [muko]: New version: [2.61] Old Version: [2.6]
+[2024-06-02 10:37:01] INFO root fetch - processPackages [dbt-command-center]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-06-02 10:37:01] INFO root fetch - processPackages [rmediator]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-06-02 10:37:01] INFO root fetch - processPackages [dbt-command-center]: Downloading https://files.pythonhosted.org/packages/ca/5d/d48c435a53e9e1ac674642cde23184a952e044a4c4b845e6f66bcb6b9d14/dbt_command_center-0.1.6.tar.gz
+[2024-06-02 10:37:01] INFO root fetch - processPackages [kuzu]: New version: [0.4.3.dev9] Old Version: [0.4.3.dev8]
+[2024-06-02 10:37:01] INFO root fetch - processPackages [muko]: Downloading https://files.pythonhosted.org/packages/88/12/05b787c34acd07b1945a0afb921944c27d7c16929af8ffea8ae0c0b7aeb8/muko-2.6-py3-none-any.whl
+[2024-06-02 10:37:01] INFO root fetch - processPackages [rmediator]: Downloading https://files.pythonhosted.org/packages/93/fc/38cabdb3a0d9eb79d1653e9ff19a92a8f5b2cb97f2c94e1e3ae6855cb708/rmediator-0.1.0.tar.gz
+[2024-06-02 10:37:01] INFO root fetch - processPackages [kuzu]: Downloading https://files.pythonhosted.org/packages/8c/65/7162eaa21f2086d35586ac13298c2ee7127cec11827c394a1c4a3a08801e/kuzu-0.4.3.dev8.tar.gz
+[2024-06-02 10:37:02] INFO root fetch - processPackages [dbt-command-center]: Downloading https://files.pythonhosted.org/packages/a3/1b/e7b9d46d70211e152f2e4018bfad3ba858bc72b73503f5bb9c7df806f598/dbt_command_center-0.1.7.tar.gz
+[2024-06-02 10:37:02] INFO root fetch - processPackages [dbt-command-center]: executing diffoscope
+[2024-06-02 10:37:02] INFO root fetch - processPackages [dbt-command-center]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbt_command_center-0.1.6.tar.gz tmp/dbt_command_center-0.1.7.tar.gz --markdown 20240602/d/dbt-command-center/0.1.6-0.1.7/README.md --exclude *.pyd
+[2024-06-02 10:37:02] INFO root fetch - processPackages [rmediator]: Downloading https://files.pythonhosted.org/packages/75/25/aa196b7c8d6fd1cee680bd0bbb68b306213dc3bff7c9f44fed26d74eaa6d/rmediator-0.1.1.tar.gz
+[2024-06-02 10:37:02] INFO root fetch - processPackages [muko]: Downloading https://files.pythonhosted.org/packages/eb/a7/8b220697c7cbfaf4d41be7745fea7f009d182c462a381b7177d5bd7b8f28/muko-2.61-py3-none-any.whl
+[2024-06-02 10:37:02] INFO root fetch - processPackages [rmediator]: executing diffoscope
+[2024-06-02 10:37:02] INFO root fetch - processPackages [rmediator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rmediator-0.1.0.tar.gz tmp/rmediator-0.1.1.tar.gz --markdown 20240602/r/rmediator/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-06-02 10:37:02] INFO root fetch - processPackages [muko]: executing diffoscope
+[2024-06-02 10:37:02] INFO root fetch - processPackages [muko]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/muko-2.6-py3-none-any.whl.zip tmp/muko-2.61-py3-none-any.whl.zip --markdown 20240602/m/muko/2.6-2.61/README.md --exclude *.pyd
+[2024-06-02 10:37:02] INFO root fetch - processPackages [kuzu]: Downloading https://files.pythonhosted.org/packages/df/58/55a184ddd23fb47a5a837c33035095e3fcffa62119ae3557cf8e8b4f7f0c/kuzu-0.4.3.dev9.tar.gz
+[2024-06-02 10:37:03] INFO root fetch - processPackages [rmediator]: Remove: archive file [/home/abi/fetcher/tmp/rmediator-0.1.0.tar.gz]
+[2024-06-02 10:37:03] INFO root fetch - processPackages [rmediator]: Remove: archive file [/home/abi/fetcher/tmp/rmediator-0.1.1.tar.gz]
+[2024-06-02 10:37:03] INFO root fetch - main [MainThread]: End processing [rmediator]: success
+[2024-06-02 10:37:03] INFO root fetch - processPackages [kuzu]: executing diffoscope
+[2024-06-02 10:37:03] INFO root fetch - processPackages [kuzu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kuzu-0.4.3.dev8.tar.gz tmp/kuzu-0.4.3.dev9.tar.gz --markdown 20240602/k/kuzu/0.4.3.dev8-0.4.3.dev9/README.md --exclude *.pyd
+[2024-06-02 10:37:03] INFO root fetch - processPackages [muko]: Remove: archive file [/home/abi/fetcher/tmp/muko-2.6-py3-none-any.whl.zip]
+[2024-06-02 10:37:03] INFO root fetch - processPackages [muko]: Remove: archive file [/home/abi/fetcher/tmp/muko-2.61-py3-none-any.whl.zip]
+[2024-06-02 10:37:03] INFO root fetch - main [MainThread]: End processing [muko]: success
+[2024-06-02 10:37:05] INFO root fetch - processPackages [dbt-command-center]: Remove: archive file [/home/abi/fetcher/tmp/dbt_command_center-0.1.6.tar.gz]
+[2024-06-02 10:37:05] INFO root fetch - processPackages [dbt-command-center]: Remove: archive file [/home/abi/fetcher/tmp/dbt_command_center-0.1.7.tar.gz]
+[2024-06-02 10:37:05] INFO root fetch - main [MainThread]: End processing [dbt-command-center]: success
+[2024-06-02 10:37:09] INFO root fetch - processPackages [kuzu]: Remove: archive file [/home/abi/fetcher/tmp/kuzu-0.4.3.dev8.tar.gz]
+[2024-06-02 10:37:09] INFO root fetch - processPackages [kuzu]: Remove: archive file [/home/abi/fetcher/tmp/kuzu-0.4.3.dev9.tar.gz]
+[2024-06-02 10:37:09] INFO root fetch - main [MainThread]: End processing [kuzu]: success
+[2024-06-02 10:37:09] INFO root fetch - main [MainThread]: Store serial: [23487443]
