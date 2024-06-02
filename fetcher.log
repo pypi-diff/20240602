@@ -2835,3 +2835,15 @@
 [2024-06-02 04:00:26] WARNING root fetch - processPackages [repopulator]: Skipping, unable to determine old version
 [2024-06-02 04:00:26] INFO root fetch - main [MainThread]: End processing [repopulator] error
 [2024-06-02 04:00:26] INFO root fetch - main [MainThread]: Store serial: [23485568]
+[2024-06-02 04:02:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23485568]
+[2024-06-02 04:02:34] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-02 04:02:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mouse-jiggler-macos
+[2024-06-02 04:02:35] INFO root fetch - processPackages [mouse-jiggler-macos]: New version: [0.4.0] Old Version: [0.3.0]
+[2024-06-02 04:02:35] INFO root fetch - processPackages [mouse-jiggler-macos]: Downloading https://files.pythonhosted.org/packages/25/f3/41804c50cde842873498ce16f37ec367f7d110b8e7c2d2e530956c283ec4/mouse_jiggler_macos-0.3.0.tar.gz
+[2024-06-02 04:02:35] INFO root fetch - processPackages [mouse-jiggler-macos]: Downloading https://files.pythonhosted.org/packages/19/90/d0a68c9ae863aae9273e7d2311c58da433ab5928a2c5b915b58b73e9bfa9/mouse_jiggler_macos-0.4.0.tar.gz
+[2024-06-02 04:02:35] INFO root fetch - processPackages [mouse-jiggler-macos]: executing diffoscope
+[2024-06-02 04:02:35] INFO root fetch - processPackages [mouse-jiggler-macos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mouse_jiggler_macos-0.3.0.tar.gz tmp/mouse_jiggler_macos-0.4.0.tar.gz --markdown 20240602/m/mouse-jiggler-macos/0.3.0-0.4.0/README.md --exclude *.pyd
+[2024-06-02 04:02:35] INFO root fetch - processPackages [mouse-jiggler-macos]: Remove: archive file [/home/abi/fetcher/tmp/mouse_jiggler_macos-0.3.0.tar.gz]
+[2024-06-02 04:02:35] INFO root fetch - processPackages [mouse-jiggler-macos]: Remove: archive file [/home/abi/fetcher/tmp/mouse_jiggler_macos-0.4.0.tar.gz]
+[2024-06-02 04:02:35] INFO root fetch - main [MainThread]: End processing [mouse-jiggler-macos]: success
+[2024-06-02 04:02:35] INFO root fetch - main [MainThread]: Store serial: [23485571]
