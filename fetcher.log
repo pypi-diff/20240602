@@ -7932,3 +7932,45 @@
 [2024-06-02 12:54:39] INFO root fetch - processPackages [protoc-polyglot]: Remove: archive file [/home/abi/fetcher/tmp/protoc_polyglot-0.0.1.post9.tar.gz]
 [2024-06-02 12:54:39] INFO root fetch - main [MainThread]: End processing [protoc-polyglot]: success
 [2024-06-02 12:54:39] INFO root fetch - main [MainThread]: Store serial: [23488260]
+[2024-06-02 12:56:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23488260]
+[2024-06-02 12:56:48] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-06-02 12:56:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: stackview
+[2024-06-02 12:56:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: shifts
+[2024-06-02 12:56:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: protoc-polyglot
+[2024-06-02 12:56:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mentabotix
+[2024-06-02 12:56:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: AparatLib
+[2024-06-02 12:56:48] INFO root fetch - processPackages [protoc-polyglot]: New version: [0.0.1.post9] Old Version: [0.0.1.post8]
+[2024-06-02 12:56:48] INFO root fetch - processPackages [mentabotix]: New version: [0.1.5.9] Old Version: [0.1.5.8]
+[2024-06-02 12:56:48] WARNING root fetch - processPackages [AparatLib]: Skipping, unable to determine old version
+[2024-06-02 12:56:48] INFO root fetch - main [MainThread]: End processing [AparatLib] error
+[2024-06-02 12:56:48] INFO root fetch - processPackages [protoc-polyglot]: Downloading https://files.pythonhosted.org/packages/e9/7b/373a68a962cdfb85f4bd76f6f4ea13ad3f2cfaca73bf0a9f70d0e7d34380/protoc_polyglot-0.0.1.post8.tar.gz
+[2024-06-02 12:56:48] INFO root fetch - processPackages [shifts]: New version: [0.1.0] Old Version: [0.0.4]
+[2024-06-02 12:56:48] INFO root fetch - processPackages [mentabotix]: Downloading https://files.pythonhosted.org/packages/82/e7/21cabf951d8e05066058a2c6fafc9a623e4e5939ded05ac5d6cd02cc3c5b/mentabotix-0.1.5.8.tar.gz
+[2024-06-02 12:56:48] INFO root fetch - processPackages [stackview]: New version: [0.7.8] Old Version: [0.7.7]
+[2024-06-02 12:56:48] INFO root fetch - processPackages [shifts]: Downloading https://files.pythonhosted.org/packages/49/c0/961942fb5c6cd1244e310942cb204d2cc2985db3cd555213cc8ea5bdb96d/shifts-0.0.4.tar.gz
+[2024-06-02 12:56:48] INFO root fetch - processPackages [stackview]: Downloading https://files.pythonhosted.org/packages/ec/50/5f7b35485a98f710f79a201b3123d4f8c9725ed6a8e6c2a6498e2c49f820/stackview-0.7.7.tar.gz
+[2024-06-02 12:56:48] INFO root fetch - processPackages [protoc-polyglot]: Downloading https://files.pythonhosted.org/packages/01/80/bdadb218d1c3271c3a258316c3d5991f2676b54e6f358ac689f9495990f5/protoc_polyglot-0.0.1.post9.tar.gz
+[2024-06-02 12:56:48] INFO root fetch - processPackages [mentabotix]: Downloading https://files.pythonhosted.org/packages/0c/8c/e0aadaf3177b0936c6e2c6784b1ce6ff8d5f0548b2dd38f045005795a3e1/mentabotix-0.1.5.9.tar.gz
+[2024-06-02 12:56:48] INFO root fetch - processPackages [protoc-polyglot]: executing diffoscope
+[2024-06-02 12:56:48] INFO root fetch - processPackages [protoc-polyglot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/protoc_polyglot-0.0.1.post8.tar.gz tmp/protoc_polyglot-0.0.1.post9.tar.gz --markdown 20240602/p/protoc-polyglot/0.0.1.post8-0.0.1.post9/README.md --exclude *.pyd
+[2024-06-02 12:56:48] INFO root fetch - processPackages [mentabotix]: executing diffoscope
+[2024-06-02 12:56:48] INFO root fetch - processPackages [mentabotix]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mentabotix-0.1.5.8.tar.gz tmp/mentabotix-0.1.5.9.tar.gz --markdown 20240602/m/mentabotix/0.1.5.8-0.1.5.9/README.md --exclude *.pyd
+[2024-06-02 12:56:48] INFO root fetch - processPackages [shifts]: Downloading https://files.pythonhosted.org/packages/32/f2/c610790d1c53c9ddfe7b6c6dfc3715a21551bb588c8bf92c811a46caf11f/shifts-0.1.0.tar.gz
+[2024-06-02 12:56:48] INFO root fetch - processPackages [stackview]: Downloading https://files.pythonhosted.org/packages/50/b7/4995b7db6f492c44210d2bd1b4ba130ae7e97ff185674dce2c86a5a107ca/stackview-0.7.8.tar.gz
+[2024-06-02 12:56:48] INFO root fetch - processPackages [shifts]: executing diffoscope
+[2024-06-02 12:56:48] INFO root fetch - processPackages [shifts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shifts-0.0.4.tar.gz tmp/shifts-0.1.0.tar.gz --markdown 20240602/s/shifts/0.0.4-0.1.0/README.md --exclude *.pyd
+[2024-06-02 12:56:49] INFO root fetch - processPackages [stackview]: executing diffoscope
+[2024-06-02 12:56:49] INFO root fetch - processPackages [stackview]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stackview-0.7.7.tar.gz tmp/stackview-0.7.8.tar.gz --markdown 20240602/s/stackview/0.7.7-0.7.8/README.md --exclude *.pyd
+[2024-06-02 12:56:49] INFO root fetch - processPackages [protoc-polyglot]: Remove: archive file [/home/abi/fetcher/tmp/protoc_polyglot-0.0.1.post8.tar.gz]
+[2024-06-02 12:56:49] INFO root fetch - processPackages [protoc-polyglot]: Remove: archive file [/home/abi/fetcher/tmp/protoc_polyglot-0.0.1.post9.tar.gz]
+[2024-06-02 12:56:49] INFO root fetch - main [MainThread]: End processing [protoc-polyglot]: success
+[2024-06-02 12:56:49] INFO root fetch - processPackages [shifts]: Remove: archive file [/home/abi/fetcher/tmp/shifts-0.0.4.tar.gz]
+[2024-06-02 12:56:49] INFO root fetch - processPackages [shifts]: Remove: archive file [/home/abi/fetcher/tmp/shifts-0.1.0.tar.gz]
+[2024-06-02 12:56:49] INFO root fetch - main [MainThread]: End processing [shifts]: success
+[2024-06-02 12:56:49] INFO root fetch - processPackages [mentabotix]: Remove: archive file [/home/abi/fetcher/tmp/mentabotix-0.1.5.8.tar.gz]
+[2024-06-02 12:56:49] INFO root fetch - processPackages [mentabotix]: Remove: archive file [/home/abi/fetcher/tmp/mentabotix-0.1.5.9.tar.gz]
+[2024-06-02 12:56:49] INFO root fetch - main [MainThread]: End processing [mentabotix]: success
+[2024-06-02 12:56:49] INFO root fetch - processPackages [stackview]: Remove: archive file [/home/abi/fetcher/tmp/stackview-0.7.7.tar.gz]
+[2024-06-02 12:56:49] INFO root fetch - processPackages [stackview]: Remove: archive file [/home/abi/fetcher/tmp/stackview-0.7.8.tar.gz]
+[2024-06-02 12:56:49] INFO root fetch - main [MainThread]: End processing [stackview]: success
+[2024-06-02 12:56:49] INFO root fetch - main [MainThread]: Store serial: [23488274]
