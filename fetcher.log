@@ -14011,3 +14011,60 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 18:46:53] INFO root fetch - processPackages [aimodelshare]: Remove: archive file [/home/abi/fetcher/tmp/aimodelshare-0.1.9.tar.gz]
 [2024-06-02 18:46:53] INFO root fetch - main [MainThread]: End processing [aimodelshare]: success
 [2024-06-02 18:46:53] INFO root fetch - main [MainThread]: Store serial: [23490870]
+[2024-06-02 18:48:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23490870]
+[2024-06-02 18:49:02] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-06-02 18:49:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: phi-3-vision-mlx
+[2024-06-02 18:49:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: diti
+[2024-06-02 18:49:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: schemafunc
+[2024-06-02 18:49:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ez-etl
+[2024-06-02 18:49:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: trytond-account-stock-continental
+[2024-06-02 18:49:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ok-script
+[2024-06-02 18:49:02] INFO root fetch - processPackages [diti]: New version: [0.0.6] Old Version: [0.0.4]
+[2024-06-02 18:49:02] INFO root fetch - processPackages [ok-script]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-06-02 18:49:02] INFO root fetch - processPackages [diti]: Downloading https://files.pythonhosted.org/packages/27/ae/ebd3f78db0a1b74f451d2e667b771849bf559def895fe89846b92cfc5744/diti-0.0.4.tar.gz
+[2024-06-02 18:49:02] INFO root fetch - processPackages [ez-etl]: New version: [1.1.3] Old Version: [1.1.2]
+[2024-06-02 18:49:02] INFO root fetch - processPackages [phi-3-vision-mlx]: New version: [0.0.2b0] Old Version: [0.0.2]
+[2024-06-02 18:49:02] INFO root fetch - processPackages [schemafunc]: New version: [0.3.8] Old Version: [0.3.7]
+[2024-06-02 18:49:02] INFO root fetch - processPackages [ok-script]: Downloading https://files.pythonhosted.org/packages/5f/e3/968a4bfd4b0c82df5c5171f3d7d42fc8d8354283f3bae8becf975bc2cfb9/ok-script-0.0.8.tar.gz
+[2024-06-02 18:49:02] INFO root fetch - processPackages [trytond-account-stock-continental]: New version: [7.2.1] Old Version: [7.2.0]
+[2024-06-02 18:49:02] INFO root fetch - processPackages [trytond-account-stock-continental]: Downloading https://files.pythonhosted.org/packages/a2/26/40655b006ffab73faec57edd4f8aa7e94bc2a9381c59060adb6a85009cd7/trytond_account_stock_continental-7.2.0.tar.gz
+[2024-06-02 18:49:02] INFO root fetch - processPackages [ez-etl]: Downloading https://files.pythonhosted.org/packages/39/85/a5eb5b5582de20aa5e5d5323e00307970def06cf23d3909d012a41e764bb/ez-etl-1.1.2.tar.gz
+[2024-06-02 18:49:02] INFO root fetch - processPackages [phi-3-vision-mlx]: Downloading https://files.pythonhosted.org/packages/e1/93/259c8307f4ad0cef86c333089e602aa76c5f391ec0f7bb332b8b7ab87815/phi_3_vision_mlx-0.0.2.tar.gz
+[2024-06-02 18:49:02] INFO root fetch - processPackages [diti]: Downloading https://files.pythonhosted.org/packages/e4/03/e3797a942b301cce64834909bccdb5c49f71a6f2bb40f187aef80e92b619/diti-0.0.6.tar.gz
+[2024-06-02 18:49:02] INFO root fetch - processPackages [schemafunc]: Downloading https://files.pythonhosted.org/packages/b9/a9/434e5b23a6a5b4f291475a8ac0e0c46ff31f463e4966823643f25d78a3e8/schemafunc-0.3.7.tar.gz
+[2024-06-02 18:49:02] INFO root fetch - processPackages [ok-script]: Downloading https://files.pythonhosted.org/packages/7e/57/3cb2ecf6f3abc49a58957eb87297ca0e7574e568b46c512c2a5fc710a462/ok-script-0.0.9.tar.gz
+[2024-06-02 18:49:02] INFO root fetch - processPackages [diti]: executing diffoscope
+[2024-06-02 18:49:02] INFO root fetch - processPackages [diti]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/diti-0.0.4.tar.gz tmp/diti-0.0.6.tar.gz --markdown 20240602/d/diti/0.0.4-0.0.6/README.md --exclude *.pyd
+[2024-06-02 18:49:02] INFO root fetch - processPackages [trytond-account-stock-continental]: Downloading https://files.pythonhosted.org/packages/55/ab/90ab699ecb671f83cf3011d36638e62ea5bc9a06ad5c28ce90b682026a7d/trytond_account_stock_continental-7.2.1.tar.gz
+[2024-06-02 18:49:02] INFO root fetch - processPackages [ok-script]: executing diffoscope
+[2024-06-02 18:49:02] INFO root fetch - processPackages [ok-script]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ok-script-0.0.8.tar.gz tmp/ok-script-0.0.9.tar.gz --markdown 20240602/o/ok-script/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-06-02 18:49:02] INFO root fetch - processPackages [trytond-account-stock-continental]: executing diffoscope
+[2024-06-02 18:49:02] INFO root fetch - processPackages [trytond-account-stock-continental]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trytond_account_stock_continental-7.2.0.tar.gz tmp/trytond_account_stock_continental-7.2.1.tar.gz --markdown 20240602/t/trytond-account-stock-continental/7.2.0-7.2.1/README.md --exclude *.pyd
+[2024-06-02 18:49:02] INFO root fetch - processPackages [ez-etl]: Downloading https://files.pythonhosted.org/packages/87/5b/862cb2ce88c2cec4273ab68f40a866311bf639442f46654bc57b800ac687/ez-etl-1.1.3.tar.gz
+[2024-06-02 18:49:02] INFO root fetch - processPackages [schemafunc]: Downloading https://files.pythonhosted.org/packages/cd/bc/6c0846adbfd797317a55d765d4e7fd5e71ee46c9fb52390e422a57565de7/schemafunc-0.3.8.tar.gz
+[2024-06-02 18:49:02] INFO root fetch - processPackages [phi-3-vision-mlx]: Downloading https://files.pythonhosted.org/packages/e2/34/2115a5890b0caabc9894f738d73d0f4df479bc239899646e986a5dfb2a58/phi_3_vision_mlx-0.0.2b0.tar.gz
+[2024-06-02 18:49:03] INFO root fetch - processPackages [ez-etl]: executing diffoscope
+[2024-06-02 18:49:03] INFO root fetch - processPackages [ez-etl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ez-etl-1.1.2.tar.gz tmp/ez-etl-1.1.3.tar.gz --markdown 20240602/e/ez-etl/1.1.2-1.1.3/README.md --exclude *.pyd
+[2024-06-02 18:49:03] INFO root fetch - processPackages [schemafunc]: executing diffoscope
+[2024-06-02 18:49:03] INFO root fetch - processPackages [schemafunc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/schemafunc-0.3.7.tar.gz tmp/schemafunc-0.3.8.tar.gz --markdown 20240602/s/schemafunc/0.3.7-0.3.8/README.md --exclude *.pyd
+[2024-06-02 18:49:03] INFO root fetch - processPackages [phi-3-vision-mlx]: executing diffoscope
+[2024-06-02 18:49:03] INFO root fetch - processPackages [phi-3-vision-mlx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/phi_3_vision_mlx-0.0.2.tar.gz tmp/phi_3_vision_mlx-0.0.2b0.tar.gz --markdown 20240602/p/phi-3-vision-mlx/0.0.2-0.0.2b0/README.md --exclude *.pyd
+[2024-06-02 18:49:03] INFO root fetch - processPackages [diti]: Remove: archive file [/home/abi/fetcher/tmp/diti-0.0.4.tar.gz]
+[2024-06-02 18:49:03] INFO root fetch - processPackages [diti]: Remove: archive file [/home/abi/fetcher/tmp/diti-0.0.6.tar.gz]
+[2024-06-02 18:49:03] INFO root fetch - main [MainThread]: End processing [diti]: success
+[2024-06-02 18:49:03] INFO root fetch - processPackages [trytond-account-stock-continental]: Remove: archive file [/home/abi/fetcher/tmp/trytond_account_stock_continental-7.2.0.tar.gz]
+[2024-06-02 18:49:03] INFO root fetch - processPackages [trytond-account-stock-continental]: Remove: archive file [/home/abi/fetcher/tmp/trytond_account_stock_continental-7.2.1.tar.gz]
+[2024-06-02 18:49:03] INFO root fetch - main [MainThread]: End processing [trytond-account-stock-continental]: success
+[2024-06-02 18:49:03] INFO root fetch - processPackages [phi-3-vision-mlx]: Remove: archive file [/home/abi/fetcher/tmp/phi_3_vision_mlx-0.0.2.tar.gz]
+[2024-06-02 18:49:03] INFO root fetch - processPackages [phi-3-vision-mlx]: Remove: archive file [/home/abi/fetcher/tmp/phi_3_vision_mlx-0.0.2b0.tar.gz]
+[2024-06-02 18:49:03] INFO root fetch - main [MainThread]: End processing [phi-3-vision-mlx]: success
+[2024-06-02 18:49:03] INFO root fetch - processPackages [schemafunc]: Remove: archive file [/home/abi/fetcher/tmp/schemafunc-0.3.7.tar.gz]
+[2024-06-02 18:49:03] INFO root fetch - processPackages [schemafunc]: Remove: archive file [/home/abi/fetcher/tmp/schemafunc-0.3.8.tar.gz]
+[2024-06-02 18:49:03] INFO root fetch - main [MainThread]: End processing [schemafunc]: success
+[2024-06-02 18:49:03] INFO root fetch - processPackages [ok-script]: Remove: archive file [/home/abi/fetcher/tmp/ok-script-0.0.8.tar.gz]
+[2024-06-02 18:49:03] INFO root fetch - processPackages [ok-script]: Remove: archive file [/home/abi/fetcher/tmp/ok-script-0.0.9.tar.gz]
+[2024-06-02 18:49:03] INFO root fetch - main [MainThread]: End processing [ok-script]: success
+[2024-06-02 18:49:03] INFO root fetch - processPackages [ez-etl]: Remove: archive file [/home/abi/fetcher/tmp/ez-etl-1.1.2.tar.gz]
+[2024-06-02 18:49:03] INFO root fetch - processPackages [ez-etl]: Remove: archive file [/home/abi/fetcher/tmp/ez-etl-1.1.3.tar.gz]
+[2024-06-02 18:49:03] INFO root fetch - main [MainThread]: End processing [ez-etl]: success
+[2024-06-02 18:49:03] INFO root fetch - main [MainThread]: Store serial: [23490887]
