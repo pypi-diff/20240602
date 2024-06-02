@@ -11921,3 +11921,63 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 17:13:40] INFO root fetch - processPackages [rlbot]: Remove: archive file [/home/abi/fetcher/tmp/rlbot-1.9.6.tar.gz]
 [2024-06-02 17:13:40] INFO root fetch - main [MainThread]: End processing [rlbot]: success
 [2024-06-02 17:13:40] INFO root fetch - main [MainThread]: Store serial: [23489980]
+[2024-06-02 17:15:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23489980]
+[2024-06-02 17:15:50] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-06-02 17:15:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rl-test-task-3
+[2024-06-02 17:15:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: SpheroidPy
+[2024-06-02 17:15:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rl-tasks
+[2024-06-02 17:15:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: llama-index-llms-huggingface
+[2024-06-02 17:15:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: gen3-tracker
+[2024-06-02 17:15:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: simplebox
+[2024-06-02 17:15:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: stackview
+[2024-06-02 17:15:50] WARNING root fetch - processPackages [SpheroidPy]: Skipping, unable to determine old version
+[2024-06-02 17:15:50] INFO root fetch - main [MainThread]: End processing [SpheroidPy] error
+[2024-06-02 17:15:50] INFO root fetch - processPackages [rl-tasks]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-06-02 17:15:50] INFO root fetch - processPackages [rl-test-task-3]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-06-02 17:15:50] INFO root fetch - processPackages [stackview]: New version: [0.7.8] Old Version: [0.7.7]
+[2024-06-02 17:15:50] INFO root fetch - processPackages [llama-index-llms-huggingface]: New version: [0.2.3] Old Version: [0.2.2]
+[2024-06-02 17:15:50] INFO root fetch - processPackages [rl-tasks]: Downloading https://files.pythonhosted.org/packages/c6/1b/003116301384075409f50a6fc1a83510c3b9763bb7b9f13264ca5c0a590d/rl_tasks-0.1.1.tar.gz
+[2024-06-02 17:15:50] INFO root fetch - processPackages [rl-test-task-3]: Downloading https://files.pythonhosted.org/packages/a3/76/26a22f78f5486558ca084b5db5f522045a2c33788f7f17afbd190d293ffc/rl_test_task_3-0.1.2.tar.gz
+[2024-06-02 17:15:50] INFO root fetch - processPackages [simplebox]: New version: [0.0.1a211] Old Version: [0.0.1a210]
+[2024-06-02 17:15:50] INFO root fetch - processPackages [stackview]: Downloading https://files.pythonhosted.org/packages/ec/50/5f7b35485a98f710f79a201b3123d4f8c9725ed6a8e6c2a6498e2c49f820/stackview-0.7.7.tar.gz
+[2024-06-02 17:15:50] INFO root fetch - processPackages [gen3-tracker]: New version: [0.0.4rc9] Old Version: [0.0.4rc8]
+[2024-06-02 17:15:50] INFO root fetch - processPackages [llama-index-llms-huggingface]: Downloading https://files.pythonhosted.org/packages/4e/dd/211a17a33d444383cd543e824b93939cf083541fc50f65c0f2bdbbd2cd4f/llama_index_llms_huggingface-0.2.2.tar.gz
+[2024-06-02 17:15:50] INFO root fetch - processPackages [simplebox]: Downloading https://files.pythonhosted.org/packages/38/3b/8a354253254ae29974df4fc94aa2673f1a46aceb4c49a35c7836312eb275/simplebox-0.0.1a210-py3-none-any.whl
+[2024-06-02 17:15:51] INFO root fetch - processPackages [stackview]: Downloading https://files.pythonhosted.org/packages/50/b7/4995b7db6f492c44210d2bd1b4ba130ae7e97ff185674dce2c86a5a107ca/stackview-0.7.8.tar.gz
+[2024-06-02 17:15:51] INFO root fetch - processPackages [gen3-tracker]: Downloading https://files.pythonhosted.org/packages/89/da/93c960687a9eac1d13577489b60949a6b349a184fda722e5e58fee8fb410/gen3_tracker-0.0.4rc8.tar.gz
+[2024-06-02 17:15:51] INFO root fetch - processPackages [rl-test-task-3]: Downloading https://files.pythonhosted.org/packages/2d/09/79ab266bfebc2f3bfa176586782e732f737f8e2a7b701167a5703e2fe1f3/rl_test_task_3-0.1.3.tar.gz
+[2024-06-02 17:15:51] INFO root fetch - processPackages [rl-tasks]: Downloading https://files.pythonhosted.org/packages/0d/68/ba52108ccfbefb4c849a74ff0bc72fd25bcd4fe6df2ac84f2367cbb7f326/rl_tasks-0.1.2.tar.gz
+[2024-06-02 17:15:51] INFO root fetch - processPackages [stackview]: executing diffoscope
+[2024-06-02 17:15:51] INFO root fetch - processPackages [stackview]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stackview-0.7.7.tar.gz tmp/stackview-0.7.8.tar.gz --markdown 20240602/s/stackview/0.7.7-0.7.8/README.md --exclude *.pyd
+[2024-06-02 17:15:51] INFO root fetch - processPackages [llama-index-llms-huggingface]: Downloading https://files.pythonhosted.org/packages/67/5b/d43f0e5331106e63f47cbb26921d365ac48fa7b969fa9709e09268f20d8e/llama_index_llms_huggingface-0.2.3.tar.gz
+[2024-06-02 17:15:51] INFO root fetch - processPackages [rl-tasks]: executing diffoscope
+[2024-06-02 17:15:51] INFO root fetch - processPackages [rl-tasks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rl_tasks-0.1.1.tar.gz tmp/rl_tasks-0.1.2.tar.gz --markdown 20240602/r/rl-tasks/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-06-02 17:15:51] INFO root fetch - processPackages [rl-test-task-3]: executing diffoscope
+[2024-06-02 17:15:51] INFO root fetch - processPackages [rl-test-task-3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rl_test_task_3-0.1.2.tar.gz tmp/rl_test_task_3-0.1.3.tar.gz --markdown 20240602/r/rl-test-task-3/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-06-02 17:15:51] INFO root fetch - processPackages [llama-index-llms-huggingface]: executing diffoscope
+[2024-06-02 17:15:51] INFO root fetch - processPackages [llama-index-llms-huggingface]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llama_index_llms_huggingface-0.2.2.tar.gz tmp/llama_index_llms_huggingface-0.2.3.tar.gz --markdown 20240602/l/llama-index-llms-huggingface/0.2.2-0.2.3/README.md --exclude *.pyd
+[2024-06-02 17:15:51] INFO root fetch - processPackages [simplebox]: Downloading https://files.pythonhosted.org/packages/18/11/700209145e6e617da7decbe1a320854032645b410fef2e6193259e038fad/simplebox-0.0.1a211-py3-none-any.whl
+[2024-06-02 17:15:51] INFO root fetch - processPackages [gen3-tracker]: Downloading https://files.pythonhosted.org/packages/33/0f/da7f819d2c6c4a549a9a2ad841c5c191ec3dc24c13f084580c66c84630e6/gen3_tracker-0.0.4rc9-py3-none-any.whl
+[2024-06-02 17:15:51] INFO root fetch - processPackages [simplebox]: executing diffoscope
+[2024-06-02 17:15:51] INFO root fetch - processPackages [simplebox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simplebox-0.0.1a210-py3-none-any.whl.zip tmp/simplebox-0.0.1a211-py3-none-any.whl.zip --markdown 20240602/s/simplebox/0.0.1a210-0.0.1a211/README.md --exclude *.pyd
+[2024-06-02 17:15:51] INFO root fetch - processPackages [gen3-tracker]: executing diffoscope
+[2024-06-02 17:15:51] INFO root fetch - processPackages [gen3-tracker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gen3_tracker-0.0.4rc8.tar.gz tmp/gen3_tracker-0.0.4rc9-py3-none-any.whl.zip --markdown 20240602/g/gen3-tracker/0.0.4rc8-0.0.4rc9/README.md --exclude *.pyd
+[2024-06-02 17:15:51] INFO root fetch - processPackages [rl-tasks]: Remove: archive file [/home/abi/fetcher/tmp/rl_tasks-0.1.1.tar.gz]
+[2024-06-02 17:15:51] INFO root fetch - processPackages [rl-tasks]: Remove: archive file [/home/abi/fetcher/tmp/rl_tasks-0.1.2.tar.gz]
+[2024-06-02 17:15:51] INFO root fetch - main [MainThread]: End processing [rl-tasks]: success
+[2024-06-02 17:15:51] INFO root fetch - processPackages [rl-test-task-3]: Remove: archive file [/home/abi/fetcher/tmp/rl_test_task_3-0.1.2.tar.gz]
+[2024-06-02 17:15:51] INFO root fetch - processPackages [rl-test-task-3]: Remove: archive file [/home/abi/fetcher/tmp/rl_test_task_3-0.1.3.tar.gz]
+[2024-06-02 17:15:51] INFO root fetch - main [MainThread]: End processing [rl-test-task-3]: success
+[2024-06-02 17:15:51] INFO root fetch - processPackages [stackview]: Remove: archive file [/home/abi/fetcher/tmp/stackview-0.7.7.tar.gz]
+[2024-06-02 17:15:51] INFO root fetch - processPackages [stackview]: Remove: archive file [/home/abi/fetcher/tmp/stackview-0.7.8.tar.gz]
+[2024-06-02 17:15:51] INFO root fetch - main [MainThread]: End processing [stackview]: success
+[2024-06-02 17:15:51] INFO root fetch - processPackages [llama-index-llms-huggingface]: Remove: archive file [/home/abi/fetcher/tmp/llama_index_llms_huggingface-0.2.2.tar.gz]
+[2024-06-02 17:15:51] INFO root fetch - processPackages [llama-index-llms-huggingface]: Remove: archive file [/home/abi/fetcher/tmp/llama_index_llms_huggingface-0.2.3.tar.gz]
+[2024-06-02 17:15:51] INFO root fetch - main [MainThread]: End processing [llama-index-llms-huggingface]: success
+[2024-06-02 17:15:52] INFO root fetch - processPackages [gen3-tracker]: Remove: archive file [/home/abi/fetcher/tmp/gen3_tracker-0.0.4rc8.tar.gz]
+[2024-06-02 17:15:52] INFO root fetch - processPackages [gen3-tracker]: Remove: archive file [/home/abi/fetcher/tmp/gen3_tracker-0.0.4rc9-py3-none-any.whl.zip]
+[2024-06-02 17:15:52] INFO root fetch - main [MainThread]: End processing [gen3-tracker]: success
+[2024-06-02 17:15:52] INFO root fetch - processPackages [simplebox]: Remove: archive file [/home/abi/fetcher/tmp/simplebox-0.0.1a210-py3-none-any.whl.zip]
+[2024-06-02 17:15:52] INFO root fetch - processPackages [simplebox]: Remove: archive file [/home/abi/fetcher/tmp/simplebox-0.0.1a211-py3-none-any.whl.zip]
+[2024-06-02 17:15:52] INFO root fetch - main [MainThread]: End processing [simplebox]: success
+[2024-06-02 17:15:52] INFO root fetch - main [MainThread]: Store serial: [23490006]
