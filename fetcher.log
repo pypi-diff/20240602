@@ -15212,3 +15212,81 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 19:52:16] INFO root fetch - processPackages [lasagna-ai]: Remove: archive file [/home/abi/fetcher/tmp/lasagna_ai-0.2.0.tar.gz]
 [2024-06-02 19:52:16] INFO root fetch - main [MainThread]: End processing [lasagna-ai]: success
 [2024-06-02 19:52:16] INFO root fetch - main [MainThread]: Store serial: [23491490]
+[2024-06-02 19:54:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23491490]
+[2024-06-02 19:54:25] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2024-06-02 19:54:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ch9329
+[2024-06-02 19:54:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: audiconnectpy
+[2024-06-02 19:54:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: scrapy-playwright-full
+[2024-06-02 19:54:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: google-contact-local
+[2024-06-02 19:54:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: trieste
+[2024-06-02 19:54:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: mimllearning
+[2024-06-02 19:54:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: r2r
+[2024-06-02 19:54:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: kcli
+[2024-06-02 19:54:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: informal-detector
+[2024-06-02 19:54:25] INFO root fetch - processPackages [audiconnectpy]: New version: [2.2.8] Old Version: [2.2.7]
+[2024-06-02 19:54:25] INFO root fetch - processPackages [kcli]: New version: [99.0.202406021631] Old Version: [99.0.202406021549]
+[2024-06-02 19:54:25] INFO root fetch - processPackages [trieste]: New version: [3.3.1] Old Version: [3.3.0]
+[2024-06-02 19:54:25] INFO root fetch - processPackages [ch9329]: New version: [1.2.3] Old Version: [1.2.2]
+[2024-06-02 19:54:25] INFO root fetch - processPackages [google-contact-local]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-06-02 19:54:25] INFO root fetch - processPackages [r2r]: New version: [0.2.4] Old Version: [0.2.3]
+[2024-06-02 19:54:25] INFO root fetch - processPackages [scrapy-playwright-full]: New version: [0.0.3501] Old Version: [0.0.3404]
+[2024-06-02 19:54:25] INFO root fetch - processPackages [mimllearning]: New version: [0.5.9] Old Version: [0.5.8]
+[2024-06-02 19:54:25] WARNING root fetch - processPackages [informal-detector]: Skipping, unable to determine old version
+[2024-06-02 19:54:25] INFO root fetch - main [MainThread]: End processing [informal-detector] error
+[2024-06-02 19:54:25] INFO root fetch - processPackages [kcli]: Downloading https://files.pythonhosted.org/packages/7d/f3/7f42c3b42c955e078da271c3e0f153a6bfb12dcdce7de049b0294ccce5ba/kcli-99.0.202406021549.tar.gz
+[2024-06-02 19:54:25] INFO root fetch - processPackages [audiconnectpy]: Downloading https://files.pythonhosted.org/packages/d0/f0/ce0137fe83bef335ffd155da2e6f63f793d3d4e7c89caf70c81bba0651dd/audiconnectpy-2.2.7.tar.gz
+[2024-06-02 19:54:25] INFO root fetch - processPackages [trieste]: Downloading https://files.pythonhosted.org/packages/22/01/0dfae09d0e7c30eb4d7107de3e63b59d8a95e794000abee995f85fa4b933/trieste-3.3.0.tar.gz
+[2024-06-02 19:54:25] INFO root fetch - processPackages [google-contact-local]: Downloading https://files.pythonhosted.org/packages/a8/55/f63aa14924da6703289e0881058be4b007251255a7c3affa28e065371e97/google-contact-local-0.0.8.tar.gz
+[2024-06-02 19:54:25] INFO root fetch - processPackages [scrapy-playwright-full]: Downloading https://files.pythonhosted.org/packages/27/7e/1b986488170129a3dd6ce66e8d760eeb5e555966705177e05c952c70231d/scrapy_playwright_full-0.0.3404.tar.gz
+[2024-06-02 19:54:25] INFO root fetch - processPackages [r2r]: Downloading https://files.pythonhosted.org/packages/69/59/0eb520060b1afb6ef7c5c5118105a1b485826d70db02837c472609d70f99/r2r-0.2.3.tar.gz
+[2024-06-02 19:54:25] INFO root fetch - processPackages [ch9329]: Downloading https://files.pythonhosted.org/packages/78/66/1e8835808e78e210912e59316a7849d73fb34411ecf38eede8104117dfd8/ch9329-1.2.2.tar.gz
+[2024-06-02 19:54:25] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/d2/b3/87b8f5c10d5ff5cbe23d28e3faecc4f6f19fc43cd453209ee58b914621c6/mimllearning-0.5.8.tar.gz
+[2024-06-02 19:54:25] INFO root fetch - processPackages [audiconnectpy]: Downloading https://files.pythonhosted.org/packages/b7/38/af53ba0447f7fb2b632d4d39b8d5681b93acc8e49ccc8eeaa485cce41bb8/audiconnectpy-2.2.8.tar.gz
+[2024-06-02 19:54:25] INFO root fetch - processPackages [trieste]: Downloading https://files.pythonhosted.org/packages/54/e3/a6581d7d074f95470b40d61375b7b3c2c714ee298b43ad783772c228bdb8/trieste-3.3.1.tar.gz
+[2024-06-02 19:54:26] INFO root fetch - processPackages [google-contact-local]: Downloading https://files.pythonhosted.org/packages/90/a0/6476b4b508a422b515b36c8e96bc42204832fa643e68545864d4ecc1f820/google-contact-local-0.0.9.tar.gz
+[2024-06-02 19:54:26] INFO root fetch - processPackages [kcli]: Downloading https://files.pythonhosted.org/packages/f8/14/5f69e8904c02dfeb40caccd733f830b401449a8fa6e8608366cd87867dfa/kcli-99.0.202406021631.tar.gz
+[2024-06-02 19:54:26] INFO root fetch - processPackages [scrapy-playwright-full]: Downloading https://files.pythonhosted.org/packages/d6/9f/c33b3b7efa677d9f53f92ef8f10aeaf6b6c73606ca0a1bdebea95f0b4432/scrapy_playwright_full-0.0.3501.tar.gz
+[2024-06-02 19:54:26] INFO root fetch - processPackages [ch9329]: Downloading https://files.pythonhosted.org/packages/5c/9a/a029e4704d45bf4ab0b391351998a555d3de782d4967d2d6f8082d9d9fd4/ch9329-1.2.3.tar.gz
+[2024-06-02 19:54:26] INFO root fetch - processPackages [audiconnectpy]: executing diffoscope
+[2024-06-02 19:54:26] INFO root fetch - processPackages [audiconnectpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/audiconnectpy-2.2.7.tar.gz tmp/audiconnectpy-2.2.8.tar.gz --markdown 20240602/a/audiconnectpy/2.2.7-2.2.8/README.md --exclude *.pyd
+[2024-06-02 19:54:26] INFO root fetch - processPackages [trieste]: executing diffoscope
+[2024-06-02 19:54:26] INFO root fetch - processPackages [trieste]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trieste-3.3.0.tar.gz tmp/trieste-3.3.1.tar.gz --markdown 20240602/t/trieste/3.3.0-3.3.1/README.md --exclude *.pyd
+[2024-06-02 19:54:26] INFO root fetch - processPackages [google-contact-local]: executing diffoscope
+[2024-06-02 19:54:26] INFO root fetch - processPackages [google-contact-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/google-contact-local-0.0.8.tar.gz tmp/google-contact-local-0.0.9.tar.gz --markdown 20240602/g/google-contact-local/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-06-02 19:54:26] INFO root fetch - processPackages [scrapy-playwright-full]: executing diffoscope
+[2024-06-02 19:54:26] INFO root fetch - processPackages [scrapy-playwright-full]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scrapy_playwright_full-0.0.3404.tar.gz tmp/scrapy_playwright_full-0.0.3501.tar.gz --markdown 20240602/s/scrapy-playwright-full/0.0.3404-0.0.3501/README.md --exclude *.pyd
+[2024-06-02 19:54:26] INFO root fetch - processPackages [ch9329]: executing diffoscope
+[2024-06-02 19:54:26] INFO root fetch - processPackages [ch9329]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ch9329-1.2.2.tar.gz tmp/ch9329-1.2.3.tar.gz --markdown 20240602/c/ch9329/1.2.2-1.2.3/README.md --exclude *.pyd
+[2024-06-02 19:54:26] INFO root fetch - processPackages [kcli]: executing diffoscope
+[2024-06-02 19:54:26] INFO root fetch - processPackages [kcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kcli-99.0.202406021549.tar.gz tmp/kcli-99.0.202406021631.tar.gz --markdown 20240602/k/kcli/99.0.202406021549-99.0.202406021631/README.md --exclude *.pyd
+[2024-06-02 19:54:26] INFO root fetch - processPackages [r2r]: Downloading https://files.pythonhosted.org/packages/75/f5/92ebc90365a073decb3ac6f5b36ddebedc43b003817ec09654333e0c7a9d/r2r-0.2.4.tar.gz
+[2024-06-02 19:54:26] INFO root fetch - processPackages [audiconnectpy]: Remove: archive file [/home/abi/fetcher/tmp/audiconnectpy-2.2.7.tar.gz]
+[2024-06-02 19:54:26] INFO root fetch - processPackages [audiconnectpy]: Remove: archive file [/home/abi/fetcher/tmp/audiconnectpy-2.2.8.tar.gz]
+[2024-06-02 19:54:26] INFO root fetch - main [MainThread]: End processing [audiconnectpy]: success
+[2024-06-02 19:54:26] INFO root fetch - processPackages [google-contact-local]: Remove: archive file [/home/abi/fetcher/tmp/google-contact-local-0.0.8.tar.gz]
+[2024-06-02 19:54:26] INFO root fetch - processPackages [google-contact-local]: Remove: archive file [/home/abi/fetcher/tmp/google-contact-local-0.0.9.tar.gz]
+[2024-06-02 19:54:26] INFO root fetch - main [MainThread]: End processing [google-contact-local]: success
+[2024-06-02 19:54:26] INFO root fetch - processPackages [scrapy-playwright-full]: Remove: archive file [/home/abi/fetcher/tmp/scrapy_playwright_full-0.0.3404.tar.gz]
+[2024-06-02 19:54:26] INFO root fetch - processPackages [scrapy-playwright-full]: Remove: archive file [/home/abi/fetcher/tmp/scrapy_playwright_full-0.0.3501.tar.gz]
+[2024-06-02 19:54:26] INFO root fetch - main [MainThread]: End processing [scrapy-playwright-full]: success
+[2024-06-02 19:54:27] INFO root fetch - processPackages [ch9329]: Remove: archive file [/home/abi/fetcher/tmp/ch9329-1.2.2.tar.gz]
+[2024-06-02 19:54:27] INFO root fetch - processPackages [ch9329]: Remove: archive file [/home/abi/fetcher/tmp/ch9329-1.2.3.tar.gz]
+[2024-06-02 19:54:27] INFO root fetch - main [MainThread]: End processing [ch9329]: success
+[2024-06-02 19:54:27] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/41/4c/aef517b03341ea8031423a65e9a40cfa58845de36d6cbca2d6c4a11eb61c/mimllearning-0.5.9.tar.gz
+[2024-06-02 19:54:27] INFO root fetch - processPackages [trieste]: Remove: archive file [/home/abi/fetcher/tmp/trieste-3.3.0.tar.gz]
+[2024-06-02 19:54:27] INFO root fetch - processPackages [trieste]: Remove: archive file [/home/abi/fetcher/tmp/trieste-3.3.1.tar.gz]
+[2024-06-02 19:54:27] INFO root fetch - main [MainThread]: End processing [trieste]: success
+[2024-06-02 19:54:27] INFO root fetch - processPackages [r2r]: executing diffoscope
+[2024-06-02 19:54:27] INFO root fetch - processPackages [r2r]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/r2r-0.2.3.tar.gz tmp/r2r-0.2.4.tar.gz --markdown 20240602/r/r2r/0.2.3-0.2.4/README.md --exclude *.pyd
+[2024-06-02 19:54:28] INFO root fetch - processPackages [r2r]: Remove: archive file [/home/abi/fetcher/tmp/r2r-0.2.3.tar.gz]
+[2024-06-02 19:54:28] INFO root fetch - processPackages [r2r]: Remove: archive file [/home/abi/fetcher/tmp/r2r-0.2.4.tar.gz]
+[2024-06-02 19:54:28] INFO root fetch - main [MainThread]: End processing [r2r]: success
+[2024-06-02 19:54:28] INFO root fetch - processPackages [kcli]: Remove: archive file [/home/abi/fetcher/tmp/kcli-99.0.202406021549.tar.gz]
+[2024-06-02 19:54:28] INFO root fetch - processPackages [kcli]: Remove: archive file [/home/abi/fetcher/tmp/kcli-99.0.202406021631.tar.gz]
+[2024-06-02 19:54:28] INFO root fetch - main [MainThread]: End processing [kcli]: success
+[2024-06-02 19:54:28] INFO root fetch - processPackages [mimllearning]: executing diffoscope
+[2024-06-02 19:54:28] INFO root fetch - processPackages [mimllearning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mimllearning-0.5.8.tar.gz tmp/mimllearning-0.5.9.tar.gz --markdown 20240602/m/mimllearning/0.5.8-0.5.9/README.md --exclude *.pyd
+[2024-06-02 19:54:32] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.5.8.tar.gz]
+[2024-06-02 19:54:32] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.5.9.tar.gz]
+[2024-06-02 19:54:32] INFO root fetch - main [MainThread]: End processing [mimllearning]: success
+[2024-06-02 19:54:32] INFO root fetch - main [MainThread]: Store serial: [23491514]
