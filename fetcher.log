@@ -14781,3 +14781,68 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 19:24:01] INFO root fetch - processPackages [satnogs-db-api-client]: Remove: archive file [/home/abi/fetcher/tmp/satnogs-db-api-client-1.9.tar.gz]
 [2024-06-02 19:24:01] INFO root fetch - main [MainThread]: End processing [satnogs-db-api-client]: success
 [2024-06-02 19:24:01] INFO root fetch - main [MainThread]: Store serial: [23491301]
+[2024-06-02 19:26:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23491301]
+[2024-06-02 19:26:09] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-06-02 19:26:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: satnogs-db
+[2024-06-02 19:26:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hezar
+[2024-06-02 19:26:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: DatasetsFactory
+[2024-06-02 19:26:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: clear-skies-stripe
+[2024-06-02 19:26:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pypi-cicd
+[2024-06-02 19:26:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: demetric
+[2024-06-02 19:26:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: alphafold3-pytorch
+[2024-06-02 19:26:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: audiconnectpy
+[2024-06-02 19:26:10] INFO root fetch - processPackages [alphafold3-pytorch]: New version: [0.1.9] Old Version: [0.1.7]
+[2024-06-02 19:26:10] INFO root fetch - processPackages [hezar]: New version: [0.38.1] Old Version: [0.38.0]
+[2024-06-02 19:26:10] INFO root fetch - processPackages [demetric]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-06-02 19:26:10] INFO root fetch - processPackages [clear-skies-stripe]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-06-02 19:26:10] INFO root fetch - processPackages [hezar]: Downloading https://files.pythonhosted.org/packages/2b/f8/6e2619c56aa1799ad8f338dcb5baa934ca7c00a81fede68a0fa112f23634/hezar-0.38.0.tar.gz
+[2024-06-02 19:26:10] WARNING root fetch - processPackages [DatasetsFactory]: Skipping, unable to determine old version
+[2024-06-02 19:26:10] INFO root fetch - main [MainThread]: End processing [DatasetsFactory] error
+[2024-06-02 19:26:10] INFO root fetch - processPackages [pypi-cicd]: New version: [0.5] Old Version: [0.4]
+[2024-06-02 19:26:10] INFO root fetch - processPackages [alphafold3-pytorch]: Downloading https://files.pythonhosted.org/packages/d9/0b/e493f7660d3beb0aa4d207749979b3d9b256dcb4cc5bbc6b67f7db93071d/alphafold3_pytorch-0.1.7.tar.gz
+[2024-06-02 19:26:10] INFO root fetch - processPackages [satnogs-db]: New version: [1.9] Old Version: [1.8.1]
+[2024-06-02 19:26:10] INFO root fetch - processPackages [clear-skies-stripe]: Downloading https://files.pythonhosted.org/packages/13/91/c9a9d3f310fd41f3163993e36e2e10ff6b8cf6ceda16fa0994cf222fbea3/clear_skies_stripe-0.9.8.tar.gz
+[2024-06-02 19:26:10] INFO root fetch - processPackages [demetric]: Downloading https://files.pythonhosted.org/packages/e9/b1/6b698ce5f99958ad34ecb5bbc917edb6e954cf1dd6ad3372ae7235fe3349/demetric-0.1.7.tar.gz
+[2024-06-02 19:26:10] INFO root fetch - processPackages [audiconnectpy]: New version: [2.2.8] Old Version: [2.2.7]
+[2024-06-02 19:26:10] INFO root fetch - processPackages [satnogs-db]: Downloading https://files.pythonhosted.org/packages/e3/a0/374aad5afd90ca4e3d81b7533960f7f58a2a0f68ad252c909d21a7dc31bf/satnogs-db-1.8.1.tar.gz
+[2024-06-02 19:26:10] INFO root fetch - processPackages [pypi-cicd]: Downloading https://files.pythonhosted.org/packages/73/26/cf77e469f284fcac35ef7c514b4bcafc461a7f353b3537363d75f579e173/pypi_cicd-0.4.tar.gz
+[2024-06-02 19:26:10] INFO root fetch - processPackages [clear-skies-stripe]: Downloading https://files.pythonhosted.org/packages/58/38/6abee29ee0d94e2a37ad1ec8c6c236968ae918788b47229c1d212fa01868/clear_skies_stripe-0.9.9.tar.gz
+[2024-06-02 19:26:10] INFO root fetch - processPackages [hezar]: Downloading https://files.pythonhosted.org/packages/dc/15/60483c596426cd0f6c759dfe92bb6a9472d7f55c1b6c7f5fc9e43141ce90/hezar-0.38.1.tar.gz
+[2024-06-02 19:26:10] INFO root fetch - processPackages [audiconnectpy]: Downloading https://files.pythonhosted.org/packages/d0/f0/ce0137fe83bef335ffd155da2e6f63f793d3d4e7c89caf70c81bba0651dd/audiconnectpy-2.2.7.tar.gz
+[2024-06-02 19:26:10] INFO root fetch - processPackages [alphafold3-pytorch]: Downloading https://files.pythonhosted.org/packages/cc/d2/c39ecafade11ccfb71fa0cf5a7af109426893636c16321d47eb26391a78f/alphafold3_pytorch-0.1.9.tar.gz
+[2024-06-02 19:26:10] INFO root fetch - processPackages [clear-skies-stripe]: executing diffoscope
+[2024-06-02 19:26:10] INFO root fetch - processPackages [clear-skies-stripe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clear_skies_stripe-0.9.8.tar.gz tmp/clear_skies_stripe-0.9.9.tar.gz --markdown 20240602/c/clear-skies-stripe/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-06-02 19:26:10] INFO root fetch - processPackages [demetric]: Downloading https://files.pythonhosted.org/packages/53/db/8a8a4289ae3819bd9ddf9f4834bbe69004daee811cea9ae568942b6ae753/demetric-0.1.8.tar.gz
+[2024-06-02 19:26:10] INFO root fetch - processPackages [hezar]: executing diffoscope
+[2024-06-02 19:26:10] INFO root fetch - processPackages [hezar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hezar-0.38.0.tar.gz tmp/hezar-0.38.1.tar.gz --markdown 20240602/h/hezar/0.38.0-0.38.1/README.md --exclude *.pyd
+[2024-06-02 19:26:10] INFO root fetch - processPackages [demetric]: executing diffoscope
+[2024-06-02 19:26:10] INFO root fetch - processPackages [demetric]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/demetric-0.1.7.tar.gz tmp/demetric-0.1.8.tar.gz --markdown 20240602/d/demetric/0.1.7-0.1.8/README.md --exclude *.pyd
+[2024-06-02 19:26:10] INFO root fetch - processPackages [alphafold3-pytorch]: executing diffoscope
+[2024-06-02 19:26:10] INFO root fetch - processPackages [alphafold3-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alphafold3_pytorch-0.1.7.tar.gz tmp/alphafold3_pytorch-0.1.9.tar.gz --markdown 20240602/a/alphafold3-pytorch/0.1.7-0.1.9/README.md --exclude *.pyd
+[2024-06-02 19:26:10] INFO root fetch - processPackages [pypi-cicd]: Downloading https://files.pythonhosted.org/packages/3d/da/c414af17bf136428ebe5f5ab5d1ff8fe1e350cc4264bf286609a7e06e3e1/pypi_cicd-0.5.tar.gz
+[2024-06-02 19:26:10] INFO root fetch - processPackages [audiconnectpy]: Downloading https://files.pythonhosted.org/packages/b7/38/af53ba0447f7fb2b632d4d39b8d5681b93acc8e49ccc8eeaa485cce41bb8/audiconnectpy-2.2.8.tar.gz
+[2024-06-02 19:26:10] INFO root fetch - processPackages [pypi-cicd]: executing diffoscope
+[2024-06-02 19:26:10] INFO root fetch - processPackages [pypi-cicd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypi_cicd-0.4.tar.gz tmp/pypi_cicd-0.5.tar.gz --markdown 20240602/p/pypi-cicd/0.4-0.5/README.md --exclude *.pyd
+[2024-06-02 19:26:11] INFO root fetch - processPackages [clear-skies-stripe]: Remove: archive file [/home/abi/fetcher/tmp/clear_skies_stripe-0.9.8.tar.gz]
+[2024-06-02 19:26:11] INFO root fetch - processPackages [clear-skies-stripe]: Remove: archive file [/home/abi/fetcher/tmp/clear_skies_stripe-0.9.9.tar.gz]
+[2024-06-02 19:26:11] INFO root fetch - main [MainThread]: End processing [clear-skies-stripe]: success
+[2024-06-02 19:26:11] INFO root fetch - processPackages [demetric]: Remove: archive file [/home/abi/fetcher/tmp/demetric-0.1.7.tar.gz]
+[2024-06-02 19:26:11] INFO root fetch - processPackages [demetric]: Remove: archive file [/home/abi/fetcher/tmp/demetric-0.1.8.tar.gz]
+[2024-06-02 19:26:11] INFO root fetch - main [MainThread]: End processing [demetric]: success
+[2024-06-02 19:26:11] INFO root fetch - processPackages [alphafold3-pytorch]: Remove: archive file [/home/abi/fetcher/tmp/alphafold3_pytorch-0.1.7.tar.gz]
+[2024-06-02 19:26:11] INFO root fetch - processPackages [alphafold3-pytorch]: Remove: archive file [/home/abi/fetcher/tmp/alphafold3_pytorch-0.1.9.tar.gz]
+[2024-06-02 19:26:11] INFO root fetch - main [MainThread]: End processing [alphafold3-pytorch]: success
+[2024-06-02 19:26:11] INFO root fetch - processPackages [pypi-cicd]: Remove: archive file [/home/abi/fetcher/tmp/pypi_cicd-0.4.tar.gz]
+[2024-06-02 19:26:11] INFO root fetch - processPackages [pypi-cicd]: Remove: archive file [/home/abi/fetcher/tmp/pypi_cicd-0.5.tar.gz]
+[2024-06-02 19:26:11] INFO root fetch - main [MainThread]: End processing [pypi-cicd]: success
+[2024-06-02 19:26:11] INFO root fetch - processPackages [audiconnectpy]: executing diffoscope
+[2024-06-02 19:26:11] INFO root fetch - processPackages [audiconnectpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/audiconnectpy-2.2.7.tar.gz tmp/audiconnectpy-2.2.8.tar.gz --markdown 20240602/a/audiconnectpy/2.2.7-2.2.8/README.md --exclude *.pyd
+[2024-06-02 19:26:11] INFO root fetch - processPackages [hezar]: Remove: archive file [/home/abi/fetcher/tmp/hezar-0.38.0.tar.gz]
+[2024-06-02 19:26:11] INFO root fetch - processPackages [hezar]: Remove: archive file [/home/abi/fetcher/tmp/hezar-0.38.1.tar.gz]
+[2024-06-02 19:26:11] INFO root fetch - main [MainThread]: End processing [hezar]: success
+[2024-06-02 19:26:11] WARNING root fetch - processPackages [satnogs-db]: Skipping package: exceeds size limit 32882285>=10485760
+[2024-06-02 19:26:11] INFO root fetch - main [MainThread]: End processing [satnogs-db] error
+[2024-06-02 19:26:12] INFO root fetch - processPackages [audiconnectpy]: Remove: archive file [/home/abi/fetcher/tmp/audiconnectpy-2.2.7.tar.gz]
+[2024-06-02 19:26:12] INFO root fetch - processPackages [audiconnectpy]: Remove: archive file [/home/abi/fetcher/tmp/audiconnectpy-2.2.8.tar.gz]
+[2024-06-02 19:26:12] INFO root fetch - main [MainThread]: End processing [audiconnectpy]: success
+[2024-06-02 19:26:12] INFO root fetch - main [MainThread]: Store serial: [23491326]
