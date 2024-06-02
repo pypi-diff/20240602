@@ -6273,3 +6273,42 @@
 [2024-06-02 10:40:14] INFO root fetch - processPackages [python-moss]: Remove: archive file [/home/abi/fetcher/tmp/python_moss-0.3.1-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
 [2024-06-02 10:40:14] INFO root fetch - main [MainThread]: End processing [python-moss]: success
 [2024-06-02 10:40:14] INFO root fetch - main [MainThread]: Store serial: [23487463]
+[2024-06-02 10:42:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23487463]
+[2024-06-02 10:42:34] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-02 10:42:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: conditional-cache
+[2024-06-02 10:42:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: event-outbox
+[2024-06-02 10:42:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: api-management-local
+[2024-06-02 10:42:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: spaceone-api
+[2024-06-02 10:42:34] INFO root fetch - processPackages [event-outbox]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-06-02 10:42:34] INFO root fetch - processPackages [conditional-cache]: New version: [1.2] Old Version: [1.1.0]
+[2024-06-02 10:42:34] INFO root fetch - processPackages [spaceone-api]: New version: [2.0.dev89] Old Version: [2.0.dev78]
+[2024-06-02 10:42:34] INFO root fetch - processPackages [api-management-local]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-06-02 10:42:34] INFO root fetch - processPackages [event-outbox]: Downloading https://files.pythonhosted.org/packages/d6/6d/8b83dbfe4a6a234dcc6e5386d895799c0cd429440808a2048b60ab680c7f/event_outbox-0.1.2.tar.gz
+[2024-06-02 10:42:34] INFO root fetch - processPackages [conditional-cache]: Downloading https://files.pythonhosted.org/packages/e8/a7/90ed97d5793150f0a467975161c06b822d168da8279fa1d7ce312480e47c/conditional-cache-1.1.0.tar.gz
+[2024-06-02 10:42:34] INFO root fetch - processPackages [api-management-local]: Downloading https://files.pythonhosted.org/packages/32/8d/91ba0097e4ccea06453a14838b92b8ee48bc1880e8710d022d215299ae02/api-management-local-0.0.8.tar.gz
+[2024-06-02 10:42:34] INFO root fetch - processPackages [spaceone-api]: Downloading https://files.pythonhosted.org/packages/63/38/896ca815cd9f0d4be5040377b88a5b629fee8eedad29b468c7a50e063060/spaceone-api-2.0.dev78.tar.gz
+[2024-06-02 10:42:34] INFO root fetch - processPackages [event-outbox]: Downloading https://files.pythonhosted.org/packages/ff/67/823c2efde1ba292f0a04ffa499253b9aafe40139351c4f286db3e8ba22a5/event_outbox-0.1.3.tar.gz
+[2024-06-02 10:42:34] INFO root fetch - processPackages [conditional-cache]: Downloading https://files.pythonhosted.org/packages/61/50/b6f5755fd0b68c78f62b6e7116b8c5da631ec4488da4cc417117797843a7/conditional_cache-1.2.tar.gz
+[2024-06-02 10:42:34] INFO root fetch - processPackages [event-outbox]: executing diffoscope
+[2024-06-02 10:42:34] INFO root fetch - processPackages [event-outbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/event_outbox-0.1.2.tar.gz tmp/event_outbox-0.1.3.tar.gz --markdown 20240602/e/event-outbox/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-06-02 10:42:34] INFO root fetch - processPackages [conditional-cache]: executing diffoscope
+[2024-06-02 10:42:34] INFO root fetch - processPackages [conditional-cache]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/conditional-cache-1.1.0.tar.gz tmp/conditional_cache-1.2.tar.gz --markdown 20240602/c/conditional-cache/1.1.0-1.2/README.md --exclude *.pyd
+[2024-06-02 10:42:34] INFO root fetch - processPackages [spaceone-api]: Downloading https://files.pythonhosted.org/packages/c0/ea/4a6c8347250e808ffcceef19de666ffee1c045761343985127f39a05bc13/spaceone-api-2.0.dev89.tar.gz
+[2024-06-02 10:42:34] INFO root fetch - processPackages [api-management-local]: Downloading https://files.pythonhosted.org/packages/cb/96/c6e4476ef16ac62a0dbb73d152f9e62d4bdc20962b3c26c38313ac1ba76b/api-management-local-0.0.9.tar.gz
+[2024-06-02 10:42:35] INFO root fetch - processPackages [api-management-local]: executing diffoscope
+[2024-06-02 10:42:35] INFO root fetch - processPackages [api-management-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/api-management-local-0.0.8.tar.gz tmp/api-management-local-0.0.9.tar.gz --markdown 20240602/a/api-management-local/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-06-02 10:42:35] INFO root fetch - processPackages [spaceone-api]: executing diffoscope
+[2024-06-02 10:42:35] INFO root fetch - processPackages [spaceone-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spaceone-api-2.0.dev78.tar.gz tmp/spaceone-api-2.0.dev89.tar.gz --markdown 20240602/s/spaceone-api/2.0.dev78-2.0.dev89/README.md --exclude *.pyd
+[2024-06-02 10:42:35] INFO root fetch - processPackages [event-outbox]: Remove: archive file [/home/abi/fetcher/tmp/event_outbox-0.1.2.tar.gz]
+[2024-06-02 10:42:35] INFO root fetch - processPackages [event-outbox]: Remove: archive file [/home/abi/fetcher/tmp/event_outbox-0.1.3.tar.gz]
+[2024-06-02 10:42:35] INFO root fetch - main [MainThread]: End processing [event-outbox]: success
+[2024-06-02 10:42:35] INFO root fetch - processPackages [conditional-cache]: Remove: archive file [/home/abi/fetcher/tmp/conditional-cache-1.1.0.tar.gz]
+[2024-06-02 10:42:35] INFO root fetch - processPackages [conditional-cache]: Remove: archive file [/home/abi/fetcher/tmp/conditional_cache-1.2.tar.gz]
+[2024-06-02 10:42:35] INFO root fetch - main [MainThread]: End processing [conditional-cache]: success
+[2024-06-02 10:42:35] INFO root fetch - processPackages [api-management-local]: Remove: archive file [/home/abi/fetcher/tmp/api-management-local-0.0.8.tar.gz]
+[2024-06-02 10:42:35] INFO root fetch - processPackages [api-management-local]: Remove: archive file [/home/abi/fetcher/tmp/api-management-local-0.0.9.tar.gz]
+[2024-06-02 10:42:35] INFO root fetch - main [MainThread]: End processing [api-management-local]: success
+[2024-06-02 10:42:36] INFO root fetch - processPackages [spaceone-api]: Remove: archive file [/home/abi/fetcher/tmp/spaceone-api-2.0.dev78.tar.gz]
+[2024-06-02 10:42:36] INFO root fetch - processPackages [spaceone-api]: Remove: archive file [/home/abi/fetcher/tmp/spaceone-api-2.0.dev89.tar.gz]
+[2024-06-02 10:42:36] INFO root fetch - main [MainThread]: End processing [spaceone-api]: success
+[2024-06-02 10:42:36] INFO root fetch - main [MainThread]: Store serial: [23487475]
