@@ -7602,3 +7602,33 @@
 [2024-06-02 12:31:54] INFO root fetch - processPackages [belashovplot]: Remove: archive file [/home/abi/fetcher/tmp/belashovplot-1.1.tar.gz]
 [2024-06-02 12:31:54] INFO root fetch - main [MainThread]: End processing [belashovplot]: success
 [2024-06-02 12:31:54] INFO root fetch - main [MainThread]: Store serial: [23488121]
+[2024-06-02 12:33:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23488121]
+[2024-06-02 12:34:02] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-02 12:34:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: czsc
+[2024-06-02 12:34:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: danila-lib
+[2024-06-02 12:34:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cmake-pre-commit-hooks
+[2024-06-02 12:34:02] INFO root fetch - processPackages [danila-lib]: New version: [1.8.7] Old Version: [1.8.6]
+[2024-06-02 12:34:02] INFO root fetch - processPackages [cmake-pre-commit-hooks]: New version: [1.9.6] Old Version: [1.9.5]
+[2024-06-02 12:34:02] INFO root fetch - processPackages [czsc]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-06-02 12:34:03] INFO root fetch - processPackages [danila-lib]: Downloading https://files.pythonhosted.org/packages/3d/50/fb70b3bcb2712cc2ca898e4f7e3d45805314654ba384e6e38ba34d850557/danila-lib-1.8.6.tar.gz
+[2024-06-02 12:34:03] INFO root fetch - processPackages [czsc]: Downloading https://files.pythonhosted.org/packages/ff/64/49e6809b474049632717e96f3a51bcdab728d63517d8ec0eb228e09ad52d/czsc-0.9.8.tar.gz
+[2024-06-02 12:34:03] INFO root fetch - processPackages [cmake-pre-commit-hooks]: Downloading https://files.pythonhosted.org/packages/c5/d1/b25e8d205d31c340fab80640f21d11fbe2bf14bb43842d30ba578ba1f8db/cmake_pre_commit_hooks-1.9.5.tar.gz
+[2024-06-02 12:34:03] INFO root fetch - processPackages [danila-lib]: Downloading https://files.pythonhosted.org/packages/8c/a1/737ae35b51c9ac7477542bffc0b72a3b29858ac6712bec51a1e304fcc978/danila-lib-1.8.7.tar.gz
+[2024-06-02 12:34:03] INFO root fetch - processPackages [cmake-pre-commit-hooks]: Downloading https://files.pythonhosted.org/packages/b3/a6/dfaa14976e636501e3886322d1a905dfe0f91ab10771a4859fb9c78eea68/cmake_pre_commit_hooks-1.9.6.tar.gz
+[2024-06-02 12:34:03] INFO root fetch - processPackages [czsc]: Downloading https://files.pythonhosted.org/packages/65/2a/c6b0017939d88546e65732fc499326433b075adecda347c5aca412e4fe77/czsc-0.9.9.tar.gz
+[2024-06-02 12:34:03] INFO root fetch - processPackages [danila-lib]: executing diffoscope
+[2024-06-02 12:34:03] INFO root fetch - processPackages [danila-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/danila-lib-1.8.6.tar.gz tmp/danila-lib-1.8.7.tar.gz --markdown 20240602/d/danila-lib/1.8.6-1.8.7/README.md --exclude *.pyd
+[2024-06-02 12:34:03] INFO root fetch - processPackages [cmake-pre-commit-hooks]: executing diffoscope
+[2024-06-02 12:34:03] INFO root fetch - processPackages [cmake-pre-commit-hooks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cmake_pre_commit_hooks-1.9.5.tar.gz tmp/cmake_pre_commit_hooks-1.9.6.tar.gz --markdown 20240602/c/cmake-pre-commit-hooks/1.9.5-1.9.6/README.md --exclude *.pyd
+[2024-06-02 12:34:03] INFO root fetch - processPackages [czsc]: executing diffoscope
+[2024-06-02 12:34:03] INFO root fetch - processPackages [czsc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/czsc-0.9.8.tar.gz tmp/czsc-0.9.9.tar.gz --markdown 20240602/c/czsc/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-06-02 12:34:04] INFO root fetch - processPackages [danila-lib]: Remove: archive file [/home/abi/fetcher/tmp/danila-lib-1.8.6.tar.gz]
+[2024-06-02 12:34:04] INFO root fetch - processPackages [danila-lib]: Remove: archive file [/home/abi/fetcher/tmp/danila-lib-1.8.7.tar.gz]
+[2024-06-02 12:34:04] INFO root fetch - main [MainThread]: End processing [danila-lib]: success
+[2024-06-02 12:34:04] INFO root fetch - processPackages [cmake-pre-commit-hooks]: Remove: archive file [/home/abi/fetcher/tmp/cmake_pre_commit_hooks-1.9.5.tar.gz]
+[2024-06-02 12:34:04] INFO root fetch - processPackages [cmake-pre-commit-hooks]: Remove: archive file [/home/abi/fetcher/tmp/cmake_pre_commit_hooks-1.9.6.tar.gz]
+[2024-06-02 12:34:04] INFO root fetch - main [MainThread]: End processing [cmake-pre-commit-hooks]: success
+[2024-06-02 12:34:04] INFO root fetch - processPackages [czsc]: Remove: archive file [/home/abi/fetcher/tmp/czsc-0.9.8.tar.gz]
+[2024-06-02 12:34:04] INFO root fetch - processPackages [czsc]: Remove: archive file [/home/abi/fetcher/tmp/czsc-0.9.9.tar.gz]
+[2024-06-02 12:34:04] INFO root fetch - main [MainThread]: End processing [czsc]: success
+[2024-06-02 12:34:04] INFO root fetch - main [MainThread]: Store serial: [23488130]
