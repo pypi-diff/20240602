@@ -21324,3 +21324,60 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 23:56:07] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-1.0.0.tar.gz]
 [2024-06-02 23:56:07] INFO root fetch - main [MainThread]: End processing [mimllearning]: success
 [2024-06-02 23:56:07] INFO root fetch - main [MainThread]: Store serial: [23494102]
+[2024-06-02 23:58:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23494102]
+[2024-06-02 23:58:17] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-06-02 23:58:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lunary
+[2024-06-02 23:58:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-tmmis
+[2024-06-02 23:58:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fixpoint-sdk
+[2024-06-02 23:58:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lapidary
+[2024-06-02 23:58:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ngclearn
+[2024-06-02 23:58:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: VRE-Repository-Connector
+[2024-06-02 23:58:17] INFO root fetch - processPackages [django-tmmis]: New version: [0.3.7.dev0] Old Version: [0.3.6]
+[2024-06-02 23:58:17] INFO root fetch - processPackages [lunary]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-06-02 23:58:17] INFO root fetch - processPackages [lapidary]: New version: [0.9.1] Old Version: [0.9.0]
+[2024-06-02 23:58:17] INFO root fetch - processPackages [VRE-Repository-Connector]: New version: [0.3.1] Old Version: [0.3.0]
+[2024-06-02 23:58:17] INFO root fetch - processPackages [lunary]: Downloading https://files.pythonhosted.org/packages/7d/d1/1882edac83d811cc9e0bd90969299cb0c7dbe716b2d7a7d285ab04998b52/lunary-1.0.8.tar.gz
+[2024-06-02 23:58:17] INFO root fetch - processPackages [django-tmmis]: Downloading https://files.pythonhosted.org/packages/99/b6/4ab9388b27613ab9abb8637b112d663f03199cf6e56ca581ad712f236c23/django-tmmis-0.3.6.tar.gz
+[2024-06-02 23:58:17] INFO root fetch - processPackages [ngclearn]: New version: [1.1b2] Old Version: [1.1b1]
+[2024-06-02 23:58:17] INFO root fetch - processPackages [fixpoint-sdk]: New version: [0.9.0] Old Version: [0.8.2]
+[2024-06-02 23:58:17] INFO root fetch - processPackages [lapidary]: Downloading https://files.pythonhosted.org/packages/70/c7/3ab81b125148f95d81a0fe792bc5f2629c7f219092dc187376602c1b3387/lapidary-0.9.0.tar.gz
+[2024-06-02 23:58:17] INFO root fetch - processPackages [lunary]: Downloading https://files.pythonhosted.org/packages/7e/79/563b968f7a8ae5114b4d64918c8f955a6304c2107bb64837179143d34289/lunary-1.0.9.tar.gz
+[2024-06-02 23:58:17] INFO root fetch - processPackages [django-tmmis]: Downloading https://files.pythonhosted.org/packages/b8/a6/b6991cd4511a02bc5743720c00fd6a1f62164338c944134815e148241bdd/django_tmmis-0.3.7.dev0.tar.gz
+[2024-06-02 23:58:17] INFO root fetch - processPackages [ngclearn]: Downloading https://files.pythonhosted.org/packages/f6/b9/9d19e27f5ccb0e723658c51f06d8d819c79969148caed9e95bcc70dbc594/ngclearn-1.1b1.tar.gz
+[2024-06-02 23:58:17] INFO root fetch - processPackages [fixpoint-sdk]: Downloading https://files.pythonhosted.org/packages/ab/ec/ed0d19ea543fb641a2c97609f35ee9008e2cf168f610759d6f1781172913/fixpoint_sdk-0.8.2.tar.gz
+[2024-06-02 23:58:17] INFO root fetch - processPackages [VRE-Repository-Connector]: Downloading https://files.pythonhosted.org/packages/5d/1e/10993577438a8024d8e0ba8ef9f0630afba9defdc19ece15470cfd478e4d/vre_repository_connector-0.3.0.tar.gz
+[2024-06-02 23:58:17] INFO root fetch - processPackages [lunary]: executing diffoscope
+[2024-06-02 23:58:17] INFO root fetch - processPackages [lunary]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lunary-1.0.8.tar.gz tmp/lunary-1.0.9.tar.gz --markdown 20240602/l/lunary/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-06-02 23:58:17] INFO root fetch - processPackages [django-tmmis]: executing diffoscope
+[2024-06-02 23:58:17] INFO root fetch - processPackages [django-tmmis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-tmmis-0.3.6.tar.gz tmp/django_tmmis-0.3.7.dev0.tar.gz --markdown 20240602/d/django-tmmis/0.3.6-0.3.7.dev0/README.md --exclude *.pyd
+[2024-06-02 23:58:18] INFO root fetch - processPackages [lapidary]: Downloading https://files.pythonhosted.org/packages/7d/e3/61f054bc3551c4d037cab5cc0607751e1de180a3f24a44ee76f3d8fc0511/lapidary-0.9.1.tar.gz
+[2024-06-02 23:58:18] INFO root fetch - processPackages [ngclearn]: Downloading https://files.pythonhosted.org/packages/6f/08/621ddc47a6f22ecfd75b7ab44ab4436177e785eae8ed9a148870c151a2e3/ngclearn-1.1b2.tar.gz
+[2024-06-02 23:58:18] INFO root fetch - processPackages [VRE-Repository-Connector]: Downloading https://files.pythonhosted.org/packages/ae/49/54bfe360130f41db174a87b1ad0e8d54943237f75e796d4985591bcc2a14/vre_repository_connector-0.3.1.tar.gz
+[2024-06-02 23:58:18] INFO root fetch - processPackages [fixpoint-sdk]: Downloading https://files.pythonhosted.org/packages/49/a4/a7ca9fbe7d7136ec170e3d29ede624c7f8cb7f45836375f439447d28d7ae/fixpoint_sdk-0.9.0.tar.gz
+[2024-06-02 23:58:18] INFO root fetch - processPackages [ngclearn]: executing diffoscope
+[2024-06-02 23:58:18] INFO root fetch - processPackages [lapidary]: executing diffoscope
+[2024-06-02 23:58:18] INFO root fetch - processPackages [lapidary]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lapidary-0.9.0.tar.gz tmp/lapidary-0.9.1.tar.gz --markdown 20240602/l/lapidary/0.9.0-0.9.1/README.md --exclude *.pyd
+[2024-06-02 23:58:18] INFO root fetch - processPackages [ngclearn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ngclearn-1.1b1.tar.gz tmp/ngclearn-1.1b2.tar.gz --markdown 20240602/n/ngclearn/1.1b1-1.1b2/README.md --exclude *.pyd
+[2024-06-02 23:58:18] INFO root fetch - processPackages [VRE-Repository-Connector]: executing diffoscope
+[2024-06-02 23:58:18] INFO root fetch - processPackages [VRE-Repository-Connector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vre_repository_connector-0.3.0.tar.gz tmp/vre_repository_connector-0.3.1.tar.gz --markdown 20240602/V/VRE-Repository-Connector/0.3.0-0.3.1/README.md --exclude *.pyd
+[2024-06-02 23:58:18] INFO root fetch - processPackages [fixpoint-sdk]: executing diffoscope
+[2024-06-02 23:58:18] INFO root fetch - processPackages [fixpoint-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fixpoint_sdk-0.8.2.tar.gz tmp/fixpoint_sdk-0.9.0.tar.gz --markdown 20240602/f/fixpoint-sdk/0.8.2-0.9.0/README.md --exclude *.pyd
+[2024-06-02 23:58:18] INFO root fetch - processPackages [lunary]: Remove: archive file [/home/abi/fetcher/tmp/lunary-1.0.8.tar.gz]
+[2024-06-02 23:58:18] INFO root fetch - processPackages [lunary]: Remove: archive file [/home/abi/fetcher/tmp/lunary-1.0.9.tar.gz]
+[2024-06-02 23:58:18] INFO root fetch - main [MainThread]: End processing [lunary]: success
+[2024-06-02 23:58:18] INFO root fetch - processPackages [django-tmmis]: Remove: archive file [/home/abi/fetcher/tmp/django-tmmis-0.3.6.tar.gz]
+[2024-06-02 23:58:18] INFO root fetch - processPackages [django-tmmis]: Remove: archive file [/home/abi/fetcher/tmp/django_tmmis-0.3.7.dev0.tar.gz]
+[2024-06-02 23:58:18] INFO root fetch - main [MainThread]: End processing [django-tmmis]: success
+[2024-06-02 23:58:18] INFO root fetch - processPackages [lapidary]: Remove: archive file [/home/abi/fetcher/tmp/lapidary-0.9.0.tar.gz]
+[2024-06-02 23:58:18] INFO root fetch - processPackages [lapidary]: Remove: archive file [/home/abi/fetcher/tmp/lapidary-0.9.1.tar.gz]
+[2024-06-02 23:58:18] INFO root fetch - main [MainThread]: End processing [lapidary]: success
+[2024-06-02 23:58:18] INFO root fetch - processPackages [VRE-Repository-Connector]: Remove: archive file [/home/abi/fetcher/tmp/vre_repository_connector-0.3.0.tar.gz]
+[2024-06-02 23:58:18] INFO root fetch - processPackages [VRE-Repository-Connector]: Remove: archive file [/home/abi/fetcher/tmp/vre_repository_connector-0.3.1.tar.gz]
+[2024-06-02 23:58:18] INFO root fetch - main [MainThread]: End processing [VRE-Repository-Connector]: success
+[2024-06-02 23:58:19] INFO root fetch - processPackages [fixpoint-sdk]: Remove: archive file [/home/abi/fetcher/tmp/fixpoint_sdk-0.8.2.tar.gz]
+[2024-06-02 23:58:19] INFO root fetch - processPackages [fixpoint-sdk]: Remove: archive file [/home/abi/fetcher/tmp/fixpoint_sdk-0.9.0.tar.gz]
+[2024-06-02 23:58:19] INFO root fetch - main [MainThread]: End processing [fixpoint-sdk]: success
+[2024-06-02 23:58:19] INFO root fetch - processPackages [ngclearn]: Remove: archive file [/home/abi/fetcher/tmp/ngclearn-1.1b1.tar.gz]
+[2024-06-02 23:58:19] INFO root fetch - processPackages [ngclearn]: Remove: archive file [/home/abi/fetcher/tmp/ngclearn-1.1b2.tar.gz]
+[2024-06-02 23:58:19] INFO root fetch - main [MainThread]: End processing [ngclearn]: success
+[2024-06-02 23:58:19] INFO root fetch - main [MainThread]: Store serial: [23494120]
