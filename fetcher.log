@@ -6345,3 +6345,15 @@
 [2024-06-02 10:47:02] INFO root fetch - processPackages [tf-nightly-cpu]: Remove: archive file [/home/abi/fetcher/tmp/tf_nightly_cpu-2.17.0.dev20240602-cp39-cp39-win_amd64.whl.zip]
 [2024-06-02 10:47:02] INFO root fetch - main [MainThread]: End processing [tf-nightly-cpu]: success
 [2024-06-02 10:47:02] INFO root fetch - main [MainThread]: Store serial: [23487485]
+[2024-06-02 10:49:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23487485]
+[2024-06-02 10:49:11] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-02 10:49:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fast-mime
+[2024-06-02 10:49:11] INFO root fetch - processPackages [fast-mime]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-06-02 10:49:12] INFO root fetch - processPackages [fast-mime]: Downloading https://files.pythonhosted.org/packages/eb/e1/05dd3d8b7227da03c6e99b421ebca59fe771ff50aa233cd282959b628523/fast_mime-0.1.0.tar.gz
+[2024-06-02 10:49:12] INFO root fetch - processPackages [fast-mime]: Downloading https://files.pythonhosted.org/packages/5b/b6/492ca07898de01f72067dcbb59ac10bfe7f89feb30fd822ce1382449c1cc/fast_mime-0.1.1.tar.gz
+[2024-06-02 10:49:12] INFO root fetch - processPackages [fast-mime]: executing diffoscope
+[2024-06-02 10:49:12] INFO root fetch - processPackages [fast-mime]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fast_mime-0.1.0.tar.gz tmp/fast_mime-0.1.1.tar.gz --markdown 20240602/f/fast-mime/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-06-02 10:49:13] INFO root fetch - processPackages [fast-mime]: Remove: archive file [/home/abi/fetcher/tmp/fast_mime-0.1.0.tar.gz]
+[2024-06-02 10:49:13] INFO root fetch - processPackages [fast-mime]: Remove: archive file [/home/abi/fetcher/tmp/fast_mime-0.1.1.tar.gz]
+[2024-06-02 10:49:13] INFO root fetch - main [MainThread]: End processing [fast-mime]: success
+[2024-06-02 10:49:13] INFO root fetch - main [MainThread]: Store serial: [23487488]
