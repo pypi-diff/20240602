@@ -12160,3 +12160,60 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 17:24:46] INFO root fetch - processPackages [glide-for-redis]: Remove: archive file [/home/abi/fetcher/tmp/glide_for_redis-0.4.1rc5-cp39-cp39-manylinux_2_28_aarch64.whl.zip]
 [2024-06-02 17:24:46] INFO root fetch - main [MainThread]: End processing [glide-for-redis]: success
 [2024-06-02 17:24:46] INFO root fetch - main [MainThread]: Store serial: [23490092]
+[2024-06-02 17:26:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23490092]
+[2024-06-02 17:26:57] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-06-02 17:26:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mistralrs
+[2024-06-02 17:26:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mistralrs-accelerate
+[2024-06-02 17:26:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mistralrs-cuda
+[2024-06-02 17:26:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mistralrs-metal
+[2024-06-02 17:26:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mistralrs-mkl
+[2024-06-02 17:26:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: stashconnect
+[2024-06-02 17:26:58] INFO root fetch - processPackages [stashconnect]: New version: [0.8.9] Old Version: [0.8.8]
+[2024-06-02 17:26:58] INFO root fetch - processPackages [stashconnect]: Downloading https://files.pythonhosted.org/packages/77/b0/a8156ef25046dc01da974ff3239e2ce5ce3aa5f2933ebdc8c69e6680ba26/stashconnect-0.8.8.tar.gz
+[2024-06-02 17:26:58] INFO root fetch - processPackages [mistralrs-cuda]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-06-02 17:26:58] INFO root fetch - processPackages [mistralrs-accelerate]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-06-02 17:26:58] INFO root fetch - processPackages [mistralrs-metal]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-06-02 17:26:58] INFO root fetch - processPackages [mistralrs]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-06-02 17:26:58] INFO root fetch - processPackages [mistralrs-mkl]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-06-02 17:26:58] INFO root fetch - processPackages [mistralrs-metal]: Downloading https://files.pythonhosted.org/packages/d7/cb/1c1829f026d8730188a6dd7b8c0b74ba12488ec5f0014bf6f2ac26557a8e/mistralrs_metal-0.1.7.tar.gz
+[2024-06-02 17:26:58] INFO root fetch - processPackages [mistralrs-cuda]: Downloading https://files.pythonhosted.org/packages/57/03/d03238c7a179bc95c7954a216d0a931c2430f893a3ad750911f9e39a208a/mistralrs_cuda-0.1.7.tar.gz
+[2024-06-02 17:26:58] INFO root fetch - processPackages [mistralrs-mkl]: Downloading https://files.pythonhosted.org/packages/64/ff/37ded4b97ec172af32fd0d6354cb44e3fe4d8872291a598a9e668d2a5b23/mistralrs_mkl-0.1.7.tar.gz
+[2024-06-02 17:26:58] INFO root fetch - processPackages [mistralrs-accelerate]: Downloading https://files.pythonhosted.org/packages/16/0a/51622b926f438156a7034b0565800cb9a09813be7eb86ac66e5ed84d3039/mistralrs_accelerate-0.1.7.tar.gz
+[2024-06-02 17:26:58] INFO root fetch - processPackages [mistralrs]: Downloading https://files.pythonhosted.org/packages/6c/f4/22716a35132cc0405584e4709018c303605e6e9dc84207345058f125a7f8/mistralrs-0.1.7.tar.gz
+[2024-06-02 17:26:58] INFO root fetch - processPackages [stashconnect]: Downloading https://files.pythonhosted.org/packages/ad/a3/3c28cb3e4cf334ed377a873690a636c8cc7cd8e20c653fe7c4952f9801a7/stashconnect-0.8.9.tar.gz
+[2024-06-02 17:26:58] INFO root fetch - processPackages [stashconnect]: executing diffoscope
+[2024-06-02 17:26:58] INFO root fetch - processPackages [stashconnect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stashconnect-0.8.8.tar.gz tmp/stashconnect-0.8.9.tar.gz --markdown 20240602/s/stashconnect/0.8.8-0.8.9/README.md --exclude *.pyd
+[2024-06-02 17:26:58] INFO root fetch - processPackages [mistralrs-metal]: Downloading https://files.pythonhosted.org/packages/cb/ed/bb9b40132ae30f73b31dd067ae3b1f6d9b1c949e77a87fc7f5befd83a505/mistralrs_metal-0.1.8.tar.gz
+[2024-06-02 17:26:58] INFO root fetch - processPackages [mistralrs-cuda]: Downloading https://files.pythonhosted.org/packages/41/48/65bdab6cc3047f20020459b05626167a7d46e4a15e485d9bf738006d84ca/mistralrs_cuda-0.1.8.tar.gz
+[2024-06-02 17:26:58] INFO root fetch - processPackages [mistralrs-mkl]: Downloading https://files.pythonhosted.org/packages/3d/0b/2428fa4b067b2f15b0c2fd560c386f5605cd65b158119833b00e90559e9b/mistralrs_mkl-0.1.8.tar.gz
+[2024-06-02 17:26:58] INFO root fetch - processPackages [mistralrs-accelerate]: Downloading https://files.pythonhosted.org/packages/30/e1/8bfe3315cc16df6e5e3f15bd82fbd5bcb892d939aec89a1b85e8c7370af4/mistralrs_accelerate-0.1.8.tar.gz
+[2024-06-02 17:26:58] INFO root fetch - processPackages [mistralrs]: Downloading https://files.pythonhosted.org/packages/4b/aa/2362b3852bc98c119268e4306a1b28f9d70ec7c6286b0cb460098bd9f156/mistralrs-0.1.8.tar.gz
+[2024-06-02 17:26:58] INFO root fetch - processPackages [mistralrs-metal]: executing diffoscope
+[2024-06-02 17:26:58] INFO root fetch - processPackages [mistralrs-metal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mistralrs_metal-0.1.7.tar.gz tmp/mistralrs_metal-0.1.8.tar.gz --markdown 20240602/m/mistralrs-metal/0.1.7-0.1.8/README.md --exclude *.pyd
+[2024-06-02 17:26:58] INFO root fetch - processPackages [mistralrs-mkl]: executing diffoscope
+[2024-06-02 17:26:58] INFO root fetch - processPackages [mistralrs-mkl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mistralrs_mkl-0.1.7.tar.gz tmp/mistralrs_mkl-0.1.8.tar.gz --markdown 20240602/m/mistralrs-mkl/0.1.7-0.1.8/README.md --exclude *.pyd
+[2024-06-02 17:26:58] INFO root fetch - processPackages [mistralrs-cuda]: executing diffoscope
+[2024-06-02 17:26:58] INFO root fetch - processPackages [mistralrs-cuda]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mistralrs_cuda-0.1.7.tar.gz tmp/mistralrs_cuda-0.1.8.tar.gz --markdown 20240602/m/mistralrs-cuda/0.1.7-0.1.8/README.md --exclude *.pyd
+[2024-06-02 17:26:58] INFO root fetch - processPackages [mistralrs-accelerate]: executing diffoscope
+[2024-06-02 17:26:58] INFO root fetch - processPackages [mistralrs-accelerate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mistralrs_accelerate-0.1.7.tar.gz tmp/mistralrs_accelerate-0.1.8.tar.gz --markdown 20240602/m/mistralrs-accelerate/0.1.7-0.1.8/README.md --exclude *.pyd
+[2024-06-02 17:26:58] INFO root fetch - processPackages [mistralrs]: executing diffoscope
+[2024-06-02 17:26:58] INFO root fetch - processPackages [mistralrs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mistralrs-0.1.7.tar.gz tmp/mistralrs-0.1.8.tar.gz --markdown 20240602/m/mistralrs/0.1.7-0.1.8/README.md --exclude *.pyd
+[2024-06-02 17:26:59] INFO root fetch - processPackages [stashconnect]: Remove: archive file [/home/abi/fetcher/tmp/stashconnect-0.8.8.tar.gz]
+[2024-06-02 17:26:59] INFO root fetch - processPackages [stashconnect]: Remove: archive file [/home/abi/fetcher/tmp/stashconnect-0.8.9.tar.gz]
+[2024-06-02 17:26:59] INFO root fetch - main [MainThread]: End processing [stashconnect]: success
+[2024-06-02 17:27:00] INFO root fetch - processPackages [mistralrs-accelerate]: Remove: archive file [/home/abi/fetcher/tmp/mistralrs_accelerate-0.1.7.tar.gz]
+[2024-06-02 17:27:00] INFO root fetch - processPackages [mistralrs-accelerate]: Remove: archive file [/home/abi/fetcher/tmp/mistralrs_accelerate-0.1.8.tar.gz]
+[2024-06-02 17:27:00] INFO root fetch - main [MainThread]: End processing [mistralrs-accelerate]: success
+[2024-06-02 17:27:00] INFO root fetch - processPackages [mistralrs-metal]: Remove: archive file [/home/abi/fetcher/tmp/mistralrs_metal-0.1.7.tar.gz]
+[2024-06-02 17:27:00] INFO root fetch - processPackages [mistralrs-metal]: Remove: archive file [/home/abi/fetcher/tmp/mistralrs_metal-0.1.8.tar.gz]
+[2024-06-02 17:27:00] INFO root fetch - main [MainThread]: End processing [mistralrs-metal]: success
+[2024-06-02 17:27:00] INFO root fetch - processPackages [mistralrs-cuda]: Remove: archive file [/home/abi/fetcher/tmp/mistralrs_cuda-0.1.7.tar.gz]
+[2024-06-02 17:27:00] INFO root fetch - processPackages [mistralrs-cuda]: Remove: archive file [/home/abi/fetcher/tmp/mistralrs_cuda-0.1.8.tar.gz]
+[2024-06-02 17:27:00] INFO root fetch - main [MainThread]: End processing [mistralrs-cuda]: success
+[2024-06-02 17:27:00] INFO root fetch - processPackages [mistralrs-mkl]: Remove: archive file [/home/abi/fetcher/tmp/mistralrs_mkl-0.1.7.tar.gz]
+[2024-06-02 17:27:00] INFO root fetch - processPackages [mistralrs-mkl]: Remove: archive file [/home/abi/fetcher/tmp/mistralrs_mkl-0.1.8.tar.gz]
+[2024-06-02 17:27:00] INFO root fetch - main [MainThread]: End processing [mistralrs-mkl]: success
+[2024-06-02 17:27:00] INFO root fetch - processPackages [mistralrs]: Remove: archive file [/home/abi/fetcher/tmp/mistralrs-0.1.7.tar.gz]
+[2024-06-02 17:27:00] INFO root fetch - processPackages [mistralrs]: Remove: archive file [/home/abi/fetcher/tmp/mistralrs-0.1.8.tar.gz]
+[2024-06-02 17:27:00] INFO root fetch - main [MainThread]: End processing [mistralrs]: success
+[2024-06-02 17:27:00] INFO root fetch - main [MainThread]: Store serial: [23490106]
