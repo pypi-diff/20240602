@@ -6324,3 +6324,24 @@
 [2024-06-02 10:44:51] INFO root fetch - processPackages [tfp-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tfp_nightly-0.9.0.dev20200114-py2.py3-none-any.whl.zip]
 [2024-06-02 10:44:51] INFO root fetch - main [MainThread]: End processing [tfp-nightly]: success
 [2024-06-02 10:44:51] INFO root fetch - main [MainThread]: Store serial: [23487477]
+[2024-06-02 10:46:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23487477]
+[2024-06-02 10:47:01] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-02 10:47:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tf-nightly-cpu
+[2024-06-02 10:47:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: user-external-local
+[2024-06-02 10:47:01] INFO root fetch - processPackages [user-external-local]: New version: [0.0.47] Old Version: [0.0.45]
+[2024-06-02 10:47:01] INFO root fetch - processPackages [tf-nightly-cpu]: New version: [2.17.0.dev20240602] Old Version: [2.17.0.dev20240601]
+[2024-06-02 10:47:01] INFO root fetch - processPackages [tf-nightly-cpu]: Downloading https://files.pythonhosted.org/packages/e2/2e/ec34b2c453234fbf0f8d5cad52989210c9f3af5e2db2698b34cce7e7197f/tf_nightly_cpu-2.17.0.dev20240601-cp39-cp39-win_amd64.whl
+[2024-06-02 10:47:01] INFO root fetch - processPackages [user-external-local]: Downloading https://files.pythonhosted.org/packages/d5/4c/cda8ccb0a9c8aafdb9ec4f77258a40905b3d4bf857ca0db93850ed574c14/user_external_local-0.0.45.tar.gz
+[2024-06-02 10:47:01] INFO root fetch - processPackages [tf-nightly-cpu]: Downloading https://files.pythonhosted.org/packages/13/3a/e47dd67570fa105947d48a2380f973b6d2b57c21e539c6b277a967eb2742/tf_nightly_cpu-2.17.0.dev20240602-cp39-cp39-win_amd64.whl
+[2024-06-02 10:47:01] INFO root fetch - processPackages [user-external-local]: Downloading https://files.pythonhosted.org/packages/8f/9d/a7ce95539a82a637a24760b02fb780556f82710fdfb2fbe61482f08b7733/user_external_local-0.0.47.tar.gz
+[2024-06-02 10:47:01] INFO root fetch - processPackages [user-external-local]: executing diffoscope
+[2024-06-02 10:47:01] INFO root fetch - processPackages [user-external-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/user_external_local-0.0.45.tar.gz tmp/user_external_local-0.0.47.tar.gz --markdown 20240602/u/user-external-local/0.0.45-0.0.47/README.md --exclude *.pyd
+[2024-06-02 10:47:02] INFO root fetch - processPackages [tf-nightly-cpu]: executing diffoscope
+[2024-06-02 10:47:02] INFO root fetch - processPackages [tf-nightly-cpu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_nightly_cpu-2.17.0.dev20240601-cp39-cp39-win_amd64.whl.zip tmp/tf_nightly_cpu-2.17.0.dev20240602-cp39-cp39-win_amd64.whl.zip --markdown 20240602/t/tf-nightly-cpu/2.17.0.dev20240601-2.17.0.dev20240602/README.md --exclude *.pyd
+[2024-06-02 10:47:02] INFO root fetch - processPackages [user-external-local]: Remove: archive file [/home/abi/fetcher/tmp/user_external_local-0.0.45.tar.gz]
+[2024-06-02 10:47:02] INFO root fetch - processPackages [user-external-local]: Remove: archive file [/home/abi/fetcher/tmp/user_external_local-0.0.47.tar.gz]
+[2024-06-02 10:47:02] INFO root fetch - main [MainThread]: End processing [user-external-local]: success
+[2024-06-02 10:47:02] INFO root fetch - processPackages [tf-nightly-cpu]: Remove: archive file [/home/abi/fetcher/tmp/tf_nightly_cpu-2.17.0.dev20240601-cp39-cp39-win_amd64.whl.zip]
+[2024-06-02 10:47:02] INFO root fetch - processPackages [tf-nightly-cpu]: Remove: archive file [/home/abi/fetcher/tmp/tf_nightly_cpu-2.17.0.dev20240602-cp39-cp39-win_amd64.whl.zip]
+[2024-06-02 10:47:02] INFO root fetch - main [MainThread]: End processing [tf-nightly-cpu]: success
+[2024-06-02 10:47:02] INFO root fetch - main [MainThread]: Store serial: [23487485]
