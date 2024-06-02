@@ -15428,3 +15428,54 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 20:01:05] INFO root fetch - processPackages [pysnptools]: Remove: archive file [/home/abi/fetcher/tmp/pysnptools-0.5.9.tar.gz]
 [2024-06-02 20:01:05] INFO root fetch - main [MainThread]: End processing [pysnptools]: success
 [2024-06-02 20:01:05] INFO root fetch - main [MainThread]: Store serial: [23491565]
+[2024-06-02 20:03:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23491565]
+[2024-06-02 20:03:13] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-06-02 20:03:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pypi-cicd
+[2024-06-02 20:03:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mimllearning
+[2024-06-02 20:03:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mini-scikit-learn
+[2024-06-02 20:03:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: market-generic
+[2024-06-02 20:03:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tweety-ns
+[2024-06-02 20:03:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: omnata-plugin-runtime
+[2024-06-02 20:03:13] INFO root fetch - processPackages [omnata-plugin-runtime]: New version: [0.3.9a44] Old Version: [0.3.9a43]
+[2024-06-02 20:03:13] INFO root fetch - processPackages [market-generic]: New version: [0.2.0] Old Version: [0.1.0]
+[2024-06-02 20:03:13] INFO root fetch - processPackages [pypi-cicd]: New version: [0.8] Old Version: [0.7]
+[2024-06-02 20:03:13] INFO root fetch - processPackages [mimllearning]: New version: [0.5.9] Old Version: [0.5.8]
+[2024-06-02 20:03:13] INFO root fetch - processPackages [market-generic]: Downloading https://files.pythonhosted.org/packages/08/db/fea3fdeeb0f041abac35ee81e4e5f7bb499e7bfc1dc671fd3bbbf033a4c4/market_generic-0.1.0.tar.gz
+[2024-06-02 20:03:14] INFO root fetch - processPackages [tweety-ns]: New version: [1.1.6] Old Version: [1.1.5]
+[2024-06-02 20:03:14] WARNING root fetch - processPackages [mini-scikit-learn]: Skipping, unable to determine old version
+[2024-06-02 20:03:14] INFO root fetch - main [MainThread]: End processing [mini-scikit-learn] error
+[2024-06-02 20:03:14] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/d2/b3/87b8f5c10d5ff5cbe23d28e3faecc4f6f19fc43cd453209ee58b914621c6/mimllearning-0.5.8.tar.gz
+[2024-06-02 20:03:14] INFO root fetch - processPackages [pypi-cicd]: Downloading https://files.pythonhosted.org/packages/4d/65/669b03c86e9b2ebffd7be61dfdaa004618f03abb822a778bd325e0d565c4/pypi_cicd-0.7.tar.gz
+[2024-06-02 20:03:14] INFO root fetch - processPackages [omnata-plugin-runtime]: Downloading https://files.pythonhosted.org/packages/8e/11/abde4b4d82373bc42a84a5591bf31c6cca540ba9f13337491df615af0b6c/omnata_plugin_runtime-0.3.9a43.tar.gz
+[2024-06-02 20:03:14] INFO root fetch - processPackages [market-generic]: Downloading https://files.pythonhosted.org/packages/13/1f/b71dfa1a53efb92bcd117f0a3a41e1baf22b0cac8ef670fa3aef3cd602d6/market_generic-0.2.0.tar.gz
+[2024-06-02 20:03:14] INFO root fetch - processPackages [tweety-ns]: Downloading https://files.pythonhosted.org/packages/e8/5b/2409412a5b057e4da7ce2cda42f524fae1d789386ba55842b5c439b9b59e/tweety_ns-1.1.5.tar.gz
+[2024-06-02 20:03:14] INFO root fetch - processPackages [pypi-cicd]: Downloading https://files.pythonhosted.org/packages/86/7c/1f3a018bb7b9a5f2a998a34b1f34ed82f392167979956b42bd09bd1bca2a/pypi_cicd-0.8.tar.gz
+[2024-06-02 20:03:14] INFO root fetch - processPackages [market-generic]: executing diffoscope
+[2024-06-02 20:03:14] INFO root fetch - processPackages [market-generic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/market_generic-0.1.0.tar.gz tmp/market_generic-0.2.0.tar.gz --markdown 20240602/m/market-generic/0.1.0-0.2.0/README.md --exclude *.pyd
+[2024-06-02 20:03:14] INFO root fetch - processPackages [omnata-plugin-runtime]: Downloading https://files.pythonhosted.org/packages/de/f5/326ad467bb560d9dc8d7cebfe2aed77d524aeaf8a8ee7c6107f202eb6d0d/omnata_plugin_runtime-0.3.9a44.tar.gz
+[2024-06-02 20:03:14] INFO root fetch - processPackages [pypi-cicd]: executing diffoscope
+[2024-06-02 20:03:14] INFO root fetch - processPackages [pypi-cicd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypi_cicd-0.7.tar.gz tmp/pypi_cicd-0.8.tar.gz --markdown 20240602/p/pypi-cicd/0.7-0.8/README.md --exclude *.pyd
+[2024-06-02 20:03:14] INFO root fetch - processPackages [omnata-plugin-runtime]: executing diffoscope
+[2024-06-02 20:03:14] INFO root fetch - processPackages [omnata-plugin-runtime]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/omnata_plugin_runtime-0.3.9a43.tar.gz tmp/omnata_plugin_runtime-0.3.9a44.tar.gz --markdown 20240602/o/omnata-plugin-runtime/0.3.9a43-0.3.9a44/README.md --exclude *.pyd
+[2024-06-02 20:03:14] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/41/4c/aef517b03341ea8031423a65e9a40cfa58845de36d6cbca2d6c4a11eb61c/mimllearning-0.5.9.tar.gz
+[2024-06-02 20:03:14] INFO root fetch - processPackages [tweety-ns]: Downloading https://files.pythonhosted.org/packages/b7/65/fa263a0b54741ba39ac33760c093e894b2075c216ef00ba01272a0d4e7fa/tweety_ns-1.1.6.tar.gz
+[2024-06-02 20:03:14] INFO root fetch - processPackages [tweety-ns]: executing diffoscope
+[2024-06-02 20:03:14] INFO root fetch - processPackages [tweety-ns]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tweety_ns-1.1.5.tar.gz tmp/tweety_ns-1.1.6.tar.gz --markdown 20240602/t/tweety-ns/1.1.5-1.1.6/README.md --exclude *.pyd
+[2024-06-02 20:03:14] INFO root fetch - processPackages [pypi-cicd]: Remove: archive file [/home/abi/fetcher/tmp/pypi_cicd-0.7.tar.gz]
+[2024-06-02 20:03:14] INFO root fetch - processPackages [pypi-cicd]: Remove: archive file [/home/abi/fetcher/tmp/pypi_cicd-0.8.tar.gz]
+[2024-06-02 20:03:14] INFO root fetch - main [MainThread]: End processing [pypi-cicd]: success
+[2024-06-02 20:03:14] INFO root fetch - processPackages [market-generic]: Remove: archive file [/home/abi/fetcher/tmp/market_generic-0.1.0.tar.gz]
+[2024-06-02 20:03:14] INFO root fetch - processPackages [market-generic]: Remove: archive file [/home/abi/fetcher/tmp/market_generic-0.2.0.tar.gz]
+[2024-06-02 20:03:14] INFO root fetch - main [MainThread]: End processing [market-generic]: success
+[2024-06-02 20:03:15] INFO root fetch - processPackages [omnata-plugin-runtime]: Remove: archive file [/home/abi/fetcher/tmp/omnata_plugin_runtime-0.3.9a43.tar.gz]
+[2024-06-02 20:03:15] INFO root fetch - processPackages [omnata-plugin-runtime]: Remove: archive file [/home/abi/fetcher/tmp/omnata_plugin_runtime-0.3.9a44.tar.gz]
+[2024-06-02 20:03:15] INFO root fetch - processPackages [mimllearning]: executing diffoscope
+[2024-06-02 20:03:15] INFO root fetch - processPackages [mimllearning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mimllearning-0.5.8.tar.gz tmp/mimllearning-0.5.9.tar.gz --markdown 20240602/m/mimllearning/0.5.8-0.5.9/README.md --exclude *.pyd
+[2024-06-02 20:03:15] INFO root fetch - main [MainThread]: End processing [omnata-plugin-runtime]: success
+[2024-06-02 20:03:15] INFO root fetch - processPackages [tweety-ns]: Remove: archive file [/home/abi/fetcher/tmp/tweety_ns-1.1.5.tar.gz]
+[2024-06-02 20:03:15] INFO root fetch - processPackages [tweety-ns]: Remove: archive file [/home/abi/fetcher/tmp/tweety_ns-1.1.6.tar.gz]
+[2024-06-02 20:03:15] INFO root fetch - main [MainThread]: End processing [tweety-ns]: success
+[2024-06-02 20:03:18] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.5.8.tar.gz]
+[2024-06-02 20:03:18] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.5.9.tar.gz]
+[2024-06-02 20:03:18] INFO root fetch - main [MainThread]: End processing [mimllearning]: success
+[2024-06-02 20:03:18] INFO root fetch - main [MainThread]: Store serial: [23491585]
