@@ -7306,3 +7306,44 @@
 [2024-06-02 12:04:44] INFO root fetch - processPackages [NiaAML-GUI]: Remove: archive file [/home/abi/fetcher/tmp/niaaml_gui-0.3.1.tar.gz]
 [2024-06-02 12:04:44] INFO root fetch - main [MainThread]: End processing [NiaAML-GUI]: success
 [2024-06-02 12:04:44] INFO root fetch - main [MainThread]: Store serial: [23488006]
+[2024-06-02 12:06:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23488006]
+[2024-06-02 12:06:53] INFO root fetch - main [MainThread]: No changed packages found
+[2024-06-02 12:08:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23488009]
+[2024-06-02 12:09:00] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-02 12:09:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hashcommit
+[2024-06-02 12:09:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: protoc-polyglot
+[2024-06-02 12:09:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aiotraq
+[2024-06-02 12:09:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyroblack
+[2024-06-02 12:09:00] INFO root fetch - processPackages [protoc-polyglot]: New version: [0.0.1.post9] Old Version: [0.0.1.post8]
+[2024-06-02 12:09:00] INFO root fetch - processPackages [pyroblack]: New version: [2.3.71] Old Version: [2.3.70]
+[2024-06-02 12:09:00] INFO root fetch - processPackages [protoc-polyglot]: Downloading https://files.pythonhosted.org/packages/e9/7b/373a68a962cdfb85f4bd76f6f4ea13ad3f2cfaca73bf0a9f70d0e7d34380/protoc_polyglot-0.0.1.post8.tar.gz
+[2024-06-02 12:09:00] INFO root fetch - processPackages [hashcommit]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-06-02 12:09:00] INFO root fetch - processPackages [aiotraq]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-06-02 12:09:00] INFO root fetch - processPackages [pyroblack]: Downloading https://files.pythonhosted.org/packages/b1/10/005f63294ef621025d72916882968424df01aa48baef460060bb71b03009/pyroblack-2.3.70.tar.gz
+[2024-06-02 12:09:00] INFO root fetch - processPackages [hashcommit]: Downloading https://files.pythonhosted.org/packages/be/1a/797601c2da32dc8c229546c3aac7826d1d762cb31e0cf4fdc9e66d19f650/hashcommit-0.1.7.tar.gz
+[2024-06-02 12:09:00] INFO root fetch - processPackages [aiotraq]: Downloading https://files.pythonhosted.org/packages/2f/62/16e1936860704465892d8a9ee88d7a38a88a6c92286c0cb88a7436229ca4/aiotraq-0.1.1.tar.gz
+[2024-06-02 12:09:00] INFO root fetch - processPackages [protoc-polyglot]: Downloading https://files.pythonhosted.org/packages/01/80/bdadb218d1c3271c3a258316c3d5991f2676b54e6f358ac689f9495990f5/protoc_polyglot-0.0.1.post9.tar.gz
+[2024-06-02 12:09:00] INFO root fetch - processPackages [protoc-polyglot]: executing diffoscope
+[2024-06-02 12:09:00] INFO root fetch - processPackages [protoc-polyglot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/protoc_polyglot-0.0.1.post8.tar.gz tmp/protoc_polyglot-0.0.1.post9.tar.gz --markdown 20240602/p/protoc-polyglot/0.0.1.post8-0.0.1.post9/README.md --exclude *.pyd
+[2024-06-02 12:09:00] INFO root fetch - processPackages [pyroblack]: Downloading https://files.pythonhosted.org/packages/2e/01/cfa3643b037f7d1c9efb5aed3517748c1da3f156a559ff1f293cbb63e3a2/pyroblack-2.3.71.tar.gz
+[2024-06-02 12:09:00] INFO root fetch - processPackages [pyroblack]: executing diffoscope
+[2024-06-02 12:09:00] INFO root fetch - processPackages [pyroblack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyroblack-2.3.70.tar.gz tmp/pyroblack-2.3.71.tar.gz --markdown 20240602/p/pyroblack/2.3.70-2.3.71/README.md --exclude *.pyd
+[2024-06-02 12:09:00] INFO root fetch - processPackages [hashcommit]: Downloading https://files.pythonhosted.org/packages/e4/b9/6e1cb8c9e461a86c7ad5a459d6b5349991918253e5c9b96cca529ec76f82/hashcommit-0.1.8.tar.gz
+[2024-06-02 12:09:00] INFO root fetch - processPackages [aiotraq]: Downloading https://files.pythonhosted.org/packages/d8/cb/e69afe87ecde9e96523ba10b06aa85603c68438d333550cbfa52220f8a9e/aiotraq-0.1.2.tar.gz
+[2024-06-02 12:09:01] INFO root fetch - processPackages [hashcommit]: executing diffoscope
+[2024-06-02 12:09:01] INFO root fetch - processPackages [hashcommit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hashcommit-0.1.7.tar.gz tmp/hashcommit-0.1.8.tar.gz --markdown 20240602/h/hashcommit/0.1.7-0.1.8/README.md --exclude *.pyd
+[2024-06-02 12:09:01] INFO root fetch - processPackages [aiotraq]: executing diffoscope
+[2024-06-02 12:09:01] INFO root fetch - processPackages [aiotraq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiotraq-0.1.1.tar.gz tmp/aiotraq-0.1.2.tar.gz --markdown 20240602/a/aiotraq/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-06-02 12:09:01] INFO root fetch - processPackages [protoc-polyglot]: Remove: archive file [/home/abi/fetcher/tmp/protoc_polyglot-0.0.1.post8.tar.gz]
+[2024-06-02 12:09:01] INFO root fetch - processPackages [protoc-polyglot]: Remove: archive file [/home/abi/fetcher/tmp/protoc_polyglot-0.0.1.post9.tar.gz]
+[2024-06-02 12:09:01] INFO root fetch - main [MainThread]: End processing [protoc-polyglot]: success
+[2024-06-02 12:09:01] INFO root fetch - processPackages [hashcommit]: Remove: archive file [/home/abi/fetcher/tmp/hashcommit-0.1.7.tar.gz]
+[2024-06-02 12:09:01] INFO root fetch - processPackages [hashcommit]: Remove: archive file [/home/abi/fetcher/tmp/hashcommit-0.1.8.tar.gz]
+[2024-06-02 12:09:01] INFO root fetch - main [MainThread]: End processing [hashcommit]: success
+[2024-06-02 12:09:02] INFO root fetch - processPackages [aiotraq]: Remove: archive file [/home/abi/fetcher/tmp/aiotraq-0.1.1.tar.gz]
+[2024-06-02 12:09:02] INFO root fetch - processPackages [aiotraq]: Remove: archive file [/home/abi/fetcher/tmp/aiotraq-0.1.2.tar.gz]
+[2024-06-02 12:09:02] INFO root fetch - main [MainThread]: End processing [aiotraq]: success
+[2024-06-02 12:09:03] INFO root fetch - processPackages [pyroblack]: Remove: archive file [/home/abi/fetcher/tmp/pyroblack-2.3.70.tar.gz]
+[2024-06-02 12:09:03] INFO root fetch - processPackages [pyroblack]: Remove: archive file [/home/abi/fetcher/tmp/pyroblack-2.3.71.tar.gz]
+[2024-06-02 12:09:03] INFO root fetch - main [MainThread]: End processing [pyroblack]: success
+[2024-06-02 12:09:03] INFO root fetch - main [MainThread]: Store serial: [23488021]
