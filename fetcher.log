@@ -14585,3 +14585,61 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 19:13:05] INFO root fetch - processPackages [trytond-account-es]: Remove: archive file [/home/abi/fetcher/tmp/trytond_account_es-7.2.1.tar.gz]
 [2024-06-02 19:13:05] INFO root fetch - main [MainThread]: End processing [trytond-account-es]: success
 [2024-06-02 19:13:05] INFO root fetch - main [MainThread]: Store serial: [23491232]
+[2024-06-02 19:15:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23491232]
+[2024-06-02 19:15:14] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-06-02 19:15:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: localstack-core
+[2024-06-02 19:15:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: EasyDeL
+[2024-06-02 19:15:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: requestweb
+[2024-06-02 19:15:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: anaouder
+[2024-06-02 19:15:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: spanishconjugator
+[2024-06-02 19:15:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: spanishconjugator
+[2024-06-02 19:15:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: gammarers.aws-secure-bucket
+[2024-06-02 19:15:14] INFO root fetch - processPackages [EasyDeL]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-06-02 19:15:14] INFO root fetch - processPackages [localstack-core]: New version: [3.4.1.dev20240601180838] Old Version: [3.4.1.dev20240531232611]
+[2024-06-02 19:15:14] WARNING root fetch - processPackages [requestweb]: Skipping, unable to determine old version
+[2024-06-02 19:15:14] INFO root fetch - main [MainThread]: End processing [requestweb] error
+[2024-06-02 19:15:14] INFO root fetch - processPackages [EasyDeL]: Downloading https://files.pythonhosted.org/packages/0b/01/765632e4f48f400658c26b4a653df55e20dc326b64fd0991020f7fb5c16b/EasyDeL-0.0.8.tar.gz
+[2024-06-02 19:15:14] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2024-06-02 19:15:14] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2024-06-02 19:15:14] INFO root fetch - processPackages [anaouder]: New version: [0.9.3] Old Version: [0.9.2]
+[2024-06-02 19:15:14] INFO root fetch - processPackages [gammarers.aws-secure-bucket]: New version: [1.4.2] Old Version: [1.4.1]
+[2024-06-02 19:15:14] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/1c/a2/a7226dfd48c2c6d3e52091175146891f40a2c1c7d20943e8e0560192be85/spanishconjugator-2.3.998.tar.gz
+[2024-06-02 19:15:14] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/1c/a2/a7226dfd48c2c6d3e52091175146891f40a2c1c7d20943e8e0560192be85/spanishconjugator-2.3.998.tar.gz
+[2024-06-02 19:15:14] INFO root fetch - processPackages [localstack-core]: Downloading https://files.pythonhosted.org/packages/d8/89/947060d00e7b7360352eb695c98cea32f5a3059ba19305e81d0948d8a266/localstack_core-3.4.1.dev20240531232611.tar.gz
+[2024-06-02 19:15:14] INFO root fetch - processPackages [anaouder]: Downloading https://files.pythonhosted.org/packages/58/8e/51a6167c9a3e5634c55c6e6f4490577539765a12615c5b278f53757c5f3a/anaouder-0.9.2.tar.gz
+[2024-06-02 19:15:15] INFO root fetch - processPackages [gammarers.aws-secure-bucket]: Downloading https://files.pythonhosted.org/packages/ea/9d/ac22b71ce0da53068588f0f5257c0240e2dae747c3da3ad6f83eabede20a/gammarers.aws-secure-bucket-1.4.1.tar.gz
+[2024-06-02 19:15:15] INFO root fetch - processPackages [EasyDeL]: Downloading https://files.pythonhosted.org/packages/8a/e3/914fc5ccc4d98c608c3f2bac8f8e325f940afda206011c7e1425cf00d471/EasyDeL-0.0.9.tar.gz
+[2024-06-02 19:15:15] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/38/b5/7c4b33d552653d08874337c2258ccc985f5f1bc589073e61d6e1ccff130e/spanishconjugator-2.3.999.tar.gz
+[2024-06-02 19:15:15] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/38/b5/7c4b33d552653d08874337c2258ccc985f5f1bc589073e61d6e1ccff130e/spanishconjugator-2.3.999.tar.gz
+[2024-06-02 19:15:15] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2024-06-02 19:15:15] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20240602/s/spanishconjugator/2.3.998-2.3.999/README.md --exclude *.pyd
+[2024-06-02 19:15:15] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2024-06-02 19:15:15] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20240602/s/spanishconjugator/2.3.998-2.3.999/README.md --exclude *.pyd
+[2024-06-02 19:15:15] INFO root fetch - processPackages [EasyDeL]: executing diffoscope
+[2024-06-02 19:15:15] INFO root fetch - processPackages [EasyDeL]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/EasyDeL-0.0.8.tar.gz tmp/EasyDeL-0.0.9.tar.gz --markdown 20240602/E/EasyDeL/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-06-02 19:15:15] INFO root fetch - processPackages [gammarers.aws-secure-bucket]: Downloading https://files.pythonhosted.org/packages/c3/a9/4d7cafbb6bbdfdbfd1d2ab5d7ff6da677930b89707343f46261a6a47213a/gammarers.aws-secure-bucket-1.4.2.tar.gz
+[2024-06-02 19:15:15] INFO root fetch - processPackages [localstack-core]: Downloading https://files.pythonhosted.org/packages/99/a3/5cadd702dfea01bc117e459baf7afac4b0155843dea3f2b95963bf6f0fbc/localstack_core-3.4.1.dev20240601180838.tar.gz
+[2024-06-02 19:15:15] INFO root fetch - processPackages [anaouder]: Downloading https://files.pythonhosted.org/packages/31/cd/1dc5680f72816264b872cef1a7bb94ff3aaa842c75c1c081146d0c80f9e8/anaouder-0.9.3.tar.gz
+[2024-06-02 19:15:15] INFO root fetch - processPackages [gammarers.aws-secure-bucket]: executing diffoscope
+[2024-06-02 19:15:15] INFO root fetch - processPackages [gammarers.aws-secure-bucket]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gammarers.aws-secure-bucket-1.4.1.tar.gz tmp/gammarers.aws-secure-bucket-1.4.2.tar.gz --markdown 20240602/g/gammarers.aws-secure-bucket/1.4.1-1.4.2/README.md --exclude *.pyd
+[2024-06-02 19:15:15] INFO root fetch - processPackages [anaouder]: executing diffoscope
+[2024-06-02 19:15:15] INFO root fetch - processPackages [anaouder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anaouder-0.9.2.tar.gz tmp/anaouder-0.9.3.tar.gz --markdown 20240602/a/anaouder/0.9.2-0.9.3/README.md --exclude *.pyd
+[2024-06-02 19:15:15] INFO root fetch - processPackages [localstack-core]: executing diffoscope
+[2024-06-02 19:15:15] INFO root fetch - processPackages [localstack-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/localstack_core-3.4.1.dev20240531232611.tar.gz tmp/localstack_core-3.4.1.dev20240601180838.tar.gz --markdown 20240602/l/localstack-core/3.4.1.dev20240531232611-3.4.1.dev20240601180838/README.md --exclude *.pyd
+[2024-06-02 19:15:15] INFO root fetch - processPackages [spanishconjugator]: Remove: archive file [/home/abi/fetcher/tmp/spanishconjugator-2.3.998.tar.gz]
+[2024-06-02 19:15:15] INFO root fetch - processPackages [spanishconjugator]: Remove: archive file [/home/abi/fetcher/tmp/spanishconjugator-2.3.999.tar.gz]
+[2024-06-02 19:15:15] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2024-06-02 19:15:15] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2024-06-02 19:15:16] INFO root fetch - processPackages [EasyDeL]: Remove: archive file [/home/abi/fetcher/tmp/EasyDeL-0.0.8.tar.gz]
+[2024-06-02 19:15:16] INFO root fetch - processPackages [EasyDeL]: Remove: archive file [/home/abi/fetcher/tmp/EasyDeL-0.0.9.tar.gz]
+[2024-06-02 19:15:16] INFO root fetch - main [MainThread]: End processing [EasyDeL]: success
+[2024-06-02 19:15:16] INFO root fetch - processPackages [gammarers.aws-secure-bucket]: Remove: archive file [/home/abi/fetcher/tmp/gammarers.aws-secure-bucket-1.4.1.tar.gz]
+[2024-06-02 19:15:16] INFO root fetch - processPackages [gammarers.aws-secure-bucket]: Remove: archive file [/home/abi/fetcher/tmp/gammarers.aws-secure-bucket-1.4.2.tar.gz]
+[2024-06-02 19:15:16] INFO root fetch - main [MainThread]: End processing [gammarers.aws-secure-bucket]: success
+[2024-06-02 19:15:16] INFO root fetch - processPackages [anaouder]: Remove: archive file [/home/abi/fetcher/tmp/anaouder-0.9.2.tar.gz]
+[2024-06-02 19:15:16] INFO root fetch - processPackages [anaouder]: Remove: archive file [/home/abi/fetcher/tmp/anaouder-0.9.3.tar.gz]
+[2024-06-02 19:15:16] INFO root fetch - main [MainThread]: End processing [anaouder]: success
+[2024-06-02 19:15:19] INFO root fetch - processPackages [localstack-core]: Remove: archive file [/home/abi/fetcher/tmp/localstack_core-3.4.1.dev20240531232611.tar.gz]
+[2024-06-02 19:15:19] INFO root fetch - processPackages [localstack-core]: Remove: archive file [/home/abi/fetcher/tmp/localstack_core-3.4.1.dev20240601180838.tar.gz]
+[2024-06-02 19:15:19] INFO root fetch - main [MainThread]: End processing [localstack-core]: success
+[2024-06-02 19:15:19] INFO root fetch - main [MainThread]: Store serial: [23491253]
