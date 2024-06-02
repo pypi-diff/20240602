@@ -9453,3 +9453,21 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-02 14:25:00] INFO root fetch - processPackages [txt2ebook]: Remove: archive file [/home/abi/fetcher/tmp/txt2ebook-0.1.90.tar.gz]
 [2024-06-02 14:25:00] INFO root fetch - main [MainThread]: End processing [txt2ebook]: success
 [2024-06-02 14:25:00] INFO root fetch - main [MainThread]: Store serial: [23488843]
+[2024-06-02 14:27:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23488843]
+[2024-06-02 14:27:10] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-02 14:27:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pywa
+[2024-06-02 14:27:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wujing
+[2024-06-02 14:27:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: openctp-ctp-debug
+[2024-06-02 14:27:10] INFO root fetch - processPackages [pywa]: New version: [1.9.0] Old Version: [1.8.0]
+[2024-06-02 14:27:10] INFO root fetch - processPackages [pywa]: Downloading https://files.pythonhosted.org/packages/21/d5/82b05ef1fc76827e074a55d0196b129fdfdd86b59778cfc8cef9dcfe5dc0/pywa-1.8.0.tar.gz
+[2024-06-02 14:27:10] WARNING root fetch - processPackages [wujing]: Skipping, unable to determine old version
+[2024-06-02 14:27:10] INFO root fetch - main [MainThread]: End processing [wujing] error
+[2024-06-02 14:27:10] WARNING root fetch - processPackages [openctp-ctp-debug]: Skipping, unable to determine old version
+[2024-06-02 14:27:10] INFO root fetch - main [MainThread]: End processing [openctp-ctp-debug] error
+[2024-06-02 14:27:11] INFO root fetch - processPackages [pywa]: Downloading https://files.pythonhosted.org/packages/e6/e6/4ed5a576d70ef5d33bde9873d10999ce1d852a7682fb8a3ea7b7911ebcb1/pywa-1.9.0.tar.gz
+[2024-06-02 14:27:11] INFO root fetch - processPackages [pywa]: executing diffoscope
+[2024-06-02 14:27:11] INFO root fetch - processPackages [pywa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pywa-1.8.0.tar.gz tmp/pywa-1.9.0.tar.gz --markdown 20240602/p/pywa/1.8.0-1.9.0/README.md --exclude *.pyd
+[2024-06-02 14:27:11] INFO root fetch - processPackages [pywa]: Remove: archive file [/home/abi/fetcher/tmp/pywa-1.8.0.tar.gz]
+[2024-06-02 14:27:11] INFO root fetch - processPackages [pywa]: Remove: archive file [/home/abi/fetcher/tmp/pywa-1.9.0.tar.gz]
+[2024-06-02 14:27:11] INFO root fetch - main [MainThread]: End processing [pywa]: success
+[2024-06-02 14:27:11] INFO root fetch - main [MainThread]: Store serial: [23488854]
