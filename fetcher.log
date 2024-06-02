@@ -12910,3 +12910,61 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 17:58:35] INFO root fetch - processPackages [mama]: Remove: archive file [/home/abi/fetcher/tmp/mama-0.9.9.tar.gz]
 [2024-06-02 17:58:35] INFO root fetch - main [MainThread]: End processing [mama]: success
 [2024-06-02 17:58:35] INFO root fetch - main [MainThread]: Store serial: [23490484]
+[2024-06-02 18:00:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23490484]
+[2024-06-02 18:00:43] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-06-02 18:00:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: scim2-cli
+[2024-06-02 18:00:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: squice
+[2024-06-02 18:00:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: trytond-sale-blanket-agreement
+[2024-06-02 18:00:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: flatpack
+[2024-06-02 18:00:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: platypush
+[2024-06-02 18:00:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: textlong
+[2024-06-02 18:00:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: trytond-sale-blanket-agreement
+[2024-06-02 18:00:43] WARNING root fetch - processPackages [scim2-cli]: Skipping, unable to determine old version
+[2024-06-02 18:00:43] INFO root fetch - main [MainThread]: End processing [scim2-cli] error
+[2024-06-02 18:00:43] INFO root fetch - processPackages [flatpack]: New version: [3.5.9] Old Version: [3.5.8]
+[2024-06-02 18:00:43] INFO root fetch - processPackages [platypush]: New version: [1.0.7] Old Version: [1.0.6]
+[2024-06-02 18:00:43] INFO root fetch - processPackages [trytond-sale-blanket-agreement]: New version: [7.2.2] Old Version: [7.2.1]
+[2024-06-02 18:00:43] INFO root fetch - processPackages [trytond-sale-blanket-agreement]: New version: [7.2.2] Old Version: [7.2.1]
+[2024-06-02 18:00:43] INFO root fetch - processPackages [textlong]: New version: [0.2.1] Old Version: [0.1.8]
+[2024-06-02 18:00:43] INFO root fetch - processPackages [squice]: New version: [0.6] Old Version: [0.5]
+[2024-06-02 18:00:43] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/0d/a9/8502480e2c2eb0cf1d5c96124b696b315ecaac8fbeabcea4683232791237/flatpack-3.5.8.tar.gz
+[2024-06-02 18:00:43] INFO root fetch - processPackages [platypush]: Downloading https://files.pythonhosted.org/packages/77/be/d893e8752972e9158b4f7cda15f69508ed6c4e5d001da44300b95c41d698/platypush-1.0.6.tar.gz
+[2024-06-02 18:00:43] INFO root fetch - processPackages [trytond-sale-blanket-agreement]: Downloading https://files.pythonhosted.org/packages/9e/a1/451b1fcbcee81931eb23a9463c1eba37fa3f7eedbd87713b00435b15bfa2/trytond_sale_blanket_agreement-7.2.1.tar.gz
+[2024-06-02 18:00:43] INFO root fetch - processPackages [trytond-sale-blanket-agreement]: Downloading https://files.pythonhosted.org/packages/9e/a1/451b1fcbcee81931eb23a9463c1eba37fa3f7eedbd87713b00435b15bfa2/trytond_sale_blanket_agreement-7.2.1.tar.gz
+[2024-06-02 18:00:44] INFO root fetch - processPackages [textlong]: Downloading https://files.pythonhosted.org/packages/f3/5c/e52529d017c7c21520349dec9d36d5a3f0ae1e5dbf104ec52caa071e470d/textlong-0.1.8.tar.gz
+[2024-06-02 18:00:44] INFO root fetch - processPackages [squice]: Downloading https://files.pythonhosted.org/packages/2f/62/1bdf56f2a3dd20bc048b572467988a68f6f66073a1dcf92d565f73d14328/squice-0.5.tar.gz
+[2024-06-02 18:00:44] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/d8/91/c9da419dc0b7492b44a9d95f36b27829ce600621fa73894b210c81dadbcd/flatpack-3.5.9.tar.gz
+[2024-06-02 18:00:44] INFO root fetch - processPackages [flatpack]: executing diffoscope
+[2024-06-02 18:00:44] INFO root fetch - processPackages [flatpack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flatpack-3.5.8.tar.gz tmp/flatpack-3.5.9.tar.gz --markdown 20240602/f/flatpack/3.5.8-3.5.9/README.md --exclude *.pyd
+[2024-06-02 18:00:44] INFO root fetch - processPackages [trytond-sale-blanket-agreement]: Downloading https://files.pythonhosted.org/packages/87/f7/6b5aed895994529ca0a7f61fa5074d6a3bc770973617f83d4b939c3e0ecf/trytond_sale_blanket_agreement-7.2.2.tar.gz
+[2024-06-02 18:00:44] INFO root fetch - processPackages [trytond-sale-blanket-agreement]: Downloading https://files.pythonhosted.org/packages/87/f7/6b5aed895994529ca0a7f61fa5074d6a3bc770973617f83d4b939c3e0ecf/trytond_sale_blanket_agreement-7.2.2.tar.gz
+[2024-06-02 18:00:44] INFO root fetch - processPackages [textlong]: Downloading https://files.pythonhosted.org/packages/89/19/ba15422eabb43f0811012c6468bcbbbc4951ab0de3aa496313dbc800765e/textlong-0.2.1.tar.gz
+[2024-06-02 18:00:44] INFO root fetch - processPackages [squice]: Downloading https://files.pythonhosted.org/packages/db/55/ecc11b967089c8947210aacd1924658302efbff028204becd7bbfe32fa17/squice-0.6.tar.gz
+[2024-06-02 18:00:44] INFO root fetch - processPackages [trytond-sale-blanket-agreement]: executing diffoscope
+[2024-06-02 18:00:44] INFO root fetch - processPackages [trytond-sale-blanket-agreement]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trytond_sale_blanket_agreement-7.2.1.tar.gz tmp/trytond_sale_blanket_agreement-7.2.2.tar.gz --markdown 20240602/t/trytond-sale-blanket-agreement/7.2.1-7.2.2/README.md --exclude *.pyd
+[2024-06-02 18:00:44] INFO root fetch - processPackages [trytond-sale-blanket-agreement]: executing diffoscope
+[2024-06-02 18:00:44] INFO root fetch - processPackages [trytond-sale-blanket-agreement]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trytond_sale_blanket_agreement-7.2.1.tar.gz tmp/trytond_sale_blanket_agreement-7.2.2.tar.gz --markdown 20240602/t/trytond-sale-blanket-agreement/7.2.1-7.2.2/README.md --exclude *.pyd
+[2024-06-02 18:00:44] INFO root fetch - processPackages [textlong]: executing diffoscope
+[2024-06-02 18:00:44] INFO root fetch - processPackages [textlong]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/textlong-0.1.8.tar.gz tmp/textlong-0.2.1.tar.gz --markdown 20240602/t/textlong/0.1.8-0.2.1/README.md --exclude *.pyd
+[2024-06-02 18:00:44] INFO root fetch - processPackages [squice]: executing diffoscope
+[2024-06-02 18:00:44] INFO root fetch - processPackages [squice]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/squice-0.5.tar.gz tmp/squice-0.6.tar.gz --markdown 20240602/s/squice/0.5-0.6/README.md --exclude *.pyd
+[2024-06-02 18:00:44] INFO root fetch - processPackages [platypush]: Downloading https://files.pythonhosted.org/packages/50/2b/f59f61f3c98227b98ee75b27c2f6d1ea9048d6104039b4c8513b5d78b0ef/platypush-1.0.7.tar.gz
+[2024-06-02 18:00:44] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.5.8.tar.gz]
+[2024-06-02 18:00:44] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.5.9.tar.gz]
+[2024-06-02 18:00:44] INFO root fetch - main [MainThread]: End processing [flatpack]: success
+[2024-06-02 18:00:45] INFO root fetch - processPackages [trytond-sale-blanket-agreement]: Remove: archive file [/home/abi/fetcher/tmp/trytond_sale_blanket_agreement-7.2.1.tar.gz]
+[2024-06-02 18:00:45] INFO root fetch - processPackages [trytond-sale-blanket-agreement]: Remove: archive file [/home/abi/fetcher/tmp/trytond_sale_blanket_agreement-7.2.2.tar.gz]
+[2024-06-02 18:00:45] INFO root fetch - main [MainThread]: End processing [trytond-sale-blanket-agreement]: success
+[2024-06-02 18:00:45] INFO root fetch - processPackages [platypush]: executing diffoscope
+[2024-06-02 18:00:45] INFO root fetch - processPackages [platypush]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/platypush-1.0.6.tar.gz tmp/platypush-1.0.7.tar.gz --markdown 20240602/p/platypush/1.0.6-1.0.7/README.md --exclude *.pyd
+[2024-06-02 18:00:45] INFO root fetch - processPackages [textlong]: Remove: archive file [/home/abi/fetcher/tmp/textlong-0.1.8.tar.gz]
+[2024-06-02 18:00:45] INFO root fetch - processPackages [textlong]: Remove: archive file [/home/abi/fetcher/tmp/textlong-0.2.1.tar.gz]
+[2024-06-02 18:00:45] INFO root fetch - main [MainThread]: End processing [textlong]: success
+[2024-06-02 18:00:45] INFO root fetch - main [MainThread]: End processing [trytond-sale-blanket-agreement]: success
+[2024-06-02 18:00:45] INFO root fetch - processPackages [squice]: Remove: archive file [/home/abi/fetcher/tmp/squice-0.5.tar.gz]
+[2024-06-02 18:00:45] INFO root fetch - processPackages [squice]: Remove: archive file [/home/abi/fetcher/tmp/squice-0.6.tar.gz]
+[2024-06-02 18:00:45] INFO root fetch - main [MainThread]: End processing [squice]: success
+[2024-06-02 18:00:52] INFO root fetch - processPackages [platypush]: Remove: archive file [/home/abi/fetcher/tmp/platypush-1.0.6.tar.gz]
+[2024-06-02 18:00:52] INFO root fetch - processPackages [platypush]: Remove: archive file [/home/abi/fetcher/tmp/platypush-1.0.7.tar.gz]
+[2024-06-02 18:00:52] INFO root fetch - main [MainThread]: End processing [platypush]: success
+[2024-06-02 18:00:52] INFO root fetch - main [MainThread]: Store serial: [23490504]
