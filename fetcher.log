@@ -4670,3 +4670,24 @@
 [2024-06-02 08:02:17] ERROR root fetch - processPackages [hostinjection]: Unable to get metadata: No such project 'hostinjection'
 [2024-06-02 08:02:17] INFO root fetch - main [MainThread]: End processing [hostinjection] error
 [2024-06-02 08:02:17] INFO root fetch - main [MainThread]: Store serial: [23486561]
+[2024-06-02 08:04:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23486561]
+[2024-06-02 08:04:26] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-02 08:04:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: NsparkleLog
+[2024-06-02 08:04:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gai-lib
+[2024-06-02 08:04:26] INFO root fetch - processPackages [NsparkleLog]: New version: [1.0.5] Old Version: [1.0.4]
+[2024-06-02 08:04:26] INFO root fetch - processPackages [NsparkleLog]: Downloading https://files.pythonhosted.org/packages/65/23/fb5d3f8987816ce3d8b790b996ef451ecbcb2ef387550206c4c6248c8655/NsparkleLog-1.0.4.tar.gz
+[2024-06-02 08:04:26] INFO root fetch - processPackages [gai-lib]: New version: [0.99] Old Version: [0.98]
+[2024-06-02 08:04:26] INFO root fetch - processPackages [gai-lib]: Downloading https://files.pythonhosted.org/packages/d7/ec/73324c4782c5a7d475e0473a63a34aefe2a50c28e3e95e74572ba8e24319/gai-lib-0.98.tar.gz
+[2024-06-02 08:04:26] INFO root fetch - processPackages [NsparkleLog]: Downloading https://files.pythonhosted.org/packages/92/a8/fb382744d71c4f81ecc1fb9185a9e475b5402f9c7f423100c915fa18431b/NsparkleLog-1.0.5.tar.gz
+[2024-06-02 08:04:26] INFO root fetch - processPackages [NsparkleLog]: executing diffoscope
+[2024-06-02 08:04:26] INFO root fetch - processPackages [NsparkleLog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/NsparkleLog-1.0.4.tar.gz tmp/NsparkleLog-1.0.5.tar.gz --markdown 20240602/N/NsparkleLog/1.0.4-1.0.5/README.md --exclude *.pyd
+[2024-06-02 08:04:27] INFO root fetch - processPackages [gai-lib]: Downloading https://files.pythonhosted.org/packages/fd/52/02eb2fe55760540c73b1796ab0f903f7b077179fa1269206b0ff8d4909cf/gai-lib-0.99.tar.gz
+[2024-06-02 08:04:27] INFO root fetch - processPackages [gai-lib]: executing diffoscope
+[2024-06-02 08:04:27] INFO root fetch - processPackages [gai-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gai-lib-0.98.tar.gz tmp/gai-lib-0.99.tar.gz --markdown 20240602/g/gai-lib/0.98-0.99/README.md --exclude *.pyd
+[2024-06-02 08:04:27] INFO root fetch - processPackages [NsparkleLog]: Remove: archive file [/home/abi/fetcher/tmp/NsparkleLog-1.0.4.tar.gz]
+[2024-06-02 08:04:27] INFO root fetch - processPackages [NsparkleLog]: Remove: archive file [/home/abi/fetcher/tmp/NsparkleLog-1.0.5.tar.gz]
+[2024-06-02 08:04:27] INFO root fetch - main [MainThread]: End processing [NsparkleLog]: success
+[2024-06-02 08:04:27] INFO root fetch - processPackages [gai-lib]: Remove: archive file [/home/abi/fetcher/tmp/gai-lib-0.98.tar.gz]
+[2024-06-02 08:04:27] INFO root fetch - processPackages [gai-lib]: Remove: archive file [/home/abi/fetcher/tmp/gai-lib-0.99.tar.gz]
+[2024-06-02 08:04:27] INFO root fetch - main [MainThread]: End processing [gai-lib]: success
+[2024-06-02 08:04:27] INFO root fetch - main [MainThread]: Store serial: [23486566]
