@@ -6027,3 +6027,24 @@
 [2024-06-02 10:13:06] INFO root fetch - processPackages [anydi]: Remove: archive file [/home/abi/fetcher/tmp/anydi-0.27.0a0.tar.gz]
 [2024-06-02 10:13:06] INFO root fetch - main [MainThread]: End processing [anydi]: success
 [2024-06-02 10:13:06] INFO root fetch - main [MainThread]: Store serial: [23487320]
+[2024-06-02 10:15:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23487320]
+[2024-06-02 10:15:15] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-02 10:15:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: usb-monitor
+[2024-06-02 10:15:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: omniverse
+[2024-06-02 10:15:15] INFO root fetch - processPackages [usb-monitor]: New version: [1.9] Old Version: [1.8]
+[2024-06-02 10:15:15] INFO root fetch - processPackages [omniverse]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-06-02 10:15:15] INFO root fetch - processPackages [usb-monitor]: Downloading https://files.pythonhosted.org/packages/89/11/b7f8f74cf4200043ad5cd2251725442b2676370c32a8a8b40c8f73520e8e/usb-monitor-1.8.tar.gz
+[2024-06-02 10:15:15] INFO root fetch - processPackages [omniverse]: Downloading https://files.pythonhosted.org/packages/5d/86/b97ced2947fd42627c2195279d6dd195ed4066abbfa133f1a42539ffd411/omniverse-0.0.7.tar.gz
+[2024-06-02 10:15:16] INFO root fetch - processPackages [usb-monitor]: Downloading https://files.pythonhosted.org/packages/b8/24/66ba7dbab40ec8656d74e794f8eb3b2f0d995a1f4c23df75fd67122eeb84/usb-monitor-1.9.tar.gz
+[2024-06-02 10:15:16] INFO root fetch - processPackages [omniverse]: Downloading https://files.pythonhosted.org/packages/12/1e/1cf909383275c53d963f7837b1b7013eacb9f8775e46029772498a6ed0db/omniverse-0.0.8.tar.gz
+[2024-06-02 10:15:16] INFO root fetch - processPackages [usb-monitor]: executing diffoscope
+[2024-06-02 10:15:16] INFO root fetch - processPackages [usb-monitor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/usb-monitor-1.8.tar.gz tmp/usb-monitor-1.9.tar.gz --markdown 20240602/u/usb-monitor/1.8-1.9/README.md --exclude *.pyd
+[2024-06-02 10:15:16] INFO root fetch - processPackages [omniverse]: executing diffoscope
+[2024-06-02 10:15:16] INFO root fetch - processPackages [omniverse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/omniverse-0.0.7.tar.gz tmp/omniverse-0.0.8.tar.gz --markdown 20240602/o/omniverse/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-06-02 10:15:16] INFO root fetch - processPackages [usb-monitor]: Remove: archive file [/home/abi/fetcher/tmp/usb-monitor-1.8.tar.gz]
+[2024-06-02 10:15:16] INFO root fetch - processPackages [usb-monitor]: Remove: archive file [/home/abi/fetcher/tmp/usb-monitor-1.9.tar.gz]
+[2024-06-02 10:15:16] INFO root fetch - main [MainThread]: End processing [usb-monitor]: success
+[2024-06-02 10:15:17] INFO root fetch - processPackages [omniverse]: Remove: archive file [/home/abi/fetcher/tmp/omniverse-0.0.7.tar.gz]
+[2024-06-02 10:15:17] INFO root fetch - processPackages [omniverse]: Remove: archive file [/home/abi/fetcher/tmp/omniverse-0.0.8.tar.gz]
+[2024-06-02 10:15:17] INFO root fetch - main [MainThread]: End processing [omniverse]: success
+[2024-06-02 10:15:17] INFO root fetch - main [MainThread]: Store serial: [23487326]
