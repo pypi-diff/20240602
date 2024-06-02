@@ -5579,3 +5579,24 @@
 [2024-06-02 09:31:58] INFO root fetch - processPackages [teomim]: Remove: archive file [/home/abi/fetcher/tmp/teomim-0.0.165.tar.gz]
 [2024-06-02 09:31:58] INFO root fetch - main [MainThread]: End processing [teomim]: success
 [2024-06-02 09:31:58] INFO root fetch - main [MainThread]: Store serial: [23487053]
+[2024-06-02 09:34:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23487053]
+[2024-06-02 09:34:07] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-02 09:34:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lines-dataset
+[2024-06-02 09:34:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lesscode-utils
+[2024-06-02 09:34:07] INFO root fetch - processPackages [lines-dataset]: New version: [0.2.0] Old Version: [0.1.8]
+[2024-06-02 09:34:07] INFO root fetch - processPackages [lines-dataset]: Downloading https://files.pythonhosted.org/packages/16/96/7f096e8d2e5ceb0da5771759c48bd33911c3c068cf8834f0251298f12b64/lines_dataset-0.1.8.tar.gz
+[2024-06-02 09:34:07] INFO root fetch - processPackages [lesscode-utils]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-06-02 09:34:07] INFO root fetch - processPackages [lines-dataset]: Downloading https://files.pythonhosted.org/packages/60/ac/854b3d323fa27b222cd6658bf5591e7525b7140eb32dd85d9e9a56b703d9/lines_dataset-0.2.0.tar.gz
+[2024-06-02 09:34:07] INFO root fetch - processPackages [lesscode-utils]: Downloading https://files.pythonhosted.org/packages/f6/0c/2674b4b125ed692da753914dfb77b1585abef09ecc652e664392f26b82d6/lesscode_utils-0.0.8.tar.gz
+[2024-06-02 09:34:07] INFO root fetch - processPackages [lines-dataset]: executing diffoscope
+[2024-06-02 09:34:07] INFO root fetch - processPackages [lines-dataset]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lines_dataset-0.1.8.tar.gz tmp/lines_dataset-0.2.0.tar.gz --markdown 20240602/l/lines-dataset/0.1.8-0.2.0/README.md --exclude *.pyd
+[2024-06-02 09:34:07] INFO root fetch - processPackages [lesscode-utils]: Downloading https://files.pythonhosted.org/packages/bc/9a/1d07f1121fb39c72396bc71511135f407e314dc626a3fb88ff75f1827718/lesscode_utils-0.0.9.tar.gz
+[2024-06-02 09:34:07] INFO root fetch - processPackages [lesscode-utils]: executing diffoscope
+[2024-06-02 09:34:07] INFO root fetch - processPackages [lesscode-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lesscode_utils-0.0.8.tar.gz tmp/lesscode_utils-0.0.9.tar.gz --markdown 20240602/l/lesscode-utils/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-06-02 09:34:08] INFO root fetch - processPackages [lines-dataset]: Remove: archive file [/home/abi/fetcher/tmp/lines_dataset-0.1.8.tar.gz]
+[2024-06-02 09:34:08] INFO root fetch - processPackages [lines-dataset]: Remove: archive file [/home/abi/fetcher/tmp/lines_dataset-0.2.0.tar.gz]
+[2024-06-02 09:34:08] INFO root fetch - main [MainThread]: End processing [lines-dataset]: success
+[2024-06-02 09:34:08] INFO root fetch - processPackages [lesscode-utils]: Remove: archive file [/home/abi/fetcher/tmp/lesscode_utils-0.0.8.tar.gz]
+[2024-06-02 09:34:08] INFO root fetch - processPackages [lesscode-utils]: Remove: archive file [/home/abi/fetcher/tmp/lesscode_utils-0.0.9.tar.gz]
+[2024-06-02 09:34:08] INFO root fetch - main [MainThread]: End processing [lesscode-utils]: success
+[2024-06-02 09:34:08] INFO root fetch - main [MainThread]: Store serial: [23487066]
