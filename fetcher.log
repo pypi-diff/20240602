@@ -16512,3 +16512,42 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 20:53:58] INFO root fetch - processPackages [displaylang]: Remove: archive file [/home/abi/fetcher/tmp/displaylang-0.24.0.tar.gz]
 [2024-06-02 20:53:58] INFO root fetch - main [MainThread]: End processing [displaylang]: success
 [2024-06-02 20:53:58] INFO root fetch - main [MainThread]: Store serial: [23492173]
+[2024-06-02 20:56:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23492173]
+[2024-06-02 20:56:07] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-02 20:56:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: schwab-api-wrapper
+[2024-06-02 20:56:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ipy-agent
+[2024-06-02 20:56:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: battleship-tui
+[2024-06-02 20:56:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: omop2survey
+[2024-06-02 20:56:07] INFO root fetch - processPackages [schwab-api-wrapper]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-06-02 20:56:07] INFO root fetch - processPackages [ipy-agent]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-06-02 20:56:07] INFO root fetch - processPackages [schwab-api-wrapper]: Downloading https://files.pythonhosted.org/packages/5a/04/11446369dcc2e7eacfa9ede1f430068b95134198810d18e48b6394d45c45/schwab_api_wrapper-0.1.7.tar.gz
+[2024-06-02 20:56:07] INFO root fetch - processPackages [battleship-tui]: New version: [0.9.1] Old Version: [0.9.0]
+[2024-06-02 20:56:07] INFO root fetch - processPackages [omop2survey]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-06-02 20:56:07] INFO root fetch - processPackages [ipy-agent]: Downloading https://files.pythonhosted.org/packages/9b/1c/aa1d792ca59ec1ed5b85e09cb781b26ef3101189ad85a2a932c02be455eb/ipy_agent-0.0.1.tar.gz
+[2024-06-02 20:56:08] INFO root fetch - processPackages [battleship-tui]: Downloading https://files.pythonhosted.org/packages/b4/26/b06bec4a4520796024bdfa7fbda8628ba0ca9f2ff80f3fee9a83e4be93be/battleship_tui-0.9.0.tar.gz
+[2024-06-02 20:56:08] INFO root fetch - processPackages [omop2survey]: Downloading https://files.pythonhosted.org/packages/d0/3d/a88573a96f559d123cb3e1d168e45f905a3a99a738efb65bb74f949ea018/omop2survey-0.0.5.tar.gz
+[2024-06-02 20:56:08] INFO root fetch - processPackages [schwab-api-wrapper]: Downloading https://files.pythonhosted.org/packages/1c/da/7aa02d007b9c3cfa986657ebc22f2f1b599f2de7ff1def43bb8c125eef13/schwab_api_wrapper-0.1.8.tar.gz
+[2024-06-02 20:56:08] INFO root fetch - processPackages [ipy-agent]: Downloading https://files.pythonhosted.org/packages/c4/c5/5cda334423e0d60b38b44bbe135f306005aa7cfb777869fe7cbb00afc75e/ipy_agent-0.0.2.tar.gz
+[2024-06-02 20:56:08] INFO root fetch - processPackages [schwab-api-wrapper]: executing diffoscope
+[2024-06-02 20:56:08] INFO root fetch - processPackages [schwab-api-wrapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/schwab_api_wrapper-0.1.7.tar.gz tmp/schwab_api_wrapper-0.1.8.tar.gz --markdown 20240602/s/schwab-api-wrapper/0.1.7-0.1.8/README.md --exclude *.pyd
+[2024-06-02 20:56:08] INFO root fetch - processPackages [ipy-agent]: executing diffoscope
+[2024-06-02 20:56:08] INFO root fetch - processPackages [ipy-agent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ipy_agent-0.0.1.tar.gz tmp/ipy_agent-0.0.2.tar.gz --markdown 20240602/i/ipy-agent/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-06-02 20:56:08] INFO root fetch - processPackages [omop2survey]: Downloading https://files.pythonhosted.org/packages/40/8e/00f2e64641121c524dd7d6d01bb95ccf064bfb020b83cf52d2517311dae9/omop2survey-0.0.6.tar.gz
+[2024-06-02 20:56:08] INFO root fetch - processPackages [battleship-tui]: Downloading https://files.pythonhosted.org/packages/7a/6f/b15aff96f7cff812b0694c4a531588c97787a0962dfaabb3c6cbd72d8597/battleship_tui-0.9.1.tar.gz
+[2024-06-02 20:56:08] INFO root fetch - processPackages [schwab-api-wrapper]: Remove: archive file [/home/abi/fetcher/tmp/schwab_api_wrapper-0.1.7.tar.gz]
+[2024-06-02 20:56:08] INFO root fetch - processPackages [schwab-api-wrapper]: Remove: archive file [/home/abi/fetcher/tmp/schwab_api_wrapper-0.1.8.tar.gz]
+[2024-06-02 20:56:08] INFO root fetch - main [MainThread]: End processing [schwab-api-wrapper]: success
+[2024-06-02 20:56:08] INFO root fetch - processPackages [battleship-tui]: executing diffoscope
+[2024-06-02 20:56:08] INFO root fetch - processPackages [battleship-tui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/battleship_tui-0.9.0.tar.gz tmp/battleship_tui-0.9.1.tar.gz --markdown 20240602/b/battleship-tui/0.9.0-0.9.1/README.md --exclude *.pyd
+[2024-06-02 20:56:08] INFO root fetch - processPackages [ipy-agent]: Remove: archive file [/home/abi/fetcher/tmp/ipy_agent-0.0.1.tar.gz]
+[2024-06-02 20:56:08] INFO root fetch - processPackages [ipy-agent]: Remove: archive file [/home/abi/fetcher/tmp/ipy_agent-0.0.2.tar.gz]
+[2024-06-02 20:56:08] INFO root fetch - main [MainThread]: End processing [ipy-agent]: success
+[2024-06-02 20:56:09] INFO root fetch - processPackages [omop2survey]: executing diffoscope
+[2024-06-02 20:56:09] INFO root fetch - processPackages [omop2survey]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/omop2survey-0.0.5.tar.gz tmp/omop2survey-0.0.6.tar.gz --markdown 20240602/o/omop2survey/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-06-02 20:56:09] INFO root fetch - processPackages [battleship-tui]: Remove: archive file [/home/abi/fetcher/tmp/battleship_tui-0.9.0.tar.gz]
+[2024-06-02 20:56:09] INFO root fetch - processPackages [battleship-tui]: Remove: archive file [/home/abi/fetcher/tmp/battleship_tui-0.9.1.tar.gz]
+[2024-06-02 20:56:09] INFO root fetch - main [MainThread]: End processing [battleship-tui]: success
+[2024-06-02 20:56:09] INFO root fetch - processPackages [omop2survey]: Remove: archive file [/home/abi/fetcher/tmp/omop2survey-0.0.5.tar.gz]
+[2024-06-02 20:56:09] INFO root fetch - processPackages [omop2survey]: Remove: archive file [/home/abi/fetcher/tmp/omop2survey-0.0.6.tar.gz]
+[2024-06-02 20:56:09] INFO root fetch - main [MainThread]: End processing [omop2survey]: success
+[2024-06-02 20:56:09] INFO root fetch - main [MainThread]: Store serial: [23492186]
