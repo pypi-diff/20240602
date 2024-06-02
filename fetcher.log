@@ -2847,3 +2847,33 @@
 [2024-06-02 04:02:35] INFO root fetch - processPackages [mouse-jiggler-macos]: Remove: archive file [/home/abi/fetcher/tmp/mouse_jiggler_macos-0.4.0.tar.gz]
 [2024-06-02 04:02:35] INFO root fetch - main [MainThread]: End processing [mouse-jiggler-macos]: success
 [2024-06-02 04:02:35] INFO root fetch - main [MainThread]: Store serial: [23485571]
+[2024-06-02 04:04:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23485571]
+[2024-06-02 04:04:45] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-02 04:04:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pkgconf
+[2024-06-02 04:04:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: event-remote
+[2024-06-02 04:04:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: DCMake
+[2024-06-02 04:04:45] INFO root fetch - processPackages [DCMake]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-06-02 04:04:45] INFO root fetch - processPackages [event-remote]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-06-02 04:04:45] INFO root fetch - processPackages [pkgconf]: New version: [2.1.1.post9] Old Version: [2.1.1.post8]
+[2024-06-02 04:04:45] INFO root fetch - processPackages [DCMake]: Downloading https://files.pythonhosted.org/packages/0a/37/83cbc5da586a19b9f510cd9277965ef7fa1792e66f269b78d5810fc175f3/DCMake-0.0.3.tar.gz
+[2024-06-02 04:04:45] INFO root fetch - processPackages [event-remote]: Downloading https://files.pythonhosted.org/packages/fc/f8/e7965c3c40a967cd6ab1a95228f32cfc91b80a900d6b97cfa1d968979b04/event-remote-0.0.8.tar.gz
+[2024-06-02 04:04:45] INFO root fetch - processPackages [pkgconf]: Downloading https://files.pythonhosted.org/packages/7c/40/fa4052e7ffe62f08a7d623bfbc63cf18cda09b75ed0b41ffb147b62b2c69/pkgconf-2.1.1.post8.tar.gz
+[2024-06-02 04:04:46] INFO root fetch - processPackages [DCMake]: Downloading https://files.pythonhosted.org/packages/78/93/a29f0f8e7145e254eb3bb036cd14d2a2d6b823eaf52a52a54d72cf82b502/DCMake-0.0.4.tar.gz
+[2024-06-02 04:04:46] INFO root fetch - processPackages [DCMake]: executing diffoscope
+[2024-06-02 04:04:46] INFO root fetch - processPackages [DCMake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/DCMake-0.0.3.tar.gz tmp/DCMake-0.0.4.tar.gz --markdown 20240602/D/DCMake/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-06-02 04:04:46] INFO root fetch - processPackages [pkgconf]: Downloading https://files.pythonhosted.org/packages/d8/dd/b1cd9a19a7c10ac78457edb82ff988fffae65059e9bcb0b7b0dde28fe776/pkgconf-2.1.1.post9.tar.gz
+[2024-06-02 04:04:46] INFO root fetch - processPackages [event-remote]: Downloading https://files.pythonhosted.org/packages/1c/7b/b78bf81e9532d09f145c5cec2f58a33fdedccf81c4e0e5d7cd2e47e7b692/event-remote-0.0.9.tar.gz
+[2024-06-02 04:04:46] INFO root fetch - processPackages [pkgconf]: executing diffoscope
+[2024-06-02 04:04:46] INFO root fetch - processPackages [pkgconf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pkgconf-2.1.1.post8.tar.gz tmp/pkgconf-2.1.1.post9.tar.gz --markdown 20240602/p/pkgconf/2.1.1.post8-2.1.1.post9/README.md --exclude *.pyd
+[2024-06-02 04:04:46] INFO root fetch - processPackages [event-remote]: executing diffoscope
+[2024-06-02 04:04:46] INFO root fetch - processPackages [event-remote]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/event-remote-0.0.8.tar.gz tmp/event-remote-0.0.9.tar.gz --markdown 20240602/e/event-remote/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-06-02 04:04:46] INFO root fetch - processPackages [event-remote]: Remove: archive file [/home/abi/fetcher/tmp/event-remote-0.0.8.tar.gz]
+[2024-06-02 04:04:46] INFO root fetch - processPackages [event-remote]: Remove: archive file [/home/abi/fetcher/tmp/event-remote-0.0.9.tar.gz]
+[2024-06-02 04:04:46] INFO root fetch - main [MainThread]: End processing [event-remote]: success
+[2024-06-02 04:04:46] INFO root fetch - processPackages [DCMake]: Remove: archive file [/home/abi/fetcher/tmp/DCMake-0.0.3.tar.gz]
+[2024-06-02 04:04:46] INFO root fetch - processPackages [DCMake]: Remove: archive file [/home/abi/fetcher/tmp/DCMake-0.0.4.tar.gz]
+[2024-06-02 04:04:46] INFO root fetch - main [MainThread]: End processing [DCMake]: success
+[2024-06-02 04:04:47] INFO root fetch - processPackages [pkgconf]: Remove: archive file [/home/abi/fetcher/tmp/pkgconf-2.1.1.post8.tar.gz]
+[2024-06-02 04:04:47] INFO root fetch - processPackages [pkgconf]: Remove: archive file [/home/abi/fetcher/tmp/pkgconf-2.1.1.post9.tar.gz]
+[2024-06-02 04:04:47] INFO root fetch - main [MainThread]: End processing [pkgconf]: success
+[2024-06-02 04:04:47] INFO root fetch - main [MainThread]: Store serial: [23485592]
