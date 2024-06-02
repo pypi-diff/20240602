@@ -5325,3 +5325,15 @@
 [2024-06-02 09:12:24] INFO root fetch - processPackages [tf-models-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_models_nightly-2.9.0.dev20220920-py2.py3-none-any.whl.zip]
 [2024-06-02 09:12:24] INFO root fetch - main [MainThread]: End processing [tf-models-nightly]: success
 [2024-06-02 09:12:24] INFO root fetch - main [MainThread]: Store serial: [23486924]
+[2024-06-02 09:14:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23486924]
+[2024-06-02 09:14:33] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-02 09:14:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: LinkExpander
+[2024-06-02 09:14:33] INFO root fetch - processPackages [LinkExpander]: New version: [1.1.0] Old Version: [1.0.0.post2]
+[2024-06-02 09:14:33] INFO root fetch - processPackages [LinkExpander]: Downloading https://files.pythonhosted.org/packages/82/ea/21f4b0a0d26162e2729ee77fd5f053bd617c0f9d72ffd62870cdd5cb1a2b/linkexpander-1.0.0.post2.tar.gz
+[2024-06-02 09:14:33] INFO root fetch - processPackages [LinkExpander]: Downloading https://files.pythonhosted.org/packages/82/6b/46e677b79372328668a5e8609dd3fcfa47a7e191cb47c18d45240deb23a7/linkexpander-1.1.0.tar.gz
+[2024-06-02 09:14:33] INFO root fetch - processPackages [LinkExpander]: executing diffoscope
+[2024-06-02 09:14:33] INFO root fetch - processPackages [LinkExpander]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/linkexpander-1.0.0.post2.tar.gz tmp/linkexpander-1.1.0.tar.gz --markdown 20240602/L/LinkExpander/1.0.0.post2-1.1.0/README.md --exclude *.pyd
+[2024-06-02 09:14:34] INFO root fetch - processPackages [LinkExpander]: Remove: archive file [/home/abi/fetcher/tmp/linkexpander-1.0.0.post2.tar.gz]
+[2024-06-02 09:14:34] INFO root fetch - processPackages [LinkExpander]: Remove: archive file [/home/abi/fetcher/tmp/linkexpander-1.1.0.tar.gz]
+[2024-06-02 09:14:34] INFO root fetch - main [MainThread]: End processing [LinkExpander]: success
+[2024-06-02 09:14:34] INFO root fetch - main [MainThread]: Store serial: [23486927]
