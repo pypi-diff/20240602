@@ -2817,3 +2817,15 @@
 [2024-06-02 03:56:09] INFO root fetch - processPackages [ubicoders-vrobots]: Remove: archive file [/home/abi/fetcher/tmp/ubicoders-vrobots-0.3.0.tar.gz]
 [2024-06-02 03:56:09] INFO root fetch - main [MainThread]: End processing [ubicoders-vrobots]: success
 [2024-06-02 03:56:09] INFO root fetch - main [MainThread]: Store serial: [23485560]
+[2024-06-02 03:58:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23485560]
+[2024-06-02 03:58:17] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-02 03:58:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: msgpackr-python
+[2024-06-02 03:58:17] INFO root fetch - processPackages [msgpackr-python]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-06-02 03:58:17] INFO root fetch - processPackages [msgpackr-python]: Downloading https://files.pythonhosted.org/packages/8f/c2/a92008d107ee7f4a3fd183c7f7475c0b883b1bb7196851e4f54a7b21d496/msgpackr_python-0.1.2.tar.gz
+[2024-06-02 03:58:17] INFO root fetch - processPackages [msgpackr-python]: Downloading https://files.pythonhosted.org/packages/79/ac/dff96426f028a985685f8840f6fcebff238d2445fea1ab8c85d8ef29e4a2/msgpackr_python-0.1.3.tar.gz
+[2024-06-02 03:58:17] INFO root fetch - processPackages [msgpackr-python]: executing diffoscope
+[2024-06-02 03:58:17] INFO root fetch - processPackages [msgpackr-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/msgpackr_python-0.1.2.tar.gz tmp/msgpackr_python-0.1.3.tar.gz --markdown 20240602/m/msgpackr-python/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-06-02 03:58:18] INFO root fetch - processPackages [msgpackr-python]: Remove: archive file [/home/abi/fetcher/tmp/msgpackr_python-0.1.2.tar.gz]
+[2024-06-02 03:58:18] INFO root fetch - processPackages [msgpackr-python]: Remove: archive file [/home/abi/fetcher/tmp/msgpackr_python-0.1.3.tar.gz]
+[2024-06-02 03:58:18] INFO root fetch - main [MainThread]: End processing [msgpackr-python]: success
+[2024-06-02 03:58:18] INFO root fetch - main [MainThread]: Store serial: [23485563]
