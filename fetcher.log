@@ -8398,3 +8398,21 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-02 13:22:53] INFO root fetch - processPackages [cjtool]: Remove: archive file [/home/abi/fetcher/tmp/cjtool-0.29.9-py2.py3-none-any.whl.zip]
 [2024-06-02 13:22:53] INFO root fetch - main [MainThread]: End processing [cjtool]: success
 [2024-06-02 13:22:53] INFO root fetch - main [MainThread]: Store serial: [23488381]
+[2024-06-02 13:24:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23488381]
+[2024-06-02 13:25:02] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-02 13:25:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fastapi_errors
+[2024-06-02 13:25:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Baseball-Info
+[2024-06-02 13:25:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lazy-crawler
+[2024-06-02 13:25:02] WARNING root fetch - processPackages [fastapi_errors]: Skipping, unable to determine old version
+[2024-06-02 13:25:02] INFO root fetch - processPackages [Baseball-Info]: New version: [0.0.0.2] Old Version: [0.0.0.1]
+[2024-06-02 13:25:02] INFO root fetch - main [MainThread]: End processing [fastapi_errors] error
+[2024-06-02 13:25:02] ERROR root fetch - processPackages [lazy-crawler]: Unable to get metadata: No such project 'lazy-crawler'
+[2024-06-02 13:25:02] INFO root fetch - main [MainThread]: End processing [lazy-crawler] error
+[2024-06-02 13:25:02] INFO root fetch - processPackages [Baseball-Info]: Downloading https://files.pythonhosted.org/packages/53/12/b3feb4346b242ea7eca0a5863df2efd273edc00866b253c64a1b3373cf4d/Baseball-Info-0.0.0.1.tar.gz
+[2024-06-02 13:25:03] INFO root fetch - processPackages [Baseball-Info]: Downloading https://files.pythonhosted.org/packages/b3/1d/2d5253678b5ef05062f1512f8447d1e58741dbdc081f3d928e81f3112f80/Baseball-Info-0.0.0.2.tar.gz
+[2024-06-02 13:25:03] INFO root fetch - processPackages [Baseball-Info]: executing diffoscope
+[2024-06-02 13:25:03] INFO root fetch - processPackages [Baseball-Info]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Baseball-Info-0.0.0.1.tar.gz tmp/Baseball-Info-0.0.0.2.tar.gz --markdown 20240602/B/Baseball-Info/0.0.0.1-0.0.0.2/README.md --exclude *.pyd
+[2024-06-02 13:25:03] INFO root fetch - processPackages [Baseball-Info]: Remove: archive file [/home/abi/fetcher/tmp/Baseball-Info-0.0.0.1.tar.gz]
+[2024-06-02 13:25:03] INFO root fetch - processPackages [Baseball-Info]: Remove: archive file [/home/abi/fetcher/tmp/Baseball-Info-0.0.0.2.tar.gz]
+[2024-06-02 13:25:03] INFO root fetch - main [MainThread]: End processing [Baseball-Info]: success
+[2024-06-02 13:25:03] INFO root fetch - main [MainThread]: Store serial: [23488393]
