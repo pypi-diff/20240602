@@ -3778,3 +3778,26 @@
 [2024-06-02 06:18:28] INFO root fetch - processPackages [gridengine-framework]: Remove: archive file [/home/abi/fetcher/tmp/gridengine_framework-0.8.6.tar.gz]
 [2024-06-02 06:18:28] INFO root fetch - main [MainThread]: End processing [gridengine-framework]: success
 [2024-06-02 06:18:28] INFO root fetch - main [MainThread]: Store serial: [23486021]
+[2024-06-02 06:20:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23486021]
+[2024-06-02 06:20:36] INFO root fetch - main [MainThread]: No changed packages found
+[2024-06-02 06:22:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23486021]
+[2024-06-02 06:22:41] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-02 06:22:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hal9
+[2024-06-02 06:22:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aixhello
+[2024-06-02 06:22:41] INFO root fetch - processPackages [aixhello]: New version: [3.3] Old Version: [3.2]
+[2024-06-02 06:22:41] INFO root fetch - processPackages [hal9]: New version: [2.1.8] Old Version: [2.1.7]
+[2024-06-02 06:22:41] INFO root fetch - processPackages [aixhello]: Downloading https://files.pythonhosted.org/packages/c0/6b/b829b3053c5855e6d3a98bf0de2d400f1bc22299b514a242f70f69475d93/aixhello-3.2.tar.gz
+[2024-06-02 06:22:41] INFO root fetch - processPackages [hal9]: Downloading https://files.pythonhosted.org/packages/d2/b1/bc7207fa48ef27a1fa0dbd76d7054b6308ea101c55127399920e34b614b2/hal9-2.1.7.tar.gz
+[2024-06-02 06:22:42] INFO root fetch - processPackages [hal9]: Downloading https://files.pythonhosted.org/packages/ec/06/16b651645221e4215a1d416277d71d81113ed38a4cf9d0eae922fb4174d4/hal9-2.1.8.tar.gz
+[2024-06-02 06:22:42] INFO root fetch - processPackages [aixhello]: Downloading https://files.pythonhosted.org/packages/3b/6d/50f2dc65b6bac5fac539cf87c1817af446e4a37ca9ef2960ca48f3db28d1/aixhello-3.3.tar.gz
+[2024-06-02 06:22:42] INFO root fetch - processPackages [hal9]: executing diffoscope
+[2024-06-02 06:22:42] INFO root fetch - processPackages [hal9]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hal9-2.1.7.tar.gz tmp/hal9-2.1.8.tar.gz --markdown 20240602/h/hal9/2.1.7-2.1.8/README.md --exclude *.pyd
+[2024-06-02 06:22:42] INFO root fetch - processPackages [aixhello]: executing diffoscope
+[2024-06-02 06:22:42] INFO root fetch - processPackages [aixhello]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aixhello-3.2.tar.gz tmp/aixhello-3.3.tar.gz --markdown 20240602/a/aixhello/3.2-3.3/README.md --exclude *.pyd
+[2024-06-02 06:22:42] INFO root fetch - processPackages [hal9]: Remove: archive file [/home/abi/fetcher/tmp/hal9-2.1.7.tar.gz]
+[2024-06-02 06:22:42] INFO root fetch - processPackages [hal9]: Remove: archive file [/home/abi/fetcher/tmp/hal9-2.1.8.tar.gz]
+[2024-06-02 06:22:42] INFO root fetch - main [MainThread]: End processing [hal9]: success
+[2024-06-02 06:22:42] INFO root fetch - processPackages [aixhello]: Remove: archive file [/home/abi/fetcher/tmp/aixhello-3.2.tar.gz]
+[2024-06-02 06:22:42] INFO root fetch - processPackages [aixhello]: Remove: archive file [/home/abi/fetcher/tmp/aixhello-3.3.tar.gz]
+[2024-06-02 06:22:42] INFO root fetch - main [MainThread]: End processing [aixhello]: success
+[2024-06-02 06:22:42] INFO root fetch - main [MainThread]: Store serial: [23486027]
