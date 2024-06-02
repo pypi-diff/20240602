@@ -3670,3 +3670,37 @@
 [2024-06-02 05:59:03] INFO root fetch - processPackages [gdmty-django-users]: Remove: archive file [/home/abi/fetcher/tmp/gdmty_django_users-24.5.5.tar.gz]
 [2024-06-02 05:59:03] INFO root fetch - main [MainThread]: End processing [gdmty-django-users]: success
 [2024-06-02 05:59:03] INFO root fetch - main [MainThread]: Store serial: [23485980]
+[2024-06-02 06:01:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23485980]
+[2024-06-02 06:01:14] INFO root fetch - main [MainThread]: No changed packages found
+[2024-06-02 06:03:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23485980]
+[2024-06-02 06:03:19] INFO root fetch - main [MainThread]: No changed packages found
+[2024-06-02 06:05:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23485980]
+[2024-06-02 06:05:25] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-02 06:05:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: contact-profile-local
+[2024-06-02 06:05:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: planetMagFields
+[2024-06-02 06:05:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: chromedriver-binary
+[2024-06-02 06:05:25] INFO root fetch - processPackages [contact-profile-local]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-06-02 06:05:25] INFO root fetch - processPackages [chromedriver-binary]: New version: [99.0.4844.51.0] Old Version: [99.0.4844.35.0]
+[2024-06-02 06:05:25] INFO root fetch - processPackages [contact-profile-local]: Downloading https://files.pythonhosted.org/packages/25/4a/9c68dad06d1a31f725b72a9ffc13addd416fc1a79227150e4cf02bed13fd/contact_profile_local-0.0.8.tar.gz
+[2024-06-02 06:05:25] INFO root fetch - processPackages [chromedriver-binary]: Downloading https://files.pythonhosted.org/packages/50/a2/f36a3d2f2aa37ccc496e5f81d594f06e3965b836712da14b4b01d2f05ca8/chromedriver-binary-99.0.4844.35.0.tar.gz
+[2024-06-02 06:05:25] INFO root fetch - processPackages [planetMagFields]: New version: [1.4.3.post2] Old Version: [1.4.3.post1]
+[2024-06-02 06:05:25] INFO root fetch - processPackages [planetMagFields]: Downloading https://files.pythonhosted.org/packages/4c/11/78f0eb693b6cecbb75324d53dbf32facbaafde2af55128c3fc165941a2d7/planetmagfields-1.4.3.post1.tar.gz
+[2024-06-02 06:05:25] INFO root fetch - processPackages [contact-profile-local]: Downloading https://files.pythonhosted.org/packages/8f/de/661db7b84762d21a0fe82f0b63a31a7df9b884479bcaa52c125b53e4caa3/contact_profile_local-0.0.9.tar.gz
+[2024-06-02 06:05:25] INFO root fetch - processPackages [chromedriver-binary]: Downloading https://files.pythonhosted.org/packages/d9/eb/3bd2a308b9e6f7441fbed7b759578bddade2cb983bb4ffe7fc3777863314/chromedriver-binary-99.0.4844.51.0.tar.gz
+[2024-06-02 06:05:25] INFO root fetch - processPackages [chromedriver-binary]: executing diffoscope
+[2024-06-02 06:05:25] INFO root fetch - processPackages [chromedriver-binary]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chromedriver-binary-99.0.4844.35.0.tar.gz tmp/chromedriver-binary-99.0.4844.51.0.tar.gz --markdown 20240602/c/chromedriver-binary/99.0.4844.35.0-99.0.4844.51.0/README.md --exclude *.pyd
+[2024-06-02 06:05:25] INFO root fetch - processPackages [contact-profile-local]: executing diffoscope
+[2024-06-02 06:05:25] INFO root fetch - processPackages [contact-profile-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/contact_profile_local-0.0.8.tar.gz tmp/contact_profile_local-0.0.9.tar.gz --markdown 20240602/c/contact-profile-local/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-06-02 06:05:25] INFO root fetch - processPackages [planetMagFields]: Downloading https://files.pythonhosted.org/packages/16/96/a3b2efee9f08baa65cd605f079254a8cb09b0996f7cfdb04124fd9b65365/planetmagfields-1.4.3.post2.tar.gz
+[2024-06-02 06:05:25] INFO root fetch - processPackages [planetMagFields]: executing diffoscope
+[2024-06-02 06:05:25] INFO root fetch - processPackages [planetMagFields]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/planetmagfields-1.4.3.post1.tar.gz tmp/planetmagfields-1.4.3.post2.tar.gz --markdown 20240602/p/planetMagFields/1.4.3.post1-1.4.3.post2/README.md --exclude *.pyd
+[2024-06-02 06:05:26] INFO root fetch - processPackages [chromedriver-binary]: Remove: archive file [/home/abi/fetcher/tmp/chromedriver-binary-99.0.4844.35.0.tar.gz]
+[2024-06-02 06:05:26] INFO root fetch - processPackages [chromedriver-binary]: Remove: archive file [/home/abi/fetcher/tmp/chromedriver-binary-99.0.4844.51.0.tar.gz]
+[2024-06-02 06:05:26] INFO root fetch - main [MainThread]: End processing [chromedriver-binary]: success
+[2024-06-02 06:05:26] INFO root fetch - processPackages [contact-profile-local]: Remove: archive file [/home/abi/fetcher/tmp/contact_profile_local-0.0.8.tar.gz]
+[2024-06-02 06:05:26] INFO root fetch - processPackages [contact-profile-local]: Remove: archive file [/home/abi/fetcher/tmp/contact_profile_local-0.0.9.tar.gz]
+[2024-06-02 06:05:26] INFO root fetch - main [MainThread]: End processing [contact-profile-local]: success
+[2024-06-02 06:05:26] INFO root fetch - processPackages [planetMagFields]: Remove: archive file [/home/abi/fetcher/tmp/planetmagfields-1.4.3.post1.tar.gz]
+[2024-06-02 06:05:26] INFO root fetch - processPackages [planetMagFields]: Remove: archive file [/home/abi/fetcher/tmp/planetmagfields-1.4.3.post2.tar.gz]
+[2024-06-02 06:05:26] INFO root fetch - main [MainThread]: End processing [planetMagFields]: success
+[2024-06-02 06:05:26] INFO root fetch - main [MainThread]: Store serial: [23485989]
