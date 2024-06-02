@@ -2924,3 +2924,24 @@
 [2024-06-02 04:13:26] INFO root fetch - processPackages [DCMake]: Remove: archive file [/home/abi/fetcher/tmp/DCMake-0.0.5.tar.gz]
 [2024-06-02 04:13:26] INFO root fetch - main [MainThread]: End processing [DCMake]: success
 [2024-06-02 04:13:26] INFO root fetch - main [MainThread]: Store serial: [23485646]
+[2024-06-02 04:15:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23485646]
+[2024-06-02 04:15:35] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-02 04:15:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: xtts-api-server
+[2024-06-02 04:15:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: event-remote
+[2024-06-02 04:15:35] INFO root fetch - processPackages [event-remote]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-06-02 04:15:35] INFO root fetch - processPackages [xtts-api-server]: New version: [0.8.6] Old Version: [0.8.5]
+[2024-06-02 04:15:35] INFO root fetch - processPackages [event-remote]: Downloading https://files.pythonhosted.org/packages/fc/f8/e7965c3c40a967cd6ab1a95228f32cfc91b80a900d6b97cfa1d968979b04/event-remote-0.0.8.tar.gz
+[2024-06-02 04:15:35] INFO root fetch - processPackages [xtts-api-server]: Downloading https://files.pythonhosted.org/packages/1c/b8/6d88021f90021ead5df7abce43291a43d346dcf32ccfe9281977a087d822/xtts_api_server-0.8.5.tar.gz
+[2024-06-02 04:15:35] INFO root fetch - processPackages [event-remote]: Downloading https://files.pythonhosted.org/packages/1c/7b/b78bf81e9532d09f145c5cec2f58a33fdedccf81c4e0e5d7cd2e47e7b692/event-remote-0.0.9.tar.gz
+[2024-06-02 04:15:35] INFO root fetch - processPackages [event-remote]: executing diffoscope
+[2024-06-02 04:15:35] INFO root fetch - processPackages [event-remote]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/event-remote-0.0.8.tar.gz tmp/event-remote-0.0.9.tar.gz --markdown 20240602/e/event-remote/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-06-02 04:15:35] INFO root fetch - processPackages [xtts-api-server]: Downloading https://files.pythonhosted.org/packages/65/82/4fa20a4d2b1a93d8e2b23fa86205fb6247e4c407df18835afe93239d4ea3/xtts_api_server-0.8.6.tar.gz
+[2024-06-02 04:15:36] INFO root fetch - processPackages [event-remote]: Remove: archive file [/home/abi/fetcher/tmp/event-remote-0.0.8.tar.gz]
+[2024-06-02 04:15:36] INFO root fetch - processPackages [event-remote]: Remove: archive file [/home/abi/fetcher/tmp/event-remote-0.0.9.tar.gz]
+[2024-06-02 04:15:36] INFO root fetch - main [MainThread]: End processing [event-remote]: success
+[2024-06-02 04:15:36] INFO root fetch - processPackages [xtts-api-server]: executing diffoscope
+[2024-06-02 04:15:36] INFO root fetch - processPackages [xtts-api-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xtts_api_server-0.8.5.tar.gz tmp/xtts_api_server-0.8.6.tar.gz --markdown 20240602/x/xtts-api-server/0.8.5-0.8.6/README.md --exclude *.pyd
+[2024-06-02 04:15:37] INFO root fetch - processPackages [xtts-api-server]: Remove: archive file [/home/abi/fetcher/tmp/xtts_api_server-0.8.5.tar.gz]
+[2024-06-02 04:15:37] INFO root fetch - processPackages [xtts-api-server]: Remove: archive file [/home/abi/fetcher/tmp/xtts_api_server-0.8.6.tar.gz]
+[2024-06-02 04:15:37] INFO root fetch - main [MainThread]: End processing [xtts-api-server]: success
+[2024-06-02 04:15:37] INFO root fetch - main [MainThread]: Store serial: [23485652]
