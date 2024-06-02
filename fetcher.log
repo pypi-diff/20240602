@@ -17063,3 +17063,65 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 21:28:45] INFO root fetch - processPackages [foo-et-al-parameterization]: Remove: archive file [/home/abi/fetcher/tmp/foo_et_al_parameterization-0.0.2.tar.gz]
 [2024-06-02 21:28:45] INFO root fetch - main [MainThread]: End processing [foo-et-al-parameterization]: success
 [2024-06-02 21:28:45] INFO root fetch - main [MainThread]: Store serial: [23492395]
+[2024-06-02 21:30:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23492395]
+[2024-06-02 21:30:54] INFO root fetch - main [MainThread]: No changed packages found
+[2024-06-02 21:32:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23492418]
+[2024-06-02 21:32:59] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-06-02 21:32:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-codenerix
+[2024-06-02 21:32:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: omnata-plugin-runtime
+[2024-06-02 21:32:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: simpleworkspace
+[2024-06-02 21:32:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dpt
+[2024-06-02 21:32:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: django-tmmis
+[2024-06-02 21:32:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pyudev-zero
+[2024-06-02 21:32:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: dekgen
+[2024-06-02 21:32:59] INFO root fetch - processPackages [dpt]: New version: [1.0.5] Old Version: [1.0.4]
+[2024-06-02 21:32:59] INFO root fetch - processPackages [dekgen]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-06-02 21:32:59] INFO root fetch - processPackages [simpleworkspace]: New version: [1.2.215] Old Version: [1.2.214]
+[2024-06-02 21:32:59] INFO root fetch - processPackages [django-codenerix]: New version: [4.0.9] Old Version: [4.0.86]
+[2024-06-02 21:32:59] INFO root fetch - processPackages [omnata-plugin-runtime]: New version: [0.3.9a44] Old Version: [0.3.9a43]
+[2024-06-02 21:32:59] INFO root fetch - processPackages [dpt]: Downloading https://files.pythonhosted.org/packages/5a/3d/6daad4b00b63063afa02386e30225a8a5f7050fcb979e9284f4210d504e1/dpt-1.0.4.tar.gz
+[2024-06-02 21:32:59] INFO root fetch - processPackages [django-tmmis]: New version: [24.6.2] Old Version: [0.3.6]
+[2024-06-02 21:32:59] WARNING root fetch - processPackages [pyudev-zero]: Skipping, unable to determine old version
+[2024-06-02 21:32:59] INFO root fetch - main [MainThread]: End processing [pyudev-zero] error
+[2024-06-02 21:32:59] INFO root fetch - processPackages [dekgen]: Downloading https://files.pythonhosted.org/packages/55/ca/bc39ed4f7ba1f2a43d1d5932cf09ce55c8c2a45f66d444a15214d233ffa8/dekgen-0.1.8.tar.gz
+[2024-06-02 21:32:59] INFO root fetch - processPackages [simpleworkspace]: Downloading https://files.pythonhosted.org/packages/2d/da/fbc60248474be5cf6b8fa2b55daae9d3eb3bd6c9c7340ac89d9f264172a7/simpleworkspace-1.2.214.tar.gz
+[2024-06-02 21:32:59] INFO root fetch - processPackages [omnata-plugin-runtime]: Downloading https://files.pythonhosted.org/packages/8e/11/abde4b4d82373bc42a84a5591bf31c6cca540ba9f13337491df615af0b6c/omnata_plugin_runtime-0.3.9a43.tar.gz
+[2024-06-02 21:32:59] INFO root fetch - processPackages [django-codenerix]: Downloading https://files.pythonhosted.org/packages/b7/ea/c3f3a177b206c328aef405cbbd92e69d121d232d032e65add5072696c72f/django-codenerix-4.0.86.tar.gz
+[2024-06-02 21:33:00] INFO root fetch - processPackages [dpt]: Downloading https://files.pythonhosted.org/packages/17/0c/b731b14ab4310b3c71f7c4966eb3c997d51ddc64817d4fcbb7b65473d351/dpt-1.0.5.tar.gz
+[2024-06-02 21:33:00] INFO root fetch - processPackages [django-tmmis]: Downloading https://files.pythonhosted.org/packages/99/b6/4ab9388b27613ab9abb8637b112d663f03199cf6e56ca581ad712f236c23/django-tmmis-0.3.6.tar.gz
+[2024-06-02 21:33:00] INFO root fetch - processPackages [dekgen]: Downloading https://files.pythonhosted.org/packages/d7/e9/81205c4038ca752897f47f6a78838322c7bbbcbfe113b202bbe6b47bd10d/dekgen-0.1.9.tar.gz
+[2024-06-02 21:33:00] INFO root fetch - processPackages [omnata-plugin-runtime]: Downloading https://files.pythonhosted.org/packages/de/f5/326ad467bb560d9dc8d7cebfe2aed77d524aeaf8a8ee7c6107f202eb6d0d/omnata_plugin_runtime-0.3.9a44.tar.gz
+[2024-06-02 21:33:00] INFO root fetch - processPackages [dpt]: executing diffoscope
+[2024-06-02 21:33:00] INFO root fetch - processPackages [dpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dpt-1.0.4.tar.gz tmp/dpt-1.0.5.tar.gz --markdown 20240602/d/dpt/1.0.4-1.0.5/README.md --exclude *.pyd
+[2024-06-02 21:33:00] INFO root fetch - processPackages [dekgen]: executing diffoscope
+[2024-06-02 21:33:00] INFO root fetch - processPackages [dekgen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dekgen-0.1.8.tar.gz tmp/dekgen-0.1.9.tar.gz --markdown 20240602/d/dekgen/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-06-02 21:33:00] INFO root fetch - processPackages [simpleworkspace]: Downloading https://files.pythonhosted.org/packages/15/55/b0c545d6340cf80d46953be40bed2f3c3f3c5da9be318a53f774c5ac6f87/simpleworkspace-1.2.215.tar.gz
+[2024-06-02 21:33:00] INFO root fetch - processPackages [omnata-plugin-runtime]: executing diffoscope
+[2024-06-02 21:33:00] INFO root fetch - processPackages [omnata-plugin-runtime]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/omnata_plugin_runtime-0.3.9a43.tar.gz tmp/omnata_plugin_runtime-0.3.9a44.tar.gz --markdown 20240602/o/omnata-plugin-runtime/0.3.9a43-0.3.9a44/README.md --exclude *.pyd
+[2024-06-02 21:33:00] INFO root fetch - processPackages [django-tmmis]: Downloading https://files.pythonhosted.org/packages/81/bd/c4781d065ca5efc0d1e8e2a578733ce4b8793f9f11ac36107d27497f58e8/django_tmmis-24.6.2.tar.gz
+[2024-06-02 21:33:00] INFO root fetch - processPackages [django-codenerix]: Downloading https://files.pythonhosted.org/packages/fa/74/5c81cb6c9cd40266d8845b61025400c9db3344b5ed8063c6b29f18d4574e/django-codenerix-4.0.9.tar.gz
+[2024-06-02 21:33:00] INFO root fetch - processPackages [simpleworkspace]: executing diffoscope
+[2024-06-02 21:33:00] INFO root fetch - processPackages [simpleworkspace]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simpleworkspace-1.2.214.tar.gz tmp/simpleworkspace-1.2.215.tar.gz --markdown 20240602/s/simpleworkspace/1.2.214-1.2.215/README.md --exclude *.pyd
+[2024-06-02 21:33:00] INFO root fetch - processPackages [django-tmmis]: executing diffoscope
+[2024-06-02 21:33:00] INFO root fetch - processPackages [django-tmmis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-tmmis-0.3.6.tar.gz tmp/django_tmmis-24.6.2.tar.gz --markdown 20240602/d/django-tmmis/0.3.6-24.6.2/README.md --exclude *.pyd
+[2024-06-02 21:33:00] INFO root fetch - processPackages [django-codenerix]: executing diffoscope
+[2024-06-02 21:33:00] INFO root fetch - processPackages [django-codenerix]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-codenerix-4.0.86.tar.gz tmp/django-codenerix-4.0.9.tar.gz --markdown 20240602/d/django-codenerix/4.0.86-4.0.9/README.md --exclude *.pyd
+[2024-06-02 21:33:00] INFO root fetch - processPackages [dpt]: Remove: archive file [/home/abi/fetcher/tmp/dpt-1.0.4.tar.gz]
+[2024-06-02 21:33:00] INFO root fetch - processPackages [dpt]: Remove: archive file [/home/abi/fetcher/tmp/dpt-1.0.5.tar.gz]
+[2024-06-02 21:33:00] INFO root fetch - main [MainThread]: End processing [dpt]: success
+[2024-06-02 21:33:00] INFO root fetch - processPackages [dekgen]: Remove: archive file [/home/abi/fetcher/tmp/dekgen-0.1.8.tar.gz]
+[2024-06-02 21:33:00] INFO root fetch - processPackages [dekgen]: Remove: archive file [/home/abi/fetcher/tmp/dekgen-0.1.9.tar.gz]
+[2024-06-02 21:33:00] INFO root fetch - main [MainThread]: End processing [dekgen]: success
+[2024-06-02 21:33:01] INFO root fetch - processPackages [omnata-plugin-runtime]: Remove: archive file [/home/abi/fetcher/tmp/omnata_plugin_runtime-0.3.9a43.tar.gz]
+[2024-06-02 21:33:01] INFO root fetch - processPackages [omnata-plugin-runtime]: Remove: archive file [/home/abi/fetcher/tmp/omnata_plugin_runtime-0.3.9a44.tar.gz]
+[2024-06-02 21:33:01] INFO root fetch - main [MainThread]: End processing [omnata-plugin-runtime]: success
+[2024-06-02 21:33:01] INFO root fetch - processPackages [simpleworkspace]: Remove: archive file [/home/abi/fetcher/tmp/simpleworkspace-1.2.214.tar.gz]
+[2024-06-02 21:33:01] INFO root fetch - processPackages [simpleworkspace]: Remove: archive file [/home/abi/fetcher/tmp/simpleworkspace-1.2.215.tar.gz]
+[2024-06-02 21:33:01] INFO root fetch - main [MainThread]: End processing [simpleworkspace]: success
+[2024-06-02 21:33:01] INFO root fetch - processPackages [django-tmmis]: Remove: archive file [/home/abi/fetcher/tmp/django-tmmis-0.3.6.tar.gz]
+[2024-06-02 21:33:01] INFO root fetch - processPackages [django-tmmis]: Remove: archive file [/home/abi/fetcher/tmp/django_tmmis-24.6.2.tar.gz]
+[2024-06-02 21:33:01] INFO root fetch - main [MainThread]: End processing [django-tmmis]: success
+[2024-06-02 21:33:40] INFO root fetch - processPackages [django-codenerix]: Remove: archive file [/home/abi/fetcher/tmp/django-codenerix-4.0.86.tar.gz]
+[2024-06-02 21:33:40] INFO root fetch - processPackages [django-codenerix]: Remove: archive file [/home/abi/fetcher/tmp/django-codenerix-4.0.9.tar.gz]
+[2024-06-02 21:33:40] INFO root fetch - main [MainThread]: End processing [django-codenerix]: success
+[2024-06-02 21:33:40] INFO root fetch - main [MainThread]: Store serial: [23492439]
