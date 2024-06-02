@@ -4896,3 +4896,33 @@
 [2024-06-02 08:26:15] INFO root fetch - processPackages [fakesnow]: Remove: archive file [/home/abi/fetcher/tmp/fakesnow-0.9.9.tar.gz]
 [2024-06-02 08:26:15] INFO root fetch - main [MainThread]: End processing [fakesnow]: success
 [2024-06-02 08:26:15] INFO root fetch - main [MainThread]: Store serial: [23486713]
+[2024-06-02 08:28:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23486713]
+[2024-06-02 08:28:25] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-02 08:28:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: arclet-alconna
+[2024-06-02 08:28:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: CI-CloudConnector
+[2024-06-02 08:28:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sopel
+[2024-06-02 08:28:25] INFO root fetch - processPackages [sopel]: New version: [8.0.0] Old Version: [7.1.9]
+[2024-06-02 08:28:25] INFO root fetch - processPackages [CI-CloudConnector]: New version: [2.2] Old Version: [2.0]
+[2024-06-02 08:28:25] INFO root fetch - processPackages [arclet-alconna]: New version: [2.0.0a1] Old Version: [1.8.9]
+[2024-06-02 08:28:25] INFO root fetch - processPackages [CI-CloudConnector]: Downloading https://files.pythonhosted.org/packages/4b/c4/d72fab567ae615ec45e6a59433627b3d998cec2276434eabd4c291676cc8/ci_cloudconnector-2.0.tar.gz
+[2024-06-02 08:28:25] INFO root fetch - processPackages [arclet-alconna]: Downloading https://files.pythonhosted.org/packages/39/d4/dac9fe4b3d8464614fd090809b888d792a000aca204ec30d3cee3c8d5266/arclet_alconna-1.8.9.tar.gz
+[2024-06-02 08:28:25] INFO root fetch - processPackages [sopel]: Downloading https://files.pythonhosted.org/packages/28/50/888928c6bcd7de7fa95afb0369a5a354ca3193e2f9f2237722af8bdc5718/sopel-7.1.9.tar.gz
+[2024-06-02 08:28:26] INFO root fetch - processPackages [arclet-alconna]: Downloading https://files.pythonhosted.org/packages/9d/94/a67b387eb6a314713f326f7f2b4c55fe6146638814b2db843e0a477dd310/arclet_alconna-2.0.0a1.tar.gz
+[2024-06-02 08:28:26] INFO root fetch - processPackages [sopel]: Downloading https://files.pythonhosted.org/packages/36/5e/95d3a0325b6942532c03299c13c671811f84c4365b5fb11738afda214603/sopel-8.0.0.tar.gz
+[2024-06-02 08:28:26] INFO root fetch - processPackages [CI-CloudConnector]: Downloading https://files.pythonhosted.org/packages/dc/db/48dd7b5f37e45702f3a63b2c31e10bce1894d151e7ff39c485f5d0db78fc/ci_cloudconnector-2.2.tar.gz
+[2024-06-02 08:28:26] INFO root fetch - processPackages [arclet-alconna]: executing diffoscope
+[2024-06-02 08:28:26] INFO root fetch - processPackages [arclet-alconna]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arclet_alconna-1.8.9.tar.gz tmp/arclet_alconna-2.0.0a1.tar.gz --markdown 20240602/a/arclet-alconna/1.8.9-2.0.0a1/README.md --exclude *.pyd
+[2024-06-02 08:28:26] INFO root fetch - processPackages [sopel]: executing diffoscope
+[2024-06-02 08:28:26] INFO root fetch - processPackages [sopel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sopel-7.1.9.tar.gz tmp/sopel-8.0.0.tar.gz --markdown 20240602/s/sopel/7.1.9-8.0.0/README.md --exclude *.pyd
+[2024-06-02 08:28:26] INFO root fetch - processPackages [CI-CloudConnector]: executing diffoscope
+[2024-06-02 08:28:26] INFO root fetch - processPackages [CI-CloudConnector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ci_cloudconnector-2.0.tar.gz tmp/ci_cloudconnector-2.2.tar.gz --markdown 20240602/C/CI-CloudConnector/2.0-2.2/README.md --exclude *.pyd
+[2024-06-02 08:28:26] INFO root fetch - processPackages [CI-CloudConnector]: Remove: archive file [/home/abi/fetcher/tmp/ci_cloudconnector-2.0.tar.gz]
+[2024-06-02 08:28:26] INFO root fetch - processPackages [CI-CloudConnector]: Remove: archive file [/home/abi/fetcher/tmp/ci_cloudconnector-2.2.tar.gz]
+[2024-06-02 08:28:26] INFO root fetch - main [MainThread]: End processing [CI-CloudConnector]: success
+[2024-06-02 08:28:26] INFO root fetch - processPackages [arclet-alconna]: Remove: archive file [/home/abi/fetcher/tmp/arclet_alconna-1.8.9.tar.gz]
+[2024-06-02 08:28:26] INFO root fetch - processPackages [arclet-alconna]: Remove: archive file [/home/abi/fetcher/tmp/arclet_alconna-2.0.0a1.tar.gz]
+[2024-06-02 08:28:26] INFO root fetch - main [MainThread]: End processing [arclet-alconna]: success
+[2024-06-02 08:28:27] INFO root fetch - processPackages [sopel]: Remove: archive file [/home/abi/fetcher/tmp/sopel-7.1.9.tar.gz]
+[2024-06-02 08:28:27] INFO root fetch - processPackages [sopel]: Remove: archive file [/home/abi/fetcher/tmp/sopel-8.0.0.tar.gz]
+[2024-06-02 08:28:27] INFO root fetch - main [MainThread]: End processing [sopel]: success
+[2024-06-02 08:28:27] INFO root fetch - main [MainThread]: Store serial: [23486722]
