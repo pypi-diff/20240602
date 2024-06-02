@@ -4345,3 +4345,15 @@
 [2024-06-02 07:12:29] INFO root fetch - processPackages [contact-group-local]: Remove: archive file [/home/abi/fetcher/tmp/contact-group-local-0.0.9.tar.gz]
 [2024-06-02 07:12:29] INFO root fetch - main [MainThread]: End processing [contact-group-local]: success
 [2024-06-02 07:12:29] INFO root fetch - main [MainThread]: Store serial: [23486370]
+[2024-06-02 07:14:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23486370]
+[2024-06-02 07:14:37] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-02 07:14:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ofscraper
+[2024-06-02 07:14:38] INFO root fetch - processPackages [ofscraper]: New version: [3.9.9] Old Version: [3.9.8]
+[2024-06-02 07:14:38] INFO root fetch - processPackages [ofscraper]: Downloading https://files.pythonhosted.org/packages/f7/40/e5e745935d4b9d1b0beffcda8c7474b1ce4f988a5c49457f9e735da3f015/ofscraper-3.9.8.tar.gz
+[2024-06-02 07:14:38] INFO root fetch - processPackages [ofscraper]: Downloading https://files.pythonhosted.org/packages/0a/c9/8437bc929ad42a4020129961eca98a621785ea51103486f73bafcdb2bcd3/ofscraper-3.9.9.tar.gz
+[2024-06-02 07:14:38] INFO root fetch - processPackages [ofscraper]: executing diffoscope
+[2024-06-02 07:14:38] INFO root fetch - processPackages [ofscraper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ofscraper-3.9.8.tar.gz tmp/ofscraper-3.9.9.tar.gz --markdown 20240602/o/ofscraper/3.9.8-3.9.9/README.md --exclude *.pyd
+[2024-06-02 07:14:39] INFO root fetch - processPackages [ofscraper]: Remove: archive file [/home/abi/fetcher/tmp/ofscraper-3.9.8.tar.gz]
+[2024-06-02 07:14:39] INFO root fetch - processPackages [ofscraper]: Remove: archive file [/home/abi/fetcher/tmp/ofscraper-3.9.9.tar.gz]
+[2024-06-02 07:14:39] INFO root fetch - main [MainThread]: End processing [ofscraper]: success
+[2024-06-02 07:14:39] INFO root fetch - main [MainThread]: Store serial: [23486374]
