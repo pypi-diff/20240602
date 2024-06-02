@@ -17125,3 +17125,72 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 21:33:40] INFO root fetch - processPackages [django-codenerix]: Remove: archive file [/home/abi/fetcher/tmp/django-codenerix-4.0.9.tar.gz]
 [2024-06-02 21:33:40] INFO root fetch - main [MainThread]: End processing [django-codenerix]: success
 [2024-06-02 21:33:40] INFO root fetch - main [MainThread]: Store serial: [23492439]
+[2024-06-02 21:35:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23492439]
+[2024-06-02 21:35:49] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-06-02 21:35:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PyScopedStorage
+[2024-06-02 21:35:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pkscreener
+[2024-06-02 21:35:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hifi-solves-run-humanwgs
+[2024-06-02 21:35:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: copilothistoryexporter
+[2024-06-02 21:35:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: funky-modifiers
+[2024-06-02 21:35:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: anypytools
+[2024-06-02 21:35:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: django-codenerix-email
+[2024-06-02 21:35:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: fogLedgerIota
+[2024-06-02 21:35:49] INFO root fetch - processPackages [PyScopedStorage]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-06-02 21:35:49] INFO root fetch - processPackages [copilothistoryexporter]: New version: [1.0.2.9] Old Version: [1.0.2.8]
+[2024-06-02 21:35:49] INFO root fetch - processPackages [django-codenerix-email]: New version: [4.0.9] Old Version: [4.0.8]
+[2024-06-02 21:35:49] INFO root fetch - processPackages [PyScopedStorage]: Downloading https://files.pythonhosted.org/packages/6f/5d/abb658b9fe2a0ca36b8bf8651df3b8fcd0f7f2404a42b7731ceca121ba7e/pyscopedstorage-0.0.3.tar.gz
+[2024-06-02 21:35:49] INFO root fetch - processPackages [funky-modifiers]: New version: [0.3.6] Old Version: [0.3.4]
+[2024-06-02 21:35:49] WARNING root fetch - processPackages [hifi-solves-run-humanwgs]: Skipping, unable to determine old version
+[2024-06-02 21:35:49] INFO root fetch - main [MainThread]: End processing [hifi-solves-run-humanwgs] error
+[2024-06-02 21:35:49] INFO root fetch - processPackages [anypytools]: New version: [1.9.1] Old Version: [1.9.0]
+[2024-06-02 21:35:49] INFO root fetch - processPackages [copilothistoryexporter]: Downloading https://files.pythonhosted.org/packages/a7/df/988feecfe93912a1d7fe8dad54361149e3eced17b1c6007c290ea0888d36/copilothistoryexporter-1.0.2.8-py3-none-any.whl
+[2024-06-02 21:35:49] INFO root fetch - processPackages [fogLedgerIota]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-06-02 21:35:49] INFO root fetch - processPackages [django-codenerix-email]: Downloading https://files.pythonhosted.org/packages/f3/2a/ee36f3fd9b47b5476f0f6b4e22be07c82f11abfe7278faddf3ddb8687132/django-codenerix-email-4.0.8.tar.gz
+[2024-06-02 21:35:49] INFO root fetch - processPackages [pkscreener]: New version: [0.45.20240602.429] Old Version: [0.45.20240602.428]
+[2024-06-02 21:35:49] INFO root fetch - processPackages [funky-modifiers]: Downloading https://files.pythonhosted.org/packages/06/b8/27005cdd700dc9702504f0131f8cde0e417bf142542ddd7d317a5a65813b/funky_modifiers-0.3.4.tar.gz
+[2024-06-02 21:35:49] INFO root fetch - processPackages [anypytools]: Downloading https://files.pythonhosted.org/packages/95/a7/ecad43d160436696e197e484af77f398858ddf641dfaf178fca777eb02d2/AnyPyTools-1.9.0.tar.gz
+[2024-06-02 21:35:49] INFO root fetch - processPackages [PyScopedStorage]: Downloading https://files.pythonhosted.org/packages/ff/78/c9aaebb6ca7b9f76d46abb9938d8da4e8ea299a7d47023117e645472baad/pyscopedstorage-0.0.4.tar.gz
+[2024-06-02 21:35:49] INFO root fetch - processPackages [fogLedgerIota]: Downloading https://files.pythonhosted.org/packages/61/7c/bb9853e4b7a5ba1078b04a721ef7caf26656b8ce7d9a65240b7bc657d3aa/fogLedgerIota-1.0.1.tar.gz
+[2024-06-02 21:35:49] INFO root fetch - processPackages [django-codenerix-email]: Downloading https://files.pythonhosted.org/packages/18/fb/bb80003c981fc6c9ff5f3ee400bc35fe9954bd030a63fbf29bf6447b5a4b/django-codenerix-email-4.0.9.tar.gz
+[2024-06-02 21:35:49] INFO root fetch - processPackages [pkscreener]: Downloading https://files.pythonhosted.org/packages/0e/f4/39d95c8f043f90a8bf5f6beae51ce835ea68c20b9b8ef5bae119982ec72a/pkscreener-0.45.20240602.428.tar.gz
+[2024-06-02 21:35:49] INFO root fetch - processPackages [PyScopedStorage]: executing diffoscope
+[2024-06-02 21:35:49] INFO root fetch - processPackages [PyScopedStorage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyscopedstorage-0.0.3.tar.gz tmp/pyscopedstorage-0.0.4.tar.gz --markdown 20240602/P/PyScopedStorage/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-06-02 21:35:49] INFO root fetch - processPackages [copilothistoryexporter]: Downloading https://files.pythonhosted.org/packages/e3/1b/e114ec5da78f517be943dc317b5cb8d286c93b55f2ff1a070e5c3263f3db/copilothistoryexporter-1.0.2.9.tar.gz
+[2024-06-02 21:35:50] INFO root fetch - processPackages [django-codenerix-email]: executing diffoscope
+[2024-06-02 21:35:50] INFO root fetch - processPackages [django-codenerix-email]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-codenerix-email-4.0.8.tar.gz tmp/django-codenerix-email-4.0.9.tar.gz --markdown 20240602/d/django-codenerix-email/4.0.8-4.0.9/README.md --exclude *.pyd
+[2024-06-02 21:35:50] INFO root fetch - processPackages [copilothistoryexporter]: executing diffoscope
+[2024-06-02 21:35:50] INFO root fetch - processPackages [copilothistoryexporter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/copilothistoryexporter-1.0.2.8-py3-none-any.whl.zip tmp/copilothistoryexporter-1.0.2.9.tar.gz --markdown 20240602/c/copilothistoryexporter/1.0.2.8-1.0.2.9/README.md --exclude *.pyd
+[2024-06-02 21:35:50] INFO root fetch - processPackages [funky-modifiers]: Downloading https://files.pythonhosted.org/packages/4b/eb/415a2c297fb9c5230da009fb8367448ef4f1f314368c5fec3fa31bb06419/funky_modifiers-0.3.6.tar.gz
+[2024-06-02 21:35:50] INFO root fetch - processPackages [fogLedgerIota]: Downloading https://files.pythonhosted.org/packages/08/98/0900a7fef6ce86556bd2a7c134d600c630baa47f534945c35e951d0c8e15/fogledgeriota-1.0.2.tar.gz
+[2024-06-02 21:35:50] INFO root fetch - processPackages [funky-modifiers]: executing diffoscope
+[2024-06-02 21:35:50] INFO root fetch - processPackages [funky-modifiers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/funky_modifiers-0.3.4.tar.gz tmp/funky_modifiers-0.3.6.tar.gz --markdown 20240602/f/funky-modifiers/0.3.4-0.3.6/README.md --exclude *.pyd
+[2024-06-02 21:35:50] INFO root fetch - processPackages [pkscreener]: Downloading https://files.pythonhosted.org/packages/5b/42/06be02cf0cd7862339a461a0d86bc50485a1757233fbd9ae9f6164f4ed8c/pkscreener-0.45.20240602.429.tar.gz
+[2024-06-02 21:35:50] INFO root fetch - processPackages [fogLedgerIota]: executing diffoscope
+[2024-06-02 21:35:50] INFO root fetch - processPackages [fogLedgerIota]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fogLedgerIota-1.0.1.tar.gz tmp/fogledgeriota-1.0.2.tar.gz --markdown 20240602/f/fogLedgerIota/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-06-02 21:35:50] INFO root fetch - processPackages [pkscreener]: executing diffoscope
+[2024-06-02 21:35:50] INFO root fetch - processPackages [pkscreener]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pkscreener-0.45.20240602.428.tar.gz tmp/pkscreener-0.45.20240602.429.tar.gz --markdown 20240602/p/pkscreener/0.45.20240602.428-0.45.20240602.429/README.md --exclude *.pyd
+[2024-06-02 21:35:50] INFO root fetch - processPackages [copilothistoryexporter]: Remove: archive file [/home/abi/fetcher/tmp/copilothistoryexporter-1.0.2.8-py3-none-any.whl.zip]
+[2024-06-02 21:35:50] INFO root fetch - processPackages [copilothistoryexporter]: Remove: archive file [/home/abi/fetcher/tmp/copilothistoryexporter-1.0.2.9.tar.gz]
+[2024-06-02 21:35:50] INFO root fetch - main [MainThread]: End processing [copilothistoryexporter]: success
+[2024-06-02 21:35:50] INFO root fetch - processPackages [PyScopedStorage]: Remove: archive file [/home/abi/fetcher/tmp/pyscopedstorage-0.0.3.tar.gz]
+[2024-06-02 21:35:50] INFO root fetch - processPackages [PyScopedStorage]: Remove: archive file [/home/abi/fetcher/tmp/pyscopedstorage-0.0.4.tar.gz]
+[2024-06-02 21:35:50] INFO root fetch - main [MainThread]: End processing [PyScopedStorage]: success
+[2024-06-02 21:35:50] INFO root fetch - processPackages [django-codenerix-email]: Remove: archive file [/home/abi/fetcher/tmp/django-codenerix-email-4.0.8.tar.gz]
+[2024-06-02 21:35:50] INFO root fetch - processPackages [django-codenerix-email]: Remove: archive file [/home/abi/fetcher/tmp/django-codenerix-email-4.0.9.tar.gz]
+[2024-06-02 21:35:50] INFO root fetch - main [MainThread]: End processing [django-codenerix-email]: success
+[2024-06-02 21:35:50] INFO root fetch - processPackages [funky-modifiers]: Remove: archive file [/home/abi/fetcher/tmp/funky_modifiers-0.3.4.tar.gz]
+[2024-06-02 21:35:50] INFO root fetch - processPackages [funky-modifiers]: Remove: archive file [/home/abi/fetcher/tmp/funky_modifiers-0.3.6.tar.gz]
+[2024-06-02 21:35:50] INFO root fetch - main [MainThread]: End processing [funky-modifiers]: success
+[2024-06-02 21:35:51] INFO root fetch - processPackages [fogLedgerIota]: Remove: archive file [/home/abi/fetcher/tmp/fogLedgerIota-1.0.1.tar.gz]
+[2024-06-02 21:35:51] INFO root fetch - processPackages [fogLedgerIota]: Remove: archive file [/home/abi/fetcher/tmp/fogledgeriota-1.0.2.tar.gz]
+[2024-06-02 21:35:51] INFO root fetch - main [MainThread]: End processing [fogLedgerIota]: success
+[2024-06-02 21:35:51] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.45.20240602.428.tar.gz]
+[2024-06-02 21:35:51] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.45.20240602.429.tar.gz]
+[2024-06-02 21:35:51] INFO root fetch - main [MainThread]: End processing [pkscreener]: success
+[2024-06-02 21:35:51] INFO root fetch - processPackages [anypytools]: Downloading https://files.pythonhosted.org/packages/c7/3e/8d821aab9378370dec1a1fc84c5f13a6ee0f760c2ab8e249fe73b493e6d8/anypytools-1.9.1.tar.gz
+[2024-06-02 21:35:52] INFO root fetch - processPackages [anypytools]: executing diffoscope
+[2024-06-02 21:35:52] INFO root fetch - processPackages [anypytools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/AnyPyTools-1.9.0.tar.gz tmp/anypytools-1.9.1.tar.gz --markdown 20240602/a/anypytools/1.9.0-1.9.1/README.md --exclude *.pyd
+[2024-06-02 21:35:53] INFO root fetch - processPackages [anypytools]: Remove: archive file [/home/abi/fetcher/tmp/AnyPyTools-1.9.0.tar.gz]
+[2024-06-02 21:35:53] INFO root fetch - processPackages [anypytools]: Remove: archive file [/home/abi/fetcher/tmp/anypytools-1.9.1.tar.gz]
+[2024-06-02 21:35:53] INFO root fetch - main [MainThread]: End processing [anypytools]: success
+[2024-06-02 21:35:53] INFO root fetch - main [MainThread]: Store serial: [23492467]
