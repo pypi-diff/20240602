@@ -15377,3 +15377,54 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 19:58:54] INFO root fetch - processPackages [mlrun]: Remove: archive file [/home/abi/fetcher/tmp/mlrun-1.7.0rc9-py3-none-any.whl.zip]
 [2024-06-02 19:58:54] INFO root fetch - main [MainThread]: End processing [mlrun]: success
 [2024-06-02 19:58:54] INFO root fetch - main [MainThread]: Store serial: [23491550]
+[2024-06-02 20:00:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23491550]
+[2024-06-02 20:01:02] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-06-02 20:01:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: uaiDiffusers
+[2024-06-02 20:01:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: DatasetsFactory
+[2024-06-02 20:01:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ytdl-sub
+[2024-06-02 20:01:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ok-script
+[2024-06-02 20:01:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pysnptools
+[2024-06-02 20:01:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pypi-cicd
+[2024-06-02 20:01:03] INFO root fetch - processPackages [ok-script]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-06-02 20:01:03] INFO root fetch - processPackages [ytdl-sub]: New version: [2024.6.2.post1] Old Version: [2024.5.29]
+[2024-06-02 20:01:03] INFO root fetch - processPackages [ok-script]: Downloading https://files.pythonhosted.org/packages/5f/e3/968a4bfd4b0c82df5c5171f3d7d42fc8d8354283f3bae8becf975bc2cfb9/ok-script-0.0.8.tar.gz
+[2024-06-02 20:01:03] INFO root fetch - processPackages [uaiDiffusers]: New version: [1.1.5.6] Old Version: [1.1.5.5]
+[2024-06-02 20:01:03] INFO root fetch - processPackages [ytdl-sub]: Downloading https://files.pythonhosted.org/packages/e1/20/05417a02d027c76db0b85ed0663cc05b3fad211684c0fbf8aa8fe74b1a59/ytdl_sub-2024.5.29.tar.gz
+[2024-06-02 20:01:03] WARNING root fetch - processPackages [DatasetsFactory]: Skipping, unable to determine old version
+[2024-06-02 20:01:03] INFO root fetch - main [MainThread]: End processing [DatasetsFactory] error
+[2024-06-02 20:01:03] INFO root fetch - processPackages [pysnptools]: New version: [0.5.9] Old Version: [0.5.8]
+[2024-06-02 20:01:03] INFO root fetch - processPackages [pypi-cicd]: New version: [0.8] Old Version: [0.7]
+[2024-06-02 20:01:03] INFO root fetch - processPackages [uaiDiffusers]: Downloading https://files.pythonhosted.org/packages/e6/e2/95a72cb2f952dfacc9c710c9fd3c62decb8abb5ce27ff6d35535894288de/uaiDiffusers-1.1.5.5-py2.py3-none-any.whl
+[2024-06-02 20:01:03] INFO root fetch - processPackages [pysnptools]: Downloading https://files.pythonhosted.org/packages/17/b0/bc1c6f31051df9fa7f5b40cb6a49fc2f6bc6a069a06320a93b57c59e127e/pysnptools-0.5.8.tar.gz
+[2024-06-02 20:01:03] INFO root fetch - processPackages [ok-script]: Downloading https://files.pythonhosted.org/packages/7e/57/3cb2ecf6f3abc49a58957eb87297ca0e7574e568b46c512c2a5fc710a462/ok-script-0.0.9.tar.gz
+[2024-06-02 20:01:03] INFO root fetch - processPackages [ytdl-sub]: Downloading https://files.pythonhosted.org/packages/59/94/621a00307fec4f0ab8015a6ddd528a994e661485224e137d57585698adf5/ytdl_sub-2024.6.2.post1.tar.gz
+[2024-06-02 20:01:03] INFO root fetch - processPackages [pypi-cicd]: Downloading https://files.pythonhosted.org/packages/4d/65/669b03c86e9b2ebffd7be61dfdaa004618f03abb822a778bd325e0d565c4/pypi_cicd-0.7.tar.gz
+[2024-06-02 20:01:03] INFO root fetch - processPackages [ok-script]: executing diffoscope
+[2024-06-02 20:01:03] INFO root fetch - processPackages [ok-script]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ok-script-0.0.8.tar.gz tmp/ok-script-0.0.9.tar.gz --markdown 20240602/o/ok-script/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-06-02 20:01:03] INFO root fetch - processPackages [ytdl-sub]: executing diffoscope
+[2024-06-02 20:01:03] INFO root fetch - processPackages [ytdl-sub]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ytdl_sub-2024.5.29.tar.gz tmp/ytdl_sub-2024.6.2.post1.tar.gz --markdown 20240602/y/ytdl-sub/2024.5.29-2024.6.2.post1/README.md --exclude *.pyd
+[2024-06-02 20:01:03] INFO root fetch - processPackages [uaiDiffusers]: Downloading https://files.pythonhosted.org/packages/22/c7/72a69e97a63784a6a0433a0c40bf1d119160cf12fbd1371914bc67661c07/uaiDiffusers-1.1.5.6-py2.py3-none-any.whl
+[2024-06-02 20:01:03] INFO root fetch - processPackages [pypi-cicd]: Downloading https://files.pythonhosted.org/packages/86/7c/1f3a018bb7b9a5f2a998a34b1f34ed82f392167979956b42bd09bd1bca2a/pypi_cicd-0.8.tar.gz
+[2024-06-02 20:01:03] INFO root fetch - processPackages [uaiDiffusers]: executing diffoscope
+[2024-06-02 20:01:03] INFO root fetch - processPackages [uaiDiffusers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/uaiDiffusers-1.1.5.5-py2.py3-none-any.whl.zip tmp/uaiDiffusers-1.1.5.6-py2.py3-none-any.whl.zip --markdown 20240602/u/uaiDiffusers/1.1.5.5-1.1.5.6/README.md --exclude *.pyd
+[2024-06-02 20:01:03] INFO root fetch - processPackages [pysnptools]: Downloading https://files.pythonhosted.org/packages/1d/dd/63cc496535f242494f710121392c8b4224d9a2fa1acbd4e5c31e379e5ece/pysnptools-0.5.9.tar.gz
+[2024-06-02 20:01:03] INFO root fetch - processPackages [pypi-cicd]: executing diffoscope
+[2024-06-02 20:01:03] INFO root fetch - processPackages [pypi-cicd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypi_cicd-0.7.tar.gz tmp/pypi_cicd-0.8.tar.gz --markdown 20240602/p/pypi-cicd/0.7-0.8/README.md --exclude *.pyd
+[2024-06-02 20:01:04] INFO root fetch - processPackages [pysnptools]: executing diffoscope
+[2024-06-02 20:01:04] INFO root fetch - processPackages [pysnptools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysnptools-0.5.8.tar.gz tmp/pysnptools-0.5.9.tar.gz --markdown 20240602/p/pysnptools/0.5.8-0.5.9/README.md --exclude *.pyd
+[2024-06-02 20:01:04] INFO root fetch - processPackages [ok-script]: Remove: archive file [/home/abi/fetcher/tmp/ok-script-0.0.8.tar.gz]
+[2024-06-02 20:01:04] INFO root fetch - processPackages [ok-script]: Remove: archive file [/home/abi/fetcher/tmp/ok-script-0.0.9.tar.gz]
+[2024-06-02 20:01:04] INFO root fetch - main [MainThread]: End processing [ok-script]: success
+[2024-06-02 20:01:04] INFO root fetch - processPackages [uaiDiffusers]: Remove: archive file [/home/abi/fetcher/tmp/uaiDiffusers-1.1.5.5-py2.py3-none-any.whl.zip]
+[2024-06-02 20:01:04] INFO root fetch - processPackages [uaiDiffusers]: Remove: archive file [/home/abi/fetcher/tmp/uaiDiffusers-1.1.5.6-py2.py3-none-any.whl.zip]
+[2024-06-02 20:01:04] INFO root fetch - main [MainThread]: End processing [uaiDiffusers]: success
+[2024-06-02 20:01:04] INFO root fetch - processPackages [pypi-cicd]: Remove: archive file [/home/abi/fetcher/tmp/pypi_cicd-0.7.tar.gz]
+[2024-06-02 20:01:04] INFO root fetch - processPackages [pypi-cicd]: Remove: archive file [/home/abi/fetcher/tmp/pypi_cicd-0.8.tar.gz]
+[2024-06-02 20:01:04] INFO root fetch - main [MainThread]: End processing [pypi-cicd]: success
+[2024-06-02 20:01:04] INFO root fetch - processPackages [ytdl-sub]: Remove: archive file [/home/abi/fetcher/tmp/ytdl_sub-2024.5.29.tar.gz]
+[2024-06-02 20:01:04] INFO root fetch - processPackages [ytdl-sub]: Remove: archive file [/home/abi/fetcher/tmp/ytdl_sub-2024.6.2.post1.tar.gz]
+[2024-06-02 20:01:04] INFO root fetch - main [MainThread]: End processing [ytdl-sub]: success
+[2024-06-02 20:01:05] INFO root fetch - processPackages [pysnptools]: Remove: archive file [/home/abi/fetcher/tmp/pysnptools-0.5.8.tar.gz]
+[2024-06-02 20:01:05] INFO root fetch - processPackages [pysnptools]: Remove: archive file [/home/abi/fetcher/tmp/pysnptools-0.5.9.tar.gz]
+[2024-06-02 20:01:05] INFO root fetch - main [MainThread]: End processing [pysnptools]: success
+[2024-06-02 20:01:05] INFO root fetch - main [MainThread]: Store serial: [23491565]
