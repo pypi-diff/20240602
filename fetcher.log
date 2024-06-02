@@ -4498,3 +4498,15 @@
 [2024-06-02 07:34:12] INFO root fetch - processPackages [llmdo]: Remove: archive file [/home/abi/fetcher/tmp/llmdo-0.2.0.tar.gz]
 [2024-06-02 07:34:12] INFO root fetch - main [MainThread]: End processing [llmdo]: success
 [2024-06-02 07:34:12] INFO root fetch - main [MainThread]: Store serial: [23486462]
+[2024-06-02 07:36:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23486462]
+[2024-06-02 07:36:20] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-02 07:36:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: schwab-api-wrapper
+[2024-06-02 07:36:20] INFO root fetch - processPackages [schwab-api-wrapper]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-06-02 07:36:20] INFO root fetch - processPackages [schwab-api-wrapper]: Downloading https://files.pythonhosted.org/packages/dc/4f/546f5bbe121a718dfee952225d3fb775c7a9e91a17f448a5ebde20f711b6/schwab_api_wrapper-0.1.4.tar.gz
+[2024-06-02 07:36:21] INFO root fetch - processPackages [schwab-api-wrapper]: Downloading https://files.pythonhosted.org/packages/73/4a/54514845044e53c7c6da174bbf374ae7463686e15e7e02a472fee1846577/schwab_api_wrapper-0.1.5.tar.gz
+[2024-06-02 07:36:21] INFO root fetch - processPackages [schwab-api-wrapper]: executing diffoscope
+[2024-06-02 07:36:21] INFO root fetch - processPackages [schwab-api-wrapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/schwab_api_wrapper-0.1.4.tar.gz tmp/schwab_api_wrapper-0.1.5.tar.gz --markdown 20240602/s/schwab-api-wrapper/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-06-02 07:36:21] INFO root fetch - processPackages [schwab-api-wrapper]: Remove: archive file [/home/abi/fetcher/tmp/schwab_api_wrapper-0.1.4.tar.gz]
+[2024-06-02 07:36:21] INFO root fetch - processPackages [schwab-api-wrapper]: Remove: archive file [/home/abi/fetcher/tmp/schwab_api_wrapper-0.1.5.tar.gz]
+[2024-06-02 07:36:21] INFO root fetch - main [MainThread]: End processing [schwab-api-wrapper]: success
+[2024-06-02 07:36:21] INFO root fetch - main [MainThread]: Store serial: [23486480]
