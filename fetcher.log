@@ -17025,3 +17025,15 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 21:24:25] INFO root fetch - processPackages [grambot]: Remove: archive file [/home/abi/fetcher/tmp/grambot-1.0.1.tar.gz]
 [2024-06-02 21:24:25] INFO root fetch - main [MainThread]: End processing [grambot]: success
 [2024-06-02 21:24:25] INFO root fetch - main [MainThread]: Store serial: [23492356]
+[2024-06-02 21:26:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23492356]
+[2024-06-02 21:26:33] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-02 21:26:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: masthay-helpers
+[2024-06-02 21:26:34] INFO root fetch - processPackages [masthay-helpers]: New version: [0.2.97] Old Version: [0.2.96]
+[2024-06-02 21:26:34] INFO root fetch - processPackages [masthay-helpers]: Downloading https://files.pythonhosted.org/packages/aa/b9/9de46cdc2c0deec2a5b24c4b2682a503b42287a90a049e5ba1578ce604eb/masthay_helpers-0.2.96-py3-none-macosx_11_0_arm64.whl
+[2024-06-02 21:26:34] INFO root fetch - processPackages [masthay-helpers]: Downloading https://files.pythonhosted.org/packages/14/11/6266e9d01dccefe981f0bf366620a24212daf213307d6a2befa9e6ebf4f2/masthay_helpers-0.2.97-py3-none-macosx_11_0_arm64.whl
+[2024-06-02 21:26:34] INFO root fetch - processPackages [masthay-helpers]: executing diffoscope
+[2024-06-02 21:26:34] INFO root fetch - processPackages [masthay-helpers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/masthay_helpers-0.2.96-py3-none-macosx_11_0_arm64.whl.zip tmp/masthay_helpers-0.2.97-py3-none-macosx_11_0_arm64.whl.zip --markdown 20240602/m/masthay-helpers/0.2.96-0.2.97/README.md --exclude *.pyd
+[2024-06-02 21:26:35] INFO root fetch - processPackages [masthay-helpers]: Remove: archive file [/home/abi/fetcher/tmp/masthay_helpers-0.2.96-py3-none-macosx_11_0_arm64.whl.zip]
+[2024-06-02 21:26:35] INFO root fetch - processPackages [masthay-helpers]: Remove: archive file [/home/abi/fetcher/tmp/masthay_helpers-0.2.97-py3-none-macosx_11_0_arm64.whl.zip]
+[2024-06-02 21:26:35] INFO root fetch - main [MainThread]: End processing [masthay-helpers]: success
+[2024-06-02 21:26:35] INFO root fetch - main [MainThread]: Store serial: [23492360]
