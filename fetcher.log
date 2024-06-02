@@ -7377,3 +7377,45 @@
 [2024-06-02 12:11:13] INFO root fetch - processPackages [custom-maya]: Remove: archive file [/home/abi/fetcher/tmp/custom_maya-0.0.9.tar.gz]
 [2024-06-02 12:11:13] INFO root fetch - main [MainThread]: End processing [custom-maya]: success
 [2024-06-02 12:11:13] INFO root fetch - main [MainThread]: Store serial: [23488031]
+[2024-06-02 12:13:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23488031]
+[2024-06-02 12:13:23] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-06-02 12:13:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: timestamper99
+[2024-06-02 12:13:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: neuromeka
+[2024-06-02 12:13:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: stashconnect
+[2024-06-02 12:13:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ai-edge-torch-nightly
+[2024-06-02 12:13:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: volkanic
+[2024-06-02 12:13:23] INFO root fetch - processPackages [stashconnect]: New version: [0.8.0] Old Version: [0.7.9]
+[2024-06-02 12:13:23] WARNING root fetch - processPackages [timestamper99]: Skipping, unable to determine old version
+[2024-06-02 12:13:23] INFO root fetch - main [MainThread]: End processing [timestamper99] error
+[2024-06-02 12:13:23] INFO root fetch - processPackages [stashconnect]: Downloading https://files.pythonhosted.org/packages/de/f8/ca8fbd2de044aaca60eea7e60dbf9a19300da4aa56bf04905966b91d8dad/stashconnect-0.7.9.tar.gz
+[2024-06-02 12:13:23] INFO root fetch - processPackages [volkanic]: New version: [0.5.2] Old Version: [0.5.1]
+[2024-06-02 12:13:23] INFO root fetch - processPackages [ai-edge-torch-nightly]: New version: [0.2.0.dev20240602] Old Version: [0.2.0.dev20240601]
+[2024-06-02 12:13:23] INFO root fetch - processPackages [neuromeka]: New version: [3.2.0.2] Old Version: [3.2.0.1]
+[2024-06-02 12:13:23] INFO root fetch - processPackages [ai-edge-torch-nightly]: Downloading https://files.pythonhosted.org/packages/f0/3b/2d23810e8516f1a3180b67c4ae673a0aecfb0c9657fe3b50fec731ba0c9d/ai_edge_torch_nightly-0.2.0.dev20240601-py3-none-any.whl
+[2024-06-02 12:13:23] INFO root fetch - processPackages [neuromeka]: Downloading https://files.pythonhosted.org/packages/83/aa/bfce4ae15a5c06a141c47c7cb868f9555bd66d1a01a9a99d630fa61efa4e/neuromeka-3.2.0.1.tar.gz
+[2024-06-02 12:13:23] INFO root fetch - processPackages [volkanic]: Downloading https://files.pythonhosted.org/packages/13/e9/babef4ec05f0913a88cebb9e90b82f21e8e3e7def22d485432b6d8ae0e67/volkanic-0.5.1.tar.gz
+[2024-06-02 12:13:23] INFO root fetch - processPackages [stashconnect]: Downloading https://files.pythonhosted.org/packages/c0/b0/cd27726f8e88cb10ec0398ba59c6d7b3255d6db985bd7bf818486cfcce2b/stashconnect-0.8.0.tar.gz
+[2024-06-02 12:13:23] INFO root fetch - processPackages [stashconnect]: executing diffoscope
+[2024-06-02 12:13:23] INFO root fetch - processPackages [stashconnect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stashconnect-0.7.9.tar.gz tmp/stashconnect-0.8.0.tar.gz --markdown 20240602/s/stashconnect/0.7.9-0.8.0/README.md --exclude *.pyd
+[2024-06-02 12:13:24] INFO root fetch - processPackages [volkanic]: Downloading https://files.pythonhosted.org/packages/9c/dd/afc342b04ede5c108f1a065e4d6bf2667b072f0ef3d15291f9b6a4ab2aef/volkanic-0.5.2.tar.gz
+[2024-06-02 12:13:24] INFO root fetch - processPackages [neuromeka]: Downloading https://files.pythonhosted.org/packages/65/2b/7cf3de3dca83120b5afb37a370f725cf2e12a6a3dfea1c989c6086927cbb/neuromeka-3.2.0.2.tar.gz
+[2024-06-02 12:13:24] INFO root fetch - processPackages [ai-edge-torch-nightly]: Downloading https://files.pythonhosted.org/packages/60/28/72c98947bfd6068826137fef5c4f53b48be319710d6556741a86f1cd0ff5/ai_edge_torch_nightly-0.2.0.dev20240602-py3-none-any.whl
+[2024-06-02 12:13:24] INFO root fetch - processPackages [volkanic]: executing diffoscope
+[2024-06-02 12:13:24] INFO root fetch - processPackages [volkanic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/volkanic-0.5.1.tar.gz tmp/volkanic-0.5.2.tar.gz --markdown 20240602/v/volkanic/0.5.1-0.5.2/README.md --exclude *.pyd
+[2024-06-02 12:13:24] INFO root fetch - processPackages [neuromeka]: executing diffoscope
+[2024-06-02 12:13:24] INFO root fetch - processPackages [ai-edge-torch-nightly]: executing diffoscope
+[2024-06-02 12:13:24] INFO root fetch - processPackages [ai-edge-torch-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ai_edge_torch_nightly-0.2.0.dev20240601-py3-none-any.whl.zip tmp/ai_edge_torch_nightly-0.2.0.dev20240602-py3-none-any.whl.zip --markdown 20240602/a/ai-edge-torch-nightly/0.2.0.dev20240601-0.2.0.dev20240602/README.md --exclude *.pyd
+[2024-06-02 12:13:24] INFO root fetch - processPackages [neuromeka]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neuromeka-3.2.0.1.tar.gz tmp/neuromeka-3.2.0.2.tar.gz --markdown 20240602/n/neuromeka/3.2.0.1-3.2.0.2/README.md --exclude *.pyd
+[2024-06-02 12:13:24] INFO root fetch - processPackages [stashconnect]: Remove: archive file [/home/abi/fetcher/tmp/stashconnect-0.7.9.tar.gz]
+[2024-06-02 12:13:24] INFO root fetch - processPackages [stashconnect]: Remove: archive file [/home/abi/fetcher/tmp/stashconnect-0.8.0.tar.gz]
+[2024-06-02 12:13:24] INFO root fetch - main [MainThread]: End processing [stashconnect]: success
+[2024-06-02 12:13:24] INFO root fetch - processPackages [volkanic]: Remove: archive file [/home/abi/fetcher/tmp/volkanic-0.5.1.tar.gz]
+[2024-06-02 12:13:24] INFO root fetch - processPackages [volkanic]: Remove: archive file [/home/abi/fetcher/tmp/volkanic-0.5.2.tar.gz]
+[2024-06-02 12:13:24] INFO root fetch - main [MainThread]: End processing [volkanic]: success
+[2024-06-02 12:13:24] INFO root fetch - processPackages [neuromeka]: Remove: archive file [/home/abi/fetcher/tmp/neuromeka-3.2.0.1.tar.gz]
+[2024-06-02 12:13:24] INFO root fetch - processPackages [neuromeka]: Remove: archive file [/home/abi/fetcher/tmp/neuromeka-3.2.0.2.tar.gz]
+[2024-06-02 12:13:24] INFO root fetch - main [MainThread]: End processing [neuromeka]: success
+[2024-06-02 12:13:25] INFO root fetch - processPackages [ai-edge-torch-nightly]: Remove: archive file [/home/abi/fetcher/tmp/ai_edge_torch_nightly-0.2.0.dev20240601-py3-none-any.whl.zip]
+[2024-06-02 12:13:25] INFO root fetch - processPackages [ai-edge-torch-nightly]: Remove: archive file [/home/abi/fetcher/tmp/ai_edge_torch_nightly-0.2.0.dev20240602-py3-none-any.whl.zip]
+[2024-06-02 12:13:25] INFO root fetch - main [MainThread]: End processing [ai-edge-torch-nightly]: success
+[2024-06-02 12:13:25] INFO root fetch - main [MainThread]: Store serial: [23488050]
