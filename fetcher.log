@@ -12526,3 +12526,30 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 17:43:10] INFO root fetch - processPackages [QuLab]: Remove: archive file [/home/abi/fetcher/tmp/qulab-2.1.1.tar.gz]
 [2024-06-02 17:43:10] INFO root fetch - main [MainThread]: End processing [QuLab]: success
 [2024-06-02 17:43:10] INFO root fetch - main [MainThread]: Store serial: [23490288]
+[2024-06-02 17:45:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23490288]
+[2024-06-02 17:45:18] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-02 17:45:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: twikit
+[2024-06-02 17:45:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: jieba3
+[2024-06-02 17:45:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: backends
+[2024-06-02 17:45:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pypi-cicd
+[2024-06-02 17:45:19] INFO root fetch - processPackages [backends]: New version: [1.6.4] Old Version: [1.6.3]
+[2024-06-02 17:45:19] INFO root fetch - processPackages [backends]: Downloading https://files.pythonhosted.org/packages/76/d9/a662ed71e4f7c441e900c93580f2fd764dbdc4584c631647a07f549a6960/backends-1.6.3.tar.gz
+[2024-06-02 17:45:19] ERROR root fetch - processPackages [pypi-cicd]: Unable to get metadata: No such project 'pypi-cicd'
+[2024-06-02 17:45:19] INFO root fetch - main [MainThread]: End processing [pypi-cicd] error
+[2024-06-02 17:45:19] WARNING root fetch - processPackages [jieba3]: Skipping, unable to determine old version
+[2024-06-02 17:45:19] INFO root fetch - main [MainThread]: End processing [jieba3] error
+[2024-06-02 17:45:19] INFO root fetch - processPackages [twikit]: New version: [1.7.0] Old Version: [1.6.4]
+[2024-06-02 17:45:19] INFO root fetch - processPackages [twikit]: Downloading https://files.pythonhosted.org/packages/1f/ca/1a35b975e0a03aef2553448efc02a266deee7b882d31ea8a57c8a66fbdce/twikit-1.6.4.tar.gz
+[2024-06-02 17:45:19] INFO root fetch - processPackages [backends]: Downloading https://files.pythonhosted.org/packages/9c/6c/75172401e6e15be32371d5af13d4963b18745d66dc01d305ace05abc6e9f/backends-1.6.4.tar.gz
+[2024-06-02 17:45:19] INFO root fetch - processPackages [backends]: executing diffoscope
+[2024-06-02 17:45:19] INFO root fetch - processPackages [backends]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/backends-1.6.3.tar.gz tmp/backends-1.6.4.tar.gz --markdown 20240602/b/backends/1.6.3-1.6.4/README.md --exclude *.pyd
+[2024-06-02 17:45:19] INFO root fetch - processPackages [twikit]: Downloading https://files.pythonhosted.org/packages/14/fc/394df958aad7272e99e6f28a5c89bfd7f7dc58c16513f363f2848c376ec4/twikit-1.7.0.tar.gz
+[2024-06-02 17:45:19] INFO root fetch - processPackages [twikit]: executing diffoscope
+[2024-06-02 17:45:19] INFO root fetch - processPackages [twikit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/twikit-1.6.4.tar.gz tmp/twikit-1.7.0.tar.gz --markdown 20240602/t/twikit/1.6.4-1.7.0/README.md --exclude *.pyd
+[2024-06-02 17:45:20] INFO root fetch - processPackages [backends]: Remove: archive file [/home/abi/fetcher/tmp/backends-1.6.3.tar.gz]
+[2024-06-02 17:45:20] INFO root fetch - processPackages [backends]: Remove: archive file [/home/abi/fetcher/tmp/backends-1.6.4.tar.gz]
+[2024-06-02 17:45:20] INFO root fetch - main [MainThread]: End processing [backends]: success
+[2024-06-02 17:45:20] INFO root fetch - processPackages [twikit]: Remove: archive file [/home/abi/fetcher/tmp/twikit-1.6.4.tar.gz]
+[2024-06-02 17:45:20] INFO root fetch - processPackages [twikit]: Remove: archive file [/home/abi/fetcher/tmp/twikit-1.7.0.tar.gz]
+[2024-06-02 17:45:20] INFO root fetch - main [MainThread]: End processing [twikit]: success
+[2024-06-02 17:45:20] INFO root fetch - main [MainThread]: Store serial: [23490306]
