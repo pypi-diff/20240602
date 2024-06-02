@@ -5193,3 +5193,33 @@
 [2024-06-02 08:57:00] INFO root fetch - processPackages [streamlit-nightly]: Remove: archive file [/home/abi/fetcher/tmp/streamlit_nightly-1.35.1.dev20240531.tar.gz]
 [2024-06-02 08:57:00] INFO root fetch - main [MainThread]: End processing [streamlit-nightly]: success
 [2024-06-02 08:57:00] INFO root fetch - main [MainThread]: Store serial: [23486823]
+[2024-06-02 08:59:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23486823]
+[2024-06-02 08:59:10] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-02 08:59:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: omnicom
+[2024-06-02 08:59:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: taskgen-ai
+[2024-06-02 08:59:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dbt-command-center
+[2024-06-02 08:59:11] INFO root fetch - processPackages [dbt-command-center]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-06-02 08:59:11] INFO root fetch - processPackages [taskgen-ai]: New version: [2.4.0] Old Version: [2.3.1]
+[2024-06-02 08:59:11] INFO root fetch - processPackages [omnicom]: New version: [0.3.4] Old Version: [0.3.3]
+[2024-06-02 08:59:11] INFO root fetch - processPackages [dbt-command-center]: Downloading https://files.pythonhosted.org/packages/ca/5d/d48c435a53e9e1ac674642cde23184a952e044a4c4b845e6f66bcb6b9d14/dbt_command_center-0.1.6.tar.gz
+[2024-06-02 08:59:11] INFO root fetch - processPackages [omnicom]: Downloading https://files.pythonhosted.org/packages/d9/b9/f45d03126407408c58ad5e29072d6de064a6e580803b2ad61c722c92e6be/omnicom-0.3.3-pp39-pypy39_pp73-win_amd64.whl
+[2024-06-02 08:59:11] INFO root fetch - processPackages [taskgen-ai]: Downloading https://files.pythonhosted.org/packages/90/d5/a5ee7f2b78d4a7cac9e2b0ef7cd8d583c0faa5df4b8d624ff38e31dfcb2e/taskgen_ai-2.3.1.tar.gz
+[2024-06-02 08:59:11] INFO root fetch - processPackages [taskgen-ai]: Downloading https://files.pythonhosted.org/packages/c8/9c/35ab5ba272a94d4f3c4ede6400b4e598461c02f153d66318fc7c3288bb5d/taskgen_ai-2.4.0.tar.gz
+[2024-06-02 08:59:11] INFO root fetch - processPackages [dbt-command-center]: Downloading https://files.pythonhosted.org/packages/a3/1b/e7b9d46d70211e152f2e4018bfad3ba858bc72b73503f5bb9c7df806f598/dbt_command_center-0.1.7.tar.gz
+[2024-06-02 08:59:11] INFO root fetch - processPackages [omnicom]: Downloading https://files.pythonhosted.org/packages/b1/6b/f68d26ec46ace8cf65382029d3054f39326bb9d7bf8ca307f17fdde535be/omnicom-0.3.4-pp39-pypy39_pp73-macosx_11_0_arm64.whl
+[2024-06-02 08:59:11] INFO root fetch - processPackages [taskgen-ai]: executing diffoscope
+[2024-06-02 08:59:11] INFO root fetch - processPackages [taskgen-ai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/taskgen_ai-2.3.1.tar.gz tmp/taskgen_ai-2.4.0.tar.gz --markdown 20240602/t/taskgen-ai/2.3.1-2.4.0/README.md --exclude *.pyd
+[2024-06-02 08:59:11] INFO root fetch - processPackages [dbt-command-center]: executing diffoscope
+[2024-06-02 08:59:11] INFO root fetch - processPackages [dbt-command-center]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbt_command_center-0.1.6.tar.gz tmp/dbt_command_center-0.1.7.tar.gz --markdown 20240602/d/dbt-command-center/0.1.6-0.1.7/README.md --exclude *.pyd
+[2024-06-02 08:59:11] INFO root fetch - processPackages [omnicom]: executing diffoscope
+[2024-06-02 08:59:11] INFO root fetch - processPackages [omnicom]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/omnicom-0.3.3-pp39-pypy39_pp73-win_amd64.whl.zip tmp/omnicom-0.3.4-pp39-pypy39_pp73-macosx_11_0_arm64.whl.zip --markdown 20240602/o/omnicom/0.3.3-0.3.4/README.md --exclude *.pyd
+[2024-06-02 08:59:12] INFO root fetch - processPackages [taskgen-ai]: Remove: archive file [/home/abi/fetcher/tmp/taskgen_ai-2.3.1.tar.gz]
+[2024-06-02 08:59:12] INFO root fetch - processPackages [taskgen-ai]: Remove: archive file [/home/abi/fetcher/tmp/taskgen_ai-2.4.0.tar.gz]
+[2024-06-02 08:59:12] INFO root fetch - main [MainThread]: End processing [taskgen-ai]: success
+[2024-06-02 08:59:12] INFO root fetch - processPackages [omnicom]: Remove: archive file [/home/abi/fetcher/tmp/omnicom-0.3.3-pp39-pypy39_pp73-win_amd64.whl.zip]
+[2024-06-02 08:59:12] INFO root fetch - processPackages [omnicom]: Remove: archive file [/home/abi/fetcher/tmp/omnicom-0.3.4-pp39-pypy39_pp73-macosx_11_0_arm64.whl.zip]
+[2024-06-02 08:59:12] INFO root fetch - main [MainThread]: End processing [omnicom]: success
+[2024-06-02 08:59:14] INFO root fetch - processPackages [dbt-command-center]: Remove: archive file [/home/abi/fetcher/tmp/dbt_command_center-0.1.6.tar.gz]
+[2024-06-02 08:59:14] INFO root fetch - processPackages [dbt-command-center]: Remove: archive file [/home/abi/fetcher/tmp/dbt_command_center-0.1.7.tar.gz]
+[2024-06-02 08:59:14] INFO root fetch - main [MainThread]: End processing [dbt-command-center]: success
+[2024-06-02 08:59:14] INFO root fetch - main [MainThread]: Store serial: [23486838]
