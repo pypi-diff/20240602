@@ -16479,3 +16479,36 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 20:51:48] INFO root fetch - processPackages [reolink-aio]: Remove: archive file [/home/abi/fetcher/tmp/reolink_aio-0.9.0.tar.gz]
 [2024-06-02 20:51:48] INFO root fetch - main [MainThread]: End processing [reolink-aio]: success
 [2024-06-02 20:51:48] INFO root fetch - main [MainThread]: Store serial: [23492157]
+[2024-06-02 20:53:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23492157]
+[2024-06-02 20:53:57] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-02 20:53:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dbTelematelAPI
+[2024-06-02 20:53:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bigcodebench
+[2024-06-02 20:53:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: copilothistoryexporter
+[2024-06-02 20:53:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: displaylang
+[2024-06-02 20:53:57] INFO root fetch - processPackages [dbTelematelAPI]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-06-02 20:53:57] WARNING root fetch - processPackages [bigcodebench]: Skipping, unable to determine old version
+[2024-06-02 20:53:57] INFO root fetch - main [MainThread]: End processing [bigcodebench] error
+[2024-06-02 20:53:57] INFO root fetch - processPackages [copilothistoryexporter]: New version: [1.0.2.6] Old Version: [1.0.2.5]
+[2024-06-02 20:53:57] INFO root fetch - processPackages [displaylang]: New version: [0.24.0] Old Version: [0.23.0b1]
+[2024-06-02 20:53:57] INFO root fetch - processPackages [copilothistoryexporter]: Downloading https://files.pythonhosted.org/packages/c1/f2/32e8b7e821728bbf09f87774f7d2438b7f48dae74437b7f8419a7c6060b3/copilothistoryexporter-1.0.2.5.tar.gz
+[2024-06-02 20:53:57] INFO root fetch - processPackages [dbTelematelAPI]: Downloading https://files.pythonhosted.org/packages/31/00/f6309eafe3b8aee2ff7f8a2b69dcd53be88e8d85ea4eb672c6fa78909dab/dbTelematelAPI-0.0.6.tar.gz
+[2024-06-02 20:53:57] INFO root fetch - processPackages [displaylang]: Downloading https://files.pythonhosted.org/packages/2c/f0/3eb0a4c0b7ed77cc2179fb8a1fd16f1ade6cf1f4df391cee1c1b209716f0/displaylang-0.23.0b1.tar.gz
+[2024-06-02 20:53:58] INFO root fetch - processPackages [copilothistoryexporter]: Downloading https://files.pythonhosted.org/packages/85/80/97ab3cb15f97140054993424a41124205f2aa98f5f74301a39b583bf2510/copilothistoryexporter-1.0.2.6.tar.gz
+[2024-06-02 20:53:58] INFO root fetch - processPackages [dbTelematelAPI]: Downloading https://files.pythonhosted.org/packages/1b/98/d6f306d2c8aff82b254b464aea7cc636a42d83c0244f5b3fd32ef85ce756/dbTelematelAPI-0.0.7.tar.gz
+[2024-06-02 20:53:58] INFO root fetch - processPackages [displaylang]: Downloading https://files.pythonhosted.org/packages/40/31/7b4afe5b08a898ea090eea195b231f6e58a85ff5e93bef87e853c447e009/displaylang-0.24.0.tar.gz
+[2024-06-02 20:53:58] INFO root fetch - processPackages [copilothistoryexporter]: executing diffoscope
+[2024-06-02 20:53:58] INFO root fetch - processPackages [copilothistoryexporter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/copilothistoryexporter-1.0.2.5.tar.gz tmp/copilothistoryexporter-1.0.2.6.tar.gz --markdown 20240602/c/copilothistoryexporter/1.0.2.5-1.0.2.6/README.md --exclude *.pyd
+[2024-06-02 20:53:58] INFO root fetch - processPackages [dbTelematelAPI]: executing diffoscope
+[2024-06-02 20:53:58] INFO root fetch - processPackages [dbTelematelAPI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbTelematelAPI-0.0.6.tar.gz tmp/dbTelematelAPI-0.0.7.tar.gz --markdown 20240602/d/dbTelematelAPI/0.0.6-0.0.7/README.md --exclude *.pyd
+[2024-06-02 20:53:58] INFO root fetch - processPackages [displaylang]: executing diffoscope
+[2024-06-02 20:53:58] INFO root fetch - processPackages [displaylang]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/displaylang-0.23.0b1.tar.gz tmp/displaylang-0.24.0.tar.gz --markdown 20240602/d/displaylang/0.23.0b1-0.24.0/README.md --exclude *.pyd
+[2024-06-02 20:53:58] INFO root fetch - processPackages [dbTelematelAPI]: Remove: archive file [/home/abi/fetcher/tmp/dbTelematelAPI-0.0.6.tar.gz]
+[2024-06-02 20:53:58] INFO root fetch - processPackages [dbTelematelAPI]: Remove: archive file [/home/abi/fetcher/tmp/dbTelematelAPI-0.0.7.tar.gz]
+[2024-06-02 20:53:58] INFO root fetch - main [MainThread]: End processing [dbTelematelAPI]: success
+[2024-06-02 20:53:58] INFO root fetch - processPackages [copilothistoryexporter]: Remove: archive file [/home/abi/fetcher/tmp/copilothistoryexporter-1.0.2.5.tar.gz]
+[2024-06-02 20:53:58] INFO root fetch - processPackages [copilothistoryexporter]: Remove: archive file [/home/abi/fetcher/tmp/copilothistoryexporter-1.0.2.6.tar.gz]
+[2024-06-02 20:53:58] INFO root fetch - main [MainThread]: End processing [copilothistoryexporter]: success
+[2024-06-02 20:53:58] INFO root fetch - processPackages [displaylang]: Remove: archive file [/home/abi/fetcher/tmp/displaylang-0.23.0b1.tar.gz]
+[2024-06-02 20:53:58] INFO root fetch - processPackages [displaylang]: Remove: archive file [/home/abi/fetcher/tmp/displaylang-0.24.0.tar.gz]
+[2024-06-02 20:53:58] INFO root fetch - main [MainThread]: End processing [displaylang]: success
+[2024-06-02 20:53:58] INFO root fetch - main [MainThread]: Store serial: [23492173]
