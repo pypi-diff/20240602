@@ -2912,3 +2912,15 @@
 [2024-06-02 04:11:16] INFO root fetch - processPackages [ubicoders-vrobots]: Remove: archive file [/home/abi/fetcher/tmp/ubicoders-vrobots-0.3.1.tar.gz]
 [2024-06-02 04:11:16] INFO root fetch - main [MainThread]: End processing [ubicoders-vrobots]: success
 [2024-06-02 04:11:16] INFO root fetch - main [MainThread]: Store serial: [23485644]
+[2024-06-02 04:13:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23485644]
+[2024-06-02 04:13:25] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-02 04:13:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: DCMake
+[2024-06-02 04:13:25] INFO root fetch - processPackages [DCMake]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-06-02 04:13:25] INFO root fetch - processPackages [DCMake]: Downloading https://files.pythonhosted.org/packages/78/93/a29f0f8e7145e254eb3bb036cd14d2a2d6b823eaf52a52a54d72cf82b502/DCMake-0.0.4.tar.gz
+[2024-06-02 04:13:25] INFO root fetch - processPackages [DCMake]: Downloading https://files.pythonhosted.org/packages/51/6e/c95341c006c7b081e33164417ef4130bf51db16d5b82734fe90853a2cf9c/DCMake-0.0.5.tar.gz
+[2024-06-02 04:13:25] INFO root fetch - processPackages [DCMake]: executing diffoscope
+[2024-06-02 04:13:25] INFO root fetch - processPackages [DCMake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/DCMake-0.0.4.tar.gz tmp/DCMake-0.0.5.tar.gz --markdown 20240602/D/DCMake/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-06-02 04:13:26] INFO root fetch - processPackages [DCMake]: Remove: archive file [/home/abi/fetcher/tmp/DCMake-0.0.4.tar.gz]
+[2024-06-02 04:13:26] INFO root fetch - processPackages [DCMake]: Remove: archive file [/home/abi/fetcher/tmp/DCMake-0.0.5.tar.gz]
+[2024-06-02 04:13:26] INFO root fetch - main [MainThread]: End processing [DCMake]: success
+[2024-06-02 04:13:26] INFO root fetch - main [MainThread]: Store serial: [23485646]
