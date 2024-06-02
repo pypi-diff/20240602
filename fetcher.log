@@ -6950,3 +6950,36 @@
 [2024-06-02 11:38:26] INFO root fetch - processPackages [pytfvars]: Remove: archive file [/home/abi/fetcher/tmp/pytfvars-1.0.3.tar.gz]
 [2024-06-02 11:38:26] INFO root fetch - main [MainThread]: End processing [pytfvars]: success
 [2024-06-02 11:38:26] INFO root fetch - main [MainThread]: Store serial: [23487830]
+[2024-06-02 11:40:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23487830]
+[2024-06-02 11:40:34] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-02 11:40:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyroblack
+[2024-06-02 11:40:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: flask-openapi3
+[2024-06-02 11:40:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: group-local
+[2024-06-02 11:40:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: vendi-sdk
+[2024-06-02 11:40:34] INFO root fetch - processPackages [pyroblack]: New version: [2.3.69] Old Version: [2.3.68]
+[2024-06-02 11:40:34] INFO root fetch - processPackages [flask-openapi3]: New version: [4.0.0.dev0] Old Version: [3.1.2]
+[2024-06-02 11:40:34] INFO root fetch - processPackages [flask-openapi3]: Downloading https://files.pythonhosted.org/packages/55/00/787c9e6c9fcc1aa8e7dfb16a3edca0b62ff1b26e01d26bad6869716fd073/flask_openapi3-3.1.2.tar.gz
+[2024-06-02 11:40:34] INFO root fetch - processPackages [group-local]: New version: [0.0.31] Old Version: [0.0.30]
+[2024-06-02 11:40:34] WARNING root fetch - processPackages [vendi-sdk]: Skipping, unable to determine old version
+[2024-06-02 11:40:34] INFO root fetch - main [MainThread]: End processing [vendi-sdk] error
+[2024-06-02 11:40:34] INFO root fetch - processPackages [pyroblack]: Downloading https://files.pythonhosted.org/packages/df/c0/e622cab6044a1ff48c90249ffb0f47d2cc5b1d19f0b00bfca30c35d0acd0/pyroblack-2.3.68.tar.gz
+[2024-06-02 11:40:34] INFO root fetch - processPackages [group-local]: Downloading https://files.pythonhosted.org/packages/f0/23/39c676c8b5b7e8bf57610425e8e8fc7385c30b51859c55b3a7a26c5b5edf/group_local-0.0.30.tar.gz
+[2024-06-02 11:40:34] INFO root fetch - processPackages [flask-openapi3]: Downloading https://files.pythonhosted.org/packages/12/21/6dae54a60b5d4fafd4036a02796de7919a1306a0e1742dd047f837ab69bf/flask_openapi3-4.0.0.dev0.tar.gz
+[2024-06-02 11:40:35] INFO root fetch - processPackages [flask-openapi3]: executing diffoscope
+[2024-06-02 11:40:35] INFO root fetch - processPackages [flask-openapi3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flask_openapi3-3.1.2.tar.gz tmp/flask_openapi3-4.0.0.dev0.tar.gz --markdown 20240602/f/flask-openapi3/3.1.2-4.0.0.dev0/README.md --exclude *.pyd
+[2024-06-02 11:40:35] INFO root fetch - processPackages [pyroblack]: Downloading https://files.pythonhosted.org/packages/ad/16/1455d41c0c9a0004a97136f8ee2088f4ad54618997bdf3bc7e859d65c930/pyroblack-2.3.69.tar.gz
+[2024-06-02 11:40:35] INFO root fetch - processPackages [group-local]: Downloading https://files.pythonhosted.org/packages/46/cb/5d7f5ba96a0c46fb5060750631ba2afc6427ba95b4c499b76c26e717d93d/group_local-0.0.31.tar.gz
+[2024-06-02 11:40:35] INFO root fetch - processPackages [pyroblack]: executing diffoscope
+[2024-06-02 11:40:35] INFO root fetch - processPackages [pyroblack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyroblack-2.3.68.tar.gz tmp/pyroblack-2.3.69.tar.gz --markdown 20240602/p/pyroblack/2.3.68-2.3.69/README.md --exclude *.pyd
+[2024-06-02 11:40:35] INFO root fetch - processPackages [group-local]: executing diffoscope
+[2024-06-02 11:40:35] INFO root fetch - processPackages [group-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/group_local-0.0.30.tar.gz tmp/group_local-0.0.31.tar.gz --markdown 20240602/g/group-local/0.0.30-0.0.31/README.md --exclude *.pyd
+[2024-06-02 11:40:35] INFO root fetch - processPackages [group-local]: Remove: archive file [/home/abi/fetcher/tmp/group_local-0.0.30.tar.gz]
+[2024-06-02 11:40:35] INFO root fetch - processPackages [group-local]: Remove: archive file [/home/abi/fetcher/tmp/group_local-0.0.31.tar.gz]
+[2024-06-02 11:40:35] INFO root fetch - main [MainThread]: End processing [group-local]: success
+[2024-06-02 11:40:36] INFO root fetch - processPackages [flask-openapi3]: Remove: archive file [/home/abi/fetcher/tmp/flask_openapi3-3.1.2.tar.gz]
+[2024-06-02 11:40:36] INFO root fetch - processPackages [flask-openapi3]: Remove: archive file [/home/abi/fetcher/tmp/flask_openapi3-4.0.0.dev0.tar.gz]
+[2024-06-02 11:40:36] INFO root fetch - main [MainThread]: End processing [flask-openapi3]: success
+[2024-06-02 11:40:37] INFO root fetch - processPackages [pyroblack]: Remove: archive file [/home/abi/fetcher/tmp/pyroblack-2.3.68.tar.gz]
+[2024-06-02 11:40:37] INFO root fetch - processPackages [pyroblack]: Remove: archive file [/home/abi/fetcher/tmp/pyroblack-2.3.69.tar.gz]
+[2024-06-02 11:40:37] INFO root fetch - main [MainThread]: End processing [pyroblack]: success
+[2024-06-02 11:40:37] INFO root fetch - main [MainThread]: Store serial: [23487844]
