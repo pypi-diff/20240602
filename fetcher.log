@@ -6084,3 +6084,44 @@
 [2024-06-02 10:19:36] INFO root fetch - processPackages [gutta]: Remove: archive file [/home/abi/fetcher/tmp/gutta-0.1.9-py3-none-any.whl.zip]
 [2024-06-02 10:19:36] INFO root fetch - main [MainThread]: End processing [gutta]: success
 [2024-06-02 10:19:36] INFO root fetch - main [MainThread]: Store serial: [23487336]
+[2024-06-02 10:21:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23487336]
+[2024-06-02 10:21:45] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-06-02 10:21:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: compushady
+[2024-06-02 10:21:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pytest-zcc
+[2024-06-02 10:21:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aws-s3
+[2024-06-02 10:21:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: uvicorn
+[2024-06-02 10:21:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: setux-modules
+[2024-06-02 10:21:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: minishell
+[2024-06-02 10:21:45] INFO root fetch - processPackages [pytest-zcc]: New version: [1.2] Old Version: [1.1]
+[2024-06-02 10:21:45] INFO root fetch - processPackages [uvicorn]: New version: [0.9.1] Old Version: [0.9.0]
+[2024-06-02 10:21:45] WARNING root fetch - processPackages [aws-s3]: Skipping, unable to determine old version
+[2024-06-02 10:21:45] INFO root fetch - main [MainThread]: End processing [aws-s3] error
+[2024-06-02 10:21:45] ERROR root fetch - processPackages [minishell]: Unable to get metadata: No such project 'minishell'
+[2024-06-02 10:21:45] INFO root fetch - main [MainThread]: End processing [minishell] error
+[2024-06-02 10:21:45] INFO root fetch - processPackages [setux-modules]: New version: [0.3.4] Old Version: [0.3.3]
+[2024-06-02 10:21:45] INFO root fetch - processPackages [compushady]: New version: [0.17.5] Old Version: [0.17.4]
+[2024-06-02 10:21:45] INFO root fetch - processPackages [pytest-zcc]: Downloading https://files.pythonhosted.org/packages/78/f9/e20b0a47701c21b5b95b6ca82fba9c224591e1091ac403a2bf8c399d62c3/pytest_zcc-1.1.tar.gz
+[2024-06-02 10:21:45] INFO root fetch - processPackages [uvicorn]: Downloading https://files.pythonhosted.org/packages/5a/a9/2ab492155d9b76cf109c2370e201822ba3c7f4aed85f5a1b4d22907e7206/uvicorn-0.9.0.tar.gz
+[2024-06-02 10:21:45] INFO root fetch - processPackages [compushady]: Downloading https://files.pythonhosted.org/packages/99/c9/d620d85abc5dd0df8e1393058dc33859f409bf475dacf9622d09553b0984/compushady-0.17.4.tar.gz
+[2024-06-02 10:21:45] INFO root fetch - processPackages [setux-modules]: Downloading https://files.pythonhosted.org/packages/de/9d/0d151b7a3f54d33e17905a0c17ead01d62f454f9e5453f50b0dea9fb3440/setux_modules-0.3.3.tar.gz
+[2024-06-02 10:21:45] WARNING root fetch - processPackages [compushady]: Skipping package: exceeds size limit 67105471>=10485760
+[2024-06-02 10:21:45] INFO root fetch - main [MainThread]: End processing [compushady] error
+[2024-06-02 10:21:45] INFO root fetch - processPackages [pytest-zcc]: Downloading https://files.pythonhosted.org/packages/0d/4d/ed1657c6cfa7f5ea0202012dd37fb6ab7b88fb60432809d36485b3cb3697/pytest_zcc-1.2.tar.gz
+[2024-06-02 10:21:45] INFO root fetch - processPackages [pytest-zcc]: executing diffoscope
+[2024-06-02 10:21:45] INFO root fetch - processPackages [pytest-zcc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytest_zcc-1.1.tar.gz tmp/pytest_zcc-1.2.tar.gz --markdown 20240602/p/pytest-zcc/1.1-1.2/README.md --exclude *.pyd
+[2024-06-02 10:21:45] INFO root fetch - processPackages [uvicorn]: Downloading https://files.pythonhosted.org/packages/37/b6/ceaccbf4af91bb6331ef8818fd845b3370fdca178f29b1d253406a284219/uvicorn-0.9.1.tar.gz
+[2024-06-02 10:21:45] INFO root fetch - processPackages [setux-modules]: Downloading https://files.pythonhosted.org/packages/29/b8/867ab4ac8f7ad076250b2e82d61c5e71f95424e124b5d0467cc119592c2e/setux_modules-0.3.4.tar.gz
+[2024-06-02 10:21:46] INFO root fetch - processPackages [uvicorn]: executing diffoscope
+[2024-06-02 10:21:46] INFO root fetch - processPackages [uvicorn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/uvicorn-0.9.0.tar.gz tmp/uvicorn-0.9.1.tar.gz --markdown 20240602/u/uvicorn/0.9.0-0.9.1/README.md --exclude *.pyd
+[2024-06-02 10:21:46] INFO root fetch - processPackages [setux-modules]: executing diffoscope
+[2024-06-02 10:21:46] INFO root fetch - processPackages [setux-modules]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/setux_modules-0.3.3.tar.gz tmp/setux_modules-0.3.4.tar.gz --markdown 20240602/s/setux-modules/0.3.3-0.3.4/README.md --exclude *.pyd
+[2024-06-02 10:21:46] INFO root fetch - processPackages [pytest-zcc]: Remove: archive file [/home/abi/fetcher/tmp/pytest_zcc-1.1.tar.gz]
+[2024-06-02 10:21:46] INFO root fetch - processPackages [pytest-zcc]: Remove: archive file [/home/abi/fetcher/tmp/pytest_zcc-1.2.tar.gz]
+[2024-06-02 10:21:46] INFO root fetch - main [MainThread]: End processing [pytest-zcc]: success
+[2024-06-02 10:21:46] INFO root fetch - processPackages [uvicorn]: Remove: archive file [/home/abi/fetcher/tmp/uvicorn-0.9.0.tar.gz]
+[2024-06-02 10:21:46] INFO root fetch - processPackages [uvicorn]: Remove: archive file [/home/abi/fetcher/tmp/uvicorn-0.9.1.tar.gz]
+[2024-06-02 10:21:46] INFO root fetch - main [MainThread]: End processing [uvicorn]: success
+[2024-06-02 10:21:46] INFO root fetch - processPackages [setux-modules]: Remove: archive file [/home/abi/fetcher/tmp/setux_modules-0.3.3.tar.gz]
+[2024-06-02 10:21:46] INFO root fetch - processPackages [setux-modules]: Remove: archive file [/home/abi/fetcher/tmp/setux_modules-0.3.4.tar.gz]
+[2024-06-02 10:21:46] INFO root fetch - main [MainThread]: End processing [setux-modules]: success
+[2024-06-02 10:21:46] INFO root fetch - main [MainThread]: Store serial: [23487357]
