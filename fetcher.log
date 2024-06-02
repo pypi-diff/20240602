@@ -16285,3 +16285,24 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 20:40:55] INFO root fetch - processPackages [pyroblack]: Remove: archive file [/home/abi/fetcher/tmp/pyroblack-2.3.72.tar.gz]
 [2024-06-02 20:40:55] INFO root fetch - main [MainThread]: End processing [pyroblack]: success
 [2024-06-02 20:40:55] INFO root fetch - main [MainThread]: Store serial: [23492067]
+[2024-06-02 20:42:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23492067]
+[2024-06-02 20:43:04] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-02 20:43:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: muselsl
+[2024-06-02 20:43:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: DatasetsFactory
+[2024-06-02 20:43:04] INFO root fetch - processPackages [DatasetsFactory]: New version: [0.3] Old Version: [0.2]
+[2024-06-02 20:43:04] INFO root fetch - processPackages [muselsl]: New version: [2.3.0] Old Version: [2.2.2]
+[2024-06-02 20:43:04] INFO root fetch - processPackages [muselsl]: Downloading https://files.pythonhosted.org/packages/c2/27/43c61323918d4bfd1ac70a3241445c62a440b9995f807877b02577e72e9d/muselsl-2.2.2.tar.gz
+[2024-06-02 20:43:04] INFO root fetch - processPackages [DatasetsFactory]: Downloading https://files.pythonhosted.org/packages/8e/78/350b614289b50ab9456a74530ad6075769c0cc36f75e44528a1dcc1bedad/datasetsfactory-0.2.tar.gz
+[2024-06-02 20:43:04] INFO root fetch - processPackages [muselsl]: Downloading https://files.pythonhosted.org/packages/37/43/458940a28f0840c033dea0ea033d743d4b05161ce4d481112f60c9b4af6c/muselsl-2.3.0.tar.gz
+[2024-06-02 20:43:04] INFO root fetch - processPackages [muselsl]: executing diffoscope
+[2024-06-02 20:43:04] INFO root fetch - processPackages [muselsl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/muselsl-2.2.2.tar.gz tmp/muselsl-2.3.0.tar.gz --markdown 20240602/m/muselsl/2.2.2-2.3.0/README.md --exclude *.pyd
+[2024-06-02 20:43:04] INFO root fetch - processPackages [DatasetsFactory]: Downloading https://files.pythonhosted.org/packages/c8/70/15269a2b37489fdb8b1197c9f9e7a174437e30502912aa4395ed7aaa2caa/datasetsfactory-0.3.tar.gz
+[2024-06-02 20:43:04] INFO root fetch - processPackages [DatasetsFactory]: executing diffoscope
+[2024-06-02 20:43:04] INFO root fetch - processPackages [DatasetsFactory]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datasetsfactory-0.2.tar.gz tmp/datasetsfactory-0.3.tar.gz --markdown 20240602/D/DatasetsFactory/0.2-0.3/README.md --exclude *.pyd
+[2024-06-02 20:43:05] INFO root fetch - processPackages [muselsl]: Remove: archive file [/home/abi/fetcher/tmp/muselsl-2.2.2.tar.gz]
+[2024-06-02 20:43:05] INFO root fetch - processPackages [muselsl]: Remove: archive file [/home/abi/fetcher/tmp/muselsl-2.3.0.tar.gz]
+[2024-06-02 20:43:05] INFO root fetch - main [MainThread]: End processing [muselsl]: success
+[2024-06-02 20:43:05] INFO root fetch - processPackages [DatasetsFactory]: Remove: archive file [/home/abi/fetcher/tmp/datasetsfactory-0.2.tar.gz]
+[2024-06-02 20:43:05] INFO root fetch - processPackages [DatasetsFactory]: Remove: archive file [/home/abi/fetcher/tmp/datasetsfactory-0.3.tar.gz]
+[2024-06-02 20:43:05] INFO root fetch - main [MainThread]: End processing [DatasetsFactory]: success
+[2024-06-02 20:43:05] INFO root fetch - main [MainThread]: Store serial: [23492074]
