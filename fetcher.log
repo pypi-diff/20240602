@@ -13258,3 +13258,45 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 18:14:10] INFO root fetch - processPackages [ffun]: Remove: archive file [/home/abi/fetcher/tmp/ffun-1.7.0.tar.gz]
 [2024-06-02 18:14:10] INFO root fetch - main [MainThread]: End processing [ffun]: success
 [2024-06-02 18:14:10] INFO root fetch - main [MainThread]: Store serial: [23490615]
+[2024-06-02 18:16:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23490615]
+[2024-06-02 18:16:19] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-06-02 18:16:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kailin
+[2024-06-02 18:16:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nvdlib
+[2024-06-02 18:16:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: trytond-purchase-blanket-agreement
+[2024-06-02 18:16:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: wfmplan
+[2024-06-02 18:16:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: MzhFunc
+[2024-06-02 18:16:19] INFO root fetch - processPackages [MzhFunc]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-06-02 18:16:19] INFO root fetch - processPackages [MzhFunc]: Downloading https://files.pythonhosted.org/packages/a4/d8/00e0752dfc8995841f2b60eb910fb3c0a64e98d4a7bda39ce1e406d7794c/mzhfunc-0.0.6.tar.gz
+[2024-06-02 18:16:19] INFO root fetch - processPackages [wfmplan]: New version: [0.2.2] Old Version: [0.2.0]
+[2024-06-02 18:16:19] INFO root fetch - processPackages [trytond-purchase-blanket-agreement]: New version: [7.2.2] Old Version: [7.2.1]
+[2024-06-02 18:16:19] WARNING root fetch - processPackages [kailin]: Skipping, unable to determine old version
+[2024-06-02 18:16:19] INFO root fetch - main [MainThread]: End processing [kailin] error
+[2024-06-02 18:16:19] INFO root fetch - processPackages [nvdlib]: New version: [0.7.7] Old Version: [0.7.6]
+[2024-06-02 18:16:19] INFO root fetch - processPackages [trytond-purchase-blanket-agreement]: Downloading https://files.pythonhosted.org/packages/f8/fc/3fdc4b25154eba96b3ab9989836911eeddb62241a6cdf17cbdd033156eee/trytond_purchase_blanket_agreement-7.2.1.tar.gz
+[2024-06-02 18:16:19] INFO root fetch - processPackages [wfmplan]: Downloading https://files.pythonhosted.org/packages/d3/78/178bcd0be85625a878445774d15b39b39d7fb1c15773120e9f9641df541d/wfmplan-0.2.0.tar.gz
+[2024-06-02 18:16:19] INFO root fetch - processPackages [nvdlib]: Downloading https://files.pythonhosted.org/packages/23/ec/14f98aa01538f1d21a2ea8a5d4728e4f5a36433168bc984df13309eed934/nvdlib-0.7.6-py3-none-any.whl
+[2024-06-02 18:16:19] INFO root fetch - processPackages [MzhFunc]: Downloading https://files.pythonhosted.org/packages/e4/bc/886847c6e2b9bd903a5bbc826ee2d00cb15035340cd420788870b832e5dc/mzhfunc-0.0.7.tar.gz
+[2024-06-02 18:16:20] INFO root fetch - processPackages [MzhFunc]: executing diffoscope
+[2024-06-02 18:16:20] INFO root fetch - processPackages [MzhFunc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mzhfunc-0.0.6.tar.gz tmp/mzhfunc-0.0.7.tar.gz --markdown 20240602/M/MzhFunc/0.0.6-0.0.7/README.md --exclude *.pyd
+[2024-06-02 18:16:20] INFO root fetch - processPackages [trytond-purchase-blanket-agreement]: Downloading https://files.pythonhosted.org/packages/6b/23/5b678a4cf8b7efcbbdb63e24873086513940f542a5275fbec5c07af363ce/trytond_purchase_blanket_agreement-7.2.2.tar.gz
+[2024-06-02 18:16:20] INFO root fetch - processPackages [wfmplan]: Downloading https://files.pythonhosted.org/packages/f9/57/b6583b30f55c55e0282391a428bdca294111de15d52be6cc9182d1661eed/wfmplan-0.2.2.tar.gz
+[2024-06-02 18:16:20] INFO root fetch - processPackages [nvdlib]: Downloading https://files.pythonhosted.org/packages/a5/fe/e56d88ead664119f280d0618176a7456d4cdf10dbcd050300ce5d6763701/nvdlib-0.7.7-py3-none-any.whl
+[2024-06-02 18:16:20] INFO root fetch - processPackages [trytond-purchase-blanket-agreement]: executing diffoscope
+[2024-06-02 18:16:20] INFO root fetch - processPackages [trytond-purchase-blanket-agreement]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trytond_purchase_blanket_agreement-7.2.1.tar.gz tmp/trytond_purchase_blanket_agreement-7.2.2.tar.gz --markdown 20240602/t/trytond-purchase-blanket-agreement/7.2.1-7.2.2/README.md --exclude *.pyd
+[2024-06-02 18:16:20] INFO root fetch - processPackages [wfmplan]: executing diffoscope
+[2024-06-02 18:16:20] INFO root fetch - processPackages [wfmplan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wfmplan-0.2.0.tar.gz tmp/wfmplan-0.2.2.tar.gz --markdown 20240602/w/wfmplan/0.2.0-0.2.2/README.md --exclude *.pyd
+[2024-06-02 18:16:20] INFO root fetch - processPackages [nvdlib]: executing diffoscope
+[2024-06-02 18:16:20] INFO root fetch - processPackages [nvdlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nvdlib-0.7.6-py3-none-any.whl.zip tmp/nvdlib-0.7.7-py3-none-any.whl.zip --markdown 20240602/n/nvdlib/0.7.6-0.7.7/README.md --exclude *.pyd
+[2024-06-02 18:16:20] INFO root fetch - processPackages [MzhFunc]: Remove: archive file [/home/abi/fetcher/tmp/mzhfunc-0.0.6.tar.gz]
+[2024-06-02 18:16:20] INFO root fetch - processPackages [MzhFunc]: Remove: archive file [/home/abi/fetcher/tmp/mzhfunc-0.0.7.tar.gz]
+[2024-06-02 18:16:20] INFO root fetch - main [MainThread]: End processing [MzhFunc]: success
+[2024-06-02 18:16:20] INFO root fetch - processPackages [wfmplan]: Remove: archive file [/home/abi/fetcher/tmp/wfmplan-0.2.0.tar.gz]
+[2024-06-02 18:16:20] INFO root fetch - processPackages [wfmplan]: Remove: archive file [/home/abi/fetcher/tmp/wfmplan-0.2.2.tar.gz]
+[2024-06-02 18:16:20] INFO root fetch - main [MainThread]: End processing [wfmplan]: success
+[2024-06-02 18:16:20] INFO root fetch - processPackages [nvdlib]: Remove: archive file [/home/abi/fetcher/tmp/nvdlib-0.7.6-py3-none-any.whl.zip]
+[2024-06-02 18:16:20] INFO root fetch - processPackages [nvdlib]: Remove: archive file [/home/abi/fetcher/tmp/nvdlib-0.7.7-py3-none-any.whl.zip]
+[2024-06-02 18:16:20] INFO root fetch - main [MainThread]: End processing [nvdlib]: success
+[2024-06-02 18:16:20] INFO root fetch - processPackages [trytond-purchase-blanket-agreement]: Remove: archive file [/home/abi/fetcher/tmp/trytond_purchase_blanket_agreement-7.2.1.tar.gz]
+[2024-06-02 18:16:20] INFO root fetch - processPackages [trytond-purchase-blanket-agreement]: Remove: archive file [/home/abi/fetcher/tmp/trytond_purchase_blanket_agreement-7.2.2.tar.gz]
+[2024-06-02 18:16:20] INFO root fetch - main [MainThread]: End processing [trytond-purchase-blanket-agreement]: success
+[2024-06-02 18:16:20] INFO root fetch - main [MainThread]: Store serial: [23490630]
