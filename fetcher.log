@@ -3704,3 +3704,33 @@
 [2024-06-02 06:05:26] INFO root fetch - processPackages [planetMagFields]: Remove: archive file [/home/abi/fetcher/tmp/planetmagfields-1.4.3.post2.tar.gz]
 [2024-06-02 06:05:26] INFO root fetch - main [MainThread]: End processing [planetMagFields]: success
 [2024-06-02 06:05:26] INFO root fetch - main [MainThread]: Store serial: [23485989]
+[2024-06-02 06:07:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23485989]
+[2024-06-02 06:07:34] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-02 06:07:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: apysc
+[2024-06-02 06:07:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tfra-nightly
+[2024-06-02 06:07:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: torrey
+[2024-06-02 06:07:34] INFO root fetch - processPackages [torrey]: New version: [3.2.2.dev20240602035016] Old Version: [3.2.2.dev20240602025526]
+[2024-06-02 06:07:34] INFO root fetch - processPackages [torrey]: Downloading https://files.pythonhosted.org/packages/fe/24/9ffaedc4ecaff7fd8bc8ea520d79ea58a411694868690e0db8f2b90a5b19/torrey-3.2.2.dev20240602025526.tar.gz
+[2024-06-02 06:07:35] INFO root fetch - processPackages [tfra-nightly]: New version: [0.6.1.dev20240601054401] Old Version: [0.6.1.dev20240530214353]
+[2024-06-02 06:07:35] INFO root fetch - processPackages [apysc]: New version: [4.5.0] Old Version: [4.4.3]
+[2024-06-02 06:07:35] INFO root fetch - processPackages [apysc]: Downloading https://files.pythonhosted.org/packages/88/db/334bc29fce37aacff98b34e7fd48710a3fe32c5044a499823a52acd7d5ce/apysc-4.4.3.tar.gz
+[2024-06-02 06:07:35] INFO root fetch - processPackages [torrey]: Downloading https://files.pythonhosted.org/packages/50/52/49b10874f92d2dccdf2356b859bfad8b6e7b56abd35fac760bc5a793f971/torrey-3.2.2.dev20240602035016.tar.gz
+[2024-06-02 06:07:35] INFO root fetch - processPackages [tfra-nightly]: Downloading https://files.pythonhosted.org/packages/ad/e5/9a9f7e497d59501855b7912f848246625098fee432e7a46f0c9904c58b4f/tfra_nightly-0.6.1.dev20240530214353-cp39-cp39-manylinux_2_12_x86_64.manylinux2010_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-06-02 06:07:35] INFO root fetch - processPackages [torrey]: executing diffoscope
+[2024-06-02 06:07:35] INFO root fetch - processPackages [torrey]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torrey-3.2.2.dev20240602025526.tar.gz tmp/torrey-3.2.2.dev20240602035016.tar.gz --markdown 20240602/t/torrey/3.2.2.dev20240602025526-3.2.2.dev20240602035016/README.md --exclude *.pyd
+[2024-06-02 06:07:35] INFO root fetch - processPackages [apysc]: Downloading https://files.pythonhosted.org/packages/6d/69/b9eb6f746af752a89cdaa4c111ffc8a50de8c1104d9857a2c6843ee0e570/apysc-4.5.0.tar.gz
+[2024-06-02 06:07:35] INFO root fetch - processPackages [apysc]: executing diffoscope
+[2024-06-02 06:07:35] INFO root fetch - processPackages [apysc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/apysc-4.4.3.tar.gz tmp/apysc-4.5.0.tar.gz --markdown 20240602/a/apysc/4.4.3-4.5.0/README.md --exclude *.pyd
+[2024-06-02 06:07:36] INFO root fetch - processPackages [tfra-nightly]: Downloading https://files.pythonhosted.org/packages/2a/e2/992ed4ac2dea6b6d31776f8f7850d8e9cf70f84ddbef6b6aa975c8e32766/tfra_nightly-0.6.1.dev20240601054401-cp39-cp39-manylinux_2_12_x86_64.manylinux2010_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-06-02 06:07:36] INFO root fetch - processPackages [torrey]: Remove: archive file [/home/abi/fetcher/tmp/torrey-3.2.2.dev20240602025526.tar.gz]
+[2024-06-02 06:07:36] INFO root fetch - processPackages [torrey]: Remove: archive file [/home/abi/fetcher/tmp/torrey-3.2.2.dev20240602035016.tar.gz]
+[2024-06-02 06:07:36] INFO root fetch - main [MainThread]: End processing [torrey]: success
+[2024-06-02 06:07:37] INFO root fetch - processPackages [tfra-nightly]: executing diffoscope
+[2024-06-02 06:07:37] INFO root fetch - processPackages [tfra-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tfra_nightly-0.6.1.dev20240530214353-cp39-cp39-manylinux_2_12_x86_64.manylinux2010_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/tfra_nightly-0.6.1.dev20240601054401-cp39-cp39-manylinux_2_12_x86_64.manylinux2010_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20240602/t/tfra-nightly/0.6.1.dev20240530214353-0.6.1.dev20240601054401/README.md --exclude *.pyd
+[2024-06-02 06:07:38] INFO root fetch - processPackages [tfra-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tfra_nightly-0.6.1.dev20240530214353-cp39-cp39-manylinux_2_12_x86_64.manylinux2010_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-06-02 06:07:38] INFO root fetch - processPackages [tfra-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tfra_nightly-0.6.1.dev20240601054401-cp39-cp39-manylinux_2_12_x86_64.manylinux2010_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-06-02 06:07:38] INFO root fetch - main [MainThread]: End processing [tfra-nightly]: success
+[2024-06-02 06:07:43] INFO root fetch - processPackages [apysc]: Remove: archive file [/home/abi/fetcher/tmp/apysc-4.4.3.tar.gz]
+[2024-06-02 06:07:43] INFO root fetch - processPackages [apysc]: Remove: archive file [/home/abi/fetcher/tmp/apysc-4.5.0.tar.gz]
+[2024-06-02 06:07:43] INFO root fetch - main [MainThread]: End processing [apysc]: success
+[2024-06-02 06:07:43] INFO root fetch - main [MainThread]: Store serial: [23486008]
