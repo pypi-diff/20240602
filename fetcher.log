@@ -3215,3 +3215,17 @@
 [2024-06-02 04:39:39] INFO root fetch - processPackages [sensord]: Remove: archive file [/home/abi/fetcher/tmp/sensord-0.1.4.tar.gz]
 [2024-06-02 04:39:39] INFO root fetch - main [MainThread]: End processing [sensord]: success
 [2024-06-02 04:39:39] INFO root fetch - main [MainThread]: Store serial: [23485732]
+[2024-06-02 04:41:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23485732]
+[2024-06-02 04:41:47] INFO root fetch - main [MainThread]: No changed packages found
+[2024-06-02 04:43:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23485733]
+[2024-06-02 04:43:53] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-02 04:43:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: julep
+[2024-06-02 04:43:53] INFO root fetch - processPackages [julep]: New version: [0.3.7] Old Version: [0.3.6]
+[2024-06-02 04:43:53] INFO root fetch - processPackages [julep]: Downloading https://files.pythonhosted.org/packages/06/d8/27264a6a3994be0907ddebd35934b90f0b881c5381dbb4f0a09ce20a723a/julep-0.3.6.tar.gz
+[2024-06-02 04:43:53] INFO root fetch - processPackages [julep]: Downloading https://files.pythonhosted.org/packages/5c/0e/b2cf2658570052e3cb160abcb9746b3fddcca91fef26b3066bef1ff46162/julep-0.3.7.tar.gz
+[2024-06-02 04:43:54] INFO root fetch - processPackages [julep]: executing diffoscope
+[2024-06-02 04:43:54] INFO root fetch - processPackages [julep]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/julep-0.3.6.tar.gz tmp/julep-0.3.7.tar.gz --markdown 20240602/j/julep/0.3.6-0.3.7/README.md --exclude *.pyd
+[2024-06-02 04:43:54] INFO root fetch - processPackages [julep]: Remove: archive file [/home/abi/fetcher/tmp/julep-0.3.6.tar.gz]
+[2024-06-02 04:43:54] INFO root fetch - processPackages [julep]: Remove: archive file [/home/abi/fetcher/tmp/julep-0.3.7.tar.gz]
+[2024-06-02 04:43:54] INFO root fetch - main [MainThread]: End processing [julep]: success
+[2024-06-02 04:43:54] INFO root fetch - main [MainThread]: Store serial: [23485741]
