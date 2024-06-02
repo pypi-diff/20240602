@@ -1701,3 +1701,33 @@
 [2024-06-02 02:11:49] INFO root fetch - processPackages [gdaicommons]: Remove: archive file [/home/abi/fetcher/tmp/gdaicommons-0.0.7.tar.gz]
 [2024-06-02 02:11:49] INFO root fetch - main [MainThread]: End processing [gdaicommons]: success
 [2024-06-02 02:11:49] INFO root fetch - main [MainThread]: Store serial: [23484838]
+[2024-06-02 02:13:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23484838]
+[2024-06-02 02:13:57] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-02 02:13:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mct-quantizers-nightly
+[2024-06-02 02:13:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: litellm
+[2024-06-02 02:13:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cdk-events-notify
+[2024-06-02 02:13:57] INFO root fetch - processPackages [mct-quantizers-nightly]: New version: [1.5.0.20240601.post1138] Old Version: [1.5.0.20240531.post1037]
+[2024-06-02 02:13:57] INFO root fetch - processPackages [litellm]: New version: [1.9.dev0] Old Version: [1.9.5]
+[2024-06-02 02:13:57] INFO root fetch - processPackages [cdk-events-notify]: New version: [2.2.99] Old Version: [2.2.98]
+[2024-06-02 02:13:57] INFO root fetch - processPackages [mct-quantizers-nightly]: Downloading https://files.pythonhosted.org/packages/21/df/9dcad8cd02e6f56d4f4e31412a3408f8fb00ca7794bf55385f55613a3e18/mct-quantizers-nightly-1.5.0.20240531.post1037.tar.gz
+[2024-06-02 02:13:58] INFO root fetch - processPackages [cdk-events-notify]: Downloading https://files.pythonhosted.org/packages/b7/7d/50ca1bff3db85ede28826faf2d11bb449770cac87fe89483636e0fe57d94/cdk-events-notify-2.2.98.tar.gz
+[2024-06-02 02:13:58] INFO root fetch - processPackages [litellm]: Downloading https://files.pythonhosted.org/packages/38/f3/1cbeaf4074e7b284cd140263ff165948d8f4cc8f5dd72c89be43a0469387/litellm-1.9.5.tar.gz
+[2024-06-02 02:13:58] INFO root fetch - processPackages [cdk-events-notify]: Downloading https://files.pythonhosted.org/packages/56/4a/9c2a145913d7a35ac252cb2bddabca89cdc95c802a8e342f192100f709be/cdk-events-notify-2.2.99.tar.gz
+[2024-06-02 02:13:58] INFO root fetch - processPackages [mct-quantizers-nightly]: Downloading https://files.pythonhosted.org/packages/95/89/0bef41be56d2340a6817d77441d2a9a070ca80cbeeb2764c4ceb2a9bf181/mct-quantizers-nightly-1.5.0.20240601.post1138.tar.gz
+[2024-06-02 02:13:58] INFO root fetch - processPackages [cdk-events-notify]: executing diffoscope
+[2024-06-02 02:13:58] INFO root fetch - processPackages [cdk-events-notify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-events-notify-2.2.98.tar.gz tmp/cdk-events-notify-2.2.99.tar.gz --markdown 20240602/c/cdk-events-notify/2.2.98-2.2.99/README.md --exclude *.pyd
+[2024-06-02 02:13:58] INFO root fetch - processPackages [litellm]: Downloading https://files.pythonhosted.org/packages/ad/6c/162b83e9cf68f5a94c30153e835414c3ee11c8602ffaacc9a032851dfa26/litellm-1.9.dev0.tar.gz
+[2024-06-02 02:13:58] INFO root fetch - processPackages [mct-quantizers-nightly]: executing diffoscope
+[2024-06-02 02:13:58] INFO root fetch - processPackages [mct-quantizers-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mct-quantizers-nightly-1.5.0.20240531.post1037.tar.gz tmp/mct-quantizers-nightly-1.5.0.20240601.post1138.tar.gz --markdown 20240602/m/mct-quantizers-nightly/1.5.0.20240531.post1037-1.5.0.20240601.post1138/README.md --exclude *.pyd
+[2024-06-02 02:13:58] INFO root fetch - processPackages [litellm]: executing diffoscope
+[2024-06-02 02:13:58] INFO root fetch - processPackages [litellm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/litellm-1.9.5.tar.gz tmp/litellm-1.9.dev0.tar.gz --markdown 20240602/l/litellm/1.9.5-1.9.dev0/README.md --exclude *.pyd
+[2024-06-02 02:13:59] INFO root fetch - processPackages [cdk-events-notify]: Remove: archive file [/home/abi/fetcher/tmp/cdk-events-notify-2.2.98.tar.gz]
+[2024-06-02 02:13:59] INFO root fetch - processPackages [cdk-events-notify]: Remove: archive file [/home/abi/fetcher/tmp/cdk-events-notify-2.2.99.tar.gz]
+[2024-06-02 02:13:59] INFO root fetch - main [MainThread]: End processing [cdk-events-notify]: success
+[2024-06-02 02:13:59] INFO root fetch - processPackages [mct-quantizers-nightly]: Remove: archive file [/home/abi/fetcher/tmp/mct-quantizers-nightly-1.5.0.20240531.post1037.tar.gz]
+[2024-06-02 02:13:59] INFO root fetch - processPackages [mct-quantizers-nightly]: Remove: archive file [/home/abi/fetcher/tmp/mct-quantizers-nightly-1.5.0.20240601.post1138.tar.gz]
+[2024-06-02 02:13:59] INFO root fetch - main [MainThread]: End processing [mct-quantizers-nightly]: success
+[2024-06-02 02:13:59] INFO root fetch - processPackages [litellm]: Remove: archive file [/home/abi/fetcher/tmp/litellm-1.9.5.tar.gz]
+[2024-06-02 02:13:59] INFO root fetch - processPackages [litellm]: Remove: archive file [/home/abi/fetcher/tmp/litellm-1.9.dev0.tar.gz]
+[2024-06-02 02:13:59] INFO root fetch - main [MainThread]: End processing [litellm]: success
+[2024-06-02 02:13:59] INFO root fetch - main [MainThread]: Store serial: [23484847]
