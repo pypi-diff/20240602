@@ -3270,3 +3270,15 @@
 [2024-06-02 04:52:28] INFO root fetch - processPackages [joyrl]: Remove: archive file [/home/abi/fetcher/tmp/joyrl-0.6.1.1.tar.gz]
 [2024-06-02 04:52:28] INFO root fetch - main [MainThread]: End processing [joyrl]: success
 [2024-06-02 04:52:28] INFO root fetch - main [MainThread]: Store serial: [23485756]
+[2024-06-02 04:54:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23485756]
+[2024-06-02 04:54:36] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-02 04:54:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ubicoders-vrobots
+[2024-06-02 04:54:37] INFO root fetch - processPackages [ubicoders-vrobots]: New version: [0.3.2] Old Version: [0.3.1]
+[2024-06-02 04:54:37] INFO root fetch - processPackages [ubicoders-vrobots]: Downloading https://files.pythonhosted.org/packages/a0/67/c585a2f5ba49122a4214281370b227d94f65e891f9232ee5a55f283ca631/ubicoders-vrobots-0.3.1.tar.gz
+[2024-06-02 04:54:37] INFO root fetch - processPackages [ubicoders-vrobots]: Downloading https://files.pythonhosted.org/packages/0d/96/450f64bb13b1923b1fdf73353d341b81852a00e98e7597b2c5603df05505/ubicoders-vrobots-0.3.2.tar.gz
+[2024-06-02 04:54:37] INFO root fetch - processPackages [ubicoders-vrobots]: executing diffoscope
+[2024-06-02 04:54:37] INFO root fetch - processPackages [ubicoders-vrobots]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ubicoders-vrobots-0.3.1.tar.gz tmp/ubicoders-vrobots-0.3.2.tar.gz --markdown 20240602/u/ubicoders-vrobots/0.3.1-0.3.2/README.md --exclude *.pyd
+[2024-06-02 04:54:38] INFO root fetch - processPackages [ubicoders-vrobots]: Remove: archive file [/home/abi/fetcher/tmp/ubicoders-vrobots-0.3.1.tar.gz]
+[2024-06-02 04:54:38] INFO root fetch - processPackages [ubicoders-vrobots]: Remove: archive file [/home/abi/fetcher/tmp/ubicoders-vrobots-0.3.2.tar.gz]
+[2024-06-02 04:54:38] INFO root fetch - main [MainThread]: End processing [ubicoders-vrobots]: success
+[2024-06-02 04:54:38] INFO root fetch - main [MainThread]: Store serial: [23485758]
