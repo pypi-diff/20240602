@@ -2945,3 +2945,51 @@
 [2024-06-02 04:15:37] INFO root fetch - processPackages [xtts-api-server]: Remove: archive file [/home/abi/fetcher/tmp/xtts_api_server-0.8.6.tar.gz]
 [2024-06-02 04:15:37] INFO root fetch - main [MainThread]: End processing [xtts-api-server]: success
 [2024-06-02 04:15:37] INFO root fetch - main [MainThread]: Store serial: [23485652]
+[2024-06-02 04:17:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23485652]
+[2024-06-02 04:17:45] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-06-02 04:17:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ladybug-grasshopper
+[2024-06-02 04:17:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyrotgfork
+[2024-06-02 04:17:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sweetrpg-library-objects
+[2024-06-02 04:17:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lbt-grasshopper
+[2024-06-02 04:17:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyproject-pip
+[2024-06-02 04:17:45] INFO root fetch - processPackages [pyproject-pip]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-06-02 04:17:45] INFO root fetch - processPackages [pyrotgfork]: New version: [2.1.32.4] Old Version: [2.1.32.3]
+[2024-06-02 04:17:45] INFO root fetch - processPackages [sweetrpg-library-objects]: New version: [0.0.86] Old Version: [0.0.85]
+[2024-06-02 04:17:45] INFO root fetch - processPackages [pyrotgfork]: Downloading https://files.pythonhosted.org/packages/6e/e0/9b79e04927b542b50b1413845349b4f7a8d6195afca48268b409e12ab7b0/pyrotgfork-2.1.32.3.tar.gz
+[2024-06-02 04:17:45] INFO root fetch - processPackages [ladybug-grasshopper]: New version: [1.9.4] Old Version: [1.9.3]
+[2024-06-02 04:17:45] INFO root fetch - processPackages [sweetrpg-library-objects]: Downloading https://files.pythonhosted.org/packages/3b/8f/5bc5b1bf1cbb2bd23cd2883844aade1e32b222ebf1f95ad4be614a5a5fab/sweetrpg-library-objects-0.0.85.tar.gz
+[2024-06-02 04:17:45] INFO root fetch - processPackages [lbt-grasshopper]: New version: [1.8.9] Old Version: [1.8.8]
+[2024-06-02 04:17:46] INFO root fetch - processPackages [pyproject-pip]: Downloading https://files.pythonhosted.org/packages/a2/5d/ca80ca2cbe2f1bf70147e8bf4a1bb953aaecc7fd94eb223c5c63c8b3afb9/pyproject_pip-0.0.1.tar.gz
+[2024-06-02 04:17:46] INFO root fetch - processPackages [ladybug-grasshopper]: Downloading https://files.pythonhosted.org/packages/ec/49/777f995c954f015074487d7ab75a2c03b29bfd7c9fba5b15f7370a04139a/ladybug-grasshopper-1.9.3.tar.gz
+[2024-06-02 04:17:46] INFO root fetch - processPackages [sweetrpg-library-objects]: Downloading https://files.pythonhosted.org/packages/5e/9f/6f76023a2ce599dcc8f9336e4ca97d11bf333da43274c8193887a32463aa/sweetrpg-library-objects-0.0.86.tar.gz
+[2024-06-02 04:17:46] INFO root fetch - processPackages [lbt-grasshopper]: Downloading https://files.pythonhosted.org/packages/85/4b/b7b2a31765980f121c7dca9cd1353afc8fd947ace9f87b8f902620819061/lbt-grasshopper-1.8.8.tar.gz
+[2024-06-02 04:17:46] INFO root fetch - processPackages [sweetrpg-library-objects]: executing diffoscope
+[2024-06-02 04:17:46] INFO root fetch - processPackages [sweetrpg-library-objects]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sweetrpg-library-objects-0.0.85.tar.gz tmp/sweetrpg-library-objects-0.0.86.tar.gz --markdown 20240602/s/sweetrpg-library-objects/0.0.85-0.0.86/README.md --exclude *.pyd
+[2024-06-02 04:17:46] INFO root fetch - processPackages [pyrotgfork]: Downloading https://files.pythonhosted.org/packages/6f/38/12668717377d19fd1d325a74fff9a8450bab28b1922da587950791ed85d8/pyrotgfork-2.1.32.4.tar.gz
+[2024-06-02 04:17:46] INFO root fetch - processPackages [pyproject-pip]: Downloading https://files.pythonhosted.org/packages/64/02/615459de07e96d3d57a9b4dc6593345df70c16357160f12ab239be043766/pyproject_pip-0.0.2.tar.gz
+[2024-06-02 04:17:46] INFO root fetch - processPackages [ladybug-grasshopper]: Downloading https://files.pythonhosted.org/packages/36/c7/da7e7e51114ff7f4fdf8e1f110936d73131c1f23c71385e5ab4666ad04c4/ladybug-grasshopper-1.9.4.tar.gz
+[2024-06-02 04:17:46] INFO root fetch - processPackages [pyrotgfork]: executing diffoscope
+[2024-06-02 04:17:46] INFO root fetch - processPackages [pyrotgfork]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyrotgfork-2.1.32.3.tar.gz tmp/pyrotgfork-2.1.32.4.tar.gz --markdown 20240602/p/pyrotgfork/2.1.32.3-2.1.32.4/README.md --exclude *.pyd
+[2024-06-02 04:17:46] INFO root fetch - processPackages [lbt-grasshopper]: Downloading https://files.pythonhosted.org/packages/8f/43/14eede1d5162f900e97c330a2f83ad3cef64b06f36216364f0012886cf75/lbt-grasshopper-1.8.9.tar.gz
+[2024-06-02 04:17:46] INFO root fetch - processPackages [ladybug-grasshopper]: executing diffoscope
+[2024-06-02 04:17:46] INFO root fetch - processPackages [ladybug-grasshopper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ladybug-grasshopper-1.9.3.tar.gz tmp/ladybug-grasshopper-1.9.4.tar.gz --markdown 20240602/l/ladybug-grasshopper/1.9.3-1.9.4/README.md --exclude *.pyd
+[2024-06-02 04:17:46] INFO root fetch - processPackages [pyproject-pip]: executing diffoscope
+[2024-06-02 04:17:46] INFO root fetch - processPackages [pyproject-pip]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyproject_pip-0.0.1.tar.gz tmp/pyproject_pip-0.0.2.tar.gz --markdown 20240602/p/pyproject-pip/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-06-02 04:17:46] INFO root fetch - processPackages [lbt-grasshopper]: executing diffoscope
+[2024-06-02 04:17:46] INFO root fetch - processPackages [lbt-grasshopper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lbt-grasshopper-1.8.8.tar.gz tmp/lbt-grasshopper-1.8.9.tar.gz --markdown 20240602/l/lbt-grasshopper/1.8.8-1.8.9/README.md --exclude *.pyd
+[2024-06-02 04:17:46] INFO root fetch - processPackages [sweetrpg-library-objects]: Remove: archive file [/home/abi/fetcher/tmp/sweetrpg-library-objects-0.0.85.tar.gz]
+[2024-06-02 04:17:46] INFO root fetch - processPackages [sweetrpg-library-objects]: Remove: archive file [/home/abi/fetcher/tmp/sweetrpg-library-objects-0.0.86.tar.gz]
+[2024-06-02 04:17:46] INFO root fetch - main [MainThread]: End processing [sweetrpg-library-objects]: success
+[2024-06-02 04:17:47] INFO root fetch - processPackages [lbt-grasshopper]: Remove: archive file [/home/abi/fetcher/tmp/lbt-grasshopper-1.8.8.tar.gz]
+[2024-06-02 04:17:47] INFO root fetch - processPackages [lbt-grasshopper]: Remove: archive file [/home/abi/fetcher/tmp/lbt-grasshopper-1.8.9.tar.gz]
+[2024-06-02 04:17:47] INFO root fetch - main [MainThread]: End processing [lbt-grasshopper]: success
+[2024-06-02 04:17:47] INFO root fetch - processPackages [ladybug-grasshopper]: Remove: archive file [/home/abi/fetcher/tmp/ladybug-grasshopper-1.9.3.tar.gz]
+[2024-06-02 04:17:47] INFO root fetch - processPackages [ladybug-grasshopper]: Remove: archive file [/home/abi/fetcher/tmp/ladybug-grasshopper-1.9.4.tar.gz]
+[2024-06-02 04:17:47] INFO root fetch - main [MainThread]: End processing [ladybug-grasshopper]: success
+[2024-06-02 04:17:47] INFO root fetch - processPackages [pyproject-pip]: Remove: archive file [/home/abi/fetcher/tmp/pyproject_pip-0.0.1.tar.gz]
+[2024-06-02 04:17:47] INFO root fetch - processPackages [pyproject-pip]: Remove: archive file [/home/abi/fetcher/tmp/pyproject_pip-0.0.2.tar.gz]
+[2024-06-02 04:17:47] INFO root fetch - main [MainThread]: End processing [pyproject-pip]: success
+[2024-06-02 04:17:48] INFO root fetch - processPackages [pyrotgfork]: Remove: archive file [/home/abi/fetcher/tmp/pyrotgfork-2.1.32.3.tar.gz]
+[2024-06-02 04:17:48] INFO root fetch - processPackages [pyrotgfork]: Remove: archive file [/home/abi/fetcher/tmp/pyrotgfork-2.1.32.4.tar.gz]
+[2024-06-02 04:17:48] INFO root fetch - main [MainThread]: End processing [pyrotgfork]: success
+[2024-06-02 04:17:48] INFO root fetch - main [MainThread]: Store serial: [23485668]
