@@ -10226,3 +10226,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-02 15:28:46] INFO root fetch - processPackages [GraphSpy]: Remove: archive file [/home/abi/fetcher/tmp/GraphSpy-1.2.1.tar.gz]
 [2024-06-02 15:28:46] INFO root fetch - main [MainThread]: End processing [GraphSpy]: success
 [2024-06-02 15:28:46] INFO root fetch - main [MainThread]: Store serial: [23489232]
+[2024-06-02 15:30:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23489232]
+[2024-06-02 15:30:54] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-02 15:30:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: idcn
+[2024-06-02 15:30:54] INFO root fetch - processPackages [idcn]: New version: [1.1.0] Old Version: [1.0.1]
+[2024-06-02 15:30:54] INFO root fetch - processPackages [idcn]: Downloading https://files.pythonhosted.org/packages/43/91/635f7ee3da1c5c83a26f2e64c6d02658f43cc7a4863b96a3fabc6f9a78e9/idcn-1.0.1.tar.gz
+[2024-06-02 15:30:55] INFO root fetch - processPackages [idcn]: Downloading https://files.pythonhosted.org/packages/a6/10/d7cfaf8e6172adc33c34ab28dd3e2e055c86b36943c1034ff9329688b18f/idcn-1.1.0.tar.gz
+[2024-06-02 15:30:55] INFO root fetch - processPackages [idcn]: executing diffoscope
+[2024-06-02 15:30:55] INFO root fetch - processPackages [idcn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/idcn-1.0.1.tar.gz tmp/idcn-1.1.0.tar.gz --markdown 20240602/i/idcn/1.0.1-1.1.0/README.md --exclude *.pyd
+[2024-06-02 15:30:59] INFO root fetch - processPackages [idcn]: Remove: archive file [/home/abi/fetcher/tmp/idcn-1.0.1.tar.gz]
+[2024-06-02 15:30:59] INFO root fetch - processPackages [idcn]: Remove: archive file [/home/abi/fetcher/tmp/idcn-1.1.0.tar.gz]
+[2024-06-02 15:30:59] INFO root fetch - main [MainThread]: End processing [idcn]: success
+[2024-06-02 15:30:59] INFO root fetch - main [MainThread]: Store serial: [23489236]
