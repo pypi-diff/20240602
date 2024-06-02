@@ -16743,3 +16743,52 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 21:07:01] INFO root fetch - processPackages [PipBERT]: Remove: archive file [/home/abi/fetcher/tmp/pipbert-6.1.0.tar.gz]
 [2024-06-02 21:07:01] INFO root fetch - main [MainThread]: End processing [PipBERT]: success
 [2024-06-02 21:07:01] INFO root fetch - main [MainThread]: Store serial: [23492257]
+[2024-06-02 21:09:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23492257]
+[2024-06-02 21:09:10] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-06-02 21:09:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: discord-typings
+[2024-06-02 21:09:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: copilothistoryexporter
+[2024-06-02 21:09:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: copilothistoryexporter
+[2024-06-02 21:09:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: seamm-dashboard
+[2024-06-02 21:09:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: checkptr
+[2024-06-02 21:09:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pymodins
+[2024-06-02 21:09:10] INFO root fetch - processPackages [copilothistoryexporter]: New version: [1.0.2.6] Old Version: [1.0.2.5]
+[2024-06-02 21:09:10] INFO root fetch - processPackages [pymodins]: New version: [2.0.5] Old Version: [2.0.3]
+[2024-06-02 21:09:10] WARNING root fetch - processPackages [checkptr]: Skipping, unable to determine old version
+[2024-06-02 21:09:10] INFO root fetch - main [MainThread]: End processing [checkptr] error
+[2024-06-02 21:09:10] INFO root fetch - processPackages [copilothistoryexporter]: New version: [1.0.2.6] Old Version: [1.0.2.5]
+[2024-06-02 21:09:10] INFO root fetch - processPackages [discord-typings]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-06-02 21:09:10] INFO root fetch - processPackages [copilothistoryexporter]: Downloading https://files.pythonhosted.org/packages/c1/f2/32e8b7e821728bbf09f87774f7d2438b7f48dae74437b7f8419a7c6060b3/copilothistoryexporter-1.0.2.5.tar.gz
+[2024-06-02 21:09:10] INFO root fetch - processPackages [pymodins]: Downloading https://files.pythonhosted.org/packages/e0/dd/1a084a45ead73c0abe63f3d7ee490ae3723e34c0f95727d437f608c026f9/pymodins-2.0.3.tar.gz
+[2024-06-02 21:09:10] INFO root fetch - processPackages [seamm-dashboard]: New version: [2024.6.2] Old Version: [2024.5.24]
+[2024-06-02 21:09:10] INFO root fetch - processPackages [copilothistoryexporter]: Downloading https://files.pythonhosted.org/packages/c1/f2/32e8b7e821728bbf09f87774f7d2438b7f48dae74437b7f8419a7c6060b3/copilothistoryexporter-1.0.2.5.tar.gz
+[2024-06-02 21:09:10] INFO root fetch - processPackages [discord-typings]: Downloading https://files.pythonhosted.org/packages/91/57/d6ebfbe97005821bdc18758fb5368c650225e368811471af2f8b1067cd2d/discord_typings-0.8.0.tar.gz
+[2024-06-02 21:09:10] INFO root fetch - processPackages [seamm-dashboard]: Downloading https://files.pythonhosted.org/packages/4f/b6/126bc7aed2de057ffe253d0400528930183880bb1824e6a49a107d40090c/seamm_dashboard-2024.5.24.tar.gz
+[2024-06-02 21:09:10] INFO root fetch - processPackages [copilothistoryexporter]: Downloading https://files.pythonhosted.org/packages/85/80/97ab3cb15f97140054993424a41124205f2aa98f5f74301a39b583bf2510/copilothistoryexporter-1.0.2.6.tar.gz
+[2024-06-02 21:09:10] INFO root fetch - processPackages [copilothistoryexporter]: Downloading https://files.pythonhosted.org/packages/85/80/97ab3cb15f97140054993424a41124205f2aa98f5f74301a39b583bf2510/copilothistoryexporter-1.0.2.6.tar.gz
+[2024-06-02 21:09:10] INFO root fetch - processPackages [pymodins]: Downloading https://files.pythonhosted.org/packages/c5/0e/5250a6f700c4ed7bf2f7530eb5b92fb902e1b7cc4cdd187862ce93863c74/pymodins-2.0.5.tar.gz
+[2024-06-02 21:09:10] INFO root fetch - processPackages [copilothistoryexporter]: executing diffoscope
+[2024-06-02 21:09:10] INFO root fetch - processPackages [copilothistoryexporter]: executing diffoscope
+[2024-06-02 21:09:10] INFO root fetch - processPackages [copilothistoryexporter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/copilothistoryexporter-1.0.2.5.tar.gz tmp/copilothistoryexporter-1.0.2.6.tar.gz --markdown 20240602/c/copilothistoryexporter/1.0.2.5-1.0.2.6/README.md --exclude *.pyd
+[2024-06-02 21:09:10] INFO root fetch - processPackages [copilothistoryexporter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/copilothistoryexporter-1.0.2.5.tar.gz tmp/copilothistoryexporter-1.0.2.6.tar.gz --markdown 20240602/c/copilothistoryexporter/1.0.2.5-1.0.2.6/README.md --exclude *.pyd
+[2024-06-02 21:09:10] INFO root fetch - processPackages [pymodins]: executing diffoscope
+[2024-06-02 21:09:10] INFO root fetch - processPackages [pymodins]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymodins-2.0.3.tar.gz tmp/pymodins-2.0.5.tar.gz --markdown 20240602/p/pymodins/2.0.3-2.0.5/README.md --exclude *.pyd
+[2024-06-02 21:09:11] INFO root fetch - processPackages [discord-typings]: Downloading https://files.pythonhosted.org/packages/4a/a0/862d1e1457fe891a61d83da327f8a8b27334fbc0c4fe1b0edc3b4a47fb8a/discord_typings-0.9.0.tar.gz
+[2024-06-02 21:09:11] INFO root fetch - processPackages [discord-typings]: executing diffoscope
+[2024-06-02 21:09:11] INFO root fetch - processPackages [discord-typings]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/discord_typings-0.8.0.tar.gz tmp/discord_typings-0.9.0.tar.gz --markdown 20240602/d/discord-typings/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-06-02 21:09:11] INFO root fetch - processPackages [seamm-dashboard]: Downloading https://files.pythonhosted.org/packages/54/4c/97046ad73f78f3e0504437c4f14f6ad0066f75c1132f3635f65fe492389a/seamm_dashboard-2024.6.2.tar.gz
+[2024-06-02 21:09:11] INFO root fetch - processPackages [copilothistoryexporter]: Remove: archive file [/home/abi/fetcher/tmp/copilothistoryexporter-1.0.2.5.tar.gz]
+[2024-06-02 21:09:11] INFO root fetch - processPackages [copilothistoryexporter]: Remove: archive file [/home/abi/fetcher/tmp/copilothistoryexporter-1.0.2.6.tar.gz]
+[2024-06-02 21:09:11] INFO root fetch - main [MainThread]: End processing [copilothistoryexporter]: success
+[2024-06-02 21:09:11] INFO root fetch - main [MainThread]: End processing [copilothistoryexporter]: success
+[2024-06-02 21:09:11] INFO root fetch - processPackages [seamm-dashboard]: executing diffoscope
+[2024-06-02 21:09:11] INFO root fetch - processPackages [seamm-dashboard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/seamm_dashboard-2024.5.24.tar.gz tmp/seamm_dashboard-2024.6.2.tar.gz --markdown 20240602/s/seamm-dashboard/2024.5.24-2024.6.2/README.md --exclude *.pyd
+[2024-06-02 21:09:11] INFO root fetch - processPackages [pymodins]: Remove: archive file [/home/abi/fetcher/tmp/pymodins-2.0.3.tar.gz]
+[2024-06-02 21:09:11] INFO root fetch - processPackages [pymodins]: Remove: archive file [/home/abi/fetcher/tmp/pymodins-2.0.5.tar.gz]
+[2024-06-02 21:09:11] INFO root fetch - main [MainThread]: End processing [pymodins]: success
+[2024-06-02 21:09:11] INFO root fetch - processPackages [discord-typings]: Remove: archive file [/home/abi/fetcher/tmp/discord_typings-0.8.0.tar.gz]
+[2024-06-02 21:09:11] INFO root fetch - processPackages [discord-typings]: Remove: archive file [/home/abi/fetcher/tmp/discord_typings-0.9.0.tar.gz]
+[2024-06-02 21:09:11] INFO root fetch - main [MainThread]: End processing [discord-typings]: success
+[2024-06-02 21:09:13] INFO root fetch - processPackages [seamm-dashboard]: Remove: archive file [/home/abi/fetcher/tmp/seamm_dashboard-2024.5.24.tar.gz]
+[2024-06-02 21:09:13] INFO root fetch - processPackages [seamm-dashboard]: Remove: archive file [/home/abi/fetcher/tmp/seamm_dashboard-2024.6.2.tar.gz]
+[2024-06-02 21:09:13] INFO root fetch - main [MainThread]: End processing [seamm-dashboard]: success
+[2024-06-02 21:09:13] INFO root fetch - main [MainThread]: Store serial: [23492275]
