@@ -10703,3 +10703,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-02 16:07:42] INFO root fetch - processPackages [miksiai]: Remove: archive file [/home/abi/fetcher/tmp/miksiai-1.0.9-cp311-cp311-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl.zip]
 [2024-06-02 16:07:42] INFO root fetch - main [MainThread]: End processing [miksiai]: success
 [2024-06-02 16:07:42] INFO root fetch - main [MainThread]: Store serial: [23489448]
+[2024-06-02 16:09:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23489448]
+[2024-06-02 16:09:50] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-02 16:09:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: narwhals
+[2024-06-02 16:09:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyfr
+[2024-06-02 16:09:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: muGrid
+[2024-06-02 16:09:50] INFO root fetch - processPackages [pyfr]: New version: [2.0.2] Old Version: [2.0.1]
+[2024-06-02 16:09:50] INFO root fetch - processPackages [muGrid]: New version: [0.91.1] Old Version: [0.91.0]
+[2024-06-02 16:09:50] INFO root fetch - processPackages [narwhals]: New version: [0.9.0] Old Version: [0.8.9]
+[2024-06-02 16:09:51] INFO root fetch - processPackages [pyfr]: Downloading https://files.pythonhosted.org/packages/c5/cd/8f9e7c8ee23e8d0ae144ffac308062236b6afbe3edcebab772606935e6c2/pyfr-2.0.1.tar.gz
+[2024-06-02 16:09:51] INFO root fetch - processPackages [narwhals]: Downloading https://files.pythonhosted.org/packages/46/f0/986c81bda5e2f1c1e4caf23f199c81fe58077e01a7d513474c90bc191876/narwhals-0.8.9.tar.gz
+[2024-06-02 16:09:51] INFO root fetch - processPackages [muGrid]: Downloading https://files.pythonhosted.org/packages/ca/23/49f446d12d2d06db4b97b2947490cd22760a3f62b6883d8103d59879016a/mugrid-0.91.0.tar.gz
+[2024-06-02 16:09:51] INFO root fetch - processPackages [narwhals]: Downloading https://files.pythonhosted.org/packages/b5/ad/e986b89ae861047ee0cf1e8e3647b16dd750d048b67d4d7406da3a9c5282/narwhals-0.9.0.tar.gz
+[2024-06-02 16:09:51] INFO root fetch - processPackages [pyfr]: Downloading https://files.pythonhosted.org/packages/a6/90/be8c44bab4afdbad0010173d81232b517b378f9329238a831fc89e31613b/pyfr-2.0.2.tar.gz
+[2024-06-02 16:09:51] INFO root fetch - processPackages [muGrid]: Downloading https://files.pythonhosted.org/packages/92/2c/18c6511ff6b8f98789c032b68d4ec3de211ec8c5f8c4af38e2dc174166c3/mugrid-0.91.1.tar.gz
+[2024-06-02 16:09:51] INFO root fetch - processPackages [narwhals]: executing diffoscope
+[2024-06-02 16:09:51] INFO root fetch - processPackages [narwhals]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/narwhals-0.8.9.tar.gz tmp/narwhals-0.9.0.tar.gz --markdown 20240602/n/narwhals/0.8.9-0.9.0/README.md --exclude *.pyd
+[2024-06-02 16:09:51] INFO root fetch - processPackages [muGrid]: executing diffoscope
+[2024-06-02 16:09:51] INFO root fetch - processPackages [muGrid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mugrid-0.91.0.tar.gz tmp/mugrid-0.91.1.tar.gz --markdown 20240602/m/muGrid/0.91.0-0.91.1/README.md --exclude *.pyd
+[2024-06-02 16:09:52] INFO root fetch - processPackages [pyfr]: executing diffoscope
+[2024-06-02 16:09:52] INFO root fetch - processPackages [pyfr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyfr-2.0.1.tar.gz tmp/pyfr-2.0.2.tar.gz --markdown 20240602/p/pyfr/2.0.1-2.0.2/README.md --exclude *.pyd
+[2024-06-02 16:09:52] INFO root fetch - processPackages [narwhals]: Remove: archive file [/home/abi/fetcher/tmp/narwhals-0.8.9.tar.gz]
+[2024-06-02 16:09:52] INFO root fetch - processPackages [narwhals]: Remove: archive file [/home/abi/fetcher/tmp/narwhals-0.9.0.tar.gz]
+[2024-06-02 16:09:52] INFO root fetch - main [MainThread]: End processing [narwhals]: success
+[2024-06-02 16:09:52] INFO root fetch - processPackages [muGrid]: Remove: archive file [/home/abi/fetcher/tmp/mugrid-0.91.0.tar.gz]
+[2024-06-02 16:09:52] INFO root fetch - processPackages [muGrid]: Remove: archive file [/home/abi/fetcher/tmp/mugrid-0.91.1.tar.gz]
+[2024-06-02 16:09:52] INFO root fetch - main [MainThread]: End processing [muGrid]: success
+[2024-06-02 16:09:54] INFO root fetch - processPackages [pyfr]: Remove: archive file [/home/abi/fetcher/tmp/pyfr-2.0.1.tar.gz]
+[2024-06-02 16:09:54] INFO root fetch - processPackages [pyfr]: Remove: archive file [/home/abi/fetcher/tmp/pyfr-2.0.2.tar.gz]
+[2024-06-02 16:09:54] INFO root fetch - main [MainThread]: End processing [pyfr]: success
+[2024-06-02 16:09:54] INFO root fetch - main [MainThread]: Store serial: [23489479]
