@@ -13207,3 +13207,54 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 18:12:00] INFO root fetch - processPackages [movoid-debug]: Remove: archive file [/home/abi/fetcher/tmp/movoid_debug-1.2.0.tar.gz]
 [2024-06-02 18:12:00] INFO root fetch - main [MainThread]: End processing [movoid-debug]: success
 [2024-06-02 18:12:00] INFO root fetch - main [MainThread]: Store serial: [23490597]
+[2024-06-02 18:14:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23490597]
+[2024-06-02 18:14:08] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-06-02 18:14:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: trytond-purchase-requisition
+[2024-06-02 18:14:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ffun
+[2024-06-02 18:14:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pypi-cicd
+[2024-06-02 18:14:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: trytond-purchase-requisition
+[2024-06-02 18:14:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: vtacML
+[2024-06-02 18:14:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: spotify-utils
+[2024-06-02 18:14:08] INFO root fetch - processPackages [pypi-cicd]: New version: [0.2] Old Version: [0.1]
+[2024-06-02 18:14:08] INFO root fetch - processPackages [trytond-purchase-requisition]: New version: [7.2.2] Old Version: [7.2.1]
+[2024-06-02 18:14:08] INFO root fetch - processPackages [trytond-purchase-requisition]: New version: [7.2.2] Old Version: [7.2.1]
+[2024-06-02 18:14:09] INFO root fetch - processPackages [pypi-cicd]: Downloading https://files.pythonhosted.org/packages/a6/1a/224e3ea1eaf472e86866edac712ac1bad133e0de0d483be68a84594b1770/pypi_cicd-0.1.tar.gz
+[2024-06-02 18:14:09] INFO root fetch - processPackages [trytond-purchase-requisition]: Downloading https://files.pythonhosted.org/packages/7e/94/2295b3110c8aa10460977c41691eaa37044c465df8ca92db21c136792f7f/trytond_purchase_requisition-7.2.1.tar.gz
+[2024-06-02 18:14:09] INFO root fetch - processPackages [spotify-utils]: New version: [1.0.8] Old Version: [1.0.7]
+[2024-06-02 18:14:09] INFO root fetch - processPackages [trytond-purchase-requisition]: Downloading https://files.pythonhosted.org/packages/7e/94/2295b3110c8aa10460977c41691eaa37044c465df8ca92db21c136792f7f/trytond_purchase_requisition-7.2.1.tar.gz
+[2024-06-02 18:14:09] INFO root fetch - processPackages [ffun]: New version: [1.7.0] Old Version: [1.6.3]
+[2024-06-02 18:14:09] INFO root fetch - processPackages [vtacML]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-06-02 18:14:09] INFO root fetch - processPackages [vtacML]: Downloading https://files.pythonhosted.org/packages/af/31/e6451c82cb5bd62679ed942a8911beae12be24a37a36ccd4da13829871ca/vtacML-0.1.8.tar.gz
+[2024-06-02 18:14:09] INFO root fetch - processPackages [ffun]: Downloading https://files.pythonhosted.org/packages/c8/d8/cd5c596706d212dc42f45f4b2e4105294490541757ac7ca06136a76aa437/ffun-1.6.3.tar.gz
+[2024-06-02 18:14:09] INFO root fetch - processPackages [trytond-purchase-requisition]: Downloading https://files.pythonhosted.org/packages/1a/4f/23e74c480b9050980d58c843b48c78c1804edc647affb792dec25f96e4da/trytond_purchase_requisition-7.2.2.tar.gz
+[2024-06-02 18:14:09] WARNING root fetch - processPackages [vtacML]: Skipping package: exceeds size limit 67197768>=10485760
+[2024-06-02 18:14:09] INFO root fetch - main [MainThread]: End processing [vtacML] error
+[2024-06-02 18:14:09] INFO root fetch - processPackages [spotify-utils]: Downloading https://files.pythonhosted.org/packages/bf/4c/74e0c133d7671c9ab4519964152ae1c5c2babc04a24e0ff82e913c141e90/spotify_utils-1.0.7.tar.gz
+[2024-06-02 18:14:09] INFO root fetch - processPackages [pypi-cicd]: Downloading https://files.pythonhosted.org/packages/f9/71/3ffee084e5d4bf39a729f8ea4f58200fadbfe00f5be0ef0e43ae8083e264/pypi_cicd-0.2.tar.gz
+[2024-06-02 18:14:09] INFO root fetch - processPackages [trytond-purchase-requisition]: Downloading https://files.pythonhosted.org/packages/1a/4f/23e74c480b9050980d58c843b48c78c1804edc647affb792dec25f96e4da/trytond_purchase_requisition-7.2.2.tar.gz
+[2024-06-02 18:14:09] INFO root fetch - processPackages [trytond-purchase-requisition]: executing diffoscope
+[2024-06-02 18:14:09] INFO root fetch - processPackages [trytond-purchase-requisition]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trytond_purchase_requisition-7.2.1.tar.gz tmp/trytond_purchase_requisition-7.2.2.tar.gz --markdown 20240602/t/trytond-purchase-requisition/7.2.1-7.2.2/README.md --exclude *.pyd
+[2024-06-02 18:14:09] INFO root fetch - processPackages [pypi-cicd]: executing diffoscope
+[2024-06-02 18:14:09] INFO root fetch - processPackages [pypi-cicd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypi_cicd-0.1.tar.gz tmp/pypi_cicd-0.2.tar.gz --markdown 20240602/p/pypi-cicd/0.1-0.2/README.md --exclude *.pyd
+[2024-06-02 18:14:09] INFO root fetch - processPackages [trytond-purchase-requisition]: executing diffoscope
+[2024-06-02 18:14:09] INFO root fetch - processPackages [trytond-purchase-requisition]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trytond_purchase_requisition-7.2.1.tar.gz tmp/trytond_purchase_requisition-7.2.2.tar.gz --markdown 20240602/t/trytond-purchase-requisition/7.2.1-7.2.2/README.md --exclude *.pyd
+[2024-06-02 18:14:09] INFO root fetch - processPackages [ffun]: Downloading https://files.pythonhosted.org/packages/1a/9d/5d809b9fba6f52872d58aad107692f750631926d320c1147b9a1e29b2630/ffun-1.7.0.tar.gz
+[2024-06-02 18:14:09] INFO root fetch - processPackages [spotify-utils]: Downloading https://files.pythonhosted.org/packages/bd/10/98bd146e9c1396adb8fafd457538d970e47efc67169f9c5844b17d8f2344/spotify_utils-1.0.8.tar.gz
+[2024-06-02 18:14:09] INFO root fetch - processPackages [ffun]: executing diffoscope
+[2024-06-02 18:14:09] INFO root fetch - processPackages [ffun]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ffun-1.6.3.tar.gz tmp/ffun-1.7.0.tar.gz --markdown 20240602/f/ffun/1.6.3-1.7.0/README.md --exclude *.pyd
+[2024-06-02 18:14:09] INFO root fetch - processPackages [spotify-utils]: executing diffoscope
+[2024-06-02 18:14:09] INFO root fetch - processPackages [spotify-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spotify_utils-1.0.7.tar.gz tmp/spotify_utils-1.0.8.tar.gz --markdown 20240602/s/spotify-utils/1.0.7-1.0.8/README.md --exclude *.pyd
+[2024-06-02 18:14:10] INFO root fetch - processPackages [pypi-cicd]: Remove: archive file [/home/abi/fetcher/tmp/pypi_cicd-0.1.tar.gz]
+[2024-06-02 18:14:10] INFO root fetch - processPackages [pypi-cicd]: Remove: archive file [/home/abi/fetcher/tmp/pypi_cicd-0.2.tar.gz]
+[2024-06-02 18:14:10] INFO root fetch - main [MainThread]: End processing [pypi-cicd]: success
+[2024-06-02 18:14:10] INFO root fetch - processPackages [trytond-purchase-requisition]: Remove: archive file [/home/abi/fetcher/tmp/trytond_purchase_requisition-7.2.1.tar.gz]
+[2024-06-02 18:14:10] INFO root fetch - processPackages [trytond-purchase-requisition]: Remove: archive file [/home/abi/fetcher/tmp/trytond_purchase_requisition-7.2.2.tar.gz]
+[2024-06-02 18:14:10] INFO root fetch - main [MainThread]: End processing [trytond-purchase-requisition]: success
+[2024-06-02 18:14:10] INFO root fetch - main [MainThread]: End processing [trytond-purchase-requisition]: success
+[2024-06-02 18:14:10] INFO root fetch - processPackages [spotify-utils]: Remove: archive file [/home/abi/fetcher/tmp/spotify_utils-1.0.7.tar.gz]
+[2024-06-02 18:14:10] INFO root fetch - processPackages [spotify-utils]: Remove: archive file [/home/abi/fetcher/tmp/spotify_utils-1.0.8.tar.gz]
+[2024-06-02 18:14:10] INFO root fetch - main [MainThread]: End processing [spotify-utils]: success
+[2024-06-02 18:14:10] INFO root fetch - processPackages [ffun]: Remove: archive file [/home/abi/fetcher/tmp/ffun-1.6.3.tar.gz]
+[2024-06-02 18:14:10] INFO root fetch - processPackages [ffun]: Remove: archive file [/home/abi/fetcher/tmp/ffun-1.7.0.tar.gz]
+[2024-06-02 18:14:10] INFO root fetch - main [MainThread]: End processing [ffun]: success
+[2024-06-02 18:14:10] INFO root fetch - main [MainThread]: Store serial: [23490615]
