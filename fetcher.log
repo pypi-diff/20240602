@@ -8876,3 +8876,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-02 13:55:35] INFO root fetch - processPackages [appthreat-vulnerability-db]: Remove: archive file [/home/abi/fetcher/tmp/appthreat_vulnerability_db-6.0.4.tar.gz]
 [2024-06-02 13:55:35] INFO root fetch - main [MainThread]: End processing [appthreat-vulnerability-db]: success
 [2024-06-02 13:55:35] INFO root fetch - main [MainThread]: Store serial: [23488535]
+[2024-06-02 13:57:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23488535]
+[2024-06-02 13:57:43] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-02 13:57:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: python-115
+[2024-06-02 13:57:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: prompeteer
+[2024-06-02 13:57:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: blockchain-data-subnet-shared-libs
+[2024-06-02 13:57:43] INFO root fetch - processPackages [blockchain-data-subnet-shared-libs]: New version: [1.0.0] Old Version: [0.0.9]
+[2024-06-02 13:57:43] INFO root fetch - processPackages [python-115]: New version: [0.0.8.7.7] Old Version: [0.0.8.7.6]
+[2024-06-02 13:57:43] INFO root fetch - processPackages [blockchain-data-subnet-shared-libs]: Downloading https://files.pythonhosted.org/packages/e6/fe/8e91ab4f71388af5d05b0dff76417534c7d00161cddd18ed181332195108/blockchain_data_subnet_shared_libs-0.0.9.tar.gz
+[2024-06-02 13:57:43] INFO root fetch - processPackages [python-115]: Downloading https://files.pythonhosted.org/packages/89/30/b71713d91769b5d6b3802ef740ff3695949347c8bf7d8dbfacbec847f959/python_115-0.0.8.7.6.tar.gz
+[2024-06-02 13:57:43] INFO root fetch - processPackages [prompeteer]: New version: [0.3.5] Old Version: [0.3.4]
+[2024-06-02 13:57:44] INFO root fetch - processPackages [blockchain-data-subnet-shared-libs]: Downloading https://files.pythonhosted.org/packages/03/c9/86bc6e13af1d5f56a5bfb1e36182ee3e6fd4a0caae01abf35f710817c2ff/blockchain_data_subnet_shared_libs-1.0.0.tar.gz
+[2024-06-02 13:57:44] INFO root fetch - processPackages [prompeteer]: Downloading https://files.pythonhosted.org/packages/9f/ed/6a741034b976121854264b8e0d474aa3af86088d7e1a69202236c4acc85f/prompeteer-0.3.4.tar.gz
+[2024-06-02 13:57:44] INFO root fetch - processPackages [blockchain-data-subnet-shared-libs]: executing diffoscope
+[2024-06-02 13:57:44] INFO root fetch - processPackages [blockchain-data-subnet-shared-libs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blockchain_data_subnet_shared_libs-0.0.9.tar.gz tmp/blockchain_data_subnet_shared_libs-1.0.0.tar.gz --markdown 20240602/b/blockchain-data-subnet-shared-libs/0.0.9-1.0.0/README.md --exclude *.pyd
+[2024-06-02 13:57:44] INFO root fetch - processPackages [python-115]: Downloading https://files.pythonhosted.org/packages/46/e9/b39e222676b1274a5af90aecec3bde08c2aa201d400f302d87d311180346/python_115-0.0.8.7.7.tar.gz
+[2024-06-02 13:57:44] INFO root fetch - processPackages [python-115]: executing diffoscope
+[2024-06-02 13:57:44] INFO root fetch - processPackages [python-115]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_115-0.0.8.7.6.tar.gz tmp/python_115-0.0.8.7.7.tar.gz --markdown 20240602/p/python-115/0.0.8.7.6-0.0.8.7.7/README.md --exclude *.pyd
+[2024-06-02 13:57:44] INFO root fetch - processPackages [prompeteer]: Downloading https://files.pythonhosted.org/packages/32/cd/073266660c102a7334d72c53dd0c0dc493a8bff3878a9080cab57b06f091/prompeteer-0.3.5.tar.gz
+[2024-06-02 13:57:44] INFO root fetch - processPackages [prompeteer]: executing diffoscope
+[2024-06-02 13:57:44] INFO root fetch - processPackages [prompeteer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prompeteer-0.3.4.tar.gz tmp/prompeteer-0.3.5.tar.gz --markdown 20240602/p/prompeteer/0.3.4-0.3.5/README.md --exclude *.pyd
+[2024-06-02 13:57:44] INFO root fetch - processPackages [blockchain-data-subnet-shared-libs]: Remove: archive file [/home/abi/fetcher/tmp/blockchain_data_subnet_shared_libs-0.0.9.tar.gz]
+[2024-06-02 13:57:44] INFO root fetch - processPackages [blockchain-data-subnet-shared-libs]: Remove: archive file [/home/abi/fetcher/tmp/blockchain_data_subnet_shared_libs-1.0.0.tar.gz]
+[2024-06-02 13:57:44] INFO root fetch - main [MainThread]: End processing [blockchain-data-subnet-shared-libs]: success
+[2024-06-02 13:57:45] INFO root fetch - processPackages [python-115]: Remove: archive file [/home/abi/fetcher/tmp/python_115-0.0.8.7.6.tar.gz]
+[2024-06-02 13:57:45] INFO root fetch - processPackages [python-115]: Remove: archive file [/home/abi/fetcher/tmp/python_115-0.0.8.7.7.tar.gz]
+[2024-06-02 13:57:45] INFO root fetch - main [MainThread]: End processing [python-115]: success
+[2024-06-02 13:57:45] INFO root fetch - processPackages [prompeteer]: Remove: archive file [/home/abi/fetcher/tmp/prompeteer-0.3.4.tar.gz]
+[2024-06-02 13:57:45] INFO root fetch - processPackages [prompeteer]: Remove: archive file [/home/abi/fetcher/tmp/prompeteer-0.3.5.tar.gz]
+[2024-06-02 13:57:45] INFO root fetch - main [MainThread]: End processing [prompeteer]: success
+[2024-06-02 13:57:45] INFO root fetch - main [MainThread]: Store serial: [23488549]
