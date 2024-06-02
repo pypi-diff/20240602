@@ -17684,3 +17684,33 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 22:12:04] INFO root fetch - processPackages [tccli]: Remove: archive file [/home/abi/fetcher/tmp/tccli-3.0.999.1.tar.gz]
 [2024-06-02 22:12:04] INFO root fetch - main [MainThread]: End processing [tccli]: success
 [2024-06-02 22:12:04] INFO root fetch - main [MainThread]: Store serial: [23492755]
+[2024-06-02 22:14:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23492755]
+[2024-06-02 22:14:13] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-02 22:14:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: foo-et-al-parameterization
+[2024-06-02 22:14:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dpt
+[2024-06-02 22:14:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lupin-grognard
+[2024-06-02 22:14:13] INFO root fetch - processPackages [foo-et-al-parameterization]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-06-02 22:14:13] INFO root fetch - processPackages [dpt]: New version: [1.0.6] Old Version: [1.0.5]
+[2024-06-02 22:14:14] INFO root fetch - processPackages [lupin-grognard]: New version: [2.1.0.dev1] Old Version: [2.1.0.dev0]
+[2024-06-02 22:14:14] INFO root fetch - processPackages [dpt]: Downloading https://files.pythonhosted.org/packages/17/0c/b731b14ab4310b3c71f7c4966eb3c997d51ddc64817d4fcbb7b65473d351/dpt-1.0.5.tar.gz
+[2024-06-02 22:14:14] INFO root fetch - processPackages [foo-et-al-parameterization]: Downloading https://files.pythonhosted.org/packages/fb/a6/73ed87e98ba9ea86c616fe2c41c8e9ed78f14469c56ce4ae540b0fdff7c9/foo_et_al_parameterization-0.0.6.tar.gz
+[2024-06-02 22:14:14] INFO root fetch - processPackages [lupin-grognard]: Downloading https://files.pythonhosted.org/packages/11/e5/e0df1db174ee225dc5439845bb1e22d64a19d2a0c182a82eb8093fdd061a/lupin_grognard-2.1.0.dev0.tar.gz
+[2024-06-02 22:14:14] INFO root fetch - processPackages [foo-et-al-parameterization]: Downloading https://files.pythonhosted.org/packages/ca/8c/4b50c7866ca16cb74ed70fcf69820caee76d3ee9ed1014c185e2e32ef2e2/foo_et_al_parameterization-0.0.7.tar.gz
+[2024-06-02 22:14:14] INFO root fetch - processPackages [dpt]: Downloading https://files.pythonhosted.org/packages/96/17/d131861443dbdd5c1322430b811f34b0554266df586675b24213a243500c/dpt-1.0.6.tar.gz
+[2024-06-02 22:14:14] INFO root fetch - processPackages [foo-et-al-parameterization]: executing diffoscope
+[2024-06-02 22:14:14] INFO root fetch - processPackages [foo-et-al-parameterization]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/foo_et_al_parameterization-0.0.6.tar.gz tmp/foo_et_al_parameterization-0.0.7.tar.gz --markdown 20240602/f/foo-et-al-parameterization/0.0.6-0.0.7/README.md --exclude *.pyd
+[2024-06-02 22:14:14] INFO root fetch - processPackages [dpt]: executing diffoscope
+[2024-06-02 22:14:14] INFO root fetch - processPackages [dpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dpt-1.0.5.tar.gz tmp/dpt-1.0.6.tar.gz --markdown 20240602/d/dpt/1.0.5-1.0.6/README.md --exclude *.pyd
+[2024-06-02 22:14:14] INFO root fetch - processPackages [lupin-grognard]: Downloading https://files.pythonhosted.org/packages/0e/80/58ed493852d20b09166af535ecf284a4739c53cab7c1dbacc1fe4a0e8eb2/lupin_grognard-2.1.0.dev1-py3-none-any.whl
+[2024-06-02 22:14:14] INFO root fetch - processPackages [lupin-grognard]: executing diffoscope
+[2024-06-02 22:14:14] INFO root fetch - processPackages [lupin-grognard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lupin_grognard-2.1.0.dev0.tar.gz tmp/lupin_grognard-2.1.0.dev1-py3-none-any.whl.zip --markdown 20240602/l/lupin-grognard/2.1.0.dev0-2.1.0.dev1/README.md --exclude *.pyd
+[2024-06-02 22:14:15] INFO root fetch - processPackages [dpt]: Remove: archive file [/home/abi/fetcher/tmp/dpt-1.0.5.tar.gz]
+[2024-06-02 22:14:15] INFO root fetch - processPackages [dpt]: Remove: archive file [/home/abi/fetcher/tmp/dpt-1.0.6.tar.gz]
+[2024-06-02 22:14:15] INFO root fetch - main [MainThread]: End processing [dpt]: success
+[2024-06-02 22:14:15] INFO root fetch - processPackages [foo-et-al-parameterization]: Remove: archive file [/home/abi/fetcher/tmp/foo_et_al_parameterization-0.0.6.tar.gz]
+[2024-06-02 22:14:15] INFO root fetch - processPackages [foo-et-al-parameterization]: Remove: archive file [/home/abi/fetcher/tmp/foo_et_al_parameterization-0.0.7.tar.gz]
+[2024-06-02 22:14:15] INFO root fetch - main [MainThread]: End processing [foo-et-al-parameterization]: success
+[2024-06-02 22:14:15] INFO root fetch - processPackages [lupin-grognard]: Remove: archive file [/home/abi/fetcher/tmp/lupin_grognard-2.1.0.dev0.tar.gz]
+[2024-06-02 22:14:15] INFO root fetch - processPackages [lupin-grognard]: Remove: archive file [/home/abi/fetcher/tmp/lupin_grognard-2.1.0.dev1-py3-none-any.whl.zip]
+[2024-06-02 22:14:15] INFO root fetch - main [MainThread]: End processing [lupin-grognard]: success
+[2024-06-02 22:14:15] INFO root fetch - main [MainThread]: Store serial: [23492767]
