@@ -2136,3 +2136,24 @@
 [2024-06-02 02:37:56] INFO root fetch - processPackages [pyro-ppl]: Remove: archive file [/home/abi/fetcher/tmp/pyro-ppl-1.9.0.tar.gz]
 [2024-06-02 02:37:56] INFO root fetch - main [MainThread]: End processing [pyro-ppl]: success
 [2024-06-02 02:37:56] INFO root fetch - main [MainThread]: Store serial: [23485011]
+[2024-06-02 02:40:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23485011]
+[2024-06-02 02:40:05] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-02 02:40:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyTooling
+[2024-06-02 02:40:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: crewcal
+[2024-06-02 02:40:05] INFO root fetch - processPackages [crewcal]: New version: [0.8.2] Old Version: [0.8.1]
+[2024-06-02 02:40:05] INFO root fetch - processPackages [pyTooling]: New version: [6.3.0] Old Version: [6.2.0]
+[2024-06-02 02:40:05] INFO root fetch - processPackages [pyTooling]: Downloading https://files.pythonhosted.org/packages/d5/72/55beb39638a74e902853a3250450dcd74d0b5c60f00e641f5d0db4b693b0/pytooling-6.2.0.tar.gz
+[2024-06-02 02:40:05] INFO root fetch - processPackages [crewcal]: Downloading https://files.pythonhosted.org/packages/bb/9e/72d5a42020e7a10c816afcca4436b1206e5e6a045e24d167bdb1a0e386b2/crewcal-0.8.1.tar.gz
+[2024-06-02 02:40:06] INFO root fetch - processPackages [pyTooling]: Downloading https://files.pythonhosted.org/packages/c2/39/10dda074f2c53589643e2b9d5c215d0b7b90f3f30a810ff546065d0bc52b/pytooling-6.3.0.tar.gz
+[2024-06-02 02:40:06] INFO root fetch - processPackages [crewcal]: Downloading https://files.pythonhosted.org/packages/b6/9c/cbc71035cde62587b45bf21b7d058f58b961409f1a409bddfcb51371f1f3/crewcal-0.8.2.tar.gz
+[2024-06-02 02:40:06] INFO root fetch - processPackages [pyTooling]: executing diffoscope
+[2024-06-02 02:40:06] INFO root fetch - processPackages [pyTooling]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytooling-6.2.0.tar.gz tmp/pytooling-6.3.0.tar.gz --markdown 20240602/p/pyTooling/6.2.0-6.3.0/README.md --exclude *.pyd
+[2024-06-02 02:40:06] INFO root fetch - processPackages [crewcal]: executing diffoscope
+[2024-06-02 02:40:06] INFO root fetch - processPackages [crewcal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crewcal-0.8.1.tar.gz tmp/crewcal-0.8.2.tar.gz --markdown 20240602/c/crewcal/0.8.1-0.8.2/README.md --exclude *.pyd
+[2024-06-02 02:40:06] INFO root fetch - processPackages [pyTooling]: Remove: archive file [/home/abi/fetcher/tmp/pytooling-6.2.0.tar.gz]
+[2024-06-02 02:40:06] INFO root fetch - processPackages [pyTooling]: Remove: archive file [/home/abi/fetcher/tmp/pytooling-6.3.0.tar.gz]
+[2024-06-02 02:40:06] INFO root fetch - main [MainThread]: End processing [pyTooling]: success
+[2024-06-02 02:40:06] INFO root fetch - processPackages [crewcal]: Remove: archive file [/home/abi/fetcher/tmp/crewcal-0.8.1.tar.gz]
+[2024-06-02 02:40:06] INFO root fetch - processPackages [crewcal]: Remove: archive file [/home/abi/fetcher/tmp/crewcal-0.8.2.tar.gz]
+[2024-06-02 02:40:06] INFO root fetch - main [MainThread]: End processing [crewcal]: success
+[2024-06-02 02:40:06] INFO root fetch - main [MainThread]: Store serial: [23485021]
