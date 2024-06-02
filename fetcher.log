@@ -10003,3 +10003,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-02 15:09:14] INFO root fetch - processPackages [efax]: Remove: archive file [/home/abi/fetcher/tmp/efax-1.9.1.tar.gz]
 [2024-06-02 15:09:14] INFO root fetch - main [MainThread]: End processing [efax]: success
 [2024-06-02 15:09:14] INFO root fetch - main [MainThread]: Store serial: [23489150]
+[2024-06-02 15:11:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23489150]
+[2024-06-02 15:11:22] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-02 15:11:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: baidu-serp-api
+[2024-06-02 15:11:22] INFO root fetch - processPackages [baidu-serp-api]: New version: [0.8] Old Version: [0.7]
+[2024-06-02 15:11:23] INFO root fetch - processPackages [baidu-serp-api]: Downloading https://files.pythonhosted.org/packages/61/b0/d7036e37b4be5d4e0f4bca56d69173c865bead1420b80ef6aa10eddc613c/baidu_serp_api-0.7.tar.gz
+[2024-06-02 15:11:23] INFO root fetch - processPackages [baidu-serp-api]: Downloading https://files.pythonhosted.org/packages/1b/1d/98e0c9aed520986b6392b52f71d0880b95d40568af6eeda8eb405e920db4/baidu_serp_api-0.8.tar.gz
+[2024-06-02 15:11:23] INFO root fetch - processPackages [baidu-serp-api]: executing diffoscope
+[2024-06-02 15:11:23] INFO root fetch - processPackages [baidu-serp-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/baidu_serp_api-0.7.tar.gz tmp/baidu_serp_api-0.8.tar.gz --markdown 20240602/b/baidu-serp-api/0.7-0.8/README.md --exclude *.pyd
+[2024-06-02 15:11:24] INFO root fetch - processPackages [baidu-serp-api]: Remove: archive file [/home/abi/fetcher/tmp/baidu_serp_api-0.7.tar.gz]
+[2024-06-02 15:11:24] INFO root fetch - processPackages [baidu-serp-api]: Remove: archive file [/home/abi/fetcher/tmp/baidu_serp_api-0.8.tar.gz]
+[2024-06-02 15:11:24] INFO root fetch - main [MainThread]: End processing [baidu-serp-api]: success
+[2024-06-02 15:11:24] INFO root fetch - main [MainThread]: Store serial: [23489154]
