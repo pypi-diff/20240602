@@ -12574,3 +12574,36 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 17:47:30] INFO root fetch - processPackages [ngptbot]: Remove: archive file [/home/abi/fetcher/tmp/ngptbot-0.3.5.tar.gz]
 [2024-06-02 17:47:30] INFO root fetch - main [MainThread]: End processing [ngptbot]: success
 [2024-06-02 17:47:30] INFO root fetch - main [MainThread]: Store serial: [23490312]
+[2024-06-02 17:49:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23490312]
+[2024-06-02 17:49:39] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-02 17:49:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: spaceone-api
+[2024-06-02 17:49:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pdlogger
+[2024-06-02 17:49:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: telegraph-scraper
+[2024-06-02 17:49:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: qteasy
+[2024-06-02 17:49:39] INFO root fetch - processPackages [qteasy]: New version: [1.2.7] Old Version: [1.2.6]
+[2024-06-02 17:49:39] INFO root fetch - processPackages [spaceone-api]: New version: [2.0.dev89] Old Version: [2.0.dev78]
+[2024-06-02 17:49:39] WARNING root fetch - processPackages [pdlogger]: Skipping, unable to determine old version
+[2024-06-02 17:49:39] INFO root fetch - main [MainThread]: End processing [pdlogger] error
+[2024-06-02 17:49:39] INFO root fetch - processPackages [telegraph-scraper]: New version: [1.0.6] Old Version: [1.0.4]
+[2024-06-02 17:49:39] INFO root fetch - processPackages [spaceone-api]: Downloading https://files.pythonhosted.org/packages/63/38/896ca815cd9f0d4be5040377b88a5b629fee8eedad29b468c7a50e063060/spaceone-api-2.0.dev78.tar.gz
+[2024-06-02 17:49:39] INFO root fetch - processPackages [qteasy]: Downloading https://files.pythonhosted.org/packages/6a/dc/61472d34e27f3acf09c39b57d4eab894e28eb8bfbabb963a664bb9b668fe/qteasy-1.2.6.tar.gz
+[2024-06-02 17:49:39] INFO root fetch - processPackages [telegraph-scraper]: Downloading https://files.pythonhosted.org/packages/3d/ed/f1c4145a2f9a99cc5c6e93e06434723cd656cc64df5bca6a78beaf1df2bd/telegraph-scraper-1.0.4.tar.gz
+[2024-06-02 17:49:39] INFO root fetch - processPackages [spaceone-api]: Downloading https://files.pythonhosted.org/packages/c0/ea/4a6c8347250e808ffcceef19de666ffee1c045761343985127f39a05bc13/spaceone-api-2.0.dev89.tar.gz
+[2024-06-02 17:49:39] INFO root fetch - processPackages [qteasy]: Downloading https://files.pythonhosted.org/packages/55/97/2ae1a03b2751778b7f0b1c7f32517aa491f4453110ffb6a197950b7fa991/qteasy-1.2.7.tar.gz
+[2024-06-02 17:49:40] INFO root fetch - processPackages [spaceone-api]: executing diffoscope
+[2024-06-02 17:49:40] INFO root fetch - processPackages [spaceone-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spaceone-api-2.0.dev78.tar.gz tmp/spaceone-api-2.0.dev89.tar.gz --markdown 20240602/s/spaceone-api/2.0.dev78-2.0.dev89/README.md --exclude *.pyd
+[2024-06-02 17:49:40] INFO root fetch - processPackages [telegraph-scraper]: Downloading https://files.pythonhosted.org/packages/01/e1/b04a414ebe2ab2141b20adce5c008e2572f33c1a52eb5e535093ca6dfcda/telegraph_scraper-1.0.6.tar.gz
+[2024-06-02 17:49:40] INFO root fetch - processPackages [qteasy]: executing diffoscope
+[2024-06-02 17:49:40] INFO root fetch - processPackages [qteasy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qteasy-1.2.6.tar.gz tmp/qteasy-1.2.7.tar.gz --markdown 20240602/q/qteasy/1.2.6-1.2.7/README.md --exclude *.pyd
+[2024-06-02 17:49:40] INFO root fetch - processPackages [telegraph-scraper]: executing diffoscope
+[2024-06-02 17:49:40] INFO root fetch - processPackages [telegraph-scraper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/telegraph-scraper-1.0.4.tar.gz tmp/telegraph_scraper-1.0.6.tar.gz --markdown 20240602/t/telegraph-scraper/1.0.4-1.0.6/README.md --exclude *.pyd
+[2024-06-02 17:49:40] INFO root fetch - processPackages [telegraph-scraper]: Remove: archive file [/home/abi/fetcher/tmp/telegraph-scraper-1.0.4.tar.gz]
+[2024-06-02 17:49:40] INFO root fetch - processPackages [telegraph-scraper]: Remove: archive file [/home/abi/fetcher/tmp/telegraph_scraper-1.0.6.tar.gz]
+[2024-06-02 17:49:40] INFO root fetch - main [MainThread]: End processing [telegraph-scraper]: success
+[2024-06-02 17:49:41] INFO root fetch - processPackages [qteasy]: Remove: archive file [/home/abi/fetcher/tmp/qteasy-1.2.6.tar.gz]
+[2024-06-02 17:49:41] INFO root fetch - processPackages [qteasy]: Remove: archive file [/home/abi/fetcher/tmp/qteasy-1.2.7.tar.gz]
+[2024-06-02 17:49:41] INFO root fetch - main [MainThread]: End processing [qteasy]: success
+[2024-06-02 17:49:41] INFO root fetch - processPackages [spaceone-api]: Remove: archive file [/home/abi/fetcher/tmp/spaceone-api-2.0.dev78.tar.gz]
+[2024-06-02 17:49:41] INFO root fetch - processPackages [spaceone-api]: Remove: archive file [/home/abi/fetcher/tmp/spaceone-api-2.0.dev89.tar.gz]
+[2024-06-02 17:49:41] INFO root fetch - main [MainThread]: End processing [spaceone-api]: success
+[2024-06-02 17:49:41] INFO root fetch - main [MainThread]: Store serial: [23490326]
