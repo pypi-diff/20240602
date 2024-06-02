@@ -3766,3 +3766,15 @@
 [2024-06-02 06:16:18] WARNING root fetch - processPackages [DigiKala]: Skipping, unable to determine old version
 [2024-06-02 06:16:18] INFO root fetch - main [MainThread]: End processing [DigiKala] error
 [2024-06-02 06:16:18] INFO root fetch - main [MainThread]: Store serial: [23486019]
+[2024-06-02 06:18:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23486019]
+[2024-06-02 06:18:27] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-02 06:18:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gridengine-framework
+[2024-06-02 06:18:27] INFO root fetch - processPackages [gridengine-framework]: New version: [0.8.6] Old Version: [0.8.5]
+[2024-06-02 06:18:27] INFO root fetch - processPackages [gridengine-framework]: Downloading https://files.pythonhosted.org/packages/2d/ee/3a616259401ed62935d0a61ac2e35ccdaab0aa37d65f24998f3d3d99bbf0/gridengine_framework-0.8.5.tar.gz
+[2024-06-02 06:18:27] INFO root fetch - processPackages [gridengine-framework]: Downloading https://files.pythonhosted.org/packages/7a/22/cb2733a692174a9ee428c045ebeec3eb508abd858d315dbd2825ada06423/gridengine_framework-0.8.6.tar.gz
+[2024-06-02 06:18:28] INFO root fetch - processPackages [gridengine-framework]: executing diffoscope
+[2024-06-02 06:18:28] INFO root fetch - processPackages [gridengine-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gridengine_framework-0.8.5.tar.gz tmp/gridengine_framework-0.8.6.tar.gz --markdown 20240602/g/gridengine-framework/0.8.5-0.8.6/README.md --exclude *.pyd
+[2024-06-02 06:18:28] INFO root fetch - processPackages [gridengine-framework]: Remove: archive file [/home/abi/fetcher/tmp/gridengine_framework-0.8.5.tar.gz]
+[2024-06-02 06:18:28] INFO root fetch - processPackages [gridengine-framework]: Remove: archive file [/home/abi/fetcher/tmp/gridengine_framework-0.8.6.tar.gz]
+[2024-06-02 06:18:28] INFO root fetch - main [MainThread]: End processing [gridengine-framework]: success
+[2024-06-02 06:18:28] INFO root fetch - main [MainThread]: Store serial: [23486021]
