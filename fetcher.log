@@ -4037,3 +4037,42 @@
 [2024-06-02 06:44:19] INFO root fetch - processPackages [openctp-ctp]: Remove: archive file [/home/abi/fetcher/tmp/openctp_ctp-6.7.2.6-cp39-cp39-win_amd64.whl.zip]
 [2024-06-02 06:44:19] INFO root fetch - main [MainThread]: End processing [openctp-ctp]: success
 [2024-06-02 06:44:19] INFO root fetch - main [MainThread]: Store serial: [23486224]
+[2024-06-02 06:46:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23486224]
+[2024-06-02 06:46:27] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-02 06:46:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: shuttleai
+[2024-06-02 06:46:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: contact-location-local
+[2024-06-02 06:46:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: schwab-api-wrapper
+[2024-06-02 06:46:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: openctp-ctp
+[2024-06-02 06:46:27] INFO root fetch - processPackages [schwab-api-wrapper]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-06-02 06:46:27] INFO root fetch - processPackages [openctp-ctp]: New version: [6.7.2.6] Old Version: [6.7.2.5]
+[2024-06-02 06:46:27] INFO root fetch - processPackages [shuttleai]: New version: [4.0.2] Old Version: [4.0.1]
+[2024-06-02 06:46:27] INFO root fetch - processPackages [schwab-api-wrapper]: Downloading https://files.pythonhosted.org/packages/77/3f/87ff6511c5fc6ac04e62516cc5eaf68f7e24f0b037c202dee242516ddd2a/schwab_api_wrapper-0.1.2.tar.gz
+[2024-06-02 06:46:27] INFO root fetch - processPackages [shuttleai]: Downloading https://files.pythonhosted.org/packages/8e/69/5a9bba060bc9e76dd846c48a370e648c7b742a7d3e42dbbd4937a205508b/shuttleai-4.0.1.tar.gz
+[2024-06-02 06:46:27] INFO root fetch - processPackages [openctp-ctp]: Downloading https://files.pythonhosted.org/packages/b8/5b/55216866b439f1def4957d8af137cb241904d679c85834403f05136a73c9/openctp_ctp-6.7.2.5-cp39-cp39-win_amd64.whl
+[2024-06-02 06:46:27] INFO root fetch - processPackages [contact-location-local]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-06-02 06:46:28] INFO root fetch - processPackages [schwab-api-wrapper]: Downloading https://files.pythonhosted.org/packages/13/1f/112ab0c8cefe877c7fc268715b9d5e77ab3208d90d33c1e731a2325a52bd/schwab_api_wrapper-0.1.3.tar.gz
+[2024-06-02 06:46:28] INFO root fetch - processPackages [contact-location-local]: Downloading https://files.pythonhosted.org/packages/2f/0c/a80370d5a9bb7d4535cdfd68c9e49af2fc39ef7974e7a123bd9fcc9ad854/contact-location-local-0.0.8.tar.gz
+[2024-06-02 06:46:28] INFO root fetch - processPackages [schwab-api-wrapper]: executing diffoscope
+[2024-06-02 06:46:28] INFO root fetch - processPackages [schwab-api-wrapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/schwab_api_wrapper-0.1.2.tar.gz tmp/schwab_api_wrapper-0.1.3.tar.gz --markdown 20240602/s/schwab-api-wrapper/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-06-02 06:46:28] INFO root fetch - processPackages [shuttleai]: Downloading https://files.pythonhosted.org/packages/3f/95/1b7eb3dea70c9fe8e0d1e4f7ad1060b27f056901427e90efd0b2404bf069/shuttleai-4.0.2.tar.gz
+[2024-06-02 06:46:28] INFO root fetch - processPackages [shuttleai]: executing diffoscope
+[2024-06-02 06:46:28] INFO root fetch - processPackages [shuttleai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shuttleai-4.0.1.tar.gz tmp/shuttleai-4.0.2.tar.gz --markdown 20240602/s/shuttleai/4.0.1-4.0.2/README.md --exclude *.pyd
+[2024-06-02 06:46:28] INFO root fetch - processPackages [contact-location-local]: Downloading https://files.pythonhosted.org/packages/17/5e/49b98779429d62238b93acafaaf4d268506159b2d1d0246a13b4e42b474d/contact-location-local-0.0.9.tar.gz
+[2024-06-02 06:46:28] INFO root fetch - processPackages [openctp-ctp]: Downloading https://files.pythonhosted.org/packages/7a/f5/56a4437572c797bdb3c05323ab79671b27a5bf2ba350efc7b2a258abc4d5/openctp_ctp-6.7.2.6-cp39-cp39-win_amd64.whl
+[2024-06-02 06:46:28] INFO root fetch - processPackages [contact-location-local]: executing diffoscope
+[2024-06-02 06:46:28] INFO root fetch - processPackages [contact-location-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/contact-location-local-0.0.8.tar.gz tmp/contact-location-local-0.0.9.tar.gz --markdown 20240602/c/contact-location-local/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-06-02 06:46:28] INFO root fetch - processPackages [schwab-api-wrapper]: Remove: archive file [/home/abi/fetcher/tmp/schwab_api_wrapper-0.1.2.tar.gz]
+[2024-06-02 06:46:28] INFO root fetch - processPackages [schwab-api-wrapper]: Remove: archive file [/home/abi/fetcher/tmp/schwab_api_wrapper-0.1.3.tar.gz]
+[2024-06-02 06:46:28] INFO root fetch - main [MainThread]: End processing [schwab-api-wrapper]: success
+[2024-06-02 06:46:28] INFO root fetch - processPackages [shuttleai]: Remove: archive file [/home/abi/fetcher/tmp/shuttleai-4.0.1.tar.gz]
+[2024-06-02 06:46:28] INFO root fetch - processPackages [shuttleai]: Remove: archive file [/home/abi/fetcher/tmp/shuttleai-4.0.2.tar.gz]
+[2024-06-02 06:46:28] INFO root fetch - main [MainThread]: End processing [shuttleai]: success
+[2024-06-02 06:46:28] INFO root fetch - processPackages [openctp-ctp]: executing diffoscope
+[2024-06-02 06:46:28] INFO root fetch - processPackages [openctp-ctp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openctp_ctp-6.7.2.5-cp39-cp39-win_amd64.whl.zip tmp/openctp_ctp-6.7.2.6-cp39-cp39-win_amd64.whl.zip --markdown 20240602/o/openctp-ctp/6.7.2.5-6.7.2.6/README.md --exclude *.pyd
+[2024-06-02 06:46:28] INFO root fetch - processPackages [contact-location-local]: Remove: archive file [/home/abi/fetcher/tmp/contact-location-local-0.0.8.tar.gz]
+[2024-06-02 06:46:28] INFO root fetch - processPackages [contact-location-local]: Remove: archive file [/home/abi/fetcher/tmp/contact-location-local-0.0.9.tar.gz]
+[2024-06-02 06:46:28] INFO root fetch - main [MainThread]: End processing [contact-location-local]: success
+[2024-06-02 06:46:29] INFO root fetch - processPackages [openctp-ctp]: Remove: archive file [/home/abi/fetcher/tmp/openctp_ctp-6.7.2.5-cp39-cp39-win_amd64.whl.zip]
+[2024-06-02 06:46:29] INFO root fetch - processPackages [openctp-ctp]: Remove: archive file [/home/abi/fetcher/tmp/openctp_ctp-6.7.2.6-cp39-cp39-win_amd64.whl.zip]
+[2024-06-02 06:46:29] INFO root fetch - main [MainThread]: End processing [openctp-ctp]: success
+[2024-06-02 06:46:29] INFO root fetch - main [MainThread]: Store serial: [23486251]
