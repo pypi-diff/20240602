@@ -11091,3 +11091,17 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-02 16:29:29] INFO root fetch - processPackages [dbt-command-center]: Remove: archive file [/home/abi/fetcher/tmp/dbt_command_center-0.1.9.tar.gz]
 [2024-06-02 16:29:29] INFO root fetch - main [MainThread]: End processing [dbt-command-center]: success
 [2024-06-02 16:29:29] INFO root fetch - main [MainThread]: Store serial: [23489663]
+[2024-06-02 16:31:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23489663]
+[2024-06-02 16:31:37] INFO root fetch - main [MainThread]: No changed packages found
+[2024-06-02 16:33:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23489663]
+[2024-06-02 16:33:43] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-02 16:33:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: anydi
+[2024-06-02 16:33:43] INFO root fetch - processPackages [anydi]: New version: [0.27.0a2] Old Version: [0.27.0a1]
+[2024-06-02 16:33:43] INFO root fetch - processPackages [anydi]: Downloading https://files.pythonhosted.org/packages/67/67/bb63a55ef565b52866ebd9df3d9635451f849e5959571e3a896fe0df5937/anydi-0.27.0a1.tar.gz
+[2024-06-02 16:33:43] INFO root fetch - processPackages [anydi]: Downloading https://files.pythonhosted.org/packages/0b/86/6904c0596b25545ac04cfbdd1de7289c75cbc6c9a0af00f96e12bc6132b9/anydi-0.27.0a2.tar.gz
+[2024-06-02 16:33:43] INFO root fetch - processPackages [anydi]: executing diffoscope
+[2024-06-02 16:33:43] INFO root fetch - processPackages [anydi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anydi-0.27.0a1.tar.gz tmp/anydi-0.27.0a2.tar.gz --markdown 20240602/a/anydi/0.27.0a1-0.27.0a2/README.md --exclude *.pyd
+[2024-06-02 16:33:44] INFO root fetch - processPackages [anydi]: Remove: archive file [/home/abi/fetcher/tmp/anydi-0.27.0a1.tar.gz]
+[2024-06-02 16:33:44] INFO root fetch - processPackages [anydi]: Remove: archive file [/home/abi/fetcher/tmp/anydi-0.27.0a2.tar.gz]
+[2024-06-02 16:33:44] INFO root fetch - main [MainThread]: End processing [anydi]: success
+[2024-06-02 16:33:44] INFO root fetch - main [MainThread]: Store serial: [23489667]
