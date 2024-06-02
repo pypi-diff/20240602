@@ -7632,3 +7632,24 @@
 [2024-06-02 12:34:04] INFO root fetch - processPackages [czsc]: Remove: archive file [/home/abi/fetcher/tmp/czsc-0.9.9.tar.gz]
 [2024-06-02 12:34:04] INFO root fetch - main [MainThread]: End processing [czsc]: success
 [2024-06-02 12:34:04] INFO root fetch - main [MainThread]: Store serial: [23488130]
+[2024-06-02 12:36:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23488130]
+[2024-06-02 12:36:12] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-02 12:36:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-codenerix
+[2024-06-02 12:36:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: robusta-cli
+[2024-06-02 12:36:13] INFO root fetch - processPackages [robusta-cli]: New version: [1.0a0] Old Version: [0.9.9]
+[2024-06-02 12:36:13] INFO root fetch - processPackages [django-codenerix]: New version: [4.0.9] Old Version: [4.0.86]
+[2024-06-02 12:36:13] INFO root fetch - processPackages [robusta-cli]: Downloading https://files.pythonhosted.org/packages/9f/ff/a70074935ded21551e9900241be83e06dcddd697498c8fa3eeab30d0105c/robusta-cli-0.9.9.tar.gz
+[2024-06-02 12:36:13] INFO root fetch - processPackages [django-codenerix]: Downloading https://files.pythonhosted.org/packages/b7/ea/c3f3a177b206c328aef405cbbd92e69d121d232d032e65add5072696c72f/django-codenerix-4.0.86.tar.gz
+[2024-06-02 12:36:13] INFO root fetch - processPackages [robusta-cli]: Downloading https://files.pythonhosted.org/packages/b3/a0/5edc74f691805bac1629b30fc4b6698a6f66a4099635a05d10c9d839a1de/robusta_cli-1.0a0.tar.gz
+[2024-06-02 12:36:13] INFO root fetch - processPackages [robusta-cli]: executing diffoscope
+[2024-06-02 12:36:13] INFO root fetch - processPackages [robusta-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/robusta-cli-0.9.9.tar.gz tmp/robusta_cli-1.0a0.tar.gz --markdown 20240602/r/robusta-cli/0.9.9-1.0a0/README.md --exclude *.pyd
+[2024-06-02 12:36:13] INFO root fetch - processPackages [django-codenerix]: Downloading https://files.pythonhosted.org/packages/fa/74/5c81cb6c9cd40266d8845b61025400c9db3344b5ed8063c6b29f18d4574e/django-codenerix-4.0.9.tar.gz
+[2024-06-02 12:36:14] INFO root fetch - processPackages [django-codenerix]: executing diffoscope
+[2024-06-02 12:36:14] INFO root fetch - processPackages [django-codenerix]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-codenerix-4.0.86.tar.gz tmp/django-codenerix-4.0.9.tar.gz --markdown 20240602/d/django-codenerix/4.0.86-4.0.9/README.md --exclude *.pyd
+[2024-06-02 12:36:14] INFO root fetch - processPackages [robusta-cli]: Remove: archive file [/home/abi/fetcher/tmp/robusta-cli-0.9.9.tar.gz]
+[2024-06-02 12:36:14] INFO root fetch - processPackages [robusta-cli]: Remove: archive file [/home/abi/fetcher/tmp/robusta_cli-1.0a0.tar.gz]
+[2024-06-02 12:36:14] INFO root fetch - main [MainThread]: End processing [robusta-cli]: success
+[2024-06-02 12:36:54] INFO root fetch - processPackages [django-codenerix]: Remove: archive file [/home/abi/fetcher/tmp/django-codenerix-4.0.86.tar.gz]
+[2024-06-02 12:36:54] INFO root fetch - processPackages [django-codenerix]: Remove: archive file [/home/abi/fetcher/tmp/django-codenerix-4.0.9.tar.gz]
+[2024-06-02 12:36:54] INFO root fetch - main [MainThread]: End processing [django-codenerix]: success
+[2024-06-02 12:36:54] INFO root fetch - main [MainThread]: Store serial: [23488136]
