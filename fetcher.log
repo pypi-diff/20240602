@@ -7347,3 +7347,33 @@
 [2024-06-02 12:09:03] INFO root fetch - processPackages [pyroblack]: Remove: archive file [/home/abi/fetcher/tmp/pyroblack-2.3.71.tar.gz]
 [2024-06-02 12:09:03] INFO root fetch - main [MainThread]: End processing [pyroblack]: success
 [2024-06-02 12:09:03] INFO root fetch - main [MainThread]: Store serial: [23488021]
+[2024-06-02 12:11:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23488021]
+[2024-06-02 12:11:11] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-02 12:11:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: custom-maya
+[2024-06-02 12:11:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aiotraq-bot
+[2024-06-02 12:11:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: protoc-polyglot
+[2024-06-02 12:11:12] INFO root fetch - processPackages [protoc-polyglot]: New version: [0.0.1.post9] Old Version: [0.0.1.post8]
+[2024-06-02 12:11:12] INFO root fetch - processPackages [protoc-polyglot]: Downloading https://files.pythonhosted.org/packages/e9/7b/373a68a962cdfb85f4bd76f6f4ea13ad3f2cfaca73bf0a9f70d0e7d34380/protoc_polyglot-0.0.1.post8.tar.gz
+[2024-06-02 12:11:12] INFO root fetch - processPackages [aiotraq-bot]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-06-02 12:11:12] INFO root fetch - processPackages [custom-maya]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-06-02 12:11:12] INFO root fetch - processPackages [custom-maya]: Downloading https://files.pythonhosted.org/packages/1e/6f/b4dd761686f494409f02f156388489f0779767b0af9b8ae99e35f5bb8045/custom_maya-0.0.8.tar.gz
+[2024-06-02 12:11:12] INFO root fetch - processPackages [aiotraq-bot]: Downloading https://files.pythonhosted.org/packages/83/5d/f34f9f577c654edd28f71d9d27c822543fdbd1e14eb0cb202b9c740ac842/aiotraq_bot-0.1.1.tar.gz
+[2024-06-02 12:11:12] INFO root fetch - processPackages [protoc-polyglot]: Downloading https://files.pythonhosted.org/packages/01/80/bdadb218d1c3271c3a258316c3d5991f2676b54e6f358ac689f9495990f5/protoc_polyglot-0.0.1.post9.tar.gz
+[2024-06-02 12:11:12] INFO root fetch - processPackages [protoc-polyglot]: executing diffoscope
+[2024-06-02 12:11:12] INFO root fetch - processPackages [protoc-polyglot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/protoc_polyglot-0.0.1.post8.tar.gz tmp/protoc_polyglot-0.0.1.post9.tar.gz --markdown 20240602/p/protoc-polyglot/0.0.1.post8-0.0.1.post9/README.md --exclude *.pyd
+[2024-06-02 12:11:12] INFO root fetch - processPackages [aiotraq-bot]: Downloading https://files.pythonhosted.org/packages/d4/d1/dbdc5840ea6e602379a0d849becc0f690cb6ba56bcd7ff0f471265bdd17a/aiotraq_bot-0.1.2.tar.gz
+[2024-06-02 12:11:12] INFO root fetch - processPackages [custom-maya]: Downloading https://files.pythonhosted.org/packages/c2/a6/5201e895be6fa98f68e82986e2ab0fdc87caabe2ea9d0644d3508f4de522/custom_maya-0.0.9.tar.gz
+[2024-06-02 12:11:12] INFO root fetch - processPackages [aiotraq-bot]: executing diffoscope
+[2024-06-02 12:11:12] INFO root fetch - processPackages [aiotraq-bot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiotraq_bot-0.1.1.tar.gz tmp/aiotraq_bot-0.1.2.tar.gz --markdown 20240602/a/aiotraq-bot/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-06-02 12:11:12] INFO root fetch - processPackages [custom-maya]: executing diffoscope
+[2024-06-02 12:11:12] INFO root fetch - processPackages [custom-maya]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/custom_maya-0.0.8.tar.gz tmp/custom_maya-0.0.9.tar.gz --markdown 20240602/c/custom-maya/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-06-02 12:11:13] INFO root fetch - processPackages [protoc-polyglot]: Remove: archive file [/home/abi/fetcher/tmp/protoc_polyglot-0.0.1.post8.tar.gz]
+[2024-06-02 12:11:13] INFO root fetch - processPackages [protoc-polyglot]: Remove: archive file [/home/abi/fetcher/tmp/protoc_polyglot-0.0.1.post9.tar.gz]
+[2024-06-02 12:11:13] INFO root fetch - main [MainThread]: End processing [protoc-polyglot]: success
+[2024-06-02 12:11:13] INFO root fetch - processPackages [aiotraq-bot]: Remove: archive file [/home/abi/fetcher/tmp/aiotraq_bot-0.1.1.tar.gz]
+[2024-06-02 12:11:13] INFO root fetch - processPackages [aiotraq-bot]: Remove: archive file [/home/abi/fetcher/tmp/aiotraq_bot-0.1.2.tar.gz]
+[2024-06-02 12:11:13] INFO root fetch - main [MainThread]: End processing [aiotraq-bot]: success
+[2024-06-02 12:11:13] INFO root fetch - processPackages [custom-maya]: Remove: archive file [/home/abi/fetcher/tmp/custom_maya-0.0.8.tar.gz]
+[2024-06-02 12:11:13] INFO root fetch - processPackages [custom-maya]: Remove: archive file [/home/abi/fetcher/tmp/custom_maya-0.0.9.tar.gz]
+[2024-06-02 12:11:13] INFO root fetch - main [MainThread]: End processing [custom-maya]: success
+[2024-06-02 12:11:13] INFO root fetch - main [MainThread]: Store serial: [23488031]
