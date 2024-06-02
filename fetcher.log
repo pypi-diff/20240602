@@ -7527,3 +7527,15 @@
 [2024-06-02 12:24:17] INFO root fetch - processPackages [songfinder]: Remove: archive file [/home/abi/fetcher/tmp/songfinder-1.0.1-py3-none-any.whl.zip]
 [2024-06-02 12:24:17] INFO root fetch - main [MainThread]: End processing [songfinder]: success
 [2024-06-02 12:24:17] INFO root fetch - main [MainThread]: Store serial: [23488094]
+[2024-06-02 12:26:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23488094]
+[2024-06-02 12:26:26] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-02 12:26:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: appier
+[2024-06-02 12:26:26] INFO root fetch - processPackages [appier]: New version: [1.9.9] Old Version: [1.9.8]
+[2024-06-02 12:26:26] INFO root fetch - processPackages [appier]: Downloading https://files.pythonhosted.org/packages/f5/37/c6fb2bc3cdb234063247c4f57d393150434db43253cebb2fc1f2a4149c80/appier-1.9.8.tar.gz
+[2024-06-02 12:26:26] INFO root fetch - processPackages [appier]: Downloading https://files.pythonhosted.org/packages/88/65/6c516e4a2665879fdef191ce00f206533b70c31d56b7ba63a694664098b1/appier-1.9.9.tar.gz
+[2024-06-02 12:26:26] INFO root fetch - processPackages [appier]: executing diffoscope
+[2024-06-02 12:26:26] INFO root fetch - processPackages [appier]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/appier-1.9.8.tar.gz tmp/appier-1.9.9.tar.gz --markdown 20240602/a/appier/1.9.8-1.9.9/README.md --exclude *.pyd
+[2024-06-02 12:26:27] INFO root fetch - processPackages [appier]: Remove: archive file [/home/abi/fetcher/tmp/appier-1.9.8.tar.gz]
+[2024-06-02 12:26:27] INFO root fetch - processPackages [appier]: Remove: archive file [/home/abi/fetcher/tmp/appier-1.9.9.tar.gz]
+[2024-06-02 12:26:27] INFO root fetch - main [MainThread]: End processing [appier]: success
+[2024-06-02 12:26:27] INFO root fetch - main [MainThread]: Store serial: [23488097]
