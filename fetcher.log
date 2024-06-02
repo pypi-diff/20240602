@@ -7175,3 +7175,26 @@
 [2024-06-02 11:53:42] INFO root fetch - processPackages [bdmc]: Remove: archive file [/home/abi/fetcher/tmp/bdmc-0.1.5.9.tar.gz]
 [2024-06-02 11:53:42] INFO root fetch - main [MainThread]: End processing [bdmc]: success
 [2024-06-02 11:53:42] INFO root fetch - main [MainThread]: Store serial: [23487960]
+[2024-06-02 11:55:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23487960]
+[2024-06-02 11:55:50] INFO root fetch - main [MainThread]: No changed packages found
+[2024-06-02 11:57:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23487960]
+[2024-06-02 11:57:55] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-02 11:57:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: protoc-polyglot
+[2024-06-02 11:57:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: network-diffusion
+[2024-06-02 11:57:55] INFO root fetch - processPackages [protoc-polyglot]: New version: [0.0.1.post9] Old Version: [0.0.1.post8]
+[2024-06-02 11:57:55] INFO root fetch - processPackages [network-diffusion]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-06-02 11:57:55] INFO root fetch - processPackages [protoc-polyglot]: Downloading https://files.pythonhosted.org/packages/e9/7b/373a68a962cdfb85f4bd76f6f4ea13ad3f2cfaca73bf0a9f70d0e7d34380/protoc_polyglot-0.0.1.post8.tar.gz
+[2024-06-02 11:57:55] INFO root fetch - processPackages [network-diffusion]: Downloading https://files.pythonhosted.org/packages/31/07/8b415bbd0cce5d8c54f10ca2e9441fdbff6d9e3ce91e58f44843f41d2335/network_diffusion-0.8.0.tar.gz
+[2024-06-02 11:57:55] INFO root fetch - processPackages [protoc-polyglot]: Downloading https://files.pythonhosted.org/packages/01/80/bdadb218d1c3271c3a258316c3d5991f2676b54e6f358ac689f9495990f5/protoc_polyglot-0.0.1.post9.tar.gz
+[2024-06-02 11:57:55] INFO root fetch - processPackages [network-diffusion]: Downloading https://files.pythonhosted.org/packages/81/1a/b6692ce2d9c366a1672e75b7adbd512df91035714fadccd1a9f35515bd8e/network_diffusion-0.9.0.tar.gz
+[2024-06-02 11:57:55] INFO root fetch - processPackages [protoc-polyglot]: executing diffoscope
+[2024-06-02 11:57:55] INFO root fetch - processPackages [protoc-polyglot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/protoc_polyglot-0.0.1.post8.tar.gz tmp/protoc_polyglot-0.0.1.post9.tar.gz --markdown 20240602/p/protoc-polyglot/0.0.1.post8-0.0.1.post9/README.md --exclude *.pyd
+[2024-06-02 11:57:55] INFO root fetch - processPackages [network-diffusion]: executing diffoscope
+[2024-06-02 11:57:55] INFO root fetch - processPackages [network-diffusion]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/network_diffusion-0.8.0.tar.gz tmp/network_diffusion-0.9.0.tar.gz --markdown 20240602/n/network-diffusion/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-06-02 11:57:56] INFO root fetch - processPackages [protoc-polyglot]: Remove: archive file [/home/abi/fetcher/tmp/protoc_polyglot-0.0.1.post8.tar.gz]
+[2024-06-02 11:57:56] INFO root fetch - processPackages [protoc-polyglot]: Remove: archive file [/home/abi/fetcher/tmp/protoc_polyglot-0.0.1.post9.tar.gz]
+[2024-06-02 11:57:56] INFO root fetch - main [MainThread]: End processing [protoc-polyglot]: success
+[2024-06-02 11:57:56] INFO root fetch - processPackages [network-diffusion]: Remove: archive file [/home/abi/fetcher/tmp/network_diffusion-0.8.0.tar.gz]
+[2024-06-02 11:57:56] INFO root fetch - processPackages [network-diffusion]: Remove: archive file [/home/abi/fetcher/tmp/network_diffusion-0.9.0.tar.gz]
+[2024-06-02 11:57:56] INFO root fetch - main [MainThread]: End processing [network-diffusion]: success
+[2024-06-02 11:57:56] INFO root fetch - main [MainThread]: Store serial: [23487966]
