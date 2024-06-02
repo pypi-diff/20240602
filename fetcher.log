@@ -4691,3 +4691,24 @@
 [2024-06-02 08:04:27] INFO root fetch - processPackages [gai-lib]: Remove: archive file [/home/abi/fetcher/tmp/gai-lib-0.99.tar.gz]
 [2024-06-02 08:04:27] INFO root fetch - main [MainThread]: End processing [gai-lib]: success
 [2024-06-02 08:04:27] INFO root fetch - main [MainThread]: Store serial: [23486566]
+[2024-06-02 08:06:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23486566]
+[2024-06-02 08:06:36] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-02 08:06:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dash-spread-grid
+[2024-06-02 08:06:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: khoj-assistant
+[2024-06-02 08:06:36] INFO root fetch - processPackages [khoj-assistant]: New version: [1.9.1.dev8] Old Version: [1.9.1.dev74]
+[2024-06-02 08:06:36] INFO root fetch - processPackages [dash-spread-grid]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-06-02 08:06:36] INFO root fetch - processPackages [khoj-assistant]: Downloading https://files.pythonhosted.org/packages/fc/89/bbf1c812c39a0f341fea130ae430c11fcdd5fdcc5ca61fbaed2682cc4df7/khoj_assistant-1.9.1.dev74.tar.gz
+[2024-06-02 08:06:36] INFO root fetch - processPackages [dash-spread-grid]: Downloading https://files.pythonhosted.org/packages/ef/9f/ad7d15ac280015e4065103eaa548f79cd584cf601957bbeef74fbac248d9/dash_spread_grid-0.1.6.tar.gz
+[2024-06-02 08:06:36] INFO root fetch - processPackages [khoj-assistant]: Downloading https://files.pythonhosted.org/packages/47/ae/446626ff585bb336b70b59402ea6a46bf52326a51b81fd9ead920cde4c8a/khoj_assistant-1.9.1.dev8.tar.gz
+[2024-06-02 08:06:36] INFO root fetch - processPackages [dash-spread-grid]: Downloading https://files.pythonhosted.org/packages/76/17/3188aa3d693ffb9db5714126c6b6f637625ead5a6330e20d292b7f09846e/dash_spread_grid-0.1.7.tar.gz
+[2024-06-02 08:06:37] INFO root fetch - processPackages [dash-spread-grid]: executing diffoscope
+[2024-06-02 08:06:37] INFO root fetch - processPackages [dash-spread-grid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dash_spread_grid-0.1.6.tar.gz tmp/dash_spread_grid-0.1.7.tar.gz --markdown 20240602/d/dash-spread-grid/0.1.6-0.1.7/README.md --exclude *.pyd
+[2024-06-02 08:06:37] INFO root fetch - processPackages [khoj-assistant]: executing diffoscope
+[2024-06-02 08:06:37] INFO root fetch - processPackages [khoj-assistant]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/khoj_assistant-1.9.1.dev74.tar.gz tmp/khoj_assistant-1.9.1.dev8.tar.gz --markdown 20240602/k/khoj-assistant/1.9.1.dev74-1.9.1.dev8/README.md --exclude *.pyd
+[2024-06-02 08:06:38] INFO root fetch - processPackages [khoj-assistant]: Remove: archive file [/home/abi/fetcher/tmp/khoj_assistant-1.9.1.dev74.tar.gz]
+[2024-06-02 08:06:38] INFO root fetch - processPackages [khoj-assistant]: Remove: archive file [/home/abi/fetcher/tmp/khoj_assistant-1.9.1.dev8.tar.gz]
+[2024-06-02 08:06:38] INFO root fetch - main [MainThread]: End processing [khoj-assistant]: success
+[2024-06-02 08:06:38] INFO root fetch - processPackages [dash-spread-grid]: Remove: archive file [/home/abi/fetcher/tmp/dash_spread_grid-0.1.6.tar.gz]
+[2024-06-02 08:06:38] INFO root fetch - processPackages [dash-spread-grid]: Remove: archive file [/home/abi/fetcher/tmp/dash_spread_grid-0.1.7.tar.gz]
+[2024-06-02 08:06:38] INFO root fetch - main [MainThread]: End processing [dash-spread-grid]: success
+[2024-06-02 08:06:38] INFO root fetch - main [MainThread]: Store serial: [23486574]
