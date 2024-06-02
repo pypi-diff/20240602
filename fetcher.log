@@ -4369,3 +4369,27 @@
 [2024-06-02 07:16:50] INFO root fetch - processPackages [naludaq]: Remove: archive file [/home/abi/fetcher/tmp/naludaq-0.27.0.tar.gz]
 [2024-06-02 07:16:50] INFO root fetch - main [MainThread]: End processing [naludaq]: success
 [2024-06-02 07:16:50] INFO root fetch - main [MainThread]: Store serial: [23486379]
+[2024-06-02 07:18:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23486379]
+[2024-06-02 07:18:59] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-02 07:18:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: objectables
+[2024-06-02 07:18:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: spm1d
+[2024-06-02 07:18:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: snipinator
+[2024-06-02 07:18:59] INFO root fetch - processPackages [snipinator]: New version: [1.4.1] Old Version: [1.4.0]
+[2024-06-02 07:18:59] INFO root fetch - processPackages [spm1d]: New version: [0.4.32] Old Version: [0.4.31]
+[2024-06-02 07:18:59] WARNING root fetch - processPackages [objectables]: Skipping, unable to determine old version
+[2024-06-02 07:18:59] INFO root fetch - main [MainThread]: End processing [objectables] error
+[2024-06-02 07:19:00] INFO root fetch - processPackages [spm1d]: Downloading https://files.pythonhosted.org/packages/77/e4/3f8efbc1b46bd93e855cbf986167c0b0f2d2f3f2a4e47a41818f6aa1098e/spm1d-0.4.31.tar.gz
+[2024-06-02 07:19:00] INFO root fetch - processPackages [snipinator]: Downloading https://files.pythonhosted.org/packages/8d/a0/4af7584eff6ffa51eb7efd24e2c55ac2c84fac316a72e3f65881f6fb2c5d/snipinator-1.4.0.tar.gz
+[2024-06-02 07:19:00] INFO root fetch - processPackages [snipinator]: Downloading https://files.pythonhosted.org/packages/f3/c4/70279f865a1591c07874ffcd9caa896823f7d59db2e1e45b4500862f5021/snipinator-1.4.1.tar.gz
+[2024-06-02 07:19:00] INFO root fetch - processPackages [snipinator]: executing diffoscope
+[2024-06-02 07:19:00] INFO root fetch - processPackages [snipinator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/snipinator-1.4.0.tar.gz tmp/snipinator-1.4.1.tar.gz --markdown 20240602/s/snipinator/1.4.0-1.4.1/README.md --exclude *.pyd
+[2024-06-02 07:19:00] INFO root fetch - processPackages [spm1d]: Downloading https://files.pythonhosted.org/packages/f6/f1/fede1cd9e60ca9f80f6d66ca9788c434bc5c3ad1a0ae57eea1c213e0a90f/spm1d-0.4.32.tar.gz
+[2024-06-02 07:19:01] INFO root fetch - processPackages [snipinator]: Remove: archive file [/home/abi/fetcher/tmp/snipinator-1.4.0.tar.gz]
+[2024-06-02 07:19:01] INFO root fetch - processPackages [snipinator]: Remove: archive file [/home/abi/fetcher/tmp/snipinator-1.4.1.tar.gz]
+[2024-06-02 07:19:01] INFO root fetch - main [MainThread]: End processing [snipinator]: success
+[2024-06-02 07:19:02] INFO root fetch - processPackages [spm1d]: executing diffoscope
+[2024-06-02 07:19:02] INFO root fetch - processPackages [spm1d]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spm1d-0.4.31.tar.gz tmp/spm1d-0.4.32.tar.gz --markdown 20240602/s/spm1d/0.4.31-0.4.32/README.md --exclude *.pyd
+[2024-06-02 07:19:04] INFO root fetch - processPackages [spm1d]: Remove: archive file [/home/abi/fetcher/tmp/spm1d-0.4.31.tar.gz]
+[2024-06-02 07:19:04] INFO root fetch - processPackages [spm1d]: Remove: archive file [/home/abi/fetcher/tmp/spm1d-0.4.32.tar.gz]
+[2024-06-02 07:19:04] INFO root fetch - main [MainThread]: End processing [spm1d]: success
+[2024-06-02 07:19:04] INFO root fetch - main [MainThread]: Store serial: [23486391]
