@@ -17556,3 +17556,18 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 22:02:00] INFO root fetch - processPackages [lenlp]: Remove: archive file [/home/abi/fetcher/tmp/lenlp-1.1.1-pp39-pypy39_pp73-manylinux_2_17_s390x.manylinux2014_s390x.whl.zip]
 [2024-06-02 22:02:00] INFO root fetch - main [MainThread]: End processing [lenlp]: success
 [2024-06-02 22:02:00] INFO root fetch - main [MainThread]: Store serial: [23492671]
+[2024-06-02 22:04:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23492671]
+[2024-06-02 22:04:09] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-02 22:04:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: copilothistoryexporter
+[2024-06-02 22:04:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hifi-solves-run-humanwgs
+[2024-06-02 22:04:09] WARNING root fetch - processPackages [hifi-solves-run-humanwgs]: Skipping, unable to determine old version
+[2024-06-02 22:04:09] INFO root fetch - main [MainThread]: End processing [hifi-solves-run-humanwgs] error
+[2024-06-02 22:04:09] INFO root fetch - processPackages [copilothistoryexporter]: New version: [1.0.3.2] Old Version: [1.0.3.1]
+[2024-06-02 22:04:10] INFO root fetch - processPackages [copilothistoryexporter]: Downloading https://files.pythonhosted.org/packages/a9/c7/f4a748945e70470352040a3cb692a6f9450fcc1845840aed3c7de6e1de23/copilothistoryexporter-1.0.3.1.tar.gz
+[2024-06-02 22:04:10] INFO root fetch - processPackages [copilothistoryexporter]: Downloading https://files.pythonhosted.org/packages/a0/af/b57cea43d5e485dafa2e8f9722b2a0ba4e9fbab64c2850dcd39e1c6fcd33/copilothistoryexporter-1.0.3.2.tar.gz
+[2024-06-02 22:04:10] INFO root fetch - processPackages [copilothistoryexporter]: executing diffoscope
+[2024-06-02 22:04:10] INFO root fetch - processPackages [copilothistoryexporter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/copilothistoryexporter-1.0.3.1.tar.gz tmp/copilothistoryexporter-1.0.3.2.tar.gz --markdown 20240602/c/copilothistoryexporter/1.0.3.1-1.0.3.2/README.md --exclude *.pyd
+[2024-06-02 22:04:10] INFO root fetch - processPackages [copilothistoryexporter]: Remove: archive file [/home/abi/fetcher/tmp/copilothistoryexporter-1.0.3.1.tar.gz]
+[2024-06-02 22:04:10] INFO root fetch - processPackages [copilothistoryexporter]: Remove: archive file [/home/abi/fetcher/tmp/copilothistoryexporter-1.0.3.2.tar.gz]
+[2024-06-02 22:04:10] INFO root fetch - main [MainThread]: End processing [copilothistoryexporter]: success
+[2024-06-02 22:04:10] INFO root fetch - main [MainThread]: Store serial: [23492711]
