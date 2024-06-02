@@ -13427,3 +13427,117 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 18:22:52] INFO root fetch - processPackages [mlx-lm]: Remove: archive file [/home/abi/fetcher/tmp/mlx-lm-0.9.0.tar.gz]
 [2024-06-02 18:22:52] INFO root fetch - main [MainThread]: End processing [mlx-lm]: success
 [2024-06-02 18:22:52] INFO root fetch - main [MainThread]: Store serial: [23490672]
+[2024-06-02 18:24:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23490672]
+[2024-06-02 18:25:01] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2024-06-02 18:25:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: comet-mpm
+[2024-06-02 18:25:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: jamaibase
+[2024-06-02 18:25:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: trytond-purchase
+[2024-06-02 18:25:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: aimodelshare
+[2024-06-02 18:25:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pypi-cicd
+[2024-06-02 18:25:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: walledeval
+[2024-06-02 18:25:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: mama
+[2024-06-02 18:25:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: trytond-production-split
+[2024-06-02 18:25:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: airbyte-source-smartengage
+[2024-06-02 18:25:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: trytond-production-split
+[2024-06-02 18:25:01] INFO root fetch - processPackages [trytond-purchase]: New version: [7.2.2] Old Version: [7.2.1]
+[2024-06-02 18:25:01] INFO root fetch - processPackages [pypi-cicd]: New version: [0.3] Old Version: [0.2]
+[2024-06-02 18:25:01] INFO root fetch - processPackages [aimodelshare]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-06-02 18:25:01] INFO root fetch - processPackages [mama]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-06-02 18:25:01] INFO root fetch - processPackages [comet-mpm]: New version: [1.0.3] Old Version: [1.0.2]
+[2024-06-02 18:25:01] INFO root fetch - processPackages [trytond-production-split]: New version: [7.2.1] Old Version: [7.2.0]
+[2024-06-02 18:25:01] INFO root fetch - processPackages [walledeval]: New version: [0.1.0] Old Version: [0.0.2.dev0]
+[2024-06-02 18:25:01] INFO root fetch - processPackages [trytond-production-split]: New version: [7.2.1] Old Version: [7.2.0]
+[2024-06-02 18:25:01] INFO root fetch - processPackages [jamaibase]: New version: [0.1.0] Old Version: [0.0.1]
+[2024-06-02 18:25:01] INFO root fetch - processPackages [trytond-purchase]: Downloading https://files.pythonhosted.org/packages/63/dd/0ea89019d35e2933bafb5058a2b19063e359602b4490504be1d201ee3760/trytond_purchase-7.2.1.tar.gz
+[2024-06-02 18:25:01] INFO root fetch - processPackages [airbyte-source-smartengage]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-06-02 18:25:01] INFO root fetch - processPackages [pypi-cicd]: Downloading https://files.pythonhosted.org/packages/f9/71/3ffee084e5d4bf39a729f8ea4f58200fadbfe00f5be0ef0e43ae8083e264/pypi_cicd-0.2.tar.gz
+[2024-06-02 18:25:01] INFO root fetch - processPackages [aimodelshare]: Downloading https://files.pythonhosted.org/packages/c0/89/8d5c1ec1f29fb33b0fe43c98e3f08f65c921359d526635068eef7a186e2c/aimodelshare-0.1.8.tar.gz
+[2024-06-02 18:25:01] INFO root fetch - processPackages [mama]: Downloading https://files.pythonhosted.org/packages/28/8e/a6448aa2453ff0c920722fd590265a781e734455280c4f0aa9739911de7b/mama-0.9.8.tar.gz
+[2024-06-02 18:25:01] INFO root fetch - processPackages [comet-mpm]: Downloading https://files.pythonhosted.org/packages/7e/14/e1b9ca97f99dc6914c097b127d19a71509421ab8307e072c0b1af9b474b1/comet_mpm-1.0.2.tar.gz
+[2024-06-02 18:25:01] INFO root fetch - processPackages [walledeval]: Downloading https://files.pythonhosted.org/packages/0a/fa/219f2890a74ceef3a3d68df1523f5a374c7f9f8ac642d379ad2d2829b6f6/walledeval-0.0.2.dev0.tar.gz
+[2024-06-02 18:25:01] INFO root fetch - processPackages [airbyte-source-smartengage]: Downloading https://files.pythonhosted.org/packages/a6/8d/2631b3020f6477a4cea32d6526e653fc16f70e9683307014fdcbfd2f773e/airbyte_source_smartengage-0.1.3.tar.gz
+[2024-06-02 18:25:01] INFO root fetch - processPackages [jamaibase]: Downloading https://files.pythonhosted.org/packages/eb/60/776cd2c6e26cbc17e73d21340dcb8f5de16bc78295e53e9ca5d2debd5059/jamaibase-0.0.1.tar.gz
+[2024-06-02 18:25:01] INFO root fetch - processPackages [trytond-production-split]: Downloading https://files.pythonhosted.org/packages/8d/16/04fa4b750819f5c25e99251e2a1053a1dacb5eafb237e231564721f65855/trytond_production_split-7.2.0.tar.gz
+[2024-06-02 18:25:01] INFO root fetch - processPackages [trytond-production-split]: Downloading https://files.pythonhosted.org/packages/8d/16/04fa4b750819f5c25e99251e2a1053a1dacb5eafb237e231564721f65855/trytond_production_split-7.2.0.tar.gz
+[2024-06-02 18:25:02] INFO root fetch - processPackages [trytond-purchase]: Downloading https://files.pythonhosted.org/packages/b5/e7/77daa34d216e892d602600db10646cab3c7a39990121d9b6b46dc9453bca/trytond_purchase-7.2.2.tar.gz
+[2024-06-02 18:25:02] INFO root fetch - processPackages [aimodelshare]: Downloading https://files.pythonhosted.org/packages/92/1b/5990f7c62044a2ad0776737091765068646eecee14dd251c5ea3732caeb0/aimodelshare-0.1.9.tar.gz
+[2024-06-02 18:25:02] INFO root fetch - processPackages [pypi-cicd]: Downloading https://files.pythonhosted.org/packages/f7/9e/33be7ea3602f92a49254e1d93292268260b4470448a103a2457e43b59690/pypi_cicd-0.3.tar.gz
+[2024-06-02 18:25:02] INFO root fetch - processPackages [mama]: Downloading https://files.pythonhosted.org/packages/de/84/3f7efde8744b6798afdee3d7c9f782527d4ffbbecb1e0ba794feada217d5/mama-0.9.9.tar.gz
+[2024-06-02 18:25:02] INFO root fetch - processPackages [trytond-purchase]: executing diffoscope
+[2024-06-02 18:25:02] INFO root fetch - processPackages [trytond-purchase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trytond_purchase-7.2.1.tar.gz tmp/trytond_purchase-7.2.2.tar.gz --markdown 20240602/t/trytond-purchase/7.2.1-7.2.2/README.md --exclude *.pyd
+[2024-06-02 18:25:02] INFO root fetch - processPackages [pypi-cicd]: executing diffoscope
+[2024-06-02 18:25:02] INFO root fetch - processPackages [pypi-cicd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypi_cicd-0.2.tar.gz tmp/pypi_cicd-0.3.tar.gz --markdown 20240602/p/pypi-cicd/0.2-0.3/README.md --exclude *.pyd
+[2024-06-02 18:25:02] ERROR root fetch - processPackages [airbyte-source-smartengage]: Unable to fetch info: No such project/version 'airbyte-source-smartengage' 0.1.4
+[2024-06-02 18:25:02] INFO root fetch - processPackages [airbyte-source-smartengage]: Start processing: runningz
+[2024-06-02 18:25:02] INFO root fetch - main [MainThread]: End processing [airbyte-source-smartengage] error
+[2024-06-02 18:25:02] INFO root fetch - processPackages [walledeval]: Downloading https://files.pythonhosted.org/packages/ae/a8/ce8611d83f6d8a18458c06de7c09bf9f3aaf398b6e5333bcc5002790c606/walledeval-0.1.0.tar.gz
+[2024-06-02 18:25:02] INFO root fetch - processPackages [comet-mpm]: Downloading https://files.pythonhosted.org/packages/11/8f/64112846c065796692e501497284944096958139a139a1166568c9158ea7/comet_mpm-1.0.3.tar.gz
+[2024-06-02 18:25:02] INFO root fetch - processPackages [mama]: executing diffoscope
+[2024-06-02 18:25:02] INFO root fetch - processPackages [mama]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mama-0.9.8.tar.gz tmp/mama-0.9.9.tar.gz --markdown 20240602/m/mama/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-06-02 18:25:02] INFO root fetch - processPackages [aimodelshare]: executing diffoscope
+[2024-06-02 18:25:02] INFO root fetch - processPackages [aimodelshare]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aimodelshare-0.1.8.tar.gz tmp/aimodelshare-0.1.9.tar.gz --markdown 20240602/a/aimodelshare/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-06-02 18:25:02] INFO root fetch - processPackages [walledeval]: executing diffoscope
+[2024-06-02 18:25:02] INFO root fetch - processPackages [walledeval]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/walledeval-0.0.2.dev0.tar.gz tmp/walledeval-0.1.0.tar.gz --markdown 20240602/w/walledeval/0.0.2.dev0-0.1.0/README.md --exclude *.pyd
+[2024-06-02 18:25:02] INFO root fetch - processPackages [trytond-production-split]: Downloading https://files.pythonhosted.org/packages/dc/e5/fd902f4bdbc80a32432922ec58e8f17d1d612e0d6ba3501c01515f8c8359/trytond_production_split-7.2.1.tar.gz
+[2024-06-02 18:25:02] INFO root fetch - processPackages [trytond-production-split]: Downloading https://files.pythonhosted.org/packages/dc/e5/fd902f4bdbc80a32432922ec58e8f17d1d612e0d6ba3501c01515f8c8359/trytond_production_split-7.2.1.tar.gz
+[2024-06-02 18:25:02] INFO root fetch - processPackages [runningz]: New version: [0.16.5] Old Version: [0.16.4]
+[2024-06-02 18:25:02] INFO root fetch - processPackages [comet-mpm]: executing diffoscope
+[2024-06-02 18:25:02] INFO root fetch - processPackages [comet-mpm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/comet_mpm-1.0.2.tar.gz tmp/comet_mpm-1.0.3.tar.gz --markdown 20240602/c/comet-mpm/1.0.2-1.0.3/README.md --exclude *.pyd
+[2024-06-02 18:25:02] INFO root fetch - processPackages [jamaibase]: Downloading https://files.pythonhosted.org/packages/67/21/6c28720243b82fd1fcd439eb06c6a47ecb73570fda732e50bc72f66af5b4/jamaibase-0.1.0.tar.gz
+[2024-06-02 18:25:02] INFO root fetch - processPackages [trytond-production-split]: executing diffoscope
+[2024-06-02 18:25:02] INFO root fetch - processPackages [trytond-production-split]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trytond_production_split-7.2.0.tar.gz tmp/trytond_production_split-7.2.1.tar.gz --markdown 20240602/t/trytond-production-split/7.2.0-7.2.1/README.md --exclude *.pyd
+[2024-06-02 18:25:02] INFO root fetch - processPackages [trytond-production-split]: executing diffoscope
+[2024-06-02 18:25:02] INFO root fetch - processPackages [trytond-production-split]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trytond_production_split-7.2.0.tar.gz tmp/trytond_production_split-7.2.1.tar.gz --markdown 20240602/t/trytond-production-split/7.2.0-7.2.1/README.md --exclude *.pyd
+[2024-06-02 18:25:02] INFO root fetch - processPackages [runningz]: Downloading https://files.pythonhosted.org/packages/29/52/39bd09f5dae18157112be8a4157f352e58064fd1314fe42700c8a0aea3ba/runningz-0.16.4-py39-none-any.whl
+[2024-06-02 18:25:02] INFO root fetch - processPackages [jamaibase]: executing diffoscope
+[2024-06-02 18:25:02] INFO root fetch - processPackages [jamaibase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jamaibase-0.0.1.tar.gz tmp/jamaibase-0.1.0.tar.gz --markdown 20240602/j/jamaibase/0.0.1-0.1.0/README.md --exclude *.pyd
+[2024-06-02 18:25:03] INFO root fetch - processPackages [pypi-cicd]: Remove: archive file [/home/abi/fetcher/tmp/pypi_cicd-0.2.tar.gz]
+[2024-06-02 18:25:03] INFO root fetch - processPackages [pypi-cicd]: Remove: archive file [/home/abi/fetcher/tmp/pypi_cicd-0.3.tar.gz]
+[2024-06-02 18:25:03] INFO root fetch - processPackages [pypi-cicd]: Start processing: cloudquery-plugin-pb
+[2024-06-02 18:25:03] INFO root fetch - main [MainThread]: End processing [pypi-cicd]: success
+[2024-06-02 18:25:03] INFO root fetch - processPackages [runningz]: Downloading https://files.pythonhosted.org/packages/a5/a1/28c09f6b8f973680979f6ca4c1794cac6965674b703d83eb937b2e096604/runningz-0.16.5-py39-none-any.whl
+[2024-06-02 18:25:03] INFO root fetch - processPackages [cloudquery-plugin-pb]: New version: [0.0.28] Old Version: [0.0.27]
+[2024-06-02 18:25:03] INFO root fetch - processPackages [mama]: Remove: archive file [/home/abi/fetcher/tmp/mama-0.9.8.tar.gz]
+[2024-06-02 18:25:03] INFO root fetch - processPackages [mama]: Remove: archive file [/home/abi/fetcher/tmp/mama-0.9.9.tar.gz]
+[2024-06-02 18:25:03] INFO root fetch - processPackages [mama]: Start processing: cycls
+[2024-06-02 18:25:03] INFO root fetch - main [MainThread]: End processing [mama]: success
+[2024-06-02 18:25:03] INFO root fetch - processPackages [comet-mpm]: Remove: archive file [/home/abi/fetcher/tmp/comet_mpm-1.0.2.tar.gz]
+[2024-06-02 18:25:03] INFO root fetch - processPackages [comet-mpm]: Remove: archive file [/home/abi/fetcher/tmp/comet_mpm-1.0.3.tar.gz]
+[2024-06-02 18:25:03] INFO root fetch - main [MainThread]: End processing [comet-mpm]: success
+[2024-06-02 18:25:03] INFO root fetch - processPackages [runningz]: executing diffoscope
+[2024-06-02 18:25:03] INFO root fetch - processPackages [runningz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/runningz-0.16.4-py39-none-any.whl.zip tmp/runningz-0.16.5-py39-none-any.whl.zip --markdown 20240602/r/runningz/0.16.4-0.16.5/README.md --exclude *.pyd
+[2024-06-02 18:25:03] INFO root fetch - processPackages [walledeval]: Remove: archive file [/home/abi/fetcher/tmp/walledeval-0.0.2.dev0.tar.gz]
+[2024-06-02 18:25:03] INFO root fetch - processPackages [walledeval]: Remove: archive file [/home/abi/fetcher/tmp/walledeval-0.1.0.tar.gz]
+[2024-06-02 18:25:03] INFO root fetch - main [MainThread]: End processing [walledeval]: success
+[2024-06-02 18:25:03] INFO root fetch - processPackages [cloudquery-plugin-pb]: Downloading https://files.pythonhosted.org/packages/8f/d2/6cf69b8a78132e67c8d54c6af658d5943b89a520323e428d8a60336011d0/cloudquery_plugin_pb-0.0.27.tar.gz
+[2024-06-02 18:25:03] INFO root fetch - processPackages [trytond-production-split]: Remove: archive file [/home/abi/fetcher/tmp/trytond_production_split-7.2.0.tar.gz]
+[2024-06-02 18:25:03] INFO root fetch - processPackages [trytond-production-split]: Remove: archive file [/home/abi/fetcher/tmp/trytond_production_split-7.2.1.tar.gz]
+[2024-06-02 18:25:03] INFO root fetch - main [MainThread]: End processing [trytond-production-split]: success
+[2024-06-02 18:25:03] INFO root fetch - processPackages [cycls]: New version: [0.0.2.0] Old Version: [0.0.1.5]
+[2024-06-02 18:25:03] INFO root fetch - main [MainThread]: End processing [trytond-production-split]: success
+[2024-06-02 18:25:03] INFO root fetch - processPackages [trytond-purchase]: Remove: archive file [/home/abi/fetcher/tmp/trytond_purchase-7.2.1.tar.gz]
+[2024-06-02 18:25:03] INFO root fetch - processPackages [trytond-purchase]: Remove: archive file [/home/abi/fetcher/tmp/trytond_purchase-7.2.2.tar.gz]
+[2024-06-02 18:25:03] INFO root fetch - main [MainThread]: End processing [trytond-purchase]: success
+[2024-06-02 18:25:03] INFO root fetch - processPackages [cycls]: Downloading https://files.pythonhosted.org/packages/3d/12/764bc2b95c1eb82e955e40ba58a35c288c35bc758be5ba6b90f373fd8d7e/cycls-0.0.1.5.tar.gz
+[2024-06-02 18:25:03] INFO root fetch - processPackages [aimodelshare]: Remove: archive file [/home/abi/fetcher/tmp/aimodelshare-0.1.8.tar.gz]
+[2024-06-02 18:25:03] INFO root fetch - processPackages [aimodelshare]: Remove: archive file [/home/abi/fetcher/tmp/aimodelshare-0.1.9.tar.gz]
+[2024-06-02 18:25:03] INFO root fetch - main [MainThread]: End processing [aimodelshare]: success
+[2024-06-02 18:25:03] INFO root fetch - processPackages [cloudquery-plugin-pb]: Downloading https://files.pythonhosted.org/packages/fb/59/00da7981bf67eb174a39f01e88592566ef4465ce8f852ee1d810fe4811a4/cloudquery_plugin_pb-0.0.28.tar.gz
+[2024-06-02 18:25:04] INFO root fetch - processPackages [cloudquery-plugin-pb]: executing diffoscope
+[2024-06-02 18:25:04] INFO root fetch - processPackages [cloudquery-plugin-pb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cloudquery_plugin_pb-0.0.27.tar.gz tmp/cloudquery_plugin_pb-0.0.28.tar.gz --markdown 20240602/c/cloudquery-plugin-pb/0.0.27-0.0.28/README.md --exclude *.pyd
+[2024-06-02 18:25:04] INFO root fetch - processPackages [cycls]: Downloading https://files.pythonhosted.org/packages/b7/49/21b01bc8e40082a0f85d110ded53ffca5c0967ade6c43259ce47abffe145/cycls-0.0.2.0.tar.gz
+[2024-06-02 18:25:04] INFO root fetch - processPackages [jamaibase]: Remove: archive file [/home/abi/fetcher/tmp/jamaibase-0.0.1.tar.gz]
+[2024-06-02 18:25:04] INFO root fetch - processPackages [jamaibase]: Remove: archive file [/home/abi/fetcher/tmp/jamaibase-0.1.0.tar.gz]
+[2024-06-02 18:25:04] INFO root fetch - main [MainThread]: End processing [jamaibase]: success
+[2024-06-02 18:25:04] INFO root fetch - processPackages [cycls]: executing diffoscope
+[2024-06-02 18:25:04] INFO root fetch - processPackages [cycls]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cycls-0.0.1.5.tar.gz tmp/cycls-0.0.2.0.tar.gz --markdown 20240602/c/cycls/0.0.1.5-0.0.2.0/README.md --exclude *.pyd
+[2024-06-02 18:25:04] INFO root fetch - processPackages [cloudquery-plugin-pb]: Remove: archive file [/home/abi/fetcher/tmp/cloudquery_plugin_pb-0.0.27.tar.gz]
+[2024-06-02 18:25:04] INFO root fetch - processPackages [cloudquery-plugin-pb]: Remove: archive file [/home/abi/fetcher/tmp/cloudquery_plugin_pb-0.0.28.tar.gz]
+[2024-06-02 18:25:04] INFO root fetch - main [MainThread]: End processing [cloudquery-plugin-pb]: success
+[2024-06-02 18:25:04] INFO root fetch - processPackages [cycls]: Remove: archive file [/home/abi/fetcher/tmp/cycls-0.0.1.5.tar.gz]
+[2024-06-02 18:25:04] INFO root fetch - processPackages [cycls]: Remove: archive file [/home/abi/fetcher/tmp/cycls-0.0.2.0.tar.gz]
+[2024-06-02 18:25:04] INFO root fetch - main [MainThread]: End processing [cycls]: success
+[2024-06-02 18:25:04] INFO root fetch - processPackages [runningz]: Remove: archive file [/home/abi/fetcher/tmp/runningz-0.16.4-py39-none-any.whl.zip]
+[2024-06-02 18:25:04] INFO root fetch - processPackages [runningz]: Remove: archive file [/home/abi/fetcher/tmp/runningz-0.16.5-py39-none-any.whl.zip]
+[2024-06-02 18:25:04] INFO root fetch - main [MainThread]: End processing [runningz]: success
+[2024-06-02 18:25:05] INFO root fetch - main [MainThread]: Store serial: [23490708]
