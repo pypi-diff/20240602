@@ -10480,3 +10480,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-02 15:52:27] INFO root fetch - processPackages [vtacML]: Remove: archive file [/home/abi/fetcher/tmp/vtacML-0.1.4.tar.gz]
 [2024-06-02 15:52:27] INFO root fetch - main [MainThread]: End processing [vtacML]: success
 [2024-06-02 15:52:27] INFO root fetch - main [MainThread]: Store serial: [23489334]
+[2024-06-02 15:54:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23489334]
+[2024-06-02 15:54:35] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-02 15:54:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: semantic-space
+[2024-06-02 15:54:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: scim2-models
+[2024-06-02 15:54:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pcleaner-cli
+[2024-06-02 15:54:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tensordict-nightly
+[2024-06-02 15:54:35] INFO root fetch - processPackages [scim2-models]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-06-02 15:54:35] INFO root fetch - processPackages [semantic-space]: New version: [0.1.0] Old Version: [0.0.1]
+[2024-06-02 15:54:35] WARNING root fetch - processPackages [pcleaner-cli]: Skipping, unable to determine old version
+[2024-06-02 15:54:35] INFO root fetch - main [MainThread]: End processing [pcleaner-cli] error
+[2024-06-02 15:54:35] INFO root fetch - processPackages [scim2-models]: Downloading https://files.pythonhosted.org/packages/81/0e/657ec347cb700739f28c6ee824ea4845ea1c8ea83abf747d253d0130e0e8/scim2_models-0.1.0.tar.gz
+[2024-06-02 15:54:36] INFO root fetch - processPackages [tensordict-nightly]: New version: [2024.6.2] Old Version: [2024.6.1]
+[2024-06-02 15:54:36] INFO root fetch - processPackages [semantic-space]: Downloading https://files.pythonhosted.org/packages/ba/29/5c0b1f5cf35419589d1ecee8d7dea4c956cce94f7353838718569fc39fe1/semantic_space-0.0.1.tar.gz
+[2024-06-02 15:54:36] INFO root fetch - processPackages [tensordict-nightly]: Downloading https://files.pythonhosted.org/packages/e1/17/bd230b5178b3ac1406da9615f542105b056ab46d47c77e0e9559cf46dd8d/tensordict_nightly-2024.6.1-cp39-cp39-win_amd64.whl
+[2024-06-02 15:54:36] INFO root fetch - processPackages [scim2-models]: Downloading https://files.pythonhosted.org/packages/03/a8/5f8bd33c60908a4488be55cbfe202edb48b3c8d8903a5ae8f59e02753353/scim2_models-0.1.1.tar.gz
+[2024-06-02 15:54:36] INFO root fetch - processPackages [semantic-space]: Downloading https://files.pythonhosted.org/packages/81/f7/c65c15ddae0c39848801349de9b90f5b10f732dc339c4aa05e8b2a9d7f60/semantic_space-0.1.0.tar.gz
+[2024-06-02 15:54:36] INFO root fetch - processPackages [scim2-models]: executing diffoscope
+[2024-06-02 15:54:36] INFO root fetch - processPackages [scim2-models]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scim2_models-0.1.0.tar.gz tmp/scim2_models-0.1.1.tar.gz --markdown 20240602/s/scim2-models/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-06-02 15:54:36] INFO root fetch - processPackages [semantic-space]: executing diffoscope
+[2024-06-02 15:54:36] INFO root fetch - processPackages [semantic-space]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/semantic_space-0.0.1.tar.gz tmp/semantic_space-0.1.0.tar.gz --markdown 20240602/s/semantic-space/0.0.1-0.1.0/README.md --exclude *.pyd
+[2024-06-02 15:54:36] INFO root fetch - processPackages [tensordict-nightly]: Downloading https://files.pythonhosted.org/packages/e4/43/0f5aa43e1b31caa409c469a3c33980be16c187600102116763323b80c487/tensordict_nightly-2024.6.2-cp39-cp39-manylinux1_x86_64.whl
+[2024-06-02 15:54:37] INFO root fetch - processPackages [scim2-models]: Remove: archive file [/home/abi/fetcher/tmp/scim2_models-0.1.0.tar.gz]
+[2024-06-02 15:54:37] INFO root fetch - processPackages [scim2-models]: Remove: archive file [/home/abi/fetcher/tmp/scim2_models-0.1.1.tar.gz]
+[2024-06-02 15:54:37] INFO root fetch - main [MainThread]: End processing [scim2-models]: success
+[2024-06-02 15:54:37] INFO root fetch - processPackages [semantic-space]: Remove: archive file [/home/abi/fetcher/tmp/semantic_space-0.0.1.tar.gz]
+[2024-06-02 15:54:37] INFO root fetch - processPackages [semantic-space]: Remove: archive file [/home/abi/fetcher/tmp/semantic_space-0.1.0.tar.gz]
+[2024-06-02 15:54:37] INFO root fetch - main [MainThread]: End processing [semantic-space]: success
+[2024-06-02 15:54:37] INFO root fetch - processPackages [tensordict-nightly]: executing diffoscope
+[2024-06-02 15:54:37] INFO root fetch - processPackages [tensordict-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tensordict_nightly-2024.6.1-cp39-cp39-win_amd64.whl.zip tmp/tensordict_nightly-2024.6.2-cp39-cp39-manylinux1_x86_64.whl.zip --markdown 20240602/t/tensordict-nightly/2024.6.1-2024.6.2/README.md --exclude *.pyd
+[2024-06-02 15:54:38] INFO root fetch - processPackages [tensordict-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tensordict_nightly-2024.6.1-cp39-cp39-win_amd64.whl.zip]
+[2024-06-02 15:54:38] INFO root fetch - processPackages [tensordict-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tensordict_nightly-2024.6.2-cp39-cp39-manylinux1_x86_64.whl.zip]
+[2024-06-02 15:54:38] INFO root fetch - main [MainThread]: End processing [tensordict-nightly]: success
+[2024-06-02 15:54:38] INFO root fetch - main [MainThread]: Store serial: [23489351]
