@@ -5223,3 +5223,15 @@
 [2024-06-02 08:59:14] INFO root fetch - processPackages [dbt-command-center]: Remove: archive file [/home/abi/fetcher/tmp/dbt_command_center-0.1.7.tar.gz]
 [2024-06-02 08:59:14] INFO root fetch - main [MainThread]: End processing [dbt-command-center]: success
 [2024-06-02 08:59:14] INFO root fetch - main [MainThread]: Store serial: [23486838]
+[2024-06-02 09:01:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23486838]
+[2024-06-02 09:01:27] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-02 09:01:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: UnionCalLib
+[2024-06-02 09:01:27] INFO root fetch - processPackages [UnionCalLib]: New version: [0.11] Old Version: [0.1]
+[2024-06-02 09:01:27] INFO root fetch - processPackages [UnionCalLib]: Downloading https://files.pythonhosted.org/packages/42/4b/9a0f178376d272b6cfbd4a7beab3c40d8fc2ca29792ba261695ccae15464/unioncallib-0.1.tar.gz
+[2024-06-02 09:01:28] INFO root fetch - processPackages [UnionCalLib]: Downloading https://files.pythonhosted.org/packages/af/d4/bb08482dbe3b06aaf85d8e014cbb9a20cb6c9dfce1f8166971dcc5da8d1a/unioncallib-0.11.tar.gz
+[2024-06-02 09:01:28] INFO root fetch - processPackages [UnionCalLib]: executing diffoscope
+[2024-06-02 09:01:28] INFO root fetch - processPackages [UnionCalLib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unioncallib-0.1.tar.gz tmp/unioncallib-0.11.tar.gz --markdown 20240602/U/UnionCalLib/0.1-0.11/README.md --exclude *.pyd
+[2024-06-02 09:01:28] INFO root fetch - processPackages [UnionCalLib]: Remove: archive file [/home/abi/fetcher/tmp/unioncallib-0.1.tar.gz]
+[2024-06-02 09:01:28] INFO root fetch - processPackages [UnionCalLib]: Remove: archive file [/home/abi/fetcher/tmp/unioncallib-0.11.tar.gz]
+[2024-06-02 09:01:28] INFO root fetch - main [MainThread]: End processing [UnionCalLib]: success
+[2024-06-02 09:01:28] INFO root fetch - main [MainThread]: Store serial: [23486841]
