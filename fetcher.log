@@ -11147,3 +11147,125 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-02 16:35:57] INFO root fetch - processPackages [dbt-command-center]: Remove: archive file [/home/abi/fetcher/tmp/dbt_command_center-0.1.9.tar.gz]
 [2024-06-02 16:35:57] INFO root fetch - main [MainThread]: End processing [dbt-command-center]: success
 [2024-06-02 16:35:57] INFO root fetch - main [MainThread]: Store serial: [23489681]
+[2024-06-02 16:38:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23489681]
+[2024-06-02 16:38:05] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-02 16:38:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: checkov
+[2024-06-02 16:38:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: siat
+[2024-06-02 16:38:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: glide-for-redis
+[2024-06-02 16:38:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: encoded-core
+[2024-06-02 16:38:05] INFO root fetch - processPackages [glide-for-redis]: New version: [0.4.1rc3] Old Version: [0.4.0rc4]
+[2024-06-02 16:38:05] INFO root fetch - processPackages [checkov]: New version: [3.2.99] Old Version: [3.2.98]
+[2024-06-02 16:38:05] INFO root fetch - processPackages [glide-for-redis]: Downloading https://files.pythonhosted.org/packages/c5/ea/a36d5fd0dab7647960a2afd8cbc58f9f6ab84c6c903a2ae0d90b9954daec/glide_for_redis-0.4.0rc4-cp39-cp39-manylinux_2_28_aarch64.whl
+[2024-06-02 16:38:05] INFO root fetch - processPackages [siat]: New version: [3.1.6] Old Version: [3.1.5]
+[2024-06-02 16:38:05] INFO root fetch - processPackages [checkov]: Downloading https://files.pythonhosted.org/packages/a9/34/826b2df19c26007adefb008f273e87b94019bf5e27747efea796070c2da5/checkov-3.2.98.tar.gz
+[2024-06-02 16:38:05] INFO root fetch - processPackages [encoded-core]: New version: [0.9.2] Old Version: [0.9.1]
+[2024-06-02 16:38:05] INFO root fetch - processPackages [checkov]: Downloading https://files.pythonhosted.org/packages/ff/ff/5ccc1f214d2e0bf1a97393d8f14eb1cda0f7675d0fedc54a6e5b09841a02/checkov-3.2.99.tar.gz
+[2024-06-02 16:38:05] INFO root fetch - processPackages [encoded-core]: Downloading https://files.pythonhosted.org/packages/b3/96/966fe5d86d2275fa72c8919e305fc0fcf5ec3bd11301fb63354af1698f3c/encoded_core-0.9.1.tar.gz
+[2024-06-02 16:38:05] INFO root fetch - processPackages [glide-for-redis]: Downloading https://files.pythonhosted.org/packages/c1/bb/933ca582efa267340d6a7e0e4d7471b7dbc4b84085624c18cc8a1479eaf5/glide_for_redis-0.4.1rc3-cp39-cp39-manylinux_2_28_aarch64.whl
+[2024-06-02 16:38:06] INFO root fetch - processPackages [siat]: executing diffoscope
+[2024-06-02 16:38:06] INFO root fetch - processPackages [siat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/siat-3.1.5-py3-none-any.whl.zip tmp/siat-3.1.6-py3-none-any.whl.zip --markdown 20240602/s/siat/3.1.5-3.1.6/README.md --exclude *.pyd
+[2024-06-02 16:38:06] INFO root fetch - processPackages [checkov]: executing diffoscope
+[2024-06-02 16:38:06] INFO root fetch - processPackages [checkov]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/checkov-3.2.98.tar.gz tmp/checkov-3.2.99.tar.gz --markdown 20240602/c/checkov/3.2.98-3.2.99/README.md --exclude *.pyd
+[2024-06-02 16:38:06] INFO root fetch - processPackages [glide-for-redis]: executing diffoscope
+[2024-06-02 16:38:06] INFO root fetch - processPackages [glide-for-redis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/glide_for_redis-0.4.0rc4-cp39-cp39-manylinux_2_28_aarch64.whl.zip tmp/glide_for_redis-0.4.1rc3-cp39-cp39-manylinux_2_28_aarch64.whl.zip --markdown 20240602/g/glide-for-redis/0.4.0rc4-0.4.1rc3/README.md --exclude *.pyd
+[2024-06-02 16:38:06] INFO root fetch - processPackages [encoded-core]: Downloading https://files.pythonhosted.org/packages/89/7e/a55900a8a5dcf35787f39f89183192d6b7d9b7a8a6bfa46e540fbea26d57/encoded_core-0.9.2.tar.gz
+[2024-06-02 16:38:06] INFO root fetch - processPackages [encoded-core]: executing diffoscope
+[2024-06-02 16:38:06] INFO root fetch - processPackages [encoded-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/encoded_core-0.9.1.tar.gz tmp/encoded_core-0.9.2.tar.gz --markdown 20240602/e/encoded-core/0.9.1-0.9.2/README.md --exclude *.pyd
+[2024-06-02 16:38:06] ERROR root fetch - processPackages [siat]: Diffoscope failed: time="2024-06-02T16:38:06+02:00" level=error msg="User-selected graph driver \"vfs\" overwritten by graph driver \"overlay\" from database - delete libpod local files to resolve.  May prevent use of images created by other tools"
+Traceback (most recent call last):
+  File "/srv/diffoscope/diffoscope/diff.py", line 334, in diff
+    with FIFOFeeder(feeder1, fifo1_path) as fifo1, FIFOFeeder(
+  File "/srv/diffoscope/diffoscope/diff.py", line 225, in __exit__
+    self.join()
+  File "/srv/diffoscope/diffoscope/diff.py", line 258, in join
+    raise self._exception
+  File "/srv/diffoscope/diffoscope/diff.py", line 249, in run
+    end_nl = self.feeder(fifo)
+             ^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 126, in feeder
+    end_nl = feeder(out_file)
+             ^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 81, in feeder
+    out = filter_reader(buf, filter)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 47, in filter_reader
+    buf = additional_filter(buf)
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 57, in filter
+    m = self.re_strip_path.match(line.decode("utf-8"))
+                                 ^^^^^^^^^^^^^^^^^^^^
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid continuation byte
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/srv/diffoscope/diffoscope/main.py", line 767, in main
+    sys.exit(run_diffoscope(parsed_args))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/main.py", line 718, in run_diffoscope
+    difference = compare_root_paths(path1, path2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 69, in compare_root_paths
+    difference = compare_files(file1, file2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 217, in compare
+    x = super().compare(other, source)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 532, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 433, in _compare_using_details
+    details.extend(self.compare_details(other, source))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 252, in compare_details
+    differences.extend(zipinfo_differences(self, other))
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 127, in zipinfo_differences
+    zipinfo = Difference.from_operation(Zipinfo, file.path, other.path)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/difference.py", line 267, in from_operation
+    return Difference.from_operation_exc(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/difference.py", line 316, in from_operation_exc
+    difference = Difference.from_feeder(
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/difference.py", line 214, in from_feeder
+    unified_diff = diff(feeder1, feeder2)
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/diff.py", line 334, in diff
+    with FIFOFeeder(feeder1, fifo1_path) as fifo1, FIFOFeeder(
+  File "/srv/diffoscope/diffoscope/diff.py", line 225, in __exit__
+    self.join()
+  File "/srv/diffoscope/diffoscope/diff.py", line 258, in join
+    raise self._exception
+  File "/srv/diffoscope/diffoscope/diff.py", line 249, in run
+    end_nl = self.feeder(fifo)
+             ^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 126, in feeder
+    end_nl = feeder(out_file)
+             ^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 81, in feeder
+    out = filter_reader(buf, filter)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 47, in filter_reader
+    buf = additional_filter(buf)
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 57, in filter
+    m = self.re_strip_path.match(line.decode("utf-8"))
+                                 ^^^^^^^^^^^^^^^^^^^^
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid continuation byte
+
+[2024-06-02 16:38:06] INFO root fetch - main [MainThread]: End processing [siat] error
+[2024-06-02 16:38:07] INFO root fetch - processPackages [encoded-core]: Remove: archive file [/home/abi/fetcher/tmp/encoded_core-0.9.1.tar.gz]
+[2024-06-02 16:38:07] INFO root fetch - processPackages [encoded-core]: Remove: archive file [/home/abi/fetcher/tmp/encoded_core-0.9.2.tar.gz]
+[2024-06-02 16:38:07] INFO root fetch - main [MainThread]: End processing [encoded-core]: success
+[2024-06-02 16:38:13] INFO root fetch - processPackages [checkov]: Remove: archive file [/home/abi/fetcher/tmp/checkov-3.2.98.tar.gz]
+[2024-06-02 16:38:13] INFO root fetch - processPackages [checkov]: Remove: archive file [/home/abi/fetcher/tmp/checkov-3.2.99.tar.gz]
+[2024-06-02 16:38:13] INFO root fetch - main [MainThread]: End processing [checkov]: success
+[2024-06-02 16:38:22] INFO root fetch - processPackages [glide-for-redis]: Remove: archive file [/home/abi/fetcher/tmp/glide_for_redis-0.4.0rc4-cp39-cp39-manylinux_2_28_aarch64.whl.zip]
+[2024-06-02 16:38:22] INFO root fetch - processPackages [glide-for-redis]: Remove: archive file [/home/abi/fetcher/tmp/glide_for_redis-0.4.1rc3-cp39-cp39-manylinux_2_28_aarch64.whl.zip]
+[2024-06-02 16:38:22] INFO root fetch - main [MainThread]: End processing [glide-for-redis]: success
+[2024-06-02 16:38:22] INFO root fetch - main [MainThread]: Store serial: [23489699]
