@@ -11476,3 +11476,24 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 16:51:24] INFO root fetch - processPackages [vac-aligner]: Remove: archive file [/home/abi/fetcher/tmp/vac_aligner-0.0.5.tar.gz]
 [2024-06-02 16:51:24] INFO root fetch - main [MainThread]: End processing [vac-aligner]: success
 [2024-06-02 16:51:24] INFO root fetch - main [MainThread]: Store serial: [23489784]
+[2024-06-02 16:53:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23489784]
+[2024-06-02 16:53:33] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-02 16:53:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aimodelshare
+[2024-06-02 16:53:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: launchcontainers
+[2024-06-02 16:53:33] INFO root fetch - processPackages [aimodelshare]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-06-02 16:53:33] INFO root fetch - processPackages [aimodelshare]: Downloading https://files.pythonhosted.org/packages/c0/89/8d5c1ec1f29fb33b0fe43c98e3f08f65c921359d526635068eef7a186e2c/aimodelshare-0.1.8.tar.gz
+[2024-06-02 16:53:33] INFO root fetch - processPackages [launchcontainers]: New version: [0.2.1] Old Version: [0.2.0]
+[2024-06-02 16:53:33] INFO root fetch - processPackages [launchcontainers]: Downloading https://files.pythonhosted.org/packages/7e/f7/076ad4af9bd77544524405c873612840c2a13dd9c711fdc2404400f1aa2f/launchcontainers-0.2.0.tar.gz
+[2024-06-02 16:53:33] INFO root fetch - processPackages [aimodelshare]: Downloading https://files.pythonhosted.org/packages/92/1b/5990f7c62044a2ad0776737091765068646eecee14dd251c5ea3732caeb0/aimodelshare-0.1.9.tar.gz
+[2024-06-02 16:53:34] INFO root fetch - processPackages [aimodelshare]: executing diffoscope
+[2024-06-02 16:53:34] INFO root fetch - processPackages [aimodelshare]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aimodelshare-0.1.8.tar.gz tmp/aimodelshare-0.1.9.tar.gz --markdown 20240602/a/aimodelshare/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-06-02 16:53:34] INFO root fetch - processPackages [launchcontainers]: Downloading https://files.pythonhosted.org/packages/73/2b/2a7f334c096291fabcda0613ca4d1174944b1f32a979a1ad7c09e5c4fd6c/launchcontainers-0.2.1.tar.gz
+[2024-06-02 16:53:34] INFO root fetch - processPackages [launchcontainers]: executing diffoscope
+[2024-06-02 16:53:34] INFO root fetch - processPackages [launchcontainers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/launchcontainers-0.2.0.tar.gz tmp/launchcontainers-0.2.1.tar.gz --markdown 20240602/l/launchcontainers/0.2.0-0.2.1/README.md --exclude *.pyd
+[2024-06-02 16:53:34] INFO root fetch - processPackages [launchcontainers]: Remove: archive file [/home/abi/fetcher/tmp/launchcontainers-0.2.0.tar.gz]
+[2024-06-02 16:53:34] INFO root fetch - processPackages [launchcontainers]: Remove: archive file [/home/abi/fetcher/tmp/launchcontainers-0.2.1.tar.gz]
+[2024-06-02 16:53:34] INFO root fetch - main [MainThread]: End processing [launchcontainers]: success
+[2024-06-02 16:53:34] INFO root fetch - processPackages [aimodelshare]: Remove: archive file [/home/abi/fetcher/tmp/aimodelshare-0.1.8.tar.gz]
+[2024-06-02 16:53:34] INFO root fetch - processPackages [aimodelshare]: Remove: archive file [/home/abi/fetcher/tmp/aimodelshare-0.1.9.tar.gz]
+[2024-06-02 16:53:34] INFO root fetch - main [MainThread]: End processing [aimodelshare]: success
+[2024-06-02 16:53:34] INFO root fetch - main [MainThread]: Store serial: [23489791]
