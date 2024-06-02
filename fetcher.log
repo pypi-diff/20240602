@@ -17004,3 +17004,24 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-06-02 21:22:15] INFO root fetch - processPackages [pymerc]: Remove: archive file [/home/abi/fetcher/tmp/pymerc-0.6.0.tar.gz]
 [2024-06-02 21:22:15] INFO root fetch - main [MainThread]: End processing [pymerc]: success
 [2024-06-02 21:22:15] INFO root fetch - main [MainThread]: Store serial: [23492350]
+[2024-06-02 21:24:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23492350]
+[2024-06-02 21:24:24] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-02 21:24:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: blaze-double-bot
+[2024-06-02 21:24:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: grambot
+[2024-06-02 21:24:24] INFO root fetch - processPackages [blaze-double-bot]: New version: [1.3.1] Old Version: [1.3.0]
+[2024-06-02 21:24:24] INFO root fetch - processPackages [grambot]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-06-02 21:24:24] INFO root fetch - processPackages [blaze-double-bot]: Downloading https://files.pythonhosted.org/packages/f2/51/f97f3ae76eea8d94c171e3084f53457b7dfeab971741fb21beb0e8d88a5b/blaze_double_bot-1.3.0.tar.gz
+[2024-06-02 21:24:24] INFO root fetch - processPackages [grambot]: Downloading https://files.pythonhosted.org/packages/29/ce/9bdf5307f3374ef034cf75cf1cd7bf7c9c7e2fbbcb3901518e652568bac8/grambot-1.0.0.tar.gz
+[2024-06-02 21:24:24] INFO root fetch - processPackages [blaze-double-bot]: Downloading https://files.pythonhosted.org/packages/6d/88/5ce0c16315b2502cf8da4504c3e140e924d947b3a34a38837c09c6ce8180/blaze_double_bot-1.3.1.tar.gz
+[2024-06-02 21:24:24] INFO root fetch - processPackages [blaze-double-bot]: executing diffoscope
+[2024-06-02 21:24:24] INFO root fetch - processPackages [blaze-double-bot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blaze_double_bot-1.3.0.tar.gz tmp/blaze_double_bot-1.3.1.tar.gz --markdown 20240602/b/blaze-double-bot/1.3.0-1.3.1/README.md --exclude *.pyd
+[2024-06-02 21:24:24] INFO root fetch - processPackages [grambot]: Downloading https://files.pythonhosted.org/packages/ce/c6/a2491cec005e4fa064c17bc3534153658254b37b62ea5a9ab946b83425ec/grambot-1.0.1.tar.gz
+[2024-06-02 21:24:24] INFO root fetch - processPackages [grambot]: executing diffoscope
+[2024-06-02 21:24:24] INFO root fetch - processPackages [grambot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240602:/home/abi/fetcher/20240602:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/grambot-1.0.0.tar.gz tmp/grambot-1.0.1.tar.gz --markdown 20240602/g/grambot/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-06-02 21:24:25] INFO root fetch - processPackages [blaze-double-bot]: Remove: archive file [/home/abi/fetcher/tmp/blaze_double_bot-1.3.0.tar.gz]
+[2024-06-02 21:24:25] INFO root fetch - processPackages [blaze-double-bot]: Remove: archive file [/home/abi/fetcher/tmp/blaze_double_bot-1.3.1.tar.gz]
+[2024-06-02 21:24:25] INFO root fetch - main [MainThread]: End processing [blaze-double-bot]: success
+[2024-06-02 21:24:25] INFO root fetch - processPackages [grambot]: Remove: archive file [/home/abi/fetcher/tmp/grambot-1.0.0.tar.gz]
+[2024-06-02 21:24:25] INFO root fetch - processPackages [grambot]: Remove: archive file [/home/abi/fetcher/tmp/grambot-1.0.1.tar.gz]
+[2024-06-02 21:24:25] INFO root fetch - main [MainThread]: End processing [grambot]: success
+[2024-06-02 21:24:25] INFO root fetch - main [MainThread]: Store serial: [23492356]
